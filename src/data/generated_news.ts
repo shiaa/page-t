@@ -14,7 +14,7 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年6月1日 · 星期一
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
@@ -85,7 +85,7 @@ export const aiNewsPosts: Post[] = [
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
@@ -98,11 +98,11 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年5月31日 · 星期日
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
@@ -115,11 +115,11 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年5月29日 · 星期五
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
@@ -132,11 +132,11 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年5月28日 · 星期四
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
@@ -149,11 +149,11 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年5月27日 · 星期三
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
@@ -166,11 +166,11 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年5月26日 · 星期二
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
@@ -183,11 +183,11 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年5月25日 · 星期一
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
@@ -200,11 +200,11 @@ export const aiNewsPosts: Post[] = [
     content: `
 # AI 每日动态 · 2026年5月24日 · 星期日
 
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+关注 AI Coding · 具身智能 · 前沿技术
 
 ---
 
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
 ];
