@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日 AI 动态 · 2026年5月24日</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card-bg: #1a1d28;
+    --border: #2a2d3a;
+    --text: #e4e6ef;
+    --text-secondary: #8b8fa8;
+    --accent-coding: #7c5cfc;
+    --accent-embody: #00c9a7;
+    --accent-hot: #ff6b6b;
+    --tag-bg: #232636;
+    --divider: #1e2030;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--divider);
+  }
+  .header .date {
+    font-size: 14px;
+    color: var(--text-secondary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-coding), var(--accent-embody));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header .subtitle {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 6px;
+  }
+  
+  .section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid;
+  }
+  .section-label.coding { color: var(--accent-coding); border-color: var(--accent-coding); }
+  .section-label.embody { color: var(--accent-embody); border-color: var(--accent-embody); }
+  
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: #3d4060; }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .card-rank {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .card-rank.hot { background: rgba(255,107,107,0.15); color: var(--accent-hot); }
+  .card-rank.coding { background: rgba(124,92,252,0.15); color: var(--accent-coding); }
+  .card-rank.embody { background: rgba(0,201,167,0.15); color: var(--accent-embody); }
+  
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text);
+  }
+  
+  .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--tag-bg);
+    color: var(--text-secondary);
+  }
+  .tag.coding { background: rgba(124,92,252,0.1); color: var(--accent-coding); }
+  .tag.embody { background: rgba(0,201,167,0.1); color: var(--accent-embody); }
+  .tag.hot { background: rgba(255,107,107,0.1); color: var(--accent-hot); }
+  
+  .card-body { font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
+  .card-body strong { color: var(--text); }
+  
+  .why { 
+    margin-top: 14px; 
+    padding: 14px 16px;
+    background: var(--divider);
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .why::before {
+    content: "💡 为什么值得关注";
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a0a4c0;
+    margin-bottom: 6px;
+  }
+  
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--divider);
+    text-align: center;
+    font-size: 12px;
+    color: #4a4d62;
+  }
+  
+  .stats-bar {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 24px 0;
+  }
+  .stat-item {
+    text-align: center;
+    padding: 12px 24px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .stat-value { font-size: 22px; font-weight: 700; }
+  .stat-label { font-size: 11px; color: var(--text-secondary); margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <div class="date">Sunday · May 24, 2026</div>
+  <h1>每日 AI 动态精选</h1>
+  <div class="subtitle">聚焦 AI Coding 与具身智能 · 5条核心资讯</div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-value" style="color:var(--accent-coding)">3</div>
+    <div class="stat-label">AI Coding</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-value" style="color:var(--accent-embody)">2</div>
+    <div class="stat-label">具身智能</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-value" style="color:var(--accent-hot)">🔥</div>
+    <div class="stat-label">重点关注</div>
+  </div>
+</div>
+
+<!-- ===== AI CODING ===== -->
+<div class="section-label coding">AI Coding 方向</div>
+
+<!-- 卡片 1 -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-rank hot">1</div>
+    <div class="card-title">DeepSeek V4-Pro 永久降价至 1/4 + 700 亿融资 + 崔添翼挂帅代码团队</div>
+  </div>
+  <div class="tags">
+    <span class="tag hot">今日必读</span>
+    <span class="tag coding">AI Coding</span>
+    <span class="tag">国产模型</span>
+    <span class="tag">价格战</span>
+  </div>
+  <div class="card-body">
+    DeepSeek 5月22日宣布旗舰模型 <strong>V4-Pro 输出价格永久降至 6 元/百万 Token</strong>（原价 1/4），缓存输入仅 0.025 元，全球大模型价格新低点。同步曝出融资目标达 <strong>700 亿元人民币</strong>，梁文锋承诺优先投入 AGI 研究。前 Jane Street 研究员、<strong>6 次 ACM-ICPC 金牌得主崔添翼</strong>加入，出任新组建的代码智能体团队 <strong>Harness</strong> 负责人，<strong>DeepSeek Code</strong> 专属编程模型呼之欲出。
+  </div>
+  <div class="why">
+    DeepSeek 以"地板价" + 顶尖人才 + 巨额融资三管齐下，直接指向 AI Coding 赛道。崔添翼在算法竞赛和量化交易领域的双重背景，加上 DeepSeek Code 专有模型，可能重塑编程工具的成本结构——对手是 Anthropic 的 $15/百万 Token。
+  </div>
+</div>
+
+<!-- 卡片 2 -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-rank coding">2</div>
+    <div class="card-title">Anthropic 估值突破 1 万亿美元，ARR 暴增至 450 亿，Karpathy 加入预训练团队</div>
+  </div>
+  <div class="tags">
+    <span class="tag coding">AI Coding</span>
+    <span class="tag">行业格局</span>
+    <span class="tag">人才争夺</span>
+  </div>
+  <div class="card-body">
+    Anthropic ARR 从 90 亿暴增至 <strong>450 亿美元</strong>，估值达 <strong>1 万亿美元</strong>，正式反超 OpenAI。核心驱动力是 <strong>Claude Code 在开发者群体中的深度渗透</strong>，Coding 战略被公认为爆发的引擎。与此同时，<strong>Andrej Karpathy</strong>（OpenAI 联创、前特斯拉 AI 总监）宣布加入 Anthropic 预训练团队，组建子团队加速大模型预训练研究。此外，Alex Albert 披露下一代 Claude 采用<strong>自迭代闭环训练</strong>，专人研究模型性格与意识问题。
+  </div>
+  <div class="why">
+    Coding 战略商业化验证 —— 不是"可能赚钱"，而是已经撑起万亿美元估值。Karpathy 的加入标志着人才流向的重大转变。下一代 Claude 的"自迭代"训练方式如果成功，可能进一步拉大与竞争对手的差距。
+  </div>
+</div>
+
+<!-- 卡片 3 -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-rank coding">3</div>
+    <div class="card-title">Cursor Composer 2.5 发布：SWE-Bench 79.8%，1/10 成本追平 Claude Opus 4.7</div>
+  </div>
+  <div class="tags">
+    <span class="tag coding">AI Coding</span>
+    <span class="tag">编程工具</span>
+    <span class="tag">性能对标</span>
+  </div>
+  <div class="card-body">
+    Cursor 发布自研编程模型 <strong>Composer 2.5</strong>，基于 Kimi K2.5 架构，通过 25 倍合成训练数据优化长周期任务执行与复杂指令遵循。SWE-Bench 多语言得分 <strong>79.8%</strong>，与 Claude Opus 4.7 持平，但 API 价格仅为对手的 <strong>约 1/10</strong>（$0.50/$2.50 per million tokens）。模型已向所有 Cursor 用户开放。
+  </div>
+  <div class="why">
+    编程工具市场"性价比战争"白热化。Cursor 用开源底座 + 后训练策略证明了不必自研基座也能达到顶尖水平，这对整个 AI Coding 工具生态的商业模式和成本结构有深远影响——开发者的选择将进一步向"谁更便宜"倾斜。
+  </div>
+</div>
+
+<!-- ===== 具身智能 ===== -->
+<div class="section-label embody">具身智能方向</div>
+
+<!-- 卡片 4 -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-rank embody">4</div>
+    <div class="card-title">WAM 范式正式挑战 VLA：英伟达 Jim Fan 宣告"VLA 已死"，复旦发布首篇世界动作模型综述</div>
+  </div>
+  <div class="tags">
+    <span class="tag embody">具身智能</span>
+    <span class="tag">技术路线</span>
+    <span class="tag hot">范式之争</span>
+    <span class="tag">CVPR 2026</span>
+  </div>
+  <div class="card-body">
+    英伟达机器人负责人 <strong>Jim Fan</strong> 在红杉 AI Ascent 大会上宣告<strong>"VLA（视觉-语言-动作）已死，WAM（世界动作模型）当立"</strong>，引发具身智能领域路线之争。核心理念：WAM 通过<strong>联合预测未来状态与生成动作</strong>，解决 VLA 在复杂物理交互中的不足。同日，复旦大学发布<strong>首篇 WAM 综述论文</strong>；西湖大学在 CVPR 2026 发表 <strong>HiF-VLA</strong>（以运动为中心的世界动作模型），长程任务成功率超越现有 SOTA，代码已开源。
+  </div>
+  <div class="why">
+    这不是一次小迭代，而是具身智能技术路线的<strong>根本性转向</strong>。过去三年 VLA 是主流范式，大量创业公司和研究团队基于 VLA 构建系统。如果 WAM 路线获得共识，将引发一轮"技术栈重写"——早期押注者可能获得巨大先发优势，而坚守 VLA 的团队可能面临过时风险。
+  </div>
+</div>
+
+<!-- 卡片 5 -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-rank embody">5</div>
+    <div class="card-title">极佳视界发布全球首个物理 AGI「双金字塔」体系，人形机器人拾光 S1 百台家庭部署</div>
+  </div>
+  <div class="tags">
+    <span class="tag embody">具身智能</span>
+    <span class="tag">商业化</span>
+    <span class="tag">量产落地</span>
+  </div>
+  <div class="card-body">
+    极佳视界（GigaAI）发布全球首个物理 AGI <strong>「双金字塔」体系</strong>，从数据层和算法层双线支撑具身智能 Scaling Law。同步推出首款人形机器人 <strong>拾光 S1</strong>，已在<strong>武汉完成百台家庭部署</strong>，Q3 起规模化商业运营。公司计划未来 12 个月<strong>连续发布三代基础模型</strong>，加速迭代。
+  </div>
+  <div class="why">
+    具身智能从"论文和Demo"走向"家庭实际部署"的关键信号。百台规模的家庭部署意味着产品成熟度已达可商用水平，而不是实验室样品。12 个月三代基础模型的激进路线，也说明底层技术迭代在加速——这对整个行业的落地节奏有标杆意义。
+  </div>
+</div>
+
+<div class="footer">
+  每日 AI 动态 · 自动推送 · 2026年5月24日 · 信息来源：AITNT、量子位、36氪、新浪科技等
+</div>
+
+</div>
+</body>
+</html>

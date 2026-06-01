@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI动态 · 2026年5月29日</title>
+<style>
+  :root {
+    --bg: #0f0f1a; --card-bg: #1a1a2e; --card-hover: #222240;
+    --accent: #6c63ff; --accent2: #ff6b6b; --text: #e8e8f0;
+    --muted: #8888aa; --border: #2a2a45; --green: #00d4aa; --orange: #ffa940;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text); line-height:1.7; padding:24px; max-width:900px; margin:0 auto; }
+  h1 { font-size:28px; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:4px; }
+  .meta { color:var(--muted); font-size:14px; margin-bottom:32px; }
+  .tag-row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px; }
+  .tag { background:rgba(108,99,255,.15); color:var(--accent); padding:4px 14px; border-radius:20px; font-size:13px; border:1px solid rgba(108,99,255,.25); }
+  .card { background:var(--card-bg); border:1px solid var(--border); border-radius:16px; padding:28px; margin-bottom:20px; transition:all .25s ease; position:relative; overflow:hidden; }
+  .card:hover { background:var(--card-hover); transform:translateY(-2px); box-shadow:0 12px 40px rgba(108,99,255,.1); }
+  .card::before { content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:linear-gradient(180deg,var(--accent),var(--accent2)); border-radius:16px 0 0 16px; }
+  .card-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+  .card-num { display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,var(--accent),#8b5cf6); color:#fff; font-weight:700; font-size:16px; flex-shrink:0; }
+  .card-tags { display:flex; gap:8px; flex-wrap:wrap; }
+  .card-tag { font-size:12px; padding:2px 10px; border-radius:12px; }
+  .tag-coding { background:rgba(0,212,170,.12); color:var(--green); }
+  .tag-embodied { background:rgba(255,169,64,.12); color:var(--orange); }
+  .tag-industry { background:rgba(108,99,255,.12); color:var(--accent); }
+  .card-title { font-size:19px; font-weight:700; margin-bottom:10px; line-height:1.4; }
+  .card-desc { font-size:15px; color:#c0c0d8; margin-bottom:14px; }
+  .why-box { background:rgba(108,99,255,.06); border-left:3px solid var(--accent); padding:14px 18px; border-radius:0 10px 10px 0; font-size:14px; }
+  .why-label { font-weight:700; color:var(--accent); font-size:13px; margin-bottom:4px; }
+  .why-text { color:#b0b0cc; }
+  .source { text-align:right; font-size:12px; color:var(--muted); margin-top:12px; }
+  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:36px; padding-top:20px; border-top:1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<h1>🤖 每日 AI 动态速递</h1>
+<p class="meta">2026年5月29日（星期五） · 侧重 AI Coding × 具身智能 · 共筛选 <strong>5</strong> 条</p>
+
+<div class="tag-row">
+  <span class="tag">🔥 Claude Code 自愈功能</span>
+  <span class="tag">🤖 星尘 T1 8.99 万起</span>
+  <span class="tag">💰 Cognition 融资 10 亿美金</span>
+  <span class="tag">📊 DeepSWE 新基准颠覆排名</span>
+  <span class="tag">🏭 Mistral × 空客/宝马 具身 AI</span>
+</div>
+
+<!-- ====== 1 ====== -->
+<div class="card">
+  <div class="card-header">
+    <span class="card-num">1</span>
+    <div class="card-tags"><span class="card-tag tag-coding">AI Coding</span><span class="card-tag tag-industry">产品更新</span></div>
+  </div>
+  <div class="card-title">Claude Code 首发「自愈」功能，一锤砸碎开发者六大噩梦</div>
+  <div class="card-desc">Anthropic 发布 Claude Code 重大更新，新增自愈（Self-Healing）能力——当 Agent 遇到报错、渲染失败、MCP 连接断开等异常时无需人工介入即可自动修复和恢复。同时优化流式输出、上下文管理、错误提示等六大长期痛点。创始人 Boris Cherny 还分享了「全自动修 Bug 配套方案」（CLAUDE.md + 钩子 + 自动重试 + 跨会话记忆）。</div>
+  <div class="why-box">
+    <div class="why-label">🔑 值得关注的原因</div>
+    <div class="why-text">自愈能力是 AI 编程 Agent 从"能用"到"可靠生产级可用"的关键跨越。此前 Agent 中途崩溃需人工重启是最大痛点之一，此次更新大幅降低运维成本，推动 AI Coding 向无人值守方向迈进。</div>
+  </div>
+  <div class="source">来源：AITNT / Anthropic 官方</div>
+</div>
+
+<!-- ====== 2 ====== -->
+<div class="card">
+  <div class="card-header">
+    <span class="card-num">2</span>
+    <div class="card-tags"><span class="card-tag tag-embodied">具身智能</span><span class="card-tag tag-industry">商业化突破</span></div>
+  </div>
+  <div class="card-title">星尘智能发布人形机器人 T1：售价 8.99 万元起，中国版 Figure 价格打穿地板</div>
+  <div class="card-desc">星尘智能正式发布人形机器人 T1，起售价仅 8.99 万元人民币，6 月 1 日即发货。采用自研三位一体架构（感知-决策-执行），覆盖制造、物流、服务等五大应用场景，预计今年产能达上万台，目前已手握数千台订单。这是目前全球最低价量产人形机器人之一。</div>
+  <div class="why-box">
+    <div class="why-label">🔑 值得关注的原因</div>
+    <div class="why-text">价格是具身智能规模化落地的核心变量。<strong>8.99 万元</strong>意味着人形机器人进入中小企业可承受区间，叠加宇树科技 6 月 1 日科创板 IPO 上会，中国具身智能赛道正经历「量产→降价→规模化」的正向飞轮加速期。</div>
+  </div>
+  <div class="source">来源：AITNT / 星尘智能官方</div>
+</div>
+
+<!-- ====== 3 ====== -->
+<div class="card">
+  <div class="card-header">
+    <span class="card-num">3</span>
+    <div class="card-tags"><span class="card-tag tag-coding">AI Coding</span><span class="card-tag tag-industry">资本动态</span></div>
+  </div>
+  <div class="card-title">Devin 母公司 Cognition AI 完成 超 10 亿美元融资，估值达 260 亿美元</div>
+  <div class="card-desc">AI 编程工具 Devin 的母公司 Cognition AI 完成新一轮超 10 亿美元融资，估值飙升至约 260 亿美元（约合人民币 1500 亿元）。公司年化收入一年增长 13 倍，超 90% 的自身代码由 Devin 自主编写完成，已获得多家头部企业及机构采用。这使 Cognition 成为全球估值最高的 AI 编程初创公司之一。</div>
+  <div class="why-box">
+    <div class="why-label">🔑 值得关注的原因</div>
+    <div class="why-text">260 亿美元估值 + 13 倍收入增长 = <strong>资本市场对 AI 编程赛道的强烈信心投票</strong>。结合昨日 Cursor Composer 2.5 SWE-Bench 79.8% 和今日 Claude Code 自愈功能，AI 编程工具正在从"演示玩具"快速进化为"企业基础设施"，赛道竞争进入白热化阶段。</div>
+  </div>
+  <div class="source">来源：AITNT / 多家财经媒体</div>
+</div>
+
+<!-- ====== 4 ====== -->
+<div class="card">
+  <div class="card-header">
+    <span class="card-num">4</span>
+    <div class="card-tags"><span class="card-tag tag-coding">AI Coding</span><span class="card-tag tag-industry">基准测试</span></div>
+  </div>
+  <div class="card-title">DeepSWE 新评测基准上线：GPT-5.5 反杀登顶，Claude Opus 4.7 跌至第三</div>
+  <div class="card-desc">Datacurve 推出全新 AI 编码评测基准 DeepSWE，包含 113 道原创零污染题目，验证误差远低于旧基准 SWE-Bench Pro。新榜单中 GPT-5.5 以 70%±4% 通过率登顶第一，原霸主 Claude Opus 4.7 跌落至第三位，原有排名被彻底逆转。这引发社区对"旧榜刷分 vs 真实编码能力"的激烈讨论。</div>
+  <div class="why-box">
+    <div class="why-label">🔑 值得关注的原因</div>
+    <div class="why-text">SWE-Bench 系列的可信度近期屡遭质疑（Weco AI 作弊研究、METR 报告等），DeepSWE 用<strong>零污染原创题目</strong>重新洗牌。对选型决策者而言：旧的 benchmark 排名已不能直接参考，需关注多维度评测体系。这也呼应了昨日 UniPat SaaS-Bench 揭露的"AI Agent 全自动办公幻想破灭"趋势。</div>
+  </div>
+  <div class="source">来源：AITNT / Datacurve</div>
+</div>
+
+<!-- ====== 5 ====== -->
+<div class="card">
+  <div class="card-header">
+    <span class="card-num">5</span>
+    <div class="card-tags"><span class="card-tag tag-embodied">具身智能</span><span class="card-tag tag-industry">产业合作</span></div>
+  </div>
+  <div class="card-title">Mistral AI 拟自研芯片 + 携手空客/宝马发力实体 AI，欧洲具身智能路线浮出水面</div>
+  <div class="card-desc">法国 AI 独角兽 Mistral AI 双线出击：<strong>①</strong> CEO Arthur Mensch 首次公开表示正探索自主设计 AI 芯片，同步在法国新建推理数据中心；<strong>②</strong> 与航空航天巨头空客、汽车制造商宝马建立深度技术合作，将生成式 AI 渗透到工业设计、生产全链条，开启高端制造智能化新篇章。此外，国产<strong>具身大模型 Wall-OSS-0.5 重磅开源</strong>，预训练即可实现零样本部署。</div>
+  <div class="why-box">
+    <div class="why-label">🔑 值得关注的原因</div>
+    <div class="why-text">Mistral 代表的<strong>欧洲路线</strong>与中美形成差异化竞争——不卷纯语言模型，而是聚焦<strong>垂直行业具身智能化</strong>（航空+汽车）。配合 Wall-OSS-0.5 开源降低门槛，全球具身智能正呈现"美国通用模型 + 中国量产落地 + 欧洲高端制造"的三极格局。天津世界智博会今日开幕，具身智能首次独立成馆也印证了这一趋势。</div>
+  </div>
+  <div class="source">来源：新浪财经 / MSN / AIBase / IT之家</div>
+</div>
+
+<footer>
+  <p>⚡ 数据来源：AITNT、新浪科技、IT之家、AIBase 等 | 自动化推送任务生成</p>
+  <p style="margin-top:6px;">关注方向：AI Coding · 具身智能 · 大模型产业动态</p>
+</footer>
+
+</body>
+</html>

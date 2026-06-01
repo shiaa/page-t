@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 日报存档</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0; pointer-events: none;
+  }
+  .container { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+  .header { text-align: center; margin-bottom: 48px; }
+  .header h1 {
+    font-size: 2.2rem; font-weight: 800;
+    background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header p { color: #94a3b8; margin-top: 8px; font-size: 0.95rem; }
+  .news-list { display: flex; flex-direction: column; gap: 12px; }
+  .news-card {
+    display: flex; align-items: center; gap: 20px;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(99,102,241,0.15);
+    border-radius: 12px; padding: 20px 24px;
+    text-decoration: none; color: inherit;
+    transition: all 0.25s ease;
+    backdrop-filter: blur(10px);
+  }
+  .news-card:hover {
+    background: rgba(51, 65, 85, 0.7);
+    border-color: rgba(129,140,248,0.4);
+    transform: translateX(6px);
+    box-shadow: 0 4px 24px rgba(99,102,241,0.15);
+  }
+  .date-badge {
+    flex-shrink: 0;
+    width: 72px; height: 72px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    border-radius: 12px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-weight: 700;
+  }
+  .date-badge .month { font-size: 0.75rem; opacity: 0.85; }
+  .date-badge .day { font-size: 1.6rem; line-height: 1; }
+  .date-badge .weekday { font-size: 0.7rem; opacity: 0.8; margin-top: 2px; }
+  .card-info { flex: 1; min-width: 0; }
+  .card-info .title { font-size: 1.05rem; font-weight: 600; color: #e2e8f0; }
+  .card-info .subtitle { font-size: 0.85rem; color: #64748b; margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .arrow { color: #6366f1; font-size: 1.3rem; flex-shrink: 0; opacity: 0.5; transition: opacity 0.2s; }
+  .news-card:hover .arrow { opacity: 1; }
+  .footer { text-align: center; margin-top: 48px; color: #475569; font-size: 0.8rem; }
+  .footer a { color: #6366f1; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+  <div class="header">
+    <h1>AI 每日动态 · 日报存档</h1>
+    <p>自动化定时任务采集生成 &nbsp;|&nbsp; 共 8 期</p>
+  </div>
+  <div class="news-list">
+    <a class="news-card" href="ai-news-2026-06-01.html">
+      <div class="date-badge"><span class="month">6月</span><span class="day">01</span><span class="weekday">周一</span></div>
+      <div class="card-info">
+        <div class="title">2026年6月1日 · AI 每日动态</div>
+        <div class="subtitle">GPT-5.6 泄露 · 宇树科技 IPO · COMPUTEX 2026</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="news-card" href="ai-news-2026-05-31.html">
+      <div class="date-badge"><span class="month">5月</span><span class="day">31</span><span class="weekday">周日</span></div>
+      <div class="card-info">
+        <div class="title">2026年5月31日 · AI 每日动态</div>
+        <div class="subtitle">腾讯「代号 Craft」· GPT-5.5 Arena · 阿里灵犀 Agent</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="news-card" href="ai-news-2026-05-29.html">
+      <div class="date-badge"><span class="month">5月</span><span class="day">29</span><span class="weekday">周五</span></div>
+      <div class="card-info">
+        <div class="title">2026年5月29日 · AI 每日动态</div>
+        <div class="subtitle">AI 编程免费时代终结 · Claude Code 涨价</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="news-card" href="ai-news-2026-05-28.html">
+      <div class="date-badge"><span class="month">5月</span><span class="day">28</span><span class="weekday">周四</span></div>
+      <div class="card-info">
+        <div class="title">2026年5月28日 · AI 每日动态</div>
+        <div class="subtitle">Claude Sonnet 4.8 · Gemini 3.5 Pro · 具身智能进展</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="news-card" href="ai-news-2026-05-27.html">
+      <div class="date-badge"><span class="month">5月</span><span class="day">27</span><span class="weekday">周三</span></div>
+      <div class="card-info">
+        <div class="title">2026年5月27日 · AI 每日动态</div>
+        <div class="subtitle">具身智能世界模型 τ0-WM · 阿里 Qoder Cloud Agents</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="news-card" href="ai-news-2026-05-26.html">
+      <div class="date-badge"><span class="month">5月</span><span class="day">26</span><span class="weekday">周二</span></div>
+      <div class="card-info">
+        <div class="title">2026年5月26日 · AI 每日动态</div>
+        <div class="subtitle">AI Coding 工具对比 · NVIDIA vGPU 28.0</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="news-card" href="ai-news-2026-05-25.html">
+      <div class="date-badge"><span class="month">5月</span><span class="day">25</span><span class="weekday">周一</span></div>
+      <div class="card-info">
+        <div class="title">2026年5月25日 · AI 每日动态</div>
+        <div class="subtitle">多模态模型进展 · RAG 技术优化</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a class="news-card" href="ai-news-2026-05-24.html">
+      <div class="date-badge"><span class="month">5月</span><span class="day">24</span><span class="weekday">周日</span></div>
+      <div class="card-info">
+        <div class="title">2026年5月24日 · AI 每日动态</div>
+        <div class="subtitle">开源 LLM 动态 · K8s AI 工作负载</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+  <div class="footer">
+    由 Antigravity 自动化运维机器人定时采集 &nbsp;|&nbsp;
+    <a href="/">返回博客首页</a>
+  </div>
+</div>
+</body>
+</html>

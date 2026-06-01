@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 · 2026年5月31日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #0a0e1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 24px 16px 60px;
+  }
+  .container { max-width: 780px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 32px 20px 28px;
+    background: linear-gradient(135deg, #0f1628 0%, #1a1040 50%, #0f1628 100%);
+    border: 1px solid #2d1b69;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-date {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8b5cf6;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .header-title {
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #a78bfa, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+  }
+  .header-sub {
+    font-size: 13px;
+    color: #94a3b8;
+    line-height: 1.6;
+  }
+
+  /* Section */
+  .section { margin-bottom: 28px; }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  .section-coding .section-title { background: #1e1b4b; color: #a78bfa; border: 1px solid #4338ca; }
+  .section-embodied .section-title { background: #14532d; color: #4ade80; border: 1px solid #16a34a; }
+  .section-industry .section-title { background: #1c1917; color: #fbbf24; border: 1px solid #d97706; }
+
+  /* Card */
+  .card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 14px;
+    transition: border-color 0.2s;
+    position: relative;
+  }
+  .card:hover { border-color: #374151; }
+  .card-num {
+    position: absolute;
+    top: 16px; right: 18px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #1e293b;
+    line-height: 1;
+  }
+  .card-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .tag-hot { background: #7f1d1d; color: #f87171; }
+  .tag-new { background: #1e1b4b; color: #a78bfa; }
+  .tag-capital { background: #1c1917; color: #fbbf24; }
+  .tag-tech { background: #0c4a6e; color: #38bdf8; }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f1f5f9;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
+  .card-body {
+    font-size: 13.5px;
+    color: #94a3b8;
+    line-height: 1.75;
+    margin-bottom: 14px;
+  }
+  .card-why {
+    background: #0f172a;
+    border-left: 3px solid #8b5cf6;
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    color: #c4b5fd;
+    line-height: 1.7;
+  }
+  .card-why strong { color: #a78bfa; }
+
+  /* Divider */
+  .divider {
+    text-align: center;
+    margin: 32px 0 24px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #334155;
+    position: relative;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: #1e293b;
+  }
+  .divider::before { left: 0; }
+  .divider::after { right: 0; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #1e293b;
+    font-size: 11px;
+    color: #475569;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-date">AI Daily Briefing · 2026.05.31</div>
+    <div class="header-title">AI 领域每日动态</div>
+    <div class="header-sub">重点关注 AI Coding & 具身智能 · 精选 5 条</div>
+  </div>
+
+  <!-- AI Coding -->
+  <div class="section section-coding">
+    <div class="section-title">💻 AI Coding</div>
+
+    <div class="card">
+      <div class="card-num">01</div>
+      <div class="card-tag tag-new">NEW PRODUCT</div>
+      <div class="card-title">腾讯发布 AI 游戏创作平台「代号 Craft」——自然语言直接生成可玩游戏</div>
+      <div class="card-body">
+        5月27日 SPARK 2026 腾讯游戏发布会上，腾讯生态发展部正式推出 AI 游戏创作平台「代号 Craft」。用户只需输入自然语言指令，AI 即可自动搭建 2D / 3D 游戏雏形，内置完整 AIGC 工具链，并免费开放超 2 万种预制美术资产。平台近期将开启官方首测。
+      </div>
+      <div class="card-why">
+        <strong>值得关注：</strong>这是大厂将 AI Coding 能力下沉到「零代码游戏创作」场景的重要信号。从"写代码"到"直接生成可运行产品"，AI 编程工具的边界正在快速扩展。对独立开发者和游戏创作者来说，创作门槛被大幅降低，值得跟踪其后续开放节奏。
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">02</div>
+      <div class="card-tag tag-hot">HOT</div>
+      <div class="card-title">Claude Opus 4.8 登顶多基准，沃顿商学院教授用它独立开发「人类投胎模拟器」</div>
+      <div class="card-body">
+        Claude Opus 4.8 在多项 AI 基准测试中登顶榜首。沃顿商学院教授 Ethan Mollick 利用 Opus 4.8 独立开发了「The Veil of History」投胎模拟器，计算出人类有史以来共出生约 1170 亿人，81% 出生在 1650 年之前。该案例展示了顶级模型在复杂逻辑 + 创造性项目中的实战能力。
+      </div>
+      <div class="card-why">
+        <strong>值得关注：</strong>Opus 4.8 的 Dynamic Workflows 多 Agent 并行能力正在改变"单人开发复杂系统"的可能性边界。从一个想法到可交互网站，全程无需手写代码——这是 AI Coding 工具从「辅助」走向「主导」的关键节点。
+      </div>
+    </div>
+  </div>
+
+  <div class="divider">· · ·</div>
+
+  <!-- 具身智能 -->
+  <div class="section section-embodied">
+    <div class="section-title">🤖 具身智能</div>
+
+    <div class="card">
+      <div class="card-num">03</div>
+      <div class="card-tag tag-capital">IPO WATCH</div>
+      <div class="card-title">宇树科技明日（6月1日）科创板 IPO 上会——A 股「人形机器人第一股」即将诞生</div>
+      <div class="card-body">
+        上交所上市审核委员会定于 6月1日审议宇树科技首发事项。宇树科技 2025 年营收约 17 亿元（同比 +333%），扣非净利润约 6 亿元（+653%），毛利率 60.13%，是全球出货量最大的人形机器人公司。招股书披露四足机器人累计销量已超 3 万台，拟募资 42.02 亿元。市场主流判断过会概率 70%-80%。
+      </div>
+      <div class="card-why">
+        <strong>值得关注：</strong>这是具身智能从「Demo 时代」进入「资本市场定价时代」的里程碑事件。宇树作为国内少有的已盈利人形机器人公司，其 IPO 定价和募资用途将成为整个行业参考的估值锚点。无论过会与否，都是本周最值得盯的节点。
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">04</div>
+      <div class="card-tag tag-tech">RESEARCH</div>
+      <div class="card-title">英伟达 × 清华发布 γ-World（Gamma-World）——多智能体世界模型重大突破</div>
+      <div class="card-body">
+        英伟达联合清华大学、多伦多大学、Vector Institute 发布 Gamma-World（γ-World），解决了现有视频世界模型只能处理单智能体场景的核心瓶颈。其计算成本从平方级增长降为线性增长，可零样本泛化到四人场景，目前已在 HuggingFace 日榜登顶。该技术对具身智能的多 Agent 协作仿真具有范式级意义。
+      </div>
+      <div class="card-why">
+        <strong>值得关注：</strong>具身智能走向真实世界，必须解决「多智能体同时交互」的世界模型预测问题。γ-World 是这个方向的重要突破，直接影响机器人协作、人机共融等场景的仿真训练效率。对做具身世界模型的团队来说，这是本周必读论文。
+      </div>
+    </div>
+  </div>
+
+  <div class="divider">· · ·</div>
+
+  <!-- 行业动态 -->
+  <div class="section section-industry">
+    <div class="section-title">📊 行业动态</div>
+
+    <div class="card">
+      <div class="card-num">05</div>
+      <div class="card-tag tag-capital">FUNDING</div>
+      <div class="card-title">MiniMax 启动 A 股上市辅导，新模型 M3 即将发布——大模型厂商资本化加速</div>
+      <div class="card-body">
+        上海 AI 大模型龙头 MiniMax 于 5月29日向上海证监局提交上市辅导备案，正式启动 A 股上市进程，中信证券任辅导机构。过去两月 ARR 增长超 100%，全球客户超百万，用户约 3 亿。新一代模型 M3 即将发布，机构关注度极高。
+      </div>
+      <div class="card-why">
+        <strong>值得关注：</strong>DeepSeek、MiniMax、宇树……2026 年 AI 厂商集体冲刺 IPO，标志着行业从「烧钱换增长」进入「财报驱动」时代。MiniMax 的上市进程和 M3 模型表现，将直接影响国内大模型估值体系和融资节奏。
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>📅 2026年5月31日 · AI 每日动态推送</div>
+    <div style="margin-top:6px;">聚焦 AI Coding & 具身智能 · 由 WorkBuddy 自动生成</div>
+    <div style="margin-top:6px; color:#1e293b;">— · —</div>
+  </div>
+
+</div>
+</body>
+</html>

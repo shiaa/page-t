@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日 AI 动态 · 2026年5月27日</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card-bg: #1a1d28;
+    --border: #2a2d3a;
+    --text: #e4e6ef;
+    --text-secondary: #8b8fa8;
+    --accent-coding: #7c5cfc;
+    --accent-embody: #00c9a7;
+    --accent-hot: #ff6b6b;
+    --tag-bg: #232636;
+    --divider: #1e2030;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+
+  .header {
+    text-align: center;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--divider);
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--accent-coding), var(--accent-embody));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header .date { color: var(--text-secondary); font-size: 14px; margin-top: 8px; }
+  .header .focus { display: inline-flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; justify-content: center; }
+  .header .tag {
+    background: var(--tag-bg);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .header .tag.coding { color: var(--accent-coding); border-color: rgba(124,92,252,0.3); }
+  .header .tag.embody { color: var(--accent-embody); border-color: rgba(0,201,167,0.3); }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease;
+  }
+  .card:hover { border-color: rgba(124,92,252,0.3); }
+
+  .card-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
+  .card-num {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 700;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .num-1 { background: linear-gradient(135deg, #ff6b6b, #ee5a24); color: white; }
+  .num-2 { background: linear-gradient(135deg, #f79f1f, #f29900); color: white; }
+  .num-3 { background: linear-gradient(135deg, #7c5cfc, #a55eea); color: white; }
+  .num-4 { background: linear-gradient(135deg, #00c9a7, #00d2d3); color: white; }
+  .num-5 { background: linear-gradient(135deg, #54a0ff, #2e86de); color: white; }
+
+  .card-title-area { flex: 1; }
+  .card-title { font-size: 17px; font-weight: 600; line-height: 1.45; }
+  .card-tags { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11px; padding: 3px 10px; border-radius: 10px;
+    font-weight: 500; letter-spacing: 0.3px;
+  }
+  .badge-coding { background: rgba(124,92,252,0.15); color: var(--accent-coding); }
+  .badge-embody { background: rgba(0,201,167,0.15); color: var(--accent-embody); }
+  .badge-hot { background: rgba(255,107,107,0.15); color: var(--accent-hot); }
+
+  .card-body { color: var(--text-secondary); font-size: 14px; line-height: 1.75; }
+  .card-body p { margin-bottom: 10px; }
+  .card-body strong { color: var(--text); }
+
+  .why-box {
+    margin-top: 16px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.02);
+    border-left: 3px solid var(--accent-coding);
+    border-radius: 0 12px 12px 0;
+  }
+  .why-box.embody-border { border-left-color: var(--accent-embody); }
+  .why-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; opacity: 0.7; letter-spacing: 0.5px; }
+  .why-text { font-size: 13.5px; line-height: 1.65; color: var(--text-secondary); }
+
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .data-item {
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    padding: 12px 14px;
+    text-align: center;
+  }
+  .data-val { font-size: 19px; font-weight: 700; }
+  .data-val.purple { color: var(--accent-coding); }
+  .data-val.green { color: var(--accent-embody); }
+  .data-val.red { color: var(--accent-hot); }
+  .data-label { font-size: 11px; color: var(--text-secondary); margin-top: 4px; }
+
+  .footer {
+    text-align: center;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--divider);
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 20px 14px; }
+    .card { padding: 18px 18px; }
+    .card-title { font-size: 15.5px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>📡 每日 AI 动态</h1>
+    <div class="date">2026年5月27日 · 周三</div>
+    <div class="focus">
+      <span class="tag coding">AI Coding</span>
+      <span class="tag embody">具身智能</span>
+      <span class="tag">大模型</span>
+      <span class="tag">产业动态</span>
+    </div>
+  </div>
+
+  <!-- ===== 1 ===== -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-num num-1">1</div>
+      <div class="card-title-area">
+        <div class="card-title">上海发布「格物」具身 AI 仿真平台，同步推动 ISO 人形机器人国际标准</div>
+        <div class="card-tags">
+          <span class="badge badge-embody">具身智能</span>
+          <span class="badge badge-hot">今日重磅</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><strong>国家地方共建人形机器人创新中心（上海）</strong>于今日正式推出名为<strong>「格物（Ge Wu）」</strong>的具身人工智能仿真平台。该平台整合先进强化学习框架与多模态运动控制技术，核心突破在于支持<strong>单个代码库训练超过 100 种不同类型机器人</strong>，无需额外编程适配。</p>
+      <div class="data-grid">
+        <div class="data-item"><div class="data-val green">100+</div><div class="data-label">单代码库支持机型数</div></div>
+        <div class="data-item"><div class="data-val green">ISO/TC299</div><div class="data-label">国际标准推进委员会</div></div>
+        <div class="data-item"><div class="data-val green">750亿</div><div class="data-label">2029年中国市场规模预测（元）</div></div>
+      </div>
+      <p>同期，上海经信委公开推动在 <strong>ISO/TC299 国际机器人技术委员会</strong>下设立人形机器人专属分技术委员会，抢占国际标准化话语权。</p>
+      <div class="why-box embody-border">
+        <div class="why-title">✦ 为什么值得关注</div>
+        <div class="why-text">这是中国具身智能从「实验室原型」走向「规模化基础设施」的关键里程碑。「格物」平台的通用适配能力大幅降低机器人开发门槛，而 ISO 标准布局则意味着中国正试图在全球人形机器人产业链中定义规则——类比当年中国在 5G 标准上的卡位策略。对从业者而言，这意味着统一的仿真训练标准和数据格式即将到来，生态化开发时代开启。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 2 ===== -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-num num-2">2</div>
+      <div class="card-title-area">
+        <div class="card-title">Grok V9-Medium（1.5T 参数）训练完成：大量引入 Cursor 编程数据强化编码能力</div>
+        <div class="card-tags">
+          <span class="badge badge-coding">AI Coding</span>
+          <span class="badge badge-hot">热门</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>马斯克在 X 上官宣 xAI 基础模型 <strong>Grok V9-Medium</strong> 训练已完成，参数量达 <strong>1.5 万亿</strong>，预计 2~3 周后正式发布。最引人关注的是其训练数据中<strong>引入了大量 Cursor 编程交互记录</strong>，被业内称为「偷师 Cursor」式编程能力强化。</p>
+      <div class="data-grid">
+        <div class="data-item"><div class="data-val purple">1.5T</div><div class="data-label">参数规模</div></div>
+        <div class="data-item"><div class="data-val purple">Cursor</div><div class="data-label">编程数据来源</div></div>
+        <div class="data-item"><div class="data-val purple">2~3周</div><div class="data-label">预计发布时间</div></div>
+      </div>
+      <p>此外，xAI 现役 v8-small 模型计划年底开源。此举意味着 Grok 正试图通过真实开发者编程行为数据，快速缩小与 Claude Code / Codex 在 AI 编程赛道的能力差距。</p>
+      <div class="why-box">
+        <div class="why-title">✦ 为什么值得关注</div>
+        <div class="why-text">这标志着 AI 编程赛道的「数据军备竞赛」进入新阶段。Cursor 的交互数据包含真实程序员写码、调试、重构的完整过程——这种「人类专家工作流数据」比普通代码仓库更有价值，因为它教会模型<strong>如何思考编程问题</strong>而非仅仅输出代码片段。对用户而言，未来可能迎来第三个真正能打的 AI 编程选择，打破当前 Anthropic + OpenAI 双头垄断格局。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 3 ===== -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-num num-3">3</div>
+      <div class="card-title-area">
+        <div class="card-title">南京大学 Solvita 框架：让大模型学会「复盘」，编程竞赛解题率接近翻倍</div>
+        <div class="card-tags">
+          <span class="badge badge-coding">AI Coding</span>
+          <span class="badge badge-coding">学术前沿</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>南京大学联合清华大学等机构提出 <strong>Solvita 智能体进化框架</strong>（arXiv:2605.15301v1），首创<strong>无需修改底层 LLM 权重即可实现持续学习</strong>的机制。框架设计四个协作智能体——策划者、求解者、神谕者、破解者，模拟人类竞赛选手的「出题→解题→验证→攻防→经验沉淀」完整循环。</p>
+      <div class="data-grid">
+        <div class="data-item"><div class="data-val purple">82.4%</div><div class="data-label">CodeContests 解题率 (GPT-5.4)</div></div>
+        <div class="data-item"><div class="data-val purple">+42.4%</div><div class="data-label">较基线提升幅度</div></div>
+        <div class="data-item"><div class="data-val purple">89%</div><div class="data-label">DeepSeek V4 Pro 解题率</div></div>
+      </div>
+      <p>在 15 个「模型×基准」测试组合中拿到 14 个第一，且 Token 消耗仅 15.1万/题，低于 Codex CLI 和 Claude Code。更关键的是该框架可跨模型迁移——Claude、Qwen、DeepSeek、Grok 均有显著提升。</p>
+      <div class="why-box">
+        <div class="why-title">✦ 为什么值得关注</div>
+        <div class="why-text">这项研究开辟了「不重训模型、仅靠外部经验系统实现持续进化」的全新路径，直接回应了大模型迭代成本高昂的核心痛点。Solvita 的补丁式修复和知识网络机制对工程实践极具参考价值——<strong>未来的 AI 编程工具很可能内置类似的经验积累层</strong>，让 Agent 越用越聪明，而不是每次都从零开始。这对降低企业部署 AI 编程的长期成本意义重大。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 4 ===== -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-num num-4">4</div>
+      <div class="card-title-area">
+        <div class="card-title">宇树科技 6 月 1 日科创板 IPO 上会，冲刺 A 股「人形机器人第一股」</div>
+        <div class="card-tags">
+          <span class="badge badge-embody">具身智能</span>
+          <span class="badge badge-hot">资本风向标</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>上交所公告确认：<strong>6 月 1 日</strong>上市审核委员会将审议宇树科技科创板首发事项。从 3 月 20 日提交申请到上会仅用 <strong>66 天</strong>，刷新科创板审核速度纪录。若顺利过会，宇树将成为 A 股市场首家专注于人形机器人的上市公司。</p>
+      <div class="data-grid">
+        <div class="data-item"><div class="data-val green">66天</div><div class="data-label">受理到上会天数</div></div>
+        <div class="data-item"><div class="data-val green">420亿</div><div class="data-label">预计初始发行市值（元）</div></div>
+        <div class="data-item"><div class="data-val green">50%+</div><div class="data-label">人形机器人业务营收占比</div></div>
+      </div>
+      <p>2025 年公司营收 16.99 亿元，人形机器人业务占比已超 50%，拟募资约 42 亿元。同日，<strong>乐聚智能创业板 IPO 状态变更为「已问询」</strong>（拟募资 26 亿元），<strong>睿触机器人递交港交所主板上市申请</strong>——机器人赛道资本化全面加速。</p>
+      <div class="why-box embody-border">
+        <div class="why-title">✦ 为什么值得关注</div>
+        <div class="why-text">宇树 IPO 是中国具身智能产业的「成人礼」时刻。三家机器人公司在同一周内推进上市进程（科创板+创业板+港交所），说明资本市场已经从观望转为真金白银押注。<strong>IPO 意味着行业将获得大规模资金用于产能扩张和技术研发</strong>，同时也标志着具身智能正式成为独立于传统工业机器人的全新投资赛道。对产品经理而言，这意味着人形机器人相关的软件生态、应用商店、API 平台等周边机会正在快速成型。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 5 ===== -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-num num-5">5</div>
+      <div class="card-title-area">
+        <div class="card-title">OpenClaw 开源框架引爆 AI 智能体革命，百度阿里腾讯字节密集入局「行动 AI」</div>
+        <div class="card-tags">
+          <span class="badge badge-coding">AI Coding</span>
+          <span class="badge badge-coding">Agent</span>
+          <span class="badge badge-hot">产业变革</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>新华网深度报道指出，一款名为 <strong>OpenClaw（龙虾）</strong>的开源 AI 代理框架已成为引爆点——它实现了 AI「能看屏幕、点鼠标、自动干活」的能力突破，引发国内科技巨头集体跟进：</p>
+      <p><strong>百度：</strong>李彦宏首倡以 <strong>DAA（日活智能体数）</strong>替代 DAU 衡量生态繁荣；<strong>阿里巴巴：</strong>通义千问智能体与淘宝闪购打通，覆盖全国 300 余个地级市，实现一句话端到端购物；<strong>月之暗面：</strong>Kimi 展示万亿参数 MoE 架构智能体基座，金融研报速读从 2-3 天压缩至 2-3 小时。</p>
+      <div class="data-grid">
+        <div class="data-item"><div class="data-val purple">DAA</div><div class="data-label">新指标：日活智能体数</div></div>
+        <div class="data-item"><div class="data-val purple">300+</div><div class="data-label">通义覆盖地级市数量</div></div>
+        <div class="data-item"><div class="data-val purple">6家</div><div class="data-label">巨头入局玩家数</div></div>
+      </div>
+      <p>国家网信办、发改委、工信部已于 5 月联合印发《实施意见》，明确将智能体定义为「具备自主感知、记忆、决策、交互与执行能力的智能系统」，竞争重心从「模型智力」彻底转向「执行力」。</p>
+      <div class="why-box">
+        <div class="why-title">✦ 为什么值得关注</div>
+        <div class="why-text">这是 2026 年 AI 行业最重要的结构性转变之一。<strong>AI 从「对话助手」升级为「行动代理」不是渐进优化，而是范式转移</strong>——用户买单的不再是模型有多聪明，而是能不能把事做完。OpenClaw 类似于当年 React 之于前端开发的角色：一个开源项目定义了新的开发模式，随后整个产业围绕它重新洗牌。对产品管理者来说，需要立即评估自身产品线中哪些环节可以被智能体自动化替代或增强。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <div class="footer">
+    <p>📌 以上为 2026 年 5 月 27 日 AI 领域精选动态<br>
+    数据来源：AITNT / 新华网 Beijing Post / TechWalker / IT之家 / 腾讯新闻 等<br>
+    自动生成于 08:00 GMT+8 · 侧重 AI Coding 与具身智能方向</p>
+  </div>
+
+</div>
+
+</body>
+</html>

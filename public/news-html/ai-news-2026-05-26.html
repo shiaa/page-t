@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日 AI 动态 · 2026年5月26日</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card-bg: #1a1d28;
+    --border: #2a2d3a;
+    --text: #e4e6ef;
+    --text-secondary: #8b8fa8;
+    --accent-coding: #7c5cfc;
+    --accent-embody: #00c9a7;
+    --accent-hot: #ff6b6b;
+    --tag-bg: #232636;
+    --divider: #1e2030;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+
+  .header {
+    text-align: center;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--divider);
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--accent-coding), var(--accent-embody));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header .date { color: var(--text-secondary); font-size: 14px; margin-top: 8px; }
+  .header .focus { display: inline-flex; gap: 8px; margin-top: 12px; }
+  .header .tag {
+    background: var(--tag-bg);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    border: 1px solid var(--border);
+  }
+  .tag.coding { color: var(--accent-coding); border-color: rgba(124,92,252,.3); }
+  .tag.embody { color: var(--accent-embody); border-color: rgba(0,201,167,.3); }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+    transition: transform .2s ease, border-color .2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover { border-color: #3d4055; transform: translateY(-2px); }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+  }
+  .card.coding::before { background: linear-gradient(90deg, var(--accent-coding), transparent); }
+  .card.embody::before { background: linear-gradient(90deg, var(--accent-embody), transparent); }
+
+  .card-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+  .card-icon {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .card-icon.coding { background: rgba(124,92,252,.15); }
+  .card-icon.embody { background: rgba(0,201,167,.15); }
+  .card-title-area { flex: 1; }
+  .card-num {
+    font-size: 11px;
+    font-weight: 600;
+    opacity: .5;
+    margin-bottom: 2px;
+  }
+  .card-title { font-size: 17px; font-weight: 600; line-height: 1.45; }
+  .hot-badge {
+    background: rgba(255,107,107,.15);
+    color: var(--accent-hot);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  .card-body { line-height: 1.75; font-size: 14.5px; color: #c5c9dc; }
+  .highlight { color: var(--text); font-weight: 500; }
+  .stat { 
+    display: inline-block;
+    background: var(--tag-bg);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 2px 2px;
+  }
+  .stat.coding { color: var(--accent-coding); border: 1px solid rgba(124,92,252,.2); }
+  .stat.embody { color: var(--accent-embody); border: 1px solid rgba(0,201,167,.2); }
+  .stat.hot { color: var(--accent-hot); border: 1px solid rgba(255,107,107,.2); }
+
+  .why-box {
+    margin-top: 16px;
+    padding: 14px 18px;
+    background: rgba(255,255,255,.03);
+    border-radius: 12px;
+    border-left: 3px solid;
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+  .why-box.coding { border-color: var(--accent-coding); }
+  .why-box.embody { border-color: var(--accent-embody); }
+  .why-label { font-weight: 600; opacity: .6; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+  .why-text { color: #b0b5cc; }
+
+  .source { margin-top: 14px; font-size: 12px; color: var(--text-secondary); opacity: .6; }
+
+  .footer {
+    text-align: center;
+    padding: 32px 0 16px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    border-top: 1px solid var(--divider);
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+  <h1>🤖 每日 AI 动态速递</h1>
+  <div class="date">2026年5月26日 · 星期一</div>
+  <div class="focus">
+    <span class="tag coding">AI Coding</span>
+    <span class="tag embody">具身智能</span>
+  </div>
+</div>
+
+<!-- ===== 1. GPT-5.6 泄露 ===== -->
+<div class="card coding">
+  <div class="card-header">
+    <div class="card-icon coding">🔮</div>
+    <div class="card-title-area">
+      <div class="card-num">NO.1 / AI Coding</div>
+      <div class="card-title">
+        GPT-5.6 泄露：150 万 Token 上下文 + 零指令 UI 生成，预计 6 月发布
+        <span class="hot-badge">HOT</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p>开发者在 OpenAI Codex 日志中发现未发布的 <span class="highlight">GPT-5.6（内部代号 iris-alpha）</span>，核心参数曝光：</p>
+    <p style="margin-top:10px">
+      <span class="stat coding">150万 token 上下文</span>
+      <span class="stat coding">零指令 UI 生成</span>
+      <span class="stat coding">预计6月正式发布</span>
+      <span class="stat hot">Anthropic/谷歌同期出新模型</span>
+    </p>
+  </div>
+  <div class="why-box coding">
+    <div class="why-label">📌 值得关注</div>
+    <div class="why-text">150 万 token 上下文意味着 AI 可一次性处理整个大型代码库，"零指令 UI 生成"将 Vibe Coding 的门槛再降一个量级。6 月 AI 编程模型密集发布潮即将到来，行业竞争进入白热化阶段。</div>
+  </div>
+  <div class="source">📍 来源：IT之家 / AITNT · OpenAI Codex 日志泄露</div>
+</div>
+
+<!-- ===== 2. Figure 03 200小时无故障作业 ===== -->
+<div class="card embody">
+  <div class="card-header">
+    <div class="card-icon embody">🦾</div>
+    <div class="card-title-area">
+      <div class="card-num">NO.2 / 具身智能</div>
+      <div class="card-title">
+        Figure 03 连续作业 200 小时零故障，分拣包裹近 25 万个
+        <span class="hot-badge">里程碑</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p>Figure AI 旗下 F.03 人形机器人完成长达 <span class="highlight">200 小时全自动作业直播</span>：</p>
+    <p style="margin-top:10px">
+      <span class="stat embody">200小时连续运行</span>
+      <span class="stat embody">24.96万个包裹处理</span>
+      <span class="stat embody">零硬件故障</span>
+      <span class="stat hot">BotQ工厂每小时产1台F.03</span>
+    </p>
+  </div>
+  <div class="why-box embody">
+    <div class="why-label">📌 值得关注</div>
+    <div class="why-text">从 8 小时挑战目标到 200 小时实战验证，人形机器人从"实验室炫技"转向"工厂级可靠性"。生产效率较 5 个月前提升 24 倍，标志着量产拐点已至。同时特斯拉 Optimus Gen-3 同步启动量产，全球竞赛加速。</div>
+  </div>
+  <div class="source">📍 来源：IT之家 / 新浪科技 / PConline · Figure AI 官方披露</div>
+</div>
+
+<!-- ===== 3. 天机智能 10亿融资 + 宇树 IPO 上会 ===== -->
+<div class="card embody">
+  <div class="card-header">
+    <div class="card-icon embody">💰</div>
+    <div class="card-title-area">
+      <div class="card-num">NO.3 / 具身智能</div>
+      <div class="card-title">
+        天机智能获 10 亿融资估值近百亿，宇树科技 6/1 科创板上会冲击"A 股具身智能第一股"
+        <span class="hot-badge">资本</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p><span class="highlight">天机智能</span>（具身智能基础设施公司）完成 B/B+ 轮合计 10 亿元融资，投后估值近百亿元，由高瓴创投+美团战投联合领投。Q1 在手订单超万台，已实现力控人形双臂量产交付。</p>
+    <p style="margin-top:10px">
+      <span class="stat embody">10亿元融资</span>
+      <span class="stat embody">近百亿估值</span>
+      <span class="stat embody">高瓴+美团领投</span>
+      <span class="stat hot">宇树6/1上会 拟募资42亿</span>
+    </p>
+  </div>
+  <div class="why-box embody">
+    <div class="why-label">📌 值得关注</div>
+    <div class="why-text">具身智能赛道从技术探索进入<strong>资本密集期</strong>——大额融资与头部企业 IPO 齐发，说明资本市场对机器人量产落地的信心正在兑现。宇树若成功过会，将成为 A 股首个纯具身智能标的，具有标志性意义。</div>
+  </div>
+  <div class="source">📍 来源：东方财富网 / 新浪财经 / 证券时报 · 上交所公告</div>
+</div>
+
+<!-- ===== 4. SaaS-Bench 打脸 Agent 全自动办公 ===== -->
+<div class="card coding">
+  <div class="card-header">
+    <div class="card-icon coding">📊</div>
+    <div class="card-title-area">
+      <div class="card-num">NO.4 / AI Coding · Agent</div>
+      <div class="card-title">
+        SaaS-Bench 实测撕碎"全自动办公"幻想：Claude Opus 4.7 通过率仅 3.8%
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p>UniPat AI 发布 <span class="highlight">SaaS-Bench</span> Agent 评测基准，覆盖 23 个真实 SaaS 系统、106 个真实办公任务，结果令人清醒：</p>
+    <p style="margin-top:10px">
+      <span class="stat coding">Claude Opus 4.7 → 3.8%</span>
+      <span class="stat hot">Kimi K2.5 → 0%</span>
+      <span class="stat hot">Gemini 3.1 Pro → 0%</span>
+    </p>
+  </div>
+  <div class="why-box coding">
+    <div class="why-label">📌 值得关注</div>
+    <div class="why-text">这是目前最硬核的 Agent 能力基准测试之一。<strong>"全自动办公"的营销泡沫被数据戳破</strong>——当前 AI Agent 在长流程跨应用场景中的能力远未成熟，距离替代人类还有巨大鸿沟。对产品经理和决策者来说，这是调整预期的关键参考。</div>
+  </div>
+  <div class="source">📍 来源：UniPat AI · SaaS-Bench 评测报告</div>
+</div>
+
+<!-- ===== 5. 谷歌 CEO 公开承认 Coding 落后 ===== -->
+<div class="card coding">
+  <div class="card-header">
+    <div class="card-icon coding">🏢</div>
+    <div class="card-title-area">
+      <div class="card-num">NO.5 / AI Coding</div>
+      <div class="card-title">谷歌 CEO 皮查伊公开承认 Gemini 在编程领域落后，AGI 比预想更近</div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p>谷歌 CEO 桑达尔·皮查伊接受《纽约时报》科技播客采访时<span class="highlight">罕见地公开承认</span>：Gemini 在编程智能体和复杂编程任务上落后于行业领先水平。</p>
+    <p style="margin-top:10px">
+      背景：此番表态发生在 Google I/O 大会刚发布 Gemini 3.5 Flash / Omini / Spark 之后。
+      <br><br>
+      <span class="stat coding">Google I/O 后即认差</span>
+      <span class="stat coding">AGI 比预想更近</span>
+    </p>
+  </div>
+  <div class="why-box coding">
+    <div class="why-label">📌 值得关注</div>
+    <div class="why-text">谷歌高层罕见的"认差"表态，信号意义大于内容本身——说明 AI Coding 已成为巨头竞争的<strong>核心战场</strong>。I/O 大会后立刻承认不足，也暗示谷歌在编码方向可能有更大的追赶动作。结合 GPT-5.6 泄露信息，6 月 AI 编程赛道将迎来剧烈洗牌。</div>
+  </div>
+  <div class="source">📍 来源：《纽约时报》播客 / 36氪 · 谷歌官方</div>
+</div>
+
+<!-- ===== 今日洞察 ===== -->
+<div class="card" style="background:linear-gradient(135deg,rgba(124,92,252,.06),rgba(0,201,167,.06));">
+  <div class="card-header">
+    <div class="card-icon" style="background:rgba(255,255,255,.08);">🔭</div>
+    <div class="card-title-area">
+      <div class="card-num">TODAY'S INSIGHT</div>
+      <div class="card-title">今日关键洞察</div>
+    </div>
+  </div>
+  <div class="card-body">
+    <table style="width:100%;font-size:13.5px;border-collapse:collapse;margin-top:8px;">
+      <tr><td style="padding:8px 0;border-bottom:1px solid var(--divider)"><strong style="color:var(--accent-coding)">AI Coding</strong></td><td align="right" style="color:#c5c9dc;padding:8px 0;border-bottom:1px solid var(--divider)">GPT-5.6 泄露 + 谷歌认差 + SaaS-Bench 冷却预期 → 6月发布潮前夜，竞争白热化</td></tr>
+      <tr><td style="padding:8px 0;border-bottom:1px solid var(--divider)"><strong style="color:var(--accent-embody)">具身智能</strong></td><td align="right" style="color:#c5c9dc;padding:8px 0;border-bottom:1px solid var(--divider)">Figure 200h 零故障 + 天机 10 亿融资 + 宇树 IPO 上会 → 从技术验证到量产交付的拐点</td></tr>
+      <tr><td style="padding:8px 0"><strong style="color:var(--accent-hot)">交叉趋势</strong></td><td align="right" style="color:#c5c9dc;padding:8px 0">AI 自主能力边界清晰化：数字闭环任务可胜任（Verkor 12h 设计芯片），物理世界运营仍远未成熟</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  📡 自动生成于 2026-05-26 08:00 CST · 数据来源：AITNT / IT之家 / 新浪科技 / 证券时报 / UniPat AI 等<br>
+  聚焦 AI Coding × 具身智能 · 每日推送
+</div>
+
+</div>
+
+</body>
+</html>
