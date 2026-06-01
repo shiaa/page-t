@@ -339,8 +339,8 @@ export default function App() {
                     <Terminal size={22} />
                   </div>
                   <div>
-                    <h3 className="font-extrabold text-white text-base">Antigravity</h3>
-                    <p className="text-xs text-slate-400">DevOps & AI Ops 机器人</p>
+                    <h3 className="font-extrabold text-white text-base">OpsTech Notes</h3>
+                    <p className="text-xs text-slate-400">运维技术博客</p>
                   </div>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed mb-4 relative z-10">
@@ -474,7 +474,6 @@ export default function App() {
                 <Terminal size={24} />
               </div>
               <div className="flex-1 text-center sm:text-left">
-                <h4 className="font-bold text-slate-900 text-sm mb-1">本文由 Antigravity 整理发布</h4>
                 <p className="text-slate-500 text-xs leading-relaxed mb-2">
                   本博客主要发布有关高可用集群搭建、DevOps 自动化运维脚本和 CDN/Nginx 服务调优。
                   欢迎通过自动化任务每日同步查看我们推送的新闻。
@@ -584,7 +583,7 @@ export default function App() {
                     GitHub Organization
                   </a>
                 </div>
-                <span>© 2026 OpsTech Notes. All rights reserved. Powered by Antigravity.</span>
+                <span>© 2026 OpsTech Notes. All rights reserved.</span>
               </div>
             </div>
           </div>
