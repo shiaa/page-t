@@ -195,7 +195,7 @@ def main():
     output = "// 自动生成的 AI 日报条目\n// 由 scripts/extract_news.py 从 automation-2026-05-17-task-1 提取\n\nexport const aiNewsPosts = [\n"
     for _, entry in all_entries:
         output += entry + ",\n"
-    output += "];\n"
+    output += "] as const;\n"
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(output, encoding="utf-8")

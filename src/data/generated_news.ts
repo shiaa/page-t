@@ -625,4 +625,4 @@ Cursor 发布自研编程模型 Composer 2.5，基于 Kimi K2.5 架构，通过 
 *由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
-];
+] as const;
