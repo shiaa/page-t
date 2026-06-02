@@ -158,7 +158,7 @@ def generate_post_ts(date_str: str, post_id: str, title: str, content: str) -> s
     summary: '{summary}',
     date: '{date_str}',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 {safe_content}
 `
@@ -195,7 +195,7 @@ def main():
     output = "// 自动生成的 AI 日报条目\n// 由 scripts/extract_news.py 从 automation-2026-05-17-task-1 提取\n\nexport const aiNewsPosts = [\n"
     for _, entry in all_entries:
         output += entry + ",\n"
-    output += "] as const;\n"
+    output += "];\n"
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(output, encoding="utf-8")

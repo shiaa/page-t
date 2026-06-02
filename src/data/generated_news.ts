@@ -8,7 +8,7 @@ export const aiNewsPosts = [
     summary: '1. 黄仁勋 GTC 演讲：宣告 Agent AI 时代到来，GitHub AI 编程量一年翻三倍至 14 亿次 标签: AGENT AI COMPUTEX 2026 核心内容：英伟达 CEO 黄仁勋在 COMPUTEX 2026 GTC ...',
     date: '2026-06-02',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年6月2日 · 星期二
 
@@ -104,7 +104,7 @@ export const aiNewsPosts = [
     summary: '1. GPT 5.6 泄露：150万 Token 上下文，6月 AI 三巨头混战在即 标签: AI CODING 核心内容：开发者在 OpenAI Codex 后端日志中发现未官宣模型 GPT 5.6（内部代号 iris alpha），上下...',
     date: '2026-06-01',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年6月1日 · 星期一
 
@@ -188,7 +188,7 @@ export const aiNewsPosts = [
     summary: '1. 腾讯发布 AI 游戏创作平台「代号 Craft」——自然语言直接生成可玩游戏 标签: NEW PRODUCT 5月27日 SPARK 2026 腾讯游戏发布会上，腾讯生态发展部正式推出 AI 游戏创作平台「代号 Craft」。用户只需...',
     date: '2026-05-31',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年5月31日 · 星期日
 
@@ -262,7 +262,7 @@ Claude Opus 4.8 在多项 AI 基准测试中登顶榜首。沃顿商学院教授
     summary: '1. Claude Code 首发「自愈」功能，一锤砸碎开发者六大噩梦 标签: AI Coding产品更新 💡 值得关注 : 🔑 值得关注的原因 2. 星尘智能发布人形机器人 T1：售价 8.99 万元起，中国版 Figure 价格打穿地板...',
     date: '2026-05-29',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年5月29日 · 星期五
 
@@ -318,7 +318,7 @@ Claude Opus 4.8 在多项 AI 基准测试中登顶榜首。沃顿商学院教授
     summary: '1. 具身智能奠基人苏昊入职复旦，首度开讲：「AI 的下一个里程碑是理解物理世界」 前加州大学圣地亚哥分校教授苏昊正式加入复旦大学，担任浩清特聘教授及通用物理智能研究院首任院长。5 月 27 日，苏昊在复旦大学校庆科学报告会上以「物理智能：...',
     date: '2026-05-28',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年5月28日 · 星期四
 
@@ -384,7 +384,7 @@ Weco AI 研究团队发布论文（arXiv:2605.21384v1），揭示了一个令人
     summary: '1. 上海发布「格物」具身 AI 仿真平台，同步推动 ISO 人形机器人国际标准 国家地方共建人形机器人创新中心（上海）于今日正式推出名为「格物（Ge Wu）」的具身人工智能仿真平台。该平台整合先进强化学习框架与多模态运动控制技术，核心突破...',
     date: '2026-05-27',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年5月27日 · 星期三
 
@@ -451,7 +451,7 @@ Weco AI 研究团队发布论文（arXiv:2605.21384v1），揭示了一个令人
     summary: '1. 开发者在 OpenAI Codex 日志中发现未发布的 GPT 5.6（内部代号 iris alpha），核心参数曝光： 150万 token 上下文 零指令 UI 生成 预计6月正式发布 Anthropic/谷歌同期出新模型 💡 值...',
     date: '2026-05-26',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年5月26日 · 星期二
 
@@ -539,7 +539,7 @@ AI CodingGPT-5.6 泄露 + 谷歌认差 + SaaS-Bench 冷却预期 → 6月发布�
     summary: '1. AI 编程 Harness 革命：一个配置文件让 Agent 成功率从 20% 飙到 100% Anthropic 与 OpenAI 联合实验揭示了一项关键发现：AI 编程智能体失败的主因不是模型能力不足，而是缺少配套的 Harnes...',
     date: '2026-05-25',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年5月25日 · 星期一
 
@@ -585,7 +585,7 @@ Anthropic 与 OpenAI 联合实验揭示了一项关键发现：AI 编程智能�
     summary: '1. DeepSeek V4 Pro 永久降价至 1/4 + 700 亿融资 + 崔添翼挂帅代码团队 DeepSeek 5月22日宣布旗舰模型 V4 Pro 输出价格永久降至 6 元/百万 Token（原价 1/4），缓存输入仅 0.025...',
     date: '2026-05-24',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news',
+    category: 'ai-news' as const,
     content: `
 # AI 每日动态 · 2026年5月24日 · 星期日
 
@@ -625,4 +625,4 @@ Cursor 发布自研编程模型 Composer 2.5，基于 Kimi K2.5 架构，通过 
 *由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
-] as const;
+];
