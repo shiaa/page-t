@@ -1,20 +1,18 @@
 // 自动生成的 AI 日报条目
 // 由 scripts/extract_news.py 从 automation-2026-05-17-task-1 提取
 
-import type { Post } from './posts';
-
-export const aiNewsPosts: Post[] = [
+export const aiNewsPosts = [
   {
     id: 'ai-news-daily-2026-06-01',
     title: 'AI 每日动态 (2026-06-01)',
-    summary: 'GPT-5.6 150万 Token 上下文泄露，Claude Sonnet 4.8 与 Gemini 3.5 Pro 本月将正面交锋；OpenAI 发布 O4-mini 视网膜识别原型；宇树科技今日科创板 IPO 上会，COMPUTEX 明日开幕。',
+    summary: 'AI 每日动态 · 2026年6月1日 · 星期一 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 AI Coding 方向 1. GPT 5.6 泄露：...',
     date: '2026-06-01',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年6月1日 · 星期一
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
@@ -85,126 +83,126 @@ export const aiNewsPosts: Post[] = [
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
     id: 'ai-news-daily-2026-05-31',
     title: 'AI 每日动态 (2026-05-31)',
-    summary: '腾讯"代号 Craft"AI 游戏平台曝光，GPT-5.5 Arena 胜率达新高，阿里灵犀 Agent 全托管方案上线。',
+    summary: 'AI 每日动态 · 2026年5月31日 · 星期日 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 由 WorkBuddy AI 自动生成 · 数据来源...',
     date: '2026-05-31',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年5月31日 · 星期日
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
     id: 'ai-news-daily-2026-05-29',
     title: 'AI 每日动态 (2026-05-29)',
-    summary: 'OpenAI Codex 改为按 Token 计费，AI 编程免费红利结束；Claude Code 涨价；阿里百炼 CLI 开源，国内大厂以免费策略抢滩开发者生态。',
+    summary: 'AI 每日动态 · 2026年5月29日 · 星期五 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 由 WorkBuddy AI 自动生成 · 数据来源...',
     date: '2026-05-29',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年5月29日 · 星期五
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
     id: 'ai-news-daily-2026-05-28',
     title: 'AI 每日动态 (2026-05-28)',
-    summary: 'Claude Sonnet 4.8 发布，Google Gemini 3.5 Pro 预告，具身智能领域最新突破与行业动态深度分析。',
+    summary: 'AI 每日动态 · 2026年5月28日 · 星期四 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 由 WorkBuddy AI 自动生成 · 数据来源...',
     date: '2026-05-28',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年5月28日 · 星期四
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
     id: 'ai-news-daily-2026-05-27',
     title: 'AI 每日动态 (2026-05-27)',
-    summary: 'τ0-WM 全球最大开源具身世界模型发布，真机数据首次成为训练主力；阿里 Qoder Cloud Agents 上线。',
+    summary: 'AI 每日动态 · 2026年5月27日 · 星期三 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 由 WorkBuddy AI 自动生成 · 数据来源...',
     date: '2026-05-27',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年5月27日 · 星期三
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
     id: 'ai-news-daily-2026-05-26',
     title: 'AI 每日动态 (2026-05-26)',
-    summary: 'AI Coding 工具对比评测：Copilot vs Codex vs Cursor，NVIDIA vGPU 28.0 发布，多租户 GPU 隔离大幅优化。',
+    summary: 'AI 每日动态 · 2026年5月26日 · 星期二 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 由 WorkBuddy AI 自动生成 · 数据来源...',
     date: '2026-05-26',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年5月26日 · 星期二
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
     id: 'ai-news-daily-2026-05-25',
     title: 'AI 每日动态 (2026-05-25)',
-    summary: '多模态大模型最新进展：视觉理解与代码生成融合趋势；RAG（检索增强生成）技术在企业级应用中的优化实践。',
+    summary: 'AI 每日动态 · 2026年5月25日 · 星期一 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 由 WorkBuddy AI 自动生成 · 数据来源...',
     date: '2026-05-25',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年5月25日 · 星期一
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
   {
     id: 'ai-news-daily-2026-05-24',
     title: 'AI 每日动态 (2026-05-24)',
-    summary: '开源 LLM 最新动态：Llama、Qwen 等模型能力对比；Kubernetes 上部署 AI 工作负载的最佳实践与性能调优。',
+    summary: 'AI 每日动态 · 2026年5月24日 · 星期日 关注 AI Coding · 具身智能 · 前沿技术 由 WorkBuddy AI 自动生成 由 WorkBuddy AI 自动生成 · 数据来源...',
     date: '2026-05-24',
     tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
     category: 'ai-news',
     content: `
 # AI 每日动态 · 2026年5月24日 · 星期日
 
-关注 AI Coding · 具身智能 · 前沿技术
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
 
 ---
 
-*数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
 `
   },
 ];
