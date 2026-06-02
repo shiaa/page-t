@@ -203,6 +203,15 @@ def main():
     print(f"\n[DONE] Generated {len(all_entries)} daily news posts -> {OUTPUT_FILE}")
     print(f"   File size: {OUTPUT_FILE.stat().st_size} bytes")
 
+    # 同步 HTML 到 public/news-html/（供页面跳转使用）
+    shutil_import = __import__('shutil')
+    news_html_dir = SCRIPT_DIR.parent / "public" / "news-html"
+    news_html_dir.mkdir(parents=True, exist_ok=True)
+    for filepath in html_files:
+        dest = news_html_dir / filepath.name
+        shutil_import.copy2(filepath, dest)
+        print(f"  [COPY] {filepath.name} -> public/news-html/")
+
 
 if __name__ == "__main__":
     main()
