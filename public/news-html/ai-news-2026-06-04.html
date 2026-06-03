@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月4日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  /* Header */
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+
+  /* Section */
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+
+  /* Card */
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%;
+    border-radius: 4px 0 0 4px;
+  }
+  .card:nth-child(1)::before { background: linear-gradient(180deg, #6366f1, #8b5cf6); }
+  .card:nth-child(2)::before { background: linear-gradient(180deg, #10b981, #059669); }
+  .card:nth-child(3)::before { background: linear-gradient(180deg, #f59e0b, #f97316); }
+  .card:nth-child(4)::before { background: linear-gradient(180deg, #0ea5e9, #0284c7); }
+  .card:nth-child(5)::before { background: linear-gradient(180deg, #ec4899, #db2777); }
+  .card:hover {
+    border-color: rgba(99,102,241,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.1);
+  }
+  .card-tag {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+  }
+  .tag-coding { background: rgba(245,158,11,0.15); color: #fbbf24; }
+  .tag-embodied { background: rgba(16,185,129,0.15); color: #34d399; }
+  .tag-industry { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .tag-alert { background: rgba(239,68,68,0.15); color: #f87171; }
+
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card-body {
+    color: #94a3b8; font-size: 14.5px; line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .card-body strong { color: #c7d2fe; font-weight: 600; }
+  .card-body .highlight { color: #fbbf24; font-weight: 600; }
+  .card-body .accent { color: #34d399; font-weight: 600; }
+  .card-body .warn { color: #f87171; font-weight: 600; }
+
+  .why-matters {
+    background: rgba(99,102,241,0.06);
+    border-left: 3px solid #6366f1;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 13.5px; color: #a5b4fc;
+    line-height: 1.7;
+  }
+  .why-matters::before {
+    content: '\f0eb 值得关注'; display: block;
+    font-weight: 700; font-size: 12.5px;
+    color: #818cf8; margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Hot badge */
+  .hot-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(245,158,11,0.12);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: #fbbf24; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .red-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(239,68,68,0.3);
+    color: #f87171; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 32px 0 0;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #475569; font-size: 13px;
+  }
+  .footer span { color: #6366f1; font-weight: 600; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .container { padding: 16px 12px 48px; }
+    .header h1 { font-size: 22px; }
+    .card { padding: 20px; }
+    .card h3 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI Daily Brief</div>
+    <h1>🤖 AI 每日动态</h1>
+    <p>关注 AI Coding · 具身智能 · 前沿技术</p>
+    <div class="date-highlight">📅 2026年6月4日 · 星期四</div>
+  </div>
+
+  <!-- ===== AI Coding ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- Card 1: OpenAI AI上岗 -->
+    <div class="card">
+      <div class="card-tag tag-coding">AI Agent 平台 <span class="hot-badge">周活 500 万</span></div>
+      <h3>OpenAI 举行"AI上岗"发布会：Codex 从编程工具升级为全行业 Agent 工作平台</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>北京时间 6 月 4 日凌晨，OpenAI 举行主题为<strong class="highlight">"Intelligence at Work"</strong>的发布会，宣布将 Codex 从 AI 编程工具升级为<strong class="highlight">面向全行业的智能体工作平台</strong>，推出 6 款职业化角色插件。<br><br>
+        <strong>六大行业插件：</strong>覆盖数据分析（对接 Snowflake/Tableau）、创意制作（对接 Figma/Canva）、销售支持、产品设计、上市公司投研（对接穆迪/FactSet/S&amp;P）、投行服务六大方向，<strong class="accent">共 110 项技能、关联 62 个外部应用</strong>。<br><br>
+        <strong>用户里程碑：</strong>Codex 周活跃用户已达 <strong class="highlight">500 万</strong>，其中 20% 并非程序员。未来几周 Codex 将接入 ChatGPT，面向全球 10 亿用户开放。同步推出"注释"和"站点"两项交互新功能。<br><br>
+        <strong>成本优化：</strong>OpenAI 明确后续模型（GPT-5.5）将延续<strong class="accent">"更低 Token 消耗、更好输出效果"</strong>的优化路线。
+      </div>
+      <div class="why-matters">
+        Codex 从编程工具升级为全行业 Agent 平台是 AI Coding 赛道的重大转折——OpenAI 正式与 Claude Code 的"AI 办公"路线正面交锋。500 万周活中 20% 非程序员的用户构成，意味着 AI 编程能力正在向知识工作者大规模溢出。110 项技能 + 62 个外部应用集成的插件体系，标志着 AI Agent 从"单点工具"走向"生态平台"。
+      </div>
+    </div>
+
+    <!-- Card 2: Uber AI限额 -->
+    <div class="card">
+      <div class="card-tag tag-coding">企业 AI 成本 <span class="red-badge">ROI 幻觉</span></div>
+      <h3>Uber 4 个月花光全年 AI 预算，紧急收紧员工 AI 编程工具限额至每月 1500 美元</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>网约车巨头 Uber 员工仅用 4 个月就<strong class="warn">耗尽了全年的 AI 工具使用预算</strong>，公司紧急出台内部新规：每位员工使用 AI 编程工具（如 Claude Code、Cursor、GitHub Copilot）时，<strong class="warn">每工具每月消费上限 1500 美元</strong>。<br><br>
+        <strong>问题根源：</strong>AI 编程工具的高频调用成本远超企业预期。Claude Code、Cursor 等 Agent 式工具在自动化重构、测试生成等场景中大量消耗 Token，<strong class="warn">单次复杂任务可能消耗数十美元</strong>。<br><br>
+        <strong>行业信号：</strong>此前微软已停用 10 万员工 Claude Code 订阅转向 Copilot CLI，GitHub Copilot 也于 6 月 1 日起切换 AI Credits 按量计费。Uber 此举标志着<strong class="highlight">科技巨头正从 AI 狂热转向理性成本管控</strong>。
+      </div>
+      <div class="why-matters">
+        "4 个月花光全年预算"是 AI 编程工具从"尝鲜"走向"生产"后的必然痛点。AI Coding 的 ROI 问题正成为企业级部署的核心障碍——不是工具不够好，而是成本不可控。这对 Cursor、Claude Code 等工具厂商提出严峻考验：必须在能力提升和成本优化之间找到平衡。对企业而言，建立 AI 编程预算管理体系已成当务之急。
+      </div>
+    </div>
+
+    <!-- Card 3: Anthropic Mythos -->
+    <div class="card">
+      <div class="card-tag tag-coding">AI 安全</div>
+      <h3>Anthropic "神话"大模型扩大内测至 150 家机构，已发现超 1 万个高危漏洞</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>Anthropic 于本周二宣布，将<strong class="highlight">"神话（Mythos）"</strong>大模型的内测范围扩大至全球约 150 家新机构，覆盖电力、供水、医疗、通信等关键基础设施领域。该模型已接近公开发布阶段。<br><br>
+        <strong>安全成果：</strong>首轮 50 家合作伙伴测试中，"神话"已累计发现超过 <strong class="accent">1 万个高危或严重等级的系统性安全缺陷</strong>，漏洞发现速度相比传统人工检测<strong class="accent">提升 10 倍以上</strong>。模型同时具备业界领先的通用编程与代码深度分析能力。<br><br>
+        <strong>行业瓶颈：</strong>目前网络安全流程的瓶颈已从<strong class="highlight">漏洞发现转移到漏洞快速验证和披露</strong>环节——模型发现漏洞的速度远超安全团队修复能力。预计未来几周内将正式向公众开放。
+      </div>
+      <div class="why-matters">
+        "神话"模型代表了大模型在代码安全领域的范式级应用——AI 编程不只是"写代码"，更是"审查代码安全"。1 万个高危漏洞的发现量证明了 AI 在安全审计场景的巨大价值。对开发者而言，未来 AI Code Review 将从"编码辅助"进化为"安全防线"，AI 编程工具的安全能力将成为新的竞争壁垒。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 具身智能 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- Card 4: 高通计算连续体 -->
+    <div class="card">
+      <div class="card-tag tag-embodied">端侧算力 <span class="hot-badge">COMPUTEX 2026</span></div>
+      <h3>高通 COMPUTEX 2026 宣布"计算连续体"战略：从可穿戴到数据中心的智能体全场景算力布局</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>高通 CEO 安蒙在 COMPUTEX 2026 开幕主题演讲中正式提出<strong class="highlight">"计算连续体"（Compute Continuum）</strong>战略，宣称 2026 年为"智能体之年"，智能体正成为 AI Token 需求的核心来源。<br><br>
+        <strong>全场景覆盖：</strong>高通的产品组合已覆盖从<strong class="accent">毫瓦级可穿戴智能体终端</strong>到<strong class="accent">千瓦级数据中心</strong>的全场景算力，未来智能体将能主动代替用户运行计算，任务自动分配到最合适的算力节点。<br><br>
+        <strong>具身智能落地：</strong>高通同期发布<strong class="highlight">跃龙 IQ10 参考设计</strong>，专攻物理 AI 与具身智能领域，负责机器人与嵌入式业务的高管 Nakul Duggal 单独做了"实体 AI"深度拆解。智能体将定义 AI 架构与经济模式的未来。
+      </div>
+      <div class="why-matters">
+        高通"计算连续体"战略的核心价值在于：具身智能机器人的算力不只有云端一条路。从毫瓦级端侧到千瓦级数据中心的全链路布局，意味着每个具身智能设备都能在"端-边-云"之间智能分配计算任务。跃龙 IQ10 参考设计为国产机器人厂商提供了可参考的端侧算力方案，有望加速具身智能从实验室走向量产。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 行业动态 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon industry">📡</div>
+      <h2>行业动态</h2>
+    </div>
+
+    <!-- Card 5: DeepSeek 融资 -->
+    <div class="card">
+      <div class="card-tag tag-industry">AI 融资 <span class="hot-badge">估值 4000 亿</span></div>
+      <h3>DeepSeek 首轮融资 500 亿元，腾讯与宁德时代领投，估值最高达 4000 亿元</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>据路透社 6 月 3 日报道，DeepSeek 即将完成成立以来的<strong class="highlight">首轮外部融资</strong>，规模约 <strong class="highlight">500 亿元人民币（约 74 亿美元）</strong>，投后估值落在 3500 亿至 4000 亿元之间。<br><br>
+        <strong>投资方阵容：</strong><strong class="accent">腾讯</strong>拟投资约 100 亿元，<strong class="accent">宁德时代</strong>拟投资约 50 亿元，两者成为最大外部投资方。<strong class="accent">网易和京东</strong>也在最终谈判阶段。创始人梁文锋已承诺个人出资 200 亿元。<br><br>
+        <strong>行业意义：</strong>这是 DeepSeek 自成立以来首次向外部资本敞开大门，也是<strong class="highlight">中国 AI 领域迄今最大规模的单轮融资</strong>。宁德时代的跨界投资释放了制造业巨头布局 AI 基础设施的强烈信号。
+      </div>
+      <div class="why-matters">
+        DeepSeek 首轮融资的估值和规模创下了中国 AI 领域纪录。腾讯 100 亿领投意味着中国互联网巨头正在重新评估 AI 基础设施的战略价值——不再只是"用好模型"，而是"押注模型厂商"。宁德时代 50 亿入局更具标志性意义：制造业龙头开始将 AI 能力视为核心竞争力。DeepSeek 的开源策略 + Coding 定位，在 Cursor、Claude Code 付费化的大背景下，其作为"可替代方案"的战略价值正被资本市场加速定价。
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · AIBase · 财联社 · 新浪财经 · IT之家 · 路透社 · 新华网 · 环球网</p>
+  </div>
+
+</div>
+</body>
+</html>
