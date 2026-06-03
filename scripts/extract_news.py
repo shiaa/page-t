@@ -6,8 +6,11 @@
 
 import re
 import os
+import shutil
 from pathlib import Path
 from datetime import datetime
+
+SCRIPT_DIR = Path(__file__).parent
 
 NEWS_DIR = Path(r"C:\Users\AI\WorkBuddy\automation-2026-05-17-task-1")
 OUTPUT_FILE = Path(r"C:\code\page-yw\blog\src\data\generated_news.ts")
@@ -204,12 +207,11 @@ def main():
     print(f"   File size: {OUTPUT_FILE.stat().st_size} bytes")
 
     # 同步 HTML 到 public/news-html/（供页面跳转使用）
-    shutil_import = __import__('shutil')
     news_html_dir = SCRIPT_DIR.parent / "public" / "news-html"
     news_html_dir.mkdir(parents=True, exist_ok=True)
     for filepath in html_files:
         dest = news_html_dir / filepath.name
-        shutil_import.copy2(filepath, dest)
+        shutil.copy2(filepath, dest)
         print(f"  [COPY] {filepath.name} -> public/news-html/")
 
 

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月3日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  /* Header */
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+
+  /* Section */
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+
+  /* Card */
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%;
+    border-radius: 4px 0 0 4px;
+  }
+  .card:nth-child(1)::before { background: linear-gradient(180deg, #6366f1, #8b5cf6); }
+  .card:nth-child(2)::before { background: linear-gradient(180deg, #10b981, #059669); }
+  .card:nth-child(3)::before { background: linear-gradient(180deg, #f59e0b, #f97316); }
+  .card:nth-child(4)::before { background: linear-gradient(180deg, #0ea5e9, #0284c7); }
+  .card:nth-child(5)::before { background: linear-gradient(180deg, #ec4899, #db2777); }
+  .card:hover {
+    border-color: rgba(99,102,241,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.1);
+  }
+  .card-tag {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+  }
+  .tag-coding { background: rgba(245,158,11,0.15); color: #fbbf24; }
+  .tag-embodied { background: rgba(16,185,129,0.15); color: #34d399; }
+  .tag-industry { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .tag-alert { background: rgba(239,68,68,0.15); color: #f87171; }
+
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card-body {
+    color: #94a3b8; font-size: 14.5px; line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .card-body strong { color: #c7d2fe; font-weight: 600; }
+  .card-body .highlight { color: #fbbf24; font-weight: 600; }
+  .card-body .accent { color: #34d399; font-weight: 600; }
+  .card-body .warn { color: #f87171; font-weight: 600; }
+
+  .why-matters {
+    background: rgba(99,102,241,0.06);
+    border-left: 3px solid #6366f1;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 13.5px; color: #a5b4fc;
+    line-height: 1.7;
+  }
+  .why-matters::before {
+    content: '\f0eb 值得关注'; display: block;
+    font-weight: 700; font-size: 12.5px;
+    color: #818cf8; margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Hot badge */
+  .hot-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(245,158,11,0.12);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: #fbbf24; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .red-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(239,68,68,0.3);
+    color: #f87171; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 32px 0 0;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #475569; font-size: 13px;
+  }
+  .footer span { color: #6366f1; font-weight: 600; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .container { padding: 16px 12px 48px; }
+    .header h1 { font-size: 22px; }
+    .card { padding: 20px; }
+    .card h3 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI Daily Brief</div>
+    <h1>🤖 AI 每日动态</h1>
+    <p>关注 AI Coding · 具身智能 · 前沿技术</p>
+    <div class="date-highlight">📅 2026年6月3日 · 星期三</div>
+  </div>
+
+  <!-- ===== 行业动态（头条） ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon industry">📡</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <!-- Card 1: Anthropic IPO -->
+    <div class="card">
+      <div class="card-tag tag-industry">IPO <span class="red-badge">AI 史上最大</span></div>
+      <h3>Anthropic 秘密提交 S-1 招股书：估值近万亿，AI 行业资本化进入超级周期</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>Anthropic 于当地时间 <strong class="highlight">6 月 1 日</strong>正式向美国 SEC 秘密递交 S-1 注册声明，计划推动公开上市。<strong class="highlight">高盛与摩根大通</strong>担任主承销商，预计最早 <strong class="highlight">2026 年秋季</strong>正式挂牌，上市规模将创 AI 领域历史纪录。<br><br>
+        <strong>估值与营收：</strong>5 月 29 日刚完成 Series H 融资 <strong class="highlight">650 亿美元</strong>，投后估值达 <strong class="highlight">965 亿美元</strong>（约合人民币 6500 亿元）。年化收入已达 <strong class="accent">470 亿美元</strong>，在 Claude 系列模型强劲商业化驱动下，Anthropic 估值已反超 OpenAI。<br><br>
+        <strong>行业背景：</strong>SpaceX、OpenAI 也计划今年 IPO，三家万亿级估值公司或将同年在美上市，<strong class="warn">全球资本市场 AI 定价逻辑面临大考</strong>。
+      </div>
+      <div class="why-matters">
+        Anthropic 抢在 OpenAI 之前递交招股书，标志着 Claude 系列在 Coding Agent 领域的技术优势已转化为商业胜利。470 亿美元年化收入意味着 AI Coding 已是百亿级市场。作为 Claude Code 背后的公司，其上市将为整个 AI Coding 赛道确立估值标杆。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AI Coding ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- Card 2: Cursor 融资 -->
+    <div class="card">
+      <div class="card-tag tag-coding">AI 编程融资 <span class="hot-badge">500 亿美元估值</span></div>
+      <h3>Cursor 以 500 亿美元估值融资逾 20 亿美元，AI 编程赛道最大单笔融资即将诞生</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>AI 编程工具 Cursor 母公司 Anysphere 正在推进新一轮融资，<strong class="highlight">估值 500 亿美元</strong>，计划融资规模 <strong class="highlight">超过 20 亿美元</strong>。潜在投资方包括 <strong class="accent">Andreessen Horowitz（a16z）</strong>和 <strong class="accent">Thrive Capital</strong>，目前处于谈判阶段。<br><br>
+        <strong>增长驱动：</strong>此轮融资的核心驱动力是 Cursor <strong class="highlight">企业业务加速增长</strong>。从去年中期的估值约 25 亿美元到如今的 500 亿美元，Cursor 在不到一年内估值翻 20 倍，反映了企业级 AI 编程需求的爆发式增长。<br><br>
+        <strong>行业对比：</strong>相比之下，Devin 母公司 Cognition AI 上轮融资估值约 260 亿美元。Cursor 此轮若成功落地，将成为 AI 编程赛道估值最高的公司。
+      </div>
+      <div class="why-matters">
+        Cursor 500 亿美元估值意味着资本市场已将 AI 编程工具视为"下一代 IDE"级别的核心基础设施。企业业务增长是估值锚点——说明 AI Coding 不再只是开发者个人工具，而是企业研发效能的刚需。这也预示着 AI Coding 赛道将进入更激烈的竞争和整合阶段。
+      </div>
+    </div>
+
+    <!-- Card 3: GitHub Copilot AI Credits -->
+    <div class="card">
+      <div class="card-tag tag-coding">计费变革</div>
+      <h3>GitHub Copilot 正式切换 AI Credits 按量计费：AI 编程工具免费红利时代结束</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>GitHub 于 <strong class="highlight">6 月 1 日</strong>起全面上线 AI Credits 按量计费体系，取代原有的 Premium Request Units 固定额度模式。<strong class="warn">套餐价格不变，但计费逻辑彻底改变</strong>——代码生成按模型和 Token 消耗扣减 AI 点数。<br><br>
+        <strong>新定价体系：</strong><br>
+        Pro（$10/月）：<strong class="highlight">1,500 AI 点数</strong><br>
+        Pro+（$39/月）：7,000 AI 点数<br>
+        Copilot Max（$100/月）：20,000 AI 点数<br><br>
+        <strong>实际影响：</strong>重度使用 Copilot 的开发者可能面临用量不够用的问题，<strong class="warn">按 Token 计费意味着 AI 编程成本与代码复杂度直接挂钩</strong>。企业需要重新评估团队 Copilot 预算。配套上线了用户级预算控制功能。
+      </div>
+      <div class="why-matters">
+        AI 编程工具的计费模式正从"无限量包月"转向"按量付费"，这是行业走向成熟的标志。对开发者而言，需要更加审慎地选择何时调用 AI——简单补全和复杂重构的成本差异将被放大。这也为 Cursor、Claude Code 等竞品提供了差异化定价机会。
+      </div>
+    </div>
+
+    <!-- Card 4: MiniMax M3 + Code -->
+    <div class="card">
+      <div class="card-tag tag-coding">新模型发布</div>
+      <h3>MiniMax 发布 M3 模型 + MiniMax Code：编程能力达 Claude Sonnet 4.6 水平，模型权重将开源</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>MiniMax 于 6 月 1 日发布新一代旗舰模型 <strong class="highlight">M3</strong>，宣称是国内首个齐备三大前沿能力的模型：<strong class="accent">1M 上下文窗口</strong>、前沿编程能力、原生多模态。编程性能对标 <strong class="accent">Claude Sonnet 4.6</strong>，模型权重将在发布后十天内开源。<br><br>
+        <strong>MiniMax Code：</strong>同期推出配套 AI 编程产品 <strong class="highlight">MiniMax Code</strong>，正式加入 AI Coding 赛道竞争。该公司此前已启动 A 股上市辅导，估值持续攀升。<br><br>
+        <strong>行业格局变化：</strong>国内 AI 编程赛道从"三家"（阿里通义、字节豆包、智谱）扩展至"四家"，MiniMax 凭借开源策略 + Coding 定位切入，可能搅动现有格局。
+      </div>
+      <div class="why-matters">
+        MiniMax M3 开源 + MiniMax Code 的组合拳值得关注——开源模型降低了本地部署 AI Coding 能力的门槛，国内开发者可基于 M3 构建私有化编码助手。随着 Claude Code 付费化趋势加剧，开源替代方案的重要性日益凸显。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 具身智能 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- Card 5: 越疆"空弈" -->
+    <div class="card">
+      <div class="card-tag tag-embodied">世界动作模型</div>
+      <h3>越疆发布"空弈"世界动作模型：LIBERO 标准任务成功率超 99%，国产具身智能新突破</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>机器人企业越疆（Dobot）发布自研世界动作模型 <strong class="highlight">"空弈 DobotWAM"</strong>，在具身智能标准评测基准 <strong class="accent">LIBERO</strong> 上通过深度测试，顺利通过 LIBERO-Spatial、LIBERO-Object 等全部评估子项，标准任务成功率 <strong class="accent">超过 99%</strong>。<br><br>
+        <strong>技术路线：</strong>"空弈"采用世界动作模型（World Action Model）架构，不同于传统的视觉-语言-动作（VLA）范式，<strong class="highlight">强调对物理世界动作空间的建模</strong>，在复杂现实任务理解与执行上取得关键突破。<br><br>
+        <strong>产业价值：</strong>越疆作为国内机械臂龙头企业，将世界动作模型与自有硬件结合，意味着从"模型公司"向"产品公司"的路径更短，商业化落地速度可能更快。
+      </div>
+      <div class="why-matters">
+        LIBERO 99%+ 成功率是一个令人印象的数字——此前卧安 OneModel 1.7 也曾达到 99% 的 LIBERO 成功率。国产世界动作模型密集突破，说明中国在具身智能核心算法层面已进入全球第一梯队。越疆的硬件+模型整合模式值得关注，可能代表具身智能商业化的最优路径。
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>由 <span>WorkBuddy AI</span> 自动生成 · 2026年6月3日 07:00</p>
+    <p style="margin-top:8px;">数据来源：AITNT · AIBase · 新浪财经 · 财新网 · 雪球 · 知乎 · GitHub Blog</p>
+  </div>
+
+</div>
+</body>
+</html>
