@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月5日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  /* Header */
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+
+  /* Section */
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+
+  /* Card */
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%;
+    border-radius: 4px 0 0 4px;
+  }
+  .card:nth-child(1)::before { background: linear-gradient(180deg, #6366f1, #8b5cf6); }
+  .card:nth-child(2)::before { background: linear-gradient(180deg, #10b981, #059669); }
+  .card:nth-child(3)::before { background: linear-gradient(180deg, #f59e0b, #f97316); }
+  .card:nth-child(4)::before { background: linear-gradient(180deg, #0ea5e9, #0284c7); }
+  .card:nth-child(5)::before { background: linear-gradient(180deg, #ec4899, #db2777); }
+  .card:hover {
+    border-color: rgba(99,102,241,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.1);
+  }
+  .card-tag {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+  }
+  .tag-coding { background: rgba(245,158,11,0.15); color: #fbbf24; }
+  .tag-embodied { background: rgba(16,185,129,0.15); color: #34d399; }
+  .tag-industry { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .tag-alert { background: rgba(239,68,68,0.15); color: #f87171; }
+
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card-body {
+    color: #94a3b8; font-size: 14.5px; line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .card-body strong { color: #c7d2fe; font-weight: 600; }
+  .card-body .highlight { color: #fbbf24; font-weight: 600; }
+  .card-body .accent { color: #34d399; font-weight: 600; }
+  .card-body .warn { color: #f87171; font-weight: 600; }
+
+  .why-matters {
+    background: rgba(99,102,241,0.06);
+    border-left: 3px solid #6366f1;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 13.5px; color: #a5b4fc;
+    line-height: 1.7;
+  }
+  .why-matters::before {
+    content: '\f0eb 值得关注'; display: block;
+    font-weight: 700; font-size: 12.5px;
+    color: #818cf8; margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Hot badge */
+  .hot-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(245,158,11,0.12);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: #fbbf24; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .red-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(239,68,68,0.3);
+    color: #f87171; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 32px 0 0;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #475569; font-size: 13px;
+  }
+  .footer span { color: #6366f1; font-weight: 600; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .container { padding: 16px 12px 48px; }
+    .header h1 { font-size: 22px; }
+    .card { padding: 20px; }
+    .card h3 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI Daily Brief</div>
+    <h1>🤖 AI 每日动态</h1>
+    <p>关注 AI Coding · 具身智能 · 前沿技术</p>
+    <div class="date-highlight">📅 2026年6月5日 · 星期五</div>
+  </div>
+
+  <!-- ===== AI Coding ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- Card 1: Kimi Work Beta -->
+    <div class="card">
+      <div class="card-tag tag-coding">本地 Agent <span class="hot-badge">300 子 Agent 集群</span></div>
+      <h3>月之暗面推出 Kimi Work Beta：支持 300 子 Agent 并行协作的通用本地智能体，92% 代码由 AI 自主生成</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>6 月 3 日，月之暗面正式开启 <strong class="highlight">Kimi Work Beta</strong> 内测，这是一款面向知识工作者的<strong class="highlight">通用型本地 AI Agent</strong>，随 Mac 和 Windows 客户端同步上线。用户无需打开终端、写命令或配置环境，仅需用自然语言描述目标，Kimi Work 即可自动拆解任务、并行执行。<br><br>
+        <strong>Agent 集群架构：</strong>基于 Kimi Code 内核与 <strong class="accent">K2.6 模型</strong>，支持调度最多 <strong class="highlight">300 个子 Agent</strong> 协作处理复杂任务，可自动完成从读取本地文件、调用浏览器查询、生成深度报告到输出 PPT/表格/文档的全链路工作流。<br><br>
+        <strong>AI 开发 AI：</strong>该产品本身由 Kimi Code 深度参与开发，开发团队仅用 <strong class="accent">1 周时间</strong>完成 Mac + Windows 双端 Beta 版本，累计产出超 5 万行有效代码，其中 <strong class="highlight">92% 的代码由 AI 自主生成</strong>，成为"AI 编程工具开发 AI 编程工具"的典型案例。
+      </div>
+      <div class="why-matters">
+        300 子 Agent 并行架构标志着 AI Agent 从"单助手"模式迈入"团队协作"模式。月之暗面选择本地化部署路径（而非纯云端），直面 Claude Code、Cursor 等工具在数据隐私和成本控制上的痛点。92% AI 代码生成率更是一个里程碑式的数据——当 AI 工具能自主构建同类产品，"AI 编程"赛道的竞争壁垒正在被快速拉低，产品差异将从"模型能力"转向"工作流设计"。
+      </div>
+    </div>
+
+    <!-- Card 2: 阿里语构 + 百度千帆 -->
+    <div class="card">
+      <div class="card-tag tag-coding">Vibe Coding 基础设施 <span class="hot-badge">双厂入局</span></div>
+      <h3>阿里达摩院发布「语构」AI 原生开发平台 + 百度千帆推出 Token 工厂与 Harness 工程</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>国内两大科技巨头本周同步加码 AI Coding 基础设施建设。<br><br>
+        <strong>阿里达摩院「语构」：</strong>推出以 <strong class="highlight">Vibe Coding</strong> 为核心的 AI 原生开发平台，用户可通过一句话或语音指令快速启动项目，无需编写代码即可将想法转化为可用数字产品。产品主打差异化体验，支持自然语言零代码应用开发。<br><br>
+        <strong>百度千帆 Harness 工程：</strong>推出面向智能体时代的 <strong class="accent">Token 工厂与 Harness 工程</strong>，核心指标全面升级——推理速度提升 <strong class="accent">25%</strong>、首 Token 延迟降低 <strong class="accent">16%</strong>、Token 消耗减少 <strong class="accent">23%</strong>，任务成功率达 <strong class="highlight">95%</strong>，已支持 150 个主流模型。Harness 工程旨在解决 AI 编程中"模型能力足够但任务执行成功率低"的工程化瓶颈。
+      </div>
+      <div class="why-matters">
+        阿里和百度的同步入局释放明确信号：Vibe Coding 不再只是创业公司的赛道，已升级为大厂必争的基础设施战场。「语构」将 AI 编程能力向下渗透至零代码用户群体，而百度千帆 Harness 则从工程化层面解决 AI Agent 任务执行的可靠性问题——两者分别从"降低门槛"和"提升成功率"两个方向，共同推动 AI Coding 从开发者工具走向全民生产力平台。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 具身智能 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- Card 3: 千寻智能 Spirit v1.6 -->
+    <div class="card">
+      <div class="card-tag tag-embodied">具身基座模型 <span class="hot-badge">击败英伟达</span></div>
+      <h3>千寻智能 Spirit v1.6 登顶北美「具身奥林匹克」RoboArena 榜首，力压英伟达 Cosmos 3</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>6 月 3 日，千寻智能官宣自研具身基座模型 <strong class="highlight">Spirit v1.6</strong> 在北美 RoboArena 榜单（被称为"具身奥林匹克"）登顶，力压<strong class="warn">英伟达 Cosmos 3</strong> 与 Physical Intelligence Pi0.5 模型。<br><br>
+        <strong>实战表现：</strong>在多组真实场景双盲 A/B 实测中，Spirit v1.6 在翻盖开合、精细物件抓取、多步骤连续任务等复杂场景形成完整流畅的动作闭环。以"翻开笔记本"任务为例：<strong class="accent">Spirit v1.6 可模仿人手动作流畅完成全流程</strong>，而英伟达 Cosmos 3 未能打开笔记本。<br><br>
+        <strong>融资里程碑：</strong>同日官宣完成 <strong class="highlight">15 亿元 A+ 轮融资</strong>，3 个月内完成 4 轮累计近 <strong class="highlight">50 亿元</strong>融资。资金将聚焦新一代基座模型研发、百万小时级真实世界交互数据基础设施建设，以及在宁德时代、京东、博世等标杆企业的商业化落地。
+      </div>
+      <div class="why-matters">
+        中国具身智能初创公司在北美权威评测中击败英伟达，这是一个具有标志性意义的里程碑。Spirit v1.6 在精细物理交互任务上展现的优势，证明了中国团队在"世界模型+动作执行"链路上的快速迭代能力。3 个月 50 亿的融资速度刷新赛道纪录，且资金明确投向"真实数据基础设施建设"——在具身智能领域，数据飞轮（场景→数据→模型→场景）正在取代纯模型参数竞赛，成为新的竞争核心。
+      </div>
+    </div>
+
+    <!-- Card 4: 星尘智能 + 戴盟机器人 -->
+    <div class="card">
+      <div class="card-tag tag-embodied">具身智能融资 <span class="hot-badge">估值双双破局</span></div>
+      <h3>星尘智能 3 轮 B 轮融资超 10 亿估值破百亿 + 戴盟机器人获中国电信亿元级 A 轮投资</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>6 月 3 日，具身智能赛道迎来融资密集爆发日，两家头部企业同步完成大额融资。<br><br>
+        <strong>星尘智能（Astribot）：</strong>有"中国版 Figure"之称的绳驱 AI 机器人公司，<strong class="highlight">3 个月内完成 3 轮 B 轮系列融资，总额超 10 亿元，估值突破 100 亿元</strong>，跻身中国具身智能第一梯队。其新一代绳驱机器人 <strong class="accent">T1 定价 8.99 万元起</strong>，6 月 1 日已正式发货，已实现<strong class="accent">千台级交付</strong>。投资方包括博华资本、中科创达、科德教育、国科投资等。<br><br>
+        <strong>戴盟机器人：</strong>完成 <strong class="highlight">亿元级 A 轮融资</strong>，由<strong class="accent">汇川产投</strong>与<strong class="accent">中国电信</strong>共同投资，前阿里通义多模态专家袁伟浩加入担任首席 AI 科学家，将聚焦物理世界模型研发。<br><br>
+        <strong>赛道全景：</strong>加上千寻智能近 50 亿融资、宇树科技 IPO 过会，6 月第一周具身智能赛道融资总额已超 60 亿元。
+      </div>
+      <div class="why-matters">
+        "千台级交付"是星尘智能最值得关注的数据——它意味着具身智能机器人已跨越"实验室样机"阶段进入规模化量产。8.99 万元的定价拉低了高精细操作机器人的商业化门槛，而绳驱技术路线提供了一条不同于电机直驱的差异化路径。中国电信入局戴盟机器人更释放了一个信号：电信运营商开始将具身智能视为 5G/6G 网络的关键落地场景，"网+机器人"的融合生态正在形成。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 行业动态 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon industry">📡</div>
+      <h2>行业动态</h2>
+    </div>
+
+    <!-- Card 5: Gemma 4 12B -->
+    <div class="card">
+      <div class="card-tag tag-industry">开源模型 <span class="hot-badge">16GB 本地运行</span></div>
+      <h3>Google DeepMind 发布 Gemma 4 12B：无编码器原生多模态架构，MacBook Air 即可离线运行</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>6 月 4 日，Google DeepMind 发布 <strong class="highlight">Gemma 4 12B</strong> 开源模型，这是 Gemma 系列首个支持原生音频输入的中等规模无编码器多模态模型，采用 <strong class="accent">Apache 2.0 协议</strong>完全开放。<br><br>
+        <strong>架构创新：</strong>完全移除传统图像与音频编码器，视觉信息通过极轻量嵌入模块直接输入语言模型主干，原始音频信号直接投影到文本 Token 空间。内置多 Token 预测（MTP）草稿器降低推理延迟。<br><br>
+        <strong>性能与部署：</strong>标准评测成绩接近 <strong class="highlight">Gemma 4 26B MoE 模型</strong>，但内存占用不到其一半。仅需 <strong class="accent">16GB 统一内存</strong>即可运行，入门级 MacBook Air（M5）可完全离线使用。Gemma 4 系列全球总下载量已超 <strong class="highlight">1.5 亿次</strong>。<br><br>
+        <strong>Agent 能力：</strong>支持多步推理和智能体工作流，可基于模型构建本地或边缘侧 Agent 应用，无 Token 使用限制，适配 Hugging Face、llama.cpp、vLLM 等主流框架。
+      </div>
+      <div class="why-matters">
+        Gemma 4 12B 的核心价值在于"将多模态 Agent 能力装进笔记本电脑"。16GB 内存门槛意味着开发者可以在不依赖云端的情况下构建本地 AI Agent，这对数据隐私敏感场景（金融、医疗、企业内部工具）意义重大。无编码器架构的探索为行业提供了一条降低多模态模型推理成本的新路径，Apache 2.0 协议的完全开放也让它成为开源社区构建 AI Coding 工具和具身智能系统的优质基座选择。
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · IT之家 · 新浪财经 · 腾讯新闻 · 快科技 · 量子位 · 财新网</p>
+  </div>
+
+</div>
+</body>
+</html>
