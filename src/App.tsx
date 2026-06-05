@@ -554,7 +554,7 @@ export default function App() {
                   <span>每日 AI 新闻自动化推送说明</span>
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  本博客集成了一套成熟的 AI 新闻抓取与推送流水线。系统每天早晨由自动化任务（配置于 `workbuddy` 的定时任务系统）自动执行，流程如下：
+                  本博客集成了一套成熟的 AI 新闻抓取与推送流水线。系统每天早晨由自动化任务自动执行，流程如下：
                 </p>
                 <ol className="list-decimal pl-6 space-y-2 text-slate-600 text-sm">
                   <li>
