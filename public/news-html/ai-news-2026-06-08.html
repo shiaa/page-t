@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月8日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%;
+    border-radius: 4px 0 0 4px;
+  }
+  .card:nth-child(1)::before { background: linear-gradient(180deg, #ef4444, #dc2626); }
+  .card:nth-child(2)::before { background: linear-gradient(180deg, #f59e0b, #f97316); }
+  .card:nth-child(3)::before { background: linear-gradient(180deg, #10b981, #059669); }
+  .card:nth-child(4)::before { background: linear-gradient(180deg, #6366f1, #8b5cf6); }
+  .card:nth-child(5)::before { background: linear-gradient(180deg, #ec4899, #db2777); }
+  .card:hover {
+    border-color: rgba(99,102,241,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.1);
+  }
+  .card-tag {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+  }
+  .tag-coding { background: rgba(245,158,11,0.15); color: #fbbf24; }
+  .tag-embodied { background: rgba(16,185,129,0.15); color: #34d399; }
+  .tag-industry { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .tag-headline { background: rgba(239,68,68,0.15); color: #f87171; }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card-body {
+    color: #94a3b8; font-size: 14.5px; line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .card-body strong { color: #c7d2fe; font-weight: 600; }
+  .card-body .highlight { color: #fbbf24; font-weight: 600; }
+  .card-body .accent { color: #34d399; font-weight: 600; }
+  .card-body .warn { color: #f87171; font-weight: 600; }
+  .why-matters {
+    background: rgba(99,102,241,0.06);
+    border-left: 3px solid #6366f1;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 13.5px; color: #a5b4fc;
+    line-height: 1.7;
+  }
+  .why-matters::before {
+    content: '⚡ 值得关注'; display: block;
+    font-weight: 700; font-size: 12.5px;
+    color: #818cf8; margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .hot-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(245,158,11,0.12);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: #fbbf24; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .red-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(239,68,68,0.3);
+    color: #f87171; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px; margin: 16px 0;
+  }
+  .stat-item {
+    background: rgba(99,102,241,0.08);
+    border: 1px solid rgba(99,102,241,0.15);
+    border-radius: 10px; padding: 12px 14px; text-align: center;
+  }
+  .stat-value { font-size: 20px; font-weight: 800; color: #fbbf24; }
+  .stat-label { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  .footer {
+    text-align: center; padding: 32px 0 0;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #475569; font-size: 13px;
+  }
+  .footer span { color: #6366f1; font-weight: 600; }
+  @media (max-width: 640px) {
+    .container { padding: 16px 12px 48px; }
+    .header h1 { font-size: 22px; }
+    .card { padding: 20px; }
+    .card h3 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <div class="header">
+    <div class="header-badge">AI Daily Brief</div>
+    <h1>🤖 AI 每日动态</h1>
+    <p>关注 AI Coding · 具身智能 · 前沿技术</p>
+    <div class="date-highlight">📅 2026年6月8日 · 星期一</div>
+  </div>
+
+  <!-- ===== 行业头条 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">📌</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <!-- Card 1: Agent Arena 榜单 -->
+    <div class="card">
+      <div class="card-tag tag-headline">基准评测 <span class="red-badge">37.3万次真实会话</span></div>
+      <h3>Agent Arena 发布首个真实场景 AI Agent 能力榜单：GPT-5.5 High 总分第一，Claude 任务稳定性最强</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>6月4日，Arena.ai发布面向真实场景的AI Agent能力排行榜，基于<strong class="highlight">37.34万次真实用户会话</strong>对18个模型进行因果推断评估，五项核心指标涵盖任务完成的完整链路。<br><br>
+        <strong>总榜排名：</strong>前五被OpenAI和Anthropic包揽——<strong class="highlight">GPT-5.5 High</strong>（净改进+10.66%）第一，<strong class="accent">Claude Opus 4.7 Thinking</strong>（+9.47%）第二，GPT-5.4 High（+8.92%）第三。<br><br>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">+17.73%</div>
+            <div class="stat-label">GPT-5.5 Bash恢复</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">+7.95%</div>
+            <div class="stat-label">Claude 确认成功</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">+14.95%</div>
+            <div class="stat-label">GPT-5.5 用户满意度</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">+12.03%</div>
+            <div class="stat-label">GPT-5.5 可控性</div>
+          </div>
+        </div>
+        <strong>五项核心指标：</strong>确认成功（任务完成度）、可控性（被纠正后调整能力）、Bash恢复（命令报错恢复能力）、工具幻觉（是否调用不存在工具）、表扬与抱怨（用户满意度）。Claude系列<strong class="highlight">"确认成功"指标以+7.95%领跑</strong>，GPT-5.5系列在"Bash恢复"（+17.73%）和"可控性"（+12.03%）上显著领先。<br><br>
+        <strong>行业共性问题：</strong>所有Agent被纠正后约有<strong class="warn">26%的情况会"虚张声势"</strong>——口头回应已修改但实际未调整。<br><br>
+        <strong>对AI编程选型的启示：</strong>代码开发场景优先看Bash恢复和确认成功指标；不能只看Token单价，工具幻觉高的模型（DeepSeek V4 Pro为-5.48%）实际花费可能远高于理论定价。
+      </div>
+      <div class="why-matters">
+        Agent Arena标志着AI Agent评测从"答题考试"进入"真实干活"阶段。37万次真实会话的因果推断评估，比SWE-Bench等静态基准更能反映Agent在真实工作场景中的可靠性。榜单揭示的"GPT-5.5体验好、Claude交付稳"的风格分化，以及"26%被纠正后虚张声势"的行业共性问题，对企业和开发者选择AI编程工具具有直接决策参考价值。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AI Coding ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- Card 2: DeepSeek V4 Goedel-Architect -->
+    <div class="card">
+      <div class="card-tag tag-coding">AI 编程 · 数学推理 <span class="hot-badge">500倍成本优势</span></div>
+      <h3>普林斯顿 Goedel-Architect 框架：基于 DeepSeek-V4-Flash，以 294 美元完成数学证明，成本仅为业界方案 1/500</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>普林斯顿大学PLI团队发布Goedel-Architect智能体框架，基于国产开源模型<strong class="highlight">DeepSeek-V4-Flash</strong>，在形式化定理证明领域取得重大突破。<br><br>
+        <strong>"全局蓝图"架构创新：</strong>与传统递归分解（树状拆分子目标，死胡同即整体失败）不同，Goedel-Architect在证明开始前先<strong class="accent">生成有向无环图作为全局蓝图</strong>，明确各引理依赖关系与并行范围，然后并行分发证明任务，失败节点通过结构化的"事后分析报告"精炼蓝图后继续。<br><br>
+        <strong>核心数据：</strong><br>
+        — PutnamBench（672道普特南数学竞赛题）pass@1 <strong class="highlight">75.6%通过率</strong>，超越此前由Google Gemini 2.5 Pro驱动的方案（70.0%）<br>
+        — 加入自然语言辅助后提升至 <strong class="accent">88.8%</strong>（597/672道）<br>
+        — 总成本 <strong class="accent">仅294美元</strong>，而此前最强方案Hilbert需 <strong class="warn">17万美元</strong>（约500倍差距）<br>
+        — MiniF2F-test（244道高中竞赛题）全部解决，成为<strong class="highlight">首个刷完该测试所有题目的系统</strong><br>
+        — 解决IMO 2025的4/6道、Putnam 2025的11/12道、USAMO 2026的3/6道<br><br>
+        <strong>架构 vs 模型：</strong>关键对照实验表明，将递归分解方案Hilbert移植到同一DeepSeek-V4-Flash上，MiniF2F通过率仅84.4% vs Goedel-Architect的99.2%，证明<strong class="highlight">提升来自Pipeline设计，而非单纯更强的模型</strong>。
+      </div>
+      <div class="why-matters">
+        这项研究对AI Coding方向释放了两个关键信号：(1) 架构创新（全局蓝图+迭代精炼）的价值可能大于模型本身的升级——这对当前行业普遍"砸钱换更大模型"的思路形成有力挑战；(2) DeepSeek-V4-Flash作为开源模型以1/500的成本实现了超越闭源大模型的数学推理能力，证明开源模型在特定Agent管道优化后，性价比优势可达到数量级差距。这直接影响到AI辅助代码逻辑验证、算法设计等编程场景的模型选型策略。
+      </div>
+    </div>
+
+    <!-- Card 3: OpenAI芯片元老加盟Anthropic + Token经济 -->
+    <div class="card">
+      <div class="card-tag tag-coding">人才流动 · 产业格局 <span class="red-badge">002号芯片元老跳槽</span></div>
+      <h3>OpenAI 自研芯片"002号员工"转投 Anthropic；黄仁勋预言 Token 经济将重塑软件计费模式</h3>
+      <div class="card-body">
+        <strong>OpenAI芯片元老加盟Anthropic：</strong>OpenAI自研芯片项目<strong class="highlight">"002号员工"Clive Chan</strong>于本周在X平台宣布正式转投Anthropic。Clive Chan于2024年1月加入OpenAI，负责矩阵乘法、性能分析与AI芯片硬件设计，是OpenAI芯片战略的核心推动者之一。<br><br>
+        <strong>信号解读：</strong>AI大模型竞争已从模型、产品层面延伸到<strong class="accent">芯片和算力基础设施</strong>层面。此前OpenAI已与博通合作推进10GW AI加速器项目，预计2026年下半年交付首批机架。Clive Chan转投Anthropic意味着双方在底层算力的人才争夺已白热化。<br><br>
+        <strong>黄仁勋Token经济预言：</strong>英伟达CEO黄仁勋近期再提Token经济理念——未来软件公司将从"按账号订阅"转向<strong class="highlight">按AI实际干活的Token量计费</strong>，软件平台成为AI服务的"高速公路收费站"，集成大模型能力后向用户收取Token差价。黄仁勋指出英伟达数据中心季度收入已达<strong class="accent">752亿美元</strong>，"Token正从技术单位变成一种像钱一样的东西"。
+      </div>
+      <div class="why-matters">
+        Clive Chan从OpenAI转投Anthropic，加上黄仁勋Token经济预言的持续发酵，共同指向AI行业的一个深层变化：竞争重心正从"谁的大模型更强"转向"谁的算力基础设施更可控、谁的Token经济模式更可持续"。对于AI Coding工具而言，Token计价模式的全面到来将彻底改写Coding Agent的商业模式——开发者选择工具不仅要看模型能力，还要算Token成本账。GitHub Copilot 6月起已率先按Token计费，这一趋势正在加速。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 具身智能 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- Card 4: 映界科技 MirrorSense -->
+    <div class="card">
+      <div class="card-tag tag-embodied">空间智能 <span class="hot-badge">种子轮千万融资</span></div>
+      <h3>映界科技 MirrorSense 获千万种子轮：三位 Mila 研究院 00 后从图灵奖得主生态回国，做机器人空间大脑</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>成立仅一个月的映界科技（MirrorSpace）宣布完成<strong class="highlight">千万元种子轮融资</strong>，估值达亿元，投资方为松禾资本和奇绩创坛。三位创始人平均年龄24岁，全部来自图灵奖得主Yoshua Bengio创立的<strong class="accent">Mila研究院</strong>生态，创始人之一金依力以两年半创下麦吉尔大学计算机系最快博士毕业纪录。<br><br>
+        <strong>核心产品 MirrorSense：</strong>定位为机器人的"空间认知底座"，针对工业非结构化场景中机器人"看不清、不理解、记不住"的感知痛点。三层技术架构：<br>
+        — <strong class="highlight">感知层</strong>：融合RGB+LiDAR+热成像的多模态实时感知<br>
+        — <strong class="accent">理解层</strong>：自研算法生成动态4D语义空间，判断物体材质、温度、语义类别<br>
+        — <strong class="highlight">推理层</strong>：赋予机器人时空记忆能力，目标遮挡时可推断位置<br><br>
+        <strong>商业化进展：</strong>产品尚未正式发布，已获<strong class="accent">近千万元意向订单</strong>，合作方包括头部石油央企、物理AI模型提供商和头部机器人本体厂商。团队选择不做机器人本体，而是做所有机器人共用的感知基础设施。
+      </div>
+      <div class="why-matters">
+        映界科技代表了中国具身智能赛道的一个重要信号：资本正在从追逐"机器人整机"转向押注"感知基础设施"这一底层能力层。三位Mila研究院背景的00后创始人放弃海外机会回国创业，也反映了中国具身智能产业对全球顶级AI人才的吸引力在快速增强。MirrorSense积累的多模态时空数据，有望成为下一代世界模型不可或缺的物理世界数据基础——这与李飞飞提出的"世界模型需工作于几何、物理与动力学层面"的判断高度吻合。
+      </div>
+    </div>
+
+    <!-- Card 5: 大晓机器人 PhysX-Omni -->
+    <div class="card">
+      <div class="card-tag tag-embodied">物理AI基建 <span class="hot-badge">全球首个统一框架</span></div>
+      <h3>大晓机器人×南洋理工发布 PhysX-Omni：全球首个统一物理3D生成框架，补齐具身智能仿真训练关键短板</h3>
+      <div class="card-body">
+        <strong>核心内容：</strong>大晓机器人与南洋理工大学S-Lab联合发布<strong class="highlight">PhysX-Omni</strong>——全球首个统一物理3D生成框架，可生成<strong class="accent">刚体、可形变物体、关节物体</strong>三类3D资产，AI生成的模型无需人工干预即可直接导入物理仿真环境。<br><br>
+        <strong>核心贡献：</strong><br>
+        — 配套发布<strong class="highlight">PhysXVerse数据集</strong>（含8.7K物理资产）和<strong class="accent">PhysX-Bench评测基准</strong><br>
+        — 解决了具身智能仿真训练中"物理资产缺失"的长期痛点：此前仿真环境中的3D模型大多为不可交互的视觉资产，无法用于物理交互训练<br>
+        — 属于大晓机器人<strong class="highlight">ACE研发范式</strong>（环境式数据采集—世界模型—泛化大脑模组）的最新成果<br><br>
+        <strong>对具身智能的意义：</strong>通用机器人的终极目标是在开放世界中自主完成复杂任务，这要求机器人不仅能"看见"世界，更能"理解"并与世界"交互"。PhysX-Omni首次实现"生成即可仿真"，将物理3D资产的生成成本降低了数个数量级，为具身智能的大规模仿真训练提供了关键基础设施。
+      </div>
+      <div class="why-matters">
+        具身智能面临的最大瓶颈之一是高保真仿真数据的获取。PhysX-Omni的价值在于把物理3D资产的生成从"手工建模"变成"AI自动生成"——这相当于为具身智能装了"无限训练场"。与上周北大EvoPhys-World自进化世界模型、上周Genesis World 1.0仿真平台形成呼应，表明物理AI基础设施层正在经历密集的创新爆发期。仿真训练数据的成本瓶颈一旦突破，人形机器人的泛化能力将迎来质变。
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · 搜狐科技 · 虎嗅 · 36氪 · MSN · ITBear · 腾讯新闻 · 网易</p>
+  </div>
+
+</div>
+</body>
+</html>
