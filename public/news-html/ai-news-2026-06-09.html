@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月9日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%;
+    border-radius: 4px 0 0 4px;
+  }
+  .card:nth-child(1)::before { background: linear-gradient(180deg, #ef4444, #dc2626); }
+  .card:nth-child(2)::before { background: linear-gradient(180deg, #f59e0b, #f97316); }
+  .card:nth-child(3)::before { background: linear-gradient(180deg, #10b981, #059669); }
+  .card:nth-child(4)::before { background: linear-gradient(180deg, #6366f1, #8b5cf6); }
+  .card:nth-child(5)::before { background: linear-gradient(180deg, #ec4899, #db2777); }
+  .card:hover {
+    border-color: rgba(99,102,241,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.1);
+  }
+  .card-tag {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+  }
+  .tag-coding { background: rgba(245,158,11,0.15); color: #fbbf24; }
+  .tag-embodied { background: rgba(16,185,129,0.15); color: #34d399; }
+  .tag-industry { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .tag-headline { background: rgba(239,68,68,0.15); color: #f87171; }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card-body {
+    color: #94a3b8; font-size: 14.5px; line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .card-body strong { color: #c7d2fe; font-weight: 600; }
+  .card-body .highlight { color: #fbbf24; font-weight: 600; }
+  .card-body .accent { color: #34d399; font-weight: 600; }
+  .card-body .warn { color: #f87171; font-weight: 600; }
+  .why-matters {
+    background: rgba(99,102,241,0.06);
+    border-left: 3px solid #6366f1;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 13.5px; color: #a5b4fc;
+    line-height: 1.7;
+  }
+  .why-matters::before {
+    content: '⚡ 值得关注'; display: block;
+    font-weight: 700; font-size: 12.5px;
+    color: #818cf8; margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .hot-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(245,158,11,0.12);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: #fbbf24; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .red-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(239,68,68,0.3);
+    color: #f87171; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px; margin: 16px 0;
+  }
+  .stat-item {
+    background: rgba(99,102,241,0.08);
+    border: 1px solid rgba(99,102,241,0.15);
+    border-radius: 10px; padding: 12px 14px; text-align: center;
+  }
+  .stat-value { font-size: 20px; font-weight: 800; color: #fbbf24; }
+  .stat-label { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  .footer {
+    text-align: center; padding: 32px 0 0;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #475569; font-size: 13px;
+  }
+  .footer span { color: #6366f1; font-weight: 600; }
+  @media (max-width: 640px) {
+    .container { padding: 16px 12px 48px; }
+    .header h1 { font-size: 22px; }
+    .card { padding: 20px; }
+    .card h3 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <div class="header">
+    <div class="header-badge">AI Daily Brief</div>
+    <h1>🤖 AI 每日动态</h1>
+    <p>关注 AI Coding · 具身智能 · 前沿技术</p>
+    <div class="date-highlight">📅 2026年6月9日 · 星期二</div>
+  </div>
+
+  <!-- ===== 行业头条 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">📌</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <!-- Card 1: WWDC 2026 -->
+    <div class="card">
+      <div class="card-tag tag-headline">Apple WWDC 2026 <span class="red-badge">Siri AI 全面重构</span></div>
+      <h3>苹果 WWDC 2026 主题演讲：Siri AI 从头重建，Core AI 框架向开发者开放，Apple Intelligence 升级为系统级能力</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>北京时间6月9日凌晨，Apple WWDC 2026主题演讲在Apple Park举行。AI成为本次大会绝对主轴，核心发布包括：<br><br>
+        <strong>1. Siri AI 全面重构</strong>——基于与<strong class="highlight">Google Gemini</strong>联合开发的新一代Apple Foundation Models，Siri从语音助手升级为独立AI App。新增能力包括：<strong class="accent">多轮深度对话</strong>、<strong class="accent">屏幕感知</strong>（可回答当前屏幕内容相关问题）、<strong class="accent">Visual Intelligence</strong>（摄像头拍照识别+自动拆分账单等）、<strong class="accent">跨设备会话同步</strong>（iPhone/iPad/Mac/Vision Pro无缝衔接）。Siri从Dynamic Island弹出，macOS支持Ctrl+点击直接唤起，visionOS中以3D悬浮球形态存在。<br><br>
+        <strong>2. Core AI 框架开放</strong>——苹果首次向第三方开发者<strong class="highlight">开放系统级AI能力</strong>，允许App调用设备端模型，同时支持集成第三方AI模型在本地运行。<strong class="accent">Xcode Coding Assistant</strong>支持一键本地化适配多语言，新增<strong class="highlight">Gemini支持+Vibe Coding模式</strong>。<br><br>
+        <strong>3. Apple Intelligence 系统化</strong>——从零散功能升级为覆盖<strong class="accent">全系统应用</strong>的AI能力层：Safari可按描述自动生成浏览器扩展、Messages智能建议日历/备忘录/照片、Calendar支持自然语言新增日程、Phone通话自动提取航班号等信息、Passwords一键升级弱密码、Shortcuts自然语言生成快捷指令。<br><br>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">30%</div>
+            <div class="stat-label">iOS 27 App启动加速</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">70%</div>
+            <div class="stat-label">照片显示速度提升</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">80%</div>
+            <div class="stat-label">AirDrop传输加速</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">iOS 27</div>
+            <div class="stat-label">支持 iPhone 11 起</div>
+          </div>
+        </div>
+        <strong>4. 隐私架构：</strong>全程本地处理+安全云计算，用户数据不被任何人（包括苹果自身）读取。<br><br>
+        <strong>5. 发布节奏：</strong>开发者预览版当日上线，公开测试版次月推出，秋季正式推送。初期英文优先，欧盟和中国市场暂未定。
+      </div>
+      <div class="why-matters">
+        这是苹果AI战略的关键转折点——从"AI功能点"升级为"AI操作系统"。Siri AI的全面重构直接对标ChatGPT/Claude等AI助手，Core AI框架的开放意味着苹果从封闭生态走向AI能力平台化，Xcode的Vibe Coding支持则标志着苹果正式加入AI Coding工具竞赛。对开发者而言，Core AI框架是本届WWDC最具实战价值的发布：它将苹果设备端AI能力变成可编程基础设施，为iOS生态的AI原生应用爆发铺平道路。不过，中国市场和欧盟的缺失也意味着这一波AI红利短期内无法覆盖全球最大两个市场。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AI Coding ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- Card 2: OpenAI ChatGPT + Codex -->
+    <div class="card">
+      <div class="card-tag tag-coding">AI 编程 · 产品战略 <span class="hot-badge">史上最大改版</span></div>
+      <h3>OpenAI 将 Codex 并入 ChatGPT：从聊天机器人到"超级应用"，内部提出"聊天已死"</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>6月7日FT报道，OpenAI即将对ChatGPT进行<strong class="highlight">自2022年上线以来最大规模的产品改造</strong>，核心是将Codex编程能力深度嵌入ChatGPT，将其从单一聊天工具转型为覆盖编码、图像生成、第三方应用接入的<strong class="accent">"超级应用"</strong>。<br><br>
+        <strong>"聊天已死"的战略逻辑：</strong>OpenAI内部高管明确提出"聊天已死"——并非ChatGPT不重要，而是不再满足于其仅作为问答工具。新定位是<strong class="highlight">用户进入各类服务的统一入口</strong>：ChatGPT自动判断用户意图，调用Codex、图像生成器、Canva、Booking.com等内部工具和第三方应用。<br><br>
+        <strong>Codex上位：</strong>Codex周活跃用户已超<strong class="highlight">500万</strong>，多数为付费用户。相比大量免费使用ChatGPT的消费者，Codex代表OpenAI更看重的方向——直接嵌入工作流、提高企业生产率、带来更稳定的收入。核心产品和平台已由曾负责Codex的Thibault Sottiaux统一领导。<br><br>
+        <strong>组织调整：</strong>ChatGPT、Codex和其他产品团队已整合到统一管理体系；非核心业务收缩——暂停ChatGPT内购项目，关闭视频生成产品Sora，从"全品类扩张"进入<strong class="accent">"商业回报优先、产品聚焦"</strong>新阶段。当前OpenAI约<strong class="highlight">200万家企业客户</strong>，企业业务贡献约40%收入，预计2026年底企业收入占比提升至50%。<br><br>
+        <strong>IPO背景：</strong>此次改造发生在OpenAI筹备潜在IPO阶段（估值约8500亿美元），核心目的是向投资者证明增长空间来自高利润率企业级产品。
+      </div>
+      <div class="why-matters">
+        这标志着AI Coding工具正式从"开发者专属"走向"全民入口"。Codex并入ChatGPT后，普通用户无需单独使用编程工具即可在聊天界面调用编码能力，AI Coding的使用门槛将大幅降低。对行业而言，OpenAI的战略向Anthropic靠拢（后者靠Claude Code企业级产品快速增长），AI Coding赛道将从"面向消费者的工具"向"嵌入企业工作流的企业级服务"加速转型。关闭Sora等非核心业务也释放了明确信号：AI行业正从"讲故事"进入"赚真钱"阶段。
+      </div>
+    </div>
+
+    <!-- Card 3: Macaron-V1-Preview -->
+    <div class="card">
+      <div class="card-tag tag-coding">开源模型 · Agent <span class="hot-badge">749B / 300 GPU</span></div>
+      <h3>Mind Lab 开源 Macaron-V1-Preview：749B 参数 Agent 专用模型，不到 300 张 GPU 训练，成本仅为同尺寸模型 1%</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>前沿实验室Mind Lab正式发布并开源<strong class="highlight">Macaron-V1-Preview</strong>——749B参数（744B基础+5B辅助），激活参数40B，基于GLM5.1深度后训练，<strong class="accent">专为Agent场景设计</strong>。<br><br>
+        <strong>架构创新——Mixture-of-LoRA（MoL）：</strong>原生支持同时挂载多个独立LoRA适配器，无需重训基础模型权重，推理时通过路由器动态切换适配策略。可管理<strong class="highlight">百万级LoRA适配器</strong>，具备扩展到千万级的能力。<br><br>
+        <strong>训练成本突破：</strong><br>
+        — 算力投入：<strong class="accent">不到300张GPU</strong>，大部分为非英伟达最新型号<br>
+        — 成本仅为同等尺寸模型训练成本的<strong class="highlight">不到1%</strong><br>
+        — 集成LoRA+DSA（稀疏注意力）+MTP（多词元推理），大幅降低全尺寸模型更新成本<br>
+        — 自研MinT工具链支持万亿参数级RL后训练，实时加载速度提升近10倍<br><br>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">749B</div>
+            <div class="stat-label">总参数（激活40B）</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">&lt;1%</div>
+            <div class="stat-label">同尺寸模型训练成本</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">92.5</div>
+            <div class="stat-label">PinchBench开源最高分</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">A2UI</div>
+            <div class="stat-label">首个开源支持Google协议</div>
+          </div>
+        </div>
+        <strong>核心评测：</strong><br>
+        — <strong class="highlight">PinchBench</strong>（OpenClaw个人智能助理评测）92.5分，开源模型最高<br>
+        — <strong class="accent">LivingBench/VitaBench</strong>（生活场景Agent任务）SOTA<br>
+        — 首个支持Google <strong class="highlight">A2UI（Agent to UI）协议</strong>的开源模型，5秒内生成可操作动态UI<br>
+        — 代码修复（SWEVerified）、终端交互（Terminal2）接近同期头部模型水平<br><br>
+        <strong>开源贡献：</strong>相关基础设施以verl-mint形式贡献给字节verl-project，协同英伟达Megatron-Bridge、伯克利vllm等共建。
+      </div>
+      <div class="why-matters">
+        Macaron-V1-Preview对AI Coding和Agent方向释放了两个关键信号：(1) 749B参数的Agent专用模型只需不到300张GPU训练，成本不到同尺寸模型1%——这彻底打破了"大模型必须烧大钱"的行业迷思，让中小团队也有能力训练Agent专用模型；(2) Mixture-of-LoRA架构让模型可以"即插即用"地适配不同任务场景，无需重训基础权重，这对AI Coding工具的多场景适配（代码生成、调试、重构、测试）具有直接价值。更重要的是，作为首个支持A2UI协议的开源模型，它为"AI生成界面+用户交互推进任务"的新一代Agent交互范式提供了开源底座。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 具身智能 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- Card 4: BYD humanoid robot -->
+    <div class="card">
+      <div class="card-tag tag-embodied">车企入局 <span class="hot-badge">造车→造机器人</span></div>
+      <h3>比亚迪确认自研人形机器人但辟谣"尧舜禹"细节：车企造机器人趋势加速，产业分工与消息边界并行</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>6月初，比亚迪执行副总裁李柯在投资者平台"股东星球"访谈中<strong class="highlight">首次公开确认</strong>比亚迪正在研发人形机器人，明确表示"现阶段重点布局工业机器人，未来将开放平台，支持自研与合作模式并行"。随后网络流传大量未经确认的细节——代号"尧舜禹"、第七代原型机在深圳长沙测试、约150台上岗、目标年内自用2万台。<br><br>
+        <strong>比亚迪辟谣：</strong>6月6日，比亚迪向《每日经济新闻》正式回应：<strong class="warn">"比亚迪人形机器人代号尧舜禹""第七代原型机在深圳和长沙工厂实地测试""约150台上岗，目标年内自用2万台"等消息均不属实。</strong><br><br>
+        <strong>关键信号：</strong>虽然细节被否认，但李柯的表态已释放明确信号——比亚迪确实在做人形机器人。她指出："机器人的竞争在于谁有最强的制造能力、软件和硬件，而汽车相关AI能力与机器人有同源性，如果有一天我们认为机器人可以走向家庭，就可以通过经销商网络售卖比亚迪的机器人。"<br><br>
+        <strong>车企造机器人已成趋势：</strong>在比亚迪之前，特斯拉Optimus、小鹏Iron、广汽GoRobot均已公开布局。造车与造机器人的<strong class="accent">能力同源性</strong>（制造体系+供应链+传感器+电控+AI软件）使车企成为人形机器人赛道的天然玩家。
+      </div>
+      <div class="why-matters">
+        比亚迪事件折射出当前具身智能产业的两个典型特征：(1) 车企入局已成确定性趋势——汽车行业的制造能力、供应链和AI软件能力与机器人高度同源，车企正在从"造车"到"造机器人"开辟第二增长曲线；(2) 信息泡沫与产业真实并存——市场对车企造机器人的预期已远超企业实际进展，"辟谣"本身也是产业发展早期信息过热的标志。对中国具身智能产业而言，比亚迪的加入意味着新能源汽车的"全产业链成本控制能力"将直接传导到人形机器人领域，可能加速整机的成本下降。
+      </div>
+    </div>
+
+    <!-- Card 5: NVIDIA x Unitree H2 Plus follow-up -->
+    <div class="card">
+      <div class="card-tag tag-embodied">产业合作 <span class="hot-badge">下半年上市</span></div>
+      <h3>英伟达×宇树 H2 Plus 参考设计深度解读：算力+本体的产业分工新范式，下半年量产上市</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>6月1日黄仁勋在GTC台北宣布英伟达与宇树科技联合发布人形机器人参考设计<strong class="highlight">H2 Plus</strong>后，更多细节和产业解读持续释出。宇树科技市场部总监黄嘉玮确认H2 Plus<strong class="accent">将于2026年下半年量产上市</strong>。<br><br>
+        <strong>核心规格：</strong><br>
+        — 身高约<strong class="highlight">1.82米</strong>，体重约<strong class="accent">68公斤</strong><br>
+        — 宇树提供机器人本体，英伟达提供<strong class="highlight">算力与软件栈</strong>（Isaac GR00T开发者平台）<br>
+        — Isaac GR00T还将支持宇树G1人形机器人，开发方法将很快在GitHub和Hugging Face公布<br><br>
+        <strong>产业分工新范式：</strong>英伟达提供"大脑"（算力芯片+世界模型+开发工具），宇树提供"身体"（本体设计与制造），这种<strong class="highlight">"算力公司+本体公司"</strong>的分工模式正在成为行业新范式。类似PC产业的"Intel+OEM"或手机产业的"高通+手机厂商"。<br><br>
+        <strong>行业背景：</strong>宇树科技2025年人形机器人出货量超<strong class="accent">5500台</strong>，全球第一；6月1日已通过科创板IPO过会，募资42亿元。英伟达Isaac GR00T+Cosmos 3物理AI平台正打通从仿真到部署的机器人全链路。
+      </div>
+      <div class="why-matters">
+        H2 Plus的意义不在于单款产品，而在于它验证了一种全新的产业分工范式——"算力公司做大脑+本体公司做身体"。这种分工如果跑通，将极大降低人形机器人的研发门槛：任何有制造能力的公司都可以与英伟达合作推出机器人，就像任何PC厂商都能用Intel芯片出电脑一样。对中国具身智能产业而言，宇树作为"身体供应商"的角色定位也值得关注——从"自己造整机"到"为全球算力公司提供本体"，这可能是一条比造整机更大的商业路线。
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · 新浪财经 · 搜狐科技 · The Shortcut · 香港经济日报 · 澎湃新闻 · IT之家 · 腾讯新闻</p>
+  </div>
+
+</div>
+</body>
+</html>
