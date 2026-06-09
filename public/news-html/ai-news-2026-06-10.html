@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月10日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%;
+    border-radius: 4px 0 0 4px;
+  }
+  .card:nth-child(1)::before { background: linear-gradient(180deg, #ef4444, #dc2626); }
+  .card:nth-child(2)::before { background: linear-gradient(180deg, #f59e0b, #f97316); }
+  .card:nth-child(3)::before { background: linear-gradient(180deg, #10b981, #059669); }
+  .card:nth-child(4)::before { background: linear-gradient(180deg, #6366f1, #8b5cf6); }
+  .card:nth-child(5)::before { background: linear-gradient(180deg, #ec4899, #db2777); }
+  .card:hover {
+    border-color: rgba(99,102,241,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99,102,241,0.1);
+  }
+  .card-tag {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+  }
+  .tag-coding { background: rgba(245,158,11,0.15); color: #fbbf24; }
+  .tag-embodied { background: rgba(16,185,129,0.15); color: #34d399; }
+  .tag-industry { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .tag-headline { background: rgba(239,68,68,0.15); color: #f87171; }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card-body {
+    color: #94a3b8; font-size: 14.5px; line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .card-body strong { color: #c7d2fe; font-weight: 600; }
+  .card-body .highlight { color: #fbbf24; font-weight: 600; }
+  .card-body .accent { color: #34d399; font-weight: 600; }
+  .card-body .warn { color: #f87171; font-weight: 600; }
+  .why-matters {
+    background: rgba(99,102,241,0.06);
+    border-left: 3px solid #6366f1;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 13.5px; color: #a5b4fc;
+    line-height: 1.7;
+  }
+  .why-matters::before {
+    content: '⚡ 值得关注'; display: block;
+    font-weight: 700; font-size: 12.5px;
+    color: #818cf8; margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .hot-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(245,158,11,0.12);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: #fbbf24; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .red-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(239,68,68,0.3);
+    color: #f87171; font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 8px;
+    margin-left: 12px; vertical-align: middle;
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px; margin: 16px 0;
+  }
+  .stat-item {
+    background: rgba(99,102,241,0.08);
+    border: 1px solid rgba(99,102,241,0.15);
+    border-radius: 10px; padding: 12px 14px; text-align: center;
+  }
+  .stat-value { font-size: 20px; font-weight: 800; color: #fbbf24; }
+  .stat-label { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  .footer {
+    text-align: center; padding: 32px 0 0;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #475569; font-size: 13px;
+  }
+  .footer span { color: #6366f1; font-weight: 600; }
+  @media (max-width: 640px) {
+    .container { padding: 16px 12px 48px; }
+    .header h1 { font-size: 22px; }
+    .card { padding: 20px; }
+    .card h3 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <div class="header">
+    <div class="header-badge">AI Daily Brief</div>
+    <h1>🤖 AI 每日动态</h1>
+    <p>关注 AI Coding · 具身智能 · 前沿技术</p>
+    <div class="date-highlight">📅 2026年6月10日 · 星期三</div>
+  </div>
+
+  <!-- ===== 行业头条 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">📌</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <!-- Card 1: 人形机器人实景实训专项行动 -->
+    <div class="card">
+      <div class="card-tag tag-headline">政策驱动 <span class="red-badge">万台级部署</span></div>
+      <h3>工信部+国资委联合启动人形机器人与具身智能实景实训专项行动：2026年底万台级规模、百个以上高价值场景</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>6月9日，工业和信息化部、国务院国资委正式印发通知，联合启动<strong class="highlight">2026年度人形机器人与具身智能实景实训专项行动</strong>——这是中国首次以政企协同方式系统性推动具身智能从实验室走向生产一线。<br><br>
+        <strong>核心目标：</strong>到2026年底实现两大硬指标：<br>
+        — 人形机器人等重点产品在<strong class="accent">一批代表性场景</strong>中率先完成应用验证和常态部署，开启"作业模式"<br>
+        — 凝练形成<strong class="highlight">百个以上高价值应用场景</strong>，带动形成<strong class="accent">万台级规模落地能力</strong><br><br>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">100+</div>
+            <div class="stat-label">高价值应用场景</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">万台级</div>
+            <div class="stat-label">规模落地目标</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">6项</div>
+            <div class="stat-label">重点任务</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2026年底</div>
+            <div class="stat-label">时间节点</div>
+          </div>
+        </div>
+        <strong>6项重点任务：</strong>打造实景实训空间（工业/服务/特种三大领域）→ 组建创新应用联合体 → 攻关实用化作业技能（提升"大小脑"模型抗扰和自适应水平）→ 加强实景应用验证与常态部署 → 强化数据治理与开放共享 → 凝练可复制可推广的应用模式。<br><br>
+        <strong>商业模式创新：</strong>鼓励探索<strong class="accent">"人形机器人即服务"</strong>（Robot-as-a-Service）模式，通过按效用付费、经营性租赁等手段降低用户投入门槛。同时探索人形机器人保险等配套政策。<br><br>
+        <strong>落地保障：</strong>成效突出的区域与企业将在<strong class="highlight">政策、标准、项目</strong>上获得倾斜支持；各省级工信主管部门和央企将通过专项资金、政府奖励支持场景开放与技术攻关；建立清单化管理、常态化跟踪评估机制。
+      </div>
+      <div class="why-matters">
+        这是中国首次以"部委联合+政企协同"方式系统性推动具身智能产业落地，释放出三个关键信号：(1) 政策已从"鼓励研发"进入"驱动落地"阶段——不再是泛泛的表态，而是给出了具体的万台级部署、百个场景、2026年底等硬性指标；(2) "人形机器人即服务"的商业模式探索意味着政策制定者已经意识到买断式采购的局限，正在为规模化推广扫清经济障碍；(3) 数据治理和开放共享的强调表明决策层已经认识到具身智能的核心瓶颈不在硬件，而在真机数据——政策的着力点可能比业界预期更精准。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AI Coding ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- Card 2: Anthropic Marlin -->
+    <div class="card">
+      <div class="card-tag tag-coding">AI 编程 · 训练范式 <span class="hot-badge">280美元/单</span></div>
+      <h3>Anthropic 斥重金请1000名外部工程师教 Claude Code 写代码：内部工程师已"失业"，AI编程的核心竞争力转向人类工程直觉</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>据Business Insider报道，Anthropic正在通过数据标注公司<strong class="highlight">Snorkel AI</strong>开展代号"<strong class="accent">Marlin</strong>"的专项项目：以<strong class="highlight">280美元/单</strong>（约合时薪280美元，是同行业2.5倍）的报酬，聘请约<strong class="accent">1000名外部软件工程师</strong>，手把手训练Claude Code提升代码生成质量。与此同时，Anthropic内部工程师<strong class="warn">已基本不写代码</strong>——Claude Code负责人Boris Cherny今年1月就公开表示自己已两个多月没手写一行代码，单日让Claude提交27个PR。<br><br>
+        <strong>Marlin 项目运作机制：</strong><br>
+        1. 工程师从数千个仓库中选取任务，编写提示词说明要求<br>
+        2. 模型对同一任务生成两套代码，工程师做A/B盲评<br>
+        3. 从<strong class="highlight">正确性、安全性、可靠性、可维护性</strong>四个维度评估生产级代码质量<br>
+        4. 多轮校验+全程留痕，分歧经裁决后写入评分变更记录<br><br>
+        <strong>Snorkel AI 的角色升级：</strong>这家斯坦福AI Lab孵化的公司（估值13亿美元，客户包括Google、Mistral、Anthropic），最初以"减少人工标注"为目标，如今其最核心业务却是组织各领域专家产出高质量判断数据，成为前沿模型公司的<strong class="accent">"数据军火商"</strong>。<br><br>
+        <strong>行业影响——全球AI Coding数据争夺战已打响：</strong><br>
+        — <strong class="highlight">Anthropic</strong>：直接购买工程师评审数据，将工程经验转化为训练数据<br>
+        — <strong class="accent">Cursor</strong>：通过产品获取用户真实编辑行为数据，训练专用编程模型<br>
+        — <strong class="highlight">马斯克/xAI</strong>：试图收购Cursor获取实时开发者行为数据，补训Grok<br>
+        — <strong class="accent">OpenAI</strong>：搭建隔离沙箱，让模型在真实编码任务中通过强化学习自主试错<br><br>
+        核心结论：在AI已能完成大部分基础编码的阶段，<strong class="warn">人类的工程直觉、对"好代码"的判断力</strong>已成为AI编程能力的核心护城河——谁能将真实工程经验转化为模型可学习的数据，谁就能胜出。
+      </div>
+      <div class="why-matters">
+        这条新闻折射出AI Coding赛道竞争逻辑的根本转移：(1) 从"烧算力"到"买经验"——过去比拼谁有更多GPU、更大语料，现在比拼谁有能力获取资深工程师的"编码直觉"并转化为训练数据；(2) Anthropic内部工程师已基本不写代码这一事实表明，AI编程已经进入了"自消费"阶段——用AI写的代码来训练更好的AI写代码，形成正向飞轮；(3) 全球AI Coding"数据争夺战"的四条路径（Anthropic买经验、Cursor采行为、xAI收购入口、OpenAI沙箱试错）已清晰呈现，接下来几个月将决定行业格局。
+      </div>
+    </div>
+
+    <!-- Card 3: Microsoft GitHub hack -->
+    <div class="card">
+      <div class="card-tag tag-coding">AI 开发安全 <span class="red-badge">供应链危机</span></div>
+      <h3>微软 GitHub 开源 AI 开发工具遭黑客入侵：数十个仓库被植入密码窃取代码，AI开发供应链安全敲响警钟</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>微软GitHub上数十个官方开源项目仓库近日<strong class="warn">紧急下线</strong>——黑客入侵后在这些代码仓库中植入了专门窃取开发者密码的恶意程序。受影响项目集中在<strong class="highlight">Azure云服务</strong>和<strong class="accent">热门AI开发工具集成开发环境</strong>领域。安全公司Cloudsmith和OpenSourceMalware最早监测到异常并发出预警。<br><br>
+        <strong>攻击链分析：</strong>黑客直接入侵了微软官方的开源仓库，在代码中注入密码窃取病毒。这意味着任何使用、下载或依赖这些受影响仓库的开发者，其设备上存储的账号密码等敏感信息都可能已被窃取。<br><br>
+        <strong>安全影响：</strong>微软作为全球最大的开源托管平台和AI开发工具提供商，其官方仓库被入侵具有<strong class="warn">远超单次事件的系统性风险</strong>：<br>
+        — AI开发工具的依赖链极深——一个被污染的底层库可能通过npm/pip等包管理器扩散到成千上万个下游项目<br>
+        — AI开发者通常拥有更高权限的云服务和API密钥，一旦泄露后果远超普通代码泄露<br>
+        — 此次事件将开源供应链安全从"第三方库审查"推向了"官方源也不安全"的新阶段<br><br>
+        <strong>应对建议：</strong>使用微软Azure SDK、AI开发相关开源项目的开发者应尽快排查代码版本，确认是否使用了被篡改版本；更新到官方修复版本；修改所有可能暴露的账号密码和API密钥。
+      </div>
+      <div class="why-matters">
+        在AI Coding工具快速渗透开发者工作流的当下，安全性正成为最容易被忽视的致命短板。此次事件暴露出AI开发供应链的一个结构性风险：当AI编程工具（Claude Code、Cursor、Copilot等）大量引用和依赖开源代码库时，供应链攻击的破坏面将呈指数级放大——攻击者不需要攻破AI工具本身，只需污染一个底层依赖库，就可能通过AI的代码生成行为扩散到整个开发生态。这不是一个微软的问题，这是整个AI编程工具行业都必须正视的安全基础设施挑战。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 具身智能 ===== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- Card 4: PhysForge -->
+    <div class="card">
+      <div class="card-tag tag-embodied">ICML 2026 <span class="hot-badge">港大×腾讯混元</span></div>
+      <h3>PhysForge 框架登 ICML 2026：港大×腾讯混元联合推出，单张图片即可生成可交互物理3D资产，补齐具身智能仿真训练最大短板</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>香港大学与腾讯混元等机构联合提出<strong class="highlight">PhysForge</strong>框架，已被机器学习顶会<strong class="accent">ICML 2026</strong>接收。该框架突破了现有3D生成仅停留在静态几何的局限——只需<strong class="highlight">单张输入图像</strong>，即可生成同时包含高质量几何、纹理、部件结构、物理属性、运动学参数的可交互3D资产。<br><br>
+        <strong>核心能力——"图片→可操作模型"：</strong><br>
+        — 生成结果包含每个部件的语义标签、材质、质量、功能状态机<br>
+        — 精确输出可动部件的<strong class="accent">关节类型、关节轴、关节原点、运动范围</strong><br>
+        — 可直接导入RoboTwin等机器人仿真环境，机械臂能识别并操作（开柜门、拉抽屉、抓取部件）<br>
+        — 可直接对接Unity、Unreal Engine等引擎，无需额外配置物理参数<br><br>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">15万</div>
+            <div class="stat-label">PhysDB数据集3D资产</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">7大类</div>
+            <div class="stat-label">覆盖家居到工业</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">4级</div>
+            <div class="stat-label">标注体系（静态→交互）</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">单图</div>
+            <div class="stat-label">输入即可生成</div>
+          </div>
+        </div>
+        <strong>技术路线——两阶段"规划-生成"策略：</strong><br>
+        第一阶段：VLM作为"物理架构师"，从输入图像自回归生成<strong class="highlight">层级化物理蓝图</strong>（Hierarchical Physical Blueprint），预先定义部件边界框、父子层级、关节类型、材质等功能语义<br>
+        第二阶段：提出<strong class="accent">KineVoxel Injection（KVI）机制</strong>——将关节原点、轴方向、运动限制编码为运动学体素，与几何体素共同输入统一扩散去噪过程，实现几何生成与运动学参数的协同优化<br><br>
+        <strong>对具身智能的意义：</strong>当前机器人仿真训练的最大瓶颈之一是高质量可交互3D场景的构建成本——人工建模+关节绑定+物理参数配置耗时巨大。PhysForge将这一过程从"建模师数天工作"压缩为"单图数秒生成"，直接降低了仿真训练数据的获取门槛。物理蓝图还可被具身智能体直接读取，辅助完成复杂任务规划。
+      </div>
+      <div class="why-matters">
+        PhysForge解决了具身智能仿真训练的"数据供给侧"瓶颈——当前人形机器人训练最缺的不是模型架构，而是大规模、多样化的可交互仿真环境。PhysForge让"单图→可直接操作的物理3D资产"成为现实，意味着机器人可以在无限多样化的虚拟环境中训练，这对"Sim-to-Real"路线的推进价值巨大。此外，港大+腾讯混元的联合、ICML 2026的认可，也表明中国团队在具身智能基础设施层的竞争力正在快速提升。配合昨日工信部发布的实景实训政策，从"仿真训练"到"真实部署"的闭环正在加速形成。
+      </div>
+    </div>
+
+    <!-- Card 5: 中科院空间智能综述 -->
+    <div class="card">
+      <div class="card-tag tag-embodied">空间智能 <span class="hot-badge">认知地图</span></div>
+      <h3>中科院发布空间智能综述：机器真正理解物理世界需要一张"认知地图"，统一空间感知、推理与行动</h3>
+      <div class="card-body">
+        <strong>事件概述：</strong>中国科学院自动化研究所联合多所高校发布具身智能空间智能综述论文《Spatial Intelligence from a Cognitive Map Perspective: A Survey》，首次系统化提出<strong class="highlight">"认知地图"（Cognitive Map）</strong>作为空间智能的核心表征框架，将传统生物学中的空间认知概念扩展为可计算的具身智能理论体系。<br><br>
+        <strong>核心论点——从"看得见"到"理解得了"：</strong><br>
+        当前具身智能系统虽然能完成视觉识别、路径规划等单点任务，但缺乏<strong class="warn">对物理空间的统一理解</strong>——AI能看到物体却无法理解空间关系，能避开障碍却不能规划"去厨房拿杯子"这样的复合任务。中科院团队提出，机器真正理解物理世界需要构建一张<strong class="accent">"认知地图"</strong>——它不是传统意义上的几何地图，而是融合了<strong class="highlight">空间感知、语义理解、物理常识和行动规划</strong>的统一表征。<br><br>
+        <strong>认知地图的关键维度：</strong><br>
+        — <strong class="accent">空间感知层</strong>：从传感器数据构建对环境的几何与拓扑理解（不只是"看到了什么"，而是"空间的结构是什么"）<br>
+        — <strong class="highlight">语义理解层</strong>：赋予空间元素以功能和语义（"这是一把椅子"不够，需要知道"椅子意味着可以坐、可以移动、通常在桌子旁边"）<br>
+        — <strong class="accent">物理常识层</strong>：理解物体的物理属性与空间中的因果关联（杯子掉在地上会碎、门关上需要先拉开）<br>
+        — <strong class="highlight">行动规划层</strong>：基于对空间的完整理解，生成可执行的行动序列<br><br>
+        <strong>与具身智能的关系：</strong>该综述直接回应了具身智能领域当前最大的理论空白——模型架构（VLA、世界模型等）越来越强，但机器人仍然缺乏"空间常识"。认知地图框架为"如何让机器人真正理解它所在的空间"提供了一个可计算的理论路径。
+      </div>
+      <div class="why-matters">
+        在具身智能的"硬"方向（机器人本体、传感器、关节电机）加速推进的同时，中科院的空间智能综述提醒行业：最关键的瓶颈可能不在硬件，而在于"软"的空间理解能力。认知地图框架的价值在于它提供了一个统一的理论语言，将计算机视觉、自然语言理解、运动规划和物理推理等碎片化的研究方向整合到一个框架下。对于追求"通用具身智能"的团队而言，如果不能在空间智能层面取得突破，再强的本体、再多的真机数据，最终可能只是一个"会走路的摄像头"。
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · AIBase · 新浪财经 · 新华社 · 腾讯新闻 · ITBear · 雪球 · agentren.cn</p>
+  </div>
+
+</div>
+</body>
+</html>
