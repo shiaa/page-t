@@ -3,6 +3,60 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-06-12',
+    title: 'AI 每日动态 (2026-06-12)',
+    summary: '1. 1OpenAI 与 Anthropic AI 编程"全面战争"爆发：免费迁移 vs 提额锁客 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2小米 MiMo Code 正式开源：MIT 协议 + 独创持久记忆系统，...',
+    date: '2026-06-12',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年6月12日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1OpenAI 与 Anthropic AI 编程"全面战争"爆发：免费迁移 vs 提额锁客
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2小米 MiMo Code 正式开源：MIT 协议 + 独创持久记忆系统，AI 编程助手进入"越用越懂你"时代
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 3GPT-5.6 内部测试曝光：Agentic 编码超 Mythos，三巨头 6 月发行混战白热化
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 具身智能方向
+
+### 1. 4何小鹏亲自挂帅机器人 CEO：IRON 人形机器人 2026 年底量产，三阶段时间表明确
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 5CES Asia 2026 今日闭幕：历史首设人形机器人专区，具身智能从实验室走向聚光灯
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-06-11',
     title: 'AI 每日动态 (2026-06-11)',
     summary: '1. Anthropic 发布第五代旗舰模型 Claude Fable 5 与 Mythos 5：编程与网络安全双线突破，Mythos 级能力首次面向公众 标签: 模型发布 SWE Bench Pro 80.3% 6月10日，Anthrop...',

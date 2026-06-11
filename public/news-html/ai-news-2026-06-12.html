@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月12日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.openai { color: #10b981; }
+  .vs-item .vs-label.anthropic { color: #f59e0b; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .timeline {
+    margin-bottom: 18px;
+  }
+  .timeline-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0; border-bottom: 1px solid rgba(99,102,241,0.06);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #6366f1; margin-top: 6px; flex-shrink: 0;
+  }
+  .timeline-text { font-size: 13px; color: #94a3b8; line-height: 1.6; }
+  .timeline-text strong { color: #e2e8f0; }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 12</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 12 日 · 星期五</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>OpenAI 与 Anthropic AI 编程用户争夺战全面升级：免费迁移 vs 提额锁客</li>
+      <li>小米 MiMo Code 开源：MIT 协议 + 独创持久记忆系统，AI 编程进入"越用越懂你"时代</li>
+      <li>GPT-5.6 内部测试曝光：Agentic 编码超越 Claude Mythos，三巨头 6 月混战白热化</li>
+      <li>何小鹏亲挂机器人 CEO 帅印：IRON 人形机器人 2026 年底量产，三阶段路线图公布</li>
+      <li>CES Asia 2026 今日闭幕：历史首设人形机器人专区，具身智能从小众走向聚光灯</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">代码战争</span>
+      <h3><span class="card-num">1</span>OpenAI 与 Anthropic AI 编程"全面战争"爆发：免费迁移 vs 提额锁客</h3>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label openai">OpenAI · Codex 进攻</div>
+          <ul>
+            <li>5月13日推出 2 个月 Codex 企业版免费（面向 Claude Code 迁移用户）</li>
+            <li>内置一键迁移工具，自动导入 Claude Code 配置、MCP 服务器、会话历史</li>
+            <li>开源 claude2codex 工具支持单命令迁移</li>
+            <li>目标：以补贴换市场，"先占市场后变现"</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label anthropic">Anthropic · Claude Code 防守</div>
+          <ul>
+            <li>数小时内反击：Claude Code 周使用额度提升 50%（至 7 月 13 日）</li>
+            <li>6 月 15 日起，代理固定费率补贴终止，转向"积分池"计费</li>
+            <li>策略：短期让利锁客 + 长期商业化可持续转型</li>
+            <li>Claude Code 是企业收入核心支柱，不能丢</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>这是 AI 编程工具市场首次爆发"平台战争"级别的用户争夺。OpenAI 的迁移工具直接消解了 Claude Code 通过用户习惯积累形成的竞争壁垒——开发者生态的"锁定效应"正在瓦解。对用户而言短期是利好（薅补贴），长期看厂商将被迫靠模型能力和体验而非切换成本竞争。这场战争的结果将决定未来企业 AI 编程入口的归属。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="card">
+      <span class="card-badge source">小米 · 开源</span>
+      <h3><span class="card-num">2</span>小米 MiMo Code 正式开源：MIT 协议 + 独创持久记忆系统，AI 编程助手进入"越用越懂你"时代</h3>
+
+      <div class="content-block">
+        <p>小米 MiMo 技术团队于 6 月 11 日正式开源终端 AI 编程助手 <strong>MiMo Code</strong>，采用 MIT 协议，个人与企业均可自由使用、修改及二次分发。</p>
+        <p><strong>核心亮点：</strong></p>
+        <p>① <strong>内置免费模型 MiMo-V2.5</strong>：性能对标 Claude Sonnet 4.6，同模型下 SWE-Bench Pro V2 与 Terminal Bench 2 得分超 Claude Code 5 个百分点。</p>
+        <p>② <strong>独创持久记忆系统</strong>：通过独立子智能体维护项目记忆、会话检查点与任务进度，上下文窗口临满时自动重建精简简报；搭配每 7 天触发的 /dream 收敛机制，压缩合并历史记忆，彻底解决 AI 长会话"健忘"痛点——这是目前市场上首个系统性解决此问题的 AI 编程工具。</p>
+        <p>③ <strong>全流程 Compose 模式</strong>：从需求分析到代码审查的自动化开发全流程支持，兼容 DeepSeek、Kimi、GLM 等主流模型及第三方 Token 服务，支持语音输入。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>MiMo Code 不是又一个"我也能写代码"的工具，而是在解决 AI 编程的核心痛点——上下文记忆。此前的 AI 编程工具在处理大型项目时都会"忘记前面说过什么"，MiMo Code 的记忆系统是行业首次在终端 AI 编程助手中实现持续性项目记忆。同时 MIT 开源 + 免费模型，意味着中国开发者有了一个无需付费、数据不离境的高质量选择。这是中国 AI 编程工具从"追赶"到"原创差异化"的一个标志。</p>
+      </div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="card">
+      <span class="card-badge hot">模型军备</span>
+      <h3><span class="card-num">3</span>GPT-5.6 内部测试曝光：Agentic 编码超 Mythos，三巨头 6 月发行混战白热化</h3>
+
+      <div class="content-block">
+        <p>6 月上旬，OpenAI Codex 后端日志短暂暴露 GPT-5.6 踪迹，引发开发者社区刷屏。据 AITNT 等多家信源交叉印证：</p>
+        <p>① <strong>Agentic 编码能力反超</strong>：GPT-5.6 的 Agent 编程能力据称已超越 Anthropic 的 Claude Mythos 5，这是迄今为止最强 Agentic Coding 模型。</p>
+        <p>② <strong>6 月三巨头混战</strong>：GPT-5.6 + Claude Fable 5/Mythos 5 + Gemini 3.5 Flash 集中于 6 月发布，OpenAI 创始人 Sam Altman 内部提及"若 AI 先实现自我改进，上市计划可暂缓"。</p>
+        <p>③ <strong>迭代速度再刷新纪录</strong>：GPT-5.5 发布（4月23日）仅一个多月，5.6 已在内部测试，40 天一轮的迭代节奏意味着 AI 编程能力以月为单位指数级跃升。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>GPT-5.6 的出现标志着一个更深的趋势：AI 编程不再是"工具辅助人写代码"，而是"模型本身在竞赛谁能更好地自主编程"。Altman"AI 自我改进优先于上市"的表态尤为耐人寻味——如果 AI 模型本身被用于研发下一代 AI 模型，那迭代速度将突破人类研发节奏的天花板。对于开发者而言，这意味着你昨天刚掌握的工具能力，下个月就可能被全面超越。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="card">
+      <span class="card-badge milestone">量产冲刺</span>
+      <h3><span class="card-num">4</span>何小鹏亲自挂帅机器人 CEO：IRON 人形机器人 2026 年底量产，三阶段时间表明确</h3>
+
+      <div class="content-block">
+        <p>6 月 10 日，小鹏集团董事长兼 CEO 何小鹏宣布即日起亲兼机器人业务 CEO，全面统筹机器人业务资源。此前 IRON 项目负责人施晓鑫已于 6 月初离职，何小鹏此番亲自下场，内部信中将当前阶段类比为"八年前小鹏首款车型 G3 量产前夜"。</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2026 年底</strong> — IRON 人形机器人实现量产</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2027 年 Q1</strong> — 进入小鹏线下门店担任导购</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2027 年 Q2</strong> — 推向海外市场</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2028 年</strong> — 开始进入家庭场景</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p>小鹏是国内唯一全栈自研的人形机器人公司——从芯片到操作系统、从关节到灵巧手均自主可控。汽车业务的供应链、制造、品质管理、全球化能力可直接复用到机器人业务，具备独一无二的量产优势。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>何小鹏亲自挂帅释放了两个关键信号：第一，人形机器人已从小鹏的"未来项目"升级为"核心业务"，地位对标汽车主业；第二，明确的三阶段时间表意味着中国具身智能头部企业正式从"技术验证"进入"量产交付"阶段。结合此前工信部将具身智能纳入信通融合三年行动方向，以及宇树科技科创板 IPO 过会，中国具身智能产业正在形成"政策+资本+量产"三重共振。</p>
+      </div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="card">
+      <span class="card-badge milestone">产业风向</span>
+      <h3><span class="card-num">5</span>CES Asia 2026 今日闭幕：历史首设人形机器人专区，具身智能从实验室走向聚光灯</h3>
+
+      <div class="content-block">
+        <p>第八届亚洲消费电子展（CES Asia 2026）于 6 月 10-12 日在北京亦庄举办，今日正式闭幕。本届以"智慧生活，全域互联"为主题，深度聚焦具身智能、人工智能、低空经济三大前沿赛道。</p>
+        <p><strong>核心看点：</strong></p>
+        <p>① <strong>历史首次设立人形机器人专题展区</strong>：聚焦环境交互泛化能力与动态运动鲁棒性两大核心维度，打破传统展会的碎片化展示模式，构建从本体制造、核心零部件到应用场景的全链路生态展区。</p>
+        <p>② <strong>200+ 企业覆盖 28 国</strong>：首发设立中国创新专区，超级球球 AI 儿童成长陪伴机器人等多款具身智能产品首秀。</p>
+        <p>③ <strong>创新奖项覆盖"人形智能装备"</strong>：获奖成果兼具技术突破性与市场化潜力，直击"从技术到产品、从样机到量产"的行业核心痛点。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>CES Asia 首次为人形机器人设立独立展区，本身就是一个强烈的产业信号：具身智能已从学术前沿和概念炒作，进入规模化展示和商业化对接阶段。结合本周工信部联合国资委启动"万台级人形机器人实景实训"专项行动、"人工智能+信息通信"三年实施意见将具身智能纳入重点方向，2026 年 6 月的第二周堪称中国具身智能从"喊口号"到"真干活"的转折周。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · AIBase · AIProductHub · TechTimes · 新浪财经 · 搜狐科技</p>
+  </div>
+
+</div>
+</body>
+</html>
