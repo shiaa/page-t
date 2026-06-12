@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月13日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.openai { color: #10b981; }
+  .vs-item .vs-label.anthropic { color: #f59e0b; }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #34d399; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .timeline {
+    margin-bottom: 18px;
+  }
+  .timeline-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0; border-bottom: 1px solid rgba(99,102,241,0.06);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #6366f1; margin-top: 6px; flex-shrink: 0;
+  }
+  .timeline-text { font-size: 13px; color: #94a3b8; line-height: 1.6; }
+  .timeline-text strong { color: #e2e8f0; }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 13</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 13 日 · 星期六</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>智源大会开幕重磅发布：悟界·Physis-v0.1 全球首个通用世界基座模型，从"预测下一个词"迈向"预测下一个物理状态"</li>
+      <li>Kimi K2.7 Code 编程大模型开源发布：1.1 万亿参数、Token 消耗直降 30%、下周一上线 6 倍速高速版</li>
+      <li>OpenAI GPT-5.6 临门一脚：150 万 token 上下文 + 即将大幅降价，正面迎战 Claude Fable 5</li>
+      <li>华为 HDC 2026 鸿蒙 7 Beta 正式发布：原生 Agent OS 时代开启，盘古 2.0 开源同步登场</li>
+      <li>小鹏 IRON 机器人 2026 年底量产时间表明确 + 工信部万台级实景实训部署双管齐下</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">范式革命</span>
+      <h3><span class="card-num">1</span>智源大会重磅发布悟界·Physis-v0.1：全球首个通用世界基座模型，从"预测下一个词"迈向"预测下一个物理状态"</h3>
+
+      <div class="content-block">
+        <p>6 月 12 日，第八届北京智源大会在中关村国际创新中心开幕。智源研究院院长王仲远发布<strong>全球首个通用世界基座模型——悟界·Physis-v0.1</strong>，同步推出<strong>多模态神经科学大模型悟界·Brainμ1.0</strong>、<strong>具身大脑悟界·RoboBrain Orca</strong>、<strong>统一多模态基座悟界·Emu3.5</strong>、<strong>药物发现模型悟界·OpenComplex2.5</strong>，以及覆盖 18 家芯片厂商 32 款芯片的 <strong>FlagOS 2.1 智算软件栈</strong>。</p>
+        <p><strong>核心创新点：</strong></p>
+        <p>① <strong>范式跃迁</strong>：悟界·Physis-v0.1 打破传统世界模型以语言、像素、三维结构、视觉表征为中心的局限，首次以<strong>物理隐空间表征</strong>替代像素预测，可将视频、深度 RGB、3D 点云、力触反馈等全模态信息统一转化为标准化隐空间物理状态。</p>
+        <p>② <strong>四大核心能力</strong>：物理正确、动作因果可溯、长程一致、通用泛化——已支持 50+ 复杂物理场景的长程推理。</p>
+        <p>③ <strong>具身大脑 RoboBrain Orca</strong>：以"下一个物理状态预测"为核心，实现"想、看、动"三位一体，少样本学习与跨场景泛化能力大幅提升，可支撑机器人在物流、酒店等真实环境长期自主作业。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>如果说 GPT 系列开启的 LLM 时代是"预测下一个词元"，悟界·Physis-v0.1 标志的则是"预测下一个物理状态"——AI 范式从数字世界正式跨入物理世界。这与英伟达 Cosmos（像素预测）、DeepMind Genie（视频生成）路线有本质差异，智源选择了<strong>物理隐空间</strong>这一更接近真实物理本质的路径。具身大脑 RoboBrain Orca 让"机器人通用大脑"有了可工程化的中国底座，叠加工信部 6/9 启动的万台级实景实训，中国具身智能首次具备了"原创底座 + 政策推动 + 量产场景"三位一体的基础。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="card">
+      <span class="card-badge source">月之暗面 · 开源</span>
+      <h3><span class="card-num">2</span>Kimi K2.7 Code 编程大模型开源发布：1.1 万亿参数、Token 消耗直降 30%、6/15 上线 6 倍速高速版</h3>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">与 K2.6 对比（6 项基准）</div>
+          <ul>
+            <li>Kimi Code Bench v2：50.9 → 62.0（<span class="highlight-num">+21.8%</span>）</li>
+            <li>Program-Bench：48.3 → 53.6（+11%）</li>
+            <li>MLS Bench Lite：26.7 → 35.1（+31.5%）</li>
+            <li>Kimi Claw 24/7 Agent：42.9 → 46.9（约+10%）</li>
+            <li>MCP Atlas（Agent）：69.4 → 76.0（约+9.5%）</li>
+            <li>MCP Mark Verified（Agent）：72.8 → 81.1（+11.4%）</li>
+            <li><strong>核心：长程任务 Token 消耗平均减少 30%</strong></li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">商业化与高速版</div>
+          <ul>
+            <li>参数规模：1.1 万亿，多模态，256K 上下文</li>
+            <li>已上线 Kimi API 平台（标准版）</li>
+            <li><strong>6 月 15 日（周一）上线高速版</strong>：常规 180 Token/s、短上下文 260 Token/s，速度约常规 6 倍、价格仅 2 倍</li>
+            <li>输入 ¥6.5/M tokens、输出 ¥27/M tokens（与 K2.6 一致）</li>
+            <li>缓存命中输入 ¥1.3/M tokens（行业最低一档）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>Kimi K2.7 Code 的发布是<strong>中国编程模型在"过度思考"问题上的首次系统性突破</strong>。30% 的 Token 降幅直接转化为企业成本下降——这正是当下 AI 编程工具"赢家通吃"的关键变量。在 Anthropic Claude Fable 5 拿下 SWE-Bench Pro 80.3% 榜首、OpenAI 即将放出 GPT-5.6 的当口，月之暗面用 K2.7 Code 把"成本/性能"曲线打到了一个新的甜蜜点：1/30 的缓存输入价 + 6 倍速版本 + 开源策略，让 Kimi 在国内大厂编程模型中具备了清晰的差异化定位。</p>
+      </div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="card">
+      <span class="card-badge hot">三巨头混战</span>
+      <h3><span class="card-num">3</span>OpenAI 准备放出 GPT-5.6：150 万 token 上下文 + 即将大幅降价，正面迎战 Claude Fable 5</h3>
+
+      <div class="content-block">
+        <p>OpenAI 首席科学家 Jakub Pachocki 内部确认 GPT-5.6 相比 GPT-5.5 有"实质性提升"，可能于本月（6 月）内发布。开发者从 Codex 后端日志发现内部代号 <strong>kindle-alpha / iris-alpha</strong> 模型，上下文窗口约 <span class="highlight-num">150 万 token</span>（GPT-5.5 为 100 万，提升 50%）。</p>
+        <p><strong>价格战一触即发</strong>：</p>
+        <p>① OpenAI 正在考虑大幅降低 Token 定价，目标是抢在 Anthropic 之前出手</p>
+        <p>② Sam Altman 近期公开表态：算力成本已是用户面临的大问题，会想办法让用户"花更少的钱，获得更大的价值"</p>
+        <p>③ 同时，Altman 内部讨论"若 AI 实现递归自我改进（RSI），上市计划可暂缓"——技术加速度与商业化节奏的赛跑</p>
+        <p>④ OpenAI 已秘密提交 S-1 招股书，估值约 8520 亿美元</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label openai">竞争压力来源</div>
+          <ul>
+            <li>Anthropic 估值 <strong>9650 亿美元</strong>首次反超 OpenAI</li>
+            <li>Claude Fable 5 SWE-Bench Pro 拿 80.3%，碾压 GPT-5.5 的 58.6%</li>
+            <li>Artificial Analysis 综合智能指数 Claude 64.9 分位列第一（10 个单项拿下 5 冠）</li>
+            <li>Claude Code 爆火后，企业客户猛增、AI 预算向 Anthropic 倾斜</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label anthropic">OpenAI 应对</div>
+          <ul>
+            <li>GPT-5.6（kindle-alpha） 150 万 token 上下文</li>
+            <li>ChatGPT 模型选择器重构为"Intelligence 智力分级"</li>
+            <li>Token 定价大幅下调</li>
+            <li>走"价格 + 性能"双线反击</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>这是 AI 编程赛道首次出现"性能 + 价格"双维度同时开战的局面：Anthropic 性能领先（SWE-Bench Pro 80.3%），OpenAI 选择用"价格 + 上下文"反制。叠加 Kimi K2.7 Code 用 1/30 缓存输入价撕开中国市场的口子——6 月正成为 AI 编程模型的"<strong>三国杀窗口期</strong>"：Anthropic 占性能、OpenAI 守生态、中国厂商用极致性价比突围。开发者短期薅羊毛红利确定，长期看模型能力与生态绑定的比拼将更关键。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="card">
+      <span class="card-badge source">华为 · 操作系统</span>
+      <h3><span class="card-num">4</span>华为 HDC 2026 鸿蒙 7 Beta 正式发布：原生 Agent OS 时代开启，盘古 2.0 开源同步登场</h3>
+
+      <div class="content-block">
+        <p>6 月 12 日华为开发者大会（HDC 2026）在东莞松山湖启幕，HarmonyOS 7 开发者 Beta 版正式上线，<strong>鸿蒙智能体框架 2.0</strong>同步发布。余承东宣布鸿蒙正式迈入"<strong>Agent OS 时代</strong>"。</p>
+        <p><strong>核心能力</strong>：</p>
+        <p>① <strong>Agent 亲和系统架构</strong>：深度融合端云大模型，复杂任务成功率提升至 <span class="highlight-num">90% 以上</span>，首次向开发者开放 GUI 操控能力 + 20+ 项系统级 AI 能力</p>
+        <p>② <strong>小艺 AI 私人助理</strong>：接入 200+ 项系统级感知数据，具备超强记忆与上下文理解，从语音助手蜕变为 AI 助理</p>
+        <p>③ <strong>开源盘古 openPangu 2.0</strong> 同步发布，端云协同大模型能力首次完整开源</p>
+        <p>④ <strong>鸿蒙空间计算首发</strong>：超沉浸空间美学 + 空间影音 + 空间交互</p>
+        <p>⑤ <strong>HiCar 7.0</strong>：6/13 智慧出行峰会发布，重塑智能出行体验</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>HarmonyOS 7 的意义不只是系统升级，而是<strong>全球首个原生支持 Agent 的操作系统</strong>。当 6/4 OpenAI 让 Codex 升级为"全行业 Agent 平台"、6/9 智源发布 RoboBrain Orca 具身大脑、6/12 华为将 Agent 内核植入鸿蒙——三家在"Agent 操作系统"赛道同步发力。鸿蒙的优势在于<strong>20+ 系统级 AI 能力 + 200+ 感知数据 + 5 亿+ 设备</strong>，Agent 从一个 App 升级为 OS 级别的"意图即服务"，这是端侧 AI 真正进入"操作系统级"竞争的标志事件。</p>
+      </div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="card">
+      <span class="card-badge milestone">量产冲刺</span>
+      <h3><span class="card-num">5</span>小鹏 IRON 2026 年底量产 + 工信部万台级实景实训：中国具身智能"政策+技术+量产"三重共振</h3>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>6 月 9 日</strong> — 工信部 + 国资委联合启动"<strong>2026 年度人形机器人与具身智能实景实训专项行动</strong>"，到 2026 年底万台级部署、百个以上高价值应用场景</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>6 月 10 日</strong> — 小鹏董事长何小鹏宣布<strong>亲兼机器人业务 CEO</strong>，IRON 项目进入 200 天量产冲刺</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2026 年底</strong> — IRON 人形机器人实现量产（首阶段）</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2027 年 Q1</strong> — 进入小鹏线下门店担任导购</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2027 年 Q2</strong> — 推向海外市场</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>2028 年</strong> — 开始进入家庭场景</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p>本周具身智能产业形成清晰的"<strong>三阶段共振</strong>"：</p>
+        <p>① <strong>政策侧</strong>：工信部 + 国资委联合印发通知，<strong>首次部委联合推动具身智能从"鼓励研发"进入"驱动落地"</strong>，万台级部署 + 百场景给出硬指标</p>
+        <p>② <strong>技术侧</strong>：智源悟界·Physis-v0.1 世界基座模型 + RoboBrain Orca 具身大脑 + FlagOS 2.1 多芯片软件栈，构具身智能"中国底座"</p>
+        <p>③ <strong>量产侧</strong>：小鹏 IRON + 银河通用便利店百台运营 + 宇树科创板 IPO + Neura Robotics 14 亿美元融资，量产规模与资本密度同步跃升</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>2026 年 6 月第二周可能是中国具身智能产业"从喊口号到真干活"的<strong>分水岭</strong>：工信部万台级指标首次给出可量化的落地路径、小鹏 IRON 给出明确三阶段时间表、智源悟界·Physis 给出原创底座。三重信号共振意味着中国具身智能进入"<strong>技术底座 + 政策推动 + 量产场景</strong>"三位一体的工程化阶段，2026 年底前将迎来首批"<strong>会干活的人形机器人</strong>"走入真实场景，标志具身智能从"舞台表演"跨越到"工厂上班"。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · AIBase · 智源研究院 · 新浪财经 · 腾讯新闻 · 搜狐科技 · 36氪 · IT之家</p>
+  </div>
+
+</div>
+</body>
+</html>
