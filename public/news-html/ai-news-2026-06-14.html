@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月14日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .timeline {
+    margin-bottom: 18px;
+  }
+  .timeline-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0; border-bottom: 1px solid rgba(99,102,241,0.06);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #6366f1; margin-top: 6px; flex-shrink: 0;
+  }
+  .timeline-text { font-size: 13px; color: #94a3b8; line-height: 1.6; }
+  .timeline-text strong { color: #e2e8f0; }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.ban { color: #f87171; }
+  .vs-item .vs-label.response { color: #34d399; }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .table-block {
+    width: 100%; border-collapse: collapse;
+    margin-bottom: 18px; font-size: 13px;
+  }
+  .table-block th {
+    text-align: left; padding: 10px 12px;
+    background: rgba(99,102,241,0.1);
+    color: #a5b4fc; font-weight: 600;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .table-block td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(99,102,241,0.06);
+    color: #cbd5e1; line-height: 1.6;
+  }
+  .table-block td:first-child { color: #94a3b8; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 14</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 14 日 · 星期日</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>Claude Fable 5 上线仅 72 小时即被美国政府出口管制全球下架——AI 史上首次商业模型被强制召回</li>
+      <li>智谱 GLM-5.2 全量开放 + ZCode 3.0 自研 Agent 内核：中国 AI 编程生态以"开源 + 开放"回应"封锁"</li>
+      <li>UC 伯克利发布 Agent 终极考试 ALE 基准：Fable 5 真实任务通过率 22% 反而不敌 GPT-5.5 的 24%</li>
+      <li>李飞飞 World Labs 同日三篇论文：用 2D 生成模型撬动 3D/4D 空间智能，单目视频重建动态人体</li>
+      <li>清华系千诀科技完成数亿元 A 轮融资：具身智能世界模型落地终端达十万量级</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">AI 史上首次</span>
+      <h3><span class="card-num">1</span>Claude Fable 5 被美国出口管制全球下架——AI 史上首次商业模型被强制召回，格局一夜改写</h3>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>6 月 9 日</strong> — Anthropic 正式发布 Claude Fable 5，SWE-Bench Pro 80.3%，被誉"地表最强 AI"</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>6 月 11 日 17:21</strong> — 美国政府以国家安全为由，向 Anthropic 发出出口管制信函</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>6 月 11 日晚</strong> — Fable 5 和 Mythos 5 对全球所有用户停服，Anthropic 外籍员工亦无法访问</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-text"><strong>6 月 13 日</strong> — 事件全面曝光，全球 AI 圈震惊；智谱同日宣布 GLM-5.2 全量开放</div>
+        </div>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label ban">美国：出口管制封禁</div>
+          <ul>
+            <li>国家安全权限引用，禁止外国人访问</li>
+            <li>Anthropic 推测：政府认为已掌握越狱方法</li>
+            <li>仅 Fable 5 / Mythos 5 影响，其余模型正常</li>
+            <li>API 调用直接返回错误，会话报错中止</li>
+            <li>恢复时间未知，Anthropic 正在努力</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label response">中国：开源开放回应</div>
+          <ul>
+            <li>智谱 6/13 宣布 GLM-5.2 全量开放</li>
+            <li>MIT 协议开源，下周 API 同步上线</li>
+            <li>ZCode 3.0 自研 Agent 内核深度适配</li>
+            <li>"前沿智能不应只属于少数人"</li>
+            <li>千万开发者即开即用，不受地缘限制</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>这是 AI 史上第一次，一个已经部署给数亿用户的商业大模型被美国政府强制召回。事件标志 AI 正式进入"地缘技术管制"时代——此前出口管制仅针对芯片（如 A100/H100 禁运），如今直接指向模型权重本身。对 AI 编程行业而言，Fable 5 的下架意味着<strong>性能最强的编程模型不再可用</strong>，企业 AI 基础设施面临供应链断裂风险。而智谱 GLM-5.2 和 Kimi K2.7 Code 等中国编程模型的同步崛起，意味着<strong>"美国封、中国开"的格局正在形成</strong>——性能差距在缩小，可用性优势在扩大。对开发者而言，依赖单一模型的策略已正式宣告失效。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="card">
+      <span class="card-badge source">智谱 · 开源生态</span>
+      <h3><span class="card-num">2</span>智谱 GLM-5.2 全量开放 + ZCode 3.0 自研 Agent 内核：中国 AI 编程工具链的"独立宣言"</h3>
+
+      <div class="content-block">
+        <p>智谱于 6 月 13 日下午正式宣布：<strong>GLM-5.2 面向 GLM Coding Plan 全量用户开放</strong>（覆盖 Lite/Pro/Max/团队版），并将于下周以 MIT 协议开源。同步发布的 <strong>ZCode 3.0</strong> 全面切换自研 Agent 内核，标志着中国 AI 编程工具链首次实现"模型 + Agent 内核"双自研闭环。</p>
+        <p><strong>GLM-5.2 核心能力</strong>：</p>
+        <p>① <strong>1M 超长上下文</strong>：智谱迄今可用上下文最长的模型，在长程编程任务中保持领先</p>
+        <p>② <strong>最强国产 Coding 模型</strong>：多项编程基准评测表现已逼近第一梯队，尤其在长程任务场景表现突出</p>
+        <p>③ <strong>MIT 协议开源</strong>：下周正式开源，下一代 API 同步上线，开发者可自由商用、修改、再分发</p>
+        <p>④ <strong>ZCode 3.0 深度集成</strong>：ZCode 内 GLM-5.2 配额比直接调 API 高出 150%</p>
+      </div>
+
+      <div class="content-block">
+        <p><strong>ZCode 3.0 自研 Agent 内核升级</strong>：</p>
+        <p>① <strong>全面切换自研 ZCode Agent</strong>：针对满血 GLM 深度优化长程推理、工具调用和大型工程执行链路，整体任务完成效果<strong>显著优于第三方 Agent</strong></p>
+        <p>② <strong>全新分组式任务工作区</strong>：支持拖拽折叠、跨区迁移、批量管理，高效管控多 Agent 并发任务</p>
+        <p>③ <strong>Zread 智能项目知识库</strong>：自动生成结构化项目文档，支持目录浏览、进度监测、一键重生成</p>
+        <p>④ <strong>可视化 Git 分支图谱</strong>：直观呈现分支拓扑，快捷切换 + AI 自动生成标准化提交注释</p>
+        <p>⑤ <strong>后续版本</strong>将不再内置或维护第三方 Agent 适配，全面聚焦自研 Agent 体验</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>GLM-5.2 + ZCode 3.0 的组合发布，是中国 AI 编程工具链的<strong>"独立宣言"时刻</strong>。此前 ZCode 底层 Agent 内核依赖第三方框架，模型能力受限于海外闭源体系。此次升级实现了<strong>从模型到 Agent 的全链路自研闭环</strong>，且时间节点极其精准——在 Claude Fable 5 被美国政府一纸禁令下架的当晚即全面开放。更深层的信号是：智谱选择了<strong>MIT 协议全面开源</strong>而非"仅开放 API"，意味着所有开发者可以在私有环境中部署和使用，完全不受地缘政治影响。叠加 Kimi K2.7 Code 和 DeepSeek V4-Pro，中国 AI 编程模型正形成"三足鼎立"的开源矩阵。</p>
+      </div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="card">
+      <span class="card-badge hot">评测范式变革</span>
+      <h3><span class="card-num">3</span>UC 伯克利 ALE 基准：Fable 5 实操不敌 GPT-5.5——Agent 评测从"刷榜"进入"真干活"时代</h3>
+
+      <div class="content-block">
+        <p>UC 伯克利发布全新测试集 <strong>"Agents' Last Exam"（ALE）</strong>，让 AI Agent 执行<strong>真实电脑任务</strong>：Siemens NX 工业建模、Unreal Engine 场景搭建、Adobe After Effects 特效合成等，完全模拟人类工程师的日常工作流。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">ALE 头部模型得分</div>
+          <ul>
+            <li><strong>GPT-5.5</strong>：最高通过率 <span class="highlight-num">24%</span></li>
+            <li><strong>Claude Fable 5</strong>：最高通过率 <span class="highlight-num">22%</span></li>
+            <li>高难度档：绝大多数模型 <span class="highlight-num">0%</span></li>
+            <li>与 SWE-Bench Pro（Fable 5 80.3%）形成<strong>巨大反差</strong></li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">为什么 Fable 5 输了？</div>
+          <ul>
+            <li>ALE 测试"多工具协同"而非纯编码</li>
+            <li>Fable 5 擅长单一编程任务但 GUI 操控弱</li>
+            <li>GPT-5.5 多模态 + 工具链调度更均衡</li>
+            <li>SWE-Bench 高 ≠ 真实干活能力强</li>
+            <li>复杂 UI 场景 Claude 缺乏原生视觉能力</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p>同时值得关注的是硅谷 AI 圈新概念 <strong>"Loop Engineering"</strong>——Claude Code 负责人 Boris Cherny 公开表示已不再手动输入提示词，转而编写循环逻辑让 Agent <strong>自主发现、分配、检查和记录任务</strong>。Codex 也已内置类似功能模块。AI 编程的交互范式正从"人写 prompt → AI 执行"迅速演进为"人写 loop → AI 自主迭代"。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>ALE 基准的发布标志着 AI 编程评测从"代码补全/修 Bug"的静态维度，正式进入<strong>"Agent 真实干活能力"</strong>的动态维度。Fable 5 在 SWE-Bench Pro 上 80.3% 的成绩曾让它被视为编程能力标杆，但 ALE 揭示了一个关键问题：<strong>擅长代码 ≠ 擅长用电脑</strong>。真正的 Agent 需要跨软件、跨 UI、跨模态的协同操作能力，而这恰恰是当前所有模型的短板（最高仅 24%）。叠加 Loop Engineering 范式的普及——从"写 prompt"到"写 loop"，从"单次编码"到"自主循环"——AI 编程正经历双重范式跃迁：评测从静态到动态，交互从 human-in-the-loop 到 agent-in-the-loop。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="card">
+      <span class="card-badge source">李飞飞 · World Labs</span>
+      <h3><span class="card-num">4</span>李飞飞 World Labs 同日三篇论文：用成熟的 2D 生成模型撬动 3D/4D 空间智能</h3>
+
+      <div class="content-block">
+        <p>李飞飞联合创立的空间智能公司 World Labs 于 6 月 13 日发布首批三篇学术论文，均由公司实习生主导，核心命题高度统一：<strong>借助已在海量数据上训练成熟的 2D 图像/视频生成模型，降低 3D 内容生成的技术门槛</strong>。</p>
+      </div>
+
+      <table class="table-block">
+        <tr>
+          <th>论文</th>
+          <th>解决什么问题</th>
+          <th>核心方法</th>
+          <th>关键指标</th>
+        </tr>
+        <tr>
+          <td><strong>World Tracing</strong></td>
+          <td>从单张图像恢复被遮挡区域的完整三维几何</td>
+          <td>像素对齐多层几何表示 + 扩散模型有序深度预测</td>
+          <td>可见表面严格锚定、遮挡区域约束补全</td>
+        </tr>
+        <tr>
+          <td><strong>Modality Forcing</strong></td>
+          <td>打破深度估计和图像生成任务壁垒，统一多模态感知与生成</td>
+          <td>RGB/深度各自独立噪声时间步，微调预训练文生图模型</td>
+          <td>无需独立深度网络，仅需稀疏标注即可训练</td>
+        </tr>
+        <tr>
+          <td><strong>Flex4DHuman</strong></td>
+          <td>手机单目视频重建可合成动态 4D 人体</td>
+          <td>五轴位置编码 + Wan 2.1 微调 + FreeTimeGS 重建</td>
+          <td>PSNR 提升约 <span class="highlight-num">9.3dB</span>，跨物种泛化</td>
+        </tr>
+      </table>
+
+      <div class="content-block">
+        <p><strong>三条技术路线的共同价值</strong>：World Tracing 让静态场景建模不再需要多视角相机阵列；Modality Forcing 证明了生成能力和感知能力可以相互增强而非彼此独立；Flex4DHuman 则将 4D 人体重建的数据源从昂贵的多目相机降至<strong>普通手机</strong>——这是人类日常生产最多的数据形式。三条路线共同指向一个目标：<strong>把空间智能（Spatial Intelligence）的门槛从"专业设备 + 大量算力"降到"普通手机 + 预训练 2D 模型"</strong>。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>World Labs 的三篇论文从不同角度回答了具身智能领域一个核心瓶颈：<strong>3D/4D 训练数据的极度稀缺</strong>。与 LLM 可以吞噬互联网所有文本不同，具身智能的三维世界理解受限于数据采集成本。李飞飞团队的方法论——<strong>"用 2D 的积累撬动 3D 的突破"</strong>——提供了可规模化的技术路径。Flex4DHuman 尤其关键：如果手机视频就能重建人物 4D 资产，数据飞轮将彻底转向。这对具身智能在数字内容创作、虚拟制片、AR/VR、机器人仿真训练等领域都有直接推动力。同日 World Labs 联合创始人 Christoph Lassner 因病离职，也为这个明星团队的未来走向增添变数。</p>
+      </div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="card">
+      <span class="card-badge milestone">资本加速</span>
+      <h3><span class="card-num">5</span>清华系千诀科技完成数亿元 A 轮融资：分布式预测世界模型 + 十万级终端落地</h3>
+
+      <div class="content-block">
+        <p>具身智能世界模型公司<strong>千诀科技</strong>完成数亿元 A 轮融资，由<strong>京铭资本领投</strong>，多家国家队及市场化基金跟投。团队来自清华系，专注<strong>分布式预测世界模型</strong>研发，与智源悟界·Physis 的"集中式物理隐空间"路线形成差异化互补。截至目前，千诀科技的终端设备落地规模已达<strong>十万量级</strong>，是具身智能赛道少数从实验室走向规模落地的创业公司。</p>
+        <p>千诀的分布式架构思路意味着：预测模型不是运行在云端"上帝视角"，而是部署在<strong>每个终端设备本地</strong>，通过分布式协同完成世界建模与实时决策。这一定位直接对标工信部 6 月 9 日启动的"万台级实景实训"——当机器人需要在工厂、仓库、家庭等真实环境中自主作业时，集中式云端模型面临延迟和带宽瓶颈，而分布式世界模型恰好解决了"最后一米"的实时推理问题。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>千诀科技这轮融资是具身智能"世界模型赛道"资本密度持续攀升的缩影。从 6 月初智源悟界·Physis-v0.1（集中式物理隐空间）到千诀科技（分布式终端预测），两条技术路线在"世界模型"这一具身智能的核心基础设施上同时获得资本市场和产业落地的双重验证。<strong>十万级终端部署</strong>是关键指标——它意味着千诀的范式不是"实验室刷榜"，而是已经在真实场景中跑通了工程闭环。叠加工信部万台级实景实训政策、宇树科技科创板 IPO 过会，中国具身智能的"技术路线→资本市场→政策推动→规模落地"全链路正在 6 月集中打通。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · AIBase · 36氪 · 新智元 · IT之家 · 新浪财经 · 腾讯新闻 · 知乎</p>
+  </div>
+
+</div>
+</body>
+</html>
