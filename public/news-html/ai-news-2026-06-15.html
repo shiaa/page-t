@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月15日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .timeline {
+    margin-bottom: 18px;
+  }
+  .timeline-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0; border-bottom: 1px solid rgba(99,102,241,0.06);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #6366f1; margin-top: 6px; flex-shrink: 0;
+  }
+  .timeline-text { font-size: 13px; color: #94a3b8; line-height: 1.6; }
+  .timeline-text strong { color: #e2e8f0; }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.path { color: #38bdf8; }
+  .vs-item .vs-label.wall { color: #f87171; }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.revive { color: #34d399; }
+  .vs-item .vs-label.alternative { color: #a78bfa; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .table-block {
+    width: 100%; border-collapse: collapse;
+    margin-bottom: 18px; font-size: 13px;
+  }
+  .table-block th {
+    text-align: left; padding: 10px 12px;
+    background: rgba(99,102,241,0.1);
+    color: #a5b4fc; font-weight: 600;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .table-block td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(99,102,241,0.06);
+    color: #cbd5e1; line-height: 1.6;
+  }
+  .table-block td:first-child { color: #94a3b8; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 15</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 15 日 · 星期日</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>谷歌 DeepMind 发布 57 页《从 AGI 到 ASI》路线图——"1 亿个人类水平 AI 即可形成 ASI"，列出四条路径与六道瓶颈</li>
+      <li>Fable 5 被一行代码"复活"：开发者通过 Opus 4.8 注入泄露提示词复现轻量版；OpenRouter Fusion 平替方案成本砍半性能追平</li>
+      <li>巴西 IplanRIO 开源 Rio 3.5 Open 397B——隐式推理让能力增幅接近翻倍，MIT 协议杀进全球第一梯队</li>
+      <li>Flourish Inc. 完成 5 亿美元融资——贝索斯领投，50 瓦以下类脑 AI 突破具身智能端侧部署功耗瓶颈</li>
+      <li>B300 芯片供给断裂信用崩塌——出口管制致期货信用破产，华南大厂转向采购 5 万张国产 AI 芯片</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">DeepMind · 路线图</span>
+      <h3><span class="card-num">1</span>谷歌 DeepMind 发布《从 AGI 到 ASI》57 页路线图——"1 亿个人类水平 AI 即可形成 ASI"</h3>
+
+      <div class="content-block">
+        <p>6 月 10 日，谷歌 DeepMind 发布长达 <strong>57 页</strong>的重磅报告《From AGI to ASI》，由 DeepMind 联合创始人兼首席 AGI 科学家 <strong>Shane Legg</strong> 与信息论学者 <strong>Marcus Hutter</strong> 联合署名。报告首次系统性地回答了一个前沿问题：<strong>从 AGI 到人工超智能（ASI），到底需要什么条件、走哪条路、面临哪些瓶颈？</strong></p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label path">四条通向 ASI 的路径</div>
+          <ul>
+            <li><strong>规模化 AGI</strong>：1 亿个人类水平 AI 实例共享知识，形成集体超智能</li>
+            <li><strong>AI 范式跃迁</strong>：突破 Transformer 架构，新一代计算范式</li>
+            <li><strong>递归自我改进</strong>：AI 自主设计更优 AI，指数级能力跃升</li>
+            <li><strong>大规模多智能体涌现</strong>：1000 个 AGI 实例每年翻 10 倍，5 年后达 1 亿</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label wall">六道关键瓶颈（"叹息之墙"）</div>
+          <ul>
+            <li>算力天花板与能源约束</li>
+            <li>数据质量退化与合成数据瓶颈</li>
+            <li>对齐安全与可控性难题</li>
+            <li>评估基准滞后于能力发展</li>
+            <li>多智能体协调的复杂性爆炸</li>
+            <li>从"能用"到"可靠"的可靠性鸿沟</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p><strong>核心论断</strong>：报告提出最具争议的观点——<strong>"1 亿个人类水平的 AI 实例本身就构成 ASI"</strong>。理由是：1 亿个共享记忆、思考速度百倍于人类的 AI，其集体问题解决能力将远超任何单个人类或人类组织。这不是简单加总，而是<strong>涌现性超智能</strong>——类似蚁群中单个蚂蚁的有限智能如何涌现出群体层面的复杂决策。Shane Legg 预估，AGI 有望在 <strong>2028 年前后</strong>实现，而 ASI 的到来可能在 AGI 之后 <strong>5-10 年</strong>。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>这是全球顶级 AI 实验室首次以正式报告形式，系统阐述从 AGI 到 ASI 的演进路线。此前关于"超智能"的讨论大多停留在哲学层面（如 Bostrom 的《超级智能》），DeepMind 的报告将其拉入<strong>工程化框架</strong>——四条路径、六道瓶颈、量化指标、时间预估。其中"1 亿 AGI = ASI"的论断尤其值得关注：它意味着<strong>ASI 不一定需要"更聪明的单个 AI"</strong>，而是可以通过<strong>大规模部署现有水平 AI 并使其协同</strong>来实现。这为当前 AI Coding Agent 的多智能体架构（如 Claude Code 的 Dynamic Workflows、Codex 的多 Agent 编排）提供了理论上的终局推演——当 AI 编程 Agent 从"单个写代码"进化到"百万级协同构建软件系统"，质的飞跃就在数量积累中发生。报告的六道瓶颈也构成一份务实提醒：<strong>从 AGI 到 ASI 不是坦途</strong>，算力、对齐、可靠性每一项都可能让时间线大幅拉长。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="card">
+      <span class="card-badge hot">Fable 5 事件后续</span>
+      <h3><span class="card-num">2</span>Fable 5 被一行代码"复活" + OpenRouter 平替方案成本砍半——被禁模型的"幽灵"仍在游荡</h3>
+
+      <div class="content-block">
+        <p>Claude Fable 5 被美国政府出口管制下架仅 4 天后，两条替代路径同时浮出水面，令"封禁一个模型"的技术可行性受到根本性质疑：</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label revive">路径一：提示词注入"复活"</div>
+          <ul>
+            <li>开发者 <strong>Jamieson O'Reilly</strong> 发现泄露的系统提示词</li>
+            <li>将提示词注入 <strong>Opus 4.8</strong> 后成功复现轻量版 Fable 5</li>
+            <li>仅一行代码即可绕过模型访问限制</li>
+            <li>外媒报道称亚马逊内部测试引发了美国政府的禁令要求</li>
+            <li>Anthropic 已开始为 Fable 5 用户退款</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label alternative">路径二：Fusion 多模型平替</div>
+          <ul>
+            <li><strong>OpenRouter</strong> 推出 Fusion 融合方案</li>
+            <li>组合：Kimi K2.6 + DeepSeek V4 Pro + Gemini 3 Flash</li>
+            <li><strong>DRACO 基准</strong>得分 <span class="highlight-num">64.7%</span> vs Fable 5 的 65.3%</li>
+            <li>单任务成本约为 Fable 5 的 <span class="highlight-num">50%</span></li>
+            <li>性能追平 + 成本砍半，平替方案已具实战价值</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>Fable 5 事件的"后传"揭示了 AI 模型出口管制面临的结构性困境：<strong>封禁一个已部署的模型，技术上几乎不可能彻底清除其影响</strong>。路径一证明，系统提示词一旦泄露，较低等级的模型就能被"升级"出近似能力；路径二证明，多个弱模型的协同可以达到甚至超越单个强模型的效果，而成本更低。对 AI Coding 行业而言，这意味着<strong>企业不应再依赖单一前沿模型的"独门绝技"</strong>——Fusion 方案的成功预示着"模型组合"将成为更灵活、更具成本优势的架构选择。更深层的信号是：<strong>AI 能力的扩散速度远快于管制的封锁速度</strong>，这将对全球 AI 治理框架的设计产生深远影响。</p>
+      </div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="card">
+      <span class="card-badge milestone">开源突破</span>
+      <h3><span class="card-num">3</span>巴西 IplanRIO 开源 Rio 3.5 Open 397B——隐式推理让能力增幅接近翻倍，MIT 协议杀进全球第一梯队</h3>
+
+      <div class="content-block">
+        <p>巴西里约热内卢市政府旗下市政 IT 公司 <strong>IplanRIO</strong> 在 HuggingFace 开源 <strong>Rio 3.5 Open 397B</strong>，引发全球 AI 社区震动。该模型基于 Qwen 3.5 397B 后训练，采用 MoE 架构（总参数 <span class="highlight-num">397B</span>，激活参数 17B），支持 <span class="highlight-num">1M</span> 上下文窗口，采用 <strong>MIT 协议</strong>可自由商用。</p>
+        <p><strong>核心创新</strong>：Rio 3.5 引入<strong>隐式推理</strong>机制——在 latent 空间中完成多步递归推理，而非在 token 层面展开链式思维（CoT）。这意味着模型在"思考"时不需要将每一步推理显式输出为文字，而是在内部隐空间完成"求解→更新→再求解"的循环。实测显示，<strong>隐式推理让模型能力增幅接近翻倍</strong>，且显著降低了推理 token 消耗。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">Rio 3.5 核心指标</div>
+          <ul>
+            <li>架构：MoE，397B 总参 / 17B 激活参</li>
+            <li>上下文：<span class="highlight-num">1M tokens</span></li>
+            <li>编程、数学、STEM、多语言评测领先</li>
+            <li>MIT 协议：自由商用、修改、再分发</li>
+            <li>隐式推理：能力增幅接近 <span class="highlight-num">2×</span></li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">为什么是"市政 IT 公司"？</div>
+          <ul>
+            <li>IplanRIO 负责里约市政务数字化</li>
+            <li>开源动机：政务 AI 应自主可控</li>
+            <li>后训练基座选 Qwen 3.5 而非自研</li>
+            <li>证明开源后训练的门槛已降至"市政级"</li>
+            <li>此前巴西 AI 领域几乎无全球性产出</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>Rio 3.5 的发布对 AI Coding 行业有三重信号。第一，<strong>隐式推理</strong>可能是继 CoT（链式思维）之后最重要的推理架构创新——当前所有主流编程模型（GPT-5.6、Claude Opus 4.8、Kimi K2.7）都依赖显式 token 输出来"展示思考过程"，而隐式推理能在不消耗额外 token 的情况下完成等量甚至更多的推理步数，这对 AI 编程的<strong>成本效率</strong>有直接改善。第二，一个<strong>巴西市政 IT 公司</strong>能基于开源基座训练出全球第一梯队模型，证明 AI 模型训练的民主化程度已远超预期——"市政级"组织就能做到的事，意味着企业级对手几乎没有技术壁垒可守。第三，MIT 协议的开源意味着<strong>任何人都可以在私有环境中部署</strong>，不受地缘政治和出口管制影响——这在 Fable 5 被禁的当下尤其具有战略意义。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="card">
+      <span class="card-badge milestone">端侧智能突破</span>
+      <h3><span class="card-num">4</span>Flourish Inc. 完成 5 亿美元融资——贝索斯领投，50 瓦以下类脑 AI 突破具身智能功耗瓶颈</h3>
+
+      <div class="content-block">
+        <p>专注低功耗 AI 模型的初创公司 <strong>Flourish Inc.</strong> 完成 <span class="highlight-num">5 亿美元</span>融资，估值达 <span class="highlight-num">25 亿美元</span>。本轮由 <strong>GV</strong>（Alphabet 旗下）、<strong>Lux Capital</strong>、<strong>Catalio Capital Management</strong> 等知名机构参投，<strong>杰夫·贝索斯</strong>个人提供了约五分之一的资金。这是 2026 年 6 月初全球最大 AI 融资轮次之一。</p>
+        <p><strong>核心突破</strong>：Flourish 开发了可在 <span class="highlight-num">50 瓦以下</span>芯片上运行推理的类脑 AI 模型——当前主流大模型推理需要约 300 瓦 GPU，Flourish 的方案将功耗降低至 <strong>1/6</strong>。其类脑架构灵感来自人类大脑（功耗仅约 20 瓦），通过<strong>逆向工程人脑的核心算法</strong>，实现可连续学习的合成智能系统，使 AI 能在手机、PC 等设备本地运行并持续学习，无需依赖云端推理。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">当前主流：云端推理</div>
+          <ul>
+            <li>GPU 功耗：约 <span class="highlight-num">300W</span></li>
+            <li>依赖高速网络连接</li>
+            <li>延迟受网络状况制约</li>
+            <li>数据必须上传云端（隐私风险）</li>
+            <li>具身智能实时控制困难（100ms+ 延迟）</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">Flourish 方案：端侧推理</div>
+          <ul>
+            <li>芯片功耗：<span class="highlight-num">&lt;50W</span>（降低 6 倍）</li>
+            <li>完全本地运行，无需网络</li>
+            <li>延迟降至 <span class="highlight-num">1-5ms</span> 量级</li>
+            <li>数据不出设备（隐私安全）</li>
+            <li>支持持续学习（非冻结权重）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>Flourish 的 50 瓦类脑 AI 对具身智能是<strong>基础设施级突破</strong>。当前人形机器人最大的工程瓶颈之一就是<strong>功耗</strong>：一台人形机器人搭载的电池通常只能支撑 2-4 小时作业，其中相当大比例的电力被 GPU 推理消耗。如果推理功耗能从 300W 降至 50W 以下，机器人的<strong>续航时间可提升 3-5 倍</strong>，同时散热设计大幅简化、整机成本下降。更重要的是，低功耗意味着 AI 可以<strong>完全部署在端侧</strong>——机器人不需要实时联网就能做出决策，这在工厂、仓库等网络不稳定场景下是刚需。叠加"持续学习"能力，机器人可以在作业中实时适应新环境而非依赖预训练固定策略。贝索斯个人押注五分之一资金，也暗示了亚马逊在仓储机器人场景的战略意图——目前亚马逊仓储机器人超过 <strong>75 万台</strong>，端侧智能直接关系到其物流效率上限。</p>
+      </div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="card">
+      <span class="card-badge hot">算力格局重塑</span>
+      <h3><span class="card-num">5</span>B300 芯片供给断裂信用崩塌——出口管制致期货信用破产，华南大厂转向 5 万张国产 AI 芯片</h3>
+
+      <div class="content-block">
+        <p>受美国出口管制持续升级影响，英伟达 <strong>B300</strong> 芯片交付几近停滞。最新调研显示：</p>
+        <p>① <strong>ODM 不敢配合 KYC 造假</strong>：此前的"曲线采购"渠道被堵死，代工厂面临合规审查压力</p>
+        <p>② <strong>现货报价虚高但成交稀少</strong>：市场价格达 <span class="highlight-num">900-1000 万元</span>/批，但有价无市</p>
+        <p>③ <strong>期货信用全面破产</strong>：多家供应商此前收取的预付款订单无法履约，渠道信任链断裂</p>
+        <p>④ <strong>华南大厂已转向采购 <span class="highlight-num">5 万张</span>国产 AI 芯片</strong>：替代方案包括华为昇腾 910C 等，标志着中国 AI 算力供应链正在发生结构性转变</p>
+      </div>
+
+      <div class="content-block">
+        <p><strong>国产替代进展</strong>：据多方信源，华为昇腾 910C 在大模型训练中的实际可用性已大幅提升，国内头部云厂商和 AI 公司正在加速适配。尽管单卡性能仍与 B300 存在差距，但<strong>集群规模 + 软件生态优化</strong>正在缩小实际训练效率的差距。同时，摩尔线程等国产 GPU 厂商也在具身智能仿真训练场景（如北大 EvoPhys-World 项目）中获得验证。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>B300 供给断裂不是一条简单的"缺货"新闻，而是<strong>中国 AI 算力供应链的结构性拐点</strong>。当期货信用破产、曲线采购通道关闭，企业面临的不再是"贵不贵"的问题，而是"有没有"的问题。华南大厂转向 5 万张国产芯片的决定，标志着<strong>"能用国产就用国产"已从政策口号变为企业生存策略</strong>。对 AI Coding 和具身智能行业的影响尤为直接：训练下一代编程模型和世界模型需要海量算力，B300 断供意味着<strong>依赖英伟达算力的发展路线被迫调整</strong>。但从另一个角度看，这也将加速国产算力生态的成熟——用的人多了，软件栈、工具链、优化经验都会快速积累。叠加此前工信部万台级实景实训政策对国产芯片的倾斜，<strong>中国 AI 产业的"去英伟达化"正在从被动应对转为主动构建</strong>。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · DeepMind · 36氪 · 新智元 · IT之家 · 新浪财经 · 腾讯新闻 · AICPB · HuggingFace</p>
+  </div>
+
+</div>
+</body>
+</html>
