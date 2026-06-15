@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月16日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.old { color: #94a3b8; }
+  .vs-item .vs-label.new { color: #34d399; }
+  .vs-item .vs-label.risk { color: #f87171; }
+  .vs-item .vs-label.impact { color: #a78bfa; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .quote-block {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border-left: 3px solid #0ea5e9;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 24px;
+    margin: 16px 0;
+  }
+  .quote-block p {
+    color: #b4c6fe; font-size: 14px; line-height: 1.75;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 16</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 16 日 · 星期二</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>Anthropic 宣布 7 月 8 日起对 Claude 用户强制实名制刷脸验证，OpenAI 同时遭多州总检察长联合传票调查——AI 合规监管骤然收紧</li>
+      <li>Kimi K2.7 Code 高速版今日正式上线——260 tokens/s、成本不到 GPT-5.5 1/3，编程模型的性能/成本平衡点被再次拉低</li>
+      <li>Loop Engineering 引爆 AI 编程圈——从"写提示词"到"设计自动循环"，2026 年第四大 AI 工程方向诞生</li>
+      <li>大晓机器人完成天使+轮融资数亿美元——商汤系，Kairos 世界模型 4B 参数登顶全球四大具身智能榜单</li>
+      <li>极佳视界 B2 轮再获 10 亿元三个月狂揽 35 亿——估值破百亿，国内首个世界模型独角兽诞生</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">监管收紧</span>
+      <span class="card-badge warning">合规升级</span>
+      <h3><span class="card-num">1</span>Anthropic 宣布 7 月 8 日起强制实名制刷脸 + OpenAI 遭多州联合调查——AI 行业合规监管骤然升级</h3>
+
+      <div class="content-block">
+        <p>过去 24 小时，两起事件标志着 AI 行业监管正在从"政策讨论"加速进入"强执行阶段"：</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label risk">Anthropic：强制实名制刷脸</div>
+          <ul>
+            <li>自 <strong>7 月 8 日</strong>起，Claude 免费/Pro/Max 用户需完成身份验证</li>
+            <li>要求：上传<strong>带照片的政府签发证件</strong>（身份证/护照/驾照）</li>
+            <li>拍摄<strong>实时自拍</strong>进行人脸比对</li>
+            <li>商业客户（API/企业版）暂不受影响</li>
+            <li>X 平台引发热议："和 AI 聊天前先证明自己是人"</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">OpenAI：多州联合传票调查</div>
+          <ul>
+            <li>纽约州等多州总检察长联合发出传票</li>
+            <li>调查覆盖<strong>广告、数据使用、未成年人保护、模型输出行为</strong></li>
+            <li>背景：OpenAI 已秘密提交 IPO 招股书</li>
+            <li>早期员工及投资者已套现约 <span class="highlight-num">140 亿美元</span></li>
+            <li>OpenAI 回应"将配合调查"</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p><strong>更深层的背景</strong>：Anthropic 的实名制举措与 Fable 5 被美国政府出口管制下架的余波密切相关——模型能力越强，合规压力越大。而 OpenAI 的多州调查发生在 IPO 关键时刻，意味着 AI 企业在走向公开市场的同时，也将面临更严格的监管审查。两件事指向同一个趋势：<strong>AI 行业正在结束"野蛮生长"阶段，进入强合规时代</strong>。Anthropic 选择在 7 月 8 日（而非立即）实施也暗示了缓冲期——但方向已不可逆。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>实名制刷脸对 AI 编程的影响尤为直接：全球数百万开发者每天通过 Claude Code 进行编程工作，如果身份验证流程复杂化（尤其是对非美国用户），使用门槛将大幅提升。同时，Fable 5 被封禁+OpenAI 被调查+Anthropic 实名制三条线索共振，表明美国政府正在构建一套<strong>覆盖出口管制、数据合规、用户身份的多维 AI 监管体系</strong>。对于中国开发者而言，这意味着"用国外模型写代码"这条路径的不确定性正在系统性上升——实名制只是第一关，后续可能还有更严格的区域限制或内容审查。从产业层面看，监管加码将加速<strong>模型可用性从"能力驱动"转向"合规驱动"</strong>——谁的模型合规成本更低、可及性更高，谁就能获得更广泛的开发者基础。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">💻</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="card">
+      <span class="card-badge milestone">产品上线</span>
+      <h3><span class="card-num">2</span>Kimi K2.7 Code 高速版今日正式上线——260 tokens/s，成本不到 GPT-5.5 1/3，编程模型的效率竞赛进入新阶段</h3>
+
+      <div class="content-block">
+        <p>月之暗面今日宣布 <strong>Kimi K2.7 Code 高速版</strong>正式上线，向 Kimi Code Beta 计划成员、Kimi API 开发者及 Kimi Business 用户全面开放。高速版与普通版是同一模型，但输出速度提升至 <span class="highlight-num">5-6 倍</span>——常规场景约 <strong>180 tokens/s</strong>，短上下文场景最高可达 <strong>260 tokens/s</strong>。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">K2.7 Code 核心性能</div>
+          <ul>
+            <li>Kimi Code Bench v2：提升 <span class="highlight-num">+21.8%</span></li>
+            <li>Program-Bench：提升 <span class="highlight-num">+11%</span></li>
+            <li>MLS Bench Lite：提升 <span class="highlight-num">+31.5%</span></li>
+            <li>Agent 自主执行基准：提升约 <span class="highlight-num">10%</span></li>
+            <li>长上下文编程指令遵循能力显著增强</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">效率与成本突破</div>
+          <ul>
+            <li>推理 Token 消耗降低 <span class="highlight-num">30%</span></li>
+            <li>整体成本不到 GPT-5.5 的 <span class="highlight-num">1/3</span></li>
+            <li>5 分钟内复刻《我的世界》，测试总花费 <span class="highlight-num">约 6.99 元</span></li>
+            <li>输入价 6.5 元/M tokens，缓存价 1.3 元</li>
+            <li><strong>MIT 协议开源</strong>，自由商用</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p><strong>关键洞察</strong>：K2.7 Code 的高速版并非只是"跑得更快"——它代表了一个趋势：<strong>编程模型的竞争已从"能不能写对"进入"多快能写好"的阶段</strong>。260 tokens/s 意味着开发者可以在近乎实时交互的体验中完成复杂编程任务，这对于 AI Coding 从"辅助工具"升级为"编程基础设施"至关重要。同时，开源+低价的策略正在系统性地压低 AI 编程工具的使用成本——当 6.99 元就能复刻 Minecraft，个人开发者和中小团队的门槛已被拉至历史最低点。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>K2.7 Code 发布是本周 AI Coding 方向最直接的产品信号。三个维度值得关注：第一，<strong>开源 MIT 协议</strong>意味着任何人都可以本地部署，不受地缘政治和出口管制影响——在 Fable 5 被禁的背景下，这一点的战略价值被放大；第二，<strong>260 tokens/s 的速度</strong>将显著改善 Agent 编程场景的交互体验——Agent 需要多轮推理和工具调用，速度直接决定了可用性上限；第三，<strong>成本结构</strong>（不到 GPT-5.5 1/3）揭示了编程模型的价格竞争正在进入"内卷"阶段——当性能和速度都追上来，价格就成了最后一公里的胜负手。对于中国 AI 编程生态而言，K2.7 Code + DeepSeek + Qwen 正在形成一套"不用看人脸色"的完整替代方案。</p>
+      </div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="card">
+      <span class="card-badge hot">范式革新</span>
+      <h3><span class="card-num">3</span>Loop Engineering 引爆 AI 编程圈——从"写提示词"到"设计自动循环"，2026 年第四大 AI 工程方向诞生</h3>
+
+      <div class="content-block">
+        <p>2026 年 6 月，一条仅 <strong>12 个字</strong>的推文引爆了整个 AI 编程社区。OpenClaw 创始人 <strong>Peter Steinberger</strong>（前 OpenAI 核心工程师）写道："你不该再手动给 Agent 写提示词了，你应该设计让 Agent 自己驱动自己的循环系统。"这条推文获得超过 <span class="highlight-num">800 万次</span>浏览，随后 Google 工程总监 <strong>Addy Osmani</strong> 将其正式命名为 <strong>Loop Engineering（循环工程）</strong>，将其定位为 2026 年 AI 领域的第四大工程方向。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label old">传统 Prompt Engineering</div>
+          <ul>
+            <li>人在循环中（Human-in-the-Loop）</li>
+            <li>每次任务需手动拆分步骤</li>
+            <li>提示词技巧是核心竞争力</li>
+            <li>Agent 单次执行，出错即停</li>
+            <li>人工检查结果，调整后再跑</li>
+            <li>重复性"写 prompt → 看结果 → 改 prompt"</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label new">Loop Engineering 新范式</div>
+          <ul>
+            <li>Agent 在循环中（Agent-in-the-Loop）</li>
+            <li>仅定义目标和边界，Agent 自主拆解</li>
+            <li>设计循环系统替代提示词技巧</li>
+            <li>自动重试、自我纠错、持续迭代</li>
+            <li>设定成功标准，Agent 闭环运行</li>
+            <li>"定目标 → 跑循环 → 收成果"</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p><strong>五大模块构成</strong>：Loop Engineering 将 AI 自主工作流分解为五个核心模块——<strong>目标定义（Goal）→ 计划生成（Plan）→ 执行循环（Execute）→ 验证判断（Verify）→ 反馈调整（Feedback）</strong>。关键创新在于，这五个模块形成一个闭环，Agent 在其中自动运转，人类只需定义第 1 步和第 5 步的边界条件。同期，<strong>TerminalTraj</strong> 入选 ICML 2026——该研究将 GitHub 真实仓库转化为可执行终端轨迹，构建了 32K Docker 镜像和 5 万余条验证轨迹，为 Loop Engineering 提供了训练数据基础。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>Loop Engineering 不是又一个 buzzword——它回答了一个结构性问题：<strong>当 AI 编程能力已经很强的时候，为什么还需要程序员？</strong>答案正在从"写代码"转向"设计系统"。Loop Engineering 的本质是重新定义人与 AI 的分工：人负责定义目标、约束和验收标准，AI 负责在循环中自主探索执行路径。这直接对应了当前 Claude Code Dynamic Workflows、OrcaRouter 多模型路由、Codex 多 Agent 编排等前沿产品正在探索的方向。更深层的意义在于：<strong>一旦 Loop Engineering 成为主流，单个开发者的产出将不再受限于个人编码速度，而是受限于定义问题和验收结果的能力</strong>——这对整个软件工程行业的人才结构、团队组织和评估体系都将产生深远影响。Prompts Engineering 可能逐步成为"过时技能"，就像今天很少有人再手写汇编一样。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="card">
+      <span class="card-badge milestone">融资突破</span>
+      <h3><span class="card-num">4</span>大晓机器人完成天使+轮融资数亿美元——商汤系，Kairos 世界模型 4B 参数登顶全球四大具身智能榜单</h3>
+
+      <div class="content-block">
+        <p>6 月 15 日，上海大晓机器人公司宣布完成<strong>天使+轮融资</strong>，2026 年上半年累计融资 <span class="highlight-num">数亿美元</span>。本轮由<strong>吉利资本、达晨财智、深创投、上海科创基金、临港新片区基金</strong>等机构参投，老股东商汤国香资本持续增资。投资人阵容覆盖"产业资本+财务基金+国资平台+高校基金"，堪称中国具身智能领域迄今为止最豪华的早期投资阵容。</p>
+        <p>大晓机器人由<strong>商汤科技联合创始人王晓刚</strong>创立，澳大利亚科学院院士 <strong>陶大程</strong>担任首席科学家。公司自主研发的<strong>开悟（Kairos）世界模型</strong>在具身视频生成、任务指令追随、泛化能力、场景鲁棒性四大维度达到业内领先水平，<strong>4B 参数性能超越 28B 参数模型</strong>。该模型已向全行业开源，为具身智能机器人提供端到端的感知-决策-执行能力底座。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">Kairos 世界模型：四大领先</div>
+          <ul>
+            <li><strong>具身视频生成</strong>：高保真物理交互模拟</li>
+            <li><strong>任务指令追随</strong>：复杂指令精准执行</li>
+            <li><strong>泛化能力</strong>：跨场景/跨任务迁移</li>
+            <li><strong>场景鲁棒性</strong>：非结构化环境稳表现</li>
+            <li>参数规模 <span class="highlight-num">4B</span>，性能超越 28B 模型</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">ACE 研发范式创新</div>
+          <ul>
+            <li><strong>环境式数据采集</strong>：类人自然交互数据</li>
+            <li><strong>世界模型</strong>：物理规律内化建模</li>
+            <li><strong>泛化具身模组</strong>：即插即用的硬件适配</li>
+            <li>从"以任务为中心"到<strong>"以人为中心"</strong></li>
+            <li>获产业界与资本界广泛认可</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>"世界模型是具身智能的'大脑'——它让机器人不再是预设程序的执行器，而是能在物理世界中理解、预测和适应的智能体。Kairos 的 4B 参数追平甚至超越 28B 竞品的关键，在于我们重新思考了'什么是具身智能真正需要学的东西'。"——大晓机器人 CTO</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>大晓机器人的本轮融资有四个关键信号。第一，<strong>商汤系再出发</strong>：王晓刚作为商汤联合创始人二次创业，证明中国 AI 1.0 时代积累的人才和技术正在向具身智能赛道富集。第二，<strong>世界模型路线获资本重注</strong>：数亿美元天使+轮在中国 AI 领域极为罕见——投资人不是在赌一个产品，而是在赌"世界模型作为具身智能基础设施"的技术路线本身，这与英伟达 Cosmos、智源悟界·Physis 形成三足鼎立的路线竞争。第三，<strong>4B 超越 28B 的效率奇迹</strong>：小模型反超大模型的做法，与 Rio 3.5（巴西市政级团队也能训练一流模型）异曲同工——AI 能力的民主化正在从语言模型蔓延到世界模型。第四，<strong>开源策略的战略意义</strong>：全行业开源意味着任何人可以基于 Kairos 开发具身智能应用，这对美国出口管制背景下的中国具身智能生态极为重要。</p>
+      </div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="card">
+      <span class="card-badge hot">资本狂飙</span>
+      <h3><span class="card-num">5</span>极佳视界 B2 轮再获 10 亿元三个月狂揽 35 亿——估值破百亿，国内首个世界模型独角兽诞生</h3>
+
+      <div class="content-block">
+        <p>6 月 15 日，物理 AGI 全球领军企业<strong>极佳视界</strong>宣布再获 <span class="highlight-num">10 亿元</span> B2 轮融资，由新加坡狮城资本、中国-比利时基金、建投投资、万向钱潮、复星锐正等<strong>全球顶级资本阵容</strong>共同投资，国中资本、达晨财智、图灵资管等老股东持续超额加注。此前 3 月、4 月，极佳视界已分别完成 <strong>10 亿元 Pre-B 轮</strong>和 <strong>15 亿元 B1 轮</strong>融资——<strong>三个月内累计融资 35 亿元</strong>，估值突破 <span class="highlight-num">百亿元</span>，成为国内首个世界模型独角兽。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">"双金字塔"技术体系</div>
+          <ul>
+            <li><strong>数据金字塔</strong>：从仿真到真机多层级数据</li>
+            <li><strong>算法金字塔</strong>：从感知到决策全栈模型</li>
+            <li>C 端：<strong>拾光 S1</strong> 家庭机器人已百台部署</li>
+            <li>B 端：工业场景规模化落地</li>
+            <li>定位"物理世界的 OpenAI"</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">三个月 35 亿意味着什么</div>
+          <ul>
+            <li>Pre-B（3 月）：<span class="highlight-num">10 亿</span></li>
+            <li>B1（4 月）：<span class="highlight-num">15 亿</span></li>
+            <li>B2（6 月）：<span class="highlight-num">10 亿</span></li>
+            <li>累计 <span class="highlight-num">35 亿</span>，估值破 <span class="highlight-num">100 亿</span></li>
+            <li>国内首个世界模型百亿独角兽</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <p><strong>资本为什么在赌世界模型？</strong>极佳视界的融资节奏——三个月三轮、合计 35 亿——是整个具身智能赛道资本密度的缩影。2026 年上半年，中国具身智能领域已有极佳视界（35 亿）、大晓机器人（数亿美元）、小鹏 IRON（200 天量产冲刺）、光象科技（头部车企订单）等多条线密集突破。资本押注的核心逻辑是：<strong>世界模型是通往物理 AGI 的必经之路</strong>——谁能率先训练出一个能理解和预测物理世界的通用模型，谁就掌握了具身智能时代的"操作系统"。极佳视界的"双金字塔"策略（数据+算法并行）区别于纯算法路线，强调从真实物理数据中学习，这可能解释了其估值增长速度。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>三个月 35 亿的融资速度，将极佳视界推向了<strong>中国具身智能赛道的估值标杆</strong>。这背后有三个结构性的行业信号：第一，<strong>资本叙事从"人形机器人"升级为"物理 AGI"</strong>——前者的想象空间是替代劳动力，后者的想象空间是重新定义物理世界的智能基础设施，估值逻辑完全不同；第二，<strong>"双金字塔"策略暗示了一条从数据到算法的完整路径</strong>——这与大晓机器人的"环境式数据采集+世界模型+泛化具身模组"形成路线呼应，表明中国具身智能正在形成一套有特色的技术方法论；第三，<strong>极佳视界+大晓机器人双百亿估值格局初现</strong>——两家公司合计半年内融资超 40 亿元，意味着中国具身智能正在从"散点突破"进入"资本密集型"阶段，技术领先者将拥有充裕的资源壁垒。叠加工信部万台级实景实训政策，中国具身智能在 2026 年上半年已形成"政策+资本+技术+场景"四轮驱动的产业爆发态势。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · 新浪财经 · 凤凰网科技 · 新智元 · 财新网 · 搜狐科技 · 格隆汇 · MSN</p>
+  </div>
+
+</div>
+</body>
+</html>
