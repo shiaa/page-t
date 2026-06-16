@@ -3,6 +3,60 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-06-17',
+    title: 'AI 每日动态 (2026-06-17)',
+    summary: '1. 1SpaceX 600 亿美元收购 Cursor——AI 编程赛道史上最大并购，马斯克版"AI 编程帝国"成型 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2OpenAI Codex 推出"自生成目标"功能——人...',
+    date: '2026-06-17',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年6月17日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1SpaceX 600 亿美元收购 Cursor——AI 编程赛道史上最大并购，马斯克版"AI 编程帝国"成型
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2OpenAI Codex 推出"自生成目标"功能——人类只需给高层意图，Agent 自主制定目标、拆分任务、完成开发
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 3Anthropic 高管赴白宫谈判 Fable 5 出口管制 + 撤回第三方订阅限制——AI 管制博弈进入深水区
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 具身智能方向
+
+### 1. 4腾讯 Robotics X 开源 HyVLA-0.5——亚毫米级 UMI 数据+跨本体迁移+真机成功率接近 100%，VLA 全栈方案补齐具身智能落地短板
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 5MiniMax M3 开源登顶全球综合智能指数第一 + 摩尔线程 MusaCoder-27B 刷新 KernelBench——国产开源模型集体发力
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-06-16',
     title: 'AI 每日动态 (2026-06-16)',
     summary: '1. 1Anthropic 宣布 7 月 8 日起强制实名制刷脸 + OpenAI 遭多州联合调查——AI 行业合规监管骤然升级 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2Kimi K2.7 Code 高速版今日正...',
