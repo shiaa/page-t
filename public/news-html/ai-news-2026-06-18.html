@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月18日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.old { color: #94a3b8; }
+  .vs-item .vs-label.new { color: #34d399; }
+  .vs-item .vs-label.risk { color: #f87171; }
+  .vs-item .vs-label.impact { color: #a78bfa; }
+  .vs-item .vs-label.matrix { color: #38bdf8; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .quote-block {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border-left: 3px solid #0ea5e9;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 24px;
+    margin: 16px 0;
+  }
+  .quote-block p {
+    color: #b4c6fe; font-size: 14px; line-height: 1.75;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 18</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 18 日 · 星期四</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>阿里首发千问 Qwen-Robot 具身大模型三件套——80 维统一动作表征+38000 小时开源预训练，RoboChallenge Table30 v1 包揽前二</li>
+      <li>智谱同日发布 GLM-5.2 开源旗舰 + ZCode 3.0 自研 Agent——1M 真正可用上下文，ZCode 切换自研内核，Anthropic 收紧背景下的"自主可控"路线</li>
+      <li>OpenCode 登顶 LogRocket 6 月《AI 开发工具实力榜》——160K+ GitHub Stars、750 万 MAU、75+ 模型兼容，开源生态对闭源巨头的胜利</li>
+      <li>SpaceX 600 亿美元收购 Cursor 母公司 Anysphere——AI 编程赛道史上最大并购，"算力+模型+工具"垂直整合时代来临</li>
+      <li>硅基流动完成 20 亿元 B 轮融资+深朴智能数亿元 Pre-A——AI 推理服务与人形机器人赛道持续吸金</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">史诗并购</span>
+      <span class="card-badge warning">格局重塑</span>
+      <h3><span class="card-num">1</span>SpaceX 600 亿美元全股票收购 Cursor 母公司 Anysphere——AI 编程赛道史上最大并购</h3>
+
+      <div class="content-block">
+        <p>6 月 16 日，马斯克旗下 SpaceX（NASDAQ：SPCX）向 SEC 提交文件，宣布将以 <span class="highlight-num">600 亿美元</span>全股票交易收购 AI 编程工具 Cursor 母公司 Anysphere，预计 2026 年 Q3 完成。这是 SpaceX 上市后首笔重大战略收购，也是 AI 编程工具赛道迄今规模最大的并购事件。截至 6 月 16 日收盘，SpaceX 股价报 201.8 美元/股，三个交易日累计涨幅接近 50%，市值突破 2.66 万亿美元跻身全球前五。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">交易核心条款</div>
+          <ul>
+            <li>交易形式：全股票合并收购</li>
+            <li>Cursor 并入 SpaceX 全资子公司</li>
+            <li>分手费：一般终止 <span class="highlight-num">100 亿</span> / 监管终止 <span class="highlight-num">40 亿</span></li>
+            <li>须在 SpaceX IPO 融资完成后方可落地</li>
+            <li>SpaceX 同期签有 <span class="highlight-num">260 亿/年</span>算力协议</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">Cursor 关键数据</div>
+          <ul>
+            <li>年化 B2B 营收：<span class="highlight-num">约 26 亿美元</span></li>
+            <li>此前融资估值：约 500 亿美元</li>
+            <li>收购估值：<span class="highlight-num">600 亿美元</span>（溢价 20%）</li>
+            <li>投资方：a16z / Thrive / 英伟达 / Alphabet</li>
+            <li>原占 Anthropic 收入比例：<strong>约 50%</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>"这笔收购的野心不止于编程工具——马斯克将 Cursor 视为'xAI 生态的开发者入口'，与 Grok 模型、SpaceX 算力形成'算力+模型+工具'的垂直整合。"</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>三个维度至关重要。第一，<strong>竞争格局从"工具之争"升级为"帝国之战"</strong>：Cursor vs Copilot vs Claude Code 的产品竞争，变成 SpaceX/xAI vs OpenAI vs Anthropic 的阵营战争，"你用谁的模型就用谁的编程工具"将成为新常态。第二，<strong>600 亿美元估值锚点</strong>：年营收 26 亿美元、市销率 23 倍——为整个 AI 编程工具赛道设定极高估值基准，未来融资并购将以此为参照。第三，<strong>Anthropic 失去一半收入来源</strong>，将被迫加速 Claude Code 的独立化与商业化转型。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">阿里首发</span>
+      <span class="card-badge source">千问具身</span>
+      <h3><span class="card-num">2</span>阿里发布千问 Qwen-Robot 具身大模型三件套——首次构建"手·脚·脑"协同的通用底座</h3>
+
+      <div class="content-block">
+        <p>6 月 16 日，阿里巴巴正式发布千问具身智能大模型 Qwen-Robot 系列，包含 <strong>Qwen-RobotManip</strong>（VLA 操作模型）、<strong>Qwen-RobotNav</strong>（VLN 移动模型）、<strong>Qwen-RobotWorld</strong>（世界模型）三大核心模型，分别对应机器人的操作能力、导航能力与认知能力，既可独立部署，也能协同运转。这是千问大模型家族首个完整的具身智能模型矩阵。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label matrix">Qwen-RobotManip（VLA）</div>
+          <ul>
+            <li><strong>80 维统一动作表征</strong>：为不同硬件定义通用"肢体语言"</li>
+            <li>基于摄像头相对位置操作，免去绝对坐标计算</li>
+            <li><span class="highlight-num">38000+ 小时</span>开源数据预训练</li>
+            <li>RoboChallenge Table30 v1 包揽前二（Lira/Atlas）</li>
+            <li>跨 30 项真实任务、4 个机器人平台真机测评</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">Qwen-RobotNav / World</div>
+          <ul>
+            <li>基于 Qwen-VL，五大导航任务统一框架</li>
+            <li><strong>任务自适应观察机制</strong>：灵活切换记忆策略</li>
+            <li>原生支持多种智能体框架（业内少数）</li>
+            <li>宇树 Go2 四足机器人已验证寻物导航能力</li>
+            <li>世界模型可生成训练视频 + 预演未来轨迹</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>两个突破值得关注。第一，<strong>打破"私有数据依赖"</strong>：Qwen-RobotManip 全程仅基于开源数据预训练仍取得领先（包揽 RoboChallenge Table30 v1 前二），意味着具身智能的"数据护城河"开始松动——开源路线有了合规可行的方案。第二，<strong>"手·脚·脑"三件套架构</strong>确立了具身智能的通用范式：VLA 模型解决操作问题、VLN 模型解决导航问题、世界模型解决推演问题，三者协同可泛化到不同形态机器人。这与之前厂商只做单一模型相比，更接近真实场景所需的全栈能力。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">⚡</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">双发布</span>
+      <span class="card-badge warning">自主可控</span>
+      <h3><span class="card-num">3</span>智谱同日发布 GLM-5.2 开源旗舰 + ZCode 3.0——1M 真正可用上下文 + 自研 Agent 内核</h3>
+
+      <div class="content-block">
+        <p>6 月 13 日，智谱 AI 同日发布 GLM-5.2 开源大模型与 ZCode 3.0 编程工具。GLM-5.2 定位"智谱迄今能力最强的开源模型"，首次实现<strong>真正可用的 1M 上下文窗口</strong>，在 Code Arena 前端开发盲测中取得全球可用模型第一。ZCode 3.0 全面切换自研 ZCode Agent 内核，并宣布不再内置或维护第三方 Agent 适配。开源权重与 API 将在 6 月 20 日左右上线，采用 MIT 协议。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">GLM-5.2 核心能力</div>
+          <ul>
+            <li><strong>1M 真正可用上下文</strong>（非 PPT 指标）</li>
+            <li>Code Arena 前端开发盲测全球第一</li>
+            <li>面向 Agentic Engineering 优化</li>
+            <li>Day 0 适配国产算力平台</li>
+            <li>兼容 Claude Code / OpenCode / Cline</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">ZCode 3.0 三大优化</div>
+          <ul>
+            <li>自研 Agent 内核（告别"套壳"）</li>
+            <li>长程推理不掉链子</li>
+            <li>工具调用成功率显著提升</li>
+            <li>大型工程执行链路全优化</li>
+            <li>Coding Plan 全档 <span class="highlight-num">150%</span>配额</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>"前沿智能不应只属于少数人，也不应被少数规则随时收回。" ——智谱 GLM-5.2 发布公告</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>这次发布的战略意义大于技术意义。<strong>第一，"模型+自研 Agent"垂直整合路线成型</strong>：此前国产编程工具普遍套用 Claude Code 内核，模型与 Agent 不匹配导致效果打折扣；ZCode 3.0 自研内核专为 GLM 优化，体验一致性和工具调用成功率显著提升。<strong>第二，MIT 协议商用友好</strong>：上周 Anthropic 被曝切断高端模型访问，让"模型随时可能被收回"成为企业焦虑。智谱此时选择 MIT 开源（可商用、可微调、可私有化部署），是直接对标"自主可控"叙事。<strong>第三，国产编程模型四强格局</strong>：GLM-5.2（自研 Agent）、Kimi K2.7 Code（开源兼容）、Qwen 3.7 Max（通用兼顾）、MiniMax M3（长上下文）形成清晰分化，6 月进入"淘汰赛"阶段。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">开源王者</span>
+      <span class="card-badge source">登顶榜首</span>
+      <h3><span class="card-num">4</span>OpenCode 登顶 LogRocket 6 月《AI 开发工具实力榜》——160K Stars、750 万 MAU、75+ 模型兼容</h3>
+
+      <div class="content-block">
+        <p>据 LogRocket 2026 年 6 月版《AI 开发工具实力榜》，开源编码代理 OpenCode 凭借惊人的社区增长力压 Cursor、Claude Code、Codex CLI 等强敌，<strong>登顶 AI 开发工具排行榜第一名</strong>。关键数据：GitHub Stars <span class="highlight-num">160K+</span>（部分统计 172K）、月活跃用户 <span class="highlight-num">750 万</span>、支持模型 <span class="highlight-num">75+ 个</span>。OpenCode 于 2025 年 6 月上线，不到一年便成为开源 AI 编程领域 Star 数最高的代理。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">2026 上半年 AI 编程工具梯队</div>
+          <ul>
+            <li><strong>#1 OpenCode</strong>：开源、模型无关、社区王者</li>
+            <li>#2 Claude Code：SWE-bench 80.8% 性能领先</li>
+            <li>#3 Codex CLI：Terminal-Bench 83.4% 榜首</li>
+            <li>#4 GitHub Copilot：企业/IDE 稳定领导</li>
+            <li>#5 Cursor：$20/月性价比之选</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">OpenCode 登顶四大原因</div>
+          <ul>
+            <li><strong>模型无关</strong>：不被任何厂商绑架</li>
+            <li>MIT 许可证真开源</li>
+            <li>CLI 原生，工程师友好</li>
+            <li>社区飞轮：插件/模板/集成反哺用户</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>LogRocket 评分体系中，OpenCode 在"价值主张（开源+免费+自托管）"和"可访问性（75+ 模型广覆盖）"两个维度几乎无敌。传递出三个清晰信号：<strong>第一，开源正在反超闭源</strong>——当模型能力趋同，开发者更看重自由度与成本；<strong>第二，"模型无关"成为刚需</strong>——单一厂商绑定越来越被视为风险（特别是在 SpaceX 收购 Cursor、Anthropic 收紧访问的背景下）；<strong>第三，CLI 工作流复兴</strong>——在 IDE 普遍臃肿的今天，轻量可组合的终端工具重新获得青睐。值得注意：Claude Code 在部分基准测试中执行速度比 OpenCode 快约 78%——OpenCode 赢在"人心"，Claude Code 赢在"性能"，竞争将向两端分化。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ========== 资本动态 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon industry">💰</div>
+      <h2>资本动态</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">推理独角兽</span>
+      <span class="card-badge source">融资超 20 亿</span>
+      <h3><span class="card-num">5</span>硅基流动完成 20+ 亿元 B 轮融资 + 深朴智能数亿元 Pre-A——AI 基础设施与人形机器人持续吸金</h3>
+
+      <div class="content-block">
+        <p>6 月 16 日，模型推理服务商硅基流动宣布完成超 <span class="highlight-num">20 亿元</span>B 轮融资，由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）等联合投资，华兴资本担任独家财务顾问。同周，机器人公司深朴智能完成数亿元 Pre-A 轮融资，资本对具身智能产业链的押注持续加码。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">硅基流动</div>
+          <ul>
+            <li>定位：模型推理服务商</li>
+            <li>本轮规模：<span class="highlight-num">超 20 亿元</span></li>
+            <li>轮次：B 轮</li>
+            <li>投资方：携程战投 / 晶科 / 金蝶 / 联通 / 盛奕</li>
+                <li>财务顾问：华兴资本</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">深朴智能</div>
+          <ul>
+            <li>定位：机器人公司</li>
+            <li>本轮规模：数亿元</li>
+                <li>轮次：Pre-A</li>
+                <li>方向：具身智能产业链</li>
+                <li>背景：阿里 Qwen-Robot 同周发布</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p>两条资本线索都指向同一个趋势——<strong>AI 价值链正从"模型层"向"推理/具身层"下沉</strong>。硅基流动 20 亿融资反映"模型即服务"红利消退后，<strong>推理成本与算力调度</strong>成为新护城河；深朴智能 Pre-A 与阿里 Qwen-Robot 同周发布，则说明具身智能已从概念验证进入"模型+硬件+数据"协同落地阶段。值得关注的是：SpaceX 收购 Cursor（600 亿美元）、硅基流动 B 轮（20 亿元）、深朴智能 Pre-A 三个事件叠加，标志着 AI 行业的"头部整合+长尾吸金"双线并行格局正式确立。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：财新 T 早报 · IT 之家 · 凤凰网科技 · 威易网 · AI 工具宝箱 · 快科技 · 36 氪</p>
+  </div>
+
+</div>
+</body>
+</html>
