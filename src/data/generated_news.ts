@@ -3,6 +3,64 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-06-19',
+    title: 'AI 每日动态 (2026-06-19)',
+    summary: '1. 1Transformer 核心作者 Noam Shazeer 正式加盟 OpenAI——让发明 Transformer 的人去发明下一个 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2智谱 GLM 5.2 正式开...',
+    date: '2026-06-19',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年6月19日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1Transformer 核心作者 Noam Shazeer 正式加盟 OpenAI——让发明 Transformer 的人去发明下一个
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2智谱 GLM-5.2 正式开源上线——1M 真正可用上下文，Code Arena 前端开发盲测全球可用模型第一
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 3Adobe Creative Agent 全面嵌入 Creative Cloud——AI Agent 从「对话式工具」升级为「多步骤工作流编排器」
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 具身智能方向
+
+### 1. 42026 上半年 460 亿砸向具身智能——288 起融资但资金极度集中于头部 20 家，产业化与淘汰赛同步启动
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 行业动态
+
+### 1. 5Anthropic 与白宫合作 AI 安全漏洞框架 + OpenAI 双线冲刺 IPO——安全合规与资本竞速进入关键窗口
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-06-18',
     title: 'AI 每日动态 (2026-06-18)',
     summary: '1. 1SpaceX 600 亿美元全股票收购 Cursor 母公司 Anysphere——AI 编程赛道史上最大并购 💡 值得关注 : 💡 为什么重要 具身智能方向 1. 2阿里发布千问 Qwen Robot 具身大模型三件套——首次构建...',
