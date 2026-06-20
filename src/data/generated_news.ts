@@ -3,6 +3,118 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-06-21',
+    title: 'AI 每日动态 (2026-06-21)',
+    summary: '1. 1SpaceX 600 亿美元全股票收购 Cursor——AI 编程史上最大收购案，数据飞轮直通 Grok 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2MiniMax M3 独立复现 ICLR 顶会论文全部实验...',
+    date: '2026-06-21',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年6月21日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1SpaceX 600 亿美元全股票收购 Cursor——AI 编程史上最大收购案，数据飞轮直通 Grok
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2MiniMax M3 独立复现 ICLR 顶会论文全部实验——12 小时零人工干预，Agentic Coding 的终极证明
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 3Agentic Coding 2026 全景：20+ 工具分化四大赛道，Memory OS 为 AI Agent 装上 6 层记忆大脑
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 具身智能方向
+
+### 1. 4智元机器人完成 8 小时真实产线作业直播——Q3 部署 100 台，从 Demo 走向规模化工业落地
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 5国内首个"第一视角"实景具身智能数据研究联盟成立——120+ 成员单位，填补数据标准化空白
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
+    id: 'ai-news-daily-2026-06-20',
+    title: 'AI 每日动态 (2026-06-20)',
+    summary: '1. 1英伟达 ENPIRE：8 个 AI Coding Agent + 8 台机器人组队自主科研——自学插 GPU 显卡，全部开源 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2苹果 Xcode 27 首次深度集成 ...',
+    date: '2026-06-20',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年6月20日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1英伟达 ENPIRE：8 个 AI Coding Agent + 8 台机器人组队自主科研——自学插 GPU 显卡，全部开源
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2苹果 Xcode 27 首次深度集成 AI 智能体——自然语言修 Bug、构建 App，接入 Claude / GPT / Gemini
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 3OpenCode 登顶 LogRocket AI 开发工具实力榜第一——开源编程 Agent 的逆袭：160K+ Stars、750 万 MAU
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 具身智能方向
+
+### 1. 4越疆发布下一代家庭陪伴交互 AI 人形机器人——搭载自研"空弈 DobotWAM"具身大模型，人形机器人从工厂走向家庭
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 行业动态
+
+### 1. 5MCP Zero-Touch OAuth 企业级鉴权发布 + 七部门平台经济行动方案力推大模型国产算力——AI Agent 基础设施走向企业标配
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-06-19',
     title: 'AI 每日动态 (2026-06-19)',
     summary: '1. 1Transformer 核心作者 Noam Shazeer 正式加盟 OpenAI——让发明 Transformer 的人去发明下一个 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2智谱 GLM 5.2 正式开...',
