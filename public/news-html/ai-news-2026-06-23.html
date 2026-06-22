@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月23日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.old { color: #94a3b8; }
+  .vs-item .vs-label.new { color: #34d399; }
+  .vs-item .vs-label.risk { color: #f87171; }
+  .vs-item .vs-label.impact { color: #a78bfa; }
+  .vs-item .vs-label.matrix { color: #38bdf8; }
+  .vs-item .vs-label.person { color: #fbbf24; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .quote-block {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border-left: 3px solid #0ea5e9;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 24px;
+    margin: 16px 0;
+  }
+  .quote-block p {
+    color: #b4c6fe; font-size: 14px; line-height: 1.75;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 23</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 23 日 · 星期二</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>强化学习之父 Sutton 联手 Carmack 发布 Physical Atari——让机器人在真实世界长时自主学习，挑战"模拟器→真机"传统范式</li>
+      <li>智谱 GLM-5.2 完全开源：744B MoE + 1M 上下文，FrontierSWE 逼近 Claude Opus 4.8，开源模型首次站上闭源旗舰同档</li>
+      <li>OpenAI Codex 新增"录制与回放"：演示一次即生成可复用自动化技能，桌面 Agent 搭建门槛降至零</li>
+      <li>具身智能 H1 国内融资 438 亿，"大脑派"吸纳过半资金——软件定义硬件路线主导行业，本体派融资仅占 12.8%</li>
+      <li>天工 3.0 下半年量产 + 万台级产线投产：人形机器人走出实验室，"进厂打螺丝"进入倒计时</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">范式突破</span>
+      <span class="card-badge source">学术前沿</span>
+      <span class="card-badge milestone">传奇组合</span>
+      <h3><span class="card-num">1</span>强化学习之父 Sutton 联手 Carmack 发布 Physical Atari——让机器人在真实世界长时自主学习，挑战"模拟→真机"传统范式</h3>
+
+      <div class="content-block">
+        <p>6 月 21 日，由 <strong>Richard Sutton</strong>（强化学习之父）与 <strong>John Carmack</strong>（Doom/Quake 之父、前 Meta CTO）领衔的团队发布 Physical Atari 系统与论文。这套系统把 Atari 游戏从模拟器搬到了真实物理世界：一个名为 <strong>Robotroller</strong> 的机械臂操作真实的 Atari CX40+ 手柄，一个叫 <strong>Atari Devbox</strong> 的装置渲染游戏画面和奖励信号——整套硬件成本不到 <span class="highlight-num">$1,000</span>，已在连续数周的强化学习实验中无任何机械故障。</p>
+        <p>最激进的不是硬件，而是路线选择。论文明确提出一种被他们称为<strong>"实时强化学习"（real-time RL）</strong>的设定：机器人在真实世界中长时间、不间断、无人监督地自主学习。这与当前具身智能界主流的"模拟器训练→真机部署"路线形成直接对抗。论文以近期商场人形机器人撞人事件为例，指出模拟器训练在应对物理世界"意外"时的脆弱性——Sim-to-Real 的 gap 不是工程细节，而是根本方法论问题。</p>
+        <p>这组作者阵容本身就极具象征意义：Sutton 是强化学习的奠基人，他的教科书《Reinforcement Learning: An Introduction》定义了整个领域；Carmack 是游戏引擎传奇程序员，2013 年加入 Oculus 后一直深耕 VR/AI，2022 年创立 Keen Technologies 聚焦 AGI。两位"上古大神"联手走一条最艰难的路——让机器人直接在物理世界中学——本身就是对行业的信号。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">Physical Atari 关键参数</div>
+          <ul>
+            <li>硬件成本：<span class="highlight-num">&lt;$1,000</span></li>
+            <li>核心硬件：Robotroller（机械臂）+ Devbox</li>
+            <li>学习方式：<strong>真实世界实时 RL</strong></li>
+            <li>连续运行：<strong>数周无故障</strong></li>
+            <li>论文：arXiv 2606.19357</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label person">梦幻作者阵容</div>
+          <ul>
+            <li><strong>Richard Sutton</strong>：强化学习之父</li>
+            <li><strong>John Carmack</strong>：Doom/Quake 之父，Keen Technologies</li>
+            <li>合作方：阿尔伯塔大学 + Openmind 研究所</li>
+            <li>方法论：<strong>真机直接学 ≠ Sim-to-Real</strong></li>
+            <li>目标：推翻模拟器依赖路线</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>"世界不会等你。"——Physical Atari 论文中如此描述实时强化学习的核心理念。它不是把 Atari 游戏当"任务"做，而是当成一个"物理系统"来理解：游戏画面有真实延迟、控制器有机械惯性、环境光会变化——这些"不完美"恰恰是 Sim-to-Real gap 的根源，而不是应该被模型忽略的噪声。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，Sutton × Carmack 这个组合本身就宣告了一种技术信念。</strong>当行业主流押注"更大的模拟器 + 更好的迁移算法"时，两位各自领域的奠基人选择回归"让机器人直接在现实中学习"——这不是对已有路线的优化，而是范式层面的正面挑战。<strong>第二，"低成本+真机"路线如果走通，将极大降低具身智能的入局门槛。</strong>不到 $1,000 的硬件意味着任何大学实验室都能复现，具身智能将不再是大厂的游戏。<strong>第三，连续数周无机械故障的可靠性数据本身就是信号</strong>——它证明了真机 RL 在工程上是可行的，过去大家不做不是"不想做"，而是"觉得做不了"。Physical Atari 把这个"觉得"打破了。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">⚡</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">开源旗舰</span>
+      <span class="card-badge source">智谱 AI</span>
+      <h3><span class="card-num">2</span>智谱 GLM-5.2 完全开源：744B MoE + 1M 上下文，FrontierSWE 逼近 Claude Opus 4.8——开源模型首次站上闭源旗舰同档</h3>
+
+      <div class="content-block">
+        <p>6 月 13 日智谱在 X 平台宣布 GLM-5.2 正式开放权重，随后持续引发社区热议。该模型采用 <span class="highlight-num">744B 总参数 / 40B 激活</span> 的 MoE（混合专家）架构，遵循 <strong>MIT 协议</strong> 全面开源，支持 <span class="highlight-num">1M token</span> 超长上下文——这意味着开发者可以直接将整个中型代码库或数十万字的技术文档一次性送入模型。</p>
+        <p>最引人注目的是长程编程任务的评测表现。在专为复杂软件工程任务设计的基准 <strong>FrontierSWE</strong> 上，GLM-5.2 拿到 <span class="highlight-num">74.4%</span>，逼近 Anthropic 顶级闭源模型 Claude Opus 4.8 的 <span class="highlight-num">75.1%</span>，并超越 OpenAI GPT-5.5 的 <span class="highlight-num">72.6%</span>。这是开源模型首次在长程编程任务上与闭源旗舰处于同一梯队——差距仅 0.7 个百分点。</p>
+        <p>另一个引爆讨论的点是训练范式。GLM-5.2 <strong>不再使用 GRPO（Group Relative Policy Optimization）</strong>，直接引发了关于强化学习在 LLM 训练中未来走向的技术争论。放弃目前业界主流采用的 RL 范式意味着智谱在训练方法上走了自己的路，且结果说明这条路走得通。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">FrontierSWE 长程编程基准</div>
+          <ul>
+            <li><strong>Claude Opus 4.8</strong>：<span class="highlight-num">75.1%</span>（闭源旗舰）</li>
+            <li><strong>GLM-5.2</strong>：<span class="highlight-num">74.4%</span>（开源，MIT 协议）</li>
+            <li><strong>GPT-5.5</strong>：<span class="highlight-num">72.6%</span>（闭源）</li>
+            <li>差距仅 <span class="highlight-num">0.7 个百分点</span></li>
+            <li>开源模型首次站上闭源同档</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label new">GLM-5.2 技术亮点</div>
+          <ul>
+            <li>架构：<span class="highlight-num">744B</span> 总参 / 40B 激活 MoE</li>
+            <li>上下文：<span class="highlight-num">1M</span> tokens</li>
+            <li>协议：<strong>MIT 开源</strong></li>
+            <li>训练：<strong>放弃 GRPO</strong>，自主路线</li>
+            <li>RL 技术路线争议引爆</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，开源编程 Agent 的"天花板"被正式捅破。</strong>过去开源模型在编程任务上可以"还可以"、"够用"，但从未在复杂长程任务上达到"可以替代闭源"的水平。74.4% vs 75.1% 的差距意味着，在 AI Coding 的实际工程场景中，开发者已经可以认真考虑"用开源的 GLM-5.2 替代闭源的 Claude/OpenAI"。<strong>第二，MIT 协议 + MoE 架构的性价比优势巨大。</strong>40B 激活参数意味着推理成本远低于千亿参数级的稠密模型，但性能却站上了顶级——这对企业级 AI Coding 的规模化部署是关键变量。<strong>第三，放弃 GRPO 又拿到好成绩，对 RLHF/RL 路线的反思有推动作用</strong>——如果不用主流 RL 范式也能训练出顶级代码模型，那说明"代码能力"的涌现可能更多依赖数据质量而非 RL 技巧，这对行业训练策略有重要参考价值。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">Agent 进化</span>
+      <span class="card-badge source">OpenAI</span>
+      <h3><span class="card-num">3</span>OpenAI Codex 新增"录制与回放"功能——演示一次即生成可复用自动化技能，桌面 Agent 搭建门槛降至零</h3>
+
+      <div class="content-block">
+        <p>6 月 22 日，OpenAI 为 macOS 端 Codex 推出 <span class="highlight-num">26.616</span> 版本，上线 <strong>Record & Replay（录制与回放）</strong> 核心功能。用户只需完整演示一遍操作流程——比如批量处理图片、整理 Excel 表格、从网页抓取数据——AI 就会自动将这一过程转化为结构化的、可无限复用的"技能"（skill），后续无需任何人工操作即可自动重复执行。</p>
+        <p>这不是简单的屏幕录制或鼠标轨迹回放。Codex 在录制时自动抓取的是：<strong>文件路径、操作逻辑、校验标准</strong>——即把一次演示解构成一份"工作说明书"。这意味着即使目标文件位置变了、数据量大了十倍、网页结构更新了，录制的技能依然能稳定运行。新版本还支持<strong>本地与远程主机间切换线程</strong>，技能录制后可在远程设备持续运行，无需重新设置。</p>
+        <p>目前该功能仅适配 macOS 系统，且依赖 <strong>Computer Use</strong> 桌面操控权限（该权限已于 6 月 16 日在欧盟地区上线）。需要注意的是，欧盟、英国、瑞士因数据合规法规暂未开放。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label new">Record & Replay 核心能力</div>
+          <ul>
+            <li>演示一次 = 生成可复用 skill</li>
+            <li>抓取：<strong>文件路径 + 操作逻辑 + 校验标准</strong></li>
+            <li>非简单录屏/鼠标轨迹</li>
+            <li>支持本地↔远程线程切换</li>
+            <li>无需编程即可创建数字员工</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">行业影响</div>
+          <ul>
+            <li>适用人群：<strong>非开发者也可用</strong></li>
+            <li>典型场景：批量处理、网页抓取、数据整理</li>
+            <li>当前限制：仅 macOS、欧盟/英国/瑞士不可用</li>
+            <li>依赖：Computer Use 桌面操控权限</li>
+            <li>趋势：AI 从"回答"转向"执行"</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>"不需要精通提示词，不需要会写代码——你只需要做一遍，剩下的 Codex 自己来。"这是 Record & Replay 最根本的设计理念。AI Agent 的落地瓶颈从来不是"能做什么"，而是"怎么告诉它做什么"——提示词工程本身就是一道门槛。Record & Replay 用"演示"替代了"描述"，把这个门槛降到了零。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，这是 AI Agent 交互范式的质变。</strong>从"写提示词让 AI 做"到"做一遍让 AI 学"，本质上是把人与 AI 的交互从"编程接口"降维到了"示范接口"。当任何一个会用电脑的人都能"训练"自己的 AI Agent，Agent 的使用群体将不再是开发者，而是全体知识工作者。<strong>第二，"结构化录制"而非"简单录屏"的设计思路值得注意。</strong>Codex 抓取的是操作逻辑而非像素位置——这意味着录制技能具有跨文件、跨环境的泛化能力，这是区分"玩具"和"工具"的关键。<strong>第三，与 GPT-5.6 的 Agent 能力升级形成联动。</strong>GPT-5.6 预计 6 月底上线，主打自主执行长任务能力——Record & Replay 恰好是"让用户定义任务"的入口，两者结合意味着 OpenAI 正在构建一套从"定义任务→执行任务→验证任务"的完整 Agent 工作流。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge warning">资本风向</span>
+      <span class="card-badge source">量子位</span>
+      <h3><span class="card-num">4</span>具身智能 H1 国内融资 438 亿元，"大脑派"独大吞噬过半资金——软件定义硬件路线主宰行业</h3>
+
+      <div class="content-block">
+        <p>6 月 22 日，量子位发布不完全统计：2026 年上半年（截至 6 月 12 日）国内具身智能赛道共完成融资约 <span class="highlight-num">438 亿元</span>，已逼近 2025 年全年 <span class="highlight-num">554 亿元</span> 的水平。如果按当前速度推算，2026 全年融资额大概率突破 <span class="highlight-num">900 亿</span>——接近 2025 年的两倍。</p>
+        <p>更值得关注的是资金流向的结构性分化。<strong>"大脑派"（强调软件定义硬件、模型定义本体的公司）吸纳了过半资金</strong>，以机器本体为核心的"本体派"融资占比仅为 <span class="highlight-num">12.8%</span>，甚至低于核心零部件企业。这组数据清晰地勾勒出资本对具身智能商业逻辑的判断：<strong>附加值在"脑"不在"身"</strong>。</p>
+        <p>另一个反常识的数字是轮次与金额的错配：Pre-A 轮平均融资 <span class="highlight-num">7 亿元</span>、B 轮平均 <span class="highlight-num">22.5 亿元</span>——在具身智能赛道，早期阶段的融资规模已相当于其他赛道 C/D 轮量级。这说明资本不是"试水"，而是"重注"。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">融资全景</div>
+          <ul>
+            <li>H1 总融资：<span class="highlight-num">438 亿元</span></li>
+            <li>2025 全年：554 亿元</li>
+            <li>2026 全年预测：<span class="highlight-num">900 亿+</span></li>
+            <li>Pre-A 轮平均：<span class="highlight-num">7 亿元</span></li>
+            <li>B 轮平均：<span class="highlight-num">22.5 亿元</span></li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">资金流向分化</div>
+          <ul>
+            <li><strong>"大脑派"</strong>：<span class="highlight-num">过半资金</span></li>
+            <li><strong>"本体派"</strong>：仅 <span class="highlight-num">12.8%</span></li>
+            <li>核心零部件：高于本体派</li>
+            <li>资本逻辑：<strong>附加值在"脑"不在"身"</strong></li>
+            <li>软件定义硬件路线确立主流</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，资本用真金白银为"软件定义硬件"路线投票。</strong>大脑派独大的资金分配不是巧合，而是反映了行业共识——人形机器人的差异化不在硬件形态（最终会趋同），而在 AI 能力（感知、规划、操控）。这跟智能手机行业极其相似：硬件差异越来越小，真正的护城河是操作系统和 AI。<strong>第二，Pre-A 轮 7 亿、B 轮 22.5 亿的融资规模意味着具身智能已进入"重资本驱动"阶段。</strong>这个赛道的创业门槛被急剧抬高——不是"有没有好技术"的问题，而是"有没有足够多的钱把技术跑出来"的问题。<strong>第三，本体派仅 12.8% 值得深思。</strong>这不意味着硬件不重要，而是说明硬件的价值正在从"独特性"变为"基础设施"——当电机、减速器、传感器都趋于标准化，造一个能动的机器人不再稀奇，稀奇的是它能理解环境并自主完成复杂任务。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">量产落地</span>
+      <span class="card-badge source">政策驱动</span>
+      <h3><span class="card-num">5</span>人形机器人开启"作业模式"：天工 3.0 下半年量产、万台级产线投产、工信部国资委联合推动实景实训</h3>
+
+      <div class="content-block">
+        <p>进入 6 月，人形机器人行业迎来密集的"量产信号"。6 月 8 日，北京人形机器人创新中心与地瓜机器人宣布：联合打造的全尺寸通用人形机器人 <strong>"天工 3.0"</strong> 将于 2026 年下半年开启规模化量产交付，搭载地瓜机器人旭日 S600 具身智能大算力芯片。这标志着国产人形机器人从"原型展示"正式跨入"量产交付"阶段。</p>
+        <p>6 月 9 日，工信部与国资委联合印发通知，启动 <strong>2026 年度人形机器人与具身智能实景实训专项行动</strong>，明确要求 2026 年底实现 <span class="highlight-num">万台级</span> 产品常态化落地，在工业、服务、特种等代表性场景中率先完成应用验证和常态部署。十省市每家至少建设一个实景实训空间。这意味着人形机器人正式进入"作业模式"——不再是展台上的演示品，而是工厂车间、物流仓库、商业空间里的"员工"。</p>
+        <p>量产数据同样惊人：智元机器人 2026 年 3 月已突破 <span class="highlight-num">10,000 台</span> 下线；宇树科技 2025 年出货 <span class="highlight-num">5,500 台</span> 并已 IPO 过会；优必选 2026 年产能目标指向 <span class="highlight-num">万台级</span>；特斯拉 Optimus 弗里蒙特工厂设计年产能达 <span class="highlight-num">100 万台</span>，首批 50 台 Gen-3 样机已下线投入内部使用。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label new">关键量产节点</div>
+          <ul>
+            <li><strong>天工 3.0</strong>：2026 H2 量产交付</li>
+            <li><strong>智元</strong>：已下线 <span class="highlight-num">10,000+ 台</span></li>
+            <li><strong>宇树</strong>：2025 出货 5,500 台，已 IPO 过会</li>
+            <li><strong>优必选</strong>：2026 产能目标 <span class="highlight-num">万台级</span></li>
+            <li><strong>特斯拉 Optimus</strong>：年产能设计 <span class="highlight-num">100 万台</span></li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">政策驱动</div>
+          <ul>
+            <li><strong>工信部+国资委</strong>联合专项行动</li>
+            <li>2026 年底：<span class="highlight-num">万台级</span> 常态化落地</li>
+            <li>覆盖：<strong>工业/服务/特种</strong>三大场景</li>
+            <li>十省市各建实景实训空间</li>
+            <li>从"展示"到"作业"的质变</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>2026 年是人形机器人走出实验室、走进工厂车间的元年。如果说 2024 年是"概念爆发年"，2025 年是"技术验证年"，那么 2026 年就是"量产交付年"——行业争的不再是"谁翻跟头翻得好"，而是"谁的机器人在真实工厂里打了多少颗螺丝"。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，"万台级"是一个质变阈值。</strong>百台是实验室、千台是小批量、万台是真量产。一旦跨过万台门槛，成本曲线将开始陡峭下降，供应链成熟度指数级提升，行业将从"手工作坊"进入"工业制造"。<strong>第二，工信部国资委联合推"实景实训"，本质上是用政策为真实需求做加速。</strong>过去人形机器人行业最大问题是"不知道用在哪儿"——实景实训行动直接把这个"找场景"的过程制度化了，相当于国家层面帮企业"找到第一个客户"。<strong>第三，100 万台年产能的特斯拉 Optimus 是一个不容忽视的变量。</strong>虽然当前仅在下线样机阶段，但年产 100 万的设计意味着特斯拉不是在"做一个机器人"，而是在"建一个机器人制造的流水线"——这种思路将对整个行业的制造方法论产生深远影响。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 本周关键信号 -->
+  <div class="summary-box">
+    <h3>📡 本周关键信号（6.17 - 6.23）</h3>
+    <ul>
+      <li><strong>强化学习范式可能迎来"真机路线"回归</strong>：Sutton × Carmack 的 Physical Atari 不只是一个实验，而是对 Sim-to-Real 主流路线的正面挑战——如果 $1,000 的硬件+真实世界 RL 能走通，具身智能的"算力军备竞赛"逻辑将被改写</li>
+      <li><strong>开源编程模型首次站上闭源旗舰同档</strong>：GLM-5.2 在 FrontierSWE 上的 74.4% vs Claude Opus 4.8 的 75.1%，0.7 个百分点的差距宣告了"编程 Agent 必须用闭源模型"这一假设的终结</li>
+      <li><strong>AI Agent 交互范式从"Prompt"转向"Demo"</strong>：OpenAI Codex Record & Replay 的"演示一次=生成技能"模式，将 Agent 的使用门槛从"会写提示词"降低到"会用电脑"，Agent 的用户群体将从开发者扩展到全体知识工作者</li>
+      <li><strong>具身智能资本逻辑已经明牌</strong>：H1 438 亿融资中"大脑派"独大、本体派仅 12.8%，行业共识清晰——硬件是基础设施，AI 是护城河</li>
+      <li><strong>人形机器人进入"量产交付年"</strong>：天工 3.0 量产、万台产线投产、工信部国资委实景实训——行业争的不再是技术方案，而是真实订单和工厂产出</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：36氪 · 量子位 · 机器之心 · 极客公园 · AITOP100 · AIbase · arXiv · 腾讯新闻 · 百家号</p>
+  </div>
+
+</div>
+</body>
+</html>
