@@ -3,6 +3,60 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-06-22',
+    title: 'AI 每日动态 (2026-06-22)',
+    summary: '1. 1Anthropic CEO 阿莫代伊：AI 公司年收入须达"数千亿美元"才能存活——ARR 470 亿美元，仍在狂建 5 吉瓦算力 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2OpenAI GPT 5.6 P...',
+    date: '2026-06-22',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年6月22日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1Anthropic CEO 阿莫代伊：AI 公司年收入须达"数千亿美元"才能存活——ARR 470 亿美元，仍在狂建 5 吉瓦算力
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2OpenAI GPT-5.6 Pro 灰度测试开启——复杂编程任务耗时从小时级压缩至 20-40 分钟
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 3美团 Agent 评估策略：AI 生成超 90% 代码后，如何用 Agent 约束 Agent——31 万行代码重构实战
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 3. 4Headroom + Codebase-Memory-MCP：Token 压缩 95% + 知识图谱索引 158 种语言——AI Coding 基础设施双突破
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 具身智能方向
+
+### 1. 5美团 LARYBench + LongCat-Next 发布——具身 AI 动作表征"ImageNet"诞生，通用视觉模型反超专用机器人模型
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-06-21',
     title: 'AI 每日动态 (2026-06-21)',
     summary: '1. 1SpaceX 600 亿美元全股票收购 Cursor——AI 编程史上最大收购案，数据飞轮直通 Grok 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2MiniMax M3 独立复现 ICLR 顶会论文全部实验...',
