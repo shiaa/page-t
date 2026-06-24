@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月25日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.old { color: #94a3b8; }
+  .vs-item .vs-label.new { color: #34d399; }
+  .vs-item .vs-label.risk { color: #f87171; }
+  .vs-item .vs-label.impact { color: #a78bfa; }
+  .vs-item .vs-label.matrix { color: #38bdf8; }
+  .vs-item .vs-label.person { color: #fbbf24; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .quote-block {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border-left: 3px solid #0ea5e9;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 24px;
+    margin: 16px 0;
+  }
+  .quote-block p {
+    color: #b4c6fe; font-size: 14px; line-height: 1.75;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 25</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 25 日 · 星期四</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>Sakana AI 发布 Fugu：多智能体编排系统颠覆"更大模型更强"路线，Fugu Ultra 编程推理对标 Fable 5 / Mythos</li>
+      <li>三星全工作流程部署 ChatGPT Enterprise + Codex：跨软件/营销/产品/制造四大部门，企业级 AI Coding 落地标志性事件</li>
+      <li>Figma Config 2026 发布 AI 创作工具系列：动态图形 + 代码图层 + 色器工具，设计与开发的边界加速消融</li>
+      <li>NVIDIA 发布 Halos for Robotics：业界首个全栈物理 AI 安全系统，从汽车到机器人的人机共存安全框架</li>
+      <li>华为盘古 2.0 开源倒计时 5 天：505B MoE + 7 大组件 6 月 30 日起释放，国产产业 AI 底座即将成形</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">范式颠覆</span>
+      <span class="card-badge source">Sakana AI</span>
+      <h3><span class="card-num">1</span>Sakana AI 发布 Fugu——不是"更大模型"，而是"调度最优模型"：多智能体编排系统颠覆 AI Coding 竞争路线</h3>
+
+      <div class="content-block">
+        <p>6 月 22 日，日本 AI 公司 Sakana AI 发布了 <strong>Fugu</strong>——一个将多 Agent 编排系统包装成单一模型 API 的产品。它不是又一个"更大更猛的单体模型"，而是完全不同的思路：<strong>训练一个专门去调度其他模型的模型</strong>。Fugu 接收到任务后，会智能判断应该调用哪个前沿模型（包括自身），并协调它们协同完成复杂工作。</p>
+        <p>旗舰版 <strong>Fugu Ultra</strong> 在 SWE-bench Pro 编程评测和推理基准测试中登顶，性能对标 Anthropic Fable 5 和 Mythos Preview——但实现路径截然不同。基础版 <strong>Fugu</strong> 主打低延迟编程和对话，适合日常开发场景。服务采用 OpenAI 兼容接口，开发者无需更换工具链即可接入。</p>
+        <p>值得注意的是，Sakana AI 此前推出的 ALE-Agent 曾进入千人编程比赛前 <span class="highlight-num">20 名</span>，证明了"多智能体协作优于单模型"的实战价值。Fugu 是这条路线的产品化成果——用工程手段把"模型选型"从开发者决策变成系统自动决策。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">传统路线 vs Fugu 路线</div>
+          <ul>
+            <li><strong>传统</strong>：训练一个更大的模型 → 能力提升靠算力</li>
+            <li><strong>Fugu</strong>：训练一个调度器 → 能力提升靠编排</li>
+            <li>传统瓶颈：<strong>算力成本指数增长</strong></li>
+            <li>Fugu优势：<strong>复用已有最强模型，成本可控</strong></li>
+            <li>核心差异：从"更强单体"到"更聪明调度"</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label new">Fugu 性能亮点</div>
+          <ul>
+            <li>SWE-bench Pro：<strong>对标 Fable 5 / Mythos</strong></li>
+            <li>推理基准：<strong>登顶</strong>多模型评测</li>
+            <li>接口：<strong>OpenAI 兼容</strong>，无需换工具链</li>
+            <li>Fugu Ultra：旗舰版，面向复杂任务</li>
+            <li>基础版 Fugu：低延迟，日常编程对话</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>Fugu 的思路暗合了一个正在浮现的行业共识：当前前沿模型的能力已经高度趋同——Fable 5 被封、Mythos 出口受限、GPT-5.5 在追赶——当你手上有多个"差不多强"的模型时，最优解不是等下一个更强版本，而是让一个智能调度器根据任务特征自动选最合适的那个。这是从"算力军备竞赛"向"编排效率竞赛"的转向信号。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，Fugu 验证了"多智能体编排"作为 AI Coding 第三条路线的商业可行性。</strong>此前 AI 编程工具的竞争只有两条路线——闭源旗舰（Claude Code / Codex）和开源生态（OpenCode）——Fugu 开辟了第三条路：不训练更强的模型，而是训练更聪明的调度器。<strong>第二，"调度最优模型"的思路在 Fable 5 被封后尤其有韧性。</strong>单一模型被封 = 业务断线，但 Fugu 可以无缝切换到下一个可用模型——这正是企业级 AI Coding 需要的容灾能力。<strong>第三，对运维/SRE 从业者有直接启发。</strong>"调度最优资源"本来就是运维的核心思维——Fugu 的多智能体编排逻辑和 Kubernetes 调度器、负载均衡器的思维高度同构。理解 Fugu 的编排策略，就是理解未来 AI Agent 在企业系统中的部署模式。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">⚡</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">企业落地</span>
+      <span class="card-badge source">Samsung</span>
+      <h3><span class="card-num">2</span>三星全工作流程部署 ChatGPT Enterprise + Codex——跨四大部门规模化 AI Coding 落地，企业级 AI 编程工具从"试用"走向"标配"</h3>
+
+      <div class="content-block">
+        <p>6 月 22 日消息，三星集团已在<strong>软件、营销、产品、制造</strong>四大核心部门全面部署 <strong>ChatGPT Enterprise</strong> 和 <strong>OpenAI Codex</strong>，这是三星规模最大的 AI 工具落地项目之一。</p>
+        <p>软件部门使用 Codex 进行代码生成、Bug 定位和自动化测试；营销团队用 ChatGPT Enterprise 辅助文案创作和数据分析；产品部门借助 AI 进行用户需求洞察与设计迭代；制造部门则在产线优化、质检流程和质量预测中引入 AI 辅助。这不是"某个团队试点"，而是<strong>横跨四大业务线的系统性部署</strong>——意味着 AI Coding 工具在企业中从"尝鲜"正式进入"标配"阶段。</p>
+        <p>此前，OpenAI Codex 从纯编程 Agent 扩展到企业工作流——新增 Sites（生成可部署的微型网站）、Annotations（代码标注）、Enterprise Plugins（企业插件）等功能，正是为了覆盖这类跨部门场景。三星的部署是 Codex 企业化路线的第一个大规模验证案例。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label impact">三星四大部门部署</div>
+          <ul>
+            <li><strong>软件</strong>：代码生成 + Bug定位 + 自动化测试</li>
+            <li><strong>营销</strong>：文案创作 + 数据分析</li>
+            <li><strong>产品</strong>：用户需求洞察 + 设计迭代</li>
+            <li><strong>制造</strong>：产线优化 + 质检 + 质量预测</li>
+            <li>性质：<strong>系统性部署</strong>，非试点</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label bench">Codex 企业化功能</div>
+          <ul>
+            <li><strong>Sites</strong>：生成可部署的微型网站</li>
+            <li><strong>Annotations</strong>：代码标注与协作</li>
+            <li><strong>Enterprise Plugins</strong>：企业插件生态</li>
+            <li>定位：从编程Agent→企业工作流Agent</li>
+            <li>三星是首个大规模验证案例</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，三星的部署标志着 AI Coding 工具在企业中从"试用"走向"标配"。</strong>四大部门同步部署意味着这不是某个技术负责人的个人偏好，而是集团层面的战略决策——AI 编程工具不再是"加分项"，而是"基础设施"。<strong>第二，Codex 从纯编程 Agent 扩展到企业工作流 Agent，AI Coding 的边界正在拓宽。</strong>当营销、制造也能用同一个工具链时，AI Coding 不再只是"写代码"，而是"用 AI 改造全流程"。<strong>第三，对运维工程师来说，这是一个信号——企业全面拥抱 AI 工具后，运维团队也需要同步升级。</strong>当 Codex 写的代码部署到产线，运维需要理解 AI 生成代码的质量特征、监控策略和回滚机制。这不是未来，而是正在发生的变化。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">边界消融</span>
+      <span class="card-badge source">Figma Config</span>
+      <h3><span class="card-num">3</span>Figma Config 2026 发布 AI 创作工具系列——动态图形 + 代码图层 + 着色器工具，设计与开发的边界加速消融</h3>
+
+      <div class="content-block">
+        <p>6 月 24 日，Figma 在年度 Config 大会上发布了一系列 AI 创作工具，将 AI 能力深度嵌入设计工作流。</p>
+        <p>核心更新包括：<strong>AI 动态图形</strong>（AI Dynamic Graphics）——设计师可以用自然语言描述动画效果，AI 自动生成可交互的动态组件；<strong>代码图层</strong>（Code Layers）——在 Figma 协同画布中原生嵌入可执行代码，设计稿不再是静态图片，而是带逻辑的可运行原型；<strong>着色器工具</strong>（Shader Tools）——支持 WebGL 着色器的可视化编辑与 AI 辅助生成。<strong>3D 变换与动画过渡</strong>——协同画布新增原生动画、过渡和 3D 变换支持。</p>
+        <p>这些更新的共同指向是：<strong>设计与开发之间的边界正在消融</strong>。当设计稿本身就能包含可执行代码、可交互动画和可渲染着色器时，"设计→开发→测试"的传统流水线正在被压缩为"设计即开发"的单步流程。Figma 不再只是画图工具，而是正在变成一个低门槛的可视化编程环境。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label new">Figma AI 新功能</div>
+          <ul>
+            <li><strong>AI 动态图形</strong>：自然语言→可交互动画</li>
+            <li><strong>代码图层</strong>：画布中原生嵌入可执行代码</li>
+            <li><strong>着色器工具</strong>：WebGL 可视化编辑 + AI 生成</li>
+            <li><strong>3D 变换</strong>：原生动画、过渡、3D 效果</li>
+            <li>新增创作素材 + Figma AI 创作套件</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label delta">范式变化</div>
+          <ul>
+            <li><strong>旧范式</strong>：设计→开发→测试（三步流水线）</li>
+            <li><strong>新范式</strong>：设计即开发（单步流程）</li>
+            <li>设计稿 = 可运行原型（带代码+动画）</li>
+            <li>Figma → 从画图工具→可视化编程环境</li>
+            <li>设计师与开发者的角色边界模糊化</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，"设计即开发"是 AI Coding 渗透非开发者群体的关键路径。</strong>当设计师能用自然语言生成动画、在画布中嵌入可执行代码时，AI Coding 的用户群不再只是程序员——而是所有参与产品构建的人。<strong>第二，代码图层让设计稿从"静态交付物"变为"可运行原型"，压缩了传统开发流程的 50% 以上环节。</strong>这意味着前端开发中大量的"翻译设计稿"工作将被 AI 自动完成，开发者的核心价值从"写代码"转向"定义约束和验证质量"。<strong>第三，对运维/SRE 方向的职业转型有启发。</strong>当产品开发流程被压缩后，部署频次会增加、变更粒度会更小——这正是 DevOps/SRE 擅长的领域。理解 Figma 代码图层的输出格式和部署模式，是运维工程师跟上前端 AI Coding 节奏的关键。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">安全基建</span>
+      <span class="card-badge source">NVIDIA</span>
+      <h3><span class="card-num">4</span>NVIDIA 发布 Halos for Robotics——业界首个全栈物理 AI 安全系统：从汽车安全到机器人安全，人机共存有了统一框架</h3>
+
+      <div class="content-block">
+        <p>6 月 22 日，NVIDIA 发布 <strong>Halos for Robotics</strong>——业界唯一的全栈、开放式机器人安全系统。它将 NVIDIA 在智能汽车领域成熟的 Halos 安全架构<strong>延伸到物理 AI 和机器人领域</strong>，覆盖开发、验证和工业部署全流程。</p>
+        <p>Halos for Robotics 整合了<strong>三层安全机制</strong>：硬件层（基于 NVIDIA 安全芯片的实时监控）、软件层（操作系统级别的安全隔离与行为审计）、系统层（面向人机共存场景的全局安全策略）。适配工厂、仓库、医院、家庭等多种场景的人机共存需求。</p>
+        <p>这意味着物理 AI 的安全范式正在从"单个机器人自身的安全"升级为<strong>"人机共存环境的全局安全"</strong>——不再是"这个机器人别撞到人"，而是"在这个空间里，所有机器人和人类的行为都受到统一安全框架的约束和协调"。这是从"单机安全"到"系统安全"的质变。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">Halos 安全架构三层</div>
+          <ul>
+            <li><strong>硬件层</strong>：NVIDIA 安全芯片 → 实时监控</li>
+            <li><strong>软件层</strong>：OS级安全隔离 + 行为审计</li>
+            <li><strong>系统层</strong>：人机共存全局安全策略</li>
+            <li>从汽车 Halos → 机器人 Halos</li>
+            <li>性质：全栈 + 开放 + 可扩展</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">适配场景</div>
+          <ul>
+            <li><strong>工厂</strong>：产线人机协作安全</li>
+            <li><strong>仓库</strong>：物流机器人与人共存</li>
+            <li><strong>医院</strong>：医疗机器人安全交互</li>
+            <li><strong>家庭</strong>：陪伴机器人行为约束</li>
+            <li>核心：从"单机安全"→"系统安全"</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>NVIDIA 从汽车 Halos 到机器人 Halos 的延伸逻辑清晰：当一辆自动驾驶汽车需要在人类街道上安全行驶时，你需要的是系统性安全框架；当一个机器人需要在有人类的工作空间中安全操作时，你需要的也是同样级别的系统性安全——只是物理环境从"道路"变成了"工厂/仓库/家庭"。这是物理 AI 安全的"通用化"时刻。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，Halos for Robotics 的发布标志着物理 AI 安全从"事后补救"进入"系统设计"阶段。</strong>此前机器人安全主要靠碰撞检测、紧急停止等被动机制——Halos 提供的是从硬件到软件到系统的三层主动安全架构，把"安全"从"功能"变成了"基础设施"。<strong>第二，从汽车到机器人的安全框架复用，意味着物理 AI 安全正在形成统一标准。</strong>自动驾驶已经跑通了全栈安全验证体系，机器人可以直接借鉴——这大幅缩短了具身智能的安全验证周期。<strong>第三，对运维/SRE 从业者来说，这是一个新的专业方向入口。</strong>人机共存环境的安全运维（机器人行为审计、安全策略配置、故障隔离）和传统 IT 安全运维的逻辑高度相似——从"网络行为审计"到"物理行为审计"，运维工程师的专业能力可以直接迁移。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge warning">倒计时</span>
+      <span class="card-badge source">华为 HDC 2026</span>
+      <h3><span class="card-num">5</span>华为盘古 2.0 开源倒计时 5 天——505B MoE + 7 大组件 6 月 30 日起释放，昇腾亲和 + 鸿蒙适配，国产产业 AI 底座即将成形</h3>
+
+      <div class="content-block">
+        <p>6 月 12 日华为开发者大会 HDC 2026 上，余承东正式发布 <strong>openPangu 2.0</strong>，并宣布从 <span class="highlight-num">6 月 30 日</span>起陆续开源 7 大核心组件。今天是 6 月 25 日——<strong>距离首批组件开源仅剩 5 天</strong>。</p>
+        <p>旗舰版 <span class="highlight-num">505B</span> 稀疏 MoE 架构，仅激活 <span class="highlight-num">18B</span> 参数，搭配 <span class="highlight-num">512K</span> 上下文窗口。轻量化 <span class="highlight-num">92B</span> 终端模型可直接跑在鸿蒙车机与边缘设备。7 大核心组件包括<strong>预训练代码、后训练代码、训练算子</strong>等——开发者不只是拿到模型权重，而是拿到一整套可复现、可微调、可二次开发的完整工具链。</p>
+        <p>同时，华为小艺 Claw 已接入 openPangu 2.0 Pro，重点提升<strong>鸿蒙系统级任务执行能力</strong>。模型 + 智能体 + 操作系统的三位一体，正在构建从推理到执行的完整闭环——与其他大模型厂商还在"模型性能"维度竞争时，华为已在"模型→Agent→设备"的垂直闭环上跑了起来。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">openPangu 2.0 技术参数</div>
+          <ul>
+            <li>旗舰版：<span class="highlight-num">505B</span> 总参 / 18B 激活 MoE</li>
+            <li>终端版：<span class="highlight-num">92B</span>，可跑鸿蒙车机</li>
+            <li>上下文：<span class="highlight-num">512K</span> tokens</li>
+            <li>昇腾亲和：单卡吞吐率达业界 2 倍</li>
+            <li>开源倒计时：<span class="highlight-num">5 天</span></li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">7 大组件即将释放</div>
+          <ul>
+            <li>① 预训练代码（完整可复现）</li>
+            <li>② 后训练代码（SFT + RLHF）</li>
+            <li>③ 训练算子（昇腾优化）</li>
+            <li>④ 评测工具链</li>
+            <li>⑤ 微调工具 + 部署工具 + 推理优化</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，openPangu 2.0 的开源不是"放一个权重文件"，而是"放一整套可复现的训练体系"。</strong>7 大组件覆盖预训练→后训练→部署全链路——开发者可以在自己的数据上重新训练，这是"真开源"而非"伪开源"。在 Fable 5 被封之后，国产开源大模型的价值被重新评估。<strong>第二，505B/18B 的 MoE 设计极具工程价值。</strong>18B 激活参数意味着推理成本极低，505B 总参数保证知识容量——这对企业级部署（尤其是资源受限的边缘/车机场景）是关键优势。<strong>第三，模型 + 智能体 + 操作系统的三位一体闭环，正在构建一个与 GPT/Claude 不同的产业叙事。</strong>当其他厂商还在"模型性能"维度竞争时，华为已经跑通了"推理→执行→设备"的垂直闭环——这对 DevOps/SRE 从业者意味着：未来需要运维的不只是云端服务，还有鸿蒙设备上的 AI Agent。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 本周关键信号 -->
+  <div class="summary-box">
+    <h3>📡 本周关键信号（6.19 - 6.25）</h3>
+    <ul>
+      <li><strong>AI Coding 从"军备竞赛"转向"编排竞赛"</strong>：Sakana Fugu 证明"调度最优模型"可以比"训练最强模型"更具韧性和性价比——当前沿模型能力趋同 + 政策风险不确定，编排路线成为企业级 AI Coding 的务实选择</li>
+      <li><strong>AI 编程工具从"开发者专属"走向"全流程标配"</strong>：三星跨四大部门部署 Codex + Figma 把代码嵌入设计稿——AI Coding 的用户群不再只是程序员，而是所有参与产品构建的人</li>
+      <li><strong>物理 AI 安全进入"系统设计"阶段</strong>：NVIDIA Halos for Robotics 从汽车安全框架延伸到机器人，人机共存安全从被动碰撞检测升级为三层主动架构——物理 AI 安全正在形成统一标准</li>
+      <li><strong>国产产业 AI 底座即将成形</strong>：华为 openPangu 2.0 开源倒计时 5 天，7 大组件释放意味着"真开源"（可复现训练体系）而非"伪开源"（只放权重）——在 Fable 5 被封后，国产开源路线的战略价值被重新评估</li>
+      <li><strong>设计即开发：AI Coding 渗透非开发者群体</strong>：Figma Config 2026 的代码图层和 AI 动态图形，让设计稿变成可运行原型——传统"设计→开发→测试"流水线被压缩为单步流程，前端开发的核心价值从"写代码"转向"验证质量"</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：Sakana AI · NVIDIA · IT之家 · 腾讯新闻 · 新浪科技 · Figma · 量子位 · AIBase · AI Daily Post · The AI Track</p>
+  </div>
+
+</div>
+</body>
+</html>
