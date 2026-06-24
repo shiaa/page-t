@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月24日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.old { color: #94a3b8; }
+  .vs-item .vs-label.new { color: #34d399; }
+  .vs-item .vs-label.risk { color: #f87171; }
+  .vs-item .vs-label.impact { color: #a78bfa; }
+  .vs-item .vs-label.matrix { color: #38bdf8; }
+  .vs-item .vs-label.person { color: #fbbf24; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .quote-block {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border-left: 3px solid #0ea5e9;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 24px;
+    margin: 16px 0;
+  }
+  .quote-block p {
+    color: #b4c6fe; font-size: 14px; line-height: 1.75;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 24</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 24 日 · 星期三</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>ISC.AI 2026 今日开幕：安全对抗从"人对人"进入"AI 对 AI"时代，360 展示漏洞挖掘与渗透测试智能体，AI 安全成为新基建</li>
+      <li>OpenCode 登顶 AI 开发工具实力榜：开源编程 Agent 以 160K+ Stars、750 万月活逆袭，模型无关架构颠覆闭源锁定格局</li>
+      <li>Claude Fable 5 发布 72 小时遭美国出口管制封杀——AI 行业首次遭遇国家级安全干预，开源替代路线加速崛起</li>
+      <li>越疆发布家庭陪伴人形机器人：搭载空弈 DobotWAM 具身大模型，人形机器人从工厂进家庭，消费级具身智能赛道正式开启</li>
+      <li>华为盘古 2.0 开源进入倒计时：505B MoE + 7 大组件 6 月 30 日起陆续释放，昇腾亲和 + 鸿蒙适配，产业 AI 底座成形</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">今日开幕</span>
+      <span class="card-badge source">ISC.AI 2026</span>
+      <span class="card-badge warning">安全范式变革</span>
+      <h3><span class="card-num">1</span>ISC.AI 2026 今日开幕——安全对抗从"人对人"正式进入"AI 对 AI"时代，AI 安全成为新型数字基础设施</h3>
+
+      <div class="content-block">
+        <p>6 月 24 日，第十四届互联网安全大会（ISC.AI 2026）在北京国家会议中心开幕。本届大会聚焦的核心命题是：<strong>安全对抗从"人对人"向"AI 对 AI"的范式变革</strong>。360 集团创始人周鸿祎此前判断 2026 年将是"百亿智能体之年"，行业焦点从模型能力比拼转向实际落地效能——而智能体一旦接入业务系统，便成为新的权限入口与数据节点；与此同时，攻击方已利用 AI 实现漏洞发现、攻击模拟和自动化执行。传统"人对人"防御体系正面临速度、规模和复杂度的降维打击。</p>
+        <p>大会围绕 <strong>AI 应用、AI 安全、AI 人才</strong>三大核心板块展开。重点议题包括多智能体协同、企业级部署、AI 原生组织构建及垂直行业落地。360 将展示<strong>漏洞挖掘智能体、渗透测试智能体</strong>等最新实践成果。大会期间还将举办 2 场未来峰会、24H Agent Teams 沉浸式体验展、3 场创新赛事及 20 余场行业垂直论坛。</p>
+        <p>大会同时回应了人才结构变革的现实：智能体时代需要"懂技术、懂业务、懂安全"的复合型人才。龙虾课堂、智能体工程师认证体系、AI 应用与技能赛事将联动产学研，推动人才标准从"单一技能型"向"能指挥智能体、驾驭新生产力"的综合型升级。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label risk">旧范式 vs 新范式</div>
+          <ul>
+            <li><strong>旧范式</strong>：人对人——人工识别漏洞、手工响应</li>
+            <li><strong>新范式</strong>：AI 对 AI——智能体自动攻防</li>
+            <li>攻方：<strong>AI 漏洞发现 + 自动攻击执行</strong></li>
+            <li>守方：<strong>AI 渗透测试 + 实时威胁响应</strong></li>
+            <li>核心矛盾：速度×规模×复杂度降维打击</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">大会核心板块</div>
+          <ul>
+            <li><strong>AI 应用</strong>：多智能体协同与企业部署</li>
+            <li><strong>AI 安全</strong>：大模型防护 + Agent 治理框架</li>
+            <li><strong>AI 人才</strong>：智能体工程师认证体系</li>
+            <li>体验：24H Agent Teams 沉浸展</li>
+            <li>规模：20+ 垂直论坛 + 2 未来峰会</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>360 周鸿祎判断 2026 年是"百亿智能体之年"。这不是预测——而是已经发生的事实：当攻击者用 AI 10 秒内完成过去需要数天的人工渗透，防御者如果还靠人手响应，就已经输了。AI 安全不再是"可选功能"，而是与算力、数据并列的新型数字基础设施。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，"AI 对 AI"安全范式的确立意味着 AI 安全行业进入新周期。</strong>传统安全产品（防火墙、IDS/IPS）是为"人对人"对抗设计的，面对 AI 驱动的自动化攻击根本不够快。新范式催生的是"安全智能体"——能实时理解攻击意图、自动生成防御策略、持续自学习进化的系统。<strong>第二，ISC 大会是安全行业风向标，今年把 AI 安全放在核心位置，意味着整个安全产业的资源投入方向将发生重大转移。</strong>安全厂商要么转型做 AI 安全，要么被淘汰。<strong>第三，对运维/SRE 从业者尤其值得关注。</strong>当企业业务系统开始接入智能体，安全防线从"网络边界"延伸到"智能体行为边界"——运维工程师需要理解的不再是 TCP/IP 端口，而是 Agent 的权限模型与行为审计。这正是 SRE 向 AI 安全运维方向延伸的入口。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">⚡</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">开源逆袭</span>
+      <span class="card-badge source">LogRocket 实力榜</span>
+      <h3><span class="card-num">2</span>OpenCode 登顶 AI 开发工具实力榜——开源编程 Agent 以 160K+ Stars、750 万月活超越 Cursor 与 Claude Code，"模型无关"架构颠覆闭源锁定格局</h3>
+
+      <div class="content-block">
+        <p>据 LogRocket 2026 年 6 月版《AI 开发工具实力榜》（AI Dev Tool Power Rankings），<strong>OpenCode</strong> 一举超越 Cursor、Claude Code 等众多强敌，登顶排行榜第一名。这是一个在不到一年时间内从零成长为开源 AI 编程领域 star 数最高 Agent 的项目——<span class="highlight-num">160K+</span> GitHub Stars、<span class="highlight-num">750 万</span>月活用户、支持 <span class="highlight-num">75+</span> 个模型自由切换。</p>
+        <p>OpenCode 的核心差异化是<strong>"模型无关"（Model-Agnostic）</strong>架构。开发者可以在 Claude、Gemini、GPT、DeepSeek、GLM、Qwen 等模型间自由切换——成本可控（按任务复杂度选用最具性价比的模型）、能力叠加（不同任务调用最擅长的模型）、数据主权（配合自托管开源模型可完全离线运行）。同时，OpenCode 走的是 <strong>MIT 许可证</strong>的完全开源路线，源码公开、可审查、可二次开发。</p>
+        <p>值得注意的是，OpenCode 的登顶并不意味着"原始性能最强"。在 SWE-bench 等基准测试中，Claude Code 仍以 80.8% 位居性能榜首，OpenCode 的执行速度比 Claude Code 慢约 78%。但 LogRocket 的评分体系（技术性能 30% + 实用可用性 25% + 价值主张 25% + 可访问性 20%）中，OpenCode 在<strong>价值主张</strong>（开源 + 免费 + 自托管）和<strong>可访问性</strong>（75+ 模型广覆盖）两大维度上几乎没有对手。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">2026 上半年 AI 编程工具排行</div>
+          <ul>
+            <li>#1 <strong>OpenCode</strong>：开源、模型无关、社区王者</li>
+            <li>#2 <strong>Claude Code</strong>：SWE-bench <span class="highlight-num">80.8%</span>，性能最强</li>
+            <li>#3 <strong>Codex CLI</strong>：Terminal-Bench <span class="highlight-num">83.4%</span></li>
+            <li>#4 <strong>GitHub Copilot</strong>：企业/IDE 稳定领导者</li>
+            <li>#5 <strong>Cursor</strong>：$20/月，性价比之选</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label new">OpenCode 核心数据</div>
+          <ul>
+            <li>GitHub Stars：<span class="highlight-num">160K+</span>（部分统计 172K）</li>
+            <li>月活用户：<span class="highlight-num">750 万</span></li>
+            <li>支持模型：<span class="highlight-num">75+</span> 个</li>
+            <li>协议：<strong>MIT 完全开源</strong></li>
+            <li>定位：CLI 原生，终端友好</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>OpenCode 的登顶传递了三个清晰信号：① 开源正在反超闭源——当模型能力趋同，开发者更看重"自由度"和"成本"；② "模型无关"成为刚需——单一厂商绑定越来越被视为风险，尤其在 Fable 5 被封之后；③ CLI 工作流复兴——在 IDE 普遍臃肿的今天，轻量、可组合的终端工具重新获得青睐。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，OpenCode 的登顶是"开发者用脚投票"的结果，不是营销驱动的排名。</strong>160K+ Stars 和 750 万月活来自真实社区增长，说明开发者真正需要的是一个"不被锁定、可自由组合"的编程 Agent——而闭源工具做不到。<strong>第二，"模型无关"架构在 Claude Fable 5 被封的背景下尤为重要。</strong>当最强闭源模型随时可能因政策原因被禁，开发者需要的是一个能无缝切换到其他模型的底座——OpenCode 的 75+ 模型支持恰恰是应对这类风险的工程方案。<strong>第三，对运维工程师有直接实用价值。</strong>OpenCode 是 CLI 原生工具，深度契合终端工作流——写脚本、改配置、查日志、做自动化，都可以直接在终端里让 AI 代理完成，不需要切换 IDE。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">政策冲击</span>
+      <span class="card-badge source">美国商务部</span>
+      <span class="card-badge warning">出口管制</span>
+      <h3><span class="card-num">3</span>Claude Fable 5 发布 72 小时遭美国出口管制封杀——AI 行业首次遭遇国家级安全干预，开源替代路线加速崛起</h3>
+
+      <div class="content-block">
+        <p>6 月 9 日，Anthropic 发布了两款顶级模型 <strong>Claude Fable 5</strong>（通用）和 <strong>Claude Mythos 5</strong>（专业领域），在几乎所有 AI 基准测试中取得最高分，编程能力尤为卓越——Fable 5 可在一天内完成 <span class="highlight-num">5000 万行</span>代码迁移。</p>
+        <p>6 月 10 日，模型发布仅 <span class="highlight-num">24 小时</span>即被成功越狱，暴露了强大的网络攻击能力。6 月 12 日，美国商务部以"国家安全"为由，下达强制通知，要求 Anthropic 切断所有非美国公民对 Fable 5 和 Mythos 5 的访问。只给了 <span class="highlight-num">90 分钟</span>执行。因为系统无法区分用户国籍，Anthropic 干脆<strong>全球禁用</strong>了这两款模型——连 Anthropic 自己的外籍员工也无法使用。原本定好的 Fable 5 开发者大会，主角被临时换成了 Opus 4.8。</p>
+        <p>这是 AI 行业历史上<strong>首次因出口管制而全球封杀顶级模型</strong>的事件。它暴露了一个深层矛盾：顶级 AI 模型的能力已经接近"战略级"——美国政府认为它对网络安全的影响等同于武器出口，而 Anthropic 作为一家商业公司，被迫在 90 分钟内执行了一个让全球用户断线的指令。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label risk">72 小时事件时间线</div>
+          <ul>
+            <li><span class="highlight-num">6/9</span> 发布：Fable 5 + Mythos 5 亮相</li>
+            <li><span class="highlight-num">6/10</span> 越狱：24h 内被攻破安全防线</li>
+            <li><span class="highlight-num">6/12</span> 封杀：美国商务部出口管制令</li>
+            <li>执行窗口：仅 <span class="highlight-num">90 分钟</span></li>
+            <li>结果：<strong>全球禁用</strong>，外籍员工也不可访问</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">行业连锁反应</div>
+          <ul>
+            <li>开发者大会主角被临时换为 Opus 4.8</li>
+            <li>全球用户断线，信任危机爆发</li>
+            <li>开源替代路线加速崛起（GLM-5.2 等）</li>
+            <li>"模型无关"架构需求激增</li>
+            <li>AI 模型被视为"战略资产"而非纯商品</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>Fable 5 的 72 小时生命周期揭示了一个残酷现实：AI 模型的能力边界已经与国家安全边界重叠。当一款编程模型能在一天内迁移 5000 万行代码、也能在数小时内发现并利用关键基础设施漏洞时，它不再是"工具"，而是"战略资源"。这对所有依赖闭源模型的企业和个人敲响了警钟——你今天花重金订阅的顶级模型，明天可能因为一纸政令就不可用。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，这是 AI 行业首次遭遇国家级安全干预，确立了"AI 模型 = 战略资产"的政治定位。</strong>顶级模型的能力已经接近军事级——这不是技术问题，而是政治经济学问题。未来所有 AI 巨头发布旗舰模型时，都需要先过"国家安全审查"这道关卡。<strong>第二，对闭源模型的信任根基动摇。</strong>你付费订阅的模型、你依赖的 API、你基于它构建的业务——随时可能被一纸政令切断。这不是假设，而是已经发生的事实。<strong>第三，开源替代路线获得了最强的催化剂。</strong>Fable 5 被封后，GLM-5.2（MIT 协议、74.4% FrontierSWE）和 OpenCode（模型无关、本地可部署）的需求激增——开发者开始认真考虑"如果最强的闭源模型明天不可用，我需要什么备选方案"。这直接推动了"开源 + 本地部署 + 模型无关"的技术栈成为行业新标准。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">消费级突破</span>
+      <span class="card-badge source">越疆科技</span>
+      <h3><span class="card-num">4</span>越疆发布家庭陪伴人形机器人——搭载空弈 DobotWAM 具身大模型，人形机器人从工厂走进家庭，消费级具身智能赛道正式开启</h3>
+
+      <div class="content-block">
+        <p>6 月 17 日，"协作机器人第一股"<strong>越疆科技</strong>（02432.HK）宣布即将发布下一代陪伴交互 AI 人形机器人，宣告重新定义家庭具身智能赛道。这款新品搭载了越疆全栈自研的<strong>"空弈 DobotWAM"</strong>具身大模型——被称为全球最"懂物理"的具身大脑，以对物理世界的本质理解为核心，让机器人具备<strong>理解人、适配人、服务人</strong>的全维度智能能力。</p>
+        <p>值得注意的是，这款产品的定位不是工业机器人，而是<strong>专为家庭场景打造的陪伴交互机器人</strong>——外形亲和可爱，语音交互流畅自然，能陪伴、能交互、能服务。这意味着人形机器人正在经历从"工商业场景"向"真实家庭场景"的里程碑式跨越。</p>
+        <p>越疆的选择背后是一个行业趋势：人形机器人公司开始不再一味聊技术，而转向打"感情"牌。优必选此前也在家庭陪伴方向布局。当工业场景的"打螺丝"已经进入量产阶段，下一个蓝海是家庭——一个用户基数更大、付费意愿更灵活、但对交互智能要求远高于工业的市场。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label new">产品核心特征</div>
+          <ul>
+            <li>大脑：<strong>空弈 DobotWAM</strong> 具身大模型</li>
+            <li>定位：<strong>家庭陪伴交互</strong>人形机器人</li>
+            <li>设计：外形亲和可爱，专为家庭打造</li>
+            <li>交互：流畅自然语音交互</li>
+            <li>能力：理解人 + 适配人 + 服务人</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">行业趋势信号</div>
+          <ul>
+            <li>从<strong>工商业</strong>→<strong>家庭消费</strong>场景</li>
+            <li>从"技术参数"→"情感陪伴"叙事</li>
+            <li>优必选同步布局家庭方向</li>
+            <li>家庭蓝海：基数大、付费灵活</li>
+            <li>交互智能要求远高于工业场景</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，人形机器人从"工厂设备"变为"家庭消费品"，是市场维度的质变。</strong>工业场景的规模化靠的是 B 端采购逻辑（ROI 驱动），而家庭场景的规模化靠的是 C 端消费逻辑（体验驱动）——后者意味着更大的用户基数、更快的传播速度、但也更高的交互智能门槛。<strong>第二，"空弈 DobotWAM"具身大模型值得关注——它强调的不是运动控制，而是"对物理世界的本质理解"。这意味着具身智能的价值锚点正在从"能动"转向"能懂"。</strong>能打螺丝的机器人很多，但能理解"宝宝哭了需要安抚"的机器人才是家庭市场的真正需求。<strong>第三，越疆是"协作机器人第一股"，从工业协作转向家庭陪伴，说明头部机器人公司已经做出了战略判断</strong>——工业场景的市场天花板相对有限，真正的爆发点在家庭。这对整个具身智能赛道的资本流向和创业方向有指引作用。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">产业底座</span>
+      <span class="card-badge source">华为 HDC 2026</span>
+      <h3><span class="card-num">5</span>华为盘古 2.0 开源进入倒计时——505B MoE + 7 大组件 6 月 30 日起陆续释放，昇腾亲和 + 鸿蒙适配，产业 AI 底座成形</h3>
+
+      <div class="content-block">
+        <p>6 月 12 日，华为开发者大会 HDC 2026 上，余承东正式发布<strong>开源盘古 openPangu 2.0</strong>。旗舰版 <span class="highlight-num">505B</span> 稀疏 MoE 架构，仅激活 <span class="highlight-num">18B</span> 参数，搭配 <span class="highlight-num">512K</span> 上下文窗口，深耕工业、气象、矿产等实体产业场景。轻量化 <span class="highlight-num">92B</span> 终端模型可直接跑在鸿蒙车机与边缘设备——走差异化产业 AI 路线，避开通用对话模型的内卷。</p>
+        <p>从 <span class="highlight-num">6 月 30 日</span>起，openPangu 2.0 将陆续开源 7 大核心组件，包括<strong>预训练代码、后训练代码、训练算子</strong>等——这意味着开发者不只是拿到一个模型权重，而是拿到一整套可复现、可微调、可二次开发的完整工具链。</p>
+        <p>同时，华为小艺 Claw 已接入 openPangu 2.0 Pro 模型，重点提升<strong>鸿蒙系统级任务执行能力</strong>。小艺 Claw 是华为推出的 AI 智能体，支持多端协同，可与鸿蒙全品类设备联动交互。模型 + 智能体 + 操作系统的三位一体，正在构建一个从推理到执行的完整闭环。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">openPangu 2.0 技术参数</div>
+          <ul>
+            <li>旗舰版：<span class="highlight-num">505B</span> 总参 / 18B 激活 MoE</li>
+            <li>终端版：<span class="highlight-num">92B</span>，可跑鸿蒙车机</li>
+            <li>上下文：<span class="highlight-num">512K</span> tokens</li>
+            <li>昇腾亲和：单卡吞吐率达业界 2 倍</li>
+            <li>6/30 起：开源 7 大核心组件</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">产业闭环构建</div>
+          <ul>
+            <li><strong>模型层</strong>：openPangu 2.0 Pro</li>
+            <li><strong>智能体层</strong>：小艺 Claw（多端协同）</li>
+            <li><strong>系统层</strong>：鸿蒙（全品类设备联动）</li>
+            <li>方向：产业垂直（工业/气象/矿产）</li>
+            <li>差异化：避开通用对话模型内卷</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，openPangu 2.0 的开源不是"放一个权重文件"，而是"放一整套可复现的训练体系"。7 大组件覆盖预训练代码、后训练代码、训练算子——这意味着开发者可以真正理解模型是怎么训练的，并且能在自己的数据上重新训练。这是"真开源"而非"伪开源"。</strong><strong>第二，505B/18B 的 MoE 架构设计极具工程价值。</strong>18B 激活参数意味着推理成本极低，但 505B 的总参数保证了知识容量——这对企业级部署（尤其是资源受限的边缘/车机场景）是关键优势。昇腾亲和（单卡吞吐率 2 倍）进一步降低了国产算力上的部署门槛。<strong>第三，模型 + 智能体 + 操作系统的三位一体，是华为产业 AI 的完整叙事。</strong>openPangu 2.0 提供推理能力，小艺 Claw 提供执行能力，鸿蒙提供设备生态——当其他大模型厂商还在"模型性能"维度竞争时，华为已经在"模型→Agent→设备"的垂直闭环上跑了起来。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 本周关键信号 -->
+  <div class="summary-box">
+    <h3>📡 本周关键信号（6.18 - 6.24）</h3>
+    <ul>
+      <li><strong>AI 安全正式成为"新型基础设施"</strong>：ISC.AI 2026 把"AI 对 AI"安全范式放在核心位置，标志着安全产业从"网络边界防护"转向"智能体行为治理"——SRE/运维从业者需要开始理解 Agent 的权限模型与行为审计</li>
+      <li><strong>开源编程 Agent 实力超越闭源旗舰</strong>：OpenCode 登顶不是"性能最强"，而是"自由度最高"——当 Fable 5 被封后，"模型无关 + 本地部署"的需求从理论变成了刚需</li>
+      <li><strong>AI 模型首次遭遇国家级出口管制封杀</strong>：Fable 5 的 72 小时生命周期确立了"顶级 AI 模型 = 战略资产"的政治定位——闭源模型的信任根基动摇，开源替代路线获得最强催化剂</li>
+      <li><strong>人形机器人从工厂走进家庭</strong>：越疆搭载 DobotWAM 具身大模型的家庭陪伴机器人，标志着具身智能的价值锚点从"能动"转向"能懂"——理解人、适配人、服务人</li>
+      <li><strong>国产产业 AI 底座成形</strong>：华为 openPangu 2.0 的 7 大组件即将开源 + 昇腾亲和 + 鸿蒙适配，构建了从推理到执行的完整闭环——产业垂直路线与通用对话路线的分野愈发清晰</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：AITNT · AIBase · 量子位 · 36氪 · 腾讯新闻 · 环球网 · IT之家 · 新浪科技 · LogRocket · linux.do</p>
+  </div>
+
+</div>
+</body>
+</html>
