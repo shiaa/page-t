@@ -3,6 +3,60 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-06-26',
+    title: 'AI 每日动态 (2026-06-26)',
+    summary: '1. 1字节跳动 DeerFlow 2.0 登顶 GitHub Trending——长周期 SuperAgent 框架，AI Coding 从"秒级响应"跃迁至"小时级工程化" 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1...',
+    date: '2026-06-26',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年6月26日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1字节跳动 DeerFlow 2.0 登顶 GitHub Trending——长周期 SuperAgent 框架，AI Coding 从"秒级响应"跃迁至"小时级工程化"
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2Anthropic 上线 Claude Code 官方插件目录 \`claude-plugins-official\`——团队直维护 + 验证标准统一，AI Coding 工具链从"野蛮生长"进入"规范化"
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 3Google DeepMind 把"计算机使用"原生能力集成 Gemini 3.5 Flash——Agent 可直接操作浏览器/移动端/桌面端，AI Coding 之外的"通用 Agent 能力"落地关键一步
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+## 具身智能方向
+
+### 1. 4美团发布 LARYBench——被誉"具身领域的 ImageNet"，定义具身动作表征评估标准，151 类动作 + 百万级视频
+
+💡 **值得关注**: 💡 为什么重要
+
+
+### 2. 5Figure 03 量产 24 倍跃升——从 1 台/天到 1 台/小时，120 天累计 350 台 + 9000 执行器，具身智能进入工业量产拐点
+
+💡 **值得关注**: 💡 为什么重要
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-06-25',
     title: 'AI 每日动态 (2026-06-25)',
     summary: '1. 1Sakana AI 发布 Fugu——不是"更大模型"，而是"调度最优模型"：多智能体编排系统颠覆 AI Coding 竞争路线 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2三星全工作流程部署 ChatGPT...',

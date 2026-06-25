@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年6月26日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.industry { background: rgba(99,102,241,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.old { color: #94a3b8; }
+  .vs-item .vs-label.new { color: #34d399; }
+  .vs-item .vs-label.risk { color: #f87171; }
+  .vs-item .vs-label.impact { color: #a78bfa; }
+  .vs-item .vs-label.matrix { color: #38bdf8; }
+  .vs-item .vs-label.person { color: #fbbf24; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .divider {
+    height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent);
+    margin: 48px 0 32px;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .quote-block {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border-left: 3px solid #0ea5e9;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 24px;
+    margin: 16px 0;
+  }
+  .quote-block p {
+    color: #b4c6fe; font-size: 14px; line-height: 1.75;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-badge">AI DAILY · JUNE 26</div>
+    <h1>AI 每日动态</h1>
+    <p>聚焦 AI Coding 与具身智能 · 每日精选 5 条</p>
+    <div class="date-highlight">2026 年 6 月 26 日 · 星期五</div>
+  </div>
+
+  <!-- 今日摘要 -->
+  <div class="summary-box">
+    <h3>📋 今日速览</h3>
+    <ul>
+      <li>字节跳动 DeerFlow 2.0 登顶 GitHub Trending：长周期 SuperAgent 框架，2.4 万 Star，AI Coding 编排范式落地</li>
+      <li>Anthropic 上线 Claude Code 官方插件目录 `claude-plugins-official`：团队直维护的扩展生态，AI Coding 工具链标准化加速</li>
+      <li>美团发布具身动作表征基准 LARYBench：被誉"具身领域的 ImageNet"，151 类动作、百万级视频，定义行业评估标准</li>
+      <li>Google DeepMind 将原生"计算机使用"能力集成 Gemini 3.5 Flash：长周期企业自动化任务能力跃升，AI Agent 通用化关键一步</li>
+      <li>Figure 03 量产 24 倍跃升：从 1 台/天到 1 台/小时，120 天内累计生产 350 台 + 9000 执行器，具身智能进入工业量产拐点</li>
+    </ul>
+  </div>
+
+  <!-- ========== 行业头条 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon headline">🔥</div>
+      <h2>行业头条</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">范式突破</span>
+      <span class="card-badge source">ByteDance</span>
+      <h3><span class="card-num">1</span>字节跳动 DeerFlow 2.0 登顶 GitHub Trending——长周期 SuperAgent 框架，AI Coding 从"秒级响应"跃迁至"小时级工程化"</h3>
+
+      <div class="content-block">
+        <p>2 月 28 日发布、目前已斩获 <span class="highlight-num">2.4 万+ Star</span> 的字节跳动 <strong>DeerFlow 2.0</strong>，成为本周 AI 圈最热的开源项目。DeerFlow 的全称是 Deep Exploration and Efficient Research Flow，但在 2.0 版本中定位已远超"研究"——它是一个面向长周期任务的 <strong>SuperAgent Harness</strong>。</p>
+        <p>核心架构由六大模块组成：<strong>沙箱（Sandbox）</strong>提供安全的代码执行隔离环境；<strong>记忆（Memory）</strong>确保小时级操作中不丢失上下文；<strong>工具与技能（Tools / Skills）</strong>支持调用外部 API；<strong>子智能体（Sub-agents）</strong>实现多 Agent 协同；<strong>消息网关（Message Gateway）</strong>负责组件间通信。三位一体的能力覆盖研究、编程、创作——DeepSeek 风格的可复现工程化范式，被社区认为是目前最完整的多 Agent 协作框架之一。</p>
+        <p>关键突破在于"长周期"——传统 AI Agent 只能处理秒级对话，DeerFlow 2.0 能持续运行数分钟到数小时，将宏大目标拆解为多层级子任务。这与昨日分析过的 Sakana Fugu（"调度最优模型"）形成呼应：AI Coding 的下一战场不是"更聪明的模型"，而是<strong>"能持续工作的 Agent 系统"</strong>。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">DeerFlow 2.0 核心架构</div>
+          <ul>
+            <li><strong>沙箱</strong>：安全隔离的代码执行环境</li>
+            <li><strong>记忆</strong>：小时级任务的长期上下文管理</li>
+            <li><strong>工具+技能</strong>：调用外部 API 与专业动作</li>
+            <li><strong>子智能体</strong>：多 Agent 协同调度</li>
+            <li><strong>消息网关</strong>：组件间高效通信桥接</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label new">能力跃迁对比</div>
+          <ul>
+            <li><strong>传统 Agent</strong>：秒级响应，单次问答</li>
+            <li><strong>DeerFlow 2.0</strong>：分钟到小时级持续运行</li>
+            <li>任务粒度：短指令 → 多层级复杂任务</li>
+            <li>GitHub Star：发布首月 <span class="highlight-num">2.4万+</span></li>
+            <li>定位：研究 → 研究+编程+创作三位一体</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>DeerFlow 2.0 的真正价值不在于"又一个 Agent 框架"，而在于把"SuperAgent"从概念变成了可部署的工程化范式。沙箱 + 子智能体 + 长期记忆的三件套组合，恰好解决了企业级 AI Coding 落地的三个核心痛点：代码安全、任务拆分、上下文连续性——这是字节跳动把内部 3 年工程经验一次性开源的成果。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，DeerFlow 2.0 验证了"长周期 Agent"作为 AI Coding 基础设施的可行性。</strong>当 Agent 能持续运行数小时处理复杂任务时，"AI 写代码"的边界就从"补全一行"扩展到"完成整个项目"——这是从"工具"到"数字员工"的质变。<strong>第二，开源 + 沙箱 + 多 Agent 的设计组合，为企业级 AI Coding 提供了一条可私有化部署的路径。</strong>在 Fable 5 被封、模型出口受限的当下，能够自托管的 Agent 框架比依赖闭源 API 更具战略韧性。<strong>第三，对运维/SRE 从业者，DeerFlow 2.0 的沙箱机制和消息网关设计与 K8s 高度同构。</strong>理解"长周期 Agent 如何在隔离环境中持续运行"，正是理解未来 AI Agent 在企业系统中部署模式的关键——监控、日志、调度、容错，这些运维核心能力将直接迁移到 Agent 运维领域。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== AI Coding 方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon coding">⚡</div>
+      <h2>AI Coding 方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge hot">生态标准化</span>
+      <span class="card-badge source">Anthropic</span>
+      <h3><span class="card-num">2</span>Anthropic 上线 Claude Code 官方插件目录 `claude-plugins-official`——团队直维护 + 验证标准统一，AI Coding 工具链从"野蛮生长"进入"规范化"</h3>
+
+      <div class="content-block">
+        <p>Anthropic 今日在 GitHub 上线官方 <strong>Claude Code 插件目录 `claude-plugins-official`</strong>，由 Anthropic 团队直接维护，为开发者提供经过验证的高质量 Claude Coding 扩展工具。这是 Claude Code 自 2025 年爆火以来，<strong>首次建立官方插件生态</strong>——也意味着 AI Coding 工具链从"社区野蛮生长"进入"厂商主导的规范化"阶段。</p>
+        <p>与昨日提到的 Garry Tan 个人项目 `gstack`（23 个深度定制工具，让 AI 扮演 CEO/设计师/QA 等 23 种专业角色）形成鲜明对比：当社区已经探索出"多角色编排"的玩法时，<strong>官方插件目录意味着 Anthropic 要把这条路线标准化、平台化</strong>。这与 OpenAI Codex 此前新增的 Sites、Annotations、Enterprise Plugins 走的是同一条路——AI Coding 不再是单一工具，而是"工具 + 插件 + 工作流"的完整生态。</p>
+        <p>值得注意的是，Claude Code 官方插件目录采用"团队直维护"模式——这意味着 Anthropic 拥有了类似 Apple App Store 的"准入审核权"，未来第三方扩展要进入官方目录需要通过 Anthropic 的验证。<strong>这把双刃剑</strong>：一方面保证插件质量和安全，另一方面也让 AI Coding 生态的开放性受到一定影响。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label delta">插件生态三方对比</div>
+          <ul>
+            <li><strong>Anthropic</strong>：官方直维护，准入审核制</li>
+            <li><strong>OpenAI Codex</strong>：Sites/Annotations/Enterprise Plugins</li>
+            <li><strong>社区（如 gstack）</strong>：自由创新，23 角色多职能</li>
+            <li>趋势：官方化 + 平台化加速</li>
+            <li>对开发者：插件选型成本下降</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">对开发者的实质影响</div>
+          <ul>
+            <li><strong>质量保障</strong>：官方验证 = 可靠性 + 安全性</li>
+            <li><strong>选型成本</strong>：无需在海量插件中挑选</li>
+            <li><strong>生态锁定</strong>：官方目录 = 平台依赖加深</li>
+            <li><strong>多模型兼容</strong>：可能成为事实标准</li>
+            <li><strong>企业采购</strong>：可审计的插件链 = 决策便利</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，官方插件目录标志着 Claude Code 从"工具"升级为"平台"。</strong>当一个 AI Coding 工具开始建立自己的插件生态时，它的护城河就从"模型能力"转向"开发者粘性"——这是 GitHub Copilot、VSCode 走过的同一条路。<strong>第二，"团队直维护"模式给企业级部署带来可审计性。</strong>当插件目录由 Anthropic 官方背书时，企业 IT 部门可以把 Claude Code 插件链作为"可审计的供应链"管理——这大幅降低了 AI Coding 工具在企业落地的合规风险。<strong>第三，对运维/SRE 从业者，插件目录的出现意味着"AI Coding 工具的可观测性"将进入议程。</strong>当 AI 通过插件调用了大量外部工具时，如何监控这些工具调用、记录审计日志、排查故障链路——这些本来就是运维工程师的核心能力，新场景只是把"传统工具调用"换成了"AI 插件调用"。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">通用 Agent</span>
+      <span class="card-badge source">Google DeepMind</span>
+      <h3><span class="card-num">3</span>Google DeepMind 把"计算机使用"原生能力集成 Gemini 3.5 Flash——Agent 可直接操作浏览器/移动端/桌面端，AI Coding 之外的"通用 Agent 能力"落地关键一步</h3>
+
+      <div class="content-block">
+        <p>Google DeepMind 今日宣布，将原生<strong>"计算机使用"（Computer Use）能力</strong>集成到 <strong>Gemini 3.5 Flash</strong> 模型中。所谓"计算机使用"是指 AI Agent 能够像人类一样<strong>直接操作浏览器、移动端、桌面端环境</strong>——点击按钮、填写表单、滚动页面、操作应用界面，无需为每个场景单独编写 API 集成。</p>
+        <p>这一能力的关键意义在于：<strong>它把 AI Agent 从"只能调用 API"扩展到"能操作任何有图形界面的软件"</strong>。这意味着即使某个老旧的企业 ERP 系统没有 API，AI Agent 也能通过操作它的 UI 来完成任务。同时配套了企业级安全防护机制——包括权限控制、行为审计、异常操作拦截。</p>
+        <p>对 AI Coding 场景而言，Computer Use 能力打开了一个全新维度：AI 不仅能写代码，还能<strong>操作已部署的应用、测试 UI、模拟用户行为</strong>。这与昨日分析的 Figma Config 2026 推出的"代码图层"形成呼应——当设计稿本身就可运行时，AI Agent 就能直接在 Figma 画布中操作代码图层，实现"设计→测试→部署"的全流程自动化。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">Computer Use 能力拆解</div>
+          <ul>
+            <li><strong>浏览器</strong>：点击、滚动、表单填写</li>
+            <li><strong>移动端</strong>：原生 App 操作</li>
+            <li><strong>桌面端</strong>：跨应用窗口操作</li>
+            <li><strong>核心突破</strong>：无需 API 集成即可操作任何软件</li>
+            <li><strong>配套</strong>：企业级安全防护 + 权限控制</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">典型应用场景</div>
+          <ul>
+            <li><strong>持续软件测试</strong>：UI 自动化测试</li>
+            <li><strong>专业知识工作</strong>：操作老旧 ERP/CRM</li>
+            <li><strong>长周期任务</strong>：多步骤跨工具调度</li>
+            <li><strong>无 API 系统</strong>：图形界面操作兜底</li>
+            <li><strong>对运维</strong>：UI 监控 + 异常操作审计</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，Computer Use 能力把 AI Agent 的"手"从 API 扩展到了图形界面。</strong>这意味着即使面对没有任何 API 的老旧系统，AI 也能通过 UI 操作完成任务——这在企业遗留系统迁移、跨系统数据搬运等场景下价值巨大。<strong>第二，安全防护机制是这一能力能否企业落地的关键。</strong>Google 配套的企业级安全（权限控制、行为审计、异常拦截）说明他们清楚——Computer Use 能力如果缺乏安全约束，会成为企业最大的安全噩梦。<strong>第三，对运维/SRE 从业者，Computer Use 能力重新定义了"运维自动化"的边界。</strong>以前运维自动化靠脚本和 API，现在可以靠 AI Agent 直接操作 UI。这意味着 SRE 需要理解"AI 操作的审计与回滚"——这与传统运维的"操作审计 + 变更回滚"思路完全一致，只是执行者从"人/脚本"变成了"AI Agent"。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 具身智能方向 ========== -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-icon embodied">🤖</div>
+      <h2>具身智能方向</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-badge milestone">行业标准</span>
+      <span class="card-badge source">Meituan LongCat</span>
+      <h3><span class="card-num">4</span>美团发布 LARYBench——被誉"具身领域的 ImageNet"，定义具身动作表征评估标准，151 类动作 + 百万级视频</h3>
+
+      <div class="content-block">
+        <p>美团 LongCat 团队正式发布 <strong>LARYBench</strong>（Latent Action Representation Yielding Benchmark），一个专为<strong>具身动作表征学习</strong>设计的系统性评估基准。这是业界<strong>首个系统评估隐式动作表征的基准</strong>，覆盖 <span class="highlight-num">151 类动作</span>、<span class="highlight-num">百万级标注视频</span>，支持本体/语义双粒度评测。</p>
+        <p>关键实验发现颠覆了行业共识：<strong>通用视觉模型在动作泛化和控制精度上，反而优于专用具身动作模型</strong>。这意味着具身智能未必需要"专用的具身模型"——通用大模型的视觉能力已经足够强，关键是如何让它学到"动作表征"。LARYBench 的核心价值就是定义<strong>"如何衡量一个模型是否学会了动作"</strong>——这是从"会看"到"会做"的关键桥梁。</p>
+        <p>同时，LongCat 团队还开源了 <strong>WBench</strong>——首个交互式视频世界模型多轮评估基准。WBench 能精准定位世界模型从"被动视频生成"转向"主动交互"时的瓶颈，被社区称为"具身智能模型的 CT 扫描仪"。配合 LARYBench，美团正在构建<strong>从"动作表征"到"世界模型"的完整评估工具体系</strong>。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">LARYBench 核心规格</div>
+          <ul>
+            <li>动作类别：<span class="highlight-num">151 类</span></li>
+            <li>视频规模：<span class="highlight-num">百万级</span>标注数据</li>
+            <li>评测粒度：本体 + 语义双维度</li>
+            <li>地位：首个隐式动作表征基准</li>
+            <li>类比：<strong>具身领域的 ImageNet</strong></li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label new">关键实验发现</div>
+          <ul>
+            <li><strong>反共识</strong>：通用视觉模型 > 专用具身模型</li>
+            <li>大规模人类视频 → 涌现高质量动作表征</li>
+            <li>WBench：世界模型"CT 扫描仪"</li>
+            <li>从"会看"到"会做"的关键桥梁</li>
+            <li>开源：评估代码 + 评测数据集</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <p>LARYBench 提出的核心问题："如何让 AI 学会'动作'？"——这和 ImageNet 当年问"如何让 AI 学会'看'？"是同一个量级的问题。ImageNet 推动了 2012 年深度学习的爆发，LARYBench 可能会成为推动具身智能从"展示 demo"走向"规模化落地"的关键催化剂。</p>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，LARYBench 给了具身智能一个"可量化进步"的标尺。</strong>此前具身智能的进展靠"机器人能不能做后空翻"这种离散 demo 评估，缺乏连续可比的指标。LARYBench 提供了 151 类动作的标准化评估，开发者可以明确知道"我的模型在哪些动作上进步了/退步了"。<strong>第二，"通用模型 > 专用模型"的实验发现，对行业有重要指导意义。</strong>这意味着具身智能可能不需要从零训练专用模型——在通用大模型基础上微调动作表征可能更高效。对资源有限的团队是好消息。<strong>第三，对运维/SRE 从业者，标准化基准的出现意味着具身智能开始具备"工程化交付"的条件。</strong>当具身模型有了可量化的评估标准，企业才能像采购其他 AI 服务一样采购具身智能——这会带动 SRE 岗位的新需求：具身智能模型的部署、监控、版本管理。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-badge warning">量产拐点</span>
+      <span class="card-badge source">Figure AI</span>
+      <h3><span class="card-num">5</span>Figure 03 量产 24 倍跃升——从 1 台/天到 1 台/小时，120 天累计 350 台 + 9000 执行器，具身智能进入工业量产拐点</h3>
+
+      <div class="content-block">
+        <p>美国人形机器人公司 <strong>Figure AI</strong> 宣布，其 BotQ 工厂将 <strong>Figure 03</strong> 人形机器人的产能<strong>在 120 天内从每天 1 台提升至每小时 1 台</strong>——实现 <span class="highlight-num">24 倍</span>增长。目前已累计生产超过 <span class="highlight-num">350 台</span>第三代机器人及 <span class="highlight-num">9000 余个</span>执行器。</p>
+        <p>更惊人的是 Figure 03 的实战表现：在一次超长直播中，<strong>Figure 03 实现了 30 小时连续作业、累计处理超 4.5 万件包裹</strong>——比此前的 8 小时零人工干预记录提升了近 4 倍。后续更突破到 <strong>200 小时不间断运行</strong>，标志着具身智能从"实验室展示"转向"规模化工业应用"的关键拐点。</p>
+        <p>从中国视角看，宇树科技和智元机器人也在加速：宇树 R1 降价至 <span class="highlight-num">2.99 万元</span>起开放现货销售（25 千克 + 26 关节 + 多模态交互），智元机器人 3 个月内产量从 5000 台翻倍至 <span class="highlight-num">1 万台</span>，宇树科技科创板 IPO 73 天过审、估值 30-70 亿美元——中美人形机器人产业正同步进入"量产竞速"阶段。</p>
+      </div>
+
+      <div class="vs-box">
+        <div class="vs-item">
+          <div class="vs-label bench">Figure 03 量产数据</div>
+          <ul>
+            <li>产能跃升：<span class="highlight-num">24 倍</span>（120 天）</li>
+            <li>已生产：<span class="highlight-num">350+</span> 台机器人</li>
+                <li>执行器：<span class="highlight-num">9000+</span> 个</li>
+            <li>运行记录：<strong>30 小时</strong>连续作业</li>
+            <li>累计处理：<span class="highlight-num">4.5 万+</span> 包裹</li>
+          </ul>
+        </div>
+        <div class="vs-item">
+          <div class="vs-label impact">中美对比</div>
+          <ul>
+            <li><strong>Figure 03</strong>：1 台/小时，200 小时运行</li>
+            <li><strong>宇树 R1</strong>：降价至 <span class="highlight-num">2.99 万</span>，现货</li>
+            <li><strong>智元机器人</strong>：3 个月 <span class="highlight-num">翻倍</span>至 1 万台</li>
+            <li><strong>宇树科技</strong>：科创板 <span class="highlight-num">73 天</span> 过审</li>
+            <li>趋势：中美<strong>同步进入量产竞速</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-matters">
+        <div class="label">💡 为什么重要</div>
+        <p><strong>第一，Figure 03 量产 24 倍跃升标志着人形机器人从"手工作坊"进入"工业产线"。</strong>当产能从 1 台/天到 1 台/小时，意味着生产成本可以分摊到更大批量——这是硬件产品从"奢侈品"走向"工业品"的关键拐点。<strong>第二，200 小时不间断运行证明了"具身智能的工程化可靠性"。</strong>此前人形机器人只能演示 8-30 分钟的精彩片段，200 小时连续运行意味着它已经能进入真实的工业生产环境——这是具身智能"商业化"的实质性突破。<strong>第三，对运维/SRE 从业者，人形机器人的工业化部署创造了新的运维对象。</strong>当一家工厂部署 350 台人形机器人时，需要的不只是设备维护，还有"机器人集群的调度、监控、故障隔离、版本管理"——这与传统 IT 运维的逻辑高度相似，只是对象从"服务器"变成了"机器人"。理解 Figure 03 的执行器架构（9000+ 部件的协同），正是理解未来具身智能运维的基础。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 本周关键信号 -->
+  <div class="summary-box">
+    <h3>📡 本周关键信号（6.19 - 6.26）</h3>
+    <ul>
+      <li><strong>AI Coding 从"更聪明"转向"更持久"</strong>：DeerFlow 2.0 验证了"长周期 Agent"作为 AI Coding 基础设施的可行性——从"秒级响应"跃迁到"小时级工程化"，这是从"工具"到"数字员工"的质变</li>
+      <li><strong>AI 编程工具进入"平台化"阶段</strong>：Anthropic 官方插件目录 `claude-plugins-official` 标志着 Claude Code 从工具升级为平台——插件生态的可审计性降低了企业落地合规风险</li>
+      <li><strong>具身智能开始拥有"行业标准"</strong>：美团 LARYBench（具身动作 ImageNet）+ WBench（世界模型 CT 扫描仪）构建了从"动作表征"到"世界模型"的评估体系——具身智能从"demo 评估"进入"标准化评估"</li>
+      <li><strong>通用 Agent 突破"API 限制"</strong>：Gemini 3.5 Flash 原生 Computer Use 能力让 AI Agent 能操作任何有图形界面的软件——这对老旧系统迁移、跨系统数据搬运场景价值巨大</li>
+      <li><strong>人形机器人进入"量产竞速"拐点</strong>：Figure 03 量产 24 倍跃升（1 台/小时）+ 200 小时连续运行 + 宇树降价至 2.99 万 + 智元 1 万台——中美同步进入工业化部署阶段</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>数据来源：GitHub Trending · AIToolly · Hacker News · Meituan Tech Blog · TechCrunch · qbitai · 36氪 · 财联社 · 美团技术团队 · Figure AI 官方 · aitoolly.com · aidailypost.com</p>
+  </div>
+
+</div>
+</body>
+</html>
