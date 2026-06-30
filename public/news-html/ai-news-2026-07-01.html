@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年7月1日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '→'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '◆'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .inline-link {
+    color: #818cf8; text-decoration: none;
+    border-bottom: 1px solid rgba(129,140,248,0.3);
+  }
+  .inline-link:hover { color: #a5b4fc; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-badge">AI DAILY BRIEF</div>
+  <h1>AI 每日动态</h1>
+  <p>聚焦 AI Coding · 具身智能 · 行业风向</p>
+  <div class="date-highlight">2026 年 7 月 1 日 · 星期三</div>
+</div>
+
+<!-- 摘要 -->
+<div class="summary-box">
+  <h3>今日摘要</h3>
+  <ul>
+    <li>国内具身智能半年新增 <span class="highlight-num">15 家</span> 百亿独角兽，赛道融资空前密集</li>
+    <li>开源编码 Agent <span class="highlight-num">Ornith-1.0</span> 登 HN 热榜，RL 联合优化 scaffold + 解决方案</li>
+    <li>vLLM 发布 <span class="highlight-num">Micro-Agent</span>：将 API 路由层升级为多模型协同"能力构造层"</li>
+    <li>港大源策未来 <span class="highlight-num">数亿元种子轮</span>，押注"全身具身大脑"年底开源</li>
+    <li>韩国宣布 <span class="highlight-num">1 万亿美元</span> AI 计划，人形机器人 2028 年商用</li>
+  </ul>
+</div>
+
+<!-- ==================== 行业头条 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon headline">🔥</div>
+    <h2>行业头条</h2>
+  </div>
+
+  <!-- 条目 1 -->
+  <div class="card">
+    <span class="card-badge source">智东西 / 36氪</span>
+    <span class="card-badge hot">赛道狂飙</span>
+    <h3><span class="card-num">1</span> 国内具身智能半年新增 15 家百亿独角兽，赛道进入淘汰前夜</h3>
+    <div class="content-block">
+      <p>6 月 29 日，智平方和自变量机器人同日跻身估值超 <strong>200 亿元</strong> 独角兽行列。至此国内具身智能百亿独角兽已达 <strong>25 家</strong>，其中 15 家为 2026 年上半年新增。</p>
+      <p>全栈路线占比最高（13 家），硬件及本体派 9 家，软件及大脑派 3 家。资本密度之高空前 — 千寻智能三个月累计融资 <strong>近 45 亿元</strong>，智平方一年内完成 13 轮融资。</p>
+      <p>行业内部已出现 "泡沫论 vs 序章论" 的分歧。千寻创始人韩峰涛将当前模型能力比作 "一两岁孩童"，认为规模化落地 "至少还要两年"。灵心巧手创始人周永则认为当前只是序章，"如果未来有厂商达到每年十万台出货量，资金体量应该是现在的十倍"。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">关键数据</div>
+        <ul>
+          <li>25 家百亿独角兽（15 家今年新增）</li>
+          <li>千寻智能 Q1 融资 45 亿，估值 200 亿</li>
+          <li>智平方累计融资 50 亿，估值超 200 亿</li>
+          <li>苏度科技成立仅 11 个月即入百亿阵营</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">风险信号</div>
+        <ul>
+          <li>大部分公司现金流仅够 18-24 个月</li>
+          <li>2027-2028 年将是生死大考</li>
+          <li>大脑派面临通用大模型降维打击风险</li>
+          <li>本体派需建立不可替代的工艺壁垒</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>具身智能正处于资本泡沫与产业现实激烈博弈的阶段。25 家百亿独角兽的估值更多是"对物理世界 GPT 时刻的押注"而非对现有营收的定价。关键观察窗口在 2027-2028 年：哪些公司能跑通商业闭环、实现规模化落地，将决定这轮狂飙是泡沫破裂还是序章成真。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== AI Coding 方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon coding">💻</div>
+    <h2>AI Coding 方向</h2>
+  </div>
+
+  <!-- 条目 2 -->
+  <div class="card">
+    <span class="card-badge source">GitHub / HN</span>
+    <span class="card-badge milestone">开源突破</span>
+    <h3><span class="card-num">2</span> Ornith-1.0：首个用 RL 同时优化"scaffold + 解决方案"的开源编码 Agent</h3>
+    <div class="content-block">
+      <p>6 月 29 日登顶 Hacker News 热榜的 <strong>Ornith-1.0</strong> 系列由 deepreinforce-ai 团队发布，定位"自改进开源编码 Agent"，提供 9B-Dense、31B-Dense、35B-MoE、397B-MoE 四档，基于 Gemma 4 与 Qwen 3.5 后训练，MIT 协议开源。</p>
+      <p>最大亮点是训练范式创新：模型用强化学习 <strong>同时优化"生成解决方案"与"驱动这些解决方案展开的 scaffold"</strong>，让模型自己去发现更好的搜索轨迹，而不是依赖预设 agent 流程。这意味着 Agent 不再被人类设计的固定工作流所限制。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">Terminal-Bench 2.1 对比</div>
+        <ul>
+          <li>Ornith-1.0-9B：<strong>43.1</strong></li>
+          <li>Qwen3.5-9B：21.3</li>
+          <li>Qwen3.5-35B：41.4</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">范式意义</div>
+        <ul>
+          <li>从"预设 agent 流程"→"RL 自主发现搜索轨迹"</li>
+          <li>9B 小模型超越 35B 同架构模型</li>
+          <li>MIT 协议，全球可访问</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>Ornith-1.0 代表了 AI Coding Agent 的一个重要进化方向：不再由人类工程师手工设计 agent 工作流，而是让模型通过强化学习自己发现最优的编码策略。9B 模型在 Terminal-Bench 上碾压同级甚至更大模型的结果表明，<strong>"怎么想"比"想多大"更关键</strong>。这种 RL 驱动的编码 Agent 范式可能成为下一代编程助手的基础架构。</p>
+    </div>
+  </div>
+
+  <!-- 条目 3 -->
+  <div class="card">
+    <span class="card-badge source">vLLM Blog</span>
+    <span class="card-badge milestone">架构创新</span>
+    <h3><span class="card-num">3</span> vLLM 推出 Micro-Agent：API 路由层升维为多模型协同"能力构造层"</h3>
+    <div class="content-block">
+      <p>vLLM Semantic Router 团队 6 月 29 日发文，提出将 <strong>路由层从单纯的模型选择器升级为"能力构造层"</strong>。核心思路：路由器不再只是判断请求该走哪个模型，而是把一次 API 调用改造成"在服务层内部、受约束的多模型协同"。</p>
+      <p>这意味着单卡推理可以通过路由层的智能协同，在单个 query 上的表现逼近前沿闭源模型，同时避免每次都要在应用层拼一套专用 agent graph。文章将这条路线与近期 Sakana Fugu 的商业化路径直接对照，暗示 <strong>"路由即能力"</strong> 可能成为推理基础设施的下一个竞争焦点。</p>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>Micro-Agent 的思路对 AI Coding 基础设施有直接影响：开发者不再需要在应用层手动编排多模型 agent graph，推理服务层本身就承担了协同编排的职责。这降低了 Agent 系统的构建成本，同时让开源/本地模型通过协同获得接近闭源模型的能力。对于企业 AI 部署来说，"路由层能力构造"可能成为成本与效果平衡的关键杠杆。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 具身智能方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon embodied">🤖</div>
+    <h2>具身智能方向</h2>
+  </div>
+
+  <!-- 条目 4 -->
+  <div class="card">
+    <span class="card-badge source">36氪 硬氪</span>
+    <span class="card-badge milestone">前沿突破</span>
+    <h3><span class="card-num">4</span> 港大源策未来完成数亿元种子轮，押注"全身具身大脑"填补数据结构性缺位</h3>
+    <div class="content-block">
+      <p>港大计算与数据科学学院助理教授李弘扬创立的 <strong>源策未来（Archon Robotics）</strong> 完成数亿元种子轮，由真格基金、高榕创投、IDG 资本、五源资本等头部美元基金及港大联名基金、奇绩创坛共同参与。资金主要用于全身人形基础模型研发、多模态全身动作数据采集和年底前的开源人形基座模型落地。</p>
+      <p>公司指出当前具身数据集存在结构性缺位：<strong>第一视角视频缺全身位姿、机械臂数据缺物理交互、人形真机数据成本高达每小时数百到近千元</strong>。现有方案只能做桌面抓取，遇到推门、双手持物开关门等需要重心转移的任务几乎无法自主适配。源策未来的目标正是解决这一关键瓶颈。</p>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>具身智能的瓶颈正在从"模型架构"转向"数据质量和多样性"。源策未来瞄准的是当前行业最痛的点 — <strong>全身动作数据的系统性缺失</strong>。如果其年底前能成功开源人形基座模型，将为整个行业提供一个关键的基础设施，加速从桌面抓取到全身协调操作的范式跃迁。这也是港大体系在具身智能赛道的重要布局。</p>
+    </div>
+  </div>
+
+  <!-- 条目 5 -->
+  <div class="card">
+    <span class="card-badge source">Ars Technica</span>
+    <span class="card-badge warning">国家战略</span>
+    <h3><span class="card-num">5</span> 韩国宣布 1 万亿美元 AI 一揽子计划：人形机器人 2028 年进入商用场景</h3>
+    <div class="content-block">
+      <p>Ars Technica 6 月 29 日报道，韩国政府与头部科技公司联合宣布约 <strong>1 万亿美元</strong> 的一揽子计划。韩国总统李在明将 <strong>"半导体、物理 AI、AI 数据中心"</strong> 并列为国家跃迁的三大轴心，目标包括扩充全球内存芯片供给、新建 AI 数据中心，以及推动人形机器人在 2028 年前进入工厂等真实商业场景。</p>
+      <p>Samsung、SK 海力士已因 AI 需求录得创纪录利润和股价，现代汽车正通过旗下 <strong>Boston Dynamics</strong> 推进人形机器人量产。报道指出供应紧张也推高了消费电子价格，激起"超额利润是否应再分配"的国内政策讨论。</p>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>韩国以国家力量将人形机器人明确纳入顶层战略，标志着具身智能已从企业竞争升级为 <strong>国家间产业竞争</strong>。1 万亿美元的规模远超此前任何单一国家的 AI 投入。尤其值得关注的是 Boston Dynamics 在现代汽车体系下的量产路径 — 这可能是全球最先实现规模化量产的高端人形机器人之一。对中国具身智能产业而言，这意味着国际竞争的时间窗口正在加速收窄。</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>数据来源：智东西 · 36氪 · GitHub (deepreinforce-ai/Ornith-1) · vLLM Blog · Ars Technica · HN</p>
+</div>
+
+</div>
+</body>
+</html>
