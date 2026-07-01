@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年7月2日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.price { color: #34d399; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '\2192'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '\25C6'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .inline-link {
+    color: #818cf8; text-decoration: none;
+    border-bottom: 1px solid rgba(129,140,248,0.3);
+  }
+  .inline-link:hover { color: #a5b4fc; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-badge">AI DAILY BRIEF</div>
+  <h1>AI 每日动态</h1>
+  <p>聚焦 AI Coding · 具身智能 · 行业风向</p>
+  <div class="date-highlight">2026 年 7 月 2 日 · 星期四</div>
+</div>
+
+<!-- 摘要 -->
+<div class="summary-box">
+  <h3>今日摘要</h3>
+  <ul>
+    <li>Anthropic 发布 <span class="highlight-num">Claude Sonnet 5</span>，智能体能力大幅跃升，部分评测逼近 Opus 4.8</li>
+    <li>美团开源 <span class="highlight-num">LongCat-2.0</span>：1.6 万亿参数，首个国产 ASIC 全链路训练大模型</li>
+    <li><span class="highlight-num">2026 全球数字经济大会</span> 今日在京开幕，人形机器人与世界模型集中亮相</li>
+    <li>优必选 U1 全尺寸仿生机器人 <span class="highlight-num">订单破万</span>，人形机器人消费级市场正式开启</li>
+    <li>智元机器人 <span class="highlight-num">15000 台</span> 下线刷新全球纪录，具身智能进入规模化交付阶段</li>
+  </ul>
+</div>
+
+<!-- ==================== 行业头条 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon headline">🔥</div>
+    <h2>行业头条</h2>
+  </div>
+
+  <!-- 条目 1 -->
+  <div class="card">
+    <span class="card-badge source">工人日报 / 中新网</span>
+    <span class="card-badge hot">今日开幕</span>
+    <h3><span class="card-num">1</span> 2026 全球数字经济大会今日在京开幕：人形机器人 + 世界模型集中亮相</h3>
+    <div class="content-block">
+      <p>2026 全球数字经济大会于<strong> 7 月 2 日至 5 日</strong>在北京国家会议中心举行，以「建设数字友好城市——智惠无界，数联全球」为主题，汇聚近 <strong>40 个高级别国际团组</strong> 和千余位重要嘉宾。</p>
+      <p>大会将密集发布 <strong>近 20 项行业规则标准</strong>，并集中展示国内外最新人形机器人产品、世界模型、全栈自研仿真技术等前沿成果。同期举办的 50 余场论坛覆盖人工智能大模型、机器人、智能制造等全产业链。</p>
+      <p>北京一季度数字经济增加值增速达 <strong>9.3%</strong>，正加速建设「人工智能第一城」。大会还首创「全球 OPC 共创节」，推动数字经济领域的全球协作与创新成果共享。</p>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>作为国内数字经济领域最高规格的国际盛会，本届大会将是 2026 下半年 AI 产业政策与行业标准的<strong>风向标事件</strong>。近 20 项行业标准的发布可能直接影响 AI Coding 工具、人形机器人等细分赛道的合规与竞争格局。人形机器人和世界模型的集中亮相，也是检验当前具身智能产业阶段性成果的最佳窗口。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== AI Coding 方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon coding">💻</div>
+    <h2>AI Coding 方向</h2>
+  </div>
+
+  <!-- 条目 2 -->
+  <div class="card">
+    <span class="card-badge source">IT之家</span>
+    <span class="card-badge milestone">重大发布</span>
+    <h3><span class="card-num">2</span> Claude Sonnet 5 发布：Anthropic 最强智能体模型，编码与终端使用能力大幅跃升</h3>
+    <div class="content-block">
+      <p>Anthropic 于 7 月 1 日正式发布 <strong>Claude Sonnet 5</strong>，定位为 Sonnet 系列中<strong>智能体 AI 表现最强的模型</strong>。该模型具备自主制定计划、调用浏览器和终端工具等能力，已同步接入 <strong>Claude Code</strong> 和 Claude Platform。</p>
+      <p>性能方面，在 BrowseComp 智能体搜索评测、OSWorld-Verified 计算机使用评测等项目中，相较上一代 Sonnet 4.6 <strong>提升显著</strong>，部分任务甚至逼近旗舰 Opus 4.8。安全评测显示整体不良行为发生率低于 4.6，在恶意请求拒绝、提示注入抵抗和幻觉率方面均有改善。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">定价策略</div>
+        <ul>
+          <li>优惠期（至 8 月 31 日）：输入 $1.5/M token，输出 $3.75/M token</li>
+          <li>优惠期后：输入 $3/M token，输出 $15/M token</li>
+          <li>支持 Anthropic API 指定 claude-sonnet-5 调用</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">核心升级</div>
+        <ul>
+          <li>自主调用浏览器 + 终端工具</li>
+          <li>BrowseComp / OSWorld 大幅超越 Sonnet 4.6</li>
+          <li>部分任务逼近 Opus 4.8</li>
+          <li>安全性全面提升</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>Sonnet 5 代表了 Anthropic 在「智能体能力」路线上的一次关键跃迁。对 AI Coding 场景而言，其终端工具调用和自主规划能力将直接提升 <strong>Claude Code 的开发体验</strong>——模型不再只是一个代码生成器，而是一个能自主浏览文档、执行命令、迭代调试的 AI 工程师。优惠期后输出 token 价格 $15/M 虽不便宜，但若智能体能力兑现，其成本效益将远超纯代码补全模型。</p>
+    </div>
+  </div>
+
+  <!-- 条目 3 -->
+  <div class="card">
+    <span class="card-badge source">美团 / AI铺子</span>
+    <span class="card-badge milestone">开源突破</span>
+    <h3><span class="card-num">3</span> 美团 LongCat-2.0 开源：1.6 万亿参数，首个国产 ASIC 全链路训练大模型，代码能力对标头部闭源</h3>
+    <div class="content-block">
+      <p>美团于 6 月 30 日正式开源 <strong>LongCat-2.0</strong>——万亿级 MoE 混合专家大语言模型，总参数 <strong>1.6 万亿</strong>，单 token 动态激活仅 480 亿参数。这是全球首个<strong>完整依托国产 ASIC 超节点集群</strong>完成预训练、推理全流程研发的万亿级大模型，无需海外芯片支撑。</p>
+      <p>模型预训练数据超 35 万亿 token，原生支持 <strong>100 万 token 超长上下文</strong>。在代码工程能力上表现突出：SWE-bench Multilingual 多语言代码得分 <strong>77.3</strong>，Terminal-Bench 2.1 得分 <strong>70.8</strong>——接近 Claude Opus 4.8 水平（78.9），远超此前国产模型。深度兼容 Claude Code、OpenClaw、Hermes 等主流开发框架。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">代码评测对比（LongCat-2.0 vs 头部闭源）</div>
+        <ul>
+          <li>Terminal-Bench 2.1：70.8 vs Claude Opus 4.8 78.9</li>
+          <li>SWE-bench Multilingual：77.3 vs Claude Opus 4.8 84.8</li>
+          <li>SWE-bench Pro：59.5 vs Claude Opus 4.8 69.2</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">技术亮点</div>
+        <ul>
+          <li>100 万 token 原生上下文，可一次性读取完整代码仓库</li>
+          <li>国产 5 万+ ASIC 集群全链路训练，自主可控</li>
+          <li>Agent / 推理 / 交互三专家融合架构</li>
+          <li>完全开源，支持私有化部署</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>LongCat-2.0 的意义不仅在于技术指标——它在<strong>国产算力自主可控</strong>的维度上实现了一次里程碑式突破。1.6 万亿参数在国产 ASIC 上从头训练完成，意味着中国在 AI 基础设施层面正在缩小与 NVIDIA 生态的差距。对 AI Coding 场景而言，LongCat-2.0 全开源、可私有化部署的特性，为国内企业提供了一条不依赖海外 API 的编程智能体路径。其 100 万 token 上下文读取完整代码仓库的能力，也让仓库级代码理解从概念走向实用。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 具身智能方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon embodied">🤖</div>
+    <h2>具身智能方向</h2>
+  </div>
+
+  <!-- 条目 4 -->
+  <div class="card">
+    <span class="card-badge source">电子工程专辑 / 华夏时报</span>
+    <span class="card-badge hot">消费级突破</span>
+    <h3><span class="card-num">4</span> 优必选 U1 全尺寸仿生人形机器人订单破万，消费级人形机器人市场正式开启</h3>
+    <div class="content-block">
+      <p>优必选科技于 6 月 30 日在深圳举办 2026 年度全球发布会，旗下消费级品牌「优世界（UWORLD）」首款产品——<strong>U1 系列全尺寸超仿生人形机器人</strong>正式发布。该产品定位<strong>成人情感陪伴</strong>，搭载情感交互大模型，是全球唯一具备规模化量产能力的全尺寸超仿生人形机器人。</p>
+      <p>截至发布会当日，全渠道订单已突破 <strong>13,361 台</strong>（预售期 6 月 2 日至 6 月 30 日累计近 5000 台预订，发布当日新增超 8000 台）。价格方面，U1 基础版 <strong>11.98 万元</strong>起，最高配 Ultra 男版 99 万、女版 88 万。优必选创始人周剑表示公司 2026 年目标为 <strong>5 万台</strong> 规模化产能。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label price">价格梯度</div>
+        <ul>
+          <li>U1 基础版：11.98 万元起</li>
+          <li>U1 Pro：29.98 万元</li>
+          <li>U1 Ultra 男版：99 万元</li>
+          <li>U1 Ultra 女版：88 万元</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">关键信号</div>
+        <ul>
+          <li>17 天预售近 5000 台（远超 2025 全年 1079 台）</li>
+          <li>摩根士丹利上调 2026 中国出货预期至 5 万台</li>
+          <li>2030 年预计出货 44.6 万台，CAGR 106%</li>
+          <li>标志着人形机器人从工业→消费的里程碑转折</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>优必选 U1 订单破万是具身智能从「工业示范」迈向「消费落地」的<strong>分水岭事件</strong>。11.98 万元起的价格虽然仍有门槛，但相较往年动辄百万级的人形机器人已有数量级下降。更重要的是，U1 验证了<strong>情感陪伴</strong>作为消费级人形机器人首个杀手级场景的可行性。若优必选年内实现 5 万台交付目标，将彻底改变行业对「人形机器人何时进入家庭」的时间表预期。</p>
+    </div>
+  </div>
+
+  <!-- 条目 5 -->
+  <div class="card">
+    <span class="card-badge source">The Robot Report / 36氪</span>
+    <span class="card-badge milestone">规模化+资本</span>
+    <h3><span class="card-num">5</span> 智元 15000 台机器人下线创纪录；纽娲机器人天使轮 5000 万布局「世界通行模型」</h3>
+    <div class="content-block">
+      <p>具身智能赛道本周双线告捷。量产侧：<strong>智元机器人（AGIBOT）</strong> 宣布第 15000 台工业具身机器人 <strong>G2</strong> 正式下线，从第 10000 台到 15000 台仅用时约<strong> 1 个月</strong>，量产速度刷新全球纪录，标志着具身智能正从研发向规模化部署实质性跨越。</p>
+      <p>资本侧：前百度自动驾驶与机器人实验室主任杨睿刚创立的 <strong>纽娲机器人</strong> 完成 <strong>5000 万元</strong> 天使轮融资（蓝湖资本领投），此前已获 Plug and Play 种子轮。公司创立仅 4 个月，聚焦「具行智能」——机器人如何在人类复杂环境中自主移动、导航、完成任务。其自研物理仿真引擎 SimWeaver 相较 NVIDIA Isaac Sim 生成速度提升 <strong>3 倍</strong>，仿真到真实迁移误差降低 <strong>20%</strong>，在柔性体操作零样本成功率达 <strong>91%</strong>。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">智元量产里程碑</div>
+        <ul>
+          <li>5000 台 → 10000 台 → 15000 台：加速交付</li>
+          <li>最新下线型号 G2 工业级轮式半人形</li>
+          <li>从量产走向规模化部署</li>
+          <li>全球具身智能量产速度最快企业</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">纽娲技术突破</div>
+        <ul>
+          <li>SimWeaver 仿真引擎：3x NVIDIA Isaac Sim 速度</li>
+          <li>仿真→真实迁移误差降低 20%</li>
+          <li>柔性操作零样本成功率 91%</li>
+          <li>2026 年目标：1-2 个真实场景无图导航部署</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>智元和纽娲代表了具身智能产业的两个关键方向。智元的 <strong>15000 台量产数字</strong> 证明了工业场景具身机器人已具备真实交付能力而非停留在实验室阶段——这是产业跨越「死亡谷」的核心标志。纽娲则从 <strong>「移动通行」</strong> 这一基础能力切入，抓住了当前行业最薄弱的环节：机器人在人类环境中的自主导航与社会规则理解。两者共同说明：具身智能的竞争正在从「能不能做」转向「能不能规模化落地」和「能不能在真实环境中可靠运行」。</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>数据来源：IT之家 · 工人日报 · 中新网 · 36氪 · 华夏时报 · The Robot Report · AI铺子 · 电子工程专辑</p>
+</div>
+
+</div>
+</body>
+</html>
