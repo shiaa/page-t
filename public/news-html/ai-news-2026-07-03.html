@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年7月3日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.price { color: #34d399; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '\2192'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '\25C6'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .inline-link {
+    color: #818cf8; text-decoration: none;
+    border-bottom: 1px solid rgba(129,140,248,0.3);
+  }
+  .inline-link:hover { color: #a5b4fc; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-badge">AI DAILY BRIEF</div>
+  <h1>AI 每日动态</h1>
+  <p>聚焦 AI Coding · 具身智能 · 行业风向</p>
+  <div class="date-highlight">2026 年 7 月 3 日 · 星期五</div>
+</div>
+
+<!-- 摘要 -->
+<div class="summary-box">
+  <h3>今日摘要</h3>
+  <ul>
+    <li><span class="highlight-num">2026 全球数字经济大会</span> 在京开幕，北京 AI 产业规模突破 4500 亿</li>
+    <li>Kimi K2.7 Code 成为 <span class="highlight-num">GitHub Copilot 首个开源权重</span> 编程模型</li>
+    <li>8090 Labs 获 <span class="highlight-num">1.35 亿美元 A 轮</span>，AI 编码智能体进入受监管行业</li>
+    <li>中国具身智能市场 2026 年预计达 <span class="highlight-num">1.09 万亿元</span></li>
+    <li>优必选 Walker C1、宇树 R1 降价、特斯拉 Optimus Gen3 产能上调</li>
+  </ul>
+</div>
+
+<!-- ==================== 行业头条 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon headline">🔥</div>
+    <h2>行业头条</h2>
+  </div>
+
+  <!-- 条目 1 -->
+  <div class="card">
+    <span class="card-badge source">北京日报 / 中新网 / 新华社</span>
+    <span class="card-badge hot">今日开幕</span>
+    <h3><span class="card-num">1</span> 2026 全球数字经济大会在京开幕：北京 AI 产业规模突破 4500 亿，人形机器人 + 世界模型集中亮相</h3>
+    <div class="content-block">
+      <p>2026 全球数字经济大会于<strong> 7 月 2 日至 5 日</strong>在北京国家会议中心举行，主题为「建设数字友好城市——智惠无界，数联全球」。大会汇聚近 <strong>40 个高级别国际团组</strong>、千余位嘉宾，并设置 50 余场覆盖全产业链的专题分论坛。</p>
+      <p>新华社报道披露，北京数字经济增加值占 GDP 比重已达 <strong>46.4%</strong>，近一年人工智能产业规模突破 <strong>4500 亿元</strong>，大模型备案数量达 <strong>254 款</strong>，居全国首位。大会期间还将集中发布 <strong>近 20 项行业规则标准</strong>，覆盖 AI 伦理、数据治理、智能制造等领域。</p>
+      <p>展会现场集中展示了国内外最新人形机器人、世界模型、全栈自研仿真技术、脑机接口「北脑一号」等成果，工业级人形机器人已在工厂车间「搭把手」。</p>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>4500 亿产业规模 + 46.4% 数字经济占比，标志着北京已从「AI 创业高地」升级为「AI 产值高地」。大会同期发布的近 20 项行业标准，将直接影响 AI Coding 工具、人形机器人、世界模型等赛道的合规边界与竞争格局。人形机器人和世界模型的集中亮相，也是检验 2026 年具身智能阶段性成果的最佳窗口。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== AI Coding 方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon coding">💻</div>
+    <h2>AI Coding 方向</h2>
+  </div>
+
+  <!-- 条目 2 -->
+  <div class="card">
+    <span class="card-badge source">GitHub / Moonshot AI / AI Apps</span>
+    <span class="card-badge milestone">生态突破</span>
+    <h3><span class="card-num">2</span> Kimi K2.7 Code 成为 GitHub Copilot 首个开源权重编程模型</h3>
+    <div class="content-block">
+      <p>月之暗面（Moonshot AI）的 <strong>Kimi K2.7 Code</strong> 已作为<strong>首个开源权重模型</strong>接入 GitHub Copilot 的模型选择器。企业管理员可手动开启后供开发者使用，按实际使用量计费。</p>
+      <p>这意味着 Copilot 不再仅依赖 OpenAI、Anthropic 等闭源模型，开源权重编程模型首次进入全球最大开发者生态的核心入口。Kimi K2.7 Code 在多项代码生成与推理评测中表现突出，对中文开发场景和本地化部署也有天然优势。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">接入方式</div>
+        <ul>
+          <li>在 GitHub Copilot 模型选择器中可见</li>
+          <li>需企业管理员手动启用</li>
+          <li>按 token 使用量计费</li>
+          <li>支持私有化 / 本地化需求</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">信号意义</div>
+        <ul>
+          <li>Copilot 首次引入开源权重模型</li>
+          <li>降低对单一闭源供应商依赖</li>
+          <li>开源编码模型进入主流工作流</li>
+          <li>利好企业合规与成本控制</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>GitHub Copilot 是开发者使用最广泛的 AI 编程工具之一。Kimi K2.7 Code 的接入标志着开源权重模型在代码场景完成了从「可用」到「被主流平台采纳」的关键跨越。对企业而言，这意味着未来可以在合规、成本、私有化之间拥有更多选择权，而不再被单一闭源 API 锁定。</p>
+    </div>
+  </div>
+
+  <!-- 条目 3 -->
+  <div class="card">
+    <span class="card-badge source">8090 Labs / Salesforce Ventures / EY</span>
+    <span class="card-badge milestone">资本+落地</span>
+    <h3><span class="card-num">3</span> 8090 Labs 获 1.35 亿美元 A 轮：AI 编码智能体「Software Factory」进入受监管行业</h3>
+    <div class="content-block">
+      <p>面向医疗、航空航天、汽车等受监管行业的 AI 编码智能体平台 <strong>8090 Labs</strong> 完成 <strong>1.35 亿美元 A 轮融资</strong>，由 Salesforce Ventures 等领投。其核心产品「Software Factory」已在 EY（安永）数万顾问中推广， reportedly 将软件开发生产力提升 <strong>70%</strong>。</p>
+      <p>与传统 AI 编程工具不同，8090 Labs 强调在<strong>合规、审计、可追溯</strong>要求极高的行业中实现智能体编程，自动生成符合行业规范的代码、文档与测试。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">融资与落地</div>
+        <ul>
+          <li>A 轮：1.35 亿美元</li>
+          <li>领投：Salesforce Ventures</li>
+          <li>EY 部署范围：数万顾问</li>
+          <li>生产力提升：约 70%</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">差异化定位</div>
+        <ul>
+          <li>聚焦医疗、航空、汽车等强监管行业</li>
+          <li>强调合规、审计与可追溯</li>
+          <li>不止写代码，更生成文档与测试</li>
+          <li>智能体编程进入企业核心系统</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>AI Coding 的下一个战场不是「写更多代码」，而是「在不能出错的行业里写对代码」。8090 Labs 的高估值和大规模企业落地证明，市场愿意为「合规 + 智能体」买单。这也预示着金融、医疗、航空、政务等强监管领域将成为 AI Coding 企业的必争之地。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 具身智能方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon embodied">🤖</div>
+    <h2>具身智能方向</h2>
+  </div>
+
+  <!-- 条目 4 -->
+  <div class="card">
+    <span class="card-badge source">中国机电一体化技术应用协会 / 中新社</span>
+    <span class="card-badge milestone">产业报告</span>
+    <h3><span class="card-num">4</span> 《中国具身智能产业发展报告（2026）》发布：2026 年市场规模预计达 1.09 万亿元</h3>
+    <div class="content-block">
+      <p>《中国具身智能产业发展报告（2026）》于 <strong>7 月 2 日</strong>在 2026 上海国际具身智能产业博览会（CIEI2026）开幕式上发布。报告显示，中国具身智能市场规模从 2018 年的约 2133 亿元增长至 2026 年预计的 <strong>1.09 万亿元</strong>，年均复合增长率达 <strong>22%–23%</strong>，已成为全球增长最快的具身智能市场之一。</p>
+      <p>同期，工信部、国资委联合启动的 <strong>2026 年度人形机器人与具身智能实景实训</strong>也在推进，目标是加速人形机器人从实验室走向真实工业与服务业场景。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">市场数据</div>
+        <ul>
+          <li>2018 年：约 2133 亿元</li>
+          <li>2026 年预计：1.09 万亿元</li>
+          <li>年均复合增长率：22%–23%</li>
+          <li>全球增长最快的市场之一</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">政策与展会</div>
+        <ul>
+          <li>CIEI2026 上海国际具身智能产业博览会开幕</li>
+          <li>工信部 + 国资委实景实训启动</li>
+          <li>从实验室走向工业/服务场景</li>
+          <li>行业标准与落地并行推进</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>1.09 万亿元的市场预期和 22% 以上的年复合增长率，意味着具身智能已从「概念赛道」变为「产值赛道」。政策层面的实景实训启动，也说明监管方正在推动人形机器人从 demo 走向真实作业。对产业链上下游（减速器、丝杠、传感器、控制算法）而言，订单放量可能已在路上。</p>
+    </div>
+  </div>
+
+  <!-- 条目 5 -->
+  <div class="card">
+    <span class="card-badge source">新浪财经 / 每日经济新闻 / 野村研报</span>
+    <span class="card-badge hot">量产信号</span>
+    <h3><span class="card-num">5</span> 人形机器人量产前夜：优必选 Walker C1 发布、宇树 R1 降价至 2.99 万、特斯拉 Optimus Gen3 产能上调</h3>
+    <div class="content-block">
+      <p>近期人形机器人赛道密集释放量产信号。优必选发布全新一代面向商用服务场景的具身智能人形机器人 <strong>Walker C1</strong>；宇树科技 <strong>R1 人形机器人</strong>起售价降至 <strong>2.99 万元</strong>，进一步压低消费级门槛；特斯拉据野村研报已将 <strong>Optimus Gen3</strong> 弗里蒙特产线年化产能目标从 5 万台上调至约 <strong>7 万台</strong>，并计划 2028 年在奥斯汀新增产线。</p>
+      <p>二级市场已率先反应：7 月 2 日 A 股人形机器人板块多股涨停，机器人 ETF 涨超 1.76%。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">三款关键产品</div>
+        <ul>
+          <li>优必选 Walker C1：商用服务场景</li>
+          <li>宇树 R1：2.99 万元起，消费级门槛</li>
+          <li>特斯拉 Optimus Gen3：产能目标 7 万台/年</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">产业拐点</div>
+        <ul>
+          <li>价格从百万级降至 3 万级</li>
+          <li>产能目标从万台级向十万台级迈进</li>
+          <li>工业 + 商用 + 消费三线并进</li>
+          <li>资本市场对量产预期升温</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>2026 年可能是人形机器人从「能跑能跳」转向「能卖能干活」的关键年份。优必选、宇树、特斯拉三家分别代表商用服务、消费普及、工业量产三条路径，同步推进说明行业共识已经形成：人形机器人的竞争已从技术展示进入成本控制和规模交付阶段。2.99 万元的起售价更是直接把行业拉入大众可讨论的价格区间。</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>数据来源：新华社 · 中新网 · 北京日报 · GitHub · Moonshot AI · 8090 Labs · 中国机电一体化技术应用协会 · 新浪财经 · 每日经济新闻</p>
+</div>
+
+</div>
+</body>
+</html>
