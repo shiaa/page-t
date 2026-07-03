@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日动态 · 2026年7月4日</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-grid {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto; padding: 32px 24px 64px;
+  }
+  .header {
+    text-align: center; margin-bottom: 48px; padding: 48px 0 40px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));
+    border-radius: 24px;
+    border: 1px solid rgba(99,102,241,0.2);
+  }
+  .header-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 6px 18px; border-radius: 20px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px; font-weight: 800;
+    background: linear-gradient(135deg, #c7d2fe, #e2e8f0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+  }
+  .header p {
+    color: #94a3b8; font-size: 15px;
+  }
+  .header .date-highlight {
+    display: inline-block; margin-top: 16px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 12px; padding: 8px 24px;
+    color: #a5b4fc; font-size: 14px; font-weight: 600;
+  }
+  .section { margin-bottom: 40px; }
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(99,102,241,0.15);
+  }
+  .section-icon {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .section-icon.coding { background: rgba(245,158,11,0.15); }
+  .section-icon.embodied { background: rgba(16,185,129,0.15); }
+  .section-icon.headline { background: rgba(239,68,68,0.12); }
+  .section-title h2 {
+    font-size: 20px; font-weight: 700; color: #e2e8f0;
+  }
+  .card {
+    background: linear-gradient(135deg, rgba(30,32,60,0.95), rgba(20,22,45,0.98));
+    border: 1px solid rgba(99,102,241,0.12);
+    border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.25s;
+  }
+  .card:hover { border-color: rgba(99,102,241,0.35); }
+  .card-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+  }
+  .card-badge.source { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .card-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; }
+  .card-badge.milestone { background: rgba(16,185,129,0.12); color: #34d399; }
+  .card-badge.warning { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .card-num {
+    display: inline-block; width: 28px; height: 28px; line-height: 28px;
+    text-align: center; border-radius: 8px; font-size: 13px; font-weight: 800;
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #fff; margin-right: 8px; flex-shrink: 0;
+  }
+  .card h3 {
+    font-size: 18px; font-weight: 700; color: #f1f5f9;
+    margin-bottom: 14px; line-height: 1.5;
+  }
+  .card .content-block {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 20px 24px;
+    margin-bottom: 18px;
+    border-left: 3px solid rgba(99,102,241,0.3);
+  }
+  .card .content-block p {
+    color: #cbd5e1; font-size: 14px; line-height: 1.75;
+    margin-bottom: 8px;
+  }
+  .card .content-block p:last-child { margin-bottom: 0; }
+  .why-matters {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(239,68,68,0.06));
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 12px; padding: 16px 20px;
+  }
+  .why-matters .label {
+    font-size: 12px; font-weight: 700; color: #fbbf24;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .why-matters p {
+    color: #e2e8f0; font-size: 14px; line-height: 1.7;
+  }
+  .vs-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .vs-item {
+    background: rgba(15,16,32,0.6);
+    border-radius: 12px; padding: 16px 20px;
+    border: 1px solid rgba(99,102,241,0.1);
+  }
+  .vs-item .vs-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .vs-item .vs-label.bench { color: #38bdf8; }
+  .vs-item .vs-label.delta { color: #fbbf24; }
+  .vs-item .vs-label.price { color: #34d399; }
+  .vs-item ul {
+    list-style: none; padding: 0;
+  }
+  .vs-item ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.7;
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .vs-item ul li::before {
+    content: '\2192'; position: absolute; left: 0;
+    color: rgba(99,102,241,0.5); font-size: 11px;
+  }
+  .footer {
+    text-align: center; padding: 32px 0 16px;
+    border-top: 1px solid rgba(99,102,241,0.1);
+    color: #64748b; font-size: 13px;
+  }
+  .footer p { margin-bottom: 4px; }
+  .highlight-num {
+    font-weight: 800; color: #fbbf24;
+  }
+  .summary-box {
+    background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04));
+    border: 1px solid rgba(14,165,233,0.12);
+    border-radius: 16px; padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .summary-box h3 {
+    font-size: 16px; font-weight: 700; color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none; padding: 0;
+  }
+  .summary-box ul li {
+    font-size: 13px; color: #cbd5e1; line-height: 1.8;
+    padding: 4px 0; padding-left: 20px; position: relative;
+  }
+  .summary-box ul li::before {
+    content: '\25C6'; position: absolute; left: 0;
+    color: #0ea5e9; font-size: 8px; top: 6px;
+  }
+  .inline-link {
+    color: #818cf8; text-decoration: none;
+    border-bottom: 1px solid rgba(129,140,248,0.3);
+  }
+  .inline-link:hover { color: #a5b4fc; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-badge">AI DAILY BRIEF</div>
+  <h1>AI 每日动态</h1>
+  <p>聚焦 AI Coding · 具身智能 · 行业风向</p>
+  <div class="date-highlight">2026 年 7 月 4 日 · 星期六</div>
+</div>
+
+<!-- 摘要 -->
+<div class="summary-box">
+  <h3>今日摘要</h3>
+  <ul>
+    <li><span class="highlight-num">阿里全面禁用 Claude</span> 全系模型与 Claude Code，7 月 10 日生效</li>
+    <li>微软 <span class="highlight-num">Project Aion</span> 曝光，AI 原生操作系统颠覆传统桌面交互</li>
+    <li>Claude <span class="highlight-num">Fable 5</span> 退出订阅，改按量积分计费</li>
+    <li>宇树科技科创板 <span class="highlight-num">IPO 注册获批</span>，募资 42.02 亿元、市值 420 亿元</li>
+    <li>Genesis AI 开源 <span class="highlight-num">World 1.0</span> 全栈机器人仿真训练场</li>
+  </ul>
+</div>
+
+<!-- ==================== 行业头条 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon headline">🔥</div>
+    <h2>行业头条</h2>
+  </div>
+
+  <!-- 条目 1 -->
+  <div class="card">
+    <span class="card-badge source">智东西 / 凤凰网科技 / 同花顺</span>
+    <span class="card-badge hot">地缘博弈</span>
+    <h3><span class="card-num">1</span> 阿里全面禁用 Claude 全系模型与 Claude Code 编程智能体，中美 AI 阵营割裂加剧</h3>
+    <div class="content-block">
+      <p>7 月 3 日，阿里巴巴内部正式下发通知，宣布自<strong> 7 月 10 日</strong>起全面禁用 Anthropic 旗下 Claude 全系产品，包括 Sonnet、Opus、Fable 等模型及 <strong>Claude Code</strong> 编程智能体工具，要求员工限期完成客户端卸载与业务 API 接入下线。</p>
+      <p>据阿里内部人士回应，触发禁用的直接原因是 Claude Code 近期被曝存在<strong>植入后门与 Unicode 隐写追踪机制</strong>：程序会读取设备时区、扫描硬编码的 147 个中国互联网企业/AI 实验室域名黑名单，并通过肉眼不可见的 Unicode 形近字符对输出文本做地域与企业归属标记，存在数据溯源与跨境泄露风险。作为对等反制，Anthropic 同步开启对中国用户的大规模无差别封号。</p>
+      <p>阿里内部推荐使用自研的 <strong>Qoder</strong> 作为替代方案；美团亦同步收紧外部模型使用规范，要求业务迁移至自研 LongCat-2.0 或 DeepSeek 等国产模型。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">禁用范围</div>
+        <ul>
+          <li>Claude Sonnet / Opus / Fable 全系模型</li>
+          <li>Claude Code 编程智能体工具</li>
+          <li>客户端 + API 接入全面下线</li>
+          <li>7 月 10 日起正式生效</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">连锁反应</div>
+        <ul>
+          <li>Anthropic 大规模封禁中国账号</li>
+          <li>美团限制豆包、优先国产/自研模型</li>
+          <li>Meta 内部禁用 Claude Code / Codex</li>
+          <li>全球 AI 生态阵营化加速</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>这不仅是某一家企业的工具替换，而是中美 AI 产业从「技术竞争」升级为「双向封锁、阵营割裂」的标志性事件。Claude Code 内置未公示的隐写追踪机制，彻底动摇了海外闭源工具在全球开发者心中的信任基础；对国内企业而言，「国产芯片 + 国产大模型 + 本土开发工具」的全链路自主可控已成为刚需，AI Coding 赛道的选型逻辑正从「性能优先」转向「安全与合规优先」。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== AI Coding 方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon coding">💻</div>
+    <h2>AI Coding 方向</h2>
+  </div>
+
+  <!-- 条目 2 -->
+  <div class="card">
+    <span class="card-badge source">AIBase / 科技行业爆料</span>
+    <span class="card-badge milestone">系统革新</span>
+    <h3><span class="card-num">2</span> 微软 Project Aion 系统曝光：基于 Edge 的 AI 原生 OS，Copilot 全面替代传统桌面</h3>
+    <div class="content-block">
+      <p>微软内部全新操作系统项目 <strong>Project Aion</strong> 近日曝光。该系统专为 AI PC 打造，完全基于 Microsoft Edge 浏览器与轻量化 Web 技术构建，彻底摒弃传统桌面、系统图标与开始菜单，以 <strong>Copilot</strong> 智能助手作为唯一核心交互入口。</p>
+      <p>Project Aion 引入 <strong>"Spaces"</strong> 智能任务分组机制，可根据办公、编程、内容创作等场景自动归类整合任务与文件，用户仅凭自然语言指令即可完成全流程操作。系统同时联动 Windows 365 云服务，兼顾轻量化体验与完整办公能力。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">与传统 Windows 的区别</div>
+        <ul>
+          <li>无传统桌面与开始菜单</li>
+          <li>无原生客户端应用生态</li>
+          <li>全程 Web 化、跨终端、轻量化</li>
+          <li>Copilot 是唯一交互入口</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">核心创新</div>
+        <ul>
+          <li>Spaces 场景化任务分组</li>
+          <li>自然语言驱动全流程</li>
+          <li>Windows 365 云桌面联动</li>
+          <li>AI 引导型智能环境</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>当 AI 编程工具还在争夺 IDE 插件入口时，微软已经开始重新定义操作系统的底层交互范式。Project Aion 若落地，意味着 AI Coding 将从「代码编辑器里的辅助」升级为「整个操作系统层面的编排中心」；对开发者而言，未来可能需要同时掌握自然语言意图工程、Web 原生应用开发与 AI 智能体协同能力。</p>
+    </div>
+  </div>
+
+  <!-- 条目 3 -->
+  <div class="card">
+    <span class="card-badge source">AIBase / Anthropic</span>
+    <span class="card-badge warning">商业模式</span>
+    <h3><span class="card-num">3</span> Claude Fable 5 退出订阅改按量计费，旗舰模型付费模式生变</h3>
+    <div class="content-block">
+      <p>Anthropic 宣布自<strong> 7 月 7 日</strong>起，将旗下最强模型 <strong>Claude Fable 5</strong> 从 Pro、Max 等各档订阅服务中移除，转为按使用量积分计费。此前 Pro/Max 用户每周可使用 Fable 5 的额度最高占 50%，新规生效后将全部失效。</p>
+      <p>就在此前，美国商务部刚撤销对 Fable 系列的出口限制，Anthropic 正进行全球重新部署。与此同时，AI 安全中心发布的远程劳动指数显示，<strong>Claude Fable 5 在 3D 建模、建筑设计、平面设计、视频动画等真实自由职业项目中以 16.1% 自动化率刷新历史纪录</strong>，远超此前 4.17% 的最高水平。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">计费变化</div>
+        <ul>
+          <li>7 月 7 日起从订阅中移除</li>
+          <li>Pro/Max 原有 Fable 额度失效</li>
+          <li>改为按 token / 积分计费</li>
+          <li>重度用户成本预计大幅上涨</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">能力信号</div>
+        <ul>
+          <li>远程劳动指数 16.1% 自动化率</li>
+          <li>覆盖 3D / 建筑 / 平面 / 动画</li>
+          <li>八个月内从 2.5% 跃升至 16.1%</li>
+          <li>直逼自由职业者交付质量</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>顶级模型的稀缺性正在从「能不能用」转向「用不用得起」。Fable 5 退出订阅制，说明 Anthropic 在算力紧张与全球合规压力之下，开始用价格杠杆筛选高价值企业客户；而对 AI Coding 和创意工作者而言，这意味着顶尖能力的获取成本将显著上升，国产/开源替代模型的性价比优势会进一步凸显。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 具身智能方向 ==================== -->
+<div class="section">
+  <div class="section-title">
+    <div class="section-icon embodied">🤖</div>
+    <h2>具身智能方向</h2>
+  </div>
+
+  <!-- 条目 4 -->
+  <div class="card">
+    <span class="card-badge source">同花顺 / 新浪财经 / 证券时报</span>
+    <span class="card-badge milestone">资本里程碑</span>
+    <h3><span class="card-num">4</span> 宇树科技科创板 IPO 注册获批：73 天闪电过会，募资 42.02 亿元、市值 420 亿元</h3>
+    <div class="content-block">
+      <p>7 月 2 日盘后，证监会正式同意 <strong>宇树科技</strong> 首次公开发行股票注册。公司科创板 IPO 于 6 月 1 日通过上市委审议，从 3 月 20 日获受理到过会仅用时 <strong>73 天</strong>，创下 2026 年科创板最快审核纪录，也超过此前摩尔线程 88 天的速度。</p>
+      <p>本次 IPO 拟募资 <strong>42.02 亿元</strong>，按发行比例计算初始发行市值已达 <strong>420 亿元</strong>。财务数据显示，宇树科技 2023-2025 年营收分别为 1.59 亿元、3.92 亿元、<strong>17.08 亿元</strong>；扣非归母净利润从 -0.18 亿元扭亏至 <strong>5.9 亿元</strong>，是业内少数实现盈利的具身智能企业。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">IPO 关键数据</div>
+        <ul>
+          <li>审核周期：73 天（受理到过会）</li>
+          <li>拟募资：42.02 亿元</li>
+          <li>初始发行市值：420 亿元</li>
+          <li>2025 年扣非净利润：5.9 亿元</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">募资用途</div>
+        <ul>
+          <li>智能机器人模型研发</li>
+          <li>机器人本体研发</li>
+          <li>智能制造基地建设</li>
+          <li>加速国产具身智能落地</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>宇树科技闪电过会并获批注册，是监管层对国产具身智能「硬科技」方向的明确背书。420 亿市值 + 持续盈利，证明人形机器人/四足机器人已经从「烧钱赛道」进入「自我造血」阶段；随着募投资金到位，其在模型、本体、制造端的扩张速度会进一步加快，产业链上下游的订单与协同机会值得关注。</p>
+    </div>
+  </div>
+
+  <!-- 条目 5 -->
+  <div class="card">
+    <span class="card-badge source">AIBase / 站长之家 / Genesis AI</span>
+    <span class="card-badge milestone">基础设施</span>
+    <h3><span class="card-num">5</span> Genesis AI 开源 World 1.0 全栈训练场：200 小时真实评测压缩至 0.5 小时</h3>
+    <div class="content-block">
+      <p>凭借"机器人炒番茄炒蛋"视频走红的 <strong>Genesis AI</strong> 公司，正式发布并开源其核心仿真基础设施 <strong>Genesis World 1.0</strong>。该开源资源包包含三大核心项目：Genesis World 物理仿真平台、Quadrants 跨平台 GPU 编译器，以及 Nyx 写实渲染器，底层逻辑全部自主研发。</p>
+      <p>据官方披露，Genesis World 1.0 可将原本在真实世界中需要 <strong>200 多小时</strong>的机器人评测任务压缩至 <strong>0.5 小时</strong>内完成，且仿真评测结果与真实硬件运行的相关性高达 <strong>89%</strong>。Genesis AI 将该平台定位为机器人基础模型的评测与迭代引擎。</p>
+    </div>
+    <div class="vs-box">
+      <div class="vs-item">
+        <div class="vs-label bench">开源组件</div>
+        <ul>
+          <li>Genesis World 物理仿真平台</li>
+          <li>Quadrants 跨平台 GPU 编译器</li>
+          <li>Nyx 写实渲染器</li>
+          <li>全栈自主研发、开源可商用</li>
+        </ul>
+      </div>
+      <div class="vs-item">
+        <div class="vs-label delta">效率提升</div>
+        <ul>
+          <li>真实评测 200+ 小时 → 0.5 小时</li>
+          <li>仿真与真实硬件相关性 89%</li>
+          <li>降低真实场景测试成本</li>
+          <li>加速 Physical AI 商业化</li>
+        </ul>
+      </div>
+    </div>
+    <div class="why-matters">
+      <div class="label">为什么值得关注</div>
+      <p>具身智能最大的瓶颈之一，是真实世界训练成本极高且难以规模化。Genesis World 1.0 把评测效率提升数百倍，同时保持接近 90% 的真实相关性，相当于为机器人基础模型提供了一个"可无限重开的虚拟练兵场"。这对降低人形机器人、家庭服务机器人、工业机器人的研发门槛具有基础设施级意义，也可能催生新一代机器人基础模型的快速迭代。</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>数据来源：智东西 · 凤凰网科技 · 同花顺 · 新浪财经 · 站长之家 · AIBase</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -3,6 +3,60 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-04',
+    title: 'AI 每日动态 (2026-07-04)',
+    summary: '1. 1 阿里全面禁用 Claude 全系模型与 Claude Code 编程智能体，中美 AI 阵营割裂加剧 💡 值得关注 : 为什么值得关注 AI Coding 方向 1. 2 微软 Project Aion 系统曝光：基于 Edge ...',
+    date: '2026-07-04',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月4日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 行业头条
+
+### 1. 1 阿里全面禁用 Claude 全系模型与 Claude Code 编程智能体，中美 AI 阵营割裂加剧
+
+💡 **值得关注**: 为什么值得关注
+
+
+---
+
+## AI Coding 方向
+
+### 1. 2 微软 Project Aion 系统曝光：基于 Edge 的 AI 原生 OS，Copilot 全面替代传统桌面
+
+💡 **值得关注**: 为什么值得关注
+
+
+### 2. 3 Claude Fable 5 退出订阅改按量计费，旗舰模型付费模式生变
+
+💡 **值得关注**: 为什么值得关注
+
+
+---
+
+## 具身智能方向
+
+### 1. 4 宇树科技科创板 IPO 注册获批：73 天闪电过会，募资 42.02 亿元、市值 420 亿元
+
+💡 **值得关注**: 为什么值得关注
+
+
+### 2. 5 Genesis AI 开源 World 1.0 全栈训练场：200 小时真实评测压缩至 0.5 小时
+
+💡 **值得关注**: 为什么值得关注
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-03',
     title: 'AI 每日动态 (2026-07-03)',
     summary: '1. 1 2026 全球数字经济大会在京开幕：北京 AI 产业规模突破 4500 亿，人形机器人 + 世界模型集中亮相 💡 值得关注 : 为什么值得关注 AI Coding 方向 1. 2 Kimi K2.7 Code 成为 GitHub ...',
