@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-06</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 06 · 周日</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Anthropic 启动自研 AI 芯片，挖角 OpenAI 造芯老兵，密谈三星 2nm 工艺</h3>
+    <div class="meta">
+      <span class="tag">AI 芯片</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">供应链</span>
+    </div>
+    <p>据 The Information 报道，Anthropic 已启动自研 AI 芯片的早期筹备工作，并与三星电子就代工合作展开深度洽谈，考虑选项包括三星 2nm GAA 制程与 2.5D 先进封装。上月 Anthropic 挖来 OpenAI 定制芯片团队早期成员 Clive Chan，芯片工程师岗位也已对外挂出。尽管项目仍在规格定义阶段，Anthropic 从"考虑"到"接触代工厂"仅用了不到三个月。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>头部大模型公司里，Anthropic 是最后一个没有自研芯片的玩家——Google TPU、Amazon Trainium、Meta MTIA、微软 Maia、OpenAI Jalapeño 已全部亮牌。Anthropic 年化收入从 90 亿到 470 亿的五倍增长，背后是同样暴增的算力账单；自研芯片不是为了替代英伟达（英伟达份额反升至 74%），而是为多供应商牌桌多攥一张长期筹码——议价权和效率优化。Clive Chan 的加入说明它在认真搭建能力，但从定义到流片量产，中间仍隔着芯片行业最残酷的鸿沟。
+    </div>
+    <div class="source">来源：<a href="https://www.theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip" target="_blank">The Information</a> · <a href="https://www.sohu.com/a/1045222354_473283" target="_blank">新智元</a> · <a href="https://www.chinaz.com/ainews/29350.shtml" target="_blank">ChinaZ</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Meta 筹建云算力业务对外出售 AI 算力，引发算力市场格局震动</h3>
+    <div class="meta">
+      <span class="tag">算力格局</span>
+      <span class="tag green">Meta</span>
+      <span class="tag pink">云业务</span>
+    </div>
+    <p>7 月 1 日彭博社报道，Meta 正组建名为"Meta Compute"的云业务部门，计划向外部客户出售多余的 AI 算力并开放模型 API。消息传出当日 Meta 大涨 8.8%（市值增约 1270 亿美元），而算力供应商 CoreWeave、Nebius 分别重挫 13.9% 和 17%，美光、闪迪等存储芯片股跌超 10%。三星自研 AI 加速器 MTIA 第三代起从台积电转投三星 2nm 工艺，代工订单规模超 10 万亿韩元。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"最大客户变对手"是算力市场最残酷的剧本——CoreWeave 4 月刚与 Meta 签下 350 亿美元算力供应协议，转眼 Meta 自己卖算力。这暴露了两个信号：一是头部大模型公司的 GPU 采购已远超当前训练需求，富余算力正在商品化；二是专用云厂商的护城河被大客户自建直接侵蚀。对 AI Coding 开发者来说，算力供给端价格战意味着推理成本持续下行，API 调用单价可能进一步降低。
+    </div>
+    <div class="source">来源：<a href="https://finance.sina.com.cn/roll/2026-07-02/doc-inifmfea0950247.shtml" target="_blank">新浪财经</a> · <a href="https://baijiahao.baidu.com/s?id=1869709211568163321" target="_blank">百度财经</a> · <a href="https://news.qq.com/rain/a/20260705A000IU00" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Cursor 推出移动端 AI 编程应用 Cursor Mobile，手机操控编码智能体成新趋势</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor</span>
+      <span class="tag pink">移动端</span>
+    </div>
+    <p>6 月 30 日（美国时间），Cursor 正式发布首款 iPhone/iPad 应用"Cursor Mobile"，允许开发者从手机启动、监控和审查远程 AI 编码智能体（Coding Agents），无需全天守在电脑前。该应用与 Cursor 2.0 深度整合，延续从"手写代码"到"监督代码代理"的范式转变。Anthropic Claude Code 部门负责人 Boris Cherny 也透露其大部分编码工作已转向移动端。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>AI Coding 正经历一场"终端解放"——从多屏桌面依赖走向手机即可监督 Agent 的模式。Cursor Mobile 不是简单的代码查看器，而是 Agent 远程操控终端，开发者可以在通勤、午休时启动任务并实时查看进度。这意味着 AI Coding Agent 的工作模式正式从"辅助编写"进化为"异步委托+监督验收"，对 DevOps/SRE 场景（远程排查、紧急修复）尤其友好。
+    </div>
+    <div class="source">来源：<a href="https://www.chinaz.com/ainews/29244.shtml" target="_blank">ChinaZ</a> · <a href="https://news.qq.com/rain/a/20260701A0A0TI00" target="_blank">腾讯新闻</a> · <a href="https://www.sohu.com/a/1043516247_122396381" target="_blank">搜狐科技</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 首款硬件 Codex Micro 可编程宏键盘 7 月 15 日发售，深度绑定 Codex 编码工具</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">硬件</span>
+    </div>
+    <p>6 月 30 日，OpenAI 在 AI Engineer World Fair 上正式公布首款硬件产品——与 Work Louder 联名推出的 Codex Micro 可编程宏键盘。这款方形 Macro Pad 配有多个可编程按键，专为 Codex 编码工具的快捷操作定制，7 月 15 日正式发售。此前业界普遍期待 OpenAI 与 Jony Ive 合作打造的消费级 AI 设备"Gumdrop"，但首款硬件选择了更务实的开发者工具方向。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>OpenAI 首款硬件选择"开发者键盘"而非消费级设备，信号很明确：现阶段 AI 硬件的商业闭环在开发者侧，不在大众侧。Codex Micro 本质是把 Codex Agent 的常用操作（生成代码、运行测试、提交 PR）映射到物理按键，降低"打开 IDE → 输入指令"的操作摩擦。虽然单品影响力有限，但它标志着 OpenAI 开始构建"模型+工具+硬件"的全栈入口——Jony Ive 的 Gumdrop 年底才来，先拿开发者练手。
+    </div>
+    <div class="source">来源：<a href="https://tech.ifeng.com/c/8uNB1eaY1v4" target="_blank">凤凰科技</a> · <a href="https://finance.sina.com.cn/tech/roll/2026-07-01/doc-inifheyy1138404.shtml" target="_blank">新浪财经</a> · <a href="https://news.qq.com/rain/a/20260630A029UF00" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>南京具身智能机器人产业展 7 月 10-12 日即将开幕，450+ 企业参展构建完整生态链</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业展会</span>
+      <span class="tag pink">生态链</span>
+    </div>
+    <p>2026 中国（南京）具身智能机器人产业展将于 7 月 10-12 日举行，预计吸引 450+ 海内外参展企业、35000+ 专业观众。展会覆盖从核心零部件（传感器、执行器、AI 芯片）到整机系统（人形机器人、服务机器人、特种机器人）再到行业解决方案的全产业链，构建"技术-产品-应用"完整生态链。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>继上海 CIEI 2026 之后，南京展会是本月第二场大型具身智能产业展，叠加 WAIC 7 月 17-20 日在上海举办，7 月堪称"具身智能超级催化月"。450+ 企业参展意味着从零部件到整机到方案的全链条正在加速聚合——产业已经从"单品秀"进入"供应链整合"阶段。对关注投资机会或供应链入行的人，展会上 VLA 模型、灵巧手、力矩传感器、端侧 AI 芯片四大子赛道的最新进展值得重点跟踪。
+    </div>
+    <div class="source">来源：<a href="https://www.msn.cn/zh-cn/%E6%8A%80%E6%9C%AF/%E6%9C%BA%E5%99%A8%E4%BA%BA/2026-%E4%B8%AD%E5%9B%BD-%E5%8D%97%E4%BA%AC-%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%A7%E4%B8%9A%E5%B1%B1%E5%B0%86%E4%BA%8E7%E6%9C%8810-12%E6%97%A5%E4%B8%BE%E8%A1%8C/ar-AA27fPJv" target="_blank">MSN</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：The Information · 新智元 · ChinaZ · 新浪财经 · 百度财经 · 腾讯新闻 · 搜狐科技 · 凤凰科技 · MSN · AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>

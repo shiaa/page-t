@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-06',
+    title: 'AI 每日动态 (2026-07-06)',
+    summary: '1. Anthropic 启动自研 AI 芯片，挖角 OpenAI 造芯老兵，密谈三星 2nm 工艺 2. Meta 筹建云算力业务对外出售 AI 算力，引发算力市场格局震动 3. Cursor 推出移动端 AI 编程应用 Cursor M...',
+    date: '2026-07-06',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月6日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Anthropic 启动自研 AI 芯片，挖角 OpenAI 造芯老兵，密谈三星 2nm 工艺
+
+
+### 2. Meta 筹建云算力业务对外出售 AI 算力，引发算力市场格局震动
+
+
+### 3. Cursor 推出移动端 AI 编程应用 Cursor Mobile，手机操控编码智能体成新趋势
+
+
+### 4. OpenAI 首款硬件 Codex Micro 可编程宏键盘 7 月 15 日发售，深度绑定 Codex 编码工具
+
+
+### 5. 南京具身智能机器人产业展 7 月 10-12 日即将开幕，450+ 企业参展构建完整生态链
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-05',
     title: 'AI 每日动态 (2026-07-05)',
     summary: '1. 宇树科技科创板 IPO 注册获批，A股"具身智能第一股"正式进入发行倒计时 2. 人社部公示 12 个新职业，"具身智能机器人应用技术员"、"智能体开发员"正式入列 3. WAIC 2026 将于 7 月 17 20 日在上海举办，超...',
