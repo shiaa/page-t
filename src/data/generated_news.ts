@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-07',
+    title: 'AI 每日动态 (2026-07-07)',
+    summary: '1. 腾讯混元 Hy3 正式发布：Agent 能力与产品体验跃升，WorkBuddy/CodeBuddy 已接入 2. DeepSeek 生态补上编程 Agent：Deep Code 开源终端助手适配 DeepSeek V4 3. 美团 L...',
+    date: '2026-07-07',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月7日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 腾讯混元 Hy3 正式发布：Agent 能力与产品体验跃升，WorkBuddy/CodeBuddy 已接入
+
+
+### 2. DeepSeek 生态补上编程 Agent：Deep Code 开源终端助手适配 DeepSeek-V4
+
+
+### 3. 美团 LongCat-2.0 正式开源：1.6 万亿参数 MoE，华为昇腾/摩尔线程/沐曦股份 Day-0 适配
+
+
+### 4. 李飞飞团队发布 SimFoundry：一段真实视频即可生成无限机器人训练场
+
+
+### 5. 星动纪元完成新一轮 10 亿元融资：国资组团入场，物流场景已常态化 7×24 小时运营
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-06',
     title: 'AI 每日动态 (2026-07-06)',
     summary: '1. Anthropic 启动自研 AI 芯片，挖角 OpenAI 造芯老兵，密谈三星 2nm 工艺 2. Meta 筹建云算力业务对外出售 AI 算力，引发算力市场格局震动 3. Cursor 推出移动端 AI 编程应用 Cursor M...',
