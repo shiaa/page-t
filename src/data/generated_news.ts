@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-08',
+    title: 'AI 每日动态 (2026-07-08)',
+    summary: '1. WAIC 2026 新闻发布会：展览面积首破 10 万平米，智算与具身双赛道各超 200 家企业，300 余款产品全球首发 2. Cursor Mobile 正式发布：AI 编程进入"移动 Agent 时代"，开发者可在手机上远程指挥...',
+    date: '2026-07-08',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月8日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. WAIC 2026 新闻发布会：展览面积首破 10 万平米，智算与具身双赛道各超 200 家企业，300 余款产品全球首发
+
+
+### 2. Cursor Mobile 正式发布：AI 编程进入"移动 Agent 时代"，开发者可在手机上远程指挥编码代理
+
+
+### 3. Karpathy 700 次 Loop 实验揭示 Agent 最大误区：76% 性能提升与模型无关，业界过度追求速度忽视底层机制
+
+
+### 4. Agility Robotics 宣布 25 亿美元 SPAC 上市：人形机器人首个纯正美股标的诞生，Foxconn 领投 2 亿美元
+
+
+### 5. 智元机器人第 15,000 台量产下线：Genie G2 工厂 6 天直播 17,625 项任务，成功率 99.99%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-07',
     title: 'AI 每日动态 (2026-07-07)',
     summary: '1. 腾讯混元 Hy3 正式发布：Agent 能力与产品体验跃升，WorkBuddy/CodeBuddy 已接入 2. DeepSeek 生态补上编程 Agent：Deep Code 开源终端助手适配 DeepSeek V4 3. 美团 L...',

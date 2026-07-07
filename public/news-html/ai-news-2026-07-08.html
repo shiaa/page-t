@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-08</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 08 · 周三</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>WAIC 2026 新闻发布会：展览面积首破 10 万平米，智算与具身双赛道各超 200 家企业，300 余款产品全球首发</h3>
+    <div class="meta">
+      <span class="tag">WAIC 2026</span>
+      <span class="tag green">7月17日开幕</span>
+      <span class="tag pink">行业风向标</span>
+    </div>
+    <p>7 月 7 日，上海市政府召开 WAIC 2026 新闻发布会。本届大会将于 7 月 17-20 日在世博、张江、西岸"三地四馆"举办，展览面积首破 10 万平方米，1100 余家企业携 3000 余项展品参展，其中 300 余款产品全球首发。智算与具身智能两大赛道各汇聚超 200 家企业。已确认 9 位图灵奖/诺贝尔奖得主参会，强化学习之父理查德·萨顿将发表主旨演讲。华为最大规模超节点 Atlas 950 真机、MiniMax M3 多模态大模型、阶跃 Agent 操作系统、全球首款 AI 智能体手机、多款新一代人形机器人与 AI 灵巧手等重磅新品将集中亮相。同期首设高水平国际学术会议 WAIC Academic，由图灵奖得主姚期智担任主席。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>WAIC 是中国 AI 产业的年度定调会议。今年智算与具身并列为两大核心赛道，且各超 200 家企业参展，说明具身智能已从"AI 的附属话题"升级为独立的一级赛道。"全球首款 AI 智能体手机"和"阶跃 Agent 操作系统"都是全新的产品形态，可能定义下一个交互范式。上海 AI 产业规模已达 6370 亿元（同比+39.5%），这个增速本身就回答了"AI 是不是泡沫"。
+    </div>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20260707A04Y0D00" target="_blank">第一财经</a> · <a href="https://finance.sina.com.cn/tech/digi/2026-07-07/doc-inifyeex8204391.shtml" target="_blank">新浪科技</a> · <a href="https://www.eet-china.com/mp/a507975.html" target="_blank">电子工程专辑</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Cursor Mobile 正式发布：AI 编程进入"移动 Agent 时代"，开发者可在手机上远程指挥编码代理</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor</span>
+      <span class="tag pink">移动端</span>
+    </div>
+    <p>6 月 30 日，Cursor 正式推出 iOS 版移动端应用 Cursor Mobile，面向所有付费用户开放公测。用户可通过手机选择代码仓库和模型，用语音或斜杠命令启动 AI 编码 Agent，并实时监控桌面端 Agent 的执行进度、查看代码差异、直接合并 PR。Anthropic Claude Code 负责人鲍里斯·切尔尼公开透露，他现在大部分编码工作实际上都在手机上完成——"如果六个月前有人说我会用手机写代码，我一定觉得他疯了。" 这标志着 AI 编程工具的核心交互正从"键盘敲代码"转向"自然语言指挥 Agent"，开发者角色从编码者变为 Agent 编排者。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cursor Mobile 的发布不是简单的"移动端适配"，而是整个 AI Coding 范式迁移的信号。当编码 Agent 可以在云端独立运行、开发者只在手机端下达指令和审阅结果时，"写代码"的定义已经变了。对运维/SRE 来说，这意味着未来可能不再需要时刻守着终端——在手机上说一句"排查一下生产环境昨晚的 5xx 错误"就能让 Agent 干活，你只需要最后确认关键决策。
+    </div>
+    <div class="source">来源：<a href="https://www.chinaz.com/ainews/29253.shtml" target="_blank">AIBase</a> · <a href="https://www.msn.cn/zh-cn/news/other/马斯克发cursor手机版-撞档openclaw-ai编程app入口战打响了/ar-AA26S8dJ" target="_blank">智东西</a> · <a href="https://news.qq.com/rain/a/20260701A0A0TI00" target="_blank">多知网</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Karpathy 700 次 Loop 实验揭示 Agent 最大误区：76% 性能提升与模型无关，业界过度追求速度忽视底层机制</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Agent 研究</span>
+      <span class="tag pink">Karpathy</span>
+    </div>
+    <p>前 OpenAI 联合创始人、现 Anthropic 预训练研究员 Andrej Karpathy 在近期访谈中指出，"今天 AI 行业最大的误区，是大家都在逼 Agent 尽快干活，却没有先把底层模型和系统机制理解吃透。" 他通过 700 次 Loop 实验得出结论：76% 的 Agent 性能提升与模型本身无关，而来自于更好的系统设计——包括上下文管理、工具调用策略、错误恢复机制等。这一结论直接挑战了"堆更大的模型就能做出更好的 Agent"的主流叙事。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Karpathy 的结论对 AI Coding 工具赛道有直接指导意义——Cursor、Claude Code、Copilot 的竞争差异点可能不在接入什么模型，而在于 Agent 系统工程（prompt 编排、上下文窗口管理、工具链集成、错误自愈）。对个人开发者而言，用同一个模型在不同工具上体验可能天差地别，原因就在于此。如果你是工具选型者，比模型更该比的是 Agent 框架的工程质量。
+    </div>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20260706A09QIN00" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>Agility Robotics 宣布 25 亿美元 SPAC 上市：人形机器人首个纯正美股标的诞生，Foxconn 领投 2 亿美元</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">IPO</span>
+      <span class="tag pink">里程碑</span>
+    </div>
+    <p>7 月 7 日，美国俄勒冈人形机器人公司 Agility Robotics 宣布与 Churchill Capital Corp XI 合并，以 25 亿美元估值通过 SPAC 上市，预计募资超 6.2 亿美元。Foxconn（富士康）领投 2 亿美元 PIPE，合并后将使用代码 AGLT 交易。Agility 的双足机器人 Digit 已在 9 个客户工厂累计运行 65,000 小时，下一代 Digit v5 获 3 亿美元多年订单，定位为首款"人机协作安全"的 AI 人形机器人。其 RoboFab 工厂年产能 1 万台，75% 零部件美国本土供应，已与 Nvidia Halos 安全平台和 Google DeepMind 建立合作。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是全球首个纯人形机器人公司大型上市案例，对行业有锚定效应——25 亿美元估值、3 亿美元订单、6.5 万小时运行数据，为整个人形机器人赛道提供了公开的"价值参照系"。Foxconn 的角色尤其值得玩味：它不是财务投资，而是供应链级别的参与——作为全球最大电子代工厂，Foxconn 入局意味着人形机器人大规模制造的技术路径已在供应链端得到验证。
+    </div>
+    <div class="source">来源：<a href="https://embodiedglobal.com/en/article/agility-robotics-2-5b-spac-churchill-digit-v5-aglt-ipo" target="_blank">Embodied Global</a> · <a href="https://roboticsandautomationnews.com/2026/07/07/agility-robotics-to-go-public-through-2-5-billion-spac-merger/103130/" target="_blank">Robotics & Automation News</a></div>
+  </div>
+
+  <div class="card">
+    <h3>智元机器人第 15,000 台量产下线：Genie G2 工厂 6 天直播 17,625 项任务，成功率 99.99%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">量产里程碑</span>
+      <span class="tag pink">工厂落地</span>
+    </div>
+    <p>智元机器人（Agibot）6 月 28 日完成第 15,000 台通用具身机器人下线，距离 3 月突破万台仅不到 3 个月，年化柔性产能已超 10 万台。为证明部署真实性，8 台 Genie G2 轮式双臂机器人在龙旗科技南昌平板工厂进行了连续 6 天（6 月 23-28 日）无彩排透明直播，在 4 个工站完成 MMIT、杂散发射、耦合检测等 17,625 项生产任务，成功率 99.99%，单件检测约 2 秒、定位精度 ±0.1mm。工信部同期预测 2026 年全国人形机器人产量将突破 10 万台，智元的数据为此提供了自下而上的验证。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"15000 台 + 99.99% 成功率 + 6 天透明直播"的组合拳，让"具身智能落地"从 PR 话术变成了可验证事实。值得注意的关键细节：首个工站部署耗时 4 个月，第二个工站仅 1 周，后续工站 1-2 周——部署学习曲线正在急剧坍塌。人形机器人的产业导入周期，正在以传统工业机器人十分之一的时间完成。这对于关注具身智能投资和就业机会的人来说，意味着窗口期比预想的要短得多。
+    </div>
+    <div class="source">来源：<a href="https://embodiedglobal.com/en/article/agibot-15000th-genie-g2-unit-longqi-factory-99-99" target="_blank">Embodied Global</a> · 新华社 · 上海青年报 · 财联社</div>
+  </div>
+
+  <footer>
+    <p>数据来源：第一财经 · 新浪科技 · 电子工程专辑 · AIBase · 智东西 · 腾讯新闻 · Embodied Global · Robotics & Automation News · 新华社 · 财联社</p>
+  </footer>
+
+</div>
+</body>
+</html>
