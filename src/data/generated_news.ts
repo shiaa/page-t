@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-10',
+    title: 'AI 每日动态 (2026-07-10)',
+    summary: '1. 7 月 AI 大模型“大乱斗”进入高潮：GPT 5.6 Sol 上线、Grok 4.5 开放，Gemini 3.5 Pro / DeepSeek V4 蓄势待发 2. 工信部通报 Claude Code 存在严重安全后门，阿里今日起全...',
+    date: '2026-07-10',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月10日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 7 月 AI 大模型“大乱斗”进入高潮：GPT-5.6 Sol 上线、Grok 4.5 开放，Gemini 3.5 Pro / DeepSeek V4 蓄势待发
+
+
+### 2. 工信部通报 Claude Code 存在严重安全后门，阿里今日起全面禁用并推荐 Qoder 替代
+
+
+### 3. SpaceX AI 发布首个编程智能体模型 Grok 4.5：与 Cursor 联合训练，成本不到同级一半
+
+
+### 4. 2026 中国（南京）具身智能机器人产业展今日开幕，450+ 企业构建全产业链生态
+
+
+### 5. 工信部：今年我国人形机器人整机产量有望突破 10 万台，规上工业企业 AI 应用普及率超 30%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-09',
     title: 'AI 每日动态 (2026-07-09)',
     summary: '1. OpenAI GPT 5.6 今日全球发布：Sol/Terra/Luna 三版本正式开放，编程屠榜、定价分层 2. GAIC 全球人工智能大会北京峰会 7 月 8 9 日举行，AI 产业链上下游共议落地 3. 豆包 2.1 Pro C...',
