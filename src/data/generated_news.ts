@@ -3,6 +3,81 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-12',
+    title: 'AI 每日动态 (2026-07-12)',
+    summary: '1. OpenAI GPT 5.6 系列正式公开，Sol/Terra/Luna 三档定价，多 Agent 并行能力成旗舰标配 2. OpenAI GPT Live 同步全双工语音上线，Agent 入口从键盘扩展到"会听话的嘴" 3. Wiz...',
+    date: '2026-07-12',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月12日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI GPT-5.6 系列正式公开，Sol/Terra/Luna 三档定价，多 Agent 并行能力成旗舰标配
+
+
+### 2. OpenAI GPT-Live 同步全双工语音上线，Agent 入口从键盘扩展到"会听话的嘴"
+
+
+### 3. Wiz 披露 GhostApproval 高危漏洞，六大主流 AI 编程助手可被恶意仓库静默植入 SSH 公钥
+
+
+### 4. Meta Muse Spark 1.1 发布，Z uckerberg 时隔三年重返 X 力推"低价多面手 Agent"
+
+
+### 5. NVIDIA × Hugging Face 联手开源人形机器人管线，Isaac GR00T 1.7 + LeRobot 打通行采集到部署全链路
+
+
+### 6. WAIC 2026 将于 7/17-20 在上海三地四馆启幕，智算与具身智能各聚 200+ 企业
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
+    id: 'ai-news-daily-2026-07-11',
+    title: 'AI 每日动态 (2026-07-11)',
+    summary: '1. Science 报道 AI 智能体 40 分钟完成人类 60 小时实验，自主科研进入加速通道 2. OpenAI 正式发布 GPT 5.6 系列并推出 ChatGPT Work，企业级 AI 智能体再进一步 3. Cursor 被曝秘...',
+    date: '2026-07-11',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月11日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Science 报道 AI 智能体 40 分钟完成人类 60 小时实验，自主科研进入加速通道
+
+
+### 2. OpenAI 正式发布 GPT-5.6 系列并推出 ChatGPT Work，企业级 AI 智能体再进一步
+
+
+### 3. Cursor 被曝秘密开发办公助手 Sand，从代码编辑器向通用工作平台扩张
+
+
+### 4. 蚂蚁 LingBot 开源 LingBot-VA 2.0，提出“具身原生”机器人大脑新架构
+
+
+### 5. 1X 发布 25-DOF 灵巧手，智元 C5 机器人批量进入比亚迪工厂
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-10',
     title: 'AI 每日动态 (2026-07-10)',
     summary: '1. 7 月 AI 大模型“大乱斗”进入高潮：GPT 5.6 Sol 上线、Grok 4.5 开放，Gemini 3.5 Pro / DeepSeek V4 蓄势待发 2. 工信部通报 Claude Code 存在严重安全后门，阿里今日起全...',

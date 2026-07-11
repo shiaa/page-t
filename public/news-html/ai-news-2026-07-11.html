@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-11</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 11 · 周六</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Science 报道 AI 智能体 40 分钟完成人类 60 小时实验，自主科研进入加速通道</h3>
+    <div class="meta">
+      <span class="tag">科研自动化</span>
+      <span class="tag green">AI Agent</span>
+      <span class="tag pink">Science</span>
+    </div>
+    <p>7 月 11 日，《Science》期刊报道一项突破性研究：AI 智能体已能自主完成科学实验，仅用 40 分钟即可完成人类研究员需要 60 小时才能完成的实验工作。该成果被视为 AI 从“辅助工具”向“自主科研主体”转变的关键节点，可大幅压缩实验闭环周期。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>当 AI 智能体开始独立设计、执行并分析实验，科研效率的瓶颈将从“人力工时”转向“算力与数据”。这不仅是实验室自动化，更意味着材料发现、药物合成、催化剂筛选等领域可能迎来“摩尔定律”式的提速，同时对实验可解释性和安全审查提出更高要求。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260711A022ZV00" target="_blank">腾讯新闻</a> · 光锥之外 AI</div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>OpenAI 正式发布 GPT-5.6 系列并推出 ChatGPT Work，企业级 AI 智能体再进一步</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">企业应用</span>
+    </div>
+    <p>7 月 9 日，OpenAI 在全球范围推出 GPT-5.6 系列 Sol / Terra / Luna，其中 Sol 提供 max 与 ultra 两档能力，ultra 可协调四个并行 Agent 实例处理复杂多步任务；Terra 定位日常平衡模型，Luna 主打高速低成本。同日，面向非程序员的企业级 AI 智能体 ChatGPT Work 上线，融合聊天机器人与 Codex 编码能力，可创建文档、演示文稿和网站。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>GPT-5.6 把“多 Agent 并行”作为公开能力层，说明 OpenAI 已将编码任务从“单轮补全”推向“项目级协作”；ChatGPT Work 则瞄准企业非技术员工的自动化办公。两条线同时出击，意味着 Anthropic、Cursor、Copilot 在企业市场的竞争将从开发者延伸到全公司员工。
+    </div>
+    <div class="source">来源：<a href="https://openai.com/index/gpt-5-6-preview/" target="_blank">OpenAI</a> · <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-11-2026-gpt-56-goes-public-gpt-live-voice-debuts-meta-muse-spark-bp6" target="_blank">DEV Community</a> · 财联社</div>
+  </div>
+
+  <div class="card">
+    <h3>Cursor 被曝秘密开发办公助手 Sand，从代码编辑器向通用工作平台扩张</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor</span>
+      <span class="tag pink">办公助手</span>
+    </div>
+    <p>7 月 11 日凌晨，AI 编程工具 Cursor 被曝秘密立项“Sand”项目，计划推出能写代码的万能办公助手，直接挑战 Anthropic 的 Claude Cowork。这一动作被视为 Cursor 从开发者工具向通用办公场景扩张的战略转型信号。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cursor 的核心优势是“懂代码的交互体验”，若把同样的 Agent 框架迁移到文档、表格、邮件等办公场景，可能形成对 Notion、Office Copilot 的差异化竞争。对日常需要写脚本、调 YAML、看日志的 SRE / DevOps 来说，一个能同时处理代码和办公文档的 Agent 会显著降低上下文切换成本。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260711A022ZV00" target="_blank">腾讯新闻</a> · 格物之声</div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>蚂蚁 LingBot 开源 LingBot-VA 2.0，提出“具身原生”机器人大脑新架构</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">VLA 模型</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>蚂蚁具身智能团队 Ant LingBot 发布 LingBot-VA 2.0，正式提出“具身原生”（embodied-native）重构范式：反对将视频生成模型简单迁移到物理世界，主张从数据、训练目标到架构围绕物理环境重新设计。模型采用语义视觉-动作分词器、因果预训练、MoE 架构与 look-ahead reasoning，将推理成本压缩到实时控制阈值以下，并开源了 6B 参数检查点、代码与技术报告（Apache-2.0）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>LingBot-VA 2.0 把行业长期争论的“迁移 vs 原生”摆上了台面。如果“具身原生”路线被验证，意味着机器人大脑不再是大模型的“下游任务”，而需要独立的架构和数据体系。这对整个赛道的技术栈、人才结构和开源生态都会产生深远影响。
+    </div>
+    <div class="source">来源：<a href="https://arxiv.org/abs/2607.08639" target="_blank">arXiv</a> · <a href="https://buttondown.com/futurex/archive/futurex-physical-ai-daily-issue-54-0711" target="_blank">FutureX</a></div>
+  </div>
+
+  <div class="card">
+    <h3>1X 发布 25-DOF 灵巧手，智元 C5 机器人批量进入比亚迪工厂</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">商业化</span>
+      <span class="tag pink">人形机器人</span>
+    </div>
+    <p>本周具身智能硬件与场景落地同步加速：OpenAI 投资的 1X Technologies 为 NEO 人形机器人发布新一代 NEO's Hands，采用 25 自由度腱驱动设计，IP68 防护、集成触觉感知，拇指峰值扭矩 3.5 N·m，CEO 称正筹备万台级产能。同期智元机器人宣布 C5 清洁机器人自 2025 年 4 月起已在比亚迪部署约 70 台，单台年节省近 1000 万元，2026 年营收目标从 10.5 亿元提升至 40 亿元。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>1X 的 25-DOF 灵巧手代表“手”这一具身智能最硬核子系统的突破；智元 C5 在比亚迪的规模化部署则证明清洁、巡检等非精密场景已经跑通 ROI。两者结合说明具身智能正从“能走会跳”转向“能干活、能算账”，2026 下半年可能是工厂与商业服务场景订单爆发的起点。
+    </div>
+    <div class="source">来源：<a href="https://buttondown.com/futurex/archive/futurex-physical-ai-daily-issue-54-0711" target="_blank">FutureX</a> · 甲子智棋</div>
+  </div>
+
+  <footer>
+    <p>数据来源：Science · OpenAI · 财联社 · 腾讯新闻 · DEV Community · FutureX · arXiv · 甲子智棋</p>
+  </footer>
+
+</div>
+</body>
+</html>

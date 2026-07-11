@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-12</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 12 · 周日</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>OpenAI GPT-5.6 系列正式公开，Sol/Terra/Luna 三档定价，多 Agent 并行能力成旗舰标配</h3>
+    <div class="meta">
+      <span class="tag">旗舰模型</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">多 Agent</span>
+    </div>
+    <p>7 月 9 日 OpenAI 结束 12 天受限预览，正式向全球开放 GPT-5.6 系列：旗舰 Sol、中端 Terra、高速低成本 Luna，并引入"持久能力档位"概念——档位名而非版本号可跨代延续。Sol 在 Artificial Analysis 编码 Agent 指数拿到 80 分（领先 Claude Fable 5 共 2.8 分），ExploitBench 网络安全 73.5%（对比 GPT-5.5 仅 47.9%）；ultra 模式默认协调 4 个并行 Agent，可扩展到 16 个。定价 Sol 5/30 美元、Terra 2.5/15 美元、Luna 1/6 美元每百万 token。同日发布的 ChatGPT Work 把聊天、编码、长任务 Agent 统一到同一界面，Responses API 的 Programmatic Tool Calling 允许模型写小程序内联调度工具。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>GPT-5.6 把"多 Agent 并行"从论文概念推到商业 SKU，是模型厂商第一次把"协作"作为公共能力层卖——对企业内自建 Agent 平台的冲击是结构性的：单 Agent 解决不了的项目级任务，现在 OpenAI 直接包办。定价 5/30 美元相对 Opus 4.8 的 5/25 美元基本持平，附加能力却拉满；Luna 的 1/6 美元则把高频低成本赛道的价格底线进一步压低。对 AI Coding 开发者来说，工具栈组合（Claude Opus 4.8 写难代码 + GPT-5.6 Sol 调度多 Agent + Luna 处理日常对话）会变成 7 月底新默认。
+    </div>
+    <div class="source">来源：<a href="https://openai.com/index/gpt-5-6" target="_blank">OpenAI 官方</a> · <a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work" target="_blank">ChatGPT Work</a> · <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-12-2026-gpt-56-goes-public-muse-spark-11-arrives-open-robotics-pipeline-5di2" target="_blank">DEV Community</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI GPT-Live 同步全双工语音上线，Agent 入口从键盘扩展到"会听话的嘴"</h3>
+    <div class="meta">
+      <span class="tag">多模态</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">实时语音</span>
+    </div>
+    <p>7 月 8 日，OpenAI 在全球推送 GPT-Live 全双工语音模型，分 GPT-Live-1 与 GPT-Live-1 mini 两档。区别于传统级联式或轮询式语音方案，GPT-Live 同时持续收听与生成响应，每秒做多次"说话/倾听/沉默/打断/调用工具"的决策，能识别"嗯、是的"等伴随反馈语、保留自然停顿，并支持实时同传。遇到需要深度推理的问题，它会后台把任务交给 GPT-5.5 再把结果拉回主对话，不打断节奏。GPQA 与 BrowseComp 上大幅领先 Advanced Voice Mode。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>GPT-Live 是 Agent 范式的入口扩展——AI 不再只是 IDE 里那个编辑器，而是会议室、运维值班台、车里、电话里都能对话的同事。对 SRE 场景尤其值得关注：未来 ops Agent 可能直接接电话/听监控告警音并发起处置流程，值班工程师的"听与说"成为新的人机接口。结合 ChatGPT Work，这预示 OpenAI 正把 Agent 生态从"屏幕"扩展到"耳朵和嘴"。
+    </div>
+    <div class="source">来源：<a href="https://openai.com/index/introducing-gpt-live" target="_blank">OpenAI 官方</a> · <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-12-2026-gpt-56-goes-public-muse-spark-11-arrives-open-robotics-pipeline-5di2" target="_blank">DEV Community</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Wiz 披露 GhostApproval 高危漏洞，六大主流 AI 编程助手可被恶意仓库静默植入 SSH 公钥</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">安全漏洞</span>
+      <span class="tag pink">供应链</span>
+    </div>
+    <p>7 月 8 日，安全公司 Wiz 公开 GhostApproval（CVE-2026-12958 等）——利用 Unix 符号链接，让 AI 编程助手把攻击者控制的 SSH 公钥写入 ~/.ssh/authorized_keys，全程无异常提示。影响产品：Amazon Q Developer、Anthropic Claude Code、Augment、Cursor、Google Antigravity、Windsurf。核心问题是"代理内部已识别危险路径，但审批对话框只显示无害的符号链接名"，属于 CWE-61 + CWE-451 的复合设计缺陷。Amazon Q Developer v1.69.0、Cursor v3.0、Google Antigravity v1.19.6 已修复；Windsurf 甚至在弹窗前就完成写入；Anthropic 主张该场景"超出威胁模型"引发争议。Claude Code 内部推理链识别出了异常，却没有同步到 UI。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这不是单点 bug，是 AI Coding 工具的"类别级盲区"——任何"人在回路"的工具只要把显示层和实际写盘行为解耦，就会落入同一陷阱。Wiz 三条缓解建议（规范化路径解析、跨工作区警告、写前授权）会成为后续所有 AI Agent 类产品的安全基线。对 SRE / DevOps 来说，开源仓库"一键 setup" 流程要重新审视，~/.zshrc、~/.git-credentials 也可能成为攻击目标——Agent 时代，clone 仓库 = 执行未知代码。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260711A044WW00" target="_blank">腾讯新闻</a> · <a href="https://hackersradar.com/critical-ghostapproval-flaw-in-amazon-q-claude-cursor-exposes-ai-agents/" target="_blank">HackersRadar</a> · <a href="https://threatcluster.io/article/ghostapproval-163dcb37" target="_blank">ThreatCluster</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Meta Muse Spark 1.1 发布，Z uckerberg 时隔三年重返 X 力推"低价多面手 Agent"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Meta</span>
+      <span class="tag pink">Agent</span>
+    </div>
+    <p>7 月 9 日 Meta 发布 Muse Spark 1.1，主打 Agent 任务：100 万 token 上下文 + context compaction 支持长会话，主/子 Agent 委派模式，三种 computer-use 执行模式（脚本/点击/批量）。Agent 基准上，JobBench 54.7%（领先 Claude Opus 4.8 的 48.4%）、MCP Atlas 88.1（领先 82.2）；但纯编码基准 Vibe Code Bench 从 19.7% 跳到 72.2% 同时，SWE-Bench Pro 仅 61.5% 仍弱于 Opus 4.8 的 69.2%、DeepSWE 1.1 53.3% vs 59.0%。Zuckerberg 在 X 发文"This is an incredibly capable agent and coding model at a very low price"，是三年来首次发推。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Meta 的策略很清晰：放弃"卷纯代码基准第一"，转而用"低价 + Agent 编排能力"做差异化。SWE-Bench Pro 的差距说明纯硬编码场景仍落后 Anthropic；但 JobBench 和 MCP Atlas 的领先说明 Meta 在"让 Agent 协调工具、跨任务长跑"上找到了位置。对 AI Coding 用户，意味着大模型选型将出现更细致的分层——难代码给 Claude Opus 4.8、长任务编排给 Muse Spark 1.1、纯 Agent 协作给 GPT-5.6 Sol，单一模型通吃的时代正在结束。
+    </div>
+    <div class="source">来源：<a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-12-2026-gpt-56-goes-public-muse-spark-11-arrives-open-robotics-pipeline-5di2" target="_blank">DEV Community</a> · <a href="https://ai.meta.com/blog/" target="_blank">Meta AI Blog</a> · <a href="https://kingy.ai/blog/muse-spark-1-1-benchmarks-specs-evals/" target="_blank">Kingy.ai</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>NVIDIA × Hugging Face 联手开源人形机器人管线，Isaac GR00T 1.7 + LeRobot 打通行采集到部署全链路</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">开源生态</span>
+      <span class="tag pink">VLA 模型</span>
+    </div>
+    <p>7 月 7 日 NVIDIA 与 Hugging Face 宣布扩展机器人合作：把 Isaac GR00T 1.7 视觉-语言-动作模型和 Isaac Teleop 数据采集框架集成进开源 LeRobot 库。GR00T 1.7 被官方称为"首个开放且商业可用的人形机器人大模型"——开发者无需任何专有工具链，就能在标准 LeRobot 工作流中微调与部署；Isaac Teleop 把高保真人示教数据采集为可互操作格式直接喂给 LeRobot 数据集。路线图上的 Cosmos 3 是合成数据世界基础模型，专治真实世界采集"贵且危险"的痛点。两家分别拥有 300 万机器人开发者与 1600 万 AI 构建者社群，形成"遥操 → GR00T 训练 → Cosmos 仿真 → LeRobot 部署"统一管线。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>人形机器人领域第一次出现"全栈开源管线"——过去 VLA 模型、仿真平台、数据采集、部署框架都分散在各家手里。NVIDIA 把训练栈开放给 Hugging Face 社区，等于把通用人形机器人的开发门槛从"公司级项目"降到"个人开发者级别"。Cosmos 3 合成数据如果做出来，行业"数据稀缺"的核心瓶颈会被彻底改写。叠加即将开幕的 WAIC 2026（智算+具身两大赛道各汇聚 200+ 企业），具身智能的开源格局正在 7 月形成清晰分水岭。
+    </div>
+    <div class="source">来源：<a href="https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/" target="_blank">NVIDIA Blog</a> · <a href="https://huggingface.co/blog/nvidia/open-data-for-agents" target="_blank">Hugging Face Blog</a> · <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-12-2026-gpt-56-goes-public-muse-spark-11-arrives-open-robotics-pipeline-5di2" target="_blank">DEV Community</a></div>
+  </div>
+
+  <div class="card">
+    <h3>WAIC 2026 将于 7/17-20 在上海三地四馆启幕，智算与具身智能各聚 200+ 企业</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">WAIC</span>
+      <span class="tag pink">产业大会</span>
+    </div>
+    <p>2026 世界人工智能大会暨 AI 全球治理高级别会议将于 7 月 17-20 日在世博、张江、西岸"三地四馆"举办，主题"智能伙伴 共创未来"。展览面积首次突破 10 万平方米，1100+ 家企业携 3000+ 展品亮相，300+ 产品全球首发；论坛 140+ 场、嘉宾 1400+ 人，强化学习之父 Richard Sutton、深度学习三巨头之一 Yoshua Bengio 等 9 位图灵奖/诺奖得主确认参会。首次设立的高水平国际学术会议 WAIC Academic 由姚期智任主席，收到全球 284 篇论文。智算与具身智能两大赛道各汇聚 200+ 企业；展品包括华为 Atlas 950 超节点、MiniMax M3 多模态大模型、阶跃 Agent OS、全球首款 AI 智能体手机，以及多款人形机器人与 AI 灵巧手。工信部预判 2026 全年人形机器人产量有望突破 10 万台。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>WAIC 2026 是 7 月具身智能"超级催化月"的压轴大戏——南京展会刚刚开幕，WAIC 紧接着亮剑。智算+具身两大赛道各 200+ 家企业的规模意味着零部件、整机、模型、方案全链条在同一周集中曝光，对投资人和供应链入局者是关键决策窗口。从行业拐点看，2026 全年人形机器人产量破 10 万台意味着"万台级量产"已成为产业新基准线；WAIC 上人形机器人进厂作业的真实场景展示将直接定义下半年的市场叙事。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260707A06TTQ00" target="_blank">腾讯新闻</a> · <a href="https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260710/6cd94d78f71a42e3a747541b9021fe2b.html" target="_blank">上海政府英文官网</a> · <a href="https://news.cgtn.com/news/2026-07-07/Shanghai-to-host-record-breaking-World-AI-Conference-July-17-to-20-1OAHU3xSEog/p.html" target="_blank">CGTN</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：OpenAI · DEV Community · Meta AI Blog · Kingy.ai · HackersRadar · ThreatCluster · 腾讯新闻 · NVIDIA Blog · Hugging Face Blog · 上海政府官网 · CGTN</p>
+  </footer>
+
+</div>
+</body>
+</html>
