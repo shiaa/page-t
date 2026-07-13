@@ -3,6 +3,78 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-14',
+    title: 'AI 每日动态 (2026-07-14)',
+    summary: '1. Agnes 2.5 Flash 免费上线：中国开发者在"封号潮"下的新选择，Coding 能力对标 Claude Opus 2. Superpowers 21 万星登顶 GitHub Trending：AI 编程最大的变化不是模型变强...',
+    date: '2026-07-14',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月14日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Agnes-2.5 Flash 免费上线：中国开发者在"封号潮"下的新选择，Coding 能力对标 Claude Opus
+
+
+### 2. Superpowers 21 万星登顶 GitHub Trending：AI 编程最大的变化不是模型变强，而是"怎么管 AI"
+
+
+### 3. GPT-5.6「太阳系」全家桶全面上线：Codex 消失，ChatGPT Work 成为 AI 打工神器
+
+
+### 4. 宇树 G1 人形机器人登 Nature：完成全球首例活体微创手术，单台 56 分钟完成胆囊切除
+
+
+### 5. 它石智航千台级工业具身机器人量产 + 京东入局：具身智能进入"系统级交付"阶段
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
+    id: 'ai-news-daily-2026-07-13',
+    title: 'AI 每日动态 (2026-07-13)',
+    summary: '1. OpenAI GPT 5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级 2. 阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder 3. Meta Muse Spark ...',
+    date: '2026-07-13',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月13日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI GPT-5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级
+
+
+### 2. 阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder
+
+
+### 3. Meta Muse Spark 1.1 发布，Zuckerberg 三年首返 X 称其为"极具能力的 Agent 模型"
+
+
+### 4. 蚂蚁灵波发布 6 款具身原生机器人动作模型，从数字世界转向物理世界原生设计
+
+
+### 5. NVIDIA 与 Hugging Face 扩展开源机器人合作，GR00T 1.7 入驻 LeRobot 生态
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-12',
     title: 'AI 每日动态 (2026-07-12)',
     summary: '1. OpenAI GPT 5.6 系列正式公开，Sol/Terra/Luna 三档定价，多 Agent 并行能力成旗舰标配 2. OpenAI GPT Live 同步全双工语音上线，Agent 入口从键盘扩展到"会听话的嘴" 3. Wiz...',

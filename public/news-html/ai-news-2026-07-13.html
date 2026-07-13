@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-13</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 13 · 周一</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>OpenAI GPT-5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">模型发布</span>
+    </div>
+    <p>7 月 9 日，OpenAI 结束 12 天受限预览，正式发布 GPT-5.6 系列。三模型家族 Sol（旗舰）、Terra、Luna 引入"持久能力层级"概念——名称标识能力级别而非版本，Sol 未来可升级至 GPT-5.7 同时保持层级身份。Sol 在编程能力上创下新 SOTA：Artificial Analysis Coding Agent Index 得分 80，超越 Claude Fable 5 的 2.8 分。同时 Codex 并入 ChatGPT 桌面端，推出 ChatGPT Work 统一界面，支持聊天、编码和长时 Agent 任务。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>GPT-5.6 的"能力层级"命名策略是 OpenAI 产品化思路的重要转变——从版本号焦虑转向能力承诺，企业客户可以按层级采购而非追版本。Sol 的编程指数 80 意味着 AI Coding Agent 的能力边界又向外扩了一圈，配合 Ultra 模式下默认 4 个并行 Agent（可扩至 16 个），复杂软件工程的自动化拆解和并行执行已成为现实。对 SRE/DevOps 场景来说，多 Agent 并行意味着故障排查、代码重构、配置迁移等任务可以"分工+同步"完成，效率提升是数量级的。
+    </div>
+    <div class="source">来源：<a href="https://openai.com/index/gpt-5-6" target="_blank">OpenAI Blog</a> · <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-12-2026-gpt-56-goes-public-muse-spark-11-arrives-open-robotics-pipeline-5di2" target="_blank">AI Daily Digest</a></div>
+  </div>
+
+  <div class="card">
+    <h3>阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">阿里巴巴</span>
+      <span class="tag pink">国产替代</span>
+    </div>
+    <p>2026 年 7 月初，阿里巴巴发布内部紧急通知，要求全体员工在 7 月 10 日前卸载美国 Anthropic 旗下 Claude Code 及 Sonnet、Opus、Fable 等全系产品，统一替换为自研智能体编程平台 Qoder。数月前阿里还在开放该类工具的大额报销通道，此次转向反映国内头部科技企业核心研发领域对海外闭源 AI 工具态度发生根本转变。Qoder 定位为 Agentic 编程平台，支持多智能体协作、代码生成、自动化测试和部署。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是国内大厂"AI 工具去美化"最明确的信号之一——从"报销使用海外工具"到"全员禁用+强制切换自研"，中间只隔了几个月。阿里不是第一家（字节、百度早有动作），但阿里在研发人员规模和代码库复杂度上的体量，让这次切换具有行业示范效应。Qoder 的实战表现将成为国内自研 AI 编程工具能力的试金石；如果能在阿里内部跑通，意味着国产 Agentic Coding 平台已具备替代海外产品的工程成熟度。对国内开发者而言，Qoder 的开放进度和 API 生态值得持续关注。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260712A09VPY00" target="_blank">反做空一线</a> · <a href="https://view.inews.qq.com/a/20260712A06XV900" target="_blank">鞭牛士</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Meta Muse Spark 1.1 发布，Zuckerberg 三年首返 X 称其为"极具能力的 Agent 模型"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Meta</span>
+      <span class="tag pink">Agent</span>
+    </div>
+    <p>7 月 9 日，Meta 正式发布 Muse Spark 1.1，专为 Agentic 任务设计——规划、工具调用、子 Agent 委派、计算机操作。在 Agent 基准测试中，JobBench 54.7%（超越 Claude Opus 4.8 的 48.4%），MCP Atlas 88.1（领先 Opus 4.8 的 82.2）。支持 100 万 token 上下文窗口和上下文压缩机制，可在长会话中保持状态。编码方面，Vibe Code Bench 从 19.7% 跃升至 72.2%，但 SWE-Bench Pro 61.5% 仍落后 Claude Opus 4.8 的 69.2%。Meta 将其定位为 Agent 编排器而非纯编码领导者。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Zuckerberg 三年没发 X，Muse Spark 1.1 让他破功——这个信号本身就很说明问题。Meta 的战略定位很聪明：不跟 Claude 拼纯编码能力，而是做"Agent 编排器"——主 Agent 收集信息、制定计划，拆分任务给子 Agent 并行执行。这意味着 Muse Spark 1.1 的核心价值不在"写代码"，而在"管理写代码的过程"。对于复杂软件项目（如微服务重构、跨模块 Bug 修复），编排能力比单文件编码能力更重要。100 万 token 上下文+压缩机制，也意味着它可以一次性吞下整个代码库并保持长期记忆——这是大型工程自动化的关键前提。
+    </div>
+    <div class="source">来源：<a href="https://ai.meta.com/blog/" target="_blank">Meta AI Blog</a> · <a href="https://www.tmtpost.com/agent/ai-article/19030" target="_blank">TMT Post</a> · <a href="https://kingy.ai/blog/muse-spark-1-1-benchmarks-specs-evals/" target="_blank">Kingy.ai</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>蚂蚁灵波发布 6 款具身原生机器人动作模型，从数字世界转向物理世界原生设计</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">蚂蚁灵波</span>
+      <span class="tag pink">动作模型</span>
+    </div>
+    <p>7 月 12 日，蚂蚁灵波发布 LingBot-VA 2.0 等 6 款具身原生机器人动作模型，采用自回归架构从零预训练，聚焦动态建模、因果预测等物理世界交互核心需求。技术路线从数字世界模型构建转向物理世界原生设计，这是国内首次有科技巨头以"具身原生"思路发布系列动作模型。相关数据显示，具身智能 AI 模型平均每 48 小时就有一个全新模型诞生，迭代速度显著加快，从智源"世界模型"到阿里"通义千问机器人"等成果不断问世。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"具身原生"是这次发布的关键词——不是拿数字世界的模型微调后套到机器人上，而是从零开始为物理世界交互设计架构。自回归架构+动态建模+因果预测，这套组合拳意味着模型不是在"记住动作"，而是在"理解物理规律"。这对机器人泛化能力至关重要：遇到没训练过的障碍物、地形、物体形态时，能基于物理因果推断合理动作，而非死板复现训练数据。蚂蚁灵波背靠阿里生态，在物流、仓储、服务机器人场景有天然落地通道。6 款模型矩阵覆盖不同能力维度，说明团队已经体系化思考具身智能的产品化路径。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260712V07J2O00" target="_blank">经济观察报</a> · <a href="https://view.inews.qq.com/a/20260712A06UX100" target="_blank">热八看世界</a></div>
+  </div>
+
+  <div class="card">
+    <h3>NVIDIA 与 Hugging Face 扩展开源机器人合作，GR00T 1.7 入驻 LeRobot 生态</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">NVIDIA</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>7 月 7 日，NVIDIA 与 Hugging Face 宣布重大扩展合作，将 NVIDIA Isaac GR00T 1.7 视觉-语言-动作模型和 Isaac Teleop 数据捕获框架集成进 Hugging Face 开源 LeRobot 库。GR00T 1.7 是首个开放的、商业可行的人形机器人基础模型，开发者可通过标准 LeRobot 流程进行后训练与部署，无需专有工具链。Isaac Teleop 支持高质量人类示范数据捕获，直接输入 LeRobot 数据集。路线图还包括 Cosmos 3 前沿世界基础模型，用于生成合成机器人数据。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这次合作把 NVIDIA 的 300 万机器人开发者与 Hugging Face 的 1600 万 AI 构建者连接在一起，形成统一 pipeline：遥操作 → 在 GR00T 上训练 → 用 Cosmos 模拟 → 通过 LeRobot 部署。"开放+商业可行"是 GR00T 1.7 的关键定语——之前的人形机器人模型要么封闭（如 Tesla Optimus 的模型），要么仅供研究，GR00T 1.7 是第一个允许企业直接拿来产品化的开放模型。Cosmos 3 世界模型生成合成数据的能力，解决了机器人训练最大的瓶颈：真实数据昂贵且危险。对具身智能创业者来说，这意味着"有模型可用、有数据可生成、有工具可部署"的闭环正在形成，创业门槛显著降低。
+    </div>
+    <div class="source">来源：<a href="https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/" target="_blank">NVIDIA Blog</a> · <a href="https://huggingface.co/blog/nvidia/open-data-for-agents" target="_blank">Hugging Face Blog</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：OpenAI · Meta AI · NVIDIA · Hugging Face · 蚂蚁灵波 · 阿里巴巴 · 经济观察报 · 腾讯新闻 · AI Daily Digest</p>
+  </footer>
+
+</div>
+</body>
+</html>

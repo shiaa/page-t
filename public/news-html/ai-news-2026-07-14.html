@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-14</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 14 · 周二</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Agnes-2.5 Flash 免费上线：中国开发者在"封号潮"下的新选择，Coding 能力对标 Claude Opus</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">免费模型</span>
+      <span class="tag pink">国产替代</span>
+    </div>
+    <p>7 月 13 日，Agnes AI 发布新一代文本模型 Agnes-2.5 Flash，定位开发者日常主力，Coding 能力对标 Claude Opus 级，且坚持<strong>不限期免费开放</strong>。同步上线 Agnes Code 桌面端，支持跨文件改造、定时任务与跨 AI 导入记忆。Agnes-2.5 Pro 旗舰模型也首次预告。这一发布恰逢中国开发者遭遇 OpenAI Codex 大面积误杀封号、Claude Code 推行严苛 KYC 实名认证的"双重暴击"时刻。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>海外 AI 工具已度过"烧钱抢人"阶段，进入"算账收割"——中国开发者是首先被清理的对象。Agnes 以"自己做、永远不会封号"的姿态杀入，且不限期免费，这不仅是技术突围，更是在重构中国开发者的 AI Coding 工具链格局。如果 Pro 版能力确实追平第一梯队，国产 AI Coding 平替时代就真正到来了。
+    </div>
+    <div class="source">来源：<a href="https://k.sina.com.cn/article_5953740931_162dee08306703m9po.html" target="_blank">新智元/新浪</a> · <a href="https://view.inews.qq.com/a/20260713A05I4E00" target="_blank">量子位</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Superpowers 21 万星登顶 GitHub Trending：AI 编程最大的变化不是模型变强，而是"怎么管 AI"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">开发者工具</span>
+      <span class="tag pink">行业拐点</span>
+    </div>
+    <p>过去两周 AI 编程圈最火的项目不是新模型，而是一个叫 Superpowers 的 GitHub 项目——21 万颗星，7 天涨 9 万。它的核心是一套 7 阶段结构化工作流（需求澄清→计划审批→TDD 实现→子 Agent 并行→审查收尾），关键是<strong>禁止 AI 直接写代码</strong>，必须"先想清楚再动手"。最狠的 TDD 铁律：测试先行，未通过测试的代码会被 Agent 主动删除。同一周，TypeScript 社区 Matt Pocock 的 skills 项目冲到 14.8 万星、agency-agents 12.3 万星、Google agents-cli 和小米 MiMo-Code 同周下场。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是一个明确的行业信号——AI 代码生成能力已经过了临界点。"AI 能不能写更多代码"不再是瓶颈，"AI 写的代码能不能被信任、被维护、被安全重构"才是下一阶段的真正战场。编程规范工具正从极客实验变成行业标配，这直接影响每个开发者的日常工作流。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7660829362756928043/" target="_blank">头条·从程序员到架构师</a> · <a href="https://cloud.tencent.com/developer/article/2707508" target="_blank">腾讯云开发者</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>GPT-5.6「太阳系」全家桶全面上线：Codex 消失，ChatGPT Work 成为 AI 打工神器</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">编程智能体</span>
+    </div>
+    <p>7 月 9 日 OpenAI 将 GPT-5.6 三款模型（Sol / Terra / Luna）全部开放。旗舰 Sol 在 Coding Agent Index 上以 80 分刷新 SOTA，力压 Claude Fable 5 2.8 分，而输出 token 不到一半、成本仅约 1/3。同步完成 ChatGPT 与 Codex 合并，推出 ChatGPT Work——可跨应用收集信息、拆分复杂任务、持续工作数小时的自主智能体。与此同时，Meta 发布 Muse Spark 1.1 直攻 Agentic Coding，KAT-Coder-Pro V2.5 发布主打"从写代码迈向做工程"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>GPT-5.6 的核心不是参数更大，而是<strong>推理效率的质变</strong>——同样的编程任务，用不到一半的时间和成本完成。Codex 与 ChatGPT 的合并意味着 OpenAI 不再把"编程"当作独立产品，而是把 Agentic Coding 作为超级应用的默认能力。大厂从"补全代码"到"接任务干活"的平台化转型，正在重塑整个软件工程的工作方式。
+    </div>
+    <div class="source">来源：<a href="https://36kr.com/p/3889024357513736" target="_blank">36氪</a> · <a href="https://www.163.com/news/article/L1N7A31A00019UD6.html" target="_blank">快报/KAT-Coder</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>宇树 G1 人形机器人登 Nature：完成全球首例活体微创手术，单台 56 分钟完成胆囊切除</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">医疗机器人</span>
+      <span class="tag pink">里程碑</span>
+    </div>
+    <p>7 月 14 日，国际顶刊《Nature》刊发重磅论文：基于国产宇树 G1 通用人形机器人，完成全球首例通用人形机器人远程操控活体猪腹腔镜胆囊切除微创手术。整套方案依托虚拟 RCM 视觉算法，无需专用手术机械臂，机器人可直接握持临床标准腹腔镜器械完成全套外科操作。单台机器人完整手术耗时 56 分钟，双机协同仅需 32 分钟。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这篇 Nature 论文的意义不在于"机器人能做手术"（达芬奇手术机器人已存在多年），而在于<strong>通用人形机器人用标准器械</strong>完成精密医疗操作——不需要千万级的专用手术机器人。这意味着人形机器人的灵巧操作能力已经跨过了一个关键门槛：从"能抓起东西"到"能在毫米级精度下稳定作业"。精密制造、实验室操作等场景的想象空间被彻底打开。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L1OV0U9M05569XIR.html" target="_blank">前沿在线</a></div>
+  </div>
+
+  <div class="card">
+    <h3>它石智航千台级工业具身机器人量产 + 京东入局：具身智能进入"系统级交付"阶段</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">量产落地</span>
+      <span class="tag pink">产业合作</span>
+    </div>
+    <p>7 月 13 日，地瓜机器人宣布与它石智航合作，全新 A3 轮式双臂具身工业机器人全面搭载旭日 S600 具身智能大算力芯片，开启全国首个千台级工业具身机器人规模化部署，3B 参数具身大模型仅 5 天即完成端侧适配。同期，至简动力宣布百台 i7 Pro 机器人交付绿的谐波、东山精密工厂，创下成立不到一年即百台交付的行业最快纪录。京东 7 月 11 日与慧仑科技达成具身智能战略合作，开放 JoyInside 交互与 JoyAI 大模型能力。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>三个信号叠加：千台级部署 + 百台交付 + 京东入场。具身智能正从"一台 Demo 视频"阶段进入"第 100 台能不能复制同样表现"的工程验证阶段。京东作为电商/物流巨头入局，意味着具身智能的落地场景正在从工厂 CNC 向仓储物流、零售服务等更大规模的商业场景扩展。2026 年被称为"具身智能量产元年"，7 月的密集动态说明这个判断正在兑现。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L1OF6CTQ051100B9.html" target="_blank">网易科技</a> · <a href="https://new.qq.com/rain/a/20260710A09IZM00" target="_blank">腾讯科技</a> · <a href="https://www.163.com/dy/article/L1PETN8E0512B07B.html" target="_blank">每日经济新闻</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：新智元 · 量子位 · 36氪 · 头条 · 腾讯云开发者 · 前沿在线 · 网易科技 · 腾讯科技 · 每日经济新闻</p>
+  </footer>
+
+</div>
+</body>
+</html>
