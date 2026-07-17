@@ -3,6 +3,78 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-17',
+    title: 'AI 每日动态 (2026-07-17)',
+    summary: '1. WAIC 2026 在上海开幕，主题从"跑分大战"切换为"商业化大考" 2. 西门子 Eigen 工程智能体在 WAIC 中国首发，能写自动化代码、调设备、跑工厂 3. 阶跃星辰发布 Agent 操作系统，重新定义 OS——以"意图+...',
+    date: '2026-07-17',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月17日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. WAIC 2026 在上海开幕，主题从"跑分大战"切换为"商业化大考"
+
+
+### 2. 西门子 Eigen 工程智能体在 WAIC 中国首发，能写自动化代码、调设备、跑工厂
+
+
+### 3. 阶跃星辰发布 Agent 操作系统，重新定义 OS——以"意图+任务"驱动而非"文件+应用"
+
+
+### 4. 智元远征 A3 Ultra 入选 WAIC 唯一"镇馆之宝"人形机器人，主打"开箱即用"商用级
+
+
+### 5. 小米开源 380 亿参数具身生成模型 Xiaomi-Robotics-U0，WorldArena 评测全球第一，工厂上件成功率 98%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
+    id: 'ai-news-daily-2026-07-16',
+    title: 'AI 每日动态 (2026-07-16)',
+    summary: '1. Apple Intelligence 获准入华，选择阿里 Qwen 合作而非自研本地化 2. Codex 正式并入 ChatGPT 桌面端，合并后周活突破 800 万 3. OpenAI 发布 Codex Micro 物理控制键盘，A...',
+    date: '2026-07-16',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月16日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Apple Intelligence 获准入华，选择阿里 Qwen 合作而非自研本地化
+
+
+### 2. Codex 正式并入 ChatGPT 桌面端，合并后周活突破 800 万
+
+
+### 3. OpenAI 发布 Codex Micro 物理控制键盘，AI 交互向硬件延伸
+
+
+### 4. Claude Code 曝出"普通 Markdown 文件即可诱导攻击"漏洞
+
+
+### 5. 腾讯发布两款具身智能基座模型 Hy-Embodied-VLM / RxBrain 并开源
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-15',
     title: 'AI 每日动态 (2026-07-15)',
     summary: '1. WAIC 2026 本周开幕：具身智能首次升格为核心赛道，200+ 企业同台竞技 2. Claude Fable 5 一夜破解卡半年的弦论难题，AI 自写代码验证预测，东大教授称"比我还懂代数拓扑" 3. Straiker 安全报告：...',

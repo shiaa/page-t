@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-17</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 17 · 周五</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>WAIC 2026 在上海开幕，主题从"跑分大战"切换为"商业化大考"</h3>
+    <div class="meta">
+      <span class="tag">WAIC 2026</span>
+      <span class="tag green">开幕</span>
+      <span class="tag pink">商业化</span>
+    </div>
+    <p>2026 世界人工智能大会暨人工智能全球治理高级别会议今天（7 月 17 日）起在上海世博、张江、西岸三大展区同步举行，展期至 7 月 20 日。本届主题"智能伙伴 共创未来"由外交部、国家发改委等十部委联合主办，9 位图灵奖/诺贝尔奖得主参会，1100+ 家企业布展，3000+ 件展品，其中 300+ 件全球首发。官方议程锁定世界模型、开源智能体、AI Coding、Token 经济、一人公司（OPC）等前沿议题。区别于前两届的"模型军备赛"，今年官方将"产业落地前景"与"经济效益"列为镇馆之宝核心评估维度，信号明确——AI 行业进入"能不能用、能不能量产、能不能赚钱"的现实拷问期。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>WAIC 是中国 AI 产业最重要的官方风向标，今年的议程设置直接定义了接下来一年的主战场——从大模型参数竞赛转向"智能体+终端+产业落地"的系统级较量。对关注 AI Coding 与具身智能的从业者来说，本届大会相当于一次性集齐了两大赛道的最新坐标：华为 Atlas 950 超节点、阶跃 AgentOS、Agent MA、中国版 Replit 路径的 CodeWave SDD，以及 200+ 家具身智能企业的真机秀场。下面 4 条都是从这次大会上长出来的关键信号。
+    </div>
+    <div class="source">来源：<a href="https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260710/6cd94d78f71a42e3a747541b9021fe2b.html" target="_blank">Shanghai Government</a> · <a href="https://www.163.com/dy/article/L20NFCG105566SCS.html" target="_blank">网易号</a> · <a href="https://weibo.com/5770151273/5320504866768809" target="_blank">雷科技 AGI</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>西门子 Eigen 工程智能体在 WAIC 中国首发，能写自动化代码、调设备、跑工厂</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">工业 Agent</span>
+      <span class="tag pink">西门子</span>
+    </div>
+    <p>7 月 17 日 WAIC 开幕当天，西门子在中国正式发布 Eigen Engineering Agent（Eigen 工程智能体），并面向国内市场首次展示面向工业场景的 AI 编排平台 Intelligence Center X。Eigen 最早于 4 月汉诺威工业博览会发布，是首批正式商用、可自主规划并执行工业自动化工程任务的 AI 系统之一——它能理解项目需求、编写自动化代码、完成硬件网络配置，并持续迭代优化。其名称取自德语"自身的"以及工程领域的特征值（eigenvalue）概念，强调在外部环境剧变时输出保持恒定。西门子 CEO 博乐仁将工业 AI 的门槛概括为"100% 可靠"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Eigen 把 AI Coding 从"IDE 里帮我写几行"推进到"端到端接管一个工业自动化工程"，是消费级 Coding Agent 走向工业现场的关键一步。对国内 SRE/DevOps 工程师来说，Eigen 这类"行业 Coding Agent"传递的信号是：未来 1-2 年企业内部将出现大量"懂业务+能落地"的垂直 Agent 需求，光会写代码不够，还要会调 PLC、配网络、跑工厂。对正在转 SRE 方向的人来说，理解 Agent 如何编排异构系统，比单纯刷算法题更有差异化。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1049714471_313745" target="_blank">搜狐科技</a></div>
+  </div>
+
+  <div class="card">
+    <h3>阶跃星辰发布 Agent 操作系统，重新定义 OS——以"意图+任务"驱动而非"文件+应用"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">阶跃星辰</span>
+      <span class="tag pink">AgentOS</span>
+    </div>
+    <p>阶跃星辰在本届 WAIC 展示全新 Agent 操作系统，从"工具"层升级为"操作系统"层。传统 OS（Windows、安卓）以文件和应用软件为基本单元，用户按需寻找工具完成任务；而阶跃 AgentOS 的底层逻辑是"意图+任务驱动"——用户只需用自然语言表达需求（如"做一份工作用的 PPT"），系统会自动调用浏览器检索数据、调用大模型做总结分析、调用排版软件生成文档。AgentOS 承袭了阶跃此前的桌面端 Agent 产品"阶跃 AI 桌面伙伴"的能力，可连接本地文件、联网、执行复杂任务，并已具备系统级权限调度。同期，Agent MA（中国版 Replit）、网易 CodeWave SDD 等 Vibe Coding 平台同台亮相，AI Coding 主战场从"代码补全"向"操作系统层重构"跃迁。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"操作系统级 Agent" 是 2026 年 AI Coding 的真正新大陆——它把开发者的工作流从"打开 IDE→敲代码"压缩到"说一句意图→Agent 接管全流程"。阶跃的桌面端产品已落地，本次 AgentOS 是把"工具"升级为"系统层入口"，对标的是 Windows / macOS 的桌面生态位。一旦 AgentOS 形成标准，AI Coding 的胜负手就不再是模型多强，而是 OS 层的生态绑定能力。对想转 AI Coding 工具链开发的工程师，OS 层 API 设计、多 App 调度、安全沙箱是接下来最稀缺的能力栈。
+    </div>
+    <div class="source">来源：<a href="https://www.icloudnews.net/a/119543.html" target="_blank">网易智企</a> · <a href="https://finance.ifeng.com/c/8uo4VEdZyla" target="_blank">凤凰财经</a> · <a href="https://weibo.com/5770151273/5320504866768809" target="_blank">雷科技 AGI</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>智元远征 A3 Ultra 入选 WAIC 唯一"镇馆之宝"人形机器人，主打"开箱即用"商用级</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">智元</span>
+      <span class="tag pink">量产</span>
+    </div>
+    <p>WAIC 2026 开幕前夕，"十大镇馆之宝"名单揭晓，10 件入选展品中智元远征 A3 Ultra 是唯一入选的具身智能机器人产品，也是为数不多"未发布先拿奖"的参展成果。官方将其定义为"全球首款可规模化商用的全尺寸人形设备"——整机身高 174cm、搭载 360° 视觉融合激光雷达 + 700TOPS 算力 + UWB+RTK 厘米级融合定位，标配高阶灵巧手，可独立完成接待、展品讲解、巡检记录等标准化服务动作；整机配套自主充电、无人运维机制与四重主动安全防护，官方参数支持 7×24 不间断作业。截至今年 6 月，智元全系列机器人累计下线量产整机 15000 台（3 月刚破 10000 台，不到 3 个月再增 5000 台）。同期精灵 G2 已在龙旗科技南昌量产工厂完成 6 天全透明产线直播作业。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>镇馆之宝的评选维度今年从"自由度竞赛、跑步速度竞赛"切换为"产业落地前景+经济效益"，智元 A3 Ultra 拿下唯一人形名额靠的不是运动指标，而是"千台级量产工艺+开箱即用"。这传递出关键信号：人形机器人赛道已经走完 Demo 阶段，进入"能不能卖、能不能在真实场景跑 7×24"的硬核 PK 期。对关注具身智能投资或入行的人，减速器、伺服电机、触觉传感器、灵巧手这四大子赛道因量产红利而进入"先吃到"的窗口。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260716A0B3PT00" target="_blank">腾讯新闻</a> · <a href="https://weibo.com/5770151273/5320504866768809" target="_blank">雷科技 AGI</a></div>
+  </div>
+
+  <div class="card">
+    <h3>小米开源 380 亿参数具身生成模型 Xiaomi-Robotics-U0，WorldArena 评测全球第一，工厂上件成功率 98%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">小米</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>雷军 7 月 14 日披露小米人形机器人在汽车工厂"实习"四个月的最新成绩单：自攻螺母上件工位双侧作业成功率从 90.2% 提升至 98%，距离熟练工人 99% 仅差 1 个百分点；同时解锁中控台侧盖板排序和料箱折叠回收两项新岗位，两项任务成功率均达 90%，其中侧盖板排序为业内首次在汽车工厂实现柔性工件长时连续作业。次日（7 月 15 日）小米机器人事业部全量开源 Xiaomi-Robotics-U0——380 亿参数多模态自回归具身生成基础模型，统一覆盖具身场景生成、具身迁移、机器人交互视频、通用文生图四类核心任务；在清华、北大等机构联合打造的 WorldArena 评测基准上总分全球第一，指令遵循、交互真实度、多视角一致性三项分指标全部位列榜首；自研 FlashAR+ 推理加速方案将 1024×1024 图像生成耗时压缩至 5.44 秒，较传统自回归架构提速约 83 倍。代码与权重已在 GitHub、HuggingFace、魔搭社区全量开源。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>U0 是具身智能赛道第一个"真把生成式 Scaling Law 跑通"的开源基座——它把"具身数据从人工采集"转向"可控批量生产"，让有限的真机样本能延展到更多场景、物体和本体。这与 Figure 03 在宝马做分拣同期，但小米是当下唯一在真实量产工厂完成同等难度作业的厂商。三天内"本体迭代+数据开源+基座模型"全部到位，验证了"硬件+数据+模型"三位一体的闭环可行性。对关注具身智能基础设施的人，U0 的开源意味着相关工程岗位（具身数据管线、机器人策略学习、VLA 训练框架）会在下半年集中爆发。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L20IVG6805316JPW.html" target="_blank">网易号</a> · <a href="https://new.qq.com/rain/a/20260715A0B32B00" target="_blank">腾讯新闻</a> · <a href="https://weibo.com/2804931994/5321500782495364" target="_blank">小米官微</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：上海政府官网 · 雷科技 AGI · 网易号 · 搜狐科技 · 凤凰财经 · 网易智企 · 腾讯新闻 · 小米官微</p>
+  </footer>
+
+</div>
+</body>
+</html>

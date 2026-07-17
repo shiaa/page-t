@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-16</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 16 · 周四</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Apple Intelligence 获准入华，选择阿里 Qwen 合作而非自研本地化</h3>
+    <div class="meta">
+      <span class="tag">AI 落地</span>
+      <span class="tag green">Apple</span>
+      <span class="tag pink">阿里 Qwen</span>
+    </div>
+    <p>7 月 15 日，Apple Intelligence 获准在中国市场推出，与阿里巴巴的 Qwen 模型达成合作。这是国际科技巨头 AI 服务进入中国的重要里程碑——苹果选择了与本地模型合作，而非将自研模型本地化。对国内 AI 生态而言，Qwen 获得苹果背书进一步巩固了其市场地位；此举也可能为其他国际 AI 产品进入中国提供路径参考。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是大模型"主权化 + 本地化"落地的标志性案例。苹果的入华路径（不本地化自研模型、改用本土开源/合作模型）很可能成为其他海外 AI 产品的参考模板，国内头部开源模型（Qwen 等）的商业化与生态绑定价值因此进一步抬升。对开发者来说，本土模型的工程成熟度和合规适配能力会变得更重要。
+    </div>
+    <div class="source">来源：<a href="https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai" target="_blank">TechCrunch</a> · <a href="https://www.cnblogs.com/itech/p/21520174" target="_blank">AI 技术日报</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Codex 正式并入 ChatGPT 桌面端，合并后周活突破 800 万</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">产品整合</span>
+    </div>
+    <p>7 月 15 日，OpenAI 确认 Codex 正式并入 ChatGPT 桌面应用，新增 Chat / Work / Codex 三模式，模型分为 Sol（旗舰）、Terra（均衡）、Luna（轻量）三档；Codex 与 Work 共用智能体额度，本地项目不自动同步网页版，旧版 Classic 停止更新。同时 Codex 与 ChatGPT Work 合并后周活突破 800 万，单周使用量增长 2.5 倍、5 个月涨 7 倍。GPT-5.6 上线后流量洪峰迫使上下文窗口从 37.2 万压缩至 27.2 万 token。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI Coding Agent 从独立产品走向"工作流入口"的关键一步。当编码、对话、工作流三件事被收进同一个桌面端，用户的"一切从 ChatGPT 开始"习惯会被进一步固化。上下文窗口因流量被迫压缩，也提示推理基础设施的承载压力正在成为产品瓶颈——对开发者而言，后续需要更重视 prompt 与上下文的工程化裁剪。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260716A039F100" target="_blank">腾讯新闻（vibe coding 日报）</a> · <a href="https://view.inews.qq.com/a/20260715A07E4M00" target="_blank">三节课</a> · <a href="https://view.inews.qq.com/a/20260715A0470500" target="_blank">华尔街见闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 发布 Codex Micro 物理控制键盘，AI 交互向硬件延伸</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">硬件外设</span>
+    </div>
+    <p>7 月 15 日，OpenAI 与键盘厂商 Work Louder 合作发布 Codex Micro，一款 230 美元的桌面物理键盘，专为控制 AI Agent 设计。配备背光按键、旋转旋钮和微型摇杆，让开发者通过物理按键快速触发 Agent 操作。这标志着 AI 交互从纯软件界面开始向硬件延伸。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>当 Agent 调用频率足够高时，纯屏幕交互会成为操作摩擦的瓶颈，物理快捷键/专用外设的需求自然出现。Codex Micro 是"Agent 专用外设"的第一枪，可能带动一波围绕 AI 工作流的硬件尝试——从宏键盘到旋钮控制器。对 DevOps/SRE 而言，把"触发回滚、拉起诊断 Agent、批准部署"映射到物理键，是值得盯的方向。
+    </div>
+    <div class="source">来源：<a href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex" target="_blank">TechCrunch</a> · <a href="https://www.cnblogs.com/itech/p/21520174" target="_blank">AI 技术日报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Claude Code 曝出"普通 Markdown 文件即可诱导攻击"漏洞</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">安全</span>
+    </div>
+    <p>7 月 15 日，Mozilla 旗下 0din 团队发现，Claude Code 可被普通 Markdown 文件诱导，从攻击者控制的 DNS 文本记录（TXT）动态获取反向 Shell 命令，在开发者设备上开启隐藏远程通道，传统安全工具几乎全程无感知。这揭示了智能体"间接提示注入 + 工具调用"带来的新型攻击面。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI Coding 工具权限越来越高后，"间接提示注入"从理论走向可利用漏洞的实锤。IDE/Agent 读取仓库里的 .md 文件是日常工作，一旦文件来源不可信，就等于给攻击者开了后门。开发者与企业安全团队需要重新评估 Agent 的默认网络访问、工具调用权限与审计策略——尤其在 CI/CD、内网跳板等敏感环境。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260715A09OPB00" target="_blank">至顶科技</a> · <a href="https://www.cnblogs.com/itech/p/21520174" target="_blank">AI 技术日报</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>腾讯发布两款具身智能基座模型 Hy-Embodied-VLM / RxBrain 并开源</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">腾讯</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>7 月 15 日，腾讯 Robotics X 实验室、福田实验室联合腾讯混元推出两款具身智能基座模型：Hy-Embodied-VLM-1.0（具身 VLM 基座模型）与 Hy-Embodied-RxBrain-1.0（具身世界认知基座模型）。VLM 模型基于混元 A3B 训练，在扩充的 37 个评测任务上以 1/10 的计算量达到上一代 A32B 旗舰具身模型可比效果；RxBrain 基于 5 万+小时高质量具身数据训练，在一个模型中统一文本、图像、视频及图文交错形式的理解与生成，为下游动作模型提供高层指导。两个模型均已开源，可直接在开源社区下载部署。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>国内大厂首次把"视觉理解 + 世界认知 + 动作规划"做成成对开源基座，且明确强调端侧高性能（1/10 计算量可比）。这对机器人/具身 Agent 的落地研发有直接参考价值——开发者不必从零训练大脑，可直接基于开源模型做二次开发。同时也标志着具身智能的竞争从"整机秀"深入到"基座模型 + 开放生态"的层面。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7662701736519287302" target="_blank">机器之心Pro / 今日头条</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：TechCrunch · 腾讯新闻 · 华尔街见闻 · 三节课 · 至顶科技 · 机器之心Pro · AI 技术日报 · cnblogs</p>
+  </footer>
+
+</div>
+</body>
+</html>
