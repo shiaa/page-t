@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-18</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 18 · 周六</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>WAIC 2026 盛大开幕：习近平主席发表主旨讲话，Kimi K3 引爆全球科技股重估</h3>
+    <div class="meta">
+      <span class="tag">WAIC 2026</span>
+      <span class="tag green">Kimi K3</span>
+      <span class="tag pink">全球治理</span>
+    </div>
+    <p>7 月 17 日，2026 世界人工智能大会（WAIC）在上海开幕，习近平主席出席并发表主旨讲话，提出"坚持开放共赢、强化风险意识、鼓励包容并蓄、倡导和衷共济"四点意见，宣布组建世界人工智能合作组织（29 个创始成员国签署协定），未来 5 年将为发展中国家提供 5000 个人工智能研修名额。同日，月之暗面 Kimi K3 以 2.8 万亿参数登顶全球最大开源模型，前端代码竞技场以 1679 分超越 Claude Fable 5 位列榜首，成本较同类美国模型低约 40%。消息引发全球科技股重挫：纳斯达克 100 指数期货跌逾 1.8%，费城半导体指数从高点累跌 18% 逼近技术性熊市；高盛将此次下跌定性为"去杠杆事件"，警告"算力扩张时代"或已接近尾声。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>WAIC 2026 的规格和动作标志着 AI 全球治理从"倡议"进入"建制"阶段；Kimi K3 则是继 DeepSeek 之后的第二个"中国时刻"——一家无法匹配西方最大规模预训练算力的中国实验室，通过架构创新和强化学习迅速缩小了与顶尖美国模型的差距，动摇了"算力=能力"的核心叙事。对 AI Coding 开发者而言，K3 的前端代码能力和开源策略意味着高质量中文编程模型的竞争格局正在质变。
+    </div>
+    <div class="source">来源：<a href="https://szb.farmer.com.cn/nmrb/html/2026/20260718/20260718_1/nmrb_20260718_13354_1_2078230663576784908.html" target="_blank">新华社</a> · <a href="https://dy.163.com/article/L23AD8MO05198NMR.html" target="_blank">华尔街见闻</a> · <a href="https://cj.sina.com.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Fjjxw%2F2026-07-18%2Fdoc-iniiemqp8266352.shtml" target="_blank">证券日报</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>谷歌 Gemini 3.5 Pro 因编程能力不达标推迟发布，暴露旗舰模型工程化瓶颈</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Google</span>
+      <span class="tag pink">模型竞争</span>
+    </div>
+    <p>7 月 17 日彭博社报道，谷歌最强旗舰模型 Gemini 3.5 Pro 发布已比原计划推迟数月，主因是提升编程能力进展不及预期——上月底更新训练数据后结果仍然令人失望。OpenAI 与 Meta 近期新模型在代码生成上进一步拉开差距，消息导致 Alphabet 股价盘中下跌，内部担忧市场优势正在流失。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>谷歌在编程能力上的"卡壳"不是孤立事件——它折射出 Scaling Law 路径的深层困境：更大模型 ≠ 更好代码。当 Kimi K3 用 2.8T 参数+创新架构在代码竞技场登顶，谷歌却在增加训练数据后仍无法达标，说明代码生成能力的瓶颈不在参数规模，而在训练数据质量、RLHF 策略和代码执行反馈闭环。这对 AI Coding 工具选型有直接指导意义：盲目追大模型可能走错方向，闭环验证（代码生成→执行→纠错→迭代）的能力才是关键分水岭。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260717A02M3W00" target="_blank">腾讯新闻</a> · 彭博社</div>
+  </div>
+
+  <div class="card">
+    <h3>Agnes AI 发布永久免费的 AI 编程工具链：Agnes-2.5-Flash + AgnesCode Desktop</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">免费工具</span>
+      <span class="tag pink">桌面端</span>
+    </div>
+    <p>7 月 13 日，Agnes AI 组合发布 Agnes-2.5-Flash 文本模型和 AgnesCode Desktop 桌面应用。模型永久免费、无使用限制，专门针对编程、Agent 任务和日常开发工作流优化，在真实代码生成任务中与 Claude Opus 4.7 的差距几乎不可分辨。桌面客户端支持智能模式（自动选择模型和工具）和专家模式（手动控制模型、参数和上下文），并通过 Skills 扩展和 MCP/App Connect 集成浏览器、设计工具、文档和内部系统。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>在 Codex 限制账户、Claude 引入身份验证的背景下，Agnes 用"永久免费+桌面原生"的差异化策略精准切入。这不仅是又一个编程工具——它是一个完整的桌面 AI 工作台，试图成为开发者与多个模型之间的"统一入口"。MCP 协议支持意味着它可以接入企业内部工具链，从个人免费工具向企业工作流渗透。对中国开发者社区来说，Agnes 的免费策略与 Kimi K3 的开源能力叠加，正在催生一个成本趋近于零的 AI Coding 时代。
+    </div>
+    <div class="source">来源：<a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-18-2026-gpt-red-super-hacker-hugging-face-agentic-breach-deepseek-71b-d82" target="_blank">Dev.to</a> · 量子位</div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>RoboScience 实现"30 秒换手即用"：全球首个云端具身大模型 Visics 完成跨本体灵巧操作突破</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">灵巧操作</span>
+      <span class="tag pink">跨本体泛化</span>
+    </div>
+    <p>在 WAIC 2026 现场，RoboScience 机器科学首次亮相即展示硬核能力：多款不同品牌灵巧手搭载同一套 Visics 通用具身大模型，在不需重新适配的情况下，30 秒内完成换手并流畅执行多类抓取任务——这是业内首次实现一套统一具身大模型同时支持多款不同构型灵巧手的 Zero-shot 泛化操作。其自研的可微多模态物理仿真引擎 RoboMirage 也一并亮相。目前该方案已与多家零售、物流企业开展试点，多 SKU 抓取成功率稳定在 99% 以上。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能落地最大的卡点不是"大脑"不够聪明，而是每换一套硬件就要重新训练一遍。"30 秒换手即用"本质上证明了具身大模型的跨硬件泛化能力——一套模型驱动不同硬件，就像操作系统可以跑在不同品牌的电脑上。这个突破的意义堪比 Android 之于手机行业：当硬件不再是软件的绑定约束，具身智能的规模化复制才成为可能。Zero-shot 适配是通往"通用机器人"的关键一步。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L232C9V005118HA4.html" target="_blank">雷峰网</a></div>
+  </div>
+
+  <div class="card">
+    <h3>极智嘉 Gino1 人形机器人首次公开："手脚协同+组队干活"，具身智能从"能动"到"能干"</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">人形机器人</span>
+      <span class="tag pink">WAIC 2026</span>
+    </div>
+    <p>在 WAIC 展会上，极智嘉首次公开通用人形机器人 Gino1。它采用全身并行控制，拣货作业中手脚协同操作将单任务时间缩短约 30%；通过与移动机器人协同编组，端到端跑通拣选全流程。现场还演示了跨品类泛化抓取（从薯片到毛绒玩偶）和动态抗干扰能力（目标被反复移动仍能持续追踪）。同期，他山科技首发全球首款动态触觉感知芯片"绿宝石 E10A"，将触觉信号直接转为脉冲信号，实现微秒级响应，将触觉感知从灵巧手拓展至机械臂、躯干和足底等全身部位。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>本届 WAIC 的具身智能展区传递了一个清晰的信号：机器人不再是"能动"的 demo，而是"能干活"的生产力。Gino1 的全身并行控制解决了传统串行流程的效率瓶颈；他山的触觉芯片则从感知层面补齐了机器人"手感"缺失的短板——没有触觉反馈的灵巧操作就像戴着手套写字。两条技术线（运动控制+触觉感知）的同时突破，正在将具身智能从实验室推向工厂和仓库的真实作业场景。产业分工格局（平台+本体+场景）的成形也在降低落地门槛。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L23O3HAN05568W0A.html" target="_blank">极智嘉</a> · <a href="https://www.163.com/dy/article/L23NJSAD053469RG.html" target="_blank">证券时报</a> · <a href="https://cj.sina.com.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Fjjxw%2F2026-07-18%2Fdoc-iniiemqp8266352.shtml" target="_blank">证券日报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：新华社 · 华尔街见闻 · 证券日报 · 腾讯新闻 · 彭博社 · Dev.to · 量子位 · 雷峰网 · 证券时报</p>
+  </footer>
+
+</div>
+</body>
+</html>

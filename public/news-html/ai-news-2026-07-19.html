@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-19</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 19 · 周日</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Bun 创始人用 Claude Code 11 天完成百万行代码 Zig→Rust 迁移，AI 大规模工程重构落地</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Claude Code</span>
+      <span class="tag pink">大规模迁移</span>
+    </div>
+    <p>7 月 17 日，Bun 创始人 Jarred Sumner 首次公开复盘用 Claude Code 将整个 Bun 项目从 Zig 迁移到 Rust 的全过程：11 天内将 1448 个 Zig 文件（超 78 万行）翻译为超过 100 万行 Rust 代码，所有测试套件合并前 100% 通过，合并后仅 19 个回归且全部修复。这次迁移消耗 59 亿输入 token、6.9 亿输出 token，成本约 16.5 万美元——对比过去 4 年累计 300 万美元的开发成本，堪称"白菜价"。Anthropic 同步公开了 Claude Code 大规模代码迁移的六步框架：生成迁移指南→机械翻译→修复编译错误→修复运行错误→对抗式评审→全量回归验证。对抗式评审机制尤其亮眼：1 个实现 Claude + 2 个以上审查 Claude，审查者只看 diff、不看原始意图，专门负责"找 bug"，成功捕获了 use-after-free、double-free 等隐蔽内存安全缺陷。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是迄今为止 AI Coding Agent 在真实工程中完成的最大规模代码迁移案例——不是写个小 demo，而是把一个 CLI 月下载量 2200 万的运行时整体换了语言。它证明了两件事：一是 AI 驱动的大规模重构在技术上是可行的（11 天完成过去需要数年的工作）；二是"对抗式评审"模式解决了 LLM 代码审查中最棘手的问题——写代码的 AI 会倾向于通过审查，而独立的审查 AI 只负责找错，角色分离后审查质量显著提升。对运维/SRE 而言，这套框架可直接应用于大规模技术栈迁移场景。
+    </div>
+    <div class="source">来源：<a href="https://bun.com/blog/bun-in-rust" target="_blank">Bun 官方博客</a> · <a href="https://c.m.163.com/news/a/L222ANEK0511ABV6.html" target="_blank">新智元</a> · <a href="https://www.21cto.com/article/3715791474312880" target="_blank">21CTO</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Kimi K3 发布：2.8 万亿参数最大开源模型，编程能力超越 Claude Opus 4.8</h3>
+    <div class="meta">
+      <span class="tag">开源模型</span>
+      <span class="tag green">Moonshot AI</span>
+      <span class="tag pink">编程能力</span>
+    </div>
+    <p>7 月 16 日，月之暗面（Moonshot AI）发布 Kimi K3：2.8 万亿参数 MoE 模型（896 个专家子网络、每 token 激活 16 个），1 百万 token 上下文窗口，原生视觉输入。API 已上线，开源权重 7 月 27 日发布。K3 在 DeepSWE（67.5 vs 59.0）、FrontierSWE（81.2 vs 66.7）、Terminal Bench 2.1（88.3 vs 84.6）、BrowseComp（91.2 vs 84.3）等多项编程基准上超越 Claude Opus 4.8，但 Moonshot 承认整体能力仍落后于 Claude Fable 5 和 GPT 5.6 Sol。定价 $3/MTok 输入、$15/MTok 输出，配合 90%+ 的缓存命中率，实际编程场景成本更低。架构引入两项新组件：Kimi Delta Attention（KDA）优化长序列信息流、Attention Residuals（AttnRes）提升训练效率，整体缩放效率约为 K2 的 2.5 倍。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>K3 是首个在编程基准上超越西方前沿闭源模型的中国开源模型，且 2.8T 参数规模刷新了开源模型记录（超过 DeepSeek V4-Pro 的 ~1.6T）。但两个关键 caveat：权重尚未公开（7 月 27 日才可自托管和独立评测），且幻觉率高于 K2 世代。对 AI Coding 开发者来说，K3 的真正价值在于"开源权重 + 编程能力 + 长上下文"的组合——一旦权重落地，团队可以自托管运行一个接近 Opus 级别的编程 Agent，摆脱 API 依赖和定价不确定性。
+    </div>
+    <div class="source">来源：<a href="https://pondero.ai/news/2026-07-17-kimi-k3-moonshot-worlds-largest-open-weight" target="_blank">Pondero</a> · <a href="https://aiinsiders.net/article/moonshots-kimi-k3-becomes-the-largest-open-weight-model-yet" target="_blank">AI Insiders</a> · <a href="https://aitoolsreview.co.uk/insights/kimi-k3-launch" target="_blank">AI Tools Review</a></div>
+  </div>
+
+  <div class="card">
+    <h3>GitHub / Anthropic / OpenAI 同周收紧 AI 编程 Agent 安全护栏，供应链攻击成催化剂</h3>
+    <div class="meta">
+      <span class="tag">AI Agent 安全</span>
+      <span class="tag green">护栏机制</span>
+      <span class="tag pink">供应链攻击</span>
+    </div>
+    <p>7 月 14-16 日这一周，三大编程 Agent 工具同时收紧了安全边界：GitHub Copilot CLI 在 plan 模式下硬性禁止文件编辑操作，将沙盒策略从"提示词约束"升级为"运行时强制阻断"；Claude Code 修复了双向覆盖字符和零宽字符伪造审批提示的漏洞，PreToolUse hook 的拒绝决策不再被 auto 模式覆盖，后台任务通知明确标注"无人工审批"；OpenAI Codex 0.144.5 加强了危险命令检测，捕获更多 rm 强制删除形式并给出更清晰的拒绝理由。这波同步收紧的直接诱因：攻击者入侵了 AsyncAPI 四个核心仓库的发布管线，向 npm 推送了五个木马包——一个自动安装依赖的 Agent 正好是这种攻击的完美爆炸半径。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>过去一年 AI Coding Agent 的叙事是"更多自主性"，但这周三家巨头同时反方向操作——给 Agent 加锁。这不是偶然，而是供应链攻击事件敲响了警钟：Agent 自主安装依赖 = 自动执行恶意代码的通道。Copilot 把沙盒从"提示词约束"变成"运行时硬阻断"，Claude Code 把审批防伪从"可信"变成"显式标注"，Codex 把危险命令检测从"模糊"变成"精确"——三条路径殊途同归：Agent 的自主权必须被可验证的硬约束兜底。对 DevOps/SRE 来说，这意味着未来 AI Agent 在生产环境中的操作权限会越来越分层化，而非全面开放。
+    </div>
+    <div class="source">来源：<a href="https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-july-11-17-2026" target="_blank">EveryDev.ai</a> · <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-july-15-2026-muse-spark-11-enters-coding-wars-microsoft-mai-replaces-openai-5378" target="_blank">Dev.to</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>2026 WAIC：具身智能从"炫技"走向"打工"，复旦首发视触融合大模型，腾讯发布三大具身基座</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">WAIC 2026</span>
+      <span class="tag pink">产业落地</span>
+    </div>
+    <p>2026 世界人工智能大会（WAIC）7 月 17-20 日在上海举行，具身智能与智算并列为两大核心赛道，超 200 家产业链企业齐聚具身智能馆。行业风向从"炫技"明确转向"实干"：物流分拣机器人已在国内十余个物流中心常态化上岗（上百台同款），酒店收衣、无人小卖部卖货、家庭收纳家政机器人纷纷亮相展台。复旦大学可信具身智能研究院发布首个支持精细化操作的视触融合具身大模型——自研视触觉传感器指尖每平方厘米约 4 万感知点，捕获接触形变与受力分布，沉淀上万小时高保真交互数据，让机器人真正拥有"触觉认知"，成功落地车灯精密装配场景。苏度科技展示四台机器人协同完成新能源电池模组全流程作业，通用场景抓取成功率 98%、工业场景 99.5%。腾讯同期发布三大具身基座模型（Hy-Embodied-VLM-1.0 / RxBrain-1.0 / VLA-0.5）和两大智能体（Apexio / TairosAgent），首次系统打通"感知—身体—行动"闭环，示范机器人"小六"化身按摩师在展台给观众按摩，下一步计划进入养老院真实场景迭代。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>WAIC 2026 标志着具身智能的产业拐点：不再比谁翻跟头酷，而是比谁能在产线上"真干活"。两个突破尤其值得关注——复旦的视触融合大模型解决了精细操作场景中纯视觉无法感知力度和形变的核心痛点，这是从"看"到"摸"的认知跃迁；腾讯的"三模型+两智能体"架构首次把具身智能的"大脑—小脑—身体"分层建模，让高层规划、底层动作控制和场景理解各司其职，而不是把所有能力塞进一个黑箱。对关注 SRE/DevOps 自动化的人来说，这种分层架构思路同样适用于运维 Agent 设计——认知层、规划层、执行层的解耦是规模化运维的必经之路。
+    </div>
+    <div class="source">来源：<a href="https://news.cctv.cn/2026/07/18/ARTIj1OOj3nJljczoV9rTGKr260718.shtml" target="_blank">央视网</a> · <a href="https://news.fudan.edu.cn/2026/0717/c5a149902/page.htm" target="_blank">复旦大学</a> · <a href="https://www.163.com/dy/article/L25FK4K105129QAF.html" target="_blank">南方都市报</a> · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_3576a5ba4fc91952" target="_blank">封面新闻</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：Bun 官方博客 · 新智元 · Pondero · AI Insiders · EveryDev.ai · 央视网 · 复旦大学 · 南方都市报 · 封面新闻 · 21CTO</p>
+  </footer>
+
+</div>
+</body>
+</html>
