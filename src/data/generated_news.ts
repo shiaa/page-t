@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-21',
+    title: 'AI 每日动态 (2026-07-21)',
+    summary: '1. OpenAI 收购 Ona（原 Gitpod）：为 Codex 补上持久化云端 Agent 能力 2. Agent Data Injection（ADI）新攻击类型被正式提出，多家主流编码 Agent 受影响 3. WAIC 2026...',
+    date: '2026-07-21',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月21日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 收购 Ona（原 Gitpod）：为 Codex 补上持久化云端 Agent 能力
+
+
+### 2. Agent Data Injection（ADI）新攻击类型被正式提出，多家主流编码 Agent 受影响
+
+
+### 3. WAIC 2026 闭幕：具身智能定调"部署态元年"，从炫技表演转向晒工单干活
+
+
+### 4. 智元精灵 G2 Max 在京东物流真实仓储部署，人形机器人首次进入规模化生产场景
+
+
+### 5. 华为 × 国地中心：全国首个国产化具身智能实训场揭牌，真机训练成本从百万级摊薄至共享级
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-20',
     title: 'AI 每日动态 (2026-07-20)',
     summary: '1. 2026 WAIC 闭幕：AI 从数字智能迈向"物理智能交付元年"，具身智能全面冲刺落地 2. Kimi K3 发布引爆全球 AI 竞速，马斯克宣称 2 万亿参数模型下周完成训练、目标赶超 3. AI Coding 价值重心转移：从"...',
