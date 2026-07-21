@@ -209,6 +209,12 @@ def main():
     # 同步 HTML 到 public/news-html/（供页面跳转使用）
     news_html_dir = SCRIPT_DIR.parent / "public" / "news-html"
     news_html_dir.mkdir(parents=True, exist_ok=True)
+    # 先清理旧 HTML，避免源已删除的日报在输出目录留下孤儿文件
+    for old in news_html_dir.glob("ai-news-*.html"):
+        try:
+            old.unlink()
+        except OSError:
+            pass
     for filepath in html_files:
         dest = news_html_dir / filepath.name
         shutil.copy2(filepath, dest)
