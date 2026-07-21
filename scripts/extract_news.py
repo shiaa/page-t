@@ -209,12 +209,17 @@ def main():
     # 同步 HTML 到 public/news-html/（供页面跳转使用）
     news_html_dir = SCRIPT_DIR.parent / "public" / "news-html"
     news_html_dir.mkdir(parents=True, exist_ok=True)
-    # 先清理旧 HTML，避免源已删除的日报在输出目录留下孤儿文件
+    # 仅删除「源已删除的日报」留下的孤儿文件：正常每日运行删除数为 0，
+    # 避免一次性循环删除全部文件触发 WorkBuddy 批量删除确认阈值（阈值 50）。
+    # 复制阶段会覆盖同名文件，因此输出目录始终与当前源集合一致。
+    current_names = {f.name for f in html_files}
     for old in news_html_dir.glob("ai-news-*.html"):
-        try:
-            old.unlink()
-        except OSError:
-            pass
+        if old.name not in current_names:
+            try:
+                old.unlink()
+                print(f"  [DEL] 孤儿文件 {old.name}")
+            except OSError:
+                pass
     for filepath in html_files:
         dest = news_html_dir / filepath.name
         shutil.copy2(filepath, dest)
