@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-23</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 23 · 周四</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录</h3>
+    <div class="meta">
+      <span class="tag">大模型</span>
+      <span class="tag green">开源权重</span>
+      <span class="tag pink">里程碑事件</span>
+    </div>
+    <p>7 月 16 日，月之暗面（Moonshot AI）正式发布 Kimi K3。该模型采用 MoE 架构，总参数约 2.8 万亿、单次激活 410 亿参数，支持 100 万 token 超长上下文与原生多模态输入，权重将于 7 月 27 日正式开放。K3 在 Arena 盲测中开发者偏好度超过当前所有主流美国模型，API 定价约为 12 美元 / 百万 token。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>K3 把开源权重模型的参数天花板从 DeepSeek V4-Pro 的 1.6 万亿直接推到 2.8 万亿，同时保持百万级上下文。对 AI Coding 而言，超长上下文意味着 agent 可以一次性吞入整个代码库、文档和历史提交做推理，减少“只见树木不见森林”的幻觉。如果权重开放后推理成本能下来，企业私有化部署高级代码 agent 的门槛将被显著拉低。
+    </div>
+    <div class="source">来源：<a href="https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-july-11-17-2026" target="_blank">EveryDev</a> · <a href="https://neodrop.ai/zh-cn/post/xoWFQzEbGfj" target="_blank">Neodrop</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏”</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">安全</span>
+      <span class="tag pink">Agent 治理</span>
+    </div>
+    <p>7 月 14–17 日，三大主流 coding agent 相继发布安全与权限控制更新：GitHub Copilot CLI 在 plan 模式下硬阻断文件修改、增加 MCP 服务器启动指纹校验与实时用量告警；Claude Code 修复审批提示可被零宽字符/双向覆盖字符伪造的漏洞，限制单会话最多 200 次 WebSearch/子 agent 调用；OpenAI Codex 0.144.5 增强危险命令检测，覆盖更多强制 rm 形式。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>当 coding agent 从“辅助写代码”进化到能自动改文件、装依赖、调服务时，它的攻击面已经不亚于 CI/CD 管道。三家头部厂商在同一周不约而同升级护栏，说明行业共识正在从“拼生成能力”转向“拼可控性”。对企业来说，agent 的权限边界、审计链路、人工接管点，将成为未来半年内落地评估的核心指标。
+    </div>
+    <div class="source">来源：<a href="https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-july-11-17-2026" target="_blank">EveryDev</a> · <a href="https://neodrop.ai/zh-cn/post/xoWFQzEbGfj" target="_blank">Neodrop</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Cursor 被曝远程代码执行漏洞：打开仓库即可触发，70 余个版本未修复</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag pink">安全漏洞</span>
+      <span class="tag green">风险警示</span>
+    </div>
+    <p>安全公司 Mindgard 于 7 月 14 日披露，Cursor 存在一个无需用户点击即可执行任意代码的 RCE 漏洞：攻击者只需在仓库根目录放置恶意 git.exe，开发者打开该仓库时 Cursor 便会自动运行该程序。漏洞自 2025 年 12 月 15 日报告后，跨越 70 多个版本仍未修复，直至公开细节后才引发广泛关注。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cursor 是增速最快的 AI 编程工具之一，此次漏洞暴露的不仅是单个产品安全问题，更是整个 coding agent 品类在“为了体验便利而过度授权”上的系统性风险。它给企业和个人开发者都提了个醒：在 agent 能自动执行命令、修改文件、安装依赖的环境下，沙箱、最小权限、依赖校验必须成为默认配置，而不是可选项。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260715A09L1800?refer=cp_1009" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Perplexity 自研 AI 编程工具 Teammate 曝光，正式入局代码开发赛道</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">新产品</span>
+      <span class="tag pink">市场竞争</span>
+    </div>
+    <p>据 Business Insider 7 月 9 日报道，AI 搜索公司 Perplexity 正在内部测试代号为 “Teammate” 的 AI 编程工具，自今年 5 月起工程师已开始试用。该产品面向长期工程研发场景，覆盖项目管理、代码故障排查、线上服务监控等环节，支持多模型切换，不绑定单一大模型。公司 CTO 丹尼斯·亚拉茨预测，到今年年底软件工程师有望依靠 AI 完成开发工作而无需逐行阅读代码。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Perplexity 估值已达 200 亿美元，从搜索切入编程意味着 AI Coding 赛道又多了一个资金充裕、搜索与问答能力强的竞争者。它的差异化可能是“检索增强 + 多模型 + 项目全生命周期管理”，与 Cursor、Claude Code、GitHub Copilot 形成正面竞争。市场越拥挤，产品形态 converges 到“全栈工程 agent”的速度就越快。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L1DHO03R0514R9OJ.html" target="_blank">网易新闻 / 环球网</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>WAIC 2026 闭幕：具身智能与智算并列核心赛道，产业进入规模化交付元年</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业落地</span>
+      <span class="tag pink">WAIC</span>
+    </div>
+    <p>7 月 17–20 日，2026 世界人工智能大会在上海举行，具身智能馆成为全场人气最高的展区，汇聚 161 家企业、314 项展品。与去年偏重“唱歌跳舞”的表演展示不同，今年展台上直接出现物流分拣、酒店收洗、家庭收纳、工厂上下料、芯片加工等真实场景。业内人士普遍认为，国产 AI 产业正从“数字智能”铺垫期进入“物理智能”规模化交付元年。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>当展会从炫技转向真实作业流程，说明具身智能的商业化拐点正在临近。行业比拼焦点也从硬件参数转向“大脑”——具身大模型的感知、规划、长序列任务执行能力。对关注赛道的人来说，接下来要盯的不是谁能翻跟头，而是哪家方案能在工厂/物流/服务场景中跑出稳定的 ROI 和可复制部署。
+    </div>
+    <div class="source">来源：<a href="https://news.cctv.cn/2026/07/18/ARTIj1OOj3nJljczoV9rTGKr260718.shtml" target="_blank">央视网</a> · <a href="https://www.nfnews.com/content/voApL8Oz6R.html" target="_blank">南方日报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>松应科技发布 ORCA OS：全球首个多形态机器人协同训练的物理 AI 操作系统</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">多智能体协同</span>
+      <span class="tag pink">物理 AI OS</span>
+    </div>
+    <p>在本届 WAIC 上，松应科技发布全球首个面向多形态机器人协同训练的物理 AI 操作系统 ORCA OS。该系统首次实现人形机器人、四足机器人、无人机等异构智能体在同一数字工厂场景中的协同训练与任务执行，通过统一调度把场景、时序、状态、数据与任务关系连接起来，打通“数字训练—真机部署”的具身智能研发闭环。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>未来工厂不是一台人形机器人单打独斗，而是人形、四足、轮式、无人机按能力分工的混合编队。ORCA OS 的意义在于把竞争维度从“单机本体”拉高到“系统调度与协同决策”。谁先建立起跨形态、跨场景的统一训练与部署底座，谁就可能在工业、仓储、低空物流等复杂场景中占据平台级生态位。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260719A075WP00?refer=cp_1009" target="_blank">腾讯新闻 / 中国日报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：EveryDev · Neodrop · 腾讯新闻 · 央视网 · 南方日报 · 网易新闻</p>
+  </footer>
+
+</div>
+</body>
+</html>

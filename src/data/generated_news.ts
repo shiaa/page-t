@@ -3,6 +3,45 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-23',
+    title: 'AI 每日动态 (2026-07-23)',
+    summary: '1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏” ...',
+    date: '2026-07-23',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月23日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录
+
+
+### 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏”
+
+
+### 3. Cursor 被曝远程代码执行漏洞：打开仓库即可触发，70 余个版本未修复
+
+
+### 4. Perplexity 自研 AI 编程工具 Teammate 曝光，正式入局代码开发赛道
+
+
+### 5. WAIC 2026 闭幕：具身智能与智算并列核心赛道，产业进入规模化交付元年
+
+
+### 6. 松应科技发布 ORCA OS：全球首个多形态机器人协同训练的物理 AI 操作系统
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-22',
     title: 'AI 每日动态 (2026-07-22)',
     summary: '1. 月之暗面发布 Kimi K3：2.8 万亿参数全球最大开源模型，编程能力登顶 Arena 榜首 2. Google 发布 Gemini 3.6 Flash 等三款新模型，强化编程与网络安全能力 3. Claude Code 企业渗透率...',
