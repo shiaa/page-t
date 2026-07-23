@@ -3,6 +3,39 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-24',
+    title: 'AI 每日动态 (2026-07-24)',
+    summary: '1. 阿里国际站 Accio Work 用户突破千万，AI Agent B 端商业化迎来关键样本 2. PrimalVerse 元昊动力完成数亿元种子轮融资，押注原生 4D 世界模型基模 3. Claude Code 2.1.205 发布 ...',
+    date: '2026-07-24',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月24日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 阿里国际站 Accio Work 用户突破千万，AI Agent B 端商业化迎来关键样本
+
+
+### 2. PrimalVerse 元昊动力完成数亿元种子轮融资，押注原生 4D 世界模型基模
+
+
+### 3. Claude Code 2.1.205 发布 /checkup 命令，AI 编程环境进入“自我体检”时代
+
+
+### 4. 无界动力 K15 成为全球首个获工业级全域 CE 认证的具身智能机器人，开启全球批量交付
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-23',
     title: 'AI 每日动态 (2026-07-23)',
     summary: '1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏” ...',

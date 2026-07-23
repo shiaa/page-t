@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-24</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 24 · 周五</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>阿里国际站 Accio Work 用户突破千万，AI Agent B 端商业化迎来关键样本</h3>
+    <div class="meta">
+      <span class="tag">AI Agent</span>
+      <span class="tag green">B 端商业化</span>
+      <span class="tag pink">阿里国际站</span>
+    </div>
+    <p>7 月 23 日，在杭州一场全球跨境电商峰会上，阿里国际站总裁张阔透露，全球已有 1000 万中小企业在使用 Accio Work 做生意，用户数在一年内增长逾 30 倍。过去 12 个月，阿里国际站上的中小企业 Token 消耗量翻了 10 倍，而 Accio Work 单次任务的使用成本下降了 50%。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Accio Work 从零到千万用户仅一年，是 AI Agent 在 B 端场景规模化落地的标志性案例。中小企业 Token 消耗翻 10 倍说明它已嵌入真实业务流程，而非停留在“尝鲜”；成本下降 50% 则体现了规模效应与工程优化。对 AI Coding 和 Agent 开发者而言，这是一条可观测的 PMF 路径：垂直场景、工作流嵌入、按任务计费。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L2J6JPGL0512B07B.html" target="_blank">每日经济新闻 / 网易</a> · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_7156a62978d83852" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>PrimalVerse 元昊动力完成数亿元种子轮融资，押注原生 4D 世界模型基模</h3>
+    <div class="meta">
+      <span class="tag">世界模型</span>
+      <span class="tag green">具身智能</span>
+      <span class="tag pink">4D 重建</span>
+    </div>
+    <p>近日，4D 世界模型公司 PrimalVerse（元昊动力）宣布完成数亿元种子轮融资，由联想之星、银杏谷资本、啟赋资本、卓源亚洲等财务投资机构联合参与，手术机器人领域头部产业方精锋医疗战略投资。团队由清华背景的世界模型研究者组成，提出以“原生 4D World Token”为核心的第五代多模态大模型，目标覆盖具身智能、游戏影视、自动驾驶、医疗手术等场景。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>世界模型被普遍视为具身智能和自动驾驶的“底层操作系统”。PrimalVerse 强调从文本/图像/视频 token 走向原生 4D（3D 空间 + 时间）表征，让模型能预测“一次行动之后世界会发生什么”。清华团队贯通 4D 重建、神经渲染、物理仿真与机器人技术链，是少数能完整交付这一技术路径的团队。这笔融资也表明资本仍在向“物理 AI 基础设施”下注。
+    </div>
+    <div class="source">来源：<a href="https://36kr.com/p/3907721534412679?f=rss" target="_blank">36氪</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Claude Code 2.1.205 发布 /checkup 命令，AI 编程环境进入“自我体检”时代</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Claude Code</span>
+      <span class="tag pink">Agent 工具链</span>
+    </div>
+    <p>7 月上旬，Anthropic 发布 Claude Code v2.1.205，将 /doctor 升级为完整的 setup checkup，并新增别名 /checkup。Claude Code 创始人 Boris Cherny 介绍，运行 /checkup 可自动清理长期未使用的技能、MCP 和插件，拆分臃肿的 CLAUDE.md，关闭拖慢运行的 hooks，将 Claude Code 更新到最新版，并默认开启自动模式与高频只读命令预批准。该版本共包含 23 项 CLI 升级。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>AI Coding 工具的竞赛正从“模型能力”延伸到“工程环境治理”。上下文窗口是稀缺资源，未用插件和技能会无声消耗 token；长期项目里 CLAUDE.md 膨胀到数百行后也会拖累效果。/checkup 把这些手动运维动作打包成一键命令，意味着 Agent 开始具备“自我卫生”能力。对 DevOps/SRE 和团队 CI 场景，这能显著降低长期维护摩擦与权限确认噪音。
+    </div>
+    <div class="source">来源：<a href="https://finance.sina.cn/2026-07-11/detail-inihktzm5153423.d.html" target="_blank">新浪财经 / 新智元</a> · <a href="https://www.chooseai.net/ai-news/detail/4954" target="_blank">ChooseAI</a> · <a href="https://claudekit.io/en/updates/claude-code-2-1-205" target="_blank">ClaudeKit</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>无界动力 K15 成为全球首个获工业级全域 CE 认证的具身智能机器人，开启全球批量交付</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">工业认证</span>
+      <span class="tag pink">出海</span>
+    </div>
+    <p>7 月 9 日，无界动力宣布旗下第二代机器人 K15 通过欧盟合规准入，成为全球首个获得工业级全域 CE 认证的具身智能机器人。K15 全面通过 CE-MD（机械安全）、CE-RED（无线电设备）、CE-EMC（电磁兼容）、EN ISO 13849（功能安全）及 EN 18031（网络安全）认证。目前，无界动力全球近 1 亿美元的国内外订单已全面开启交付，首批 K15 机器人已启程发往欧洲，与远景科技集团法国工厂的合作项目率先落地。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>CE 认证是欧洲工业市场的强制性准入背书，涉及机械、电磁、功能安全与网络安全，全球公认门槛最高。K15 通过“工业级全域”认证，意味着中国具身智能从“纯硬件输出”升级为“软硬一体的智能基础设施”出海。其批量交付也说明国产具身智能的合规、供应链和量产能力已能支撑跨国项目，对机器人出海和欧洲工业场景落地具有标杆意义。
+    </div>
+    <div class="source">来源：<a href="https://finance.sina.com.cn/tech/roll/2026-07-09/doc-inihfpqu4248639.shtml" target="_blank">新浪财经</a> · <a href="https://www.toutiao.com/article/7660764111495512576" target="_blank">南方+ / 今日头条</a> · <a href="https://www.toutiao.com/article/7660705182602297908/" target="_blank">中国经营报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：每日经济新闻 · 36氪 · 新智元 · 新浪财经 · 南方+ · 中国经营报 · 中国国际广播电台 · 腾讯新闻</p>
+  </footer>
+
+</div>
+</body>
+</html>
