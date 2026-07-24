@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-07-25</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 07 / 25 · 周六</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Anthropic 发布 Claude Opus 5：性能逼近旗舰 Fable 5，价格只要一半</h3>
+    <div class="meta">
+      <span class="tag">大模型</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">价格战</span>
+    </div>
+    <p>美东时间 7 月 24 日，Anthropic 正式发布新一代 Claude Opus 5 模型，全平台同步上线。Opus 5 在 Frontier-Bench 编程基准上成绩较 Opus 4.8 翻倍（43.3% vs 18.7%），超过 Fable 5 的 33.7%；CursorBench 3.2 最高档仅落后 Fable 5 半个百分点（70.0% vs 70.5%），但单任务成本仅 8.23 美元 vs 17.32 美元，token 用量减少 40%。Anthropic 将其定位为"日常主力模型"，取代 Opus 4.8 成为 Claude Max 默认模型和 Claude Pro 最强模型。定价维持每百万 token 输入 5 美元 / 输出 25 美元不变。同时，Anthropic 刻意未在网络攻击类任务上训练 Opus 5，安全分类器拦截频率预计比 Fable 5 低约 85%，被拦截请求自动回退给 Opus 4.8 继续处理。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这不是一次普通的模型升级，而是 AI 行业竞争逻辑的转折信号——从"谁训练出最强模型"变为"谁能以最低成本提供足够强的模型"。Opus 5 在 CursorBench 上用不到一半的价格逼近 Fable 5，对中国 AI 编程工具用户意味着：相同的 API 预算能跑两倍的任务量。结合 Anthropic 刻意分离"通用能力"与"危险能力"的产品策略（安全模型与高能模型分轨），一条清晰的商业化路径正在成型：把智能拿出来打折卖，把危险单独上锁。对中国开发者而言，这轮模型降本直接降低了 AI Coding 工具的推理成本。
+    </div>
+    <div class="source">来源：<a href="https://anthropic.com/news/claude-opus-5" target="_blank">Anthropic 官方</a> · <a href="https://venturebeat.com/orchestration/anthropic-launches-claude-opus-5-a-cheaper-ai-model-for-coding-agents-and-enterprise-workflows" target="_blank">VentureBeat</a> · <a href="https://finance.sina.cn/tech/2026-07-25/detail-iniixwvx1465942.d.html" target="_blank">新浪科技</a> · <a href="https://www.163.com/dy/article/L2L7CSMF05198NMR.html" target="_blank">华尔街见闻</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>腾讯云发布 CodeBuddy NPC：AI 从「辅助写代码」进化为「独立交付 PR」</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">腾讯云</span>
+      <span class="tag pink">Coding Agent</span>
+    </div>
+    <p>7 月 23 日，腾讯云正式发布云端研发智能体 CodeBuddy NPC（Cloud Agent）。开发者只需在 Issue 中 @NPC 并派发任务，它即可自主完成方案规划、代码编写、提交 PR、执行测试，并根据 CI 结果持续修改直到通过质量门禁。NPC 深度融合 CNB 平台，能直接读取代码仓库、Issue、PR、CI/CD 等研发上下文作为"原生记忆"，而非依赖开发者手动复制粘贴。官方 NPC 首轮 Token 消耗已从早期 2 万+降至约 2000，降幅超 90%。多个 NPC 可组队（NPC Team）分工协作，腾讯云展示了一支 NPC Team 零人工干预完成游戏全流程开发的案例。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>CodeBuddy NPC 代表 AI Coding 工具的一次范式跃迁——从"你在 IDE 里问、AI 回答"到"你定目标、AI 闭环交付"。它的核心竞争力不是模型本身，而是与 CNB 平台的深度绑定：Issue = 需求记忆、仓库 = 工程记忆、PR = 变更记忆、CI = 质量记忆——这些研发资产天然充当了 Agent 的上下文层，解决了多 Agent 协作中"项目失忆"的核心痛点。首轮 Token 消耗降 90% 更是实打实的成本优势。对国内 DevOps/SRE 从业者，这意味着 CI 失败自动修复、代码合并冲突自动解决等场景有了可直接落地的工具。
+    </div>
+    <div class="source">来源：<a href="https://copilot.tencent.com/npc" target="_blank">CodeBuddy 官网</a> · <a href="https://new.qq.com/rain/a/20260723A08OOM00" target="_blank">腾讯新闻</a> · <a href="https://www.infoq.cn/article/w6DHDb3QUYPLC1vaU8z1" target="_blank">InfoQ</a></div>
+  </div>
+
+  <div class="card">
+    <h3>上下文工程（Context Engineering）取代 Prompt Engineering，成为 AI Coding 新共识</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">技术范式</span>
+      <span class="tag pink">ContextOps</span>
+    </div>
+    <p>7 月 24 日前后，多篇行业深度文章集中指向同一个结论：AI Coding Agent 翻车的根因不是模型不够强，而是上下文供给错误。社区研究指出，Chroma 测试 18 个前沿模型随上下文变长全面退化；ETH Zurich 发现自动生成的超长 CLAUDE.md 反使任务成功率降约 3%、成本涨 20%+。同时，从"Vibe Coding"到"Agent Engineering"的范式转换正在形成——个人可 vibe，团队必须 engineering，需要 spec、ticket、sandbox、automated check、review 五层约束。开源项目 Deja-vu 通过索引 Claude Code、Codex、Cursor 等本地会话实现跨 Agent 检索与交接，提出三层记忆架构（AGENTS.md / DECISIONS.md / KNOWN_ISSUES.md / RUNBOOK.md）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>上下文工程是 2026 年下半年 AI Coding 赛道最核心的技术主线。它揭示了一个反直觉的事实：给 AI 更多上下文不一定是好事，关键在于"在正确的时间给正确的信息"。对日常使用 AI 编程工具的开发者，这意味着未来的竞争力不再是"写出更好的 Prompt"，而是"构建更高质量的项目上下文体系"——CLAUDE.md 怎么写、代码示例怎么组织、架构文档怎么维护。团队已经开始用 ContextOps 这个词描述把上下文创建、分发、治理上升为组织级职能的趋势。
+    </div>
+    <div class="source">来源：<a href="https://danielkliewer.com/blog/2026-07-02-context-engineering-the-real-full-stack-development-paradigm" target="_blank">Daniel Kliewer</a> · <a href="https://alphacorp.ai/blog/what-is-context-engineering-the-discipline-that-replaced-prompt-engineering" target="_blank">AlphaCorp</a> · <a href="https://new.qq.com/rain/a/20260724A03XCP00" target="_blank">腾讯新闻</a> · <a href="https://www.toutiao.com/a7662474738547147318" target="_blank">头条</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>越疆人形机器人完成全球产业现场大规模交付，从「样品」到「产线生产力」</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">越疆科技</span>
+      <span class="tag pink">量产交付</span>
+    </div>
+    <p>7 月 24 日，越疆科技宣布大批人形机器人已成功部署于全球多个产业现场，在真实工业生产环境中持续开展上下料、高精度分拣、精细装配及成品回流等任务。越疆将十余年协作机器人领域积累的运动控制、力控、轨迹规划能力迁移至人形机器人上肢，搭载自研"空弈 DobotWAM"具身大模型，使机器人能自主适应产线位姿偏差与流程波动。越疆已建成国际标准智造基地，贯通核心部件生产、整机总装、测试验证全流程，核心部件实现自主研发制造，并构建"一脑多体"智能系统实现人形机器人与协作机器人的统一调度。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能行业的一个重要转折点——从此前的"实验室演示 + 展会炫技"正式进入"真实产线部署 + 规模化交付"。越疆的做法不同于"先造机器人再找场景"的传统路径，而是从制造业真实需求反向定义机器人能力，通过全球产业现场的应用反馈反向驱动研发与制造。这验证了 WAIC 2026 上形成的行业共识：具身智能正在全力从展台走向产线、从样机迈向规模化量产。对关注行业落地的从业者，越疆打通"核心部件 → 本体 → 具身大模型 → 全球部署 → 规模交付"的完整链路具有示范意义。
+    </div>
+    <div class="source">来源：<a href="https://www.sznews.com/news/content/2026-07/24/content_32130940.htm" target="_blank">深圳新闻网</a></div>
+  </div>
+
+  <div class="card">
+    <h3>小鹏人形机器人广州工厂开启小批量试生产，2026 年量产进入倒计时</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">小鹏</span>
+      <span class="tag pink">量产</span>
+    </div>
+    <p>7 月 24 日据《中国经营报》报道，小鹏人形机器人已在广州工厂正式开启小批量试生产，量产产线进入最后联调阶段，量产冲刺进入倒计时。小鹏集团董事长何小鹏已亲自兼任机器人业务 CEO，内部量产动员大会明确关键节点：2026 年实现人形机器人量产，2027 年起陆续进驻全球小鹏门店及商业场景，承担导购、讲解等服务。小鹏将汽车业务的软硬件协同研发、智能制造与全球化渠道经验系统性复用于机器人领域。同日，摩根士丹利发布预测：2026 年中国市场人形机器人出货量将达 5 万台，2050 年全球市场规模将达 7.5 万亿美元。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>小鹏机器人量产进入倒计时，叠加越疆全球交付、众擎机器人郑州基地投产（7 月 24 日中原首个人形机器人量产基地下线），7 月最后一周密集释放了具身智能从"技术验证"到"规模量产"的强烈信号。何小鹏亲自挂帅意味着小鹏将汽车产业的供应链、制造、渠道能力系统性地注入机器人业务——"汽车机器人"跨界协同正在成为具身智能一条独特的落地范式。摩根士丹利 5 万台的年度出货预测也给了行业一个可量化的商业化时间表。对关注投资和入行窗口的人，2026 年下半年是具身智能从"概念"到"交付"的关键观察期。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L2L9BSD605199NHJ.html" target="_blank">中国经营报</a> · <a href="https://finance.sina.com.cn/wm/2026-07-24/doc-iniixspu9221493.shtml" target="_blank">新浪财经</a> · <a href="https://www.hnic.com.cn/news/project/2080597081629790208.shtml" target="_blank">河南投资集团</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：Anthropic · VentureBeat · 新浪科技 · 华尔街见闻 · 腾讯新闻 · InfoQ · Daniel Kliewer · AlphaCorp · 深圳新��网 · 中国经营报 · 河南投资集团</p>
+  </footer>
+
+</div>
+</body>
+</html>
