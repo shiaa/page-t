@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-28',
+    title: 'AI 每日动态 (2026-07-28)',
+    summary: '1. 月之暗面开源 Kimi K3：2.8 万亿参数 MoE 模型登顶 AI 代码工具榜单，马斯克点赞 2. MCP 2026 07 28 规范正式定稿：协议核心无状态化，最大规模修订重塑 Agent 工具链 3. Claude Code ...',
+    date: '2026-07-28',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月28日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 月之暗面开源 Kimi K3：2.8 万亿参数 MoE 模型登顶 AI 代码工具榜单，马斯克点赞
+
+
+### 2. MCP 2026-07-28 规范正式定稿：协议核心无状态化，最大规模修订重塑 Agent 工具链
+
+
+### 3. Claude Code 8 天连发 8 版：2.1.210 修复 worktree 隔离数据安全漏洞，2.1.215 带来二次性能优化
+
+
+### 4. τ0-VLA 让具身智能迈向长程任务时代：上海创智学院 × 智元机器人，长程任务成功率从 27.5% 跃升至 45%
+
+
+### 5. 人民日报头版关注人形机器人规模化量产：年产能万台工厂落成，行业进入"交付"拐点
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-25',
     title: 'AI 每日动态 (2026-07-25)',
     summary: '1. Anthropic 发布 Claude Opus 5：性能逼近旗舰 Fable 5，价格只要一半 2. 腾讯云发布 CodeBuddy NPC：AI 从「辅助写代码」进化为「独立交付 PR」 3. 上下文工程（Context Engi...',
