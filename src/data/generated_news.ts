@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-07-30',
+    title: 'AI 每日动态 (2026-07-30)',
+    summary: '1. MCP 协议史上最大改版正式发布：彻底无状态化，AI Agent 基础设施迎来转折点 2. 腾讯云发布 CodeBuddy NPC：首个 AI Native Git 范式产品，AI 编程进入"工程化协作"阶段 3. 月之暗面 Kimi...',
+    date: '2026-07-30',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月30日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. MCP 协议史上最大改版正式发布：彻底无状态化，AI Agent 基础设施迎来转折点
+
+
+### 2. 腾讯云发布 CodeBuddy NPC：首个 AI Native Git 范式产品，AI 编程进入"工程化协作"阶段
+
+
+### 3. 月之暗面 Kimi K3 全量开源（2.8 万亿参数），蝉联前端开发榜全球第一
+
+
+### 4. 头部车企密集布局人形机器人：比亚迪 8 月亮相，小鹏 IRON 量产在即，理想年内发布
+
+
+### 5. 亚马逊战略大转向：砍掉多数 Nova AI 模型，集中资源由伯克利机器人专家挂帅攻坚具身智能
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-29',
     title: 'AI 每日动态 (2026-07-29)',
     summary: '1. 超千名前沿 AI 员工联署公开信，呼吁美国政府放缓 AI 研发节奏 2. 亚马逊大幅缩减自研 Nova 模型，押注新前沿研究团队，秋季发布新底座模型 3. OpenAI 开源 Codex Security：AI 驱动的代码安全扫描工具...',
