@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-01',
+    title: 'AI 每日动态 (2026-08-01)',
+    summary: '1. MCP 2026 07 28 协议发布：史上最大更新，核心架构转向无状态 2. Claude Code 推出 Dynamic Workflows，单会话可编排 1000 个并行子 Agent，11 天重写 75 万行 Bun 运行时 ...',
+    date: '2026-08-01',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月1日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. MCP 2026-07-28 协议发布：史上最大更新，核心架构转向无状态
+
+
+### 2. Claude Code 推出 Dynamic Workflows，单会话可编排 1000 个并行子 Agent，11 天重写 75 万行 Bun 运行时
+
+
+### 3. Cursor 1.0 正式版上线，Background Agents 全面开放，BugBot 自动审 PR 重塑 IDE 形态
+
+
+### 4. Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身 VLA 控制，跨硬件共用同一模型权重
+
+
+### 5. 比亚迪人形机器人"小迪"8 月初郑州迪空间首秀，车企集体"造人"迈入真机量产阶段
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-30',
     title: 'AI 每日动态 (2026-07-30)',
     summary: '1. MCP 协议史上最大改版正式发布：彻底无状态化，AI Agent 基础设施迎来转折点 2. 腾讯云发布 CodeBuddy NPC：首个 AI Native Git 范式产品，AI 编程进入"工程化协作"阶段 3. 月之暗面 Kimi...',

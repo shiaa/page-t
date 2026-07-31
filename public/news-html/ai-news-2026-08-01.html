@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-01</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 01 · 周六</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>MCP 2026-07-28 协议发布：史上最大更新，核心架构转向无状态</h3>
+    <div class="meta">
+      <span class="tag">协议标准</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">生态基础设施</span>
+    </div>
+    <p>7 月 28 日，Anthropic 联合 MCP 社区发布协议第五次重大版本 MCP 2026-07-28：核心架构从"双向有状态"切换为"请求/响应无状态"，Mcp-Session-Id 与 initialize/initialized 握手被移除，任何请求可路由到任意服务器实例；同时引入 Extensions 扩展框架（含 MCP Apps 与 Tasks）、全面对齐 OAuth 2.0/OIDC 鉴权、并新增 12 个月弃用窗口的正式治理流程。MCP 月度 SDK 下载量已突破 4 亿，Claude 连接器市场已有 950+ 服务器。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>MCP 不再是"AI Coding 工具的插件规范"，而正在变成"AI Agent 时代的企业级 HTTP 协议"——无状态化让它能直接跑在 AWS Lambda、Vercel、Cloudflare Workers 等无服务器架构上，开发门槛与运维成本双双崩塌；显式 handle 取代隐藏 session 状态，让模型可"跨工具组合并推理状态"，这是 agentic workflow 的底层红利。Figma、Intuit、Netlify、Zoom 第一时间表态支持。对 DevOps/SRE 来说，MCP 服务器从"自建网关"变成"标准 K8s Service"，意味着多云、混合云、跨团队的 Agent 互联互通将进入工程化阶段——这是 Agent 走向"企业级基础设施"的分水岭事件。
+    </div>
+    <div class="source">来源：<a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" target="_blank">MCP 官方博客</a> · <a href="https://claude.com/blog/bringing-mcp-2026-07-28-to-claude" target="_blank">Anthropic Claude Blog</a> · <a href="https://weibo.com/5703921756/5326028427758257" target="_blank">微博</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Claude Code 推出 Dynamic Workflows，单会话可编排 1000 个并行子 Agent，11 天重写 75 万行 Bun 运行时</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">Multi-Agent</span>
+    </div>
+    <p>Anthropic 5 月 28 日随 Claude Opus 4.8 上线 Dynamic Workflows 研究预览：Claude 不再自己 hold 编排状态，而是现场写一份 JavaScript 编排脚本，由独立 runtime 在后台派发最多 1000 个子 Agent（同时并发上限 16）。中断后可从 checkpoint 续跑，脚本可保存为 slash command 复用。Bun 作者 Jarred Sumner 用此功能 11 天将 Bun 从 Zig 移植到 Rust，产出约 75 万行 Rust 代码，测试通过率 99.8%。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI Coding 从"单会话+工具循环"向"软件工程工厂"跃迁的标志性事件。传统 subagent 的上下文开销随并发数线性增长，Dynamic Workflows 把编排逻辑外置到脚本，模型本身只做"理解+决策"，状态由代码托管——这是把"Prompt 编排"升级为"代码编排"的范式转变。对大型 monorepo 迁移、跨服务接口同步、批量 PR 审计这类 DevOps/SRE 痛点，单次 session 直接覆盖 75 万行代码级别，意味着"Code Agent 替代初级工程师整月工作量"已不是 PPT。但 token 消耗会是普通会话的数倍，Anthropic 官方反复强调"用得不对就回 high effort"——能力越大，越要克制。
+    </div>
+    <div class="source">来源：<a href="https://www.claudeainews.com/news/claude-code-dynamic-workflows-subagents" target="_blank">Claude AI News</a> · <a href="https://pasqualepillitteri.it/en/news/3663/claude-code-dynamic-workflows-anthropic-research-preview" target="_blank">Pasquale Pillitteri</a> · <a href="https://cloud.tencent.cn/developer/article/2712851" target="_blank">腾讯云</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Cursor 1.0 正式版上线，Background Agents 全面开放，BugBot 自动审 PR 重塑 IDE 形态</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor</span>
+      <span class="tag pink">Agentic IDE</span>
+    </div>
+    <p>6 月 22 日，Cursor 1.0 正式发布，标志这款 VS Code fork 走出"长期公测"状态。核心更新包括：BugBot 自动代码审查（提交 PR 时自动检测潜在问题并直留 GitHub 评论，可一键回 Cursor 修复）、Background Agents 全面向所有用户开放（多个 Agent 远程并行处理任务）、Jupyter Notebook 深度集成、跨会话的 Memory 系统、MCP 一键安装 + OAuth 支持。新版仪表盘支持用量统计与流程图/Markdown 表格直接渲染。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cursor 1.0 不只是版本号游戏——它是 Cursor 给"AI Native IDE"交的第一份完整答卷，也是给企业采购的合规背书："我们不再是实验品，可以签团队 License 了"。Background Agents 把"开发者开 N 个 IDE 标签页手敲代码"变成"开发者开 N 个 Agent 任务然后审核 PR"，角色从"写代码"变成"审代码+指挥代码"，与 Anthropic Dynamic Workflows 形成同向呼应。配合 SpaceXAI 对 Cursor 的 600 亿美元收购传闻，Cursor 正在从"AI 编程工具"演化为"AI 工程团队调度平台"——对 SRE 来说，团队知识与代码上下文正在从"资深工程师脑子里"转移到"Cursor Memory 层"，这对组织韧性和新人 onboarding 都是结构性的冲击。
+    </div>
+    <div class="source">来源：<a href="https://cloud.tencent.com/developer/article/2695450" target="_blank">腾讯云开发者</a> · <a href="https://shiporskip.io/tool/cursor-1-0-general-availability-bugbot-background-agents" target="_blank">Ship or Skip</a> · <a href="https://cursor.com/en" target="_blank">Cursor 官网</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身 VLA 控制，跨硬件共用同一模型权重</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">Google DeepMind</span>
+      <span class="tag pink">VLA 模型</span>
+    </div>
+    <p>7 月 30 日，DeepMind 发布 Gemini Robotics 2 模型家族：VLA 主力模型首次实现对完整人形机器人（双腿到手指）的端到端控制，可驱动 Apptronik Apollo 2 配 SharpaWave/Inspire 手、Franka Duo 双臂平台三种不同硬件共用同一份模型权重；Gemini Robotics ER 2 负责多步任务规划与多机协同（通过 Gemini Live API 与 VLA 通信）；Gemini Robotics On-Device 2 仅需 200 个演示样本、几小时即可适配全新硬件平台。测试中"拧灯泡"任务成功率 92%，但多指灵巧操作仍是薄弱环节。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能长期存在两个能力断层——行走控制器与操作策略分离、不同硬件之间模型无法迁移。Gemini Robotics 2 是第一次用一个 VLA 模型同时弥合这两个断层：同一份权重驱动三种不同形态的机器人，"行+做"不再分裂，"硬件+算法"解耦。对国内产业链（机器人本体厂商、灵巧手厂商、力矩传感器厂商），这既是压力也是机会——硬件差异不再是壁垒，但也意味着没有自有 VLA 的纯硬件厂将沦为"白牌组装"。On-Device 2 的"200 个样本快速适配"会直接冲击垂直场景的方案商定价权。
+    </div>
+    <div class="source">来源：<a href="https://deepmind.com/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots" target="_blank">DeepMind 官方</a> · <a href="https://www.163.com/dy/article/L36OE0IU05119734.html" target="_blank">DeepTech 深科技</a> · <a href="https://new.qq.com/rain/a/20260731A01S0R00" target="_blank">财联社</a></div>
+  </div>
+
+  <div class="card">
+    <h3>比亚迪人形机器人"小迪"8 月初郑州迪空间首秀，车企集体"造人"迈入真机量产阶段</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">比亚迪</span>
+      <span class="tag pink">车企跨界</span>
+    </div>
+    <p>7 月 28 日比亚迪官方确认：自研商用服务人形机器人"小迪"将于 8 月初在郑州"迪空间"完成全球首次真机亮相。"小迪"身高 1.61m、体重 58.5kg、全身 31 个自由度、灵巧手定位精度 ±1mm，支持 6 种方言 + 6 种外语实时互译，具备人脸/唇动/手势三重感知与 360° 环境避障。比亚迪执行副总裁李柯明确：未来每家经销商门店投放 2-3 台，承担迎宾、车型讲解、车机演示等标准化工作。同期小鹏 IRON 已在广州工厂小批量试产、目标年底月产千台，特斯拉 Optimus Gen-3 在加州启动量产。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>车企"造人"已从 PPT 概念进入"看样机、定量产"阶段，标志性变化是商业场景内生——3 万家比亚迪门店、4S 店渠道、新车交付中心天然是"实训场"，省去了机器人初创公司最难解决的"先有场景还是先有产品"鸡生蛋问题。比亚迪的杀手锏是供应链复用：电机、电控、减速器、电池、芯片、激光雷达、AI 算法与造车重叠度 70%+，单机 BOM 成本可被压到竞品的一半以下。但真正的看点不是"小迪"本身，而是 8 月 1 日之后这股"车企产能迁移"对国内人形机器人供应链格局的洗牌——传统机器人创业公司（宇树、智元等）将面临"用更便宜 BOM 的对手+免费实训场景"的双重压力。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7668101893259837967" target="_blank">深圳特区报</a> · <a href="https://new.qq.com/rain/a/20260730A053K200" target="_blank">汽势 Auto-First</a> · <a href="https://k.sina.cn/article_7879923138_1d5ae15c206801f7te.html" target="_blank">新浪汽车</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：MCP 官方博客 · Anthropic Claude Blog · DeepMind 官方 · Claude AI News · 腾讯云开发者 · 汽势 Auto-First · 深圳特区报 · DeepTech 深科技 · 财联社 · 新浪汽车</p>
+  </footer>
+
+</div>
+</body>
+</html>
