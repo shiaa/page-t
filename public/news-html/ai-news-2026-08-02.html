@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-02</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 02 · 周日</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Claude Opus 4.1 将于 8 月 5 日退役，AI 编程"会话锁定"问题浮出水面</h3>
+    <div class="meta">
+      <span class="tag">模型迭代</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">供应商锁定</span>
+    </div>
+    <p>Claude Code 8 月 1 日简报披露，Anthropic 将在 8 月 5 日正式下线 Claude Opus 4.1（claude-opus-4-1-20250805）API，并要求迁移到 Opus 4.8。同时 8 月 17 日 Workbench 和三个实验性 Prompt Tools API 同步退役，8 月 31 日 Sonnet 5 入门定价结束、9 月 1 日起涨 50%。更值得关注的是一项行业分析：随着推理 API 把加密的推理轨迹、搜索结果、压缩状态、子智能体消息封装在供应商侧，开发者手中的"会话历史"已不再是完整会话——这让 AI Coding 工具的供应商锁定问题从概念变成现实。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>头部模型半年一次代际更替已成常态，但对依赖 Claude Code / Cursor 这类 AI 工具的团队来说，"会话可移植性"已经成为一个新风险点——今天写好的 prompt 链路、subagent 编排、上下文缓存，都与特定模型版本深度绑定。模型退役意味着过去的"对话资产"可能贬值甚至作废。对正在选型的 DevOps/SRE 团队而言，"不把鸡蛋放一个篮子"从口号变成实操：多模型 fallback、关键工作流可导出为纯文本 spec，这些过去被忽略的工程实践正在变成必备。
+    </div>
+    <div class="source">来源：<a href="https://claude-news.today/en/briefings/briefing-2026-08-01" target="_blank">Claude Code Daily Briefing 8-01</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Cursor 1.0 正式发布：BugBot + Background Agents + Memories，AI 编辑器进入"生产可用"阶段</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor</span>
+      <span class="tag pink">里程碑</span>
+    </div>
+    <p>Anysphere 正式发布 Cursor 1.0 版本，从持续近一年的 rolling beta 升级为稳定版。三大核心功能首次齐备：BugBot 自动审查 PR 并定位修复点、Background Agents 可异步运行长时编码任务不阻塞当前会话、Memories 跨会话持久化项目上下文。同时新增 Jupyter Notebook 支持（仅 Claude Sonnet）、一键 MCP 安装、统计面板可视化。版本号对个人开发者意义有限，但对企业采购是明确信号——Cursor 正式宣告"它不是实验品，可以买团队授权"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cursor 押注的核心命题是："到 2027 年，IDE 不再是写代码的地方，而是定义意图、监督 Agent 异步执行、审查 diff 的控制台。"Background Agents 把"AI 写代码"从一对一的 pair programming 模式，升级为多智能体并行的 async 协作模式。对 SRE 场景的启发尤其大：过去我们写脚本排查线上问题，现在可以让 Agent 异步在测试环境复现 + 修复 + 提 PR，人只负责最终验收。如果 Cursor 的押注成立，初级工程师的招聘标准会从"能不能写代码"转向"能不能审 Agent 输出"——这对团队结构和新人培养路径都是颠覆。
+    </div>
+    <div class="source">来源：<a href="https://shiporskip.io/tool/cursor-1-0-general-availability-bugbot-background-agents" target="_blank">Ship or Skip</a> · <a href="https://news.aibase.cn/news/18635" target="_blank">AIBase</a> · <a href="https://www.customclanker.com/august-2026-what-actually-changed" target="_blank">Custom Clanker</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Graph Engineering 取代 Loop Engineering，AI Coding 范式再次升级</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">范式演进</span>
+      <span class="tag pink">多智能体</span>
+    </div>
+    <p>Open Claw 创造者 Peter Steinberger 7 月 28 日在 X 发问"我们还在谈 Loop，还是已经转向 Graph 了？"——这条帖子获 307 万次浏览。同一天，Airbnb/GitHub 老兵 Hamel Husain 发布《Loop Engineering Is Dead. Enter Graph Engineering》，AI Coding 圈正式宣告"循环时代"终结，Graph Engineering 走红。所谓 Graph，是指 Coding Agent 从"单个 Agent 反复执行"走向"多个节点协同工作"的下一层工程问题：任务如何独立拆分、何处存在分支或回退、中间状态如何保存、结果如何验收、协作收益是否高于协调成本。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>AI Coding 的工程抽象在 6 周内从 Loop 升级到 Graph，本质是任务复杂度的跃升——过去一个 Agent 循环就能完成的任务，现在需要多节点并行、状态可追溯、失败可回退。这背后是 AI Coding 应用场景的扩张：从单文件补全 → 跨文件重构 → 多服务联动修复。主流 Coding Agent 实际上早就在用 Graph，只是没有把图画出来。对工程团队来说，这是一个明确的信号：未来 6-12 个月内，"能否设计可编排的 Agent Graph"会成为高级工程师的核心能力之一，比"prompt 写得精不精"重要得多。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L3AADSDF051188EA.html" target="_blank">网易科技 / 智讯智库</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>FCC 将"外国先进机器人"列入管制清单，中国人形机器人出海遭遇"大疆时刻"</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">出海监管</span>
+      <span class="tag pink">FCC</span>
+    </div>
+    <p>7 月 28 日，美国联邦通信委员会（FCC）以"国家安全"为由将"外国生产的先进机器人设备"和"电力逆变器"新增至《受管制清单》，即日生效。新规主要针对可移动、含传感 + 网络连接 + 控制软件、重量超过 4.4 lb 的移动机器人（覆盖人形、四足、AMR）。新机型未获国防部有条件批准前无法取得 FCC 认证进入美国市场。已获认证的存量型号不受影响，零售商可继续销售。中国厂商占全球人形机器人出货量约 90%（智元、宇树、优必选、乐聚、众擎、傅利叶），宇树境外收入占比 43.65%，北美为最大海外市场。中国商务部、外交部已表态反对。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是中国机器人产业的"大疆时刻"——美国在大疆占领市场后才设防，但这次美国在具身智能大规模商业化之前就提前关门，意味着中国厂商失去了"先做大规模再被制裁"的窗口期。短期影响有限（已认证型号仍可销售），但中长期看，新机型无法进入美国市场会切断产品迭代闭环——海外销量、用户反馈、工程改进这条数据飞轮被迫中断。可能的应对：海外组装（宇树已表态"未来可能考虑"）、转向欧洲/中东/东南亚市场、CES 2027 参展资格成疑。这场管制风暴对国内供应链和资本市场的影响才刚开始显现。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7668580830997938723/" target="_blank">南方都市报</a> · <a href="https://new.qq.com/rain/a/20260729A0ASJ300" target="_blank">腾讯新闻 / 具身志</a> · <a href="https://i.ifeng.com/c/8vBeDeSykcU" target="_blank">凤凰科技</a> · <a href="https://blog.robozaps.com/b/fcc-robot-ban-unitree-foreign-humanoids" target="_blank">RoboZaps</a></div>
+  </div>
+
+  <div class="card">
+    <h3>杭州国家级具身智能中试基地 5 月揭牌，140 台机器人 + 40 个场景成全国唯一</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">中试基地</span>
+      <span class="tag pink">落地加速</span>
+    </div>
+    <p>全国唯一面向具身智能领域的国家级应用中试基地 5 月 16 日在杭州高新区（滨江）揭牌，配套的展示与应用推广中心汇聚 140+ 台机器人、近 40 个应用场景（电力巡检、物流搬运、康养护理等）。截至 7 月 29 日累计参观 5.58 万人。基地搭建公共技术服务平台，验证"仿真到现实"的落差（光线、地面、障碍物、操作对象变化导致的失效）。今年 4 月完成全国首例具身智能机器人保险理赔 5976 元，《杭州市促进具身智能机器人产业发展条例》5 月施行。中国信通院华东分院指出：消费零售具备"标准环境、重复任务、量化收益"三大要素，是具身智能从试点走向规模化复制的最优赛道。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"中试"是具身智能从样机走向产品的关键环节——验证机器人离开实验室后能否成为可采购、可交付、可持续使用的产品。杭州基地的真正价值不在 140 台机器人，而在它补齐了行业最缺的三个环节：测试标准、风险分担（保险机制）、训练数据采集（无本体动捕）。这意味着具身智能正从"单品秀"进入"工程化"阶段，对关注投资/职业方向的人：物流搬运、工业巡检等结构化场景是当前最确定的落地方向，进入家庭仍面临安全、成本、伦理、长期可靠性约束。信通院点出的"消费零售最优赛道"是商业化盈利的明确信号。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L386I0NJ05198CJN.html" target="_blank">财联社</a> · <a href="https://www.163.com/dy/article/L38KVAGB05346RC6.html" target="_blank">新华社</a> · <a href="https://new.qq.com/rain/a/20260802A030L400" target="_blank">具身智能日报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：Claude Code Daily Briefing · Ship or Skip · AIBase · Custom Clanker · 网易科技 / 智讯智库 · 南方都市报 · 腾讯新闻 · 具身志 · 凤凰科技 · RoboZaps · 财联社 · 新华社 · 腾讯具身智能日报</p>
+  </footer>
+
+</div>
+</body>
+</html>
