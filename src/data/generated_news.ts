@@ -3,6 +3,45 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-03',
+    title: 'AI 每日动态 (2026-08-03)',
+    summary: '1. 微软与 OpenAI 史上最大技术解耦：GitHub Copilot 8月起默认模型换芯 MAI Code One 2. Cursor 1.0 正式发布：AI 编程最大实验"毕业"，从开发者玩具走向企业标配 3. DeepSeek V...',
+    date: '2026-08-03',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月3日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 微软与 OpenAI 史上最大技术解耦：GitHub Copilot 8月起默认模型换芯 MAI Code One
+
+
+### 2. Cursor 1.0 正式发布：AI 编程最大实验"毕业"，从开发者玩具走向企业标配
+
+
+### 3. DeepSeek V4-Flash 正式版上线：小参数逆袭 Pro 预览版，Agent 能力暴涨 6 倍
+
+
+### 4. 清华 VeriLoop Coder-E1 开源：循证螺旋驱动的可验证代码修复模型，32B 以下开源第一
+
+
+### 5. 阿尔特 + 富士康联合发布机器人"交钥匙"全栈平台，打通具身智能从样机到量产
+
+
+### 6. 探访杭州国家级机器人"职校"：140+ 机器人入驻，40+ 训练场景赋能具身智能落地
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-02',
     title: 'AI 每日动态 (2026-08-02)',
     summary: '1. Claude Opus 4.1 将于 8 月 5 日退役，AI 编程"会话锁定"问题浮出水面 2. Cursor 1.0 正式发布：BugBot + Background Agents + Memories，AI 编辑器进入"生产可用...',

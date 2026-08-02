@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-03</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 03 · 周一</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>微软与 OpenAI 史上最大技术解耦：GitHub Copilot 8月起默认模型换芯 MAI Code One</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">微软</span>
+      <span class="tag pink">行业格局</span>
+    </div>
+    <p>2026 年 8 月，GitHub Copilot 迎来一次静默但足以改变 AI 编程行业格局的切换：默认模型从 OpenAI 的 GPT-4 Turbo 替换为微软自研的 MAI Code One（代号 Project Polaris）。该模型采用 MoE 架构（137B 总参数/5B 激活），完全独立训练，不做 OpenAI 模型蒸馏。微软研究院估算，这一换芯每年可节省超 7 亿美元推理成本。Copilot 当前拥有超 180 万付费用户、数百家企业部署，这次切换标志着微软从 OpenAI 的"最大客户+最大投资者"角色，正式升级为直接竞争者。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这不只是一次模型升级，而是 AI 编程工具"去 OpenAI 化"的标志性事件。MAI Code One 在微软生态（C#、PowerShell、T-SQL）的补全质量显著优于 GPT-4 Turbo，推理成本仅为后者的 40%-60%。对开发者意味着：Copilot 的补全体验可能在微软技术栈上明显提升，但在跨语言场景可能短期波动。更长远看，微软掌握"芯片（Maia）+ 模型（MAI）+ 工具（Copilot）+ 计费"全链路，将重塑 AI 编程的底层竞争格局——过去五年微软每次 AI 进展都绑在 OpenAI 的发布节奏上，现在它要说"我自己来"。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7668858033094656553/" target="_blank">今日头条 · 从程序员到架构师</a> · <a href="https://microsoft.ai/news/introducingmai-code-1-flash/" target="_blank">Microsoft AI</a> · <a href="https://www.bighatgroup.com/blog/microsoft-ai-weekly-2026-07-26" target="_blank">BigHat Group</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Cursor 1.0 正式发布：AI 编程最大实验"毕业"，从开发者玩具走向企业标配</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor</span>
+      <span class="tag pink">产品里程碑</span>
+    </div>
+    <p>8 月 1 日，Cursor 正式发布 1.0 版本。过去两年，全球数百万开发者日常使用 Cursor，英伟达四万名工程师靠它辅助编程，Stripe 称其为"公司最大的研发投资"，但其版本号始终是 0.x。1.0 的功能更新是渐进式的（多文件上下文优化、行内 diff 渲染改进、Composer 模式记忆增强），但真正的里程碑意义在企业端：这意味着 Cursor 不再是"实验项目"，CTO 可以写入年度预算，安全团队可以通过合规审查，采购部门可以签三年合同。今年 4 月发布的 Cursor 3 已定义了"你是架构师，Agent 是建造者"的开发分工，后台 Agent 可独立开分支、提 PR、从手机远程触发。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cursor 1.0 标志着 AI Coding 工具从"个人效率工具"正式跨入"企业基础设施"阶段。1.0 之前，几十万企业用户在纸面上都是为"beta 产品"付款——这对大企业采购是持续的心病。现在它明确向还在用 Copilot 的企业决策者喊话："我们准备好了。"而 SpaceX 今年 6 月以 600 亿美元全股票收购 Cursor，更让这个 1.0 带上了"巨头背书"的分量。对开发者来说，Cursor 与 Copilot 的竞争将从功能层面升级到生态层面，这对 AI 编程工具的迭代速度是利好。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7668857859161047593/" target="_blank">今日头条 · 从程序员到架构师</a> · <a href="https://sdd.sh/2026/04/agentic-coding-agent-comparison-2026" target="_blank">SDD.sh</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek V4-Flash 正式版上线：小参数逆袭 Pro 预览版，Agent 能力暴涨 6 倍</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">DeepSeek</span>
+      <span class="tag pink">模型突破</span>
+    </div>
+    <p>7 月 31 日，DeepSeek V4-Flash 正式版 API 开启公测。架构和参数规模与预览版完全一致（MoE、2840 亿总参数/130 亿激活），仅靠后训练优化，Agent 能力实现"突变式"跨越：Terminal Bench 2.1 从 61.8 飙升至 82.7，DeepSWE 从 7.3 跃升至 54.4，全面超越 1.6 万亿参数的 V4-Pro 预览版。Artificial Analysis 智能指数给出 50 分，仅比 GPT-5.6 Luna（51 分）低 1 分。价格依旧"屠夫级"：每百万输出 token 仅 0.28 美元，缓存命中输入低至 0.0028 美元。同一天 OpenAI 宣布 GPT-5.6 Luna 降价 80%，时间点耐人寻味。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>V4-Flash 正式版击穿了一个核心假设——"堆参数才能提性能"。同样的模型骨架，仅靠后训练就能让 Agent 能力暴涨 6 倍，这对整个行业的路线选择有深远影响。更重要的是，它原生支持 OpenAI Responses API 并适配 Codex 生态，开发者可在 Codex CLI、VS Code 插件中直接调用，以 Claude 1/90 的价格获得接近顶级的 Agent 能力。这意味着 AI Coding Agent 的成本门槛正在被"暴力拉低"，中小团队和个人开发者也能用得起高质量的自主编码 Agent。参数竞赛正在让位于效率竞赛。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260802A0AA4Z00" target="_blank">科创板日报</a> · <a href="https://new.qq.com/rain/a/20260801A048U500" target="_blank">腾讯新闻</a> · <a href="https://www.163.com/dy/article/L39DVPAD0512B07B.html" target="_blank">每日经济新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>清华 VeriLoop Coder-E1 开源：循证螺旋驱动的可验证代码修复模型，32B 以下开源第一</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">开源模型</span>
+      <span class="tag pink">清华</span>
+    </div>
+    <p>8 月 2 日，清华大学深圳国际研究生院智能机器人实验室正式开源 VeriLoop Coder-E1——基于 Qwen3.6-27B 构建的仓库级代码修复模型。在 Hugging Face 四项软件工程 Benchmark 中，SWE-bench Verified 达 85.20、SWE-bench Pro 达 62.38、Terminal-Bench 2.0 达 76.40，在 32B 及以下开源模型中三项排名第一。其核心创新是"循证螺旋"：通过窄域 PEFT 微调与 Self-Harness 协同，强化工具契约遵循、证据-结论绑定、不确定性识别和验证失败解释，以可拆卸的 Surface Host Adapter 外挂加载而不修改基座权重。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>VeriLoop Coder-E1 代表了一条差异化路线——不追求通用对话或全栈 Agent，而是专注"可验证的代码修复"。在真实软件工程中，AI 修 Bug 最大的信任障碍不是"能不能修"，而是"修了之后你敢不敢合"。Coder-E1 的循证螺旋机制（验证→失败解释→局部修复→回滚边界控制）直接回应了这个痛点。对 DevOps/SRE 场景，一个能"自我验证、解释失败、安全回滚"的代码修复模型，比一个全能但不可控的模型更有工程价值。
+    </div>
+    <div class="source">来源：<a href="https://k.sina.com.cn/article_5952915720_162d2490806704lhyo.html" target="_blank">机器之心 · 新浪</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>阿尔特 + 富士康联合发布机器人"交钥匙"全栈平台，打通具身智能从样机到量产</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业落地</span>
+      <span class="tag pink">供应链</span>
+    </div>
+    <p>8 月 2 日，在 2026 年 ESCC 具身智能供应链生态大会上，阿尔特（300825）联合富士康正式发布机器人 Turn-Key 全栈平台。平台打通"研、产、训、销、投"五大环节，依托富士康精益供应链与数字化排产体系，提供可制造性评估、样件试制到全球交付的全链路支撑。阿尔特将 20 余年汽车工业经验"平移"至机器人赛道，复用 500 余款车型的开发经验。平台还联合光轮智能依托英伟达 Isaac 仿真生态实现虚拟训练到实机部署的数据闭环，并首次引入"车规级"评测体系。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>2026 年被业界视为具身智能量产元年，但行业最大瓶颈不是算法，而是工程化——从样机到规模化生产中间的鸿沟。阿尔特+富士康的组合恰好补上了这个缺口：一个懂汽车级工程标准，一个掌握全球顶级制造能力。"交钥匙"模式意味着初创机器人企业无需自建产线即可实现量产，这大幅降低了准入门槛。对关注入行的人，具身智能正在复制新能源汽车的产业逻辑：算法是入场券，供应链整合才是护城河。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7669344218996949550/" target="_blank">东方网 · 今日头条</a></div>
+  </div>
+
+  <div class="card">
+    <h3>探访杭州国家级机器人"职校"：140+ 机器人入驻，40+ 训练场景赋能具身智能落地</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">国家基地</span>
+      <span class="tag pink">场景落地</span>
+    </div>
+    <p>8 月 3 日，《经济参考报》深度探访位于杭州的国家人工智能应用中试基地（具身智能），这座被业界称为机器人"国家级职业技能训练场"的基地，汇聚了 140 多台机器人，打造了电力巡检、物流搬运、康养护理等 40 多个应用导向的训练场景。基地首创"真实场景+虚拟仿真"双轮驱动测试验证模式，通过无本体轻量化采集技术（操作员穿戴数据手套和动捕服即可高效采集），破解了虚拟训练到真实场景的"最后一公里"瓶颈。今年 5 月，《杭州市促进具身智能机器人产业发展条例》正式施行，为全国首部聚焦具身智能的地方性法规。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这个基地回答了一个关键问题：具身智能从"炫技"到"实用"之间缺什么？答案是标准化训练场和规模化数据。过去企业开发一个应用场景，光是训练数据就要花费上千万；现在入驻基地可一站式获取算力、数据、模型服务和场景验证资源。"五一"期间全国首支交通管理机器人中队已在杭州西湖上岗，机器人两分钟完成一杯咖啡，四足机器人在变电站替代人工巡检——这些不是 demo，是已经跑通的商业场景。具身智能正在从"单点突破"走向"生态共建"。
+    </div>
+    <div class="source">来源：<a href="https://cj.sina.com.cn/article/norm_detail?url=https://finance.sina.com.cn/jjxw/2026-08-03/doc-inikyhwz9613427.shtml" target="_blank">经济参考报 · 新浪财经</a> · <a href="https://dy.163.com/article/L38CNLST0514R9KQ.html" target="_blank">央视 · 网易</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：今日头条 · 从程序员到架构师 · Microsoft AI · BigHat Group · SDD.sh · 科创板日报 · 腾讯新闻 · 每日经济新闻 · 机器之心 · 东方网 · 经济参考报 · 新浪财经 · 央视 · 网易</p>
+  </footer>
+
+</div>
+</body>
+</html>
