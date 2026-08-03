@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-04</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 04 · 周二</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>阿里发布 Qwen3.8-Max：2.4 万亿参数旗舰模型，16 天无人干预自主编程</h3>
+    <div class="meta">
+      <span class="tag">大模型</span>
+      <span class="tag green">阿里千问</span>
+      <span class="tag pink">自主编程</span>
+    </div>
+    <p>8 月 3 日，阿里巴巴正式发布新一代旗舰大模型 Qwen3.8-Max，总参数量 2.4 万亿（激活 95B），上下文窗口 1M Tokens，基于稀疏 MoE 架构与混合注意力机制构建。在权威 Arena 榜单中，Qwen 整体性能仅次于 Anthropic Claude 系列，跻身全球第一梯队；CodeArena 排名全球第四，VisionArena 排名全球第二。最引人注目的实测案例：模型从空文件夹出发，无人工干预独立运行 16 天，完成了自进化智能体框架"oh-my-cli"并在 GitHub 完全开源，期间产出 265 次代码提交。阿里宣布将于下周开源 Qwen3.8-Max 权重及 Qwen3.8-27B 版本——这是 Qwen-Max 旗舰系列首次面向社区开放权重。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Qwen3.8-Max 把"长程自主编程"作为核心卖点，16 天无人干预完成一个完整开源项目，标志着大模型能力边界从"辅助人类完成单点任务"扩展到"独立交付端到端长周期项目"。叠加下周开源权重的承诺，这是国产开源大模型在 Agent 编程赛道对 Claude/GPT 系列的一次正面挑战——国内 API 定价仅 Opus 5 的 24%~40%，性价比优势显著。对 AI Coding 从业者而言，Qwen3.8-Max 开源后可作为自托管 Agent 基座模型，配合 Claude Code/Codex 等 harness 使用，进一步降低多模型路由的边际成本。
+    </div>
+    <div class="source">来源：<a href="http://chinaview.cn/20260803/24339d1e90454ba0afd236199c707e7d/c.html" target="_blank">新华社</a> · <a href="https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-max-its-largest-and-most-capable-flagship-model-to-date_603420" target="_blank">阿里云博客</a> · <a href="https://tech.ifeng.com/c/8vHhZ7YlyBr" target="_blank">凤凰科技</a> · <a href="https://new.qq.com/rain/a/20260803A07SRM00" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Y Combinator 开源 QM：面向全公司的多 Agent 协作框架，3 天 7.5K Stars</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Y Combinator</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>7 月 31 日，Y Combinator 在 X 上宣布开源 QM（Quartermaster）——YC 内部已运行数月的多 Agent 协作框架，MIT 许可，GitHub 仓库 yc-software/qm。QM 不是个人助手，而是面向整个公司部署的"多人 Agent 运行时"：每位员工和每个 Slack 频道都拥有隔离的内存、文件、凭证、权限和沙箱。QM 支持 Pi、OpenCode、Codex、Claude Code 四种编码 Agent 互换驱动同一套基础设施。YC 自身已在会计、法务、活动和工程团队中日常使用 QM，甚至用 QM 开发 QM 本身。安全方面，QM 三天拿下 7,500 Stars 和 788 Forks，26 个文件实现访问控制 vs 13 个文件实现 Agent 循环——"管权限的代码是驱动的两倍"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>QM 解决了 AI Agent 从"个人工具"走向"组织基础设施"的核心问题——凭证隔离、权限边界和审计追踪。这是目前唯一由顶级机构验证过的全公司级开源 Agent Harness。对工程团队而言，QM 提供了一种不锁定单一模型厂商的多 Agent 部署路径：当 GPT-5.6 Luna 降价 80%、Claude Opus 5 刷新基准时，你可以在 QM 中切换模型而不动基础设施。200 人以下团队尤其值得评估——SaaS 按座位收费的模式正被自托管 + 基础设施成本取代。
+    </div>
+    <div class="source">来源：<a href="https://dev.to/docdavkitty/yc-open-sources-qm-the-multiplayer-agent-harness-that-runs-y-combinator-3ljp" target="_blank">DEV Community</a> · <a href="https://witho2.com/news/yc-open-sources-qm-the-ai-agent-harness-for-your-whole-company" target="_blank">WithO2</a> · <a href="https://byteiota.com/yc-open-sources-qm-multiplayer-agent-harness-is-here" target="_blank">ByteIota</a></div>
+  </div>
+
+  <div class="card">
+    <h3>清华团队 VeriLoop Coder-E1 开源：32B 以下开源代码模型多项 SWE-bench 第一</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">清华大学</span>
+      <span class="tag pink">开源模型</span>
+    </div>
+    <p>8 月 2 日，清华大学深圳国际研究生院智能机器人实验室刘厚德教授团队正式发布 VeriLoop Coder-E1——基于 Qwen3.6-27B 构建、面向仓库级代码修复与智能体式软件工程任务的开源垂类代码模型。该模型在 Hugging Face 四项软件工程 Benchmark 中分别取得 SWE-bench Verified（85.20）、SWE-bench Pro（62.38）、Terminal-Bench 2.0（76.40）和 DeepSWE（33.63）的成绩。截至 7 月 27 日，在 32B 及以下开源模型中，VeriLoop Coder-E1 在 SWE-bench Verified、SWE-bench Pro 和 Terminal-Bench 2.0 三项排名第一；在所有开源模型中分别排名第二、第一、第一和第五。其核心优势来自窄域 PEFT 微调与 Self-Harness 的协同——冻结基座权重，通过可拆卸的 Surface Host Adapter 外挂加载微调参数。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>VeriLoop Coder-E1 证明了一个重要趋势：不需要从头训练大模型，通过精准的 PEFT 微调 + 证据-结论绑定的验证机制，27B 参数的模型也能在仓库级代码修复任务上逼近甚至超越更大的闭源模型。对资源有限的团队来说，这是一个可直接部署在单卡上的 SWE Agent 基座——SWE-bench Verified 85.20 的成绩在一年前还是闭源旗舰独占的水准。"循证螺旋"（Evidence-Driven Spiral）的自我验证范式，也为 AI Coding Agent 的可靠性设计提供了新思路。
+    </div>
+    <div class="source">来源：<a href="https://k.sina.com.cn/article_5952915720_162d2490806704lhyo.html" target="_blank">新浪科技</a> · <a href="https://www.163.com/dy/article/L3AADSDF051188EA.html" target="_blank">虎嗅</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>银河通用 WAM-TTT 技术突破：机器人仅凭观看人类视频即可快速适应真实场景</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">银河通用</span>
+      <span class="tag pink">技术突破</span>
+    </div>
+    <p>8 月 3 日报道，北京银河通用机器人依靠自研的 WAM-TTT（World Action Model Test-Time Training）技术，正在突破具身智能规模化部署的核心瓶颈——"实验室表现优异，真实场景失灵"。该技术使机器人在部署阶段无需高成本、长周期的数据采集和训练流程，仅需少量人类操作视频数据即可快速适应和学习真实世界任务。目前银河通用的 Galbot G1 机器人"迎宾小盖"已在全家便利店上岗，能够主动问候顾客、精准从货架取物、从烤箱取烤肠递给顾客，搭载的"银河星脑"（AstraBrain）是全球首创的"大脑—小脑—神经控制"端到端具身大模型架构。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Sim-to-Real（仿真到现实）迁移一直是具身智能落地的最大鸿沟。WAM-TTT 的思路是"测试时训练"——部署阶段用少量真实视频即时微调，而不是在训练阶段穷举所有场景。这大幅降低了数据采集成本和部署周期，如果该技术可泛化，可能成为具身智能从实验室走向规模化商业部署的关键拼图。便利店场景虽小，但它验证了一个完整闭环：多模态感知 → 意图理解 → 路径规划 → 动作执行，在真实密集客流环境中稳定运行——这比实验室演示的含金量高得多。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L3D64OF1051496PC.html" target="_blank">首都之窗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>多家机器人公司同日完成融资，宇树科技 IPO 8 月 10 日申购，具身智能资本热度空前</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">融资/上市</span>
+      <span class="tag pink">产业化</span>
+    </div>
+    <p>8 月 3 日，多家机器人公司同日宣布完成融资：求之科技（DISCOVERobotics）完成 1 亿美元天使轮，创始团队为大疆核心成员，瞄准家庭场景；破壳机器人（PokeBot）完成亿美元级 Pre-A 轮，顺为资本与经纬创投领投，曾发布 9 分钟全自主真机演示（独立完成麻婆豆腐全流程制作），计划 8 月底推出首款万元级家庭机器人产品；方石机器人完成数千万元 A 轮。同日，蚂蚁集团旗下蚂蚁灵波已启动首轮融资，拟募资 15 亿元聚焦通用机器人大脑。与此同时，宇树科技科创板 IPO 日程敲定：8 月 5 日初步询价、8 月 10 日申购、8 月 12 日缴款，预计发行估值约 420 亿元，拟募资 42.02 亿元——A股人形机器人第一股即将诞生。2023-2025 年宇树营收从 1.59 亿元飙至 16.99 亿元，已实现盈利。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>一天之内多家 A 轮前机器人公司同时官宣融资，在业内罕见，叠加宇树即将上市，具身智能赛道正经历从"技术突破期"到"资本加速期"的拐点。投资人已开始分层：200 亿估值以上的不看，转向更早期的"大脑"软件公司和家庭场景 C 端硬件。破壳机器人计划两年内让机器人进家干活，五年至十年实现管家式通用家庭机器人——这个时间线比很多人预期的要激进。对关注行业入行或投资机会的人来说，当前阶段"大脑"（大模型）公司可能成为价值最高的环节，类似新能源汽车里的自动驾驶供应商。
+    </div>
+    <div class="source">来源：<a href="https://k.sina.com.cn/article_5952915705_162d248f906703jgv2.html" target="_blank">中国基金报</a> · <a href="https://m.21jingji.com/article/20260803/herald/60431c7aab0627efd6f46f2a8642075a.html" target="_blank">21世纪经济报道</a> · <a href="https://new.qq.com/rain/a/20260731A04XM100" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：新华社 · 阿里云博客 · 凤凰科技 · 腾讯新闻 · DEV Community · WithO2 · ByteIota · 新浪科技 · 虎嗅 · 首都之窗 · 中国基金报 · 21世纪经济报道</p>
+  </footer>
+
+</div>
+</body>
+</html>
