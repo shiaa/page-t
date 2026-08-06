@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-05</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 05 · 周三</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>GitHub Copilot 正式"换脑"：微软 Project Polaris 自研模型 8 月起全面取代 GPT-4 Turbo</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Microsoft</span>
+      <span class="tag pink">自研模型</span>
+    </div>
+    <p>8 月起，GitHub Copilot 所有订阅用户（Individual / Business / Enterprise）的默认底层模型从 OpenAI GPT-4 Turbo 切换为微软自研的 Project Polaris。Polaris 采用混合专家（MoE）架构，在微软 Maia AI 加速器上训练和推理，对 Rust、Haskell 等低资源语言有专用子模块。同时，Copilot Workspace 正式 GA，推出 Autopilot（单任务自主编码）和 Fleet（多任务并行）模式，Autonomous Agent Mode 本月起向企业客户推送——Agent 可自主完成编码、测试、提交，人类只需在最终合并前审查。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI Coding 赛道今年最结构性的一个变化。Copilot 拥有约 2000 万用户、470 万付费订阅，是全球最大的 AI 编程分发渠道。微软不再让这个渠道跑在 OpenAI 的模型上，而是用自己的模型 + 自己的芯片。这意味着：(1) OpenAI 失去最大的推理流量入口，对估值逻辑有实质影响；(2) 开发者将在一夜之间感受到底层模型切换带来的代码补全质量变化，好或坏都将引发社区激烈讨论；(3) Autonomous Agent Mode 标志着「人类写→AI 补」正式切换为「AI 写→人类审」，工程师角色从创作者变为审查者。对 DevOps/SRE 来说，这意味着代码 review 能力将比编码速度更重要。
+    </div>
+    <div class="source">来源：<a href="https://aitoolbriefing.com/industry/microsoft-build-2026-copilot-project-polaris" target="_blank">AIToolBriefing</a> · <a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-august-3-2026-polaris-takes-over-copilot-grok-47-looms-openais-ipo-slips-to-ohe" target="_blank">Dev.to</a> · <a href="https://signals.tw/articles/microsoft-build-2026-agent-os" target="_blank">Signals</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>智谱 ZCode 3.0 发布：国产 AI 编程工具全面切换自研 Agent 内核，告别"套壳"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">智谱</span>
+      <span class="tag pink">自研内核</span>
+    </div>
+    <p>8 月 1 日，智谱正式发布 ZCode 3.0，最大的变化是全面切换为自研 ZCode Agent 内核，不再依赖第三方 Agent 框架。底层由 GLM-5.2（744B MoE 模型，MIT 开源）驱动，工具链、任务规划、多步骤推理全部跑在智谱自己的管道上。ZCode 以 Agent-first 理念设计——打开 IDE 首先看到对话窗口，代码编辑器退居侧边栏，"AI 写、人审"成为默认模式。GLM-5.2 完全基于华为昇腾芯片训练，是国产大模型在基础设施层面的重大突破。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>过去两年国产 AI 编程工具一直面临"套壳"标签——前端做 IDE 插件，后端接 OpenAI/Anthropic API。ZCode 3.0 是第一个在模型、Agent 框架、推理基础设施三个层面都实现自主可控的国产方案。更关键的是战略层面：ZCode 与 GLM-5.2 形成"模型+IDE"锁定，用户项目历史和 Agent 推理轨迹全部绑定在智谱生态中，迁移成本极高。华为昇腾芯片训练 + MIT 开源，意味着这套方案不受美国出口管制影响，对国内企业市场有独特吸引力。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7668944258145075775/" target="_blank">今日头条</a> · <a href="https://www.163.com/dy/article/L37I6T0T055616YL.html" target="_blank">网易</a> · <a href="https://enjiloa.github.io/posts/business-analyst-cover-letter-examples?live-blog-15919640-2026-07-07" target="_blank">Enjiloa</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Java IDE AI Agent 三国杀：IntelliJ IDEA 2026.2、Trae 3.0、华为云码道同时入局</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Java</span>
+      <span class="tag pink">IDE 大战</span>
+    </div>
+    <p>7-8 月 Java 开发工具市场迎来密集发布：JetBrains 在 IDEA 2026.2 中全面开放 AI 能力，原生集成 GitHub Copilot、Agent Skills 框架；字节 Trae 3.0 在 WAIC 2026 亮相，月活突破 500 万，主推 Vibe Coding 全流程代理和 Solo Mode 3.0 无人值守编程；8 月 3 日，华为云首次发布"码道"（CodeArts 代码智能体），定位"百万行 Java、长周期维护与高可靠"企业级场景，并打通 IM 协作、推出 Review Agent + Fix Agent 双保险机制。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>三家方向迥异——JetBrains 走"AI 能力超市"路线（不绑定单一模型）、Trae 走"极致 Agent 自动化"路线（Vibe Coding + 无人值守）、华为云码道走"企业级可靠性"路线（Review + Fix 双保险）。这折射出 AI Coding 的核心分歧：到底该让 Agent 更自主（Trae），还是更可控（码道），还是给开发者选择权（JetBrains）？对于运维/SRE 工程师来说，华为云码道的 Review Agent 集成企业规范做白盒化代码审查 + Fix Agent 一键批量修复的组合，可能是企业级场景最务实的方案。
+    </div>
+    <div class="source">来源：<a href="https://xie.infoq.cn/article/20944407e94ca78fea0086a4e" target="_blank">InfoQ</a> · <a href="https://www.toutiao.com/article/7669419070793581071" target="_blank">今日头条</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>越疆发布全球首款具身全栖人形机器人"鹿萌"，押注千亿智能陪伴市场</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">越疆科技</span>
+      <span class="tag pink">人形机器人</span>
+    </div>
+    <p>8 月 5 日，越疆科技正式发布全球首款"具身全栖"人形机器人"鹿萌"（DOBOT LUMO），身高约 1.3 米。产品搭载全栈自研的"空弈"具身大模型——该模型在 LIBERO 国际基准评测中以平均成功率全球第一登顶。三大核心突破：(1) 多模态情绪感知，视觉+语音融合识别用户情绪并主动共情；(2) 三维空间理解与主动行动，长距离多地形行走拟人度为国内第一梯队，可自主走到用户身边；(3) 场景化自主进化，通过日常使用数据闭环持续学习家庭习惯。面向职场人群、育儿家庭、学龄儿童、商业展演四大场景，同时提供具身智能教学与开发平台。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"具身全栖"不是营销概念，是品类定义——越疆试图用一个新品类把当前行业里"语音交互的静态陪伴"和"只能展示不能用的 demo"切割开。关键看点：(1) 空弈大模型 LIBERO 全球第一，说明国内具身智能算法能力已进入第一梯队；(2) 整支发布视频无特效渲染、全程实拍，产品成熟度比大部分友商高一个身位；(3) 定位消费级智能陪伴而非工业场景，市场空间更大但落地难度也更高。工信部预测 2026 年人形机器人产量突破 10 万台，鹿萌是这个转折点上的重要信号。
+    </div>
+    <div class="source">来源：<a href="https://www.sznews.com/news/content/2026-08/05/content_32141354.htm" target="_blank">深圳新闻网</a> · <a href="https://baby.ifeng.com/c/8vLH8zAF450" target="_blank">凤凰网</a> · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_3226a72dace39452" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>河南首批众擎 T800 人形机器人下线 + 恺望数据获亿元级战略融资，具身智能产业链加速成形</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业链</span>
+      <span class="tag pink">融资</span>
+    </div>
+    <p>两条产业侧重要进展：(1) 首批"河南造"众擎 T800 人形机器人在郑州云智基地下线，从产线搭建到投产仅用 2 个月。T800 身高 1.73 米，搭载新一代融合视觉传感器，面向智慧交管、商业服务、工业智造等全域场景。河南已形成从核心零部件（洛阳鸿元轴承市占率超 90%、汉威科技传感器）到整机制造（众擎、智元）的完整产业链。(2) 恺望数据 8 月 4 日宣布完成超 1 亿元战略融资，鹿明机器人、松延动力、智元旗下觅蜂科技等头部具身智能公司跟投。恺望数据单月有效数据产出已稳定在 10 万小时，打破行业 1 万小时规模化门槛。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>两条新闻连起来看，勾勒出具身智能从"单品秀"进入"供应链整合"阶段的关键信号。河南仅 2 个月完成产线搭建说明整机组装门槛在快速下降，真正的壁垒正在从"能不能造"转向"造出来能不能用"——这恰好是恺望数据在解决的：真实场景的高质量训练数据。觅蜂科技 CEO 指出物理 AI 规模化必须突破"数据墙"——真实交互数据稀缺且获取成本高。恺望融资获多家具身智能公司跟投，说明头部玩家已经意识到：具身智能的下一个瓶颈不是模型、不是硬件，是数据。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L3IT393A0552QNKM.html" target="_blank">网易</a> · <a href="https://www.163.com/dy/article/L3HGA14H0530NLC9.html" target="_blank">中国基金报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：AIToolBriefing · Dev.to · Signals · 今日头条 · InfoQ · 网易 · 深圳新闻网 · 凤凰网 · 腾讯新闻 · 中国基金报</p>
+  </footer>
+
+</div>
+</body>
+</html>

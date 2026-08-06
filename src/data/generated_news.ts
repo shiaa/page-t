@@ -3,6 +3,117 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-07',
+    title: 'AI 每日动态 (2026-08-07)',
+    summary: '1. 谷歌 AI 人事巨震：Hassabis 卸任 DeepMind CEO 转任董事长，Jeff Dean 效力 27 年后离职创业 2. Meta 发布首款 AI 编程智能体 Muse Code，以十分之一定价正面挑战 Claude C...',
+    date: '2026-08-07',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月7日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 谷歌 AI 人事巨震：Hassabis 卸任 DeepMind CEO 转任董事长，Jeff Dean 效力 27 年后离职创业
+
+
+### 2. Meta 发布首款 AI 编程智能体 Muse Code，以十分之一定价正面挑战 Claude Code 与 Codex
+
+
+### 3. 从 Loop 到 Graph：AI Coding 范式六周内再次进化，多智能体图编排成为新焦点
+
+
+### 4. DeepSeek 斥资 1.41 亿元入股宇树科技，签署联合开发人形机器人 AI 模型协议
+
+
+### 5. 黎曼动力携手光轮智能与诺亦腾，共建百万小时具身智能数据底座
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
+    id: 'ai-news-daily-2026-08-06',
+    title: 'AI 每日动态 (2026-08-06)',
+    summary: '1. Meta 发布首款 AI 编程智能体 Muse Code，以低价策略正面挑战 Anthropic 与 OpenAI 2. 谷歌 AI 部门大换血：首席科学家杰夫·迪恩 27 年后离职，DeepMind CEO 哈萨比斯转任董事长 3....',
+    date: '2026-08-06',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月6日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Meta 发布首款 AI 编程智能体 Muse Code，以低价策略正面挑战 Anthropic 与 OpenAI
+
+
+### 2. 谷歌 AI 部门大换血：首席科学家杰夫·迪恩 27 年后离职，DeepMind CEO 哈萨比斯转任董事长
+
+
+### 3. 涂鸦智能推出 AI 原生无代码开发平台 TuyaAICoding，硬件应用开发从"数月"压缩至"分钟级"
+
+
+### 4. 上海 DoGNAVY 智能体登顶全球 AI 网络安全榜第三，基于智谱 GLM-5.2 开源模型构建
+
+
+### 5. 具身智能产业迈入"交付时代"：上半年融资 935 亿元（同比增 137%），全年机器人出货量预计超 50 万台
+
+
+### 6. 银河通用发布全球首个具身智能世界模型测试时后训练框架 WAM-TTT，机器人"看视频"即可快速适应新场景
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
+    id: 'ai-news-daily-2026-08-05',
+    title: 'AI 每日动态 (2026-08-05)',
+    summary: '1. GitHub Copilot 正式"换脑"：微软 Project Polaris 自研模型 8 月起全面取代 GPT 4 Turbo 2. 智谱 ZCode 3.0 发布：国产 AI 编程工具全面切换自研 Agent 内核，告别"套壳...',
+    date: '2026-08-05',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月5日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. GitHub Copilot 正式"换脑"：微软 Project Polaris 自研模型 8 月起全面取代 GPT-4 Turbo
+
+
+### 2. 智谱 ZCode 3.0 发布：国产 AI 编程工具全面切换自研 Agent 内核，告别"套壳"
+
+
+### 3. Java IDE AI Agent 三国杀：IntelliJ IDEA 2026.2、Trae 3.0、华为云码道同时入局
+
+
+### 4. 越疆发布全球首款具身全栖人形机器人"鹿萌"，押注千亿智能陪伴市场
+
+
+### 5. 河南首批众擎 T800 人形机器人下线 + 恺望数据获亿元级战略融资，具身智能产业链加速成形
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-04',
     title: 'AI 每日动态 (2026-08-04)',
     summary: '1. 阿里发布 Qwen3.8 Max：2.4 万亿参数旗舰模型，16 天无人干预自主编程 2. Y Combinator 开源 QM：面向全公司的多 Agent 协作框架，3 天 7.5K Stars 3. 清华团队 VeriLoop C...',
