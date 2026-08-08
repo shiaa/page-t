@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-08',
+    title: 'AI 每日动态 (2026-08-08)',
+    summary: '1. Meta 发布首款 AI 编程智能体 Muse Code，以极致低价和崩溃恢复能力正面叫板 Claude Code 与 Codex 2. Cursor 公布内部云环境架构：AI 编码智能体已写入超 50% 交付代码，但"原型廉价≠生产...',
+    date: '2026-08-08',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月8日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Meta 发布首款 AI 编程智能体 Muse Code，以极致低价和崩溃恢复能力正面叫板 Claude Code 与 Codex
+
+
+### 2. Cursor 公布内部云环境架构：AI 编码智能体已写入超 50% 交付代码，但"原型廉价≠生产简单"
+
+
+### 3. 小米正式开源具身基座模型 Xiaomi-Robotics-1，基于 10 万小时真实操作数据预训练
+
+
+### 4. 越疆发布全球首款"具身全栖"人形机器人 DOBOT LUMO，瞄准千亿智能陪伴市场
+
+
+### 5. Figure 03 自主攀爬工业梯子，移动操作耦合（loco-manipulation）首次以完整形态呈现
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-07',
     title: 'AI 每日动态 (2026-08-07)',
     summary: '1. 谷歌 AI 人事巨震：Hassabis 卸任 DeepMind CEO 转任董事长，Jeff Dean 效力 27 年后离职创业 2. Meta 发布首款 AI 编程智能体 Muse Code，以十分之一定价正面挑战 Claude C...',
