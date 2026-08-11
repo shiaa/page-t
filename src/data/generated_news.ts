@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-12',
+    title: 'AI 每日动态 (2026-08-12)',
+    summary: '1. Anthropic 宣布锁死 Claude Sonnet 5 优惠价，新一代 Sonnet 5.5"代码 Fennec"参数泄露：200 万 token 上下文 2. GitHub Copilot 八月密集更新：Code Review...',
+    date: '2026-08-12',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月12日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Anthropic 宣布锁死 Claude Sonnet 5 优惠价，新一代 Sonnet 5.5"代码 Fennec"参数泄露：200 万 token 上下文
+
+
+### 2. GitHub Copilot 八月密集更新：Code Review 力度档位正式 GA，Cloud Agent 引入 reasoning level 控制
+
+
+### 3. 马斯克推出"Grok Bot"数字同事，绑定 Cursor Ultra / Teams 订阅可直接派发实际工作任务
+
+
+### 4. 宇树科技中签号今晚出炉，0.0181% 中签率创科创板历史新低，今日缴款日万亿赛道等待估值锚定
+
+
+### 5. 外交部发言人毛宁向全球推介：龙华"我能具身"人形机器人登广州邮政快递分拣产线
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-10',
     title: 'AI 每日动态 (2026-08-10)',
     summary: '1. OpenAI 首次因安全风险暂停自研模型 Astra，智能体编程能力逼近"关键级"红线 2. Meta 发布首款 AI 编程智能体 Muse Code，主打低价与"崩溃恢复"挑战 Claude Code 与 Codex 3. 国产大模...',

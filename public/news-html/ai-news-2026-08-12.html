@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-12</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 12 · 周三</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Anthropic 宣布锁死 Claude Sonnet 5 优惠价，新一代 Sonnet 5.5"代码 Fennec"参数泄露：200 万 token 上下文</h3>
+    <div class="meta">
+      <span class="tag">大模型</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">定价与生态</span>
+    </div>
+    <p>8 月 12 日，Anthropic 正式宣布将 Claude Sonnet 5 的优惠价"永久保留"，取消原定 8 月底涨价 50% 的计划，给大量基于 Sonnet 5 构建工作流的开发者与团队吃了定心丸。同日，内部代号"Fennec"的新一代 Sonnet 5.5 部分参数在社区泄露：上下文窗口据称从 32 万 token 翻倍至 200 万 token，延迟显著降低，工具调用与 Agentic 能力大幅提升，综合能力逼近旗舰 Opus 系列但价格仍按 Sonnet 档位定价，被外界称作"中高端性价比之王"。同日 Anthropic 还宣布为 Claude 全系模型引入机器可读标记技术——文本嵌入隐形水印，图片等文件附加数字签名的溯源元数据，标志着 AI 内容透明度监管进入实质性落地阶段。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是海外大厂在 DeepSeek 掀起的"低价+强能力"性价比风暴后的最新回应。Sonnet 5 不涨价意味着 Anthropic 主动放弃了短期收入，让利于现有客户群以保住开发者生态——尤其是在 Cursor、Devin、Windsurf 等 Coding Agent 工具纷纷把 Sonnet 5 作为默认中端模型的当下。Sonnet 5.5（Fennec）的 200 万 token 上下文若属实，将彻底改变 AI Coding 长仓库理解、长 PR diff 分析、跨项目重构等任务的工程范式。隐形水印的强制落地则意味着未来所有 Claude 产出都自带来源凭证，对 AI 生成内容的版权、真实性、监管合规议题影响深远。
+    </div>
+    <div class="source">来源：<a href="https://post.m.smzdm.com/p/a9584xmp" target="_blank">什么值得买 AI 速递</a> · <a href="https://new.qq.com/rain/a/20260812A034FM00" target="_blank">腾讯财经早餐</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>GitHub Copilot 八月密集更新：Code Review 力度档位正式 GA，Cloud Agent 引入 reasoning level 控制</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">GitHub Copilot</span>
+      <span class="tag pink">工程化</span>
+    </div>
+    <p>8 月初 GitHub 对 Copilot 推出一系列工程化深度更新：（1）8 月 3 日，Copilot Cloud Agent 引入 reasoning level 控制——不同任务选择不同推理深度，可在质量和 token 消耗之间做精细权衡；同时支持在 issue 评论或 PR 评论事件触发 Agent 自动化；（2）8 月 6-7 日，Code Review 的 Lite/Balanced 力度档位正式 GA（通用上线），组织可设默认值，单个仓库可继承策略，PR 时间线明确标出本轮使用了哪个力度档；（3）Copilot App 接入"共享会话"与 /side 子对话，CLI 加入 Sessions 侧边栏与隔离 /worktree 实验命令；（4）Copilot Impact Dashboard 新增"潜在 ROI"分区，对比不同采纳度的团队，估算每开发者月均成本与 PR 数；（5）Kimi K3、Gemini 3.6 Flash、Claude Opus 5、Grok 4.5 等新模型陆续接入。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>AI Coding 工具的第一波竞争是"能不能写代码"，现在已进入第二波——"怎么用 Agent 才划算"。reasoning level 控件把"模型推理深度"从黑盒变成了可被业务方按工作流分类配置的旋钮：低风险任务跑低推理、高风险代码走深度思考。对开发者而言最直观的好处是：核心支付/鉴权 PR 强制 Balanced + 安全专家审批，文档 PR 跑 Lite 几乎免费。Code Review 力度 GA 让 PR review 从"AI 全自动"变成"可调档的策略"。Copilot 的更新路径（CLI + App + IDE 三端统一会话上下文）也预示着 AI Coding 工具不再只是 IDE 内的"插件"，而是嵌入到整个研发工作流的"操作系统"。
+    </div>
+    <div class="source">来源：<a href="https://github.com/resources/insights/enterprise-content-roundup-august-26" target="_blank">GitHub Blog</a> · <a href="https://essamamdani.com/blog/github-copilot-agentic-workflows-august-2026" target="_blank">Essam Amdani Blog</a> · <a href="https://www.medianeth.dev/blog/copilot-cloud-agent-reasoning-controls" target="_blank">Medianeth</a></div>
+  </div>
+
+  <div class="card">
+    <h3>马斯克推出"Grok Bot"数字同事，绑定 Cursor Ultra / Teams 订阅可直接派发实际工作任务</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">xAI / 马斯克</span>
+      <span class="tag pink">Agent 商业化</span>
+    </div>
+    <p>8 月 12 日，SpaceXAI（xAI）正式推出"Grok Bot"——一款打着"全天候在线智能助手团队"旗号的 AI Agent 软件。即日起，SuperGrok Heavy、Cursor Ultra 和 Cursor Teams 订阅用户可在 Windows、iOS 平台上抢先体验。用户可以像派活一样把实际工作任务分配给 Grok Bot，由它独立完成并交付结果。这与 Cursor 在 8 月初发布的 Google Workspace 插件、Cloud Agents 20-30% token 节省升级一脉相承——头部 AI Coding 工具正在把战场从"在 IDE 里补全"扩展到"7×24 数字员工"。同一日，英伟达推出首款开源模型 Nemotron 3.5 Lightning，可在笔记本或台式机单块 GPU 上运行；消息称英伟达正在全力研发至少 1 万亿参数的 Nemotron 4，目标对标全球顶尖开源模型。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Grok Bot + Cursor Ultra 的组合是 AI 编程工具"身份转变"的标志：编辑器助手（Copilot 范式）正在让位于"数字员工"（Agent 范式）。开发者不再自己写代码，而是给一个 7×24 在线、可长期记忆的 Agent 分配任务。英伟达 Nemotron 3.5 Lightning 单卡可跑，则把"小模型 + 本地推理 + Coding Agent"的可能性重新推到桌面端——这与 Cursor、Cline、Continue 的本地 Agent 趋势形成共振。可以预见"个人 Agent"订阅套餐（每月 $20-$200 包月 + 单卡本地推理）将成为下一阶段 AI Coding 的差异化竞争点。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260812A034FM00" target="_blank">腾讯财经早餐</a> · <a href="https://aicatchup.com/news" target="_blank">AI Catchup</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>宇树科技中签号今晚出炉，0.0181% 中签率创科创板历史新低，今日缴款日万亿赛道等待估值锚定</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">宇树科技</span>
+      <span class="tag pink">A 股 IPO</span>
+    </div>
+    <p>8 月 11 日晚，"人形机器人第一股"宇树科技（688836）网上摇号中签结果出炉，19414 个中签号码出炉，每个中签号码对应 500 股，缴款截止日为 8 月 12 日。回拨机制启动后，网上最终发行 970.7 万股，约占扣除最终战略配售数量后发行数量的 30%，中签率仅 0.01809759%，创科创板史上最低，有效申购户数 978.46 万户同样创新高。市场测算：上市首日若涨 100%，中一签可赚超 7.5 万元；涨 300% 则超 22 万元。战略配售名单中 DeepSeek 获配 93.34 万股（1.41 亿元）锁定 36 个月，社保基金、中石油等国资入局，6 家理财公司 52 只产品合计获配超 2000 万元，王兴兴及核心高管认购达 27150 万元。招股书披露宇树 2026 H1 营收预计 10.52–11.28 亿元（同比 +35.62% 至 +45.41%），扣非净利润 2.36–2.83 亿元（同比 -6% 至 -22%）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>今天是宇树科技中签缴款日，也是 A 股具身智能赛道真正的"压力时刻"。若上市后市值能稳住甚至上行，国内人形机器人产业链将获得坚实的估值锚定，IPO 排队中企业（智元、银河通用等）有望加速；若破发，整个赛道的资本逻辑都将被重写。DeepSeek 锁仓 36 个月是关键信号——大模型公司愿意把资金深度绑定到具身赛道，意味着"通用大脑 + 人形本体"的产业融合已上升到大模型头部公司的战略层面。"宇树链"概念股（北纬科技、奔图科技、蔚蓝锂芯等）的中报预喜，可能在上市前后形成资金联动。扣非净利润下滑要警惕——竞争加剧 + 研发加码正在压制短期盈利能力。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7672824336383279650/" target="_blank">人民网上海（头条号）</a> · <a href="https://www.toutiao.com/article/7672715388295152172/" target="_blank">地球局势</a> · <a href="https://www.163.com/dy/article/L43EMCQJ0517BMJU.html" target="_blank">数据宝</a></div>
+  </div>
+
+  <div class="card">
+    <h3>外交部发言人毛宁向全球推介：龙华"我能具身"人形机器人登广州邮政快递分拣产线</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">我能具身（深圳）</span>
+      <span class="tag pink">商业落地</span>
+    </div>
+    <p>8 月 11 日，外交部发言人毛宁在海外社交平台 X 上发文向全球推介："Meet the latest entrants to the workforce in southern China's Guangzhou: humanoid robots sorting parcels."（来认识一下中国南方广州最新加入劳动力队伍的成员：分拣包裹的人形机器人。）她推介的正是龙华企业"我能具身（深圳）"研发的双手臂通用人形机器人，在广州邮区中心江高陆运出口中心已正式投入快递分拣流水线商业化试点。机器人依托多模态感知与自主决策技术，无需对原有流水线大规模改造即可快速接入，承担包裹供件、异常件识别等高强度重复作业，峰值供件效率达 1200 件/小时，稳定作业效率约 800 件/小时。"我能具身"于 2026 年 4 月成立，由清华交叉信息研究院孵化团队与深圳工程化力量融合而成，深圳龙华区科创生态提供了研发场地、产业链协同等全链条保障。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是人形机器人首次以外交部级别"国家名片"方式被推向全球，本身就是产业地位的标志性事件。技术上看，1200 件/小时的峰值效率已经接近人类熟练工水平（人工分拣约 800-1000 件/小时），且"无需流水线改造即可接入"直击工业客户最关心的改造成本痛点。从清华交叉信息研究院走出来的孵化路径，说明人形机器人正从"互联网公司副业"转向"学院派底层创新"。结合近期特斯拉 Optimus 二代在上海工厂完成 72 小时无干预装配（成功率 94.3%）、优必选 Walker S 通过蔚来合肥 3 个月验证获量产资格、人形机器人"进厂实测"已成行业主旋律，8 月具身智能行业的"Demo 狂欢"正在系统性转向"车间大考"。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7672808476959195699/" target="_blank">南方都市报</a> · <a href="https://cloud.tencent.com/developer/article/2723632" target="_blank">腾讯云开发者社区</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：什么值得买 · 腾讯财经 · GitHub Blog · Medianeth · AI Catchup · 人民网上海 · 地球局势 · 数据宝 · 南方都市报 · 腾讯云开发者社区</p>
+  </footer>
+
+</div>
+</body>
+</html>
