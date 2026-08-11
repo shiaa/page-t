@@ -142,13 +142,16 @@ def main():
 
     if extract_ok:
         pushed = do_git()  # True=已推送变更；False=跳过或无变更
-        if pushed:
-            do_webhook()
-        else:
-            step_report("触发部署", True, "跳过（无变更）")
     else:
+        pushed = False
         step_report("提交推送", False, "跳过（提取失败）")
-        step_report("触发部署", False, "跳过（提取失败）")
+
+    # 构建成功即触发部署：部署的是构建产物，确保线上与最新构建一致。
+    # （EdgeOne 从源码重建，无 git 变更时为无害重部署）
+    if build_ok:
+        do_webhook()
+    else:
+        step_report("触发部署", False, "跳过（构建失败）")
 
     # ---------------- 汇总 ----------------
     print("\n" + "=" * 60)
