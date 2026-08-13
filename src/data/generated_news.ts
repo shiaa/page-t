@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-13',
+    title: 'AI 每日动态 (2026-08-13)',
+    summary: '1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投 3....',
+    date: '2026-08-13',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月13日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活
+
+
+### 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投
+
+
+### 3. DeepSeek V4 Pro 0813 正式版发布：百万上下文+极低成本，编程能力跻身全球第一梯队
+
+
+### 4. Blacksmith 获 4500 万美元 B 轮：AI 写代码易、验证难，云端编程代理 codesmith 主攻代码验证
+
+
+### 5. 蚂蚁集团领投戴盟机器人数亿元轮，全球首个"物理交互脑"Daimon-TWM 将触觉从事后反馈推向事前推演
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-12',
     title: 'AI 每日动态 (2026-08-12)',
     summary: '1. Anthropic 宣布锁死 Claude Sonnet 5 优惠价，新一代 Sonnet 5.5"代码 Fennec"参数泄露：200 万 token 上下文 2. GitHub Copilot 八月密集更新：Code Review...',
