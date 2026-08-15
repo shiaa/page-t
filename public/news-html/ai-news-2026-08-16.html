@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-16</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 16 · 周日</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>智谱 GLM-5.3 发布：登顶开源编程榜，编程逼近 Fable 5 并刷新安全能力</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">智谱 Z.ai</span>
+      <span class="tag pink">开源模型</span>
+    </div>
+    <p>8 月 16 日凌晨，智谱 Z.ai 发布 GLM-5.3 开源大模型，沿用 743B MoE 基座经深度后训练。其在 Terminal-Bench 3.0 拿下所有开源模型最高分，编程智能体评测较 5.2 提升约 50%，整体编程能力逼近 Claude Fable 5；安全侧亮点突出——CyberGym 白盒代码审查达 84.5%（5.2 为 77.2%），发布前两周红队测试即在 269 个项目中发现超 2400 个漏洞（含 1088 个中高危，最早可追溯至 40 年前）。阿里千问同月全球累计下载量突破 30 亿次、登顶开源榜首，国产开源模型成为今夏主线。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>GLM-5.3 传递了一个清晰信号——开源编程模型的能力边界正快速逼近闭源旗舰，且竞争重心从"跑分"转向"真实工程 + 安全"。把安全前移到模型阶段（发布前就挖出 2400+ 漏洞），契合"编程智能体进入真实代码库"的产业节奏：当 Agent 开始直接改生产代码，模型自带安全审计能力比事后防护更有价值。对开发者而言，这意味着本地/私有化部署一个"能干活又会自查"的开源编程模型已具备现实可行性，是企业摆脱 API 依赖、降低合规风险的关键选项。
+    </div>
+    <div class="source">来源：<a href="https://www.qbitai.com/2026/08/473038.html" target="_blank">量子位</a> · <a href="https://new.qq.com/rain/a/20260816A02UJQ00" target="_blank">腾讯新闻·GitHub AI日报</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>DeepSeek 开源 Harness v0.1：插件化 Agent 框架，MIT 许可直接对标 Claude Cowork</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">DeepSeek</span>
+      <span class="tag pink">Agent 基础设施</span>
+    </div>
+    <p>8 月 15 日晚，DeepSeek 发布 DeepSeek Harness v0.1 开发者预览版，以 MIT 许可开源。框架基于自研 Cordis 内核，采用"一切皆插件"架构——模型、工具、技能、会话、沙箱、存储、主循环、调度、UI 均作为独立插件挂载/卸载/解析依赖；会话日志 append-only，可恢复、分叉、搜索与回放；提供 Standard / Code / Minimal / Creator 四种运行时模式。发布 45 小时 GitHub 星标即破 10.5 万、Fork 超 1 万，一条命令（npx @deepseek-ai/dsh web）即可部署。同期发布的 DeepSeek V4-Pro 也主打 Agent 负载，8 月 16 日起执行分时定价（低谷时段较峰值低 50%）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 Agent 开发框架从"闭源托管"走向"开源可自托管"的标志性事件。相比 Anthropic Claude Cowork 的锁定风险，MIT 许可 + 插件化架构切中了企业最在意的数据主权与供应商锁定痛点。其"一切皆插件"的设计让开发者无需改动核心即可扩展能力（社区已出现记忆压缩、自适应压缩等插件），而 append-only 会话日志为 Agent 的可追溯、可调试提供了底层支撑——这正是企业级 Agent 落地前最缺的"工程化底座"。对 DevOps/SRE 而言，可自托管、可审计的 Agent 框架，是后续把 AI 同事接入内网工作流的前提。
+    </div>
+    <div class="source">来源：<a href="https://nlp.elvissaravia.com/p/ai-agents-weekly-deepseek-harness" target="_blank">AI Agents Weekly</a> · <a href="https://www.briefasia.com/en/article/deepseek-launches-open-source-agent-platform-challenge-anthropic-claude-cowork" target="_blank">BriefAI</a> · <a href="https://new.qq.com/rain/a/20260816A02UJQ00" target="_blank">腾讯新闻·GitHub AI日报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Rust 项目立 AI 编程新规：可分析、审查、翻译，但不得直接写代码，过度使用触发"断路器"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">开源治理</span>
+      <span class="tag pink">Rust</span>
+    </div>
+    <p>据 InfoQ 报道，Rust 项目五个团队正式采用新的 AI 编程规则：大语言模型仅可用于代码分析、审查与翻译，不得直接编写代码；对 AI 生成内容的过度依赖会触发"断路器（circuit breaker）"机制。规则把 AI 定位为"辅助而非替代"，明确阻止生成代码混入核心实现，避免"看不出来源、讲不清意图"的提交污染项目。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是主流开源社区首次以成文规则对"AI 代写"划红线，为"编程智能体渗透率走高"时代提供了治理范本。其背后的张力很现实：AI 生成代码易、可追责难——当 Copilot / Claude Code 大量产出 PR，"这段代码是谁写的、为什么这么写"会变得模糊。Rust 的"断路器"思路（用机制而非口号约束）值得企业借鉴：在引入 AI 编程提效的同时，保留人工对核心实现的掌控权与可审计性。对正在推进 AI 辅助开发的团队，这是一次关于"边界该画在哪"的及时提醒。
+    </div>
+    <div class="source">来源：<a href="https://www.infoq.cn/article/4t8SKMGI28buD345I2Ta" target="_blank">InfoQ</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>越疆发布全球首款家庭智能体机器人 Rover X1，7499 元把具身智能带进普通家庭</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">越疆 Dobot</span>
+      <span class="tag pink">消费级落地</span>
+    </div>
+    <p>8 月 16 日，越疆正式发布全球首款家庭智能体机器人 Rover X1，售价 7499 元。这台从工业产线走出的智能机器狗，首次在家庭场景实现具身智能"有用、好用、常用"的完整体验：行业首创双视觉跟踪系统实现全向感知与自主决策，全地形轮腿结构 + 智能负重能力从容应对地板、草地与小坡坎，自研开放平台支持户外探险、家庭安防、编程教育与情感陪伴多角色切换。它把长期两极分化的机器狗市场（数十万美元工业设备 vs 功能有限的电子宠物）拉到了"一部手机的价格"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能从"工厂/实验室"走向"客厅"的价格拐点——7499 元意味着消费级机器狗首次具备实用负载而非纯玩具属性。更关键的是越疆把工业级技术（双视觉跟踪、轮腿结构）转译到家庭场景，验证了"降维落地"路径；开放平台 + 编程教育定位还把机器人变成 STEM 入口。对从业者而言，家庭场景的规模化会反向拉动传感器、边缘算力、低功耗运动控制的供应链成熟，是具身智能商业闭环的真正起点，值得跟踪其真实销量与退货率。
+    </div>
+    <div class="source">来源：<a href="http://gzylhyzx.com/detail.html?cpid=T17&newsId=13858298" target="_blank">海报新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>江西平板车间 8 台人形机器人整段接管质检，平均节拍 22 秒、成功率 99.9%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">工业落地</span>
+      <span class="tag pink">人形机器人</span>
+    </div>
+    <p>8 月 15 日，江西一家平板生产车间实现全球首次由 8 台人形机器人全权负责整段产线质检：独立完成音屏、多媒体界面等测试，平均节拍约 22 秒、成功率 99.9%，日均稳定产出约 3000 台。这标志着人形机器人从"单点演示"进入"整段接管"的工业应用阶段，而非仅替代单个工位。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"整段接管"比"单工位替代"难度高出数量级——它要求机器人在无规则、高动态的真实产线中持续决策、协同与容错。99.9% 成功率 + 22 秒节拍说明具身智能已开始具备可量产的工业可靠性，而非实验室指标。对产业而言，这意味着人形机器人的价值锚点正从"炫技后空翻"转向"稳定交付产能"，也是工信部/国资委"年底形成百个高价值场景、万台级落地能力"目标的具象化注脚。关注供应链：一旦整段接管被验证可复制，运动控制、末端执行器与场景理解软件将率先放量。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260815V093SL00" target="_blank">魔力的科技</a> · <a href="https://new.qq.com/rain/a/20260816A02YUK00" target="_blank">腾讯新闻·具身智能日报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：量子位 · 腾讯新闻 · InfoQ · AI Agents Weekly · BriefAI · 海报新闻 · 魔力的科技</p>
+  </footer>
+
+</div>
+</body>
+</html>

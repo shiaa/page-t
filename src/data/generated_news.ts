@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-16',
+    title: 'AI 每日动态 (2026-08-16)',
+    summary: '1. 智谱 GLM 5.3 发布：登顶开源编程榜，编程逼近 Fable 5 并刷新安全能力 2. DeepSeek 开源 Harness v0.1：插件化 Agent 框架，MIT 许可直接对标 Claude Cowork 3. Rust ...',
+    date: '2026-08-16',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月16日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 智谱 GLM-5.3 发布：登顶开源编程榜，编程逼近 Fable 5 并刷新安全能力
+
+
+### 2. DeepSeek 开源 Harness v0.1：插件化 Agent 框架，MIT 许可直接对标 Claude Cowork
+
+
+### 3. Rust 项目立 AI 编程新规：可分析、审查、翻译，但不得直接写代码，过度使用触发"断路器"
+
+
+### 4. 越疆发布全球首款家庭智能体机器人 Rover X1，7499 元把具身智能带进普通家庭
+
+
+### 5. 江西平板车间 8 台人形机器人整段接管质检，平均节拍 22 秒、成功率 99.9%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-13',
     title: 'AI 每日动态 (2026-08-13)',
     summary: '1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投 3....',
