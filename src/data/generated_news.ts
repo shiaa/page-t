@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-17',
+    title: 'AI 每日动态 (2026-08-17)',
+    summary: '1. DeepSeek 峰谷计价今日生效，Harness 开源引爆 Agent 框架之争 2. Anthropic 全面落地 Claude 文本水印，多智能体"互害"实验与 186 页风险报告同步发酵 3. Google 发布 Gemini...',
+    date: '2026-08-17',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月17日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. DeepSeek 峰谷计价今日生效，Harness 开源引爆 Agent 框架之争
+
+
+### 2. Anthropic 全面落地 Claude 文本水印，多智能体"互害"实验与 186 页风险报告同步发酵
+
+
+### 3. Google 发布 Gemini 3.7 Flash：砍半价格，明确定位"coding-agent 优先"
+
+
+### 4. 北大灵巧手自主发球突破：打通"全身移动 + 高自由度精细操纵"的具身闭环
+
+
+### 5. 第四届中国具身智能机器人产业大会：主线从"技术原理"转向"场景落地"
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-16',
     title: 'AI 每日动态 (2026-08-16)',
     summary: '1. 智谱 GLM 5.3 发布：登顶开源编程榜，编程逼近 Fable 5 并刷新安全能力 2. DeepSeek 开源 Harness v0.1：插件化 Agent 框架，MIT 许可直接对标 Claude Cowork 3. Rust ...',
