@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-19',
+    title: 'AI 每日动态 (2026-08-19)',
+    summary: '1. 宇树科技今日正式登陆科创板，"人形机器人第一股"发行市值约 610 亿元 2. Agentic Coding 框架之争白热化：Meta Muse Code 与 DeepSeek Harness 同台 3. 开发工作流结构性拐点：终端原...',
+    date: '2026-08-19',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月19日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 宇树科技今日正式登陆科创板，"人形机器人第一股"发行市值约 610 亿元
+
+
+### 2. Agentic Coding 框架之争白热化：Meta Muse Code 与 DeepSeek Harness 同台
+
+
+### 3. 开发工作流结构性拐点：终端原生 Agent + MCP 标准化 + 自愈 CI/CD
+
+
+### 4. 灵巧手销量翻倍、触觉传感器规模化采购，硬件成本坍塌加速商业化
+
+
+### 5. 腾讯 RoboticsX 联合清华等推出可交互世界模型 GeniWorld，用"视频预测"破解具身数据荒
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-17',
     title: 'AI 每日动态 (2026-08-17)',
     summary: '1. DeepSeek 峰谷计价今日生效，Harness 开源引爆 Agent 框架之争 2. Anthropic 全面落地 Claude 文本水印，多智能体"互害"实验与 186 页风险报告同步发酵 3. Google 发布 Gemini...',

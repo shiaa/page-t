@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-19</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 19 · 周三</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>宇树科技今日正式登陆科创板，"人形机器人第一股"发行市值约 610 亿元</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">宇树科技</span>
+      <span class="tag pink">IPO · 上市</span>
+    </div>
+    <p>8 月 19 日，宇树科技（688836）正式登陆上交所科创板，发行价 150.80 元/股、对应发行后总市值约 609.93 亿元。网上有效申购户数约 978.46 万户创科创板新高，中签率 0.01809759% 刷新历史最低，稀缺标的叠加盈利验证获资金强烈追捧。公司 2025 年全球人形机器人出货量超 5500 台位列第一，截至 2026 年 7 月双足人形机器人累计生产下线约 1.8 万台；董事长王兴兴在路演中回顾 2016 年从大疆离职创业历程，称当时已看清机器人赛道方向。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能从"主题叙事"走向"资本市场定价"的里程碑。宇树以"能稳定盈利 + 规模化交付"的双重验证登陆科创板，意味着市场开始按真实营收与量产能力给机器人公司定价，而非单纯的故事估值。对从业者而言，真正该跟踪的是：上市后宇树能否把"能跑能跳"快速转译为"能稳定干活的作业能力"，以及 1.8 万台量产背后的供应链（减速器、关节、灵巧手）成本曲线——这决定了行业能否在 1–2 年内跑通商业化闭环，也直接影响相关上市公司的估值锚。
+    </div>
+    <div class="source">来源：<a href="http://view.inews.qq.com/a/20260818A0DWJA00" target="_blank">央广网</a> · <a href="http://view.inews.qq.com/a/20260818A0DMHJ00" target="_blank">IT之家</a> · <a href="https://new.qq.com/rain/a/20260819A02JP600" target="_blank">具身智能日报（腾讯新闻）</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Agentic Coding 框架之争白热化：Meta Muse Code 与 DeepSeek Harness 同台</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Meta · DeepSeek</span>
+      <span class="tag pink">Agent 框架</span>
+    </div>
+    <p>8 月上旬，Meta Superintelligence Labs 发布终端编程 Agent Muse Code（基于 Muse Spark 1.2），支持规划、写码、验证并并行运行多个后台 Agent，贡献者档价格仅为标准档约 1/12；与此同时 DeepSeek 开源 Harness v0.1（MIT 许可、"一切皆插件"的 Cordis 架构），发布即被开发者视为可直接对标 Claude Cowork 的可自托管 Agent 运行时，兼容 DeepSeek / Anthropic / OpenAI / Google 等多模型。两者分别代表"大厂闭源 Agent"与"开源可自托管运行时"两条路线。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>编程工具的主战场已从"谁补全得最快"切换到"谁拥有端到端执行循环"——仓库级推理、多文件规划、自主测试、自愈沙箱与 PR 编排。对 DevOps/SRE 而言，AI 编程 Agent 正成为可接入内网 CI/CD 的生产力载体，但选型逻辑变了：闭源（Claude Code / Codex / Muse Code）胜在开箱即用与多 Agent 编排，开源（Harness / OpenCode）胜在数据主权、可审计与成本可控。在供应商锁定与数据出境风险面前，"可自托管"路线对国内企业尤其有吸引力。
+    </div>
+    <div class="source">来源：<a href="https://www.theagenticdigest.com/issues/meta-muse-code-agent" target="_blank">The Agentic Digest</a> · <a href="https://www.linkedin.com/pulse/what-happens-when-ai-becomes-accessible-aage-se-right-b1rff" target="_blank">LinkedIn · Age Se</a> · <a href="https://insideai.news/news/agentic-ai/deepseek-launches-harness-framework-for-autonomous-ai-agents/7828/" target="_blank">Inside AI</a></div>
+  </div>
+
+  <div class="card">
+    <h3>开发工作流结构性拐点：终端原生 Agent + MCP 标准化 + 自愈 CI/CD</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">工程化趋势</span>
+      <span class="tag pink">标准与基础设施</span>
+    </div>
+    <p>近期行业报告（Developer Tools Watch, 8/10）指出软件开发工具到达结构性拐点：Claude Code CLI 与 OpenAI Codex CLI 大规模进入企业部署，开源终端 Agent OpenCode 星标破 14 万；MCP 被正式确立为连接 AI 编程 Agent 与研发基础设施的开放标准；GitHub Copilot、CodeRabbit、GitLab 等将"自愈式 review 门禁"嵌入 CI/CD，可在临时沙箱跑测试并提交自愈补丁。开发者从"手写语法"转向"审查 10–20 条并行 PR 流"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这三条线合起来定义了 AI 编程的下一阶段——"Agent 接管执行循环、人在高层做架构对齐"。MCP 标准化消除了厂商锁定，让工程师一次写好工具连接器、任意合规 Agent 都能复用；自愈 CI/CD 把代码审查从"人审瓶颈"变成"Agent 对 Agent 校验闸口"。对运维工程师，这恰恰点出 AI 时代最该补的能力：用自动化约束自动化——在流水线里强制嵌入安全扫描、质量门禁与人工 review 闸口，否则"产能提升"会反噬成技术债与线上事故。
+    </div>
+    <div class="source">来源：<a href="https://www.thecodew.com/2026/08/the-codew-developer-tools-watch-rise-of.html" target="_blank">The CODEW Developer Tools Watch</a> · GitHub / Sourcegraph 公开资料</div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>灵巧手销量翻倍、触觉传感器规模化采购，硬件成本坍塌加速商业化</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">灵巧手 · 触觉</span>
+      <span class="tag pink">供应链</span>
+    </div>
+    <p>具身智能日报（8/19）援引央视报道：今年以来国内人形机器人产业化提速，带动灵巧手市场销量同比翻倍以上，深圳企业前 8 个月销量已超 4000 只；柔性触觉传感器从"技术验证"转向"规模化采购"，灵巧手单价由前年约 5 万元降至今年 1 万元以下，2026 年中国市场销量有望达 7.02 万只。同期灵巧手企业灵心巧手（Linkerbot）8 月 18 日官宣与 3D 视觉龙头奥比中光达成战略合作，围绕具身智能"手眼协同"共研标杆方案，打通"视觉感知—灵巧操作—数据反馈"闭环。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能商业化最硬的信号之一——不是某个 Demo 多炫，而是核心零部件"量价齐变"：销量翻倍 + 价格腰斩，意味着灵巧手正从实验室配件变成可规模采购的工业标准件，触觉感知的普及则补齐了"精细操作"的感知闭环。灵心巧手 × 奥比中光的"手眼协同"更把视觉与操作从单点能力推向深度耦合。对供应链与从业者，硬件成本曲线决定了人形机器人能否在工厂 / 仓储 / 康养等场景一年内外跑通 ROI——这是比"能后空翻"更值得盯的硬指标。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260819A02JP600" target="_blank">具身智能日报（腾讯新闻）</a> · 央视新闻 · <a href="https://view.inews.qq.com/a/20260818A0DK6D00" target="_blank">电厂</a></div>
+  </div>
+
+  <div class="card">
+    <h3>腾讯 RoboticsX 联合清华等推出可交互世界模型 GeniWorld，用"视频预测"破解具身数据荒</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">腾讯 · 清华</span>
+      <span class="tag pink">世界模型</span>
+    </div>
+    <p>国泰海通 8 月 18 日机器人行业周报梳理：清华 + 腾讯 RoboticsX + 香港科技大学 + 深圳技术大学推出可交互世界模型 GeniWorld——通过 URDF 渲染把数值动作转为与相机视角对齐的视觉动作表示，并预测未来视频以合成多样化训练数据；同期南洋理工 + 北大 + 港科广 + 智源推出隐空间预测世界动作模型 ω-0（全身动作 VLM 预训练 + 真实居家场景微调），戴盟机器人发布触觉锚定世界模型 Daimon-TWM。报告判断：具身智能正朝"物理交互、全身协同、视频预训练"演进，国内本体及核心零部件加速低成本化与规模交付。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>世界模型是具身智能绕不开的"数据饥渴"解药——真实机器人数据采集慢、贵、难规模化，而 GeniWorld 这类"用视频预测合成训练数据"的路线能把仿真 / 生成数据反哺真机策略，大幅缩短从 Demo 到作业的训练周期。对行业，这意味着"仿真—世界模型—真机微调"的数据飞轮正在成型，谁先把这条闭环跑顺谁就握住护城河；而配套零部件低成本化（法奥力控臂单臂 2.38 万、未来动力 K1 起售 1.98 万）则同步把"买得起"变成现实。
+    </div>
+    <div class="source">来源：<a href="https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/search/rptid/840365417988/index.phtml" target="_blank">新浪财经 · 国泰海通机器人周报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：央广网 · IT之家 · 具身智能日报（腾讯新闻）· The Agentic Digest · The CODEW Developer Tools Watch · 央视新闻 · 新浪财经 · 国泰海通</p>
+  </footer>
+
+</div>
+</body>
+</html>
