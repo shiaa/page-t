@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-20</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 20 · 周四</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>2026 世界机器人大会北京启幕：150 余款新品全球首发，宇树"超人"打破两项人类极限</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">WRC 2026</span>
+      <span class="tag pink">宇树 · 银河通用</span>
+    </div>
+    <p>8 月 19 日，以"人机共生产需共融"为主题的 2026 世界机器人大会在北京亦庄开幕，150 余款机器人新品全球首发。8 月 17 日宇树科技发布的"超人"人形机器人原型机（仅 3 个月研发）原地跳高 2 米、奔跑速度 12.66m/s，双双打破人类极限（无需外部弹射、纯靠关节电机爆发力）；银河通用首发双足人形 Galbot ET-1，搭载"银河星脑"WAM 架构，可交互学习新动作（正学打网球），G1 已在数十城部署百家即时零售仓。大会同步发布北京人形"天工 Omni"家用小型人形与具身多模态大模型 Pelican-Unify 1.0，具身智能从"能跑会跳"加速迈向"能想会干"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>WRC 是观察具身智能产业化节奏最密集的窗口。今年最关键的信号不是单点性能炫技，而是"量产 + 落地场景"同时井喷：宇树把运动极限推到超人级，银河通用把双足本体铺到零售仓与工厂产线，Pelican-Unify 把"感知—理解—决策—执行"做成统一大模型。对从业者，真正该盯的是大会期间集中披露的真实订单、合规准入（CE 认证）与场景 ROI——这决定了行业是从"演示元年"迈入"应用落地元年"还是停留在概念。
+    </div>
+    <div class="source">来源：<a href="https://k.sina.com.cn/article_7880068204_1d5b04c6c06801fpda.html" target="_blank">新浪新闻</a> · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8666a85fef705552" target="_blank">光明日报 / 腾讯新闻</a> · <a href="https://www.ce.cn/cysc/newmain/yc/jsxw/202608/t20260819_3154833.shtml" target="_blank">中国经济网</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Cursor 推出 Origin 代码托管剑指 GitHub；OpenAI Codex CLI 0.148.0 新增会话分叉与 Bedrock</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor · OpenAI</span>
+      <span class="tag pink">基础设施之争</span>
+    </div>
+    <p>8 月 19 日，Cursor 发布 Origin——在编辑器内直接托管代码，意图将"代码存放"收归自身、与 GitHub 争夺事实上的 source of truth（企业可通过管理后台退出）。同日 OpenAI Codex CLI 0.148.0（8/18）上线：新增 /export 把完整 TUI 对话导出为 Markdown、codex exec fork 可对会话分叉、恢复选择器支持归档与还原历史会话；并加入 Amazon Bedrock Runtime 作为内置模型提供商，hooks 支持异步命令执行与 MCP 工具调用。Claude Code 也于 8/18 推进到 v2.1.235，补强长会话稳定性与拼写检查等体验。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>两条线共同指向一个趋势——编程 Agent 的竞争正从"编辑器补全"上移到"其下的基础设施"。Cursor 把代码托管纳入自身闭环、Codex 把 Bedrock 做成内置 Provider，都是"拥有更多部署栈"以锁定下一轮差异化与绑定；而 Codex 的 fork / archive / resume 与 Claude Code 对长压缩会话的加固，让"一次 Agent 对话"升级为可分支、可恢复的"工程线程"。对 DevOps/SRE，这意味着 CI/CD 与 git 历史、PR 数据、CI 配置在 Agent 时代的归属权需要被重新审视——别让工具把你的 source of truth 悄悄搬走。
+    </div>
+    <div class="source">来源：<a href="https://oday-bakkour.com/blog/ai-coding-news-august-19-2026-cursor-origin-codex-forking" target="_blank">AI Coding News (Oday Bakkour)</a> · <a href="https://www.thecodew.com/2026/08/devops-watch-ai-coding-agents-reshape.html?m=1" target="_blank">The CODEW DevOps Watch</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Claude Code 全流程自主运维实测：388 条 PR、180 条合并，但"人审瓶颈"反噬成新风险</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">自主运维 · 度量</span>
+    </div>
+    <p>中研网 8/17 报道：Anthropic 公开实测，Claude Code 完成全流程自动化代码运维——由 Boris Cherny 主导，依托专属智能运维频道，自主完成多终端崩溃巡检、重复代码合并、死代码清理、层级漏洞修复等 11 类基础运维工作，覆盖 iOS/Android/桌面/Web 等六大环境，累计产出 388 条合并请求、其中 180 条成功合并，仅最终上线由人工确认。Faros AI 2026 监测报告同时显示：高 AI 编程渗透团队人均史诗任务完成量 +66.2%、吞吐 +33.7%；但人均 bug +54%、单次 PR 线上事故风险 +242.7%、代码审查等待中位时长暴涨 441.5%，超三成 PR 未经有效审查直接上线。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI 编程从"生成代码"跨入"自主运维生产力载体"的标志性样本，但也暴露了结构化短板——产能飙升而人工审查成为瓶颈，导致"技术债 + 事故风险"同步放大。对运维工程师，结论很直接：Agent 时代真正的护城河不是"让 AI 写更多"，而是"用自动化约束自动化"——在流水线强制嵌入安全扫描、质量门禁与人工 review 闸口，否则提效会反噬成线上故障。这正是 SRE/DevOps 岗位价值被放大的地方。
+    </div>
+    <div class="source">来源：<a href="https://m.chinairn.com/hyzx/20260817/163123636.shtml" target="_blank">中研网</a> · <a href="https://big5.chinairn.com/hyzx/20260817/163123636.shtml" target="_blank">中研普华（繁体）</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>中国厂商包揽全球上半年 97% 人形机器人出货，智元登顶、宇树紧随</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">智元 · 宇树</span>
+      <span class="tag pink">出货量 · 格局</span>
+    </div>
+    <p>据 SAG 报告与虎嗅披露：2026 上半年全球人形机器人出货 1.91 万台（同比 +272%），中国企业占比超 97%；智元出货 8400 台（44%）首登全球第一，宇树 5900 台（31%）紧随，两家合计占 75%；工信部数据显示上半年国内产量已超 4 万台。另据具身智能日报，无界动力第二代轮式半人形 K15 获全球首个工业级全域 CE 认证，签署总额 7 亿元全球订单（含远景科技 5 亿元、国内具身操作领域首个亿元级海外订单）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能"中国供应链 + 量产能力"第一次被全球数据定量的硬证据——不是 Demo 数量，而是真实出货量。智元、宇树双雄合计 75% 的份额，叠加 CE 认证与海外订单，意味着国产人形机器人开始具备"合规出海 + 规模交付"能力。对从业者，量价与份额变化比任何发布会都更能指示行业拐点：上游减速器、关节、灵巧手与触觉传感器的成本曲线，将直接决定 1–2 年内商业化闭环能否跑通。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260820A02N5P00?refer=cp_1009" target="_blank">具身智能日报（腾讯新闻）</a> · 光子星球 · 虎嗅</div>
+  </div>
+
+  <div class="card">
+    <h3>国家电网 68 亿元具身智能规划落地；小米"铁大"工厂实习成功率提升至 98%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">央企 · 小米</span>
+      <span class="tag pink">场景落地</span>
+    </div>
+    <p>据凤凰网科技，8 月 10 日国家电网内部印发具身智能规划，计划投入 68 亿元、集中采购 8500 台具身智能设备（含 500 台人形带电作业机器人），叠加 WRC 央企联合体，标志"国家队"下场补齐量产与场景短板。同日，小米新款人形机器人（沿用"铁大"命名，身高 1.70 米、66 自由度）亮相 WRC；其在汽车工厂自攻螺母上件工站双侧作业成功率从 90.2% 提升至 98%，中控台侧盖板排序与料箱折叠回收成功率均达 90%。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>两条线点出同一个事实——具身智能正从"展示"走向"上岗"。国家电网 68 亿级采购意味着最大体量的 B 端刚需场景（带电作业、高危巡检）开始用真金白银为机器人付费，"谁来买单"有了央企答案；小米铁大在汽车工厂把关键工站成功率拉到 98%，说明本体在真实产线的稳定性已逼近可部署阈值。对供应链与从业者，这比实验室视频更值得跟踪：真实场景的故障率、维护成本与回收周期，才是商业化真正的胜负手。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260820A02N5P00?refer=cp_1009" target="_blank">具身智能日报（腾讯新闻）</a> · 凤凰网科技 · 南方都市报</div>
+  </div>
+
+  <footer>
+    <p>数据来源：新浪新闻 · 光明日报 · 中国经济网 · AI Coding News · The CODEW · 中研网 · 具身智能日报（腾讯新闻）· 凤凰网科技 · 虎嗅 · 光子星球</p>
+  </footer>
+
+</div>
+</body>
+</html>
