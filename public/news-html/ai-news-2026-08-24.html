@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-24</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 24 · 周一</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>2026 世界机器人大会落幕：首发新品超 150 件，上半年人形机器人出货超 4 万台</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">WRC 2026</span>
+      <span class="tag pink">产业落地</span>
+    </div>
+    <p>8 月 19-23 日，2026 世界机器人大会（WRC）在北京亦庄举行，吸引 373 家国内外企业、3000 件创新产品参展，首发新品突破 150 件。大会现场发布的《2026 人形机器人产业发展报告》显示：2026 年上半年我国人形机器人出货量超 4 万台，全球占比高达 97%，全年整机产量有望突破 10 万台。本届大会主题从"能走能跳"转向"能干活、能交付、能成交"，星海图、银河通用、千寻智能等纷纷展示真实商用场景闭环。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>人形机器人叙事正式从"舞台秀"切换为"产业场"——评判标准不再是单点技术参数，而是研发、供应链、工程化、客户服务的整套体系能力。上半年 97% 的全球出货占比说明中国已成该赛道绝对主场，而"首发 150+ 新品 + 真实交付场景"标志着行业从样机走向量产商用。对关注供应链（灵巧手、力矩传感器、端侧 AI 芯片）与落地投资机会的人，这是最值得跟踪的拐点信号。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7676369215394808361/" target="_blank">环球网</a> · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_5536a8a7c0861752" target="_blank">中国新闻网</a> · <a href="https://k.sina.com.cn/article_5952915705_162d248f906703m4pw.html" target="_blank">中工网/新浪</a></div>
+  </div>
+
+  <div class="card">
+    <h3>中国开源模型全球下载占比达 41%，首超美国，AI 编程成主战场</h3>
+    <div class="meta">
+      <span class="tag">开源生态</span>
+      <span class="tag green">中国模型</span>
+      <span class="tag pink">开发者入口</span>
+    </div>
+    <p>2026 春季 HuggingFace 报告给出关键数据：中国自研开源模型的全球下载占比达到 41%，首次超过美国。这一趋势在 8 月被进一步放大——DeepSeek V4 Pro、智谱 GLM-5.3 等密集发布，把竞争焦点从"谁的模型更大"转向"谁能真正帮开发者把活干完"。Research and Markets 数据显示，2025 年全球 AI 编程工具市场规模已达 295.7 亿美元，2030 年预计攀升至 646.8 亿美元。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>开源对阵闭源已从"追赶"变为"实际竞争"。DeepSeek-V4-Pro 与闭源 Grok 4.6 同处第一梯队，但输出价格不足后者七分之一，本地私有化部署进一步压低落地成本。对 SRE/DevOps 开发者而言，这意味着编码智能体的单位成本持续下探、可私有化部署的选项增多——"模型+工具+硬件"全栈入口之争，正把开发者生态位作为核心战场。
+    </div>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8956a89b82393352" target="_blank">腾讯新闻</a> · <a href="https://www.chinaz.com/ainews/" target="_blank">ChinaZ</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>DeepSeek V4 Pro 正式版 + 开源 Harness 框架：编程智能体门槛再降，直接对标 Claude Code</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">DeepSeek</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>8 月 13 日，DeepSeek 同时发布 V4 Pro 正式版与开源的 Harness 开发者工具。其编程智能体在 DeepSWE 基准上的得分从预览版 12.8 分跃升至 62.7 分，已能独立完成多步任务。Harness 以 MIT 协议开源，设计理念"一切皆插件"，支持多智能体协同、工具调用管理、沙盒安全隔离，且已能将 Claude Code 与 Codex 作为 Profile Bundle 纳入其 Agent 编排体系。有开发者称这是"向 Claude Code 说再见的那天"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这不仅是一次模型升级，更是 Agent 调度层的范式转移——Harness 正演变为统一的智能体调度层，把闭源巨头工具变成可即插即用的"子代理"。对国内开发者，MIT 协议 + 私有化部署意味着可零成本搭建"需求→代码交付"的完整自动化编程工作流，AI Coding 的自主化程度与可掌控性同时提升。
+    </div>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8956a89b82393352" target="_blank">腾讯新闻</a> · <a href="http://www.kwkd.cn/news/70276" target="_blank">AI 日报 2026-08-21</a></div>
+  </div>
+
+  <div class="card">
+    <h3>智谱 GLM-5.3 发布：开源编程能力第一，逼近 Claude Fable 5</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">智谱 AI</span>
+      <span class="tag pink">长上下文</span>
+    </div>
+    <p>智谱 AI 正式发布 GLM-5.3 大模型，在开源模型编程能力评测中位居第一，综合代码生成、工程调试、复杂项目重构能力逼近 Claude Fable 5。重点优化长代码库理解、多文件协同修改与算法推理，支持百万级代码项目一次性上下文加载，开发者可直接基于完整工程进行智能体辅助开发。同步启动开源"盾计划"，向开源项目提供持续安全审计与免费模型额度。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"开源 + 编程 + 安全"三件套装成型，国产开源模型开始占据 AI Coding 价值链中段。百万级上下文一次性加载对大型遗留系统（如传统运维脚本、企业级代码库）的重构尤其友好——这正是运维/DevOps 工程师日常最痛的"看不懂老代码"问题。叠加免费安全审计额度，降低了团队把 AI 引入生产代码库的门槛。
+    </div>
+    <div class="source">来源：<a href="http://www.kwkd.cn/news/70276" target="_blank">AI 日报 2026-08-21</a> · <a href="http://www.mtrt.cn/news/20889" target="_blank">AI Coding 周报 8 月第 2 周</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>星海图发布旗舰轮臂人形机器人 Nexo，并跑通"机器人前置仓"全自动闭环履约</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">星海图</span>
+      <span class="tag pink">VLA 模型</span>
+    </div>
+    <p>WRC 期间，星海图发布新一代旗舰轮臂人形机器人 Nexo，全身 30 个自由度，双臂最高 20kg 负载，兼顾高柔性精密操作与大负载稳定作业。同时现场打造 1:1 复刻真实商用前置仓的在线接单演示：依托 G0.5 具身基础模型，机器人自主完成"识别商品—规划路径—抓取拣选—撑袋打包"全流程，无需针对每个 SKU 单独编程，仅需少量样本即可实现商品识别与精准抓取。"机器人组装机器人"场景也实现全流程无人干预。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Nexo 与前置仓闭环展示了具身智能从"单点动作"到"长程任务自主执行"的跨越——VLA+WAM 双技术路线让机器人直接面向真实商业环境而非实验室。对仓储物流、零售履约这类高频刚需场景，这种"少量样本即可适配"的能力意味着规模化部署成本快速下探，是具身智能商业化最清晰的一条落地路径。
+    </div>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_5536a8a7c0861752" target="_blank">中国新闻网</a> · <a href="https://www.toutiao.com/article/7675914615729046042/" target="_blank">光明网</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：环球网 · 中国新闻网 · 中工网/新浪 · 腾讯新闻 · ChinaZ · AI 日报 · AI Coding 周报 · 光明网 · HuggingFace</p>
+  </footer>
+
+</div>
+</body>
+</html>
