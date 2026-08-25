@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-25',
+    title: 'AI 每日动态 (2026-08-25)',
+    summary: '1. 国产 AI 编程工具冲进全球第一梯队，中国模型首次登顶代码榜 2. Claude Code 登顶 Agent Harness 排行；Cloudflare 为 Agent 造浏览器、钱包与支付协议 3. AI 代码安全与合规成核心关卡：...',
+    date: '2026-08-25',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月25日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 国产 AI 编程工具冲进全球第一梯队，中国模型首次登顶代码榜
+
+
+### 2. Claude Code 登顶 Agent Harness 排行；Cloudflare 为 Agent 造浏览器、钱包与支付协议
+
+
+### 3. AI 代码安全与合规成核心关卡：AI 生成漏洞数为人工 2.74 倍
+
+
+### 4. 50 台量产机器人国家速滑馆自主决策跑障碍赛；天工 Omni "捂脸跑"夺冠
+
+
+### 5. WRC 2026 闭幕，"北京机域"蓝图发布：上半年中国人形机器人出货超 4 万台、全球占 97%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-24',
     title: 'AI 每日动态 (2026-08-24)',
     summary: '1. 2026 世界机器人大会落幕：首发新品超 150 件，上半年人形机器人出货超 4 万台 2. 中国开源模型全球下载占比达 41%，首超美国，AI 编程成主战场 3. DeepSeek V4 Pro 正式版 + 开源 Harness 框...',

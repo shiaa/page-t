@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-25</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 25 · 周二</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>国产 AI 编程工具冲进全球第一梯队，中国模型首次登顶代码榜</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">国产崛起</span>
+      <span class="tag pink">模型自主可控</span>
+    </div>
+    <p>8 月 25 日报道，国内厂商在最新一版 AI 代码智能体排行榜中集体冲到前列，国产大模型首次在前端代码生成评测中登顶。文心快码已服务超 800 万开发者、2000 多家企业客户，IDC 九项评测拿下八项满分，中文代码生成采纳率平均 38%（喜马拉雅实测达 44%）。海外阵营：Cursor 付费用户超 100 万、年经常性收入约 20 亿美元，Claude Code 周活约 420 万；Copilot 总用户 5000 万但付费仅约 470 万，份额一年内从领先滑到 25%。国内阵营：字节 Trae 国内市场份额约 41%，阿里通义灵码用户约 800 万、金融行业企业级渗透率超 30%，腾讯云 CodeBuddy 约 28%。模型侧转折明显——月之暗面 Kimi K3 在前端代码生成评测中登顶（首个登顶的开源模型），DeepSeek V4 Flash 把调用成本压到同类闭源模型约 1/95，已被接进 Claude Code 等编程宿主。麦肯锡报告显示采用 AI 编程的团队效率提升 35%-55%、超一半新增代码已有 AI 参与；Gartner 预测 2027 年底超 70% 企业会把 AI 编程助手列为标准工具。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>国产"模型强 + 工具强"组合开始真正进入生产线，而非停留在演示。模型自主可控意味着成本与合规都握在自己手里，对国内企业是结构性利好。对开发者而言，这不是多一个插件，而是研发流程本身的重构——国内工具已占半壁江山，下一步看点是从"能生成"到"真的被产业用起来"。
+    </div>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_9176a8cc69939152" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Claude Code 登顶 Agent Harness 排行；Cloudflare 为 Agent 造浏览器、钱包与支付协议</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Agent 基础设施</span>
+      <span class="tag pink">Cloudflare</span>
+    </div>
+    <p>8 月新一期 agent harness 排行把 Claude Code 列为第一（胜在 hooks、subagents、动态工作流深度，是长时间自主编码会话的默认选择），领先 Codex CLI、Cursor、Gemini CLI、GitHub Copilot。同一窗口内，Cloudflare 三周连发三条本应合起来看的重磅：Kitesurf——完全不用 Chromium、用 Rust 编译到 WASM 的无状态浏览器，在截图/HTML 抽取等 agent 任务上 CPU/内存仅 Chromium 的 1/3~1/7，兼容 Chrome DevTools 协议；Wallets——供 agent 通过 API 密钥采购的虚拟钱包（含额度、白名单商户、单笔上限）；x402 支付协议——用稳定币按请求计费、在边缘结算，无需注册与跳转。三者叠加意味着 agent 现在能自主浏览并付费，无需人在回路。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cloudflare 的判断很清晰——"agent 将成为 web 的主要用户"，并正在为它们构建浏览器、钱包与支付协议。对构建 agent 的团队，两件事现在就要落地：① 每会话基础设施成本骤降 3-7 倍，"一 agent 一浏览器"不再昂贵；② agent 自主消费带来治理问题（单 run 预算、白名单商户、审计轨迹）从"以后再说"变成"上线前必备"。这标志 AI Coding 正从"写代码"外溢到"能行动、能花钱"的自主执行层。
+    </div>
+    <div class="source">来源：<a href="https://aitoolsrecap.com/Blog/ai-news-august-24-2026" target="_blank">AIToolsRecap · AI News Aug 24 2026</a></div>
+  </div>
+
+  <div class="card">
+    <h3>AI 代码安全与合规成核心关卡：AI 生成漏洞数为人工 2.74 倍</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">安全合规</span>
+      <span class="tag pink">DevOps</span>
+    </div>
+    <p>360 在 Codex 中发现 6 个高价值安全漏洞（含远程代码执行风险）；公开数据显示，AI 生成代码的安全漏洞数量是人工编写的 2.74 倍，45% 的 AI 代码样本未能通过安全测试。与此同时多智能体协作成为新趋势——Cloudflare 推出 ADLC（智能体开发生命周期）取代传统 SDLC，Cursor 3.0 的 Agents Window 可同时运行多个智能体，Meta Muse Code 支持并行子智能体在隔离工作树中运行，但安全责任随之被同步放大。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>对 SRE/DevOps 工程师直接相关——AI 编码渗透率越高，在 CI/CD 流水线里集成安全扫描（SAST/DAST）并保留人工代码审查就越不是"可选项"。同时需关注 AI 生成代码的版权合规问题。安全与可治理，正取代"生成速度"成为企业级 AI 编程落地的真正分水岭。
+    </div>
+    <div class="source">来源：<a href="http://www.mtrt.cn/news/20889" target="_blank">AI Coding 周报（2026 年 8 月第 2 周）</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>50 台量产机器人国家速滑馆自主决策跑障碍赛；天工 Omni "捂脸跑"夺冠</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">自主决策</span>
+      <span class="tag pink">真实落地</span>
+    </div>
+    <p>8 月 25 日，国家速滑馆上演量产机器人自主决策障碍赛：50 台量产机型零改装冲击 100 米障碍（S 弯桥、螺旋台阶、连续跨栏），全程自主决策、无人工遥控，依靠自研 AGILE 框架与视觉感知系统——昨天还在工厂"打工"，今天就能上赛场。同日第二届世界人形机器人运动会，天工 Omni 以 45.66 秒拿下 400 米小型组冠军，且"双手捂脸、身体前倾"的滑稽跑姿是机器人在训练中自行形成的、并非人类示范动作，意味着它在自身结构、能耗与速度约束下重新找到了更优解法。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能走出实验室的"高考"。量产机型零改装即参赛，说明运动控制、感知与自主决策已在真实任务中验证并具备一致性；而机器人自行探索运动姿态，则标志其从"照人教的动作做"迈向"在约束下自寻最优解"——对搬运、装配、巡检等需持续优化动作的场景，是底层范式变化。人类经验不再天然拥有最终解释权，但设定目标、提供设备、建立训练体系与风险管控仍是人的核心职责。
+    </div>
+    <div class="source">来源：<a href="https://weibo.com/2458743132/5335692817205443" target="_blank">微博 · 国家速滑馆障碍赛</a> · <a href="https://www.toutiao.com/article/7677695067309523497/" target="_blank">头条 · 天工 Omni 捂脸跑</a></div>
+  </div>
+
+  <div class="card">
+    <h3>WRC 2026 闭幕，"北京机域"蓝图发布：上半年中国人形机器人出货超 4 万台、全球占 97%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">城市级布局</span>
+      <span class="tag pink">规模化落地</span>
+    </div>
+    <p>8 月 23 日 2026 世界机器人大会（WRC）闭幕，北京经开区发布"北京机域"城市级构想：打造 100 款特色机器人产品、1000 种细分应用、10 万台套级规模量产、100 万套核心零部件能力。商务部数据：7 月重点平台具身智能机器人销售额同比增长 95.1%；《2026 人形机器人产业发展报告》显示上半年中国人形机器人出货超 4 万台、全球占比 97%。百度智能云主办的落地论坛上，北京人形、智元、星动纪元等近 20 位创始人探讨 PMF 四关卡、数据飞轮与可靠性底线，原力灵机今年营收预计近 10 亿元，行业迈入规模化落地新阶段。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"北京机域"把具身智能从单点产品提升为城市级产业基础设施，配合近 100% 全球出货占比与近翻倍销售增速，说明中国已成该赛道绝对主场并进入 PMF（产品-市场匹配）攻坚阶段。对关注供应链（灵巧手、力矩传感器、端侧 AI 芯片）与落地投资的人，这是最值得跟踪的拐点信号——竞争焦点正从"能不能动"转向"能不能稳定交付、规模赚钱"。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260825A021R100" target="_blank">腾讯新闻 · 具身智能日报</a> · <a href="https://www.cac.gov.cn/2026-08/24/c_1789319185910477.htm" target="_blank">中央网信办</a> · <a href="https://new.qq.com/rain/a/20260825A027KT00" target="_blank">新华社 · 人形机器人加速进化</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：腾讯新闻 · AIToolsRecap · AI Coding 周报 · 微博 · 头条 · 中央网信办 · 新华社</p>
+  </footer>
+
+</div>
+</body>
+</html>
