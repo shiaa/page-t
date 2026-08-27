@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-27</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 27 · 周四</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>英伟达首秀 Vera Rubin NVL72 基准：DeepSeek-V4-Pro 智能体编程吞吐提升 30 倍</h3>
+    <div class="meta">
+      <span class="tag">算力硬件</span>
+      <span class="tag green">NVIDIA</span>
+      <span class="tag pink">编程智能体</span>
+    </div>
+    <p>英伟达发布旗舰机柜 Vera Rubin NVL72 首组基准：在 DeepSeek-V4-Pro 编程任务中，每兆瓦吞吐量较上一代 GB300 NVL72 最高提升 30 倍，Token 成本下降约 35 倍。性能跃升来自分布式 KV 缓存、KV 感知路由与 NVFP4 量化等协同设计，意味着单瓦特算力能支撑的智能体编程工作量成数量级增长。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>编程智能体（Coding Agent）是当下最吃 Token、最耗算力的 AI 应用形态之一。每兆瓦吞吐 30 倍的提升，直接压低"让 Agent 全天自主写代码"的边际成本——这会降低所有云端 Code Agent（Codex、Claude Code、Cursor 等）的推理账单，并让本地/私有化部署大模型编程变得更可行。对 SRE/DevOps 而言，自动化运维 Agent、日志分析与自愈脚本生成的成本曲线也将随之陡降。
+    </div>
+    <div class="source">来源：<a href="http://www.36kr.com/p/3954275398729089" target="_blank">36氪</a> · <a href="https://www.qbitai.com/2026/08/479192.html" target="_blank">量子位</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>AWS 为 OpenSearch 推出 MCP 应用，把 Agent 观测结果直接带回 IDE</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">AWS</span>
+      <span class="tag pink">MCP / 可观测性</span>
+    </div>
+    <p>AWS 为 Amazon OpenSearch Service 推出 MCP 应用（MCP Apps），把可观测性界面直接带进 IDE（如 VS Code、Claude）。当 Agent 调用工具时，返回的不再只是文本，而是 trace 瀑布图、服务拓扑图等交互式可视化，开发者无需切换到浏览器即可在编辑器内核验 Agent 的执行过程与链路。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI Coding 从"生成代码"走向"运维闭环"的关键一步。把 trace、拓扑、日志等可观测性数据以 MCP 协议直接推回 IDE，意味着 Agent 调试从"看文本日志"升级为"在编辑器里看调用链路"——尤其利好 on-call 排查、CI/CD 失败定位与分布式系统排障。对熟悉 OpenSearch/Elastic 的运维工程师，这是把现有可观测性栈与 Coding Agent 打通的标准化入口。
+    </div>
+    <div class="source">来源：<a href="https://aws.amazon.com/blogs/machine-learning/agentic-observability-with-amazon-opensearch-service-mcp-apps/" target="_blank">AWS 官方博客</a></div>
+  </div>
+
+  <div class="card">
+    <h3>JetBrains 2026 AI 编码调查：Claude Code 反超 GitHub Copilot 登顶，90% 程序员已用上 Agent</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">JetBrains</span>
+      <span class="tag pink">开发者调研</span>
+    </div>
+    <p>JetBrains 最新调查显示，Claude Code 的工作场景使用率已反超 GitHub Copilot 登顶第一；90% 的开发者周使用率、68% 的日使用率表明 AI 编码 Agent 已进入大量开发者的日常。开源 Agent 也在崛起：OpenCode 5–7 月使用率达 7%、认知度 42%；Google Antigravity 使用率 6%、认知度从 1 月的 29% 升至 47%。开发者正按任务选择不同工具，而非绑定单一产品。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>标志 AI 编程的竞争主轴已从"代码补全能力"切换为"Agent 能否真正把任务做完"。Claude Code 登顶说明"终端优先 + 长上下文 + 多文件重构"的工作流更受专业开发者认可；而开源 Agent（OpenCode）的崛起则说明开发者不愿被单一闭源生态锁定。对转 SRE/DevOps 的工程师，掌握 Agent 编排（而非单纯会用补全）正成为新的核心技能分水岭。
+    </div>
+    <div class="source">来源：<a href="https://blog.csdn.net/csdnnews/article/details/164045022" target="_blank">CSDN</a> · <a href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/" target="_blank">JetBrains Research</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>原力灵机 DM0.5 登顶 RoboDojo，具身模型全开源</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">原力灵机</span>
+      <span class="tag pink">开源模型</span>
+    </div>
+    <p>原力灵机（ForceIntellect）DM0.5 在 RoboDojo 基准取得 24.90 综合分、平均成功率 19.34%，展现突出记忆能力，并已完成全开源——包含训练框架与下游工作流。在具身智能普遍"只给权重、不开训练"的背景下，开放训练与部署全栈，显著降低了研究者复现与二次开发的门槛。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能的瓶颈之一是高价值训练数据与流程不透明。DM0.5 把"训练代码 + 工作流"一并开源，相当于把 VLA/机器人策略的训练范式摊开给社区——这与大模型时代的开源逻辑一致。对想切入具身赛道的工程师，这是少有的、能直接复现的端到端参考实现，尤其"记忆能力"这一亮点指向长程任务落地的关键难题。
+    </div>
+    <div class="source">来源：<a href="https://www.qbitai.com/2026/08/478791.html" target="_blank">量子位</a></div>
+  </div>
+
+  <div class="card">
+    <h3>合肥开张四家具身智能机器人小店，轮式人形"营业员"上岗</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">商业落地</span>
+      <span class="tag pink">轮式人形</span>
+    </div>
+    <p>8 月 26 日，合肥落地的 4 家"具身智能机器人小店"在多个文旅与商业街区开业。约 15 平方米的门店内仅一台轮式人形机器人"营业员"，顾客下单后机器人自动完成商品识别、抓取与递送，把具身智能的感知、决策与执行能力直接呈现到日常消费场景。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>继 WRC 2026 展示"能干活"之后，这是具身智能从展台走向真实零售终端的又一信号。轮式人形 + 小店场景避开了双足行走的高难度，先在高频、低复杂度的"识别—抓取—递送"闭环里跑通商业模型，是比人形进工厂更快落地的路径。它验证了"具身智能即服务"（Robot-as-a-Clerk）的轻量化商业模式，值得跟踪其单店 ROI 与可复制性。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260826A0CB1T00" target="_blank">新华社</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：36氪 · 量子位 · AWS 官方博客 · CSDN · JetBrains Research · 新华社</p>
+  </footer>
+
+</div>
+</body>
+</html>

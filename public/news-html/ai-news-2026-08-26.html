@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-26</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 26 · 周三</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>国产 AI 编程工具 8 月密集上新，中国开源模型全球下载占比 41% 首超美国</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">国产崛起</span>
+      <span class="tag pink">开源反超</span>
+    </div>
+    <p>8 月中旬 DeepSeek 同时发布 V4 Pro 正式版与开源智能体框架 Harness（MIT 协议，对标 Claude Code，"一切皆插件"）；智谱 ZCode 宣布用户突破 100 万并上线 Subagents、远程控制；阿里 Qwen3.8 编程能力刷新纪录。Hugging Face 春季报告显示，中国自研开源模型全球下载占比达 41%，首次超过美国。DeepSWE 基准上 DeepSeek V4 Pro 从 12.8 飙至 62.7，价格却不足闭源对手的 1/7。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>竞争主轴已从"谁的模型更大"转入"谁能真正帮开发者把活干完"。国产开源正占据 AI Coding 价值链中段，对开发者生态位之争影响深远——这不仅是声量，更是成本与自主可控的结构性优势，意味着国内企业可把 AI 落地成本进一步压低。
+    </div>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8956a89b82393352" target="_blank">腾讯搜一搜 · 8 月国产 AI 编程工具密集上新</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>SpaceX 600 亿美元全股票收购 Cursor 正式生效</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">并购整合</span>
+      <span class="tag pink">战略基础设施</span>
+    </div>
+    <p>交易正式完成，Cursor 股东合计获得 3.89 亿股 SpaceX 股票，核心团队并入 SpaceX AI 体系，深度整合进 Grok 编程能力，服务航天工程、机器人控制等高复杂度内部场景。Cursor 由四名 MIT 毕业生于 2022 年创立，年化收入已达约 400 亿美元，其 Cloud Agents 可自主处理数小时的复杂编程任务。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>史上最大规模 AI 编程工具并购，且买方不是互联网公司而是航天公司。信号明确——AI Coding 已成为非 AI 公司的战略级基础设施，估值锚点从"写代码模型"切换到"组织级编码中枢"，开发者工作流成为巨头必争的战略入口。
+    </div>
+    <div class="source">来源：<a href="https://www.thecodew.com/2026/08/developer-tools-watch-ai-native-stack.html" target="_blank">The CODEW · Developer Tools Watch</a> · <a href="http://www.kwkd.cn/news/70276" target="_blank">kwkd.cn · AI 日报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek V4 Pro 转正 + Harness 开源，AI 编程叙事转向"调度多 Bot"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">开源框架</span>
+      <span class="tag pink">Agent 协作</span>
+    </div>
+    <p>DeepSeek-V4-Pro 全量上线，支持 100 万 Token 上下文、单次输出 384K Token，DeepSWE 从 12.8 跃升至 62.7；同步开源 Harness 智能体框架（MIT），支持多智能体协同、工具调用、任务编排与沙盒隔离，可直接将 Claude Code、Codex 作为子代理纳入编排。开发者生产力单位正从"PR/小时"变为"完成完整交付物/小时"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>国产模型在长链路编程自主性上进入第一梯队，且 Harness 正演变为统一 Agent 调度层。"写代码的模型"竞争正转向"能调度多 Bot 协作的工作流"，对单人开发者的产能天花板是量级提升——从补几行代码进化到独立完成多步交付。
+    </div>
+    <div class="source">来源：<a href="http://www.kwkd.cn/news/70276" target="_blank">kwkd.cn · AI 日报</a> · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8956a89b82393352" target="_blank">腾讯搜一搜</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>一周两场世界级机器人盛会，行业从"躯干时代"迈入"大脑时代"</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">机器人大脑</span>
+      <span class="tag pink">规模化落地</span>
+    </div>
+    <p>8 月 19 日 2026 世界机器人大会（300+ 企业、2000+ 展品）在北京开幕；8 月 22 日第二届世界人形机器人运动会在"冰丝带"开幕，16 国 666 支队伍、2056 台机器人竞逐，赛项由 26 项增至 51 项、更重真实应用。头部企业共识：竞争正从电机/关节等硬件指标堆叠，转向"机器人大脑"——泛化感知与自主决策能力。上半年我国机器人产业营收 1655 亿元（同比 +24.5%），小米、比亚迪等近 10 家车企已在产线部署验证。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能从学术词加速变为可感知的商业成果，行业正处于"小批量试用→大规模落地"关键拐点。对供应链（灵巧手、力矩传感器、端侧 AI 芯片）与落地投资是重要拐点信号——焦点从"能不能动"转向"能不能稳定交付、规模赚钱"。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L56S0I9H0514DG98.html" target="_blank">网易 · 中国网评</a> · <a href="https://data.people.com.cn/rmrb/20260824/6/bd3c0a0ad8184e908f9314a3efd08205" target="_blank">人民日报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>加速进化 Booster T2：80 台全自主人形机器人方阵 + 7v7 全自主足球赛</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">群体智能</span>
+      <span class="tag pink">端侧算力</span>
+    </div>
+    <p>开幕式上 80 台搭载英伟达 Thor、2070 TFLOPS 端侧算力的 T2，在无遥控、无中央调度下自主完成方阵变阵并拼出"BEIJING"字样（约 17 万 TFLOPS 的"行走超算"）；14 台 T2 上演人类历史上首场 7v7 全自主人形机器人足球赛，点球大战击败人类守门员。三天前（8.19）其端到端研究刚登上 Science Robotics 封面。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>近 80 台全自主人形机器人在物理世界完成群体协同的首例，标志群体智能从"单体孤岛"迈向"集体秩序"。端侧算力 + 群体协同成为新竞技点——对安防巡检、仓储调度等多体协作场景是可复用的底层能力，无需中央调度即可达成集体秩序。
+    </div>
+    <div class="source">来源：<a href="http://szjj.china.com.cn/2026-08/25/content_43481401.html" target="_blank">中国网 · 加速进化</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：腾讯搜一搜 · The CODEW · kwkd.cn · 网易 · 人民日报 · 中国网</p>
+  </footer>
+
+</div>
+</body>
+</html>
