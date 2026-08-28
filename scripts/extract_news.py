@@ -194,17 +194,53 @@ def main():
         except Exception as e:
             print(f"  [ERROR] {filepath.name}: {e}")
 
-    # 生成 TypeScript 文件
-    output = "// 自动生成的 AI 日报条目\n// 由 scripts/extract_news.py 从 automation-2026-05-17-task-1 提取\n\nexport const aiNewsPosts = [\n"
-    for _, entry in all_entries:
-        output += entry + ",\n"
-    output += "];\n"
-
+    # 生成 TypeScript 文件（分片，降低单次 esbuild 解析内存峰值，避免 OOM）
+    # 背景：generated_news.ts 随日报增长已超过 200KB，esbuild 在 transform 阶段
+    # 解析超大单模块会触发 V8 Zone / esbuild 服务内存耗尽（沙箱对 node 进程有配额）。
+    # 拆分为每片约 10 篇的小文件后，esbuild 逐文件独立 transform，峰值大幅下降。
+    CHUNK = 10
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(output, encoding="utf-8")
-    
-    print(f"\n[DONE] Generated {len(all_entries)} daily news posts -> {OUTPUT_FILE}")
-    print(f"   File size: {OUTPUT_FILE.stat().st_size} bytes")
+    PARTS_DIR = OUTPUT_FILE.parent / "news_parts"
+    PARTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    n_chunks = (len(all_entries) + CHUNK - 1) // CHUNK
+    # 仅删除「数量减少后多余的分片」孤儿文件：正常每日运行删除数为 0，
+    # 避免一次性循环删除全部文件触发 WorkBuddy 批量删除确认阈值（阈值 50）。
+    for old in PARTS_DIR.glob("p[0-9][0-9].ts"):
+        try:
+            idx = int(old.stem[1:])
+        except ValueError:
+            continue
+        if idx >= n_chunks:
+            try:
+                old.unlink()
+                print(f"  [DEL] 孤儿分片 {old.name}")
+            except OSError:
+                pass
+
+    for i in range(n_chunks):
+        chunk = all_entries[i * CHUNK:(i + 1) * CHUNK]
+        part_path = PARTS_DIR / f"p{i:02d}.ts"
+        part_body = f"// 自动生成的分片（{i}），请勿手动修改\nexport const p{i} = [\n"
+        for _, entry in chunk:
+            part_body += entry + ",\n"
+        part_body += "];\n"
+        part_path.write_text(part_body, encoding="utf-8")
+
+    # 生成薄索引文件，保持 `aiNewsPosts` 导出名不变（posts.ts 导入无需改动）
+    imports = "\n".join(
+        f"import {{ p{i} }} from './news_parts/p{i:02d}';" for i in range(n_chunks)
+    )
+    spreads = "\n  ".join(f"...p{i}," for i in range(n_chunks))
+    index = (
+        "// 自动生成的 AI 日报条目（分片索引）\n"
+        "// 由 scripts/extract_news.py 从 automation-2026-05-17-task-1 提取\n"
+        f"{imports}\n\nexport const aiNewsPosts = [\n  {spreads}\n];\n"
+    )
+    OUTPUT_FILE.write_text(index, encoding="utf-8")
+
+    print(f"\n[DONE] Generated {len(all_entries)} daily news posts -> {OUTPUT_FILE} (+ {n_chunks} 分片)")
+    print(f"   Index file size: {OUTPUT_FILE.stat().st_size} bytes")
 
     # 同步 HTML 到 public/news-html/（供页面跳转使用）
     news_html_dir = SCRIPT_DIR.parent / "public" / "news-html"
