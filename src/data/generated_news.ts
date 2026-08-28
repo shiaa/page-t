@@ -3,6 +3,42 @@
 
 export const aiNewsPosts = [
   {
+    id: 'ai-news-daily-2026-08-28',
+    title: 'AI 每日动态 (2026-08-28)',
+    summary: '1. 英伟达同意以 129 亿美元收购 Hugging Face，开放模型生态格局生变 2. 阿里发布 Qoder，从 AI 编程工具升级为"智能体工作台" 3. Anthropic 发布 AI Native SDLC Playbook，C...',
+    date: '2026-08-28',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月28日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 英伟达同意以 129 亿美元收购 Hugging Face，开放模型生态格局生变
+
+
+### 2. 阿里发布 Qoder，从 AI 编程工具升级为"智能体工作台"
+
+
+### 3. Anthropic 发布 AI-Native SDLC Playbook，Claude Cowork 内置浏览器上线
+
+
+### 4. 第二届世界人形机器人运动会收官，智元 46 枚奖牌双榜第一
+
+
+### 5. 自变量发布世界模型 WALL-SS，可连续虚拟推演 60 秒
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-27',
     title: 'AI 每日动态 (2026-08-27)',
     summary: '1. 英伟达首秀 Vera Rubin NVL72 基准：DeepSeek V4 Pro 智能体编程吞吐提升 30 倍 2. AWS 为 OpenSearch 推出 MCP 应用，把 Agent 观测结果直接带回 IDE 3. JetBra...',

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-28</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 28 · 周五</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>英伟达同意以 129 亿美元收购 Hugging Face，开放模型生态格局生变</h3>
+    <div class="meta">
+      <span class="tag">行业并购</span>
+      <span class="tag green">英伟达</span>
+      <span class="tag pink">开源生态</span>
+    </div>
+    <p>据 The Information 报道，英伟达已同意以约 129 亿美元收购 Hugging Face，价格约合其 1.5 亿美元年化收入的 80 多倍。英伟达看中的是开放模型生态——此前已扩张 Nemotron 家族、组建 Nemotron 联盟并拿下 Poolside 技术授权，以制衡大客户自研芯片。交易若完成将引发中立性质疑：Hugging Face 曾拒绝英伟达 5 亿美元投资，顾虑正是单一投资者过于强势影响平台独立性。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Hugging Face 是全球开源模型与权重分发的事实枢纽，英伟达将其纳入版图，意味着"算力 + 模型 + 分发"三层壁垒进一步收敛到单一巨头。对开发者而言，短期利好是 Nemotron 等开放模型与英伟达推理栈（vLLM/TensorRT）的深度协同；长期风险是开源社区的中立性被削弱——当"模型超市"与"芯片厂商"合体，小厂与社区项目的议价空间会被压缩。关注后续各国反垄断审查与 HF 平台治理承诺。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1068548964_455313" target="_blank">腾讯研究院 AI 速递</a> · <a href="https://www.theinformation.com" target="_blank">The Information</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>阿里发布 Qoder，从 AI 编程工具升级为"智能体工作台"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">阿里</span>
+      <span class="tag pink">Agent 工作台</span>
+    </div>
+    <p>8 月 27 日，阿里发布全新 Qoder，从 AI 编程工具升级为智能体工作台。用户描述目标后，Qoder 自主理解上下文、制定计划、调用工具、执行并验证，全程可接管。原版 IDE 于 2025 年 8 月发布，把编码能力作底座，向上承接端到端交付。编程助手竞争正从"补代码"转向"把活干完"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Qoder 的定位变化折射出 AI Coding 的范式拐点——工具不再只做"行内补全"，而是承担"需求→计划→执行→验证"的完整交付闭环。这与 Anthropic 同日发布的 AI-Native SDLC Playbook（把代码审查从 diff 转向 committed artifacts）形成共振：行业共识正在从"辅助写代码"升级到"托管软件工厂"。对 DevOps/SRE 工程师，这意味着日常大量样板代码、CI 配置、巡检脚本将被 Agent 直接产出，人的角色转向验收与治理。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260827A07MD500" target="_blank">IT之家</a> · <a href="https://www.sohu.com/a/1068548964_455313" target="_blank">腾讯研究院 AI 速递</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 发布 AI-Native SDLC Playbook，Claude Cowork 内置浏览器上线</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">SDLCCartner</span>
+    </div>
+    <p>Anthropic 本周发布"AI-Native SDLC playbook"，提出六阶段循环（intent → spec → plan → diff → review → incident record），每个阶段产出可被机器读取的 Markdown 工件而非 Jira 工单，审查面从 diff 转移到已提交的工件。同期 Claude Cowork 桌面端内置隔离浏览器正式上线，任务涉及网页时可直接在侧栏导航、点击、输入；本周起向 Pro、Max、Team 付费用户推送，企业版由管理员开启。Faros 基于 1 万名开发者、1,255 个团队的数据：高 AI 采用团队合并 PR 多 98%，但审查时间上升 91%、平均 PR 体积上升 154%。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这组数据戳破了"AI 写代码更快=团队更高效"的幻觉——瓶颈已从"写"转移到"决定建什么"与"验收回来了什么"。Playbook 与 Cowork 浏览器共同把 Agent 推向"能上网操作、能留下可审计工件"的自主体，但也暴露治理缺口：Shopify CEO 本周因与 AGENTS.md 不兼容考虑禁用 Claude Code，说明多 Agent 协作的配置一致性已成为真实工程痛点。关注"工件化审查 + Agent 治理规范"是否会沉淀为行业新标准。
+    </div>
+    <div class="source">来源：<a href="https://blog.lyubo.dev/posts/ai-morning-briefing-august-27th-2026" target="_blank">AI Morning Briefing</a> · <a href="https://www.sohu.com/a/1068548964_455313" target="_blank">腾讯研究院 AI 速递</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>第二届世界人形机器人运动会收官，智元 46 枚奖牌双榜第一</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">人形机器人</span>
+      <span class="tag pink">赛事产业化</span>
+    </div>
+    <p>8 月 26 日晚，第二届世界人形机器人运动会在北京国家速滑馆收官。5 天内，来自 16 个国家的 666 支队伍、2,056 台人形机器人围绕 51 个赛项展开 1,301 场对决。首次参赛的智元代表队凭精灵 G2、远征 A3 等量产机型斩获 18 金 16 银 12 铜共 46 枚奖牌，登顶金牌榜与奖牌总数榜。本届自主导航模式取代手动控制成为多数项目主流，并新增举重、乒乓球等综合考验项目；赛事同步扩展物流、酒店、家政等场景化竞赛，目标"赛后拿订单、从场馆走进生活"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能从"演示秀"走向"能力标尺"的关键节点——参赛队伍同比增 138%、自主导航成主流，说明运动控制与决策已跨过"能站起来"的门槛。但工信部赛后也点出核心瓶颈：当前超六成出货仍用于文娱商演与科教，真正进工厂仓库"干活"的不足两成，且泛化能力有限（新任务需重新训练）。对关注落地的工程师，赛场数据可作为灵巧手、关节、VLA 模型的真实压力测试基准，但商业化仍取决于"真实场景效率"而非奖牌数。
+    </div>
+    <div class="source">来源：<a href="https://www.theborneopost.com/2026/08/28/beyond-new-records-chinas-humanoid-robots-better-integrate-into-life" target="_blank">Borneo Post（新华社）</a> · 深圳商报</div>
+  </div>
+
+  <div class="card">
+    <h3>自变量发布世界模型 WALL-SS，可连续虚拟推演 60 秒</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">世界模型</span>
+      <span class="tag pink">VLA</span>
+    </div>
+    <p>自变量机器人发布下一尺度自回归世界模型 WALL-SS，由粗到细描绘未来画面，让不同动作对应不同结果，缓解"磁铁式抓取"（动作与结果错配）问题，可连续虚拟推演约 60 秒。同期产业规模化信号密集：韩国公布到 2030 年投入 2.3 万亿韩元（约 16.6 亿美元）的人形机器人全栈计划，目标把关键零部件本地化率从 45% 提至 80%；现代汽车亦透露考虑通过现有经销商网络销售波士顿动力人形与四足机器人，并计划 2028 年前在自有工厂部署超 2.5 万台机器人。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>世界模型被视为具身智能"从演示到泛化"的底层基础设施——WALL-SS 这类可推演动作后果的网络，让机器人在仿真中试错、把"感知-预测-决策"闭环前置，直接缓解数据贵、质量低的痛点（呼应前英伟达研究员 9,000 万美元种子轮创办 Veeda AI 做机器人世界模型）。叠加韩国国家资本下场与车企渠道化销售，具身智能正从"实验室单品"进入"国家产业战略 + 大众渠道"双轮驱动阶段，供应链（执行器、灵巧手、传感器、AI 芯片）卡位价值凸显。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1068548964_455313" target="_blank">腾讯研究院 AI 速递</a> · <a href="https://dev.to/future_x/futurex-physical-ai-daily-issue-102-0828-3chf" target="_blank">FutureX Physical AI Daily</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：腾讯研究院 AI 速递 · The Information · IT之家 · AI Morning Briefing · Borneo Post（新华社） · FutureX Physical AI Daily · 深圳商报 · AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>
