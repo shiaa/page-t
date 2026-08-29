@@ -1,6 +1,42 @@
 // 自动生成的分片（3），请勿手动修改
 export const p3 = [
   {
+    id: 'ai-news-daily-2026-07-21',
+    title: 'AI 每日动态 (2026-07-21)',
+    summary: '1. OpenAI 收购 Ona（原 Gitpod）：为 Codex 补上持久化云端 Agent 能力 2. Agent Data Injection（ADI）新攻击类型被正式提出，多家主流编码 Agent 受影响 3. WAIC 2026...',
+    date: '2026-07-21',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月21日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 收购 Ona（原 Gitpod）：为 Codex 补上持久化云端 Agent 能力
+
+
+### 2. Agent Data Injection（ADI）新攻击类型被正式提出，多家主流编码 Agent 受影响
+
+
+### 3. WAIC 2026 闭幕：具身智能定调"部署态元年"，从炫技表演转向晒工单干活
+
+
+### 4. 智元精灵 G2 Max 在京东物流真实仓储部署，人形机器人首次进入规模化生产场景
+
+
+### 5. 华为 × 国地中心：全国首个国产化具身智能实训场揭牌，真机训练成本从百万级摊薄至共享级
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-20',
     title: 'AI 每日动态 (2026-07-20)',
     summary: '1. 2026 WAIC 闭幕：AI 从数字智能迈向"物理智能交付元年"，具身智能全面冲刺落地 2. Kimi K3 发布引爆全球 AI 竞速，马斯克宣称 2 万亿参数模型下周完成训练、目标赶超 3. AI Coding 价值重心转移：从"...',
@@ -317,42 +353,6 @@ export const p3 = [
 
 
 ### 6. WAIC 2026 将于 7/17-20 在上海三地四馆启幕，智算与具身智能各聚 200+ 企业
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-11',
-    title: 'AI 每日动态 (2026-07-11)',
-    summary: '1. Science 报道 AI 智能体 40 分钟完成人类 60 小时实验，自主科研进入加速通道 2. OpenAI 正式发布 GPT 5.6 系列并推出 ChatGPT Work，企业级 AI 智能体再进一步 3. Cursor 被曝秘...',
-    date: '2026-07-11',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月11日 · 星期六
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Science 报道 AI 智能体 40 分钟完成人类 60 小时实验，自主科研进入加速通道
-
-
-### 2. OpenAI 正式发布 GPT-5.6 系列并推出 ChatGPT Work，企业级 AI 智能体再进一步
-
-
-### 3. Cursor 被曝秘密开发办公助手 Sand，从代码编辑器向通用工作平台扩张
-
-
-### 4. 蚂蚁 LingBot 开源 LingBot-VA 2.0，提出“具身原生”机器人大脑新架构
-
-
-### 5. 1X 发布 25-DOF 灵巧手，智元 C5 机器人批量进入比亚迪工厂
 
 
 ---

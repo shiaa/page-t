@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-08-16',
+    title: 'AI 每日动态 (2026-08-16)',
+    summary: '1. 智谱 GLM 5.3 发布：登顶开源编程榜，编程逼近 Fable 5 并刷新安全能力 2. DeepSeek 开源 Harness v0.1：插件化 Agent 框架，MIT 许可直接对标 Claude Cowork 3. Rust ...',
+    date: '2026-08-16',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月16日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 智谱 GLM-5.3 发布：登顶开源编程榜，编程逼近 Fable 5 并刷新安全能力
+
+
+### 2. DeepSeek 开源 Harness v0.1：插件化 Agent 框架，MIT 许可直接对标 Claude Cowork
+
+
+### 3. Rust 项目立 AI 编程新规：可分析、审查、翻译，但不得直接写代码，过度使用触发"断路器"
+
+
+### 4. 越疆发布全球首款家庭智能体机器人 Rover X1，7499 元把具身智能带进普通家庭
+
+
+### 5. 江西平板车间 8 台人形机器人整段接管质检，平均节拍 22 秒、成功率 99.9%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-13',
     title: 'AI 每日动态 (2026-08-13)',
     summary: '1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投 3....',
@@ -320,45 +356,6 @@ export const p1 = [
 
 
 ### 5. 多家机器人公司同日完成融资，宇树科技 IPO 8 月 10 日申购，具身智能资本热度空前
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-03',
-    title: 'AI 每日动态 (2026-08-03)',
-    summary: '1. 微软与 OpenAI 史上最大技术解耦：GitHub Copilot 8月起默认模型换芯 MAI Code One 2. Cursor 1.0 正式发布：AI 编程最大实验"毕业"，从开发者玩具走向企业标配 3. DeepSeek V...',
-    date: '2026-08-03',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月3日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 微软与 OpenAI 史上最大技术解耦：GitHub Copilot 8月起默认模型换芯 MAI Code One
-
-
-### 2. Cursor 1.0 正式发布：AI 编程最大实验"毕业"，从开发者玩具走向企业标配
-
-
-### 3. DeepSeek V4-Flash 正式版上线：小参数逆袭 Pro 预览版，Agent 能力暴涨 6 倍
-
-
-### 4. 清华 VeriLoop Coder-E1 开源：循证螺旋驱动的可验证代码修复模型，32B 以下开源第一
-
-
-### 5. 阿尔特 + 富士康联合发布机器人"交钥匙"全栈平台，打通具身智能从样机到量产
-
-
-### 6. 探访杭州国家级机器人"职校"：140+ 机器人入驻，40+ 训练场景赋能具身智能落地
 
 
 ---
