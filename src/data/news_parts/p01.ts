@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-08-17',
+    title: 'AI 每日动态 (2026-08-17)',
+    summary: '1. DeepSeek 峰谷计价今日生效，Harness 开源引爆 Agent 框架之争 2. Anthropic 全面落地 Claude 文本水印，多智能体"互害"实验与 186 页风险报告同步发酵 3. Google 发布 Gemini...',
+    date: '2026-08-17',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月17日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. DeepSeek 峰谷计价今日生效，Harness 开源引爆 Agent 框架之争
+
+
+### 2. Anthropic 全面落地 Claude 文本水印，多智能体"互害"实验与 186 页风险报告同步发酵
+
+
+### 3. Google 发布 Gemini 3.7 Flash：砍半价格，明确定位"coding-agent 优先"
+
+
+### 4. 北大灵巧手自主发球突破：打通"全身移动 + 高自由度精细操纵"的具身闭环
+
+
+### 5. 第四届中国具身智能机器人产业大会：主线从"技术原理"转向"场景落地"
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-16',
     title: 'AI 每日动态 (2026-08-16)',
     summary: '1. 智谱 GLM 5.3 发布：登顶开源编程榜，编程逼近 Fable 5 并刷新安全能力 2. DeepSeek 开源 Harness v0.1：插件化 Agent 框架，MIT 许可直接对标 Claude Cowork 3. Rust ...',
@@ -320,42 +356,6 @@ export const p1 = [
 
 
 ### 5. 河南首批众擎 T800 人形机器人下线 + 恺望数据获亿元级战略融资，具身智能产业链加速成形
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-04',
-    title: 'AI 每日动态 (2026-08-04)',
-    summary: '1. 阿里发布 Qwen3.8 Max：2.4 万亿参数旗舰模型，16 天无人干预自主编程 2. Y Combinator 开源 QM：面向全公司的多 Agent 协作框架，3 天 7.5K Stars 3. 清华团队 VeriLoop C...',
-    date: '2026-08-04',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月4日 · 星期二
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 阿里发布 Qwen3.8-Max：2.4 万亿参数旗舰模型，16 天无人干预自主编程
-
-
-### 2. Y Combinator 开源 QM：面向全公司的多 Agent 协作框架，3 天 7.5K Stars
-
-
-### 3. 清华团队 VeriLoop Coder-E1 开源：32B 以下开源代码模型多项 SWE-bench 第一
-
-
-### 4. 银河通用 WAM-TTT 技术突破：机器人仅凭观看人类视频即可快速适应真实场景
-
-
-### 5. 多家机器人公司同日完成融资，宇树科技 IPO 8 月 10 日申购，具身智能资本热度空前
 
 
 ---

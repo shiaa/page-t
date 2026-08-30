@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-30</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 30 · 周日</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>OpenAI 定 11 月 12 日断供 Cursor，马斯克回应"我根本不在乎"，Anthropic 数小时后宣布加算力接盘</h3>
+    <div class="meta">
+      <span class="tag">行业格局</span>
+      <span class="tag green">OpenAI / Cursor</span>
+      <span class="tag pink">模型供应链</span>
+    </div>
+    <p>美国时间 8 月 28 日，OpenAI 发布声明，已正式通知 SpaceX 将终止向 AI 编程工具 Cursor 提供 OpenAI 模型，停止接入日期定为 2026 年 11 月 12 日（称为合同允许的最晚日期），未来新模型（含尚未发布的 Astra）也不再提供。导火索是 SpaceX 以 600 亿美元全股票收购 Cursor 母公司 Anysphere（8 月 14 日交割完成），触发定制协议中的"控制权变更"条款；OpenAI 表示基于过往经验"无法确信"对方会在服务条款框架内使用其技术。马斯克 29 日在 X 回应"我根本不在乎"；Cursor CEO 迈克尔·特鲁尔称 OpenAI 模型目前仅占 Cursor 用户流量约 5%，仍在沟通解决。数小时后，Anthropic 联合创始人 Tom Brown 发文表示将继续追加算力，支持 Cursor 平台上的 Claude 系列，并期待与 SpaceX 后续合作——而 Anthropic 今年 5 月刚包下 SpaceX Colossus 1 数据中心全部算力（超 22 万张 GPU、300 兆瓦）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI Coding 工具第一次因"上游模型合同"被直接掐住脖子。事件揭示了整条工具链的结构性脆弱：Cursor 这类拥有数百万开发者入口的产品，底层能力仍受制于模型厂商的商业与治理意志，一纸条款即可改变可用模型清单。对工程团队的现实提示很直接——多模型可切换、Harness 层与模型解耦、避免把关键流水线绑死在单一供应商，正在从"架构洁癖"变成刚性风险管理。同时 Anthropic"一边当房客一边接盘"的操作，也说明编程场景已是当下 AI 商业化最硬的一块地，值得单独下注。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260829A0BTJA00" target="_blank">环球网</a> · <a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" target="_blank">OpenAI 官方博客</a> · <a href="https://sift.yasint.dev/" target="_blank">Sift Daily</a> · <a href="https://news.ycombinator.com/item?id=49486172" target="_blank">Hacker News</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>编程智能体工具链密集更新：Claude Code 加模型切换 Hook 与花费上限，Copilot 8 月 31 日一次性退役 6 个模型</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Claude Code / Copilot / Cursor</span>
+      <span class="tag pink">工程治理</span>
+    </div>
+    <p>8 月 28-29 日三大编程智能体同步迭代。<strong>Claude Code</strong> v2.1.251 落地：新增 PreModelSwitch / PostModelSwitch 事件，可在会话中途拦截、确认或标注模型切换；SessionStart resume 钩子开始上报会话陈旧度与预估重新缓存成本；前台子智能体的工具调用与结果可实时流向 Remote Control 客户端；/usage 增加花费上限条，并提供 rate_limits.spend_limit 状态栏字段。同期 Anthropic 还打通桌面端与终端——桌面端 /resume 可接管任意终端会话，完整保留上下文与 /rewind 检查点。<strong>GitHub Copilot</strong> 公布 8 月 31 日退役的完整名单：Gemini 3.1 Pro、Claude Opus 4.5/4.6、Sonnet 4.5、Sonnet 4.6（个人年付用户保留）、Raptor mini，覆盖 chat / 补全 / 代码评审 / agent mode 全部入口；同时 Copilot 已可直接在 Slack、Teams 会话中修 bug。<strong>Cursor</strong> 则取消 Cloud Agents 必须连接 GitHub 等 SCM 的要求，并把 Agent 运行环境端口转发到浏览器直接预览，连接 Vercel 后可一键发布为线上 URL。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>三家的更新方向高度一致，都不在"模型更聪明"，而在<strong>把 Agent 变成可管、可控、可计费的生产设施</strong>——模型切换要审批、会话要能跨端续跑、花费要有硬上限、子 Agent 行为要可观测。这正是长会话与无人值守任务进入生产环境后暴露的真实痛点。对团队还有一个具体 deadline：管理 Copilot 的同学必须在 8 月 31 日前检查模型策略，否则依赖的模型会在切换当天静默失效。
+    </div>
+    <div class="source">来源：<a href="https://oday-bakkour.com/blog/ai-coding-news-august-29-2026-claude-code-model-switch-hooks" target="_blank">AI Coding News</a> · <a href="https://www.ithome.com/0/995/917.htm" target="_blank">IT之家</a> · <a href="https://agihunt.info/en/daily/2026-08-29" target="_blank">AGI Hunt</a></div>
+  </div>
+
+  <div class="card">
+    <h3>编程 Agent 安全双警报：llms.txt 成为投毒入口，Aurora 勒索团伙滥用 Cursor Agent 攻击 10 家机构</h3>
+    <div class="meta">
+      <span class="tag">AI 安全</span>
+      <span class="tag green">供应链投毒</span>
+      <span class="tag pink">Agent 权限</span>
+    </div>
+    <p>一是"文档投毒"。据 Ars Technica 报道，一家以色列初创团队扫描了国防承包商、财富 500 强与大型科技公司名下 6214 个在线域名，在 8265 个 llms.txt / llms-full.txt 文件中发现 120 处存在潜在危险的引用。这类文件本意是给模型看的站点摘要，但 Claude、Codex、Hermes 等编程智能体会直接执行其中指向的安装命令——等于给攻击者留了一条"绕过人类审阅"的执行通路。二是"工具被反用"。安全公司 Gambit Security 披露，Aurora 勒索团伙将运行 Claude Sonnet 的 Cursor Agent 用于实战入侵，在 10 家机构完成动手渗透，并人工把 Linux 勒索变种投放到 ESXi 主机上。此外还有研究指出，公开 git 历史里那些"已删除"的密钥，在 Agent 能深挖仓库历史后重新变得可达。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这两条把 AI 编程的攻击面讲得非常清楚：<strong>模型读到的任何文本都可能是指令，模型手里的任何权限都可能被借用</strong>。llms.txt 这种"看起来只是说明文件"的东西成了新的供应链入口，意味着 SBOM 之外还得管"模型可读上下文"的可信度；Cursor Agent 被拿去打 ESXi，则说明编程智能体已经是一件成熟的攻防两用工具。落地动作也很具体：Agent 执行 shell 前必须白名单与确认（Claude Code 的 --restricted 正是这个思路）、生产凭据不进 Agent 上下文、git 历史里的老密钥该轮换的赶紧轮换、Agent 操作全量留审计日志。
+    </div>
+    <div class="source">来源：<a href="https://agihunt.info/en/daily/2026-08-29" target="_blank">AGI Hunt</a> · <a href="https://sift.yasint.dev/" target="_blank">Sift Daily</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>Sharpa 披露超 45 亿融资、估值 220 亿，与 DQ 落地全球首个"零改造、全自主、全年无休"机器人餐厅</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">灵巧手 / 全栈</span>
+      <span class="tag pink">真实场景落地</span>
+    </div>
+    <p>8 月 28 日，AI 机器人公司 Sharpa 首次公开融资情况：累计融资超 45 亿元人民币、投后估值约 220 亿元，投资方包括阿里巴巴、美团、腾讯、京东、传音等产业资本，以及红杉中国、启明创投、美团龙珠、光合创投等机构——四大互联网平台同时押注一家成立不到两年的机器人公司，在一级市场相当罕见。公司由禾赛科技创始团队李一帆、向少卿、孙恺于 2024 年底创立，产品线覆盖 22 主动自由度触觉灵巧手 Sharpa Wave（指尖 1000+ 触觉像素、灵敏度 0.02N、触觉帧率最高 180fps，2025 年 10 月量产）、轮式全身人形机器人 North，以及视觉-触觉-语言-动作四模态分层模型 CraftNet。8 月 29 日，其与 DQ 合作的机器人餐厅在上海吴江路门店正式上岗：门店设备、原料、工具、流程一概不改，机器人直接使用为人类设计的纸杯与勺子，独立完成暴风雪冰淇淋从取杯、加料、搅拌到倒杯交付的 55 步流程，每日 10:00-22:00 长期运行、全年无休，线上预约未来数周已满。代价也很实在：一杯约 6 分钟，约为熟练店员的一半速度，单店尚未盈利。此前 6 月英伟达 Isaac GR00T 参考人形采用 Sharpa Wave 双手，7 月谷歌 DeepMind 用其评测 Gemini Robotics 2。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"绝不改造环境"这条自我设限的规矩，才是这件事的价值所在。此前多数具身智能落地都靠调设备位置、定制夹具、简化流程来降难度，换个门店就得重做一遍；Sharpa 反而选择直面人类工具的全部不确定性，把任务拆成开柜、取物、分杯、对位、舀料、搅拌、倒杯等可复用技能。李一帆的"斩杀线"判断值得记下来：<strong>55 步长期只能做 54 步、最后一步还得人收尾，那个人就撤不下来，99% 的完成度仍然是未完成</strong>。这与同期"万台订单刷屏、代工厂上半年仅交付数千套"（领益智造中报）的落差互为印证——具身智能的真瓶颈已经不在 Demo 惊艳度，而在可靠性、良率、成本与数据飞轮能否闭环。
+    </div>
+    <div class="source">来源：<a href="https://www.stcn.com/article/detail/4161509.html" target="_blank">证券时报网</a> · <a href="https://news.qq.com/rain/a/20260829A06W1J00" target="_blank">腾讯新闻·财经十一人</a> · <a href="https://www.163.com/dy/article/L5HJENQ10550B1DU.html" target="_blank">科创板日报</a> · <a href="https://theinsight.asia/alibaba-tencent-back-dexterous-robotics-startup-sharpa-in-debut-funding-round" target="_blank">The Insight Asia</a></div>
+  </div>
+
+  <div class="card">
+    <h3>机器人赛道两头开花：399 美元开源双足 Microduck 24 小时订单 260 万美元，软银折价洽购 1X、a16z 首设 11 亿美元硬件基金</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">开源硬件</span>
+      <span class="tag pink">资本重定价</span>
+    </div>
+    <p>消费级这头，8 月 27 日晚 Hugging Face 旗下 Pollen Robotics 推出开源双足机器人 Microduck：高约 25 厘米、重 800 克以内，搭载瑞芯微 RK3566、摄像头、激光雷达与两个 IMU，15+ 电机，出厂自带行走、坐立、踢击、用喙夹取、轮滑、跌倒自起等 7 套预训练动作，售价 399 美元，SDK、仿真与完整强化学习训练栈全部开源在 GitHub，用户可自行仿真训练后直接部署回实机。联合创始人 Thomas Wolf 称开售 6 小时预订破 100 万美元、首个 24 小时超 260 万美元，平均约每 4 秒售出一台，计划圣诞前发货。资本这头则在重新定价：软银正洽谈以 60 亿美元估值收购人形机器人公司 1X 多数股权，较其去年目标估值折价约四成；a16z 宣布募集 11 亿美元设立"机器时代基金"，首次专门投向 AI 芯片、数据中心与机器人基础设施等硬科技。另据报道，英伟达正洽谈以超 130 亿美元估值收购 Hugging Face。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>同一周里，机器人行业出现了两个方向相反但逻辑一致的信号。一边是<strong>门槛崩塌</strong>：399 美元 + 全栈开源，把双足机器人从实验室设备变成开发者玩具，RL 训练闭环人人可跑——这正是当年树莓派对嵌入式、Arduino 对创客的作用，人形机器人可能因此获得"继 PC 与手机之后的下一个开发者平台"式的社区规模。另一边是<strong>估值回归</strong>：1X 被折价四成、a16z 却专门为硬件设基金，说明资本正从"给整机厂讲故事"转向"给能量产、能交付、能形成基础设施的环节下注"。对照国内的产业侧数据（截至 6 月底已建成启用逾 70 家具身智能训练场、在建及规划 46 家，贵州首个具身智能"数据工厂"投用、内建 6 大类 16 个全真场景），下一阶段的竞争主线已经清晰：数据与场景，而非参数与 Demo。
+    </div>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20260829A0CFIK00" target="_blank">腾讯新闻·前沿在线</a> · <a href="https://www.qianjia.com/html/2026-08/28_427102.html" target="_blank">千家网</a> · <a href="https://indianexpress.com/article/technology/tech-news-technology/microduck-hugging-face-open-source-biped-robot-10853138/" target="_blank">The Indian Express</a> · <a href="https://www.macaodaily.com/html/2026-08/30/content_1930301.htm" target="_blank">澳门日报·中新社</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：环球网 · OpenAI 官方博客 · Hacker News · Sift Daily · AGI Hunt · AI Coding News · IT之家 · 证券时报网 · 科创板日报 · 腾讯新闻 · 千家网 · The Insight Asia · The Indian Express · 澳门日报 · 中新社</p>
+  </footer>
+
+</div>
+</body>
+</html>

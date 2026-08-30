@@ -1,6 +1,42 @@
 // 自动生成的分片（3），请勿手动修改
 export const p3 = [
   {
+    id: 'ai-news-daily-2026-07-22',
+    title: 'AI 每日动态 (2026-07-22)',
+    summary: '1. 月之暗面发布 Kimi K3：2.8 万亿参数全球最大开源模型，编程能力登顶 Arena 榜首 2. Google 发布 Gemini 3.6 Flash 等三款新模型，强化编程与网络安全能力 3. Claude Code 企业渗透率...',
+    date: '2026-07-22',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月22日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 月之暗面发布 Kimi K3：2.8 万亿参数全球最大开源模型，编程能力登顶 Arena 榜首
+
+
+### 2. Google 发布 Gemini 3.6 Flash 等三款新模型，强化编程与网络安全能力
+
+
+### 3. Claude Code 企业渗透率首超 GitHub Copilot，编程 Agent 进入"后 Copilot 时代"
+
+
+### 4. WAIC 2026：人形机器人告别"炫技"，近 60 台集体"上岗"
+
+
+### 5. 全国首个具身智能实训场样板间在沪建成，华为联合打造全链路方案
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-21',
     title: 'AI 每日动态 (2026-07-21)',
     summary: '1. OpenAI 收购 Ona（原 Gitpod）：为 Codex 补上持久化云端 Agent 能力 2. Agent Data Injection（ADI）新攻击类型被正式提出，多家主流编码 Agent 受影响 3. WAIC 2026...',
@@ -314,45 +350,6 @@ export const p3 = [
 
 
 ### 5. NVIDIA 与 Hugging Face 扩展开源机器人合作，GR00T 1.7 入驻 LeRobot 生态
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-12',
-    title: 'AI 每日动态 (2026-07-12)',
-    summary: '1. OpenAI GPT 5.6 系列正式公开，Sol/Terra/Luna 三档定价，多 Agent 并行能力成旗舰标配 2. OpenAI GPT Live 同步全双工语音上线，Agent 入口从键盘扩展到"会听话的嘴" 3. Wiz...',
-    date: '2026-07-12',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月12日 · 星期日
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI GPT-5.6 系列正式公开，Sol/Terra/Luna 三档定价，多 Agent 并行能力成旗舰标配
-
-
-### 2. OpenAI GPT-Live 同步全双工语音上线，Agent 入口从键盘扩展到"会听话的嘴"
-
-
-### 3. Wiz 披露 GhostApproval 高危漏洞，六大主流 AI 编程助手可被恶意仓库静默植入 SSH 公钥
-
-
-### 4. Meta Muse Spark 1.1 发布，Z uckerberg 时隔三年重返 X 力推"低价多面手 Agent"
-
-
-### 5. NVIDIA × Hugging Face 联手开源人形机器人管线，Isaac GR00T 1.7 + LeRobot 打通行采集到部署全链路
-
-
-### 6. WAIC 2026 将于 7/17-20 在上海三地四馆启幕，智算与具身智能各聚 200+ 企业
 
 
 ---

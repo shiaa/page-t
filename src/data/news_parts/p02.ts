@@ -1,6 +1,42 @@
 // 自动生成的分片（2），请勿手动修改
 export const p2 = [
   {
+    id: 'ai-news-daily-2026-08-04',
+    title: 'AI 每日动态 (2026-08-04)',
+    summary: '1. 阿里发布 Qwen3.8 Max：2.4 万亿参数旗舰模型，16 天无人干预自主编程 2. Y Combinator 开源 QM：面向全公司的多 Agent 协作框架，3 天 7.5K Stars 3. 清华团队 VeriLoop C...',
+    date: '2026-08-04',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月4日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 阿里发布 Qwen3.8-Max：2.4 万亿参数旗舰模型，16 天无人干预自主编程
+
+
+### 2. Y Combinator 开源 QM：面向全公司的多 Agent 协作框架，3 天 7.5K Stars
+
+
+### 3. 清华团队 VeriLoop Coder-E1 开源：32B 以下开源代码模型多项 SWE-bench 第一
+
+
+### 4. 银河通用 WAM-TTT 技术突破：机器人仅凭观看人类视频即可快速适应真实场景
+
+
+### 5. 多家机器人公司同日完成融资，宇树科技 IPO 8 月 10 日申购，具身智能资本热度空前
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-03',
     title: 'AI 每日动态 (2026-08-03)',
     summary: '1. 微软与 OpenAI 史上最大技术解耦：GitHub Copilot 8月起默认模型换芯 MAI Code One 2. Cursor 1.0 正式发布：AI 编程最大实验"毕业"，从开发者玩具走向企业标配 3. DeepSeek V...',
@@ -323,42 +359,6 @@ export const p2 = [
 
 
 ### 6. 松应科技发布 ORCA OS：全球首个多形态机器人协同训练的物理 AI 操作系统
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-22',
-    title: 'AI 每日动态 (2026-07-22)',
-    summary: '1. 月之暗面发布 Kimi K3：2.8 万亿参数全球最大开源模型，编程能力登顶 Arena 榜首 2. Google 发布 Gemini 3.6 Flash 等三款新模型，强化编程与网络安全能力 3. Claude Code 企业渗透率...',
-    date: '2026-07-22',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月22日 · 星期三
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 月之暗面发布 Kimi K3：2.8 万亿参数全球最大开源模型，编程能力登顶 Arena 榜首
-
-
-### 2. Google 发布 Gemini 3.6 Flash 等三款新模型，强化编程与网络安全能力
-
-
-### 3. Claude Code 企业渗透率首超 GitHub Copilot，编程 Agent 进入"后 Copilot 时代"
-
-
-### 4. WAIC 2026：人形机器人告别"炫技"，近 60 台集体"上岗"
-
-
-### 5. 全国首个具身智能实训场样板间在沪建成，华为联合打造全链路方案
 
 
 ---
