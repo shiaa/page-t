@@ -1,6 +1,45 @@
 // 自动生成的分片（3），请勿手动修改
 export const p3 = [
   {
+    id: 'ai-news-daily-2026-07-23',
+    title: 'AI 每日动态 (2026-07-23)',
+    summary: '1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏” ...',
+    date: '2026-07-23',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月23日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录
+
+
+### 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏”
+
+
+### 3. Cursor 被曝远程代码执行漏洞：打开仓库即可触发，70 余个版本未修复
+
+
+### 4. Perplexity 自研 AI 编程工具 Teammate 曝光，正式入局代码开发赛道
+
+
+### 5. WAIC 2026 闭幕：具身智能与智算并列核心赛道，产业进入规模化交付元年
+
+
+### 6. 松应科技发布 ORCA OS：全球首个多形态机器人协同训练的物理 AI 操作系统
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-22',
     title: 'AI 每日动态 (2026-07-22)',
     summary: '1. 月之暗面发布 Kimi K3：2.8 万亿参数全球最大开源模型，编程能力登顶 Arena 榜首 2. Google 发布 Gemini 3.6 Flash 等三款新模型，强化编程与网络安全能力 3. Claude Code 企业渗透率...',
@@ -314,42 +353,6 @@ export const p3 = [
 
 
 ### 5. 它石智航千台级工业具身机器人量产 + 京东入局：具身智能进入"系统级交付"阶段
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-13',
-    title: 'AI 每日动态 (2026-07-13)',
-    summary: '1. OpenAI GPT 5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级 2. 阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder 3. Meta Muse Spark ...',
-    date: '2026-07-13',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月13日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI GPT-5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级
-
-
-### 2. 阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder
-
-
-### 3. Meta Muse Spark 1.1 发布，Zuckerberg 三年首返 X 称其为"极具能力的 Agent 模型"
-
-
-### 4. 蚂蚁灵波发布 6 款具身原生机器人动作模型，从数字世界转向物理世界原生设计
-
-
-### 5. NVIDIA 与 Hugging Face 扩展开源机器人合作，GR00T 1.7 入驻 LeRobot 生态
 
 
 ---

@@ -1,6 +1,42 @@
 // 自动生成的分片（4），请勿手动修改
 export const p4 = [
   {
+    id: 'ai-news-daily-2026-07-13',
+    title: 'AI 每日动态 (2026-07-13)',
+    summary: '1. OpenAI GPT 5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级 2. 阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder 3. Meta Muse Spark ...',
+    date: '2026-07-13',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月13日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI GPT-5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级
+
+
+### 2. 阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder
+
+
+### 3. Meta Muse Spark 1.1 发布，Zuckerberg 三年首返 X 称其为"极具能力的 Agent 模型"
+
+
+### 4. 蚂蚁灵波发布 6 款具身原生机器人动作模型，从数字世界转向物理世界原生设计
+
+
+### 5. NVIDIA 与 Hugging Face 扩展开源机器人合作，GR00T 1.7 入驻 LeRobot 生态
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-12',
     title: 'AI 每日动态 (2026-07-12)',
     summary: '1. OpenAI GPT 5.6 系列正式公开，Sol/Terra/Luna 三档定价，多 Agent 并行能力成旗舰标配 2. OpenAI GPT Live 同步全双工语音上线，Agent 入口从键盘扩展到"会听话的嘴" 3. Wiz...',
@@ -345,60 +381,6 @@ export const p4 = [
 
 
 ### 2. 5 Genesis AI 开源 World 1.0 全栈训练场：200 小时真实评测压缩至 0.5 小时
-
-💡 **值得关注**: 为什么值得关注
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-03',
-    title: 'AI 每日动态 (2026-07-03)',
-    summary: '1. 1 2026 全球数字经济大会在京开幕：北京 AI 产业规模突破 4500 亿，人形机器人 + 世界模型集中亮相 💡 值得关注 : 为什么值得关注 AI Coding 方向 1. 2 Kimi K2.7 Code 成为 GitHub ...',
-    date: '2026-07-03',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月3日 · 星期五
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 行业头条
-
-### 1. 1 2026 全球数字经济大会在京开幕：北京 AI 产业规模突破 4500 亿，人形机器人 + 世界模型集中亮相
-
-💡 **值得关注**: 为什么值得关注
-
-
----
-
-## AI Coding 方向
-
-### 1. 2 Kimi K2.7 Code 成为 GitHub Copilot 首个开源权重编程模型
-
-💡 **值得关注**: 为什么值得关注
-
-
-### 2. 3 8090 Labs 获 1.35 亿美元 A 轮：AI 编码智能体「Software Factory」进入受监管行业
-
-💡 **值得关注**: 为什么值得关注
-
-
----
-
-## 具身智能方向
-
-### 1. 4 《中国具身智能产业发展报告（2026）》发布：2026 年市场规模预计达 1.09 万亿元
-
-💡 **值得关注**: 为什么值得关注
-
-
-### 2. 5 人形机器人量产前夜：优必选 Walker C1 发布、宇树 R1 降价至 2.99 万、特斯拉 Optimus Gen3 产能上调
 
 💡 **值得关注**: 为什么值得关注
 

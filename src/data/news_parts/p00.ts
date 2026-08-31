@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-08-31',
+    title: 'AI 每日动态 (2026-08-31)',
+    summary: '1. 软银拟约 60 亿美元控股挪威 1X，孙正义重金构建机器人全产业链闭环 2. xAI 推出高效推理模型 Grok Code Fast 1，限时免费接入主流编程平台 3. GitHub Copilot 今日退役 6 个旧模型，Claud...',
+    date: '2026-08-31',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月31日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 软银拟约 60 亿美元控股挪威 1X，孙正义重金构建机器人全产业链闭环
+
+
+### 2. xAI 推出高效推理模型 Grok Code Fast 1，限时免费接入主流编程平台
+
+
+### 3. GitHub Copilot 今日退役 6 个旧模型，Claude Code 同步上线模型切换 Hook
+
+
+### 4. 优必选中报：人形机器人销量全球第一，全尺寸具身收入暴涨 1445%
+
+
+### 5. Meta 测试数据中心机器人，预计可取代高达 80% 运维工作量
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-30',
     title: 'AI 每日动态 (2026-08-30)',
     summary: '1. OpenAI 定 11 月 12 日断供 Cursor，马斯克回应"我根本不在乎"，Anthropic 数小时后宣布加算力接盘 2. 编程智能体工具链密集更新：Claude Code 加模型切换 Hook 与花费上限，Copilot ...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 国家电网 68 亿元具身智能规划落地；小米"铁大"工厂实习成功率提升至 98%
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-19',
-    title: 'AI 每日动态 (2026-08-19)',
-    summary: '1. 宇树科技今日正式登陆科创板，"人形机器人第一股"发行市值约 610 亿元 2. Agentic Coding 框架之争白热化：Meta Muse Code 与 DeepSeek Harness 同台 3. 开发工作流结构性拐点：终端原...',
-    date: '2026-08-19',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月19日 · 星期三
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 宇树科技今日正式登陆科创板，"人形机器人第一股"发行市值约 610 亿元
-
-
-### 2. Agentic Coding 框架之争白热化：Meta Muse Code 与 DeepSeek Harness 同台
-
-
-### 3. 开发工作流结构性拐点：终端原生 Agent + MCP 标准化 + 自愈 CI/CD
-
-
-### 4. 灵巧手销量翻倍、触觉传感器规模化采购，硬件成本坍塌加速商业化
-
-
-### 5. 腾讯 RoboticsX 联合清华等推出可交互世界模型 GeniWorld，用"视频预测"破解具身数据荒
 
 
 ---

@@ -1,6 +1,42 @@
 // 自动生成的分片（2），请勿手动修改
 export const p2 = [
   {
+    id: 'ai-news-daily-2026-08-05',
+    title: 'AI 每日动态 (2026-08-05)',
+    summary: '1. GitHub Copilot 正式"换脑"：微软 Project Polaris 自研模型 8 月起全面取代 GPT 4 Turbo 2. 智谱 ZCode 3.0 发布：国产 AI 编程工具全面切换自研 Agent 内核，告别"套壳...',
+    date: '2026-08-05',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月5日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. GitHub Copilot 正式"换脑"：微软 Project Polaris 自研模型 8 月起全面取代 GPT-4 Turbo
+
+
+### 2. 智谱 ZCode 3.0 发布：国产 AI 编程工具全面切换自研 Agent 内核，告别"套壳"
+
+
+### 3. Java IDE AI Agent 三国杀：IntelliJ IDEA 2026.2、Trae 3.0、华为云码道同时入局
+
+
+### 4. 越疆发布全球首款具身全栖人形机器人"鹿萌"，押注千亿智能陪伴市场
+
+
+### 5. 河南首批众擎 T800 人形机器人下线 + 恺望数据获亿元级战略融资，具身智能产业链加速成形
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-04',
     title: 'AI 每日动态 (2026-08-04)',
     summary: '1. 阿里发布 Qwen3.8 Max：2.4 万亿参数旗舰模型，16 天无人干预自主编程 2. Y Combinator 开源 QM：面向全公司的多 Agent 协作框架，3 天 7.5K Stars 3. 清华团队 VeriLoop C...',
@@ -320,45 +356,6 @@ export const p2 = [
 
 
 ### 4. 无界动力 K15 成为全球首个获工业级全域 CE 认证的具身智能机器人，开启全球批量交付
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-23',
-    title: 'AI 每日动态 (2026-07-23)',
-    summary: '1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏” ...',
-    date: '2026-07-23',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月23日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录
-
-
-### 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏”
-
-
-### 3. Cursor 被曝远程代码执行漏洞：打开仓库即可触发，70 余个版本未修复
-
-
-### 4. Perplexity 自研 AI 编程工具 Teammate 曝光，正式入局代码开发赛道
-
-
-### 5. WAIC 2026 闭幕：具身智能与智算并列核心赛道，产业进入规模化交付元年
-
-
-### 6. 松应科技发布 ORCA OS：全球首个多形态机器人协同训练的物理 AI 操作系统
 
 
 ---

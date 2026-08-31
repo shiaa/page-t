@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-08-31</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 08 / 31 · 周一</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>软银拟约 60 亿美元控股挪威 1X，孙正义重金构建机器人全产业链闭环</h3>
+    <div class="meta">
+      <span class="tag">产业资本</span>
+      <span class="tag green">软银 / 1X</span>
+      <span class="tag pink">人形机器人</span>
+    </div>
+    <p>8 月 30 日消息，软银正洽谈以约 60 亿美元估值收购挪威人形机器人公司 1X 的多数股权。结合此前 53.75 亿美元收购 ABB 机器人部门、14 亿美元领投 Skild AI，这将是软银在人形机器人领域最大的一笔直接控股投资。孙正义在早期项目折戟后，正通过"本体（ABB）+ 模型（Skild AI）+ 家庭场景（1X）"的布局，再次重金构建机器人全产业链。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是资本层面"机器人全产业链"叙事的一次集中落地——本体、大脑（模型）、落地场景被同一资本方串联。1X 主打家庭消费级场景（其 NEO 双足机器人定位家庭助手），Skild AI 提供通用机器人基础模型，ABB 补齐工业本体与制造能力。对具身智能赛道而言，顶级资本的真金白银下注，意味着行业竞争从"技术 demo"正式进入"产能 + 场景"的整合期，也可能加速消费级人形机器人的量产时间表。
+    </div>
+    <div class="source">来源：具身机器人行业动态（8/30 日报）· 新浪财经 · 界面新闻</div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>xAI 推出高效推理模型 Grok Code Fast 1，限时免费接入主流编程平台</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">xAI / Grok</span>
+      <span class="tag pink">编程模型</span>
+    </div>
+    <p>8 月 29 日，xAI 宣布推出高效推理模型 Grok Code Fast 1，专为智能化编程场景打造。xAI 表示，Grok Code Fast 1 将在包括 Cursor、GitHub Copilot、Cline、opencode、Windsurf、Roo Code 和 Kilo Code 在内的主流智能编程平台上"限时免费"开放，主打高性价比的代码生成与推理能力。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是大模型公司首次以"限时免费"方式向第三方 AI 编程工具生态批量铺量，意图绕过自有 IDE 之争、直接争夺开发者心智。对一线开发者（尤其 DevOps/SRE 日常写脚本、写自动化）是实打实的利好：可在不增加成本的前提下，横向对比 Grok Code Fast 1 与 Claude Code、Codex 在真实代码库上的表现。同时也释放出价格战信号——编程模型的"单位智能成本"仍在快速下探。
+    </div>
+    <div class="source">来源：华为内容分发 · AI早报（8/29）· xAI 官方</div>
+  </div>
+
+  <div class="card">
+    <h3>GitHub Copilot 今日退役 6 个旧模型，Claude Code 同步上线模型切换 Hook</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">GitHub Copilot</span>
+      <span class="tag pink">模型策略</span>
+    </div>
+    <p>8 月 31 日（今日）是 GitHub Copilot 模型退役的硬截止日：Gemini 3.1 Pro、Claude Opus 4.5 / 4.6、Claude Sonnet 4.5 / 4.6、Raptor mini 共 6 个模型在所有 Copilot 表面（聊天、补全、代码审查、Agent 模式）正式停用，官方建议分别切换至 Gemini 3.6 Flash、Opus 4.7/4.8/5、Sonnet 5 等替代模型。与此同时，Claude Code 于 8 月 28 日发布的 v2.1.251 新增 PreModelSwitch / PostModelSwitch 钩子事件与 /usage 支出限额条，可在模型切换时拦截、确认或标注，并实时展示子 Agent 工具调用。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>对管理团队 Copilot 的管理员是"今日必须行动"的节点——若模型策略未提前更新，依赖的旧模型可能在 8 月 31 日后静默失效。更深层看，这反映 AI Coding 工具的竞争维度已从"模型谁更强"转向"权限与成本控制"：Claude Code 的模型切换 Hook + 支出可见性，正是为长期运行（定时任务、网关计费会话）场景补安全与可观测短板。运维/DevOps 团队若在 CI 中嵌入 Agent，应及早评估这些变更。
+    </div>
+    <div class="source">来源：Oday Bakkour AI Coding News（8/29）· GitHub Changelog · Claude Code Changelog · Havoptic</div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>优必选中报：人形机器人销量全球第一，全尺寸具身收入暴涨 1445%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">优必选</span>
+      <span class="tag pink">财报 / 量产</span>
+    </div>
+    <p>8 月 30 日，优必选发布 2026 年上半年中报：总营收 12.7 亿元（同比 +104.2%），人形机器人总销量 16123 台（同比 +268.3%）；其中全尺寸具身智能人形机器人收入 5.9 亿元（同比 +1445%）、销量 921 台（同比 +1946.7%），销量与收入双双登顶全球第一。同期宇树科技人形机器人营收也超 11 亿元、净利 2.74 亿元，两家均在加码 AI 大模型与万台工厂量产。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是"量产元年"最硬核的财务印证——从展会表演到真实营收的跨越已经完成。全尺寸具身人形机器人收入近 15 倍增长，说明 B 端（工业、教育、展示）需求开始真正买单，而非停留在概念验证。结合行业预测的"2026 整机产量破 10 万台、市场规模破万亿"，头部企业的财报数据正在把具身智能从故事讲成现金流，对供应链（六维力传感器、伺服、端侧 AI 芯片）是明确的拉动信号。
+    </div>
+    <div class="source">来源：南方都市报 · 腾讯新闻（8/30 机器人行业日报）· 新浪财经</div>
+  </div>
+
+  <div class="card">
+    <h3>Meta 测试数据中心机器人，预计可取代高达 80% 运维工作量</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">Meta</span>
+      <span class="tag pink">数据中心自动化</span>
+    </div>
+    <p>8 月 30 日，IT之家援引 Wired 报道，Meta 正联合 Watney、Kinova、ABB 等厂商在数据中心测试机器人，执行插接线缆、重启服务器等物理运维任务。Meta 员工估计，若测试成功，可取代高达 80% 的相关工作量。尽管当前设备的速度与续航仍受限，但实现数据中心自动化运营已被列为 Meta 的长期目标。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能在"AI 基建自身"上的反向落地——训练大模型消耗巨量算力，而算力背后的机房运维正成为机器人最先啃下的刚需场景。插线、重启这类高危、重复、人力密集岗位，恰好是具身智能商业化闭环最易跑通的价值洼地（与电力巡检、3C 产线顶岗同逻辑）。对 DevOps/SRE 而言，这意味着"机房里的同事"可能先变成机器人：未来运维自动化不只发生在代码层，也会延伸到物理层。
+    </div>
+    <div class="source">来源：IT之家（8/30）· 腾讯新闻 · Wired</div>
+  </div>
+
+  <footer>
+    <p>数据来源：华为内容分发 · AI早报 · Oday Bakkour AI Coding News · GitHub Changelog · Claude Code Changelog · Havoptic · 南方都市报 · 腾讯新闻 · 新浪财经 · IT之家 · Wired · 界面新闻 · 具身机器人行业动态</p>
+  </footer>
+
+</div>
+</body>
+</html>
