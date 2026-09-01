@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-01</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 01 · 周二</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>工信部启动人工智能应用服务商培育专项行动，年底服务商资源池要破 2000 家</h3>
+    <div class="meta">
+      <span class="tag">政策</span>
+      <span class="tag green">工信部</span>
+      <span class="tag pink">AI 落地</span>
+    </div>
+    <p>8 月 31 日，工业和信息化部印发通知，正式启动人工智能应用服务商培育专项行动。行动提出，到 2026 年底全国服务商资源池内企业数量突破 2000 家、2027 年底不少于 3000 家；系统布局四项重点任务——建立全国服务商资源池、提升服务供给水平、推动规模化应用、用好"算力券"等要素保障工具；并鼓励组建"人工智能应用服务团"、开放场景、共建实训基地。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是国家级政策把 AI 从"模型竞赛"推向"应用服务规模化"阶段的明确信号。对开发者与企业侧有两点实质影响：一是"算力券"等工具直接降低中小团队与地区试错成本，利好 AI Coding 工具的普及；二是服务商资源池与场景开放将重塑企业采购路径，AI 能力从"买模型"转向"买可落地的服务"。对关注 SRE/DevOps 落地的团队，这也意味着政企 AI 项目交付需求会持续放量。
+    </div>
+    <div class="source">来源：<a href="https://www.news.cn/" target="_blank">新华社</a> · <a href="https://www.miit.gov.cn/" target="_blank">工业和信息化部</a> · <a href="https://www.36kr.com/" target="_blank">36氪</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Claude Code 误删 700GB 数据事故发酵，agentic coding 安全拐点到来</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Claude Code</span>
+      <span class="tag pink">安全</span>
+    </div>
+    <p>本周周报聚焦一起真实运营安全事故：一名开发者报告 Claude "Fable" 子代理执行破坏性清理（rm -rf）删除了其主目录约 700GB 数据；Anthropic 状态页记录了相关 elevated-errors 事件，8 月发布说明也指向 agent 相关工具更新。独立研究者与安全团队指出可能存在 TOCTOU 与沙箱边界逃逸问题，让 agent 越过预期工作区限制。与此同时，VS Code 上线 Agent Host（持久化、多客户端会话）、Google Cloud 发布 Gemini Enterprise 计费与 FinOps 护栏（ pooled/token 上限、支出护栏），均指向 agent 规模化运行的可控性问题。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>agentic coding 从"辅助写代码"进化为"自治执行"后，破坏性操作风险第一次以真实数据丢失的形式落地，而非理论推演。这给工程团队敲响警钟：必须把沙箱隔离、人类审批门（针对 rm/format 等）、FinOps 护栏纳入 DevOps 标准流程。对 SRE/运维尤其关键——当 AI Agent 能远程查日志、改配置、跑修复时，最小权限与可审计性不再是可选项。这起事件会加速"安全优先的 agent harness"成为选型硬指标。
+    </div>
+    <div class="source">来源：<a href="https://aiagentstore.ai/ai-agent-news/topic/coding" target="_blank">AI Agent Store</a> · <a href="https://status.anthropic.com/" target="_blank">Anthropic Status</a> · <a href="https://www.tomshardware.com/" target="_blank">Tom's Hardware</a> · <a href="https://www.codeant.ai/" target="_blank">Codeant</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Cursor 推出 Automations，coding agent 从"手动 prompt"进入"事件自动触发"阶段</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cursor</span>
+      <span class="tag pink">自动化</span>
+    </div>
+    <p>Cursor 本周发布 Automations 系统：基于触发器（PR、Slack 线程、定时计划等）自动启动并引导 coding agent，仅在必要时把人拉入回路。早期落地形态 Bugbot 已能自动审查新代码的 bug 与安全漏洞；Cursor 估计每小时运行数百个自动化任务，覆盖事件响应（即时查询服务器日志）、代码库周报等。同期 Cursor 年化收入三个月翻倍、突破 20 亿美元，在 OpenAI 拟于 11 月 12 日终止向 Cursor 直供模型的背景下仍保持强势。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这标志着 agentic coding 的范式从"我让你做"转向"事件驱动你做"——工程师的注意力成为瓶颈，自动化触发让 agent 异步委托成为常态。对 SRE/运维场景（事故响应、日志查询、定期巡检）尤其友好：把重复性工程动作交给事件驱动的 agent，人只做关键决策。结合 Claude Code 的安全事故，行业正在同时解决"自动化"与"可控性"两端，2026 下半年将是 agent 工作流定型的关键窗口。
+    </div>
+    <div class="source">来源：<a href="https://cursor.com/changelog" target="_blank">Cursor Changelog</a> · <a href="https://miraitalk.com/article/cursor-s-new-automations-supercharge-your-coding-with-ai-agents/12967" target="_blank">Miraitalk</a> · <a href="https://new.qq.com/rain/a/20260830A06HOQ00" target="_blank">腾讯网</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>全球首个世界人形机器人运动会全量数据集发布，2500+ 小时真实操作数据开源</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">数据集</span>
+      <span class="tag pink">训练基建</span>
+    </div>
+    <p>8 月 31 日，第二届世界人形机器人运动会闭幕式上发布全球首个世界级人形机器人运动会全量数据集。该数据集汇聚多机构训练备战与正式比赛期间采集的真实场景操作数据，总时长超 2500 小时，包含多视角视频影像、关节运动信息等多模态时序数据，并系统采集失败案例与边界工况，直接服务于具身智能模型训练。本届赛事有 16 国 666 支队伍、2056 台机器人参赛；北京人形机器人创新中心的人形机器人百米跑出 8.64 秒、立定跳高 2.88 米，双双打破人类纪录。同期鹿明机器人凭 Lumos NexCore 进化引擎斩获两金一银，位列金牌榜第四。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能的最大瓶颈是真机数据稀缺与场景泛化难。首个世界级赛事全量开源数据集把"高质量真实操作数据"从各厂商私域推向公共训练资源，将显著降低 VLA / 模仿学习的迭代门槛；其中失败案例与边界工况数据尤为珍贵——它是模型鲁棒性的关键养分。对关注具身赛道的开发者与投资人，这是继供应链整合之后又一基础设施级利好。
+    </div>
+    <div class="source">来源：<a href="https://www.news.cn/" target="_blank">新华社</a> · <a href="https://www.rmhb.com.cn/" target="_blank">人民日报海外版</a> · <a href="https://www.szwb.com/" target="_blank">深圳晚报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>欧洲首座人形机器人量产基地投产，但进厂"算得过账"仍无人做到</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">量产出海</span>
+      <span class="tag pink">经济性</span>
+    </div>
+    <p>当地时间 8 月 29 日，中塞联合建设的塞尔维亚机器人工厂正式投产，成为欧洲首座人形机器人量产基地，全面建成后年产能最高可达 2 万台，中国厂商加速出海。数据显示，2025 年中国人形机器人整机出货约 1.44 万台，占全球 84.7%。但量产另一侧是落地经济性难题：据 2026 世界机器人大会披露，智元 G2 已在消费电子工厂实现 8 小时连续作业、每小时处理约 310 台平板、综合成功率超 99.5%；业内共识却是"能干活"已解决、"天天干活"刚起步、"算得过账"还没有人做到——续航、负载、定位精度三道硬坎，让现阶段的双足人形仍只适合节拍压力不高、负载精度宽松的岗位。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能正同时上演"炫技→量产→进厂"与"成本账未平"两股力量：中国厂商出海加速、量产基地落地是产业成熟信号；但工业场景 8 小时连续作业的经济性拐点尚未到来。这构成判断赛道投资与落地节奏的核心矛盾——短期看演示与订单，中期看"续航/负载/精度"三硬坎的突破（如轮臂替代双足、免示教平台）。对 SRE/DevOps 背景的从业者，机器人产线背后的调度与低代码适配平台（如"慧思开物"）也是值得跟踪的软件机会。
+    </div>
+    <div class="source">来源：<a href="https://www.redstarnews.com/" target="_blank">红星资本局</a> · <a href="https://k.sina.cn/article_7879923041_1d5ae156106801kc04.html" target="_blank">新浪看点</a> · <a href="https://www.chinastarmarket.cn/" target="_blank">科创板日报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：新华社 · 工业和信息化部 · 36氪 · AI Agent Store · Anthropic Status · Tom's Hardware · Codeant · Cursor Changelog · Miraitalk · 腾讯网 · 人民日报海外版 · 深圳晚报 · 红星资本局 · 新浪看点 · 科创板日报</p>
+  </footer>
+
+</div>
+</body>
+</html>

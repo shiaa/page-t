@@ -1,6 +1,45 @@
 // 自动生成的分片（2），请勿手动修改
 export const p2 = [
   {
+    id: 'ai-news-daily-2026-08-06',
+    title: 'AI 每日动态 (2026-08-06)',
+    summary: '1. Meta 发布首款 AI 编程智能体 Muse Code，以低价策略正面挑战 Anthropic 与 OpenAI 2. 谷歌 AI 部门大换血：首席科学家杰夫·迪恩 27 年后离职，DeepMind CEO 哈萨比斯转任董事长 3....',
+    date: '2026-08-06',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月6日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Meta 发布首款 AI 编程智能体 Muse Code，以低价策略正面挑战 Anthropic 与 OpenAI
+
+
+### 2. 谷歌 AI 部门大换血：首席科学家杰夫·迪恩 27 年后离职，DeepMind CEO 哈萨比斯转任董事长
+
+
+### 3. 涂鸦智能推出 AI 原生无代码开发平台 TuyaAICoding，硬件应用开发从"数月"压缩至"分钟级"
+
+
+### 4. 上海 DoGNAVY 智能体登顶全球 AI 网络安全榜第三，基于智谱 GLM-5.2 开源模型构建
+
+
+### 5. 具身智能产业迈入"交付时代"：上半年融资 935 亿元（同比增 137%），全年机器人出货量预计超 50 万台
+
+
+### 6. 银河通用发布全球首个具身智能世界模型测试时后训练框架 WAM-TTT，机器人"看视频"即可快速适应新场景
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-05',
     title: 'AI 每日动态 (2026-08-05)',
     summary: '1. GitHub Copilot 正式"换脑"：微软 Project Polaris 自研模型 8 月起全面取代 GPT 4 Turbo 2. 智谱 ZCode 3.0 发布：国产 AI 编程工具全面切换自研 Agent 内核，告别"套壳...',
@@ -323,39 +362,6 @@ export const p2 = [
 
 
 ### 5. 小鹏人形机器人广州工厂开启小批量试生产，2026 年量产进入倒计时
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-24',
-    title: 'AI 每日动态 (2026-07-24)',
-    summary: '1. 阿里国际站 Accio Work 用户突破千万，AI Agent B 端商业化迎来关键样本 2. PrimalVerse 元昊动力完成数亿元种子轮融资，押注原生 4D 世界模型基模 3. Claude Code 2.1.205 发布 ...',
-    date: '2026-07-24',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月24日 · 星期五
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 阿里国际站 Accio Work 用户突破千万，AI Agent B 端商业化迎来关键样本
-
-
-### 2. PrimalVerse 元昊动力完成数亿元种子轮融资，押注原生 4D 世界模型基模
-
-
-### 3. Claude Code 2.1.205 发布 /checkup 命令，AI 编程环境进入“自我体检”时代
-
-
-### 4. 无界动力 K15 成为全球首个获工业级全域 CE 认证的具身智能机器人，开启全球批量交付
 
 
 ---

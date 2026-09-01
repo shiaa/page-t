@@ -1,6 +1,39 @@
 // 自动生成的分片（3），请勿手动修改
 export const p3 = [
   {
+    id: 'ai-news-daily-2026-07-24',
+    title: 'AI 每日动态 (2026-07-24)',
+    summary: '1. 阿里国际站 Accio Work 用户突破千万，AI Agent B 端商业化迎来关键样本 2. PrimalVerse 元昊动力完成数亿元种子轮融资，押注原生 4D 世界模型基模 3. Claude Code 2.1.205 发布 ...',
+    date: '2026-07-24',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月24日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 阿里国际站 Accio Work 用户突破千万，AI Agent B 端商业化迎来关键样本
+
+
+### 2. PrimalVerse 元昊动力完成数亿元种子轮融资，押注原生 4D 世界模型基模
+
+
+### 3. Claude Code 2.1.205 发布 /checkup 命令，AI 编程环境进入“自我体检”时代
+
+
+### 4. 无界动力 K15 成为全球首个获工业级全域 CE 认证的具身智能机器人，开启全球批量交付
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-23',
     title: 'AI 每日动态 (2026-07-23)',
     summary: '1. Moonshot 发布 Kimi K3：2.8 万亿参数、100 万 token 上下文，刷新开源权重模型纪录 2. GitHub、Claude Code、OpenAI Codex 一周内密集给 Coding Agent 加“护栏” ...',
@@ -317,42 +350,6 @@ export const p3 = [
 
 
 ### 5. 源络科技落地全球首个具身智能自主实验室：机器人连续 3 小时跨设备完成 40 余种生化实验操作
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-14',
-    title: 'AI 每日动态 (2026-07-14)',
-    summary: '1. Agnes 2.5 Flash 免费上线：中国开发者在"封号潮"下的新选择，Coding 能力对标 Claude Opus 2. Superpowers 21 万星登顶 GitHub Trending：AI 编程最大的变化不是模型变强...',
-    date: '2026-07-14',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月14日 · 星期二
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Agnes-2.5 Flash 免费上线：中国开发者在"封号潮"下的新选择，Coding 能力对标 Claude Opus
-
-
-### 2. Superpowers 21 万星登顶 GitHub Trending：AI 编程最大的变化不是模型变强，而是"怎么管 AI"
-
-
-### 3. GPT-5.6「太阳系」全家桶全面上线：Codex 消失，ChatGPT Work 成为 AI 打工神器
-
-
-### 4. 宇树 G1 人形机器人登 Nature：完成全球首例活体微创手术，单台 56 分钟完成胆囊切除
-
-
-### 5. 它石智航千台级工业具身机器人量产 + 京东入局：具身智能进入"系统级交付"阶段
 
 
 ---

@@ -1,6 +1,42 @@
 // 自动生成的分片（4），请勿手动修改
 export const p4 = [
   {
+    id: 'ai-news-daily-2026-07-14',
+    title: 'AI 每日动态 (2026-07-14)',
+    summary: '1. Agnes 2.5 Flash 免费上线：中国开发者在"封号潮"下的新选择，Coding 能力对标 Claude Opus 2. Superpowers 21 万星登顶 GitHub Trending：AI 编程最大的变化不是模型变强...',
+    date: '2026-07-14',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月14日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Agnes-2.5 Flash 免费上线：中国开发者在"封号潮"下的新选择，Coding 能力对标 Claude Opus
+
+
+### 2. Superpowers 21 万星登顶 GitHub Trending：AI 编程最大的变化不是模型变强，而是"怎么管 AI"
+
+
+### 3. GPT-5.6「太阳系」全家桶全面上线：Codex 消失，ChatGPT Work 成为 AI 打工神器
+
+
+### 4. 宇树 G1 人形机器人登 Nature：完成全球首例活体微创手术，单台 56 分钟完成胆囊切除
+
+
+### 5. 它石智航千台级工业具身机器人量产 + 京东入局：具身智能进入"系统级交付"阶段
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-13',
     title: 'AI 每日动态 (2026-07-13)',
     summary: '1. OpenAI GPT 5.6 正式发布，Sol/Terra/Luna 三模型重新定义能力层级 2. 阿里巴巴全面禁用 Anthropic 旗下 AI 工具，全员切换自研智能体编程平台 Qoder 3. Meta Muse Spark ...',
@@ -329,60 +365,6 @@ export const p4 = [
 
 
 ### 7. 国内具身智能赛道单周吸金超 60 亿元，资本加速向头部集中
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-04',
-    title: 'AI 每日动态 (2026-07-04)',
-    summary: '1. 1 阿里全面禁用 Claude 全系模型与 Claude Code 编程智能体，中美 AI 阵营割裂加剧 💡 值得关注 : 为什么值得关注 AI Coding 方向 1. 2 微软 Project Aion 系统曝光：基于 Edge ...',
-    date: '2026-07-04',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月4日 · 星期六
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 行业头条
-
-### 1. 1 阿里全面禁用 Claude 全系模型与 Claude Code 编程智能体，中美 AI 阵营割裂加剧
-
-💡 **值得关注**: 为什么值得关注
-
-
----
-
-## AI Coding 方向
-
-### 1. 2 微软 Project Aion 系统曝光：基于 Edge 的 AI 原生 OS，Copilot 全面替代传统桌面
-
-💡 **值得关注**: 为什么值得关注
-
-
-### 2. 3 Claude Fable 5 退出订阅改按量计费，旗舰模型付费模式生变
-
-💡 **值得关注**: 为什么值得关注
-
-
----
-
-## 具身智能方向
-
-### 1. 4 宇树科技科创板 IPO 注册获批：73 天闪电过会，募资 42.02 亿元、市值 420 亿元
-
-💡 **值得关注**: 为什么值得关注
-
-
-### 2. 5 Genesis AI 开源 World 1.0 全栈训练场：200 小时真实评测压缩至 0.5 小时
-
-💡 **值得关注**: 为什么值得关注
 
 
 ---
