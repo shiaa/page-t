@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-08-21',
+    title: 'AI 每日动态 (2026-08-21)',
+    summary: '1. 2026 世界机器人大会开幕：具身智能从"能跑会跳"迈向"能想会干" 2. Claude Code 全流程自主运维实测：累计 388 条 PR、180 条合并，AI 编程迈入"人机协同"新阶段 3. 智谱 GLM 5.3 上线：编程能...',
+    date: '2026-08-21',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月21日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 2026 世界机器人大会开幕：具身智能从"能跑会跳"迈向"能想会干"
+
+
+### 2. Claude Code 全流程自主运维实测：累计 388 条 PR、180 条合并，AI 编程迈入"人机协同"新阶段
+
+
+### 3. 智谱 GLM-5.3 上线：编程能力暴涨 50%，开源最强编程模型，单轮挖出 2436 个漏洞
+
+
+### 4. 北京人形发布 Pelican-Unify 1.0 大一统具身世界模型 + 天工 Omni 新品
+
+
+### 5. 京东百亿机器人战略 + 优必选万台超级工厂投产，商业化落地加速
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-20',
     title: 'AI 每日动态 (2026-08-20)',
     summary: '1. 2026 世界机器人大会北京启幕：150 余款新品全球首发，宇树"超人"打破两项人类极限 2. Cursor 推出 Origin 代码托管剑指 GitHub；OpenAI Codex CLI 0.148.0 新增会话分叉与 Bedro...',
@@ -317,42 +353,6 @@ export const p1 = [
 
 
 ### 5. Figure 03 自主攀爬工业梯子，移动操作耦合（loco-manipulation）首次以完整形态呈现
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-07',
-    title: 'AI 每日动态 (2026-08-07)',
-    summary: '1. 谷歌 AI 人事巨震：Hassabis 卸任 DeepMind CEO 转任董事长，Jeff Dean 效力 27 年后离职创业 2. Meta 发布首款 AI 编程智能体 Muse Code，以十分之一定价正面挑战 Claude C...',
-    date: '2026-08-07',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月7日 · 星期五
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 谷歌 AI 人事巨震：Hassabis 卸任 DeepMind CEO 转任董事长，Jeff Dean 效力 27 年后离职创业
-
-
-### 2. Meta 发布首款 AI 编程智能体 Muse Code，以十分之一定价正面挑战 Claude Code 与 Codex
-
-
-### 3. 从 Loop 到 Graph：AI Coding 范式六周内再次进化，多智能体图编排成为新焦点
-
-
-### 4. DeepSeek 斥资 1.41 亿元入股宇树科技，签署联合开发人形机器人 AI 模型协议
-
-
-### 5. 黎曼动力携手光轮智能与诺亦腾，共建百万小时具身智能数据底座
 
 
 ---

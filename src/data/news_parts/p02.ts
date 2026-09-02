@@ -1,6 +1,42 @@
 // 自动生成的分片（2），请勿手动修改
 export const p2 = [
   {
+    id: 'ai-news-daily-2026-08-07',
+    title: 'AI 每日动态 (2026-08-07)',
+    summary: '1. 谷歌 AI 人事巨震：Hassabis 卸任 DeepMind CEO 转任董事长，Jeff Dean 效力 27 年后离职创业 2. Meta 发布首款 AI 编程智能体 Muse Code，以十分之一定价正面挑战 Claude C...',
+    date: '2026-08-07',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月7日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 谷歌 AI 人事巨震：Hassabis 卸任 DeepMind CEO 转任董事长，Jeff Dean 效力 27 年后离职创业
+
+
+### 2. Meta 发布首款 AI 编程智能体 Muse Code，以十分之一定价正面挑战 Claude Code 与 Codex
+
+
+### 3. 从 Loop 到 Graph：AI Coding 范式六周内再次进化，多智能体图编排成为新焦点
+
+
+### 4. DeepSeek 斥资 1.41 亿元入股宇树科技，签署联合开发人形机器人 AI 模型协议
+
+
+### 5. 黎曼动力携手光轮智能与诺亦腾，共建百万小时具身智能数据底座
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-06',
     title: 'AI 每日动态 (2026-08-06)',
     summary: '1. Meta 发布首款 AI 编程智能体 Muse Code，以低价策略正面挑战 Anthropic 与 OpenAI 2. 谷歌 AI 部门大换血：首席科学家杰夫·迪恩 27 年后离职，DeepMind CEO 哈萨比斯转任董事长 3....',
@@ -326,42 +362,6 @@ export const p2 = [
 
 
 ### 5. 人民日报头版关注人形机器人规模化量产：年产能万台工厂落成，行业进入"交付"拐点
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-25',
-    title: 'AI 每日动态 (2026-07-25)',
-    summary: '1. Anthropic 发布 Claude Opus 5：性能逼近旗舰 Fable 5，价格只要一半 2. 腾讯云发布 CodeBuddy NPC：AI 从「辅助写代码」进化为「独立交付 PR」 3. 上下文工程（Context Engi...',
-    date: '2026-07-25',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月25日 · 星期六
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Anthropic 发布 Claude Opus 5：性能逼近旗舰 Fable 5，价格只要一半
-
-
-### 2. 腾讯云发布 CodeBuddy NPC：AI 从「辅助写代码」进化为「独立交付 PR」
-
-
-### 3. 上下文工程（Context Engineering）取代 Prompt Engineering，成为 AI Coding 新共识
-
-
-### 4. 越疆人形机器人完成全球产业现场大规模交付，从「样品」到「产线生产力」
-
-
-### 5. 小鹏人形机器人广州工厂开启小批量试生产，2026 年量产进入倒计时
 
 
 ---

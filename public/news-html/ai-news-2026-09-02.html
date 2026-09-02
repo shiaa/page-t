@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-02</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 02 · 周三</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>特斯拉 Optimus 确认进入量产，9/3 Cybercab 发布会前股价逆势大涨 5.5%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">特斯拉</span>
+      <span class="tag pink">资本市场</span>
+    </div>
+    <p>9 月 1 日，多方消息确认特斯拉人形机器人 Optimus V3 已在加州弗里蒙特工厂原 Model S/X 产线改造的专用产线低速率投产，首批机器人将进入内部"Optimus Academy"闭环学习计划做工厂任务训练与数据采集，暂不对外销售。同期特斯拉宣布 9 月 3 日在得州奥斯汀举行仅限邀请的 Cybercab（无方向盘/踏板 L4 Robotaxi）发布会。受量产启动 + 发布会预期双重催化，当日特斯拉股价逆势大涨 5.5%（收 367.95 美元），跑赢当日承压的美股大盘，市场定价逻辑正从"卖车利润"切换为"AI 资产"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Optimus 从 PPT 叙事跨入"产线开工、内部部署"阶段，是具身智能量产元年的标志性事件；而 Cybercab 与 Optimus 同周引爆，意味着特斯拉把"现实世界 AI"叙事一次性推向资本市场。对具身智能从业者而言，关键信号是：首批机器人定位内部验证而非商品交付，马斯克给对外销售设了可靠性/安全性高门槛（公开口径约 2027 年底），且产线仍受灵巧手、续航、系统集成约束——"产线转起来"不等于"良率与节拍稳定"，需警惕产能目标被过度解读。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L5OPFSG405119GLN.html" target="_blank">网易·不看车</a> · <a href="https://hiperwire.io/movers/tsla/tsla-front-runs-cybercab-reveal-optimus-production-start" target="_blank">hiperwire</a> · <a href="https://www.gate.com/zh/blog/tesla-stock-surges-5-5-against-the-market-what-is-the-market-pricing-how-to-assess-tslas-future-outlook" target="_blank">Gate 博客</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>GitHub Copilot 9/1 大调整：六组旧模型下线，Grok 4.6 上线，商务/企业版恢复注册</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">GitHub Copilot</span>
+      <span class="tag pink">模型调整</span>
+    </div>
+    <p>9 月 1 日起，GitHub Copilot 生效两项重大变更：Gemini 3.1 Pro、Claude Opus 4.5/4.6、Claude Sonnet 4.5/4.6、Raptor Mini 共六组旧模型从全部 Copilot 体验下线（个人年度订阅暂保留 Claude Sonnet 4.6）；同时 Grok 4.6 作为可选模型持续铺开。配合 8 月 VS Code 最大更新（并排多代理会话、/btw 共享上下文侧聊、全量转写搜索、多语言听写），GitHub 还重新开放 Copilot Business/Enterprise 信用卡与 PayPal 新客户注册，并预告 9/28 前后 Chat 统一体验、10/1 起改为预付计费。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 Copilot 从"多模型货架"转向"精简可控模型池 + 企业级计费闭环"的关键一步。对依赖 Claude/Gemini 老型号的团队，默认设置与团队策略需立即迁移到替代模型，否则 9 月起会静默失效；对企业 IT/财务，席位从按月用量改为预付计费意味着采购与成本核算逻辑要重做。对 DevOps/SRE 而言，并排多代理会话 + 侧聊共享 prompt 缓存，是"并行排查多个故障"工作流的实质利好。
+    </div>
+    <div class="source">来源：<a href="https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases" target="_blank">GitHub Blog</a> · <a href="https://oday-bakkour.com/blog/ai-coding-roundup-september-1-2026" target="_blank">AI Coding Roundup</a> · <a href="https://aifki.com/2026/09/01/ai-daily" target="_blank">AI 无涯日报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI Codex 砍掉上下文压缩：长任务改用"新窗口 + 历史/笔记工具"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI Codex</span>
+      <span class="tag pink">长任务架构</span>
+    </div>
+    <p>Codex 项目近期连合并多项改动（PR #27488 / #29743 / #39827），指向重新设计超长任务的上下文机制：放弃传统压缩，改为模型可主动请求"全新上下文窗口"，重新注入初始环境、权限与任务配置后继续执行，不再携带旧对话摘要。为弥补"丢弃历史"的副作用，新增历史工具（列出/搜索/读取此前窗口记录）与笔记工具（持久化保存目标、决策、进度）。同时，Codex 周限额已支持付费即时重置，并在 8/31 为庆祝 2500 万活跃用户给付费订阅做了一次全量用量重置。改动目前仍在合并阶段，尚未正式可用。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>上下文压缩一直是长时 Agent 任务的"隐形天花板"——反复压缩导致摘要膨胀、细节失真、token 被历史占用。Codex 用"新窗口 + 笔记"替代压缩，是把 Agent 从"挤牙膏续命"推进到"跨窗口持续作业"的架构级升级，对需要跑数小时/跨多会话的运维脚本、大型重构、长链路调试意义直接。对 SRE 场景，这意味着 Agent 有望更稳定地接管"隔夜级"长任务而不跑偏。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L5O6JT1R05561FZE.html" target="_blank">网易科技</a> · <a href="https://help.openai.com/en/articles/20001507-paid-weekly-work-and-codex-rate-limit-resets" target="_blank">OpenAI 帮助中心</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>国产人形机器人密集下线：郑州 T800 首批下线，优必选天津基地落地，青岛电博会 9/4 启幕</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">量产</span>
+      <span class="tag pink">产业链</span>
+    </div>
+    <p>9 月 1 日，中国具身智能领域接连传出落地进展：郑州高新区众擎智能制造基地首批河南造 T800 人形机器人正式下线，一期约 8000㎡，年底预计组装 20–30 台，未来两三年可批量化生产；优必选全资子公司落地天津经开区，建设仿真人形机器人智能制造基地、具身智能产业生态创新中心及 6S 旗舰运营平台三大载体，当地具身智能产业规模已近 130 亿元；9 月 4–6 日第 23 届中国国际消费电子博览会在青岛启幕，宇树、乐聚等将展示从导览到康养的实用化进展。业内判断中国具身智能正从"技术验证"迈向"价值兑现"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>行业拐点从"谁能炫技"转为"谁能进工厂/仓库/康养真实干活"，核心变量是订单、成本、场景三件事同时成立。区域集群（深圳、成都、青岛、天津、郑州）加速成形，整机物料成本年均下降约 7%，供应链降本曲线正在把机器人推向真实订单。对关注具身智能商业化与供应链机会的人，应重点跟踪"真实场景交付量"而非单机表演参数——这是量产临界点的真正信号。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260901A0B33D00" target="_blank">腾讯新闻</a> · <a href="https://www.sohu.com/a/1070065861_122907382" target="_blank">搜狐</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Figure 03 工业可靠性里程碑：3 台连续作业 200 小时，BotQ 工厂效率 5 个月提升 24 倍</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">Figure</span>
+      <span class="tag pink">工业部署</span>
+    </div>
+    <p>Figure AI 的 F.03 机器人完成工业可靠性验证：3 台机器人进行包裹分拣人机对决直播，连续作业 200 小时、累计处理约 24.96 万个包裹、平均每分钟近 21 件、全程无故障停机。其 BotQ 工厂生产效率已达 5 个月前的 24 倍，每小时即可生产一台 F.03 机器人，整机线末直通率超 80%，电池 Pack 良率 99.3%。商业侧已签约 Catalyst Brands（JCPenney 等母公司）进入零售物流部署，BMW 无人工厂部署扩容覆盖 3 万余辆汽车生产。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"200 小时无故障 + 每小时下线一台"把人形机器人从演示品拉到工业设备量级，验证了"量产—数据—进化"飞轮的可行性。对具身智能赛道，Figure 用真实产线运行时长与处理零部件数定义竞争壁垒，倒逼中美企业比拼的是"谁在真实场景稳定运行更久、积累数据更丰富"，而非 PPT 产能。这也给国内厂商的 B 端落地提供了对标样板——工业可靠性才是规模化的真正门票。</div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1070065861_122907382" target="_blank">搜狐·兆东宇观</a> · <a href="https://ep.ycwb.com/epaper/xkb/html/2026-08/24/content_1514_763461.htm" target="_blank">羊城晚报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：GitHub Blog · OpenAI · 网易科技 · 腾讯新闻 · 搜狐 · 羊城晚报 · 新浪财经 · Gate 博客 · hiperwire · AITNT · AI 无涯日报</p>
+  </footer>
+
+</div>
+</body>
+</html>
