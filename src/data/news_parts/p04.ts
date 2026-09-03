@@ -1,6 +1,42 @@
 // 自动生成的分片（4），请勿手动修改
 export const p4 = [
   {
+    id: 'ai-news-daily-2026-07-16',
+    title: 'AI 每日动态 (2026-07-16)',
+    summary: '1. Apple Intelligence 获准入华，选择阿里 Qwen 合作而非自研本地化 2. Codex 正式并入 ChatGPT 桌面端，合并后周活突破 800 万 3. OpenAI 发布 Codex Micro 物理控制键盘，A...',
+    date: '2026-07-16',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月16日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Apple Intelligence 获准入华，选择阿里 Qwen 合作而非自研本地化
+
+
+### 2. Codex 正式并入 ChatGPT 桌面端，合并后周活突破 800 万
+
+
+### 3. OpenAI 发布 Codex Micro 物理控制键盘，AI 交互向硬件延伸
+
+
+### 4. Claude Code 曝出"普通 Markdown 文件即可诱导攻击"漏洞
+
+
+### 5. 腾讯发布两款具身智能基座模型 Hy-Embodied-VLM / RxBrain 并开源
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-15',
     title: 'AI 每日动态 (2026-07-15)',
     summary: '1. WAIC 2026 本周开幕：具身智能首次升格为核心赛道，200+ 企业同台竞技 2. Claude Fable 5 一夜破解卡半年的弦论难题，AI 自写代码验证预测，东大教授称"比我还懂代数拓扑" 3. Straiker 安全报告：...',
@@ -323,42 +359,6 @@ export const p4 = [
 
 
 ### 5. 星动纪元完成新一轮 10 亿元融资：国资组团入场，物流场景已常态化 7×24 小时运营
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-06',
-    title: 'AI 每日动态 (2026-07-06)',
-    summary: '1. Anthropic 启动自研 AI 芯片，挖角 OpenAI 造芯老兵，密谈三星 2nm 工艺 2. Meta 筹建云算力业务对外出售 AI 算力，引发算力市场格局震动 3. Cursor 推出移动端 AI 编程应用 Cursor M...',
-    date: '2026-07-06',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月6日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Anthropic 启动自研 AI 芯片，挖角 OpenAI 造芯老兵，密谈三星 2nm 工艺
-
-
-### 2. Meta 筹建云算力业务对外出售 AI 算力，引发算力市场格局震动
-
-
-### 3. Cursor 推出移动端 AI 编程应用 Cursor Mobile，手机操控编码智能体成新趋势
-
-
-### 4. OpenAI 首款硬件 Codex Micro 可编程宏键盘 7 月 15 日发售，深度绑定 Codex 编码工具
-
-
-### 5. 南京具身智能机器人产业展 7 月 10-12 日即将开幕，450+ 企业参展构建完整生态链
 
 
 ---

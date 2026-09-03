@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-03</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 03 · 周四</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Meta 发布迄今最强模型 Muse Spark 1.3，编程能力对标 Claude Fable 5.1</h3>
+    <div class="meta">
+      <span class="tag">大模型</span>
+      <span class="tag green">Meta</span>
+      <span class="tag pink">编程能力</span>
+    </div>
+    <p>9 月 3 日，Meta 发布迄今最强大模型 Muse Spark 1.3，首席 AI 官 Alexandr Wang 称其在编程能力上"优于"OpenAI 的 GPT-5.6 Sol，与 Anthropic 的 Claude Fable 5.1"旗鼓相当"。新模型运行效率提升、所需 token 减少 25%，代理（Agent）能力显著增强，即日起向开发者开放付费访问并推送至 Instagram、Facebook 及 Meta AI。更受期待的大型模型"Watermelon（西瓜）"仍按计划推进。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是头部厂商在"编程 + Agent"这一高价值战场的最新直接对标——Meta 首次把编程能力摆到与 Claude Fable 5.1 同档的位置，且强调 token 成本降 25%，指向"性能追平 + 推理更省"的商业化打法。对 AI Coding 开发者而言，多一个高性价比的闭源 API 选项，意味着编码智能体的单位成本有望继续下探；同时也说明大模型竞争已从纯 benchmark 转向"编程实测 + 代理可靠性"的真实场景比拼。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L5SG20QQ05568W0A.html" target="_blank">网易 / 新浪财经</a> · <a href="https://www.toutiao.com/article/7681039953878434350/" target="_blank">今日头条 / 华尔街见闻</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>阿里 Qwen3.8-Max 更新，前端代码生成评测登顶全球第一梯队</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">阿里 / Qwen</span>
+      <span class="tag pink">前端编程</span>
+    </div>
+    <p>9 月 2 日，阿里更新旗舰模型 Qwen3.8-Max，在完成编程（Coding）与办公（Cowork）专项后训练后性能显著提升，在前端代码生成评测中登顶。国产大模型在代码生成这一高价值场景首次站上全球第一梯队，开发者工具与 IDE 集成随之跟进。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>前端代码生成是开发者日常最高频、最易感知的 AI Coding 场景，Qwen3.8-Max 登顶意味着国产开源/开放模型在"能直接用"的工程能力上已具备全球竞争力。对国内 SRE/DevOps 与全栈团队，这意味着可基于自主可控模型搭建内部编码智能体、降低对海外闭源 API 的依赖，也利好本地化 IDE 插件与代码助手的体验升级。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260902A05SID00" target="_blank">潮新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>AI 编程独角兽 Cognition 新轮融资近 10 亿美元，估值飙升至 470 亿美元</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cognition</span>
+      <span class="tag pink">融资</span>
+    </div>
+    <p>据彭博报道，AI 编程公司 Cognition AI 接近完成新一轮约 10 亿美元融资，估值从 260 亿美元跃升至约 470 亿美元，认购需求近 100 亿美元。仅三个月估值近乎翻倍，反映资本市场对 AI 工程化工具的强烈预期，也凸显编程智能体赛道的估值竞赛正在加速。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Cognition（Cursor 的强力竞争对手，旗下 Devin 等编码 Agent）估值三个月近乎翻倍，说明资本市场押注的不是"辅助写代码"，而是"能独立交付软件任务的 Agent"。这对求职与职业方向有指向意义：SRE/DevOps 中"编码 + 运维自动化"的 Agent 化岗位价值正在被重估，掌握 Agent 编排与工程治理能力的工程师更稀缺、更贵。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260902A04WTP00" target="_blank">华尔街见闻</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>中国具身智能 Tier 1 产业联盟成立，20 余家产业链企业共建协同生态</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业联盟</span>
+      <span class="tag pink">供应链</span>
+    </div>
+    <p>9 月 2 日，中国具身智能 Tier 1 产业联盟正式成立，由星源智与灵心巧手发起，联合奥比中光、禾赛科技、讯飞机器人等 20 余家产业链企业。联盟覆盖灵巧手、激光雷达、机械臂等关键环节，聚焦跨硬件适配、跨本体部署与场景验证，意在推动产业链从单点能力走向系统协同。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能从"单打独斗做整机"转向"供应链标准化协同"的关键信号。Tier 1 联盟把灵巧手、激光雷达、机械臂等核心零部件供应商拉到同一张协同网里，目标直指"跨硬件适配 + 跨本体部署"——这正是规模化降本的前提。对关注机器人赛道投资与供应链入局的人，灵巧手、3D 视觉、力矩传感器三大子赛道的标准化进展最值得跟踪。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260902A0BQBG00" target="_blank">经观快讯</a></div>
+  </div>
+
+  <div class="card">
+    <h3>清华 AIR 等提出自进化具身模型 Zeva，冻结构模型累计成功率 26%→73%</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">清华 AIR</span>
+      <span class="tag pink">自进化</span>
+    </div>
+    <p>清华 AIR 与 Domain Shift 联合提出具身模型 Zeva，不改变参数即可从交互中积累因果知识实现自进化，将冻结模型累计成功率从 26% 提升至 73%。在真实化学实验中，单次人类示范即可学会新操作，把具身进化从"改参数"转向"积上下文"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>主流具身模型依赖反复微调参数，成本高、泛化弱；Zeva 走"冻结构 + 积上下文"路线，单次示范即可学会新操作，更接近"机器人能持续从现场经验学习"的实用形态。若可复现，将大幅降低真实场景部署的二次训练门槛，对工业/实验室等长尾任务落地是直接利好，也指明了具身大模型"数据闭环"的新范式。
+    </div>
+    <div class="source">来源：<a href="https://www.qbitai.com/2026/09/482337.html" target="_blank">QbitAI</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：华尔街见闻 · 潮新闻 · 新浪财经 · 网易 · 今日头条 · 经观快讯 · QbitAI · AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>

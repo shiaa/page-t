@@ -1,6 +1,42 @@
 // 自动生成的分片（3），请勿手动修改
 export const p3 = [
   {
+    id: 'ai-news-daily-2026-07-28',
+    title: 'AI 每日动态 (2026-07-28)',
+    summary: '1. 月之暗面开源 Kimi K3：2.8 万亿参数 MoE 模型登顶 AI 代码工具榜单，马斯克点赞 2. MCP 2026 07 28 规范正式定稿：协议核心无状态化，最大规模修订重塑 Agent 工具链 3. Claude Code ...',
+    date: '2026-07-28',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月28日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 月之暗面开源 Kimi K3：2.8 万亿参数 MoE 模型登顶 AI 代码工具榜单，马斯克点赞
+
+
+### 2. MCP 2026-07-28 规范正式定稿：协议核心无状态化，最大规模修订重塑 Agent 工具链
+
+
+### 3. Claude Code 8 天连发 8 版：2.1.210 修复 worktree 隔离数据安全漏洞，2.1.215 带来二次性能优化
+
+
+### 4. τ0-VLA 让具身智能迈向长程任务时代：上海创智学院 × 智元机器人，长程任务成功率从 27.5% 跃升至 45%
+
+
+### 5. 人民日报头版关注人形机器人规模化量产：年产能万台工厂落成，行业进入"交付"拐点
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-25',
     title: 'AI 每日动态 (2026-07-25)',
     summary: '1. Anthropic 发布 Claude Opus 5：性能逼近旗舰 Fable 5，价格只要一半 2. 腾讯云发布 CodeBuddy NPC：AI 从「辅助写代码」进化为「独立交付 PR」 3. 上下文工程（Context Engi...',
@@ -314,42 +350,6 @@ export const p3 = [
 
 
 ### 5. 小米开源 380 亿参数具身生成模型 Xiaomi-Robotics-U0，WorldArena 评测全球第一，工厂上件成功率 98%
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-16',
-    title: 'AI 每日动态 (2026-07-16)',
-    summary: '1. Apple Intelligence 获准入华，选择阿里 Qwen 合作而非自研本地化 2. Codex 正式并入 ChatGPT 桌面端，合并后周活突破 800 万 3. OpenAI 发布 Codex Micro 物理控制键盘，A...',
-    date: '2026-07-16',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月16日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Apple Intelligence 获准入华，选择阿里 Qwen 合作而非自研本地化
-
-
-### 2. Codex 正式并入 ChatGPT 桌面端，合并后周活突破 800 万
-
-
-### 3. OpenAI 发布 Codex Micro 物理控制键盘，AI 交互向硬件延伸
-
-
-### 4. Claude Code 曝出"普通 Markdown 文件即可诱导攻击"漏洞
-
-
-### 5. 腾讯发布两款具身智能基座模型 Hy-Embodied-VLM / RxBrain 并开源
 
 
 ---
