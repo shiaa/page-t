@@ -1,6 +1,42 @@
 // 自动生成的分片（5），请勿手动修改
 export const p5 = [
   {
+    id: 'ai-news-daily-2026-07-07',
+    title: 'AI 每日动态 (2026-07-07)',
+    summary: '1. 腾讯混元 Hy3 正式发布：Agent 能力与产品体验跃升，WorkBuddy/CodeBuddy 已接入 2. DeepSeek 生态补上编程 Agent：Deep Code 开源终端助手适配 DeepSeek V4 3. 美团 L...',
+    date: '2026-07-07',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月7日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 腾讯混元 Hy3 正式发布：Agent 能力与产品体验跃升，WorkBuddy/CodeBuddy 已接入
+
+
+### 2. DeepSeek 生态补上编程 Agent：Deep Code 开源终端助手适配 DeepSeek-V4
+
+
+### 3. 美团 LongCat-2.0 正式开源：1.6 万亿参数 MoE，华为昇腾/摩尔线程/沐曦股份 Day-0 适配
+
+
+### 4. 李飞飞团队发布 SimFoundry：一段真实视频即可生成无限机器人训练场
+
+
+### 5. 星动纪元完成新一轮 10 亿元融资：国资组团入场，物流场景已常态化 7×24 小时运营
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-06',
     title: 'AI 每日动态 (2026-07-06)',
     summary: '1. Anthropic 启动自研 AI 芯片，挖角 OpenAI 造芯老兵，密谈三星 2nm 工艺 2. Meta 筹建云算力业务对外出售 AI 算力，引发算力市场格局震动 3. Cursor 推出移动端 AI 编程应用 Cursor M...',
@@ -447,60 +483,6 @@ export const p5 = [
 
 
 ### 2. 5Figure 03 量产 24 倍跃升——从 1 台/天到 1 台/小时，120 天累计 350 台 + 9000 执行器，具身智能进入工业量产拐点
-
-💡 **值得关注**: 💡 为什么重要
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-06-25',
-    title: 'AI 每日动态 (2026-06-25)',
-    summary: '1. 1Sakana AI 发布 Fugu——不是"更大模型"，而是"调度最优模型"：多智能体编排系统颠覆 AI Coding 竞争路线 💡 值得关注 : 💡 为什么重要 AI Coding 方向 1. 2三星全工作流程部署 ChatGPT...',
-    date: '2026-06-25',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年6月25日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 行业头条
-
-### 1. 1Sakana AI 发布 Fugu——不是"更大模型"，而是"调度最优模型"：多智能体编排系统颠覆 AI Coding 竞争路线
-
-💡 **值得关注**: 💡 为什么重要
-
-
----
-
-## AI Coding 方向
-
-### 1. 2三星全工作流程部署 ChatGPT Enterprise + Codex——跨四大部门规模化 AI Coding 落地，企业级 AI 编程工具从"试用"走向"标配"
-
-💡 **值得关注**: 💡 为什么重要
-
-
-### 2. 3Figma Config 2026 发布 AI 创作工具系列——动态图形 + 代码图层 + 着色器工具，设计与开发的边界加速消融
-
-💡 **值得关注**: 💡 为什么重要
-
-
----
-
-## 具身智能方向
-
-### 1. 4NVIDIA 发布 Halos for Robotics——业界首个全栈物理 AI 安全系统：从汽车安全到机器人安全，人机共存有了统一框架
-
-💡 **值得关注**: 💡 为什么重要
-
-
-### 2. 5华为盘古 2.0 开源倒计时 5 天——505B MoE + 7 大组件 6 月 30 日起释放，昇腾亲和 + 鸿蒙适配，国产产业 AI 底座即将成形
 
 💡 **值得关注**: 💡 为什么重要
 

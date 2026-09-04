@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-04',
+    title: 'AI 每日动态 (2026-09-04)',
+    summary: '1. OpenAI 发布 GPT 6 Astra：10 万 GPU 训练，宣称"欢迎进入 AGI 时代" 2. Google 发布 Gemini 3.8 Flash 与 Flash Cyber，强化软件工程与 Agent 3. Meta 将...',
+    date: '2026-09-04',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月4日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 发布 GPT-6 Astra：10 万 GPU 训练，宣称"欢迎进入 AGI 时代"
+
+
+### 2. Google 发布 Gemini 3.8 Flash 与 Flash Cyber，强化软件工程与 Agent
+
+
+### 3. Meta 将 Muse Code 推出 GA，加入多智能体工作流与开发者 SDK
+
+
+### 4. 车企跨界造"人"成战略浪潮：小鹏 IRON 完成超 9 亿美元融资
+
+
+### 5. 人形机器人从"展台"到"赛场"：上半年国内具身融资 935 亿元，同比增 5 倍
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-03',
     title: 'AI 每日动态 (2026-09-03)',
     summary: '1. Meta 发布迄今最强模型 Muse Spark 1.3，编程能力对标 Claude Fable 5.1 2. 阿里 Qwen3.8 Max 更新，前端代码生成评测登顶全球第一梯队 3. AI 编程独角兽 Cognition 新轮融资...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 加速进化 Booster T2：80 台全自主人形机器人方阵 + 7v7 全自主足球赛
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-25',
-    title: 'AI 每日动态 (2026-08-25)',
-    summary: '1. 国产 AI 编程工具冲进全球第一梯队，中国模型首次登顶代码榜 2. Claude Code 登顶 Agent Harness 排行；Cloudflare 为 Agent 造浏览器、钱包与支付协议 3. AI 代码安全与合规成核心关卡：...',
-    date: '2026-08-25',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月25日 · 星期二
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 国产 AI 编程工具冲进全球第一梯队，中国模型首次登顶代码榜
-
-
-### 2. Claude Code 登顶 Agent Harness 排行；Cloudflare 为 Agent 造浏览器、钱包与支付协议
-
-
-### 3. AI 代码安全与合规成核心关卡：AI 生成漏洞数为人工 2.74 倍
-
-
-### 4. 50 台量产机器人国家速滑馆自主决策跑障碍赛；天工 Omni "捂脸跑"夺冠
-
-
-### 5. WRC 2026 闭幕，"北京机域"蓝图发布：上半年中国人形机器人出货超 4 万台、全球占 97%
 
 
 ---
