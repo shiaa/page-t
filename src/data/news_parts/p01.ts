@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-08-26',
+    title: 'AI 每日动态 (2026-08-26)',
+    summary: '1. 国产 AI 编程工具 8 月密集上新，中国开源模型全球下载占比 41% 首超美国 2. SpaceX 600 亿美元全股票收购 Cursor 正式生效 3. DeepSeek V4 Pro 转正 + Harness 开源，AI 编程叙...',
+    date: '2026-08-26',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月26日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 国产 AI 编程工具 8 月密集上新，中国开源模型全球下载占比 41% 首超美国
+
+
+### 2. SpaceX 600 亿美元全股票收购 Cursor 正式生效
+
+
+### 3. DeepSeek V4 Pro 转正 + Harness 开源，AI 编程叙事转向"调度多 Bot"
+
+
+### 4. 一周两场世界级机器人盛会，行业从"躯干时代"迈入"大脑时代"
+
+
+### 5. 加速进化 Booster T2：80 台全自主人形机器人方阵 + 7v7 全自主足球赛
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-25',
     title: 'AI 每日动态 (2026-08-25)',
     summary: '1. 国产 AI 编程工具冲进全球第一梯队，中国模型首次登顶代码榜 2. Claude Code 登顶 Agent Harness 排行；Cloudflare 为 Agent 造浏览器、钱包与支付协议 3. AI 代码安全与合规成核心关卡：...',
@@ -317,42 +353,6 @@ export const p1 = [
 
 
 ### 5. 外交部发言人毛宁向全球推介：龙华"我能具身"人形机器人登广州邮政快递分拣产线
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-10',
-    title: 'AI 每日动态 (2026-08-10)',
-    summary: '1. OpenAI 首次因安全风险暂停自研模型 Astra，智能体编程能力逼近"关键级"红线 2. Meta 发布首款 AI 编程智能体 Muse Code，主打低价与"崩溃恢复"挑战 Claude Code 与 Codex 3. 国产大模...',
-    date: '2026-08-10',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月10日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 首次因安全风险暂停自研模型 Astra，智能体编程能力逼近"关键级"红线
-
-
-### 2. Meta 发布首款 AI 编程智能体 Muse Code，主打低价与"崩溃恢复"挑战 Claude Code 与 Codex
-
-
-### 3. 国产大模型霸占全球调用量前 10 中 7 席，DeepSeek-V4-Flash 登顶后启动涨价
-
-
-### 4. 宇树科技今日科创板申购，A股"人形机器人第一股"正式登场，募资 61 亿元
-
-
-### 5. Figure 03 人形机器人自主攀爬梯子，移动操作耦合首次完整实现
 
 
 ---
