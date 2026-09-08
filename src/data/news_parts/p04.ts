@@ -1,6 +1,39 @@
 // 自动生成的分片（4），请勿手动修改
 export const p4 = [
   {
+    id: 'ai-news-daily-2026-07-19',
+    title: 'AI 每日动态 (2026-07-19)',
+    summary: '1. Bun 创始人用 Claude Code 11 天完成百万行代码 Zig→Rust 迁移，AI 大规模工程重构落地 2. Kimi K3 发布：2.8 万亿参数最大开源模型，编程能力超越 Claude Opus 4.8 3. GitH...',
+    date: '2026-07-19',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年7月19日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Bun 创始人用 Claude Code 11 天完成百万行代码 Zig→Rust 迁移，AI 大规模工程重构落地
+
+
+### 2. Kimi K3 发布：2.8 万亿参数最大开源模型，编程能力超越 Claude Opus 4.8
+
+
+### 3. GitHub / Anthropic / OpenAI 同周收紧 AI 编程 Agent 安全护栏，供应链攻击成催化剂
+
+
+### 4. 2026 WAIC：具身智能从"炫技"走向"打工"，复旦首发视触融合大模型，腾讯发布三大具身基座
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-07-18',
     title: 'AI 每日动态 (2026-07-18)',
     summary: '1. WAIC 2026 盛大开幕：习近平主席发表主旨讲话，Kimi K3 引爆全球科技股重估 2. 谷歌 Gemini 3.5 Pro 因编程能力不达标推迟发布，暴露旗舰模型工程化瓶颈 3. Agnes AI 发布永久免费的 AI 编程工...',
@@ -320,45 +353,6 @@ export const p4 = [
 
 
 ### 5. 工信部：今年我国人形机器人整机产量有望突破 10 万台，规上工业企业 AI 应用普及率超 30%
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-09',
-    title: 'AI 每日动态 (2026-07-09)',
-    summary: '1. OpenAI GPT 5.6 今日全球发布：Sol/Terra/Luna 三版本正式开放，编程屠榜、定价分层 2. GAIC 全球人工智能大会北京峰会 7 月 8 9 日举行，AI 产业链上下游共议落地 3. 豆包 2.1 Pro C...',
-    date: '2026-07-09',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月9日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI GPT-5.6 今日全球发布：Sol/Terra/Luna 三版本正式开放，编程屠榜、定价分层
-
-
-### 2. GAIC 全球人工智能大会北京峰会 7 月 8-9 日举行，AI 产业链上下游共议落地
-
-
-### 3. 豆包 2.1 Pro Coding 能力跨越"质变点"：编程评测超越 Claude，日均 Token 调用突破 180 万亿
-
-
-### 4. OpenAI Codex Micro 可编程宏键盘 7 月 15 日发售，AI Coding 从软件走向硬件入口
-
-
-### 5. 宇树科技科创板 IPO 注册生效：104 天创纪录过会，A 股"具身智能第一股"即将挂牌
-
-
-### 6. 2026 世界机器人大会 8 月 19-23 日北京举办：主题从"更智慧"转向"人机共生，产需共融"
 
 
 ---

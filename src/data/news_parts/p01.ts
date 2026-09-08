@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-08-27',
+    title: 'AI 每日动态 (2026-08-27)',
+    summary: '1. 英伟达首秀 Vera Rubin NVL72 基准：DeepSeek V4 Pro 智能体编程吞吐提升 30 倍 2. AWS 为 OpenSearch 推出 MCP 应用，把 Agent 观测结果直接带回 IDE 3. JetBra...',
+    date: '2026-08-27',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月27日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 英伟达首秀 Vera Rubin NVL72 基准：DeepSeek-V4-Pro 智能体编程吞吐提升 30 倍
+
+
+### 2. AWS 为 OpenSearch 推出 MCP 应用，把 Agent 观测结果直接带回 IDE
+
+
+### 3. JetBrains 2026 AI 编码调查：Claude Code 反超 GitHub Copilot 登顶，90% 程序员已用上 Agent
+
+
+### 4. 原力灵机 DM0.5 登顶 RoboDojo，具身模型全开源
+
+
+### 5. 合肥开张四家具身智能机器人小店，轮式人形"营业员"上岗
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-26',
     title: 'AI 每日动态 (2026-08-26)',
     summary: '1. 国产 AI 编程工具 8 月密集上新，中国开源模型全球下载占比 41% 首超美国 2. SpaceX 600 亿美元全股票收购 Cursor 正式生效 3. DeepSeek V4 Pro 转正 + Harness 开源，AI 编程叙...',
@@ -317,42 +353,6 @@ export const p1 = [
 
 
 ### 5. 蚂蚁集团领投戴盟机器人数亿元轮，全球首个"物理交互脑"Daimon-TWM 将触觉从事后反馈推向事前推演
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-12',
-    title: 'AI 每日动态 (2026-08-12)',
-    summary: '1. Anthropic 宣布锁死 Claude Sonnet 5 优惠价，新一代 Sonnet 5.5"代码 Fennec"参数泄露：200 万 token 上下文 2. GitHub Copilot 八月密集更新：Code Review...',
-    date: '2026-08-12',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月12日 · 星期三
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Anthropic 宣布锁死 Claude Sonnet 5 优惠价，新一代 Sonnet 5.5"代码 Fennec"参数泄露：200 万 token 上下文
-
-
-### 2. GitHub Copilot 八月密集更新：Code Review 力度档位正式 GA，Cloud Agent 引入 reasoning level 控制
-
-
-### 3. 马斯克推出"Grok Bot"数字同事，绑定 Cursor Ultra / Teams 订阅可直接派发实际工作任务
-
-
-### 4. 宇树科技中签号今晚出炉，0.0181% 中签率创科创板历史新低，今日缴款日万亿赛道等待估值锚定
-
-
-### 5. 外交部发言人毛宁向全球推介：龙华"我能具身"人形机器人登广州邮政快递分拣产线
 
 
 ---

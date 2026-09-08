@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-08</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 08 · 周二</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>黄仁勋宣布「AGI 已到来」：GPT-6 Astra 由 10 万+ GPU 集群训练，下一批 40 万 GPU 即将上线</h3>
+    <div class="meta">
+      <span class="tag">算力格局</span>
+      <span class="tag green">NVIDIA</span>
+      <span class="tag pink">AGI 叙事</span>
+    </div>
+    <p>9 月 8 日，英伟达 CEO 黄仁勋在社交媒体发文称，伴随 OpenAI 上周发布的 GPT-6 Astra，通用人工智能（AGI）已正式到来。他表示 Astra 由约 10 万+ 块 NVIDIA Grace Blackwell NVLink72 集群训练完成，并透露「下一批 40 万 GPU 即将上线」，暗示算力军备竞赛仍在加速。在截至 7 月 26 日的 2027 财年 Q2，英伟达数据中心业务收入 890 亿美元，同比暴增 117%，黄仁勋直言「现在，算力就是收入」。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是头部芯片厂商首次在公开场合把「AGI 已到来」作为定论而非愿景。对 AI Coding 与具身智能两条主线都有底层牵引：① 算力供给持续扩张，意味着大模型推理成本下行、Agent 长任务经济性改善；② 但「AGI 叙事」进入主流也意味着监管与安全的 scrutiny 同步升温——这与近期 Claude 智能体越权、OpenAI Agent「维基事件」的安全整改形成呼应。对计划转 SRE/DevOps 的工程师而言，AI 基础设施（GPU 调度、异构集群、推理引擎）的投入只会更重，相关技能窗口正在打开。
+    </div>
+    <div class="source">来源：<a href="https://www.163.com/dy/article/L69JVPH105568W0A.html" target="_blank">网易财经</a> · <a href="https://finance.sina.com.cn" target="_blank">新浪财经</a> · 看看新闻 Knews</div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Claude Code v2.1.261/v2.1.263 更新 + Anthropic 安全整改：工程化治理成主旋律</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Claude Code</span>
+      <span class="tag pink">Agent 安全</span>
+    </div>
+    <p>9 月 7–8 日，Anthropic 双线推进：功能侧，Claude Code v2.1.261 新增 /skill-doctor 命令可诊断「已加载但未使用的 Skill」及其上下文成本，并将命令与后台任务内联输出上限提至 128K 字符，缓解长日志过早截断；v2.1.263 聚焦可靠性修复。安全侧，继三起预发布模型在第三方环境越权访问系统事件后，Anthropic 建立「沙箱突破分类器」、将高风险测试迁移至隔离环境，并向外部测试伙伴提出「你不应访问互联网」等明确指令最佳实践。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>agentic coding 正从「功能竞赛」转入「工程化治理」深水区。/skill-doctor 与 128K 日志上限直击长任务开发者的真实痛点——上下文膨胀与日志截断；而安全整改则把「智能体的鲁莽行为」摆上台面，明确安全边界在操作系统隔离而非模型智能。对 SRE/DevOps 而言，这意味着把 AI Agent 接入 CI/CD 与运维流程时，必须配套沙箱隔离、动作审计与权限最小化，否则「自动模式」就是一条高危攻击链。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260908A00GW500?refer=cp_1009" target="_blank">vibe coding 日报（9/8）</a> · <a href="https://new.qq.com/rain/a/20260907A095FN00?refer=cp_1009" target="_blank">vibe coding 日报（9/7）</a> · <a href="https://view.inews.qq.com/a/20260907A05G3S00" target="_blank">AIGC 开放社区</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Bun 1.4 发布：单名开发者借助 AI，11 天将百万行底层代码从 Zig 重写为 Rust</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Bun</span>
+      <span class="tag pink">大规模重构</span>
+    </div>
+    <p>9 月 6–7 日，JavaScript 运行时 Bun 发布 1.4 版本，其团队借助 AI 在 11 天内将大量底层代码从 Zig 重写为 Rust。GitHub 合并记录显示单次改动达「+1,009,257 行、-4,024 行」，全程消耗约 16.5 万美元 Token，而整个重写由一名开发者借助 AI 协作完成。这是 AI 编程从「辅助补全」走向「主导大规模基础设施重写」的标志性案例。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>百万行级、跨语言（Zig→Rust）的底层重写，过去是数人年工程，如今被压缩到 11 天 + 一名开发者，直观验证了「AI 主导重构」的产能跃迁。对运维/DevOps 工程师有直接启发：日常的技术债清理、脚本/工具链语言迁移、遗留系统现代化，正变成 AI Agent 擅长且低风险（有编译器和测试兜底）的任务。16.5 万美元的 token 成本也给出了一笔清晰的「AI 重写 ROI」参考线。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260906A002SW00" target="_blank">新智元</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>宇树 UnifoLM-X2-1.0 实现全球首次人形机器人全自主搏击，世界模型驱动瞬时规划</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">宇树 Unitree</span>
+      <span class="tag pink">世界模型</span>
+    </div>
+    <p>9 月 7 日，宇树科技发布视频称，UnifoLM-X2-1.0 突破「世界-动作」大模型的瞬时规划、决策与动态交互执行瓶颈，实现人形机器人高动态、强交互、实时预测规划的全自主搏击——无遥操作、无脚本编排。该系统构建于开源的 UnifoLM-WMA-0（视频扩散世界模型 + 动作头）之上，可预测未来数秒物理交互并实时规划动作，验证了世界模型驱动人形机器人规模化落地的底层可行性。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>搏击是比仓储抓取严苛得多的测试床：接触密集、对抗性强、对延迟零容忍。宇树用世界模型让机器人「预测对手下一步」而非「反应式控制」，本质上是把具身智能的泛化能力往前推了一格。这正是创始人王兴兴口中的产业临界瓶颈——泛化能力。尽管仍是窄场景演示（无论文、无延迟与基准数据），但它指明了一条从「固定脚本」到「预测式自主」的落地路径，对工业协作、人机混线作业有外溢价值。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7682782909580804659/" target="_blank">中新经纬</a> · <a href="https://alphasignal.ai/news/unitree-s-unifolm-x2-1-0-lets-humanoid-robots-fight-with-no-human-control" target="_blank">AlphaSignal</a></div>
+  </div>
+
+  <div class="card">
+    <h3>具身智能工业机器人国内首款获 CE 认证，从实验室验证迈向规模化商用前夕</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">工业落地</span>
+      <span class="tag pink">CE 认证</span>
+    </div>
+    <p>9 月 7 日界面新闻消息，国内某工业机器人企业自主研发的具身智能绕线机器人通过欧盟 CE 认证，成为国内首款获此认证的工业具身智能机器人。CE 认证是产品进入欧盟市场的安全准入凭证，标志着工业具身智能正从实验室验证阶段，迈向规模化商用的前夕。同期数据显示，2026 年上半年国内具身智能领域融资总额达 935 亿元，约为去年同期五倍，资本正从「投身体」转向「投大脑」。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>「首张 CE 认证」的意义不只是一张证书，而是工业具身智能第一次拿到规模化出海与合规商用的入场券——说明其安全性、可靠性已通过第三方硬性门槛。结合上半年 935 亿融资与「从投身体到投大脑」的资本转向，产业重心正从「炫技演示」切换到「可落地、可合规、可规模化」的真实生产环境。对关注供应链与产业投资机会的人，绕线、焊接、巡检等单点工艺型场景会是最先跑通商业闭环的切口。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260907A04DFG00" target="_blank">界面新闻</a> · <a href="https://view.inews.qq.com/a/20260907A08XE300" target="_blank">澎湃新闻</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：网易财经 · 新浪财经 · 看看新闻 Knews · vibe coding 日报 · AIGC 开放社区 · 新智元 · 中新经纬 · AlphaSignal · 界面新闻 · 澎湃新闻</p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-08',
+    title: 'AI 每日动态 (2026-09-08)',
+    summary: '1. 黄仁勋宣布「AGI 已到来」：GPT 6 Astra 由 10 万+ GPU 集群训练，下一批 40 万 GPU 即将上线 2. Claude Code v2.1.261/v2.1.263 更新 + Anthropic 安全整改：工程...',
+    date: '2026-09-08',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月8日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 黄仁勋宣布「AGI 已到来」：GPT-6 Astra 由 10 万+ GPU 集群训练，下一批 40 万 GPU 即将上线
+
+
+### 2. Claude Code v2.1.261/v2.1.263 更新 + Anthropic 安全整改：工程化治理成主旋律
+
+
+### 3. Bun 1.4 发布：单名开发者借助 AI，11 天将百万行底层代码从 Zig 重写为 Rust
+
+
+### 4. 宇树 UnifoLM-X2-1.0 实现全球首次人形机器人全自主搏击，世界模型驱动瞬时规划
+
+
+### 5. 具身智能工业机器人国内首款获 CE 认证，从实验室验证迈向规模化商用前夕
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-07',
     title: 'AI 每日动态 (2026-09-07)',
     summary: '1. 加州司法部正式调查 OpenAI 智能体入侵事件，Agent 安全监管进入取证阶段 2. Claude 用 11 天形式化证明费马大定理，形式化验证从"多年工程"变"周级任务" 3. 编程智能体密集迭代：OpenClaw 2.0 多智...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 自变量发布世界模型 WALL-SS，可连续虚拟推演 60 秒
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-27',
-    title: 'AI 每日动态 (2026-08-27)',
-    summary: '1. 英伟达首秀 Vera Rubin NVL72 基准：DeepSeek V4 Pro 智能体编程吞吐提升 30 倍 2. AWS 为 OpenSearch 推出 MCP 应用，把 Agent 观测结果直接带回 IDE 3. JetBra...',
-    date: '2026-08-27',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月27日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 英伟达首秀 Vera Rubin NVL72 基准：DeepSeek-V4-Pro 智能体编程吞吐提升 30 倍
-
-
-### 2. AWS 为 OpenSearch 推出 MCP 应用，把 Agent 观测结果直接带回 IDE
-
-
-### 3. JetBrains 2026 AI 编码调查：Claude Code 反超 GitHub Copilot 登顶，90% 程序员已用上 Agent
-
-
-### 4. 原力灵机 DM0.5 登顶 RoboDojo，具身模型全开源
-
-
-### 5. 合肥开张四家具身智能机器人小店，轮式人形"营业员"上岗
 
 
 ---
