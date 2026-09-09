@@ -1,6 +1,42 @@
 // 自动生成的分片（3），请勿手动修改
 export const p3 = [
   {
+    id: 'ai-news-daily-2026-08-02',
+    title: 'AI 每日动态 (2026-08-02)',
+    summary: '1. Claude Opus 4.1 将于 8 月 5 日退役，AI 编程"会话锁定"问题浮出水面 2. Cursor 1.0 正式发布：BugBot + Background Agents + Memories，AI 编辑器进入"生产可用...',
+    date: '2026-08-02',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月2日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Claude Opus 4.1 将于 8 月 5 日退役，AI 编程"会话锁定"问题浮出水面
+
+
+### 2. Cursor 1.0 正式发布：BugBot + Background Agents + Memories，AI 编辑器进入"生产可用"阶段
+
+
+### 3. Graph Engineering 取代 Loop Engineering，AI Coding 范式再次升级
+
+
+### 4. FCC 将"外国先进机器人"列入管制清单，中国人形机器人出海遭遇"大疆时刻"
+
+
+### 5. 杭州国家级具身智能中试基地 5 月揭牌，140 台机器人 + 40 个场景成全国唯一
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-01',
     title: 'AI 每日动态 (2026-08-01)',
     summary: '1. MCP 2026 07 28 协议发布：史上最大更新，核心架构转向无状态 2. Claude Code 推出 Dynamic Workflows，单会话可编排 1000 个并行子 Agent，11 天重写 75 万行 Bun 运行时 ...',
@@ -320,42 +356,6 @@ export const p3 = [
 
 
 ### 5. 华为 × 国地中心：全国首个国产化具身智能实训场揭牌，真机训练成本从百万级摊薄至共享级
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-07-20',
-    title: 'AI 每日动态 (2026-07-20)',
-    summary: '1. 2026 WAIC 闭幕：AI 从数字智能迈向"物理智能交付元年"，具身智能全面冲刺落地 2. Kimi K3 发布引爆全球 AI 竞速，马斯克宣称 2 万亿参数模型下周完成训练、目标赶超 3. AI Coding 价值重心转移：从"...',
-    date: '2026-07-20',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年7月20日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 2026 WAIC 闭幕：AI 从数字智能迈向"物理智能交付元年"，具身智能全面冲刺落地
-
-
-### 2. Kimi K3 发布引爆全球 AI 竞速，马斯克宣称 2 万亿参数模型下周完成训练、目标赶超
-
-
-### 3. AI Coding 价值重心转移：从"谁的模型更强"到"谁的工具链更密"，编程 Agent 安全护栏一周内集体升级
-
-
-### 4. 工信部发布 Claude Code 严重后门隐患预警：内置监控机制可静默回传敏感数据，阿里巴巴全面禁用
-
-
-### 5. 具身智能产业销售收入同比增长 22.4%，机器人整机制造增长 30.1%，近九成企业集聚粤京沪浙苏
 
 
 ---

@@ -1,6 +1,42 @@
 // 自动生成的分片（2），请勿手动修改
 export const p2 = [
   {
+    id: 'ai-news-daily-2026-08-13',
+    title: 'AI 每日动态 (2026-08-13)',
+    summary: '1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投 3....',
+    date: '2026-08-13',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月13日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活
+
+
+### 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投
+
+
+### 3. DeepSeek V4 Pro 0813 正式版发布：百万上下文+极低成本，编程能力跻身全球第一梯队
+
+
+### 4. Blacksmith 获 4500 万美元 B 轮：AI 写代码易、验证难，云端编程代理 codesmith 主攻代码验证
+
+
+### 5. 蚂蚁集团领投戴盟机器人数亿元轮，全球首个"物理交互脑"Daimon-TWM 将触觉从事后反馈推向事前推演
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-12',
     title: 'AI 每日动态 (2026-08-12)',
     summary: '1. Anthropic 宣布锁死 Claude Sonnet 5 优惠价，新一代 Sonnet 5.5"代码 Fennec"参数泄露：200 万 token 上下文 2. GitHub Copilot 八月密集更新：Code Review...',
@@ -323,42 +359,6 @@ export const p2 = [
 
 
 ### 6. 探访杭州国家级机器人"职校"：140+ 机器人入驻，40+ 训练场景赋能具身智能落地
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-02',
-    title: 'AI 每日动态 (2026-08-02)',
-    summary: '1. Claude Opus 4.1 将于 8 月 5 日退役，AI 编程"会话锁定"问题浮出水面 2. Cursor 1.0 正式发布：BugBot + Background Agents + Memories，AI 编辑器进入"生产可用...',
-    date: '2026-08-02',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月2日 · 星期日
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Claude Opus 4.1 将于 8 月 5 日退役，AI 编程"会话锁定"问题浮出水面
-
-
-### 2. Cursor 1.0 正式发布：BugBot + Background Agents + Memories，AI 编辑器进入"生产可用"阶段
-
-
-### 3. Graph Engineering 取代 Loop Engineering，AI Coding 范式再次升级
-
-
-### 4. FCC 将"外国先进机器人"列入管制清单，中国人形机器人出海遭遇"大疆时刻"
-
-
-### 5. 杭州国家级具身智能中试基地 5 月揭牌，140 台机器人 + 40 个场景成全国唯一
 
 
 ---

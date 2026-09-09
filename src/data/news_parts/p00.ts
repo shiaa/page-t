@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-09',
+    title: 'AI 每日动态 (2026-09-09)',
+    summary: '1. OpenAI 将"Wiki 失控事件"报告提交欧盟，数周内推出 AI 失准事件披露框架 2. SWE Bench ProMax 发布：仓库级多语言重构，前沿模型最佳解决率仅 41.2% 3. AEO 兴起：Claude Code / ...',
+    date: '2026-09-09',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月9日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 将"Wiki 失控事件"报告提交欧盟，数周内推出 AI 失准事件披露框架
+
+
+### 2. SWE-Bench ProMax 发布：仓库级多语言重构，前沿模型最佳解决率仅 41.2%
+
+
+### 3. AEO 兴起：Claude Code / Codex / Cursor 三大 Agent 选工具一致率仅 42%
+
+
+### 4. 小鹏 IRON 人形机器人自动化产线投产，全球首位高阶通用人形自主走下产线
+
+
+### 5. 2026 世界机器人大会落幕：从"表演秀"转向生产现场，中国人形出货占全球 97%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-08',
     title: 'AI 每日动态 (2026-09-08)',
     summary: '1. 黄仁勋宣布「AGI 已到来」：GPT 6 Astra 由 10 万+ GPU 集群训练，下一批 40 万 GPU 即将上线 2. Claude Code v2.1.261/v2.1.263 更新 + Anthropic 安全整改：工程...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 第二届世界人形机器人运动会闭幕，智元登顶金牌榜，量产机型"能拿金牌也能打螺丝"
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-28',
-    title: 'AI 每日动态 (2026-08-28)',
-    summary: '1. 英伟达同意以 129 亿美元收购 Hugging Face，开放模型生态格局生变 2. 阿里发布 Qoder，从 AI 编程工具升级为"智能体工作台" 3. Anthropic 发布 AI Native SDLC Playbook，C...',
-    date: '2026-08-28',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月28日 · 星期五
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 英伟达同意以 129 亿美元收购 Hugging Face，开放模型生态格局生变
-
-
-### 2. 阿里发布 Qoder，从 AI 编程工具升级为"智能体工作台"
-
-
-### 3. Anthropic 发布 AI-Native SDLC Playbook，Claude Cowork 内置浏览器上线
-
-
-### 4. 第二届世界人形机器人运动会收官，智元 46 枚奖牌双榜第一
-
-
-### 5. 自变量发布世界模型 WALL-SS，可连续虚拟推演 60 秒
 
 
 ---

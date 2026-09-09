@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-08-28',
+    title: 'AI 每日动态 (2026-08-28)',
+    summary: '1. 英伟达同意以 129 亿美元收购 Hugging Face，开放模型生态格局生变 2. 阿里发布 Qoder，从 AI 编程工具升级为"智能体工作台" 3. Anthropic 发布 AI Native SDLC Playbook，C...',
+    date: '2026-08-28',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年8月28日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 英伟达同意以 129 亿美元收购 Hugging Face，开放模型生态格局生变
+
+
+### 2. 阿里发布 Qoder，从 AI 编程工具升级为"智能体工作台"
+
+
+### 3. Anthropic 发布 AI-Native SDLC Playbook，Claude Cowork 内置浏览器上线
+
+
+### 4. 第二届世界人形机器人运动会收官，智元 46 枚奖牌双榜第一
+
+
+### 5. 自变量发布世界模型 WALL-SS，可连续虚拟推演 60 秒
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-08-27',
     title: 'AI 每日动态 (2026-08-27)',
     summary: '1. 英伟达首秀 Vera Rubin NVL72 基准：DeepSeek V4 Pro 智能体编程吞吐提升 30 倍 2. AWS 为 OpenSearch 推出 MCP 应用，把 Agent 观测结果直接带回 IDE 3. JetBra...',
@@ -317,42 +353,6 @@ export const p1 = [
 
 
 ### 5. 江西平板车间 8 台人形机器人整段接管质检，平均节拍 22 秒、成功率 99.9%
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-08-13',
-    title: 'AI 每日动态 (2026-08-13)',
-    summary: '1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投 3....',
-    date: '2026-08-13',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年8月13日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 马斯克整合 Cursor 首战：SpaceXAI 发布 Grok Bot，云端 AI 队友 7×24 小时端到端干活
-
-
-### 2. AI 编程创企 Lovable 完成 4 亿美元 C 轮，估值 7 个月翻倍至 133 亿美元，腾讯参投
-
-
-### 3. DeepSeek V4 Pro 0813 正式版发布：百万上下文+极低成本，编程能力跻身全球第一梯队
-
-
-### 4. Blacksmith 获 4500 万美元 B 轮：AI 写代码易、验证难，云端编程代理 codesmith 主攻代码验证
-
-
-### 5. 蚂蚁集团领投戴盟机器人数亿元轮，全球首个"物理交互脑"Daimon-TWM 将触觉从事后反馈推向事前推演
 
 
 ---
