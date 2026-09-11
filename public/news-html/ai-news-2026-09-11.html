@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-11</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 11 · 周五</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>OpenAI 推出 Agents API 公测版，将 Codex 底层代理架构向开发者开放</h3>
+    <div class="meta">
+      <span class="tag">Agent 基础设施</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">编程商业化</span>
+    </div>
+    <p>OpenAI 周三宣布 Agents API 进入公开测试，将此前仅支撑 Codex 及企业版 ChatGPT 的代理框架与基础设施以编程接口形式对外开放，开发者按实际消耗的 token 与工具调用量计费即可接入，无需额外付费。核心能力包括：上下文自动压缩（代理可连续运行数小时至数天）、工具搜索与并行调用、多代理协同（主代理分解任务下发独立子代理后汇总）。早期客户数据亮眼：SafetyKit 案例审核成本降 60%、Hypha 代理失败率压低 86%、Cirridae 评估分从 0.71 升至 0.85 且延迟降 4 倍；物流公司 Nash 已部署数千个长时运行代理管理全球数亿次配送。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 OpenAI 把"代理操作系统"从内部能力变为平台层产品的关键一步——开发者无需自建上下文管理、子代理编排等底层设施，一次 API 调用即可生产级落地。对 AI Coding 与运维自动化（长时运行、断点续跑、多 Agent 协作）尤其友好，也意味着 Coding Agent 的竞争正从"模型能力"上移到"运行时基础设施"，Codex 生态护城河被进一步加宽。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7683999155710198308/" target="_blank">华尔街见闻</a> · <a href="https://headsupai.io/ai-news-and-updates/this-month" target="_blank">HeadsUpAI</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Cognition 发布 SWE-2 编程模型，性价比对标 Fable 5.1，可配置 effort 等级</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Cognition</span>
+      <span class="tag pink">编程模型</span>
+    </div>
+    <p>Cognition 发布其迄今最强编程模型 SWE-2，在 FrontierCode 1.1 Main 上达到 50.0% 成绩，通过对多万亿参数强化学习的扩展，以比 Fable 5.1 低 64% 的成本实现同等水平。模型引入可配置 effort 等级（configurable effort levels），今日已在 Devin Desktop 与 CLI 中上线，Pro/Max/Teams 订阅用户享一个月免费期。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>SWE-2 把"顶级编程能力"与"可调节成本"直接挂钩，effort 等级让开发者在质量与开销间自主权衡，是 agentic coding 走向工程化、可量化的标志。结合同日 OpenAI Agents API，编程 Agent 的底层（模型 + 运行时）在同一天双双刷新，AI Coding 正从"能写代码"进入"按预算交付"的阶段。
+    </div>
+    <div class="source">来源：<a href="https://headsupai.io/ai-news-and-updates/this-month" target="_blank">HeadsUpAI</a> · <a href="https://www.infoq.cn/" target="_blank">InfoQ</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Eclipse Theia 1.75 采用 Agent Plugins 1.0 开放标准，Google 加入指导委员会</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">开放标准</span>
+      <span class="tag pink">MCP</span>
+    </div>
+    <p>Eclipse Theia 1.75 正式采用开放标准 Agent Plugins 1.0，定义了 Agent Skills 与 MCP 的可移植目录格式。其技术指导委员会现已囊括 Amazon、Cursor、Microsoft、OpenAI、Vercel，并新增 Google。与此同时，围绕 GitHub Agent Client Protocol（ACP）与 DeepSeek Harness 的社区项目密集更新，生态正快速向新协议收敛。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Agent Skills 与 MCP 的可移植目录标准意味着"一次打包、多工具运行"成为可能，开发者写的技能包能跟随依赖树自动装进不同 AI 助手，降低被单一 IDE/厂商锁定的风险。Amazon、Cursor、Microsoft、OpenAI、Vercel、Google 同台，实质上是 AI Coding 工具互操作的事实标准正在成型，对 DevOps/SRE 的自研内部 Agent 可复用性意义重大。
+    </div>
+    <div class="source">来源：<a href="http://quidproquo.cc/posts/daily/2026-09-11-ai-agent-daily-en" target="_blank">quidproquo AI Daily</a> · <a href="https://www.infoq.cn/" target="_blank">InfoQ</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>2026 外滩大会 40+ 具身厂商强调"真干活"，国内首个具身数据要素跨境流通平台亮相</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业落地</span>
+      <span class="tag pink">数据要素</span>
+    </div>
+    <p>9 月 9-12 日 2026 Inclusion·外滩大会在上海举行，超 300 家企业参展，其中 40+ 具身智能厂商集中亮相，今年展区重心从"跑跳演示"转向产业与生活场景"真干活"：蚂蚁灵波 × 国大药房机器人智慧药房已真实落地，可自主接单取药、在 80cm 窄通道内精准分拣；擎朗人形机器人在酒店完成取衣、洗衣、叠衣长程任务；眸深智能轮式双臂机器人自主完成洗衣机螺栓抓取、定位、插入、拧紧；辰行远略的飞行智能体 + 机器狗进入核电、地铁、水厂等无 GPS/无光受限空间巡检。同期，服贸会上由石景山国企联合北京电信建设的"具身智能数据要素跨境流通服务贸易平台"首发，系国内首个聚焦该领域的行业级平台。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"一脑多机、千行百业"从口号走向门店真实部署，说明具身智能的评估标准正从运动能力转向作业成功率与场景适配。数据要素跨境流通平台的亮相，则补上了具身模型训练"数据供给—合规流通"的关键一环，对需要大规模真实数据迭代 VLA/世界模型的厂商是基础设施级利好。
+    </div>
+    <div class="source">来源：<a href="https://www.news.cn/fortune/20260910/d3be62ec6f39460bbf95b9596683e50d/c.html" target="_blank">新华网</a> · <a href="https://www.stdaily.com/web/gdxw/2026-09/10/content_578631.html" target="_blank">科技日报</a> · <a href="https://view.inews.qq.com/a/20260910A0BKK500" target="_blank">科创板日报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>优必选斩获超 5000 万元海外订单，小鹏 IRON 自主走下产线，监管拟抬高人形机器人 IPO 门槛</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">商业化</span>
+      <span class="tag pink">资本市场</span>
+    </div>
+    <p>9 月 10 日，优必选接连与欧洲、日韩客户签约，斩获超 5000 万元海外订单（含 Walker C1 与优世界 U1），上半年营收 12.7 亿元同比增 104.2%。同日，小鹏全球首条高阶通用人形机器人自动化产线启用，IRON 完成总装后自主走下产线，核心制程自动化率超 80%。另据 The Information，证监会向投行作出非正式窗口指导，要求拟上市机器人企业证明持续收入、减亏或真技术创新，超 40 家企业排队背景下监管收紧。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>一边是头部企业订单与量产双双兑现（技术出海 + 本地深耕），一边是监管为"未盈利、无真创新"的蹭热点 IPO 设卡，行业正经历"商业化提速"与"资本洗牌"并行。订单质量与真实出货量将取代概念热度成为估值锚点，马太效应（宇树、智元、优必选等头部约占全球 97% 出货）会进一步加剧。
+    </div>
+    <div class="source">来源：<a href="https://new.qq.com/rain/a/20260911A029WO00" target="_blank">每日经济新闻</a> · <a href="https://www.thepaper.cn/newsDetail_forward_34030680" target="_blank">澎湃新闻</a> · <a href="https://www.toutiao.com/article/7683784023261938222/" target="_blank">科技日报</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：华尔街见闻 · The Information · 新华网 · 科技日报 · HeadsUpAI · 量子位 · InfoQ · AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>
