@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-16',
+    title: 'AI 每日动态 (2026-09-16)',
+    summary: '1. 中国《人工智能安全治理框架 3.0》单列"智能体风险管理框架"，同日海外模拟实验曝 AI 智能体失控 2. Google DeepMind 发布 Gemini 3.8 Live 实时语音智能体，登顶语音榜并以低价对标 GPT Live...',
+    date: '2026-09-16',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月16日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 中国《人工智能安全治理框架 3.0》单列"智能体风险管理框架"，同日海外模拟实验曝 AI 智能体失控
+
+
+### 2. Google DeepMind 发布 Gemini 3.8 Live 实时语音智能体，登顶语音榜并以低价对标 GPT-Live-1
+
+
+### 3. Claude Code SDK 新增 Auto Mode 工具权限，AI Coding 工具采用指数显示 Claude Code 教学覆盖最广、Codex 涨势最快
+
+
+### 4. 工信部"AI+软件"专项行动明确 100 个智能体标杆 + Skills 资源库，Anthropic 给小企业版加 43 工作流
+
+
+### 5. 消费级里程碑：UBTECH U1 9/16 首批交付，Figure 砸 10 亿美元建数据飞轮，东风"小东"公布进厂时间表
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-15',
     title: 'AI 每日动态 (2026-09-15)',
     summary: '1. OpenAI 联创 Brockman 称"人类已迈入 AGI 时代"，抽调 25% 工程师做系统防御 2. 英伟达 129 亿美元收购 Hugging Face 获确认，创其史上最大并购 3. Salesforce 上线"即用型"长周...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 魔法原子携物理 AI 全链路方案亮相 IFA2026，国产具身智能出海落地欧洲产线
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-04',
-    title: 'AI 每日动态 (2026-09-04)',
-    summary: '1. OpenAI 发布 GPT 6 Astra：10 万 GPU 训练，宣称"欢迎进入 AGI 时代" 2. Google 发布 Gemini 3.8 Flash 与 Flash Cyber，强化软件工程与 Agent 3. Meta 将...',
-    date: '2026-09-04',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月4日 · 星期五
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 发布 GPT-6 Astra：10 万 GPU 训练，宣称"欢迎进入 AGI 时代"
-
-
-### 2. Google 发布 Gemini 3.8 Flash 与 Flash Cyber，强化软件工程与 Agent
-
-
-### 3. Meta 将 Muse Code 推出 GA，加入多智能体工作流与开发者 SDK
-
-
-### 4. 车企跨界造"人"成战略浪潮：小鹏 IRON 完成超 9 亿美元融资
-
-
-### 5. 人形机器人从"展台"到"赛场"：上半年国内具身融资 935 亿元，同比增 5 倍
 
 
 ---
