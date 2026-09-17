@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-17</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 17 · 周四</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>智谱完成 50 亿美元再融资后首次系统汇报，上调年末 ARR 目标</h3>
+    <div class="meta">
+      <span class="tag">大模型商业化</span>
+      <span class="tag green">智谱</span>
+      <span class="tag pink">融资</span>
+    </div>
+    <p>9 月 16 日，智谱举办面向分析师与投资人的电话交流会，这是其 9 月 11 日完成 50 亿美元再融资后的首次系统性基本面汇报。管理层透露：算力供给短期不再构成收入增长的主要约束，云服务商收入分成合作取得突破，Co-work 商业化进展快于预期，年末 ARR（年度经常性收入）目标上调。作为"大模型第一股"，智谱也带动港股 AI 板块走强。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是国产大模型公司从"烧钱抢技术"转向"算账看收入"的标志性节点。50 亿美元弹药 + 云厂商分成 + Co-work 商业化三线推进，说明头部模型公司正把重心压到可复现的收入上。对 AI Coding 赛道而言，智谱 Co-work 的进展快慢，将直接影响国产编程智能体的商业天花板与后续融资环境。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260916A0BU9I00" target="_blank">证券时报·e公司</a> · <a href="https://www.qbitai.com/" target="_blank">量子位</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>豆包大模型 2.1 Pro 更新至 0915 版：Agent 交付更可靠，多模态 Coding 进化</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">豆包</span>
+      <span class="tag pink">多模态</span>
+    </div>
+    <p>9 月 16 日，火山引擎宣布 Doubao-Seed-2.1-pro 更新至 0915 版本，API 已在火山方舟全量上线。本次升级围绕企业生产级需求展开：Agent 专业任务交付更可靠、多模态 Coding 能力强化、多模态理解覆盖 3D 与专业图文，同时 Token 效率持续优化，综合使用成本进一步下降，豆包工作内也已同步升级。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>国产编程模型正从"能写代码"卷向"能可靠交付任务"。把 Agent 任务交付稳定性与多模态（含 3D、专业图）Coding 作为主卖点，意味着模型开始直接对标 Claude Code / Codex 的企业级工作流。对 SRE/DevOps 场景，成本下降 + 多模态理解（看架构图、读监控图）是实打实的可用性提升，值得在工具链评估中纳入对比。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260916A07DVW00" target="_blank">IT之家</a> · <a href="https://www.ithome.com/" target="_blank">火山引擎</a></div>
+  </div>
+
+  <div class="card">
+    <h3>上海 AI 实验室开源 Atria Dawn：744B agentic MoE 模型，MIT 许可</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">智能体</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>上海人工智能实验室发布 Atria Dawn 预览版——一个基于 GLM-5.2 后训练的 744B 参数 agentic MoE 模型，采用 MIT 许可，先于论文发布权重。该模型面向智能体任务设计，延续了近月"先开源权重、后发论文"的发布节奏，便于社区在合规前提下先行试用与二次开发。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>开源权重 + MIT 许可 + 面向 Agent 任务，三个信号叠加意味着"可私有化部署的强智能体底座"又多了一个选择。对注重数据合规与本地化运维的团队（尤其企业内网、工单/运维智能体），这类 agentic MoE 的开源，降低了把编码/运维 Agent 跑在自己算力上的门槛，也倒逼闭源编程模型在性价比上继续让步。
+    </div>
+    <div class="source">来源：<a href="https://aiweekly.co/alerts/shanghai-ai-lab-ships-atria-dawn-preview-a-744b-agentic-moe" target="_blank">AI Weekly</a> · <a href="https://www.qbitai.com/" target="_blank">量子位</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>清华、上交大联合开源 APXInf 具身端侧推理引擎，Pi 0.5 延迟降至 26ms</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">端侧推理</span>
+      <span class="tag pink">开源</span>
+    </div>
+    <p>无问芯穹（Infinigence AI）联合清华大学、上海交通大学开源 APXInf，一个支持 RTX 4090、Jetson Orin 与 Thor 的具身端侧推理引擎。在 Thor 上，Pi 0.5 FP8 的推理延迟从 278ms 降至 26ms 以内，频率达 38.46Hz，刷新端侧具身推理的 SOTA 表现。该引擎让机器人无需依赖云端即可在本地完成从感知到动作的推理闭环。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>把端侧具身推理延迟压到 26ms（≈38Hz）是规模化落地的关键门槛——这意味着机器人能在本地实时闭环，不再受云端网络抖动与带宽制约。对工厂、巡检等低时延刚需场景，APXInf 直接把"端侧具身智能"从论文拉到可部署，显著降低了具身方案的部署成本与运维复杂度，是本体厂商"补脑"浪潮里稀缺的底层基础设施。
+    </div>
+    <div class="source">来源：<a href="https://www.qbitai.com/2026/09/489460.html" target="_blank">量子位</a></div>
+  </div>
+
+  <div class="card">
+    <h3>本体厂商集体"补脑"：8 天 3 家连发 5 个模型（智元 / 宇树 / 松延动力）</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业趋势</span>
+      <span class="tag pink">世界模型</span>
+    </div>
+    <p>9 月具身智能赛道迎来密集模型发布潮：9 月 8—15 日，松延动力连发 HERON-World Model 与 HERON-CRA；9 月 9 日智元一天连发 AGILE 2.0 感控一体模型与 GE-Act 2.0 原生世界—动作模型；9 月 10 日宇树全面开源新一代通用人形机器人基础模型 UnifoLM-WLA-1.0。8 天 3 家本体厂商连发 5 个模型，曾经以"本体"著称的机器人公司正集体补上"大脑"拼图。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能从"堆硬件"转向"拼大脑"的结构性拐点。本体厂商亲自下场做世界模型 / 动作模型并开源，说明行业共识是：决定机器人上限的是软件与数据飞轮，而非机械本体。对开发者，宇树 UnifoLM-WLA-1.0 等开源基模降低了二次开发门槛；对产业，模型能力的快速收敛将加速从展台 Demo 到真实产线作业的跨越。
+    </div>
+    <div class="source">来源：<a href="https://www.thepaper.cn/newsDetail_forward_34086578" target="_blank">澎湃新闻</a> · <a href="https://www.stcn.com/" target="_blank">红星资本局</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：证券时报·e公司 · IT之家 · 量子位 · AI Weekly · 澎湃新闻 · AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>
