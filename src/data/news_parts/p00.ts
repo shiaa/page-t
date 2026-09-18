@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-18',
+    title: 'AI 每日动态 (2026-09-18)',
+    summary: '1. OpenAI 推出托管版智能体 API，一次调用即可构建定制化 Agent 2. Claude 已主导 Anthropic 26% 的 AI 研发，约 3 万 Agent 同时上岗 3. Zed 发布 Delta 公开测试版：用「共享...',
+    date: '2026-09-18',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月18日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 推出托管版智能体 API，一次调用即可构建定制化 Agent
+
+
+### 2. Claude 已主导 Anthropic 26% 的 AI 研发，约 3 万 Agent 同时上岗
+
+
+### 3. Zed 发布 Delta 公开测试版：用「共享线程」替代 Pull Request
+
+
+### 4. Qwen3.8-27B 登顶 HuggingFace「史上最受欢迎」，本地跑 27B 成编程新标杆
+
+
+### 5. 优必选柳州万台级工厂投产，「机器人造机器人」每 10 分钟下线一台
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-17',
     title: 'AI 每日动态 (2026-09-17)',
     summary: '1. 智谱完成 50 亿美元再融资后首次系统汇报，上调年末 ARR 目标 2. 豆包大模型 2.1 Pro 更新至 0915 版：Agent 交付更可靠，多模态 Coding 进化 3. 上海 AI 实验室开源 Atria Dawn：744...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 2026 世界机器人大会落幕：从"表演秀"转向生产现场，中国人形出货占全球 97%
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-08',
-    title: 'AI 每日动态 (2026-09-08)',
-    summary: '1. 黄仁勋宣布「AGI 已到来」：GPT 6 Astra 由 10 万+ GPU 集群训练，下一批 40 万 GPU 即将上线 2. Claude Code v2.1.261/v2.1.263 更新 + Anthropic 安全整改：工程...',
-    date: '2026-09-08',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月8日 · 星期二
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 黄仁勋宣布「AGI 已到来」：GPT-6 Astra 由 10 万+ GPU 集群训练，下一批 40 万 GPU 即将上线
-
-
-### 2. Claude Code v2.1.261/v2.1.263 更新 + Anthropic 安全整改：工程化治理成主旋律
-
-
-### 3. Bun 1.4 发布：单名开发者借助 AI，11 天将百万行底层代码从 Zig 重写为 Rust
-
-
-### 4. 宇树 UnifoLM-X2-1.0 实现全球首次人形机器人全自主搏击，世界模型驱动瞬时规划
-
-
-### 5. 具身智能工业机器人国内首款获 CE 认证，从实验室验证迈向规模化商用前夕
 
 
 ---
