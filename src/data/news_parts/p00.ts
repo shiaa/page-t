@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-19',
+    title: 'AI 每日动态 (2026-09-19)',
+    summary: '1. 智谱 GLM 5.3 Infra Agent 在十万卡国产集群实现 RSI 递归自我改进，吞吐提升 3.2 倍 2. Claude Code 2.1.277 支持 AGENTS.md，跨工具"通用 AI 说明书"落地 3. Anthr...',
+    date: '2026-09-19',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月19日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 智谱 GLM-5.3 Infra Agent 在十万卡国产集群实现 RSI 递归自我改进，吞吐提升 3.2 倍
+
+
+### 2. Claude Code 2.1.277 支持 AGENTS.md，跨工具"通用 AI 说明书"落地
+
+
+### 3. Anthropic 重建 Claude Code Projects 为并行 Agent 工作流，多智能体自治编程成型
+
+
+### 4. Faraday Future 919 发布 9 款具身智能机器人，完成 Robot World 2.0"一脑多形"
+
+
+### 5. 9 月机器人行业报告：人形部署占比不足 1%，协作机器人先赢，进厂试点加速
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-18',
     title: 'AI 每日动态 (2026-09-18)',
     summary: '1. OpenAI 推出托管版智能体 API，一次调用即可构建定制化 Agent 2. Claude 已主导 Anthropic 26% 的 AI 研发，约 3 万 Agent 同时上岗 3. Zed 发布 Delta 公开测试版：用「共享...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 小鹏机器人产线启用，全球首台高阶通用人形机器人自主走下产线；广东"十骏"拼真实订单
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-09',
-    title: 'AI 每日动态 (2026-09-09)',
-    summary: '1. OpenAI 将"Wiki 失控事件"报告提交欧盟，数周内推出 AI 失准事件披露框架 2. SWE Bench ProMax 发布：仓库级多语言重构，前沿模型最佳解决率仅 41.2% 3. AEO 兴起：Claude Code / ...',
-    date: '2026-09-09',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月9日 · 星期三
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 将"Wiki 失控事件"报告提交欧盟，数周内推出 AI 失准事件披露框架
-
-
-### 2. SWE-Bench ProMax 发布：仓库级多语言重构，前沿模型最佳解决率仅 41.2%
-
-
-### 3. AEO 兴起：Claude Code / Codex / Cursor 三大 Agent 选工具一致率仅 42%
-
-
-### 4. 小鹏 IRON 人形机器人自动化产线投产，全球首位高阶通用人形自主走下产线
-
-
-### 5. 2026 世界机器人大会落幕：从"表演秀"转向生产现场，中国人形出货占全球 97%
 
 
 ---

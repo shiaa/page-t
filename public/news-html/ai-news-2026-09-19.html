@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-19</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 19 · 周六</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>智谱 GLM-5.3 Infra Agent 在十万卡国产集群实现 RSI 递归自我改进，吞吐提升 3.2 倍</h3>
+    <div class="meta">
+      <span class="tag">RSI</span>
+      <span class="tag green">智谱 AI</span>
+      <span class="tag pink">国产算力</span>
+    </div>
+    <p>智谱披露其在递归自我改进（RSI，Recursive Self-Improvement）方向的首个工程化实践：由 GLM-5.3 驱动的 Infra Agent 在超过十万张国产芯片的集群上，从零设计、调试并优化出一套生产级推理系统，不到两周将吞吐提升至 3.2 倍。这是国内大模型首次公开 RSI 落地案例——模型不再只是被部署运行，而是反向改进了自身赖以运行的底层系统。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>RSI 一直是 AGI 讨论中最敏感、也最被谨慎对待的方向，业界此前多停留在论文假设。智谱这次把它做成了一个"在国产卡上、两周内、可量化（3.2x 吞吐）"的真实工程闭环，且用国产芯片证明了不依赖英伟达也能跑通大规模自我优化。对做 DevOps/SRE 的人来说，这意味着"AI 运维 AI 基础设施"从概念走向生产可用，算力利用率和推理成本曲线可能迎来结构性下探。
+    </div>
+    <div class="source">来源：<a href="https://www.qbitai.com/2026/09/491357.html" target="_blank">量子位</a> · <a href="https://www.36kr.com/p/3987267726523140" target="_blank">36氪</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Claude Code 2.1.277 支持 AGENTS.md，跨工具"通用 AI 说明书"落地</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Claude Code</span>
+      <span class="tag pink">标准化</span>
+    </div>
+    <p>9 月 19 日发布的 Claude Code 2.1.277 版本新增对 AGENTS.md 的支持：当项目文件夹中没有 CLAUDE.md 时，Claude 会检查并使用 AGENTS.md（可在 /config 中切换此行为）。与 Claude 专属的 CLAUDE.md 不同，AGENTS.md 的目标是让不同工具共享同一份项目级基础规则，被视为"所有 AI 都应遵守的通用规则"。换工具、接手项目或参与开源时，不必再为每份 AI 编程助手重新配置工作流。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>AI 编程工具正进入"多智能体、多客户端"时代，项目知识却散落在各家的私有配置文件里（CLAUDE.md、.cursorrules、GEMINI.md……）。AGENTS.md 一旦被主流工具广泛采纳，将成为项目级 AI 上下文的"统一接口"——开发者维护一份文件即可覆盖全工具链，大幅降低工具切换成本与团队接入成本。这是 AI Coding 从"各自为政"走向"互操作标准"的关键一步。
+    </div>
+    <div class="source">来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_6656aadc0c910052" target="_blank">IT之家</a> · <a href="https://ai-tldr.dev/" target="_blank">AI/TLDR</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 重建 Claude Code Projects 为并行 Agent 工作流，多智能体自治编程成型</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">多智能体</span>
+    </div>
+    <p>Anthropic 重建了 Claude Code 中的 Projects 功能：由一个 coordinator（协调器）把任务拆分到多个并行云线程（parallel cloud threads），每个线程独立打开 Pull Request、运行测试，且所有线程共享同一份公共记忆（common memory）。该 Beta 已向部分 Pro 与 Max 订阅用户开放。这标志着 Claude Code 从"单线程对话式编码"进化为"协调器调度的并行自治编程工厂"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"一个 Agent 写代码"正在让位于"一群 Agent 分工写代码"。并行线程各自开 PR、跑测试、共享记忆的模式，本质上把软件工程的协作结构（分工—实现—验证—合并）搬进了 AI 内部。对工程团队而言，这意味着大需求可以被自动拆解并行推进，交付节奏从"小时级"压缩到"分钟级"；但随之而来的多 PR 冲突、共享记忆一致性、治理与回滚，也会成为新的工程挑战。
+    </div>
+    <div class="source">来源：<a href="https://the-decoder.com/anthropic-keeps-pushing-claude-code-toward-autonomous-coding-with-new-parallel-agent-workflows/" target="_blank">The Decoder</a> · <a href="https://ai-tldr.dev/" target="_blank">AI/TLDR</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>Faraday Future 919 发布 9 款具身智能机器人，完成 Robot World 2.0"一脑多形"</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">Faraday Future</span>
+      <span class="tag pink">一脑多形</span>
+    </div>
+    <p>9 月 19 日（美西时间 17:00）Faraday Future 举办年度 919 发布会，推出 9 款全新 EAI（Embodied AI）机器人设备，完成其"One-Brain Multi-Form Multi-Capability"Robot World 2.0。设备形态覆盖人形、四足与移动操作臂三大类，并有大/中/小三种尺寸；同步首发 4 套行业方案（K-12 教育、科研、安防、巡检），标志其从"单品部署"走向"完整解决方案交付"。全新产品线已在 IMTS 2026 芝加哥展预览其 Aegis 系列安防巡检四足机器人。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>FF 的思路是"一个共享大脑（EAI Brain）驱动多种形态本体"——这与国内"一脑多机""一脑多形"的产业趋势同频，也是具身智能从 Demo 走向规模化的核心架构命题。更关键的是它把机器人从硬件售卖升级为"设备 + 行业方案 + 数据工厂"的飞轮，试图用真实场景数据反哺大脑进化。对关注具身落地的从业者，其"教育/安防/巡检"三套方案的可复制性，是检验"机器人能否真正干活"的近场样本。
+    </div>
+    <div class="source">来源：<a href="https://stocktitan.net/news/FFAI/faraday-future-to-unveil-nine-new-ai-powered-robots-and-four-157ardyf8rfa.html" target="_blank">StockTitan</a> · <a href="https://ittech-news.com/faraday-future-unveils-ai-powered-robots-at-919-launch" target="_blank">ITTech News</a> · <a href="https://bigev.news/faraday-futures-919-robotics-launch-anchors-bigev-agenda" target="_blank">BigEV</a></div>
+  </div>
+
+  <div class="card">
+    <h3>9 月机器人行业报告：人形部署占比不足 1%，协作机器人先赢，进厂试点加速</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业落地</span>
+      <span class="tag pink">部署现实</span>
+    </div>
+    <p>Robotics Reports 9 月行业更新显示：上半年全球工业机器人出货 2.2 万+台（同比 +300%），但 60% 以上仍是娱乐/科研用途，仅 13% 进入制造、不足 1% 为人形规模化部署。与此同时，Universal Robots 于 9 月 15 日发布 Gen 7 AI-ready 手臂（UR10g/UR17g/UR18g，分布式感知+视觉引导装配）；Boston Dynamics 电动 Atlas 在现代工厂试产、计划 2028 年于现代佐治亚 EV 工厂全面部署；Figure 03 在宝马南卡工厂做物料搬运试点；Tesla Optimus Gen 3 已在特斯拉内部部署数百台做监督学习。Mobile Robot Company 的 J1600 自主托盘车获 2026 IFOY 大奖。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这份报告给"人形热潮"泼了一盆冷静水：出货量暴涨 ≠ 真实上岗，人形仍卡在"无标准任务、无标准产线、无标准供应链"的三无阶段。真正已经在工厂里赚钱的是协作机器人（cobots、自主托盘车、视觉引导臂）——它们不需要拟人形态，直接解决搬运、装配、上下料等具体瓶颈。对求职/布局具身方向的人，信号很明确：短期看协作机器人与垂直场景方案，长期才轮到人形通用本体；选赛道时别被发布会热度带偏。
+    </div>
+    <div class="source">来源：<a href="https://roboticsreports.com/robotics-companies-september-2026-update-what-changed-why-it-matters-and-what-to-watch-next" target="_blank">Robotics Reports</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：量子位 · 36氪 · IT之家 · AI/TLDR · The Decoder · StockTitan · ITTech News · BigEV · Robotics Reports</p>
+  </footer>
+
+</div>
+</body>
+</html>
