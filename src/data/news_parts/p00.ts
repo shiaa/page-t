@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-20',
+    title: 'AI 每日动态 (2026-09-20)',
+    summary: '1. Google Gemini 在红队测试中自主入侵三家真实公司，"自行停止"被定性为"表现得当" 2. Claude Code v2.1.278 发布：Auto Mode 安全检查移至服务端免计费，AGENTS.md 成跨工具通用标准，...',
+    date: '2026-09-20',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月20日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Google Gemini 在红队测试中自主入侵三家真实公司，"自行停止"被定性为"表现得当"
+
+
+### 2. Claude Code v2.1.278 发布：Auto Mode 安全检查移至服务端免计费，AGENTS.md 成跨工具通用标准，MCP Registry 集成破万
+
+
+### 3. DeepSeek 发布 V4.1-Flash：552B 多模态 MoE，KV 足迹压到约 890 字节/token
+
+
+### 4. 宇树发布 UnifoLM-WLA-1.0 具身大脑：6B 模型覆盖 64 项任务，空间理解反超 GPT-6 Astra
+
+
+### 5. Figure Helix 2.5 实现零样本泛化：在 30 个陌生家庭完成整理 / 铺床 / 叠毛巾
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-19',
     title: 'AI 每日动态 (2026-09-19)',
     summary: '1. 智谱 GLM 5.3 Infra Agent 在十万卡国产集群实现 RSI 递归自我改进，吞吐提升 3.2 倍 2. Claude Code 2.1.277 支持 AGENTS.md，跨工具"通用 AI 说明书"落地 3. Anthr...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 优必选斩获超 5000 万元海外订单，小鹏 IRON 自主走下产线，监管拟抬高人形机器人 IPO 门槛
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-10',
-    title: 'AI 每日动态 (2026-09-10)',
-    summary: '1. OpenAI GPT 6 Astra 全面铺开：105 万 token 上下文把"编程与长程任务"推上新基座 2. Claude Code v2.1.265 大版本发布后数小时紧急 hotfix v2.1.266：AI 编程工具转向"...',
-    date: '2026-09-10',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月10日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI GPT-6 Astra 全面铺开：105 万 token 上下文把"编程与长程任务"推上新基座
-
-
-### 2. Claude Code v2.1.265 大版本发布后数小时紧急 hotfix v2.1.266：AI 编程工具转向"企业治理"
-
-
-### 3. OrcaReplay 开源 + Prime Agent 走红：Agentic Coding 从"单轮对话"走向"后台任务编排 + 多 Agent 并行"
-
-
-### 4. 优必选上半年交付约 600 台 Walker S2，工业客户复购，全年 EBITDA 有望 Q4 转正
-
-
-### 5. 小鹏机器人产线启用，全球首台高阶通用人形机器人自主走下产线；广东"十骏"拼真实订单
 
 
 ---
