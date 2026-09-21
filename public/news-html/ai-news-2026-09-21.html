@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-21</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 21 · 周一</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>物理 AI 成全球巨头必争之地：软银 54 亿美元收购 ABB 工业机器人，大厂路线分化、政策加码万台级落地</h3>
+    <div class="meta">
+      <span class="tag">物理AI</span>
+      <span class="tag green">软银 / ABB</span>
+      <span class="tag pink">产业落地</span>
+    </div>
+    <p>新京报贝壳财经梳理指出，物理 AI 已从概念炒作全面转向"实体落地比拼"。9 月软银以 54 亿美元收购 ABB 工业机器人业务，黄仁勋将物理 AI 定为英伟达下一轮增长核心；国内大厂路径明显分化——京东走"最重"路线（国产万卡集群 + 1000 万小时真实场景视频数据 + 世界模型 JoyAI-Echo WM），阿里自研+投资双线，腾讯坚持"只结盟、不造硬件"的轻量化路线。政策端，工信部明确"十五五"将持续推动人形机器人智能终端迭代，并联合国资委启动 2026 年人形机器人与具身智能实景实训专项行动，目标打造百个以上高价值场景、实现万台级落地规模。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 AI 投资主线从"软件模型内卷"转向"物理世界落地"的明确信号。软银重金收购工业机器人、大厂集体下场，意味着具身智能的竞争焦点已不在参数，而在可交付、可盈利的实体产能。对做 DevOps/SRE 与云运维的人，暗含两条线：一是机器人产线本身就是工业软件、边缘计算、私有化部署的高价值场景；二是"万台级落地"目标会催生大量机器人运维、OTA、数据采集管线的工程岗位——这正是 20K+ SRE/云运维方向可提前卡位的交叉点。
+    </div>
+    <div class="source">来源：新京报贝壳财经 · 网易 · 经济日报 · 湖州市科技局</div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>AI 编程智能体接管大型 Rust 重写：GitHub 80 万行、Bun 50 万行 Zig→Rust、OpenAI Habitat 改写 CPU 降 6 倍</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">GitHub / Anthropic</span>
+      <span class="tag pink">大规模重构</span>
+    </div>
+    <p>9 月 18 日多家媒体报道，AI 编程智能体正改写"大型代码迁移"的经济账：GitHub 用 Copilot coding agents 把 Copilot agent 运行时从 TypeScript/Node.js 重写为超 80 万行生产级 Rust，由一名开发者数月完成（微软工程师 Stephen Toub 估计无 Agent 需团队 1-2 年），分 128 个 PR 增量推进；Anthropic 收购 JavaScript 运行时 Bun 后，用预发布 Claude 在 11 天内把 50 万行 Zig 重写为 Rust，采取多 Agent 并行翻译+人工兜底；OpenAI 用 AI 辅助重写 Habitat，CPU 降 6 倍、内存降 15 倍。这种"agents do big Rust migration"现象正快速扩散。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>过去被认为"太贵、太慢、风险太高"的全量语言迁移，正被 Agent 拉进可承受区间——这直接冲击传统"高级语言=更快交付"的假设。对工程团队，信号是双重的：① 存量代码库（尤其内存安全、性能敏感模块）的现代化改造成本断崖式下降，Rust/Go 化会加速；② 工程师角色从"手写每一行"转向"拆任务、审 diff、控质量"，这正是转型 SRE/云运维（更多架构与质量治理、更少重复编码）的能力映射。做运维的人应开始熟悉 Agent 驱动的重构流水线，它迟早会变成 CI/CD 的标配环节。
+    </div>
+    <div class="source">来源：TechGig · AI Agent Store · The Register</div>
+  </div>
+
+  <div class="card">
+    <h3>AI 编程智能体赛道资本与能力双爆发：Factory 估值 50 亿美元，"软件工厂"成新范式；Terminal-Bench 4.0 Claude Code 与 Codex 并列榜首</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Factory / Cognition</span>
+      <span class="tag pink">自主软件工厂</span>
+    </div>
+    <p>9 月 15 日 Factory 宣布完成 2 亿美元融资、估值从 4 月的 15 亿美元跳升至 50 亿美元（黑石、Khosla、红杉、Insight 等参投），CEO 称企业正从"个人编程智能体"转向以"软件工厂"为软件公司核心基础设施；对手 Cognition（Devin）同期以 480 亿美元估值募 20 亿美元。能力侧，9 月更新的 Terminal-Bench 4.0 官方榜单显示，GPT-6 Astra（Codex）58.2% 与 Claude Fable 5.1（Claude Code）57.9% 并列第一、误差带内几乎持平；最佳实践是"按任务分派模型"——贵模型规划、便宜模型并行执行。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>资本用真金白银把"自主软件工厂"从概念推向基础设施层，估值曲线（Factory 5 个月翻 3 倍、Cognition 480 亿）说明市场押注的是"端到端交付"而非"代码补全"。对求职/布局者，关键不是追哪个模型，而是"多模型编排 + 工具网密度 + 评审治理"这套方法论——这正是 AI Coding 工程的护城河，也是 SRE/DevOps 做"平台化、自动化、可观测"能力的同构能力。Terminal-Bench 的"误差带内持平"则说明：选型的胜负手已从"谁最强"转向"谁能稳定、便宜、可控地跑通任务"。
+    </div>
+    <div class="source">来源：Reuters · 海豚投研 · MightyBot · GetAIBrief</div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>启元机器人（稚晖君）发布 Q1/T1 个人机器人：19999 元起，首发接入腾讯 WorkBuddy，成首个接入具身智能企业</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">启元 / 稚晖君</span>
+      <span class="tag pink">消费级 + WorkBuddy</span>
+    </div>
+    <p>9 月 20 日，上纬新材旗下消费级品牌启元机器人在上海发布 Q1、T1 两款个人机器人，19999 元起售、10 月 1 日起按订单发货。Q1 身高 88cm、22 自由度、可折叠装背包、软硬件开源；T1 为全球首个可变形个人机器人，轮足人形与四足形态秒级自主切换，自研"鸡蛋关节"仅 260g、峰值扭矩密度 85N·m/kg。最关键的生态动作：启元与腾讯云合作，Q1/T1 正式接入 WorkBuddy——WorkBuddy 负责理解、推理与云端技能调度，机器人负责感知、交互与执行，可直接调用上万种 Skill，启元由此成为首个接入 WorkBuddy 的具身智能企业。公司目标第一年销量突破 10 万台。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是"具身智能 + 通用 AI 助手"生态融合的标志性一步：机器人不再是一台写死能力的硬件，而是通过云端 Skill 持续进化、今天买回家明天学新技能。对 WorkBuddy 用户而言，这意味着"AI 助理具身化"从设想走向可购买商品；对产业，它验证了"本体厂做硬件 + 大模型厂做大脑"的分工范式。消费级能否跑通不取决于 demo 多炫，而取决于能否长期留在家里——陪伴、健康感知、持续学习的任何一环掉链子都会被退回展示柜，这正是下一个真实落地的硬仗。
+    </div>
+    <div class="source">来源：新浪财经 · 凤凰网科技 · IT之家 · 爱范儿</div>
+  </div>
+
+  <div class="card">
+    <h3>智身科技完成数亿元 B 轮融资：累计量产突破 1.5 万台，自研关节模组年产能破百万件</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">智身科技 GENISOM</span>
+      <span class="tag pink">量产交付</span>
+    </div>
+    <p>9 月 20 日，具身智能企业智身科技（GENISOM AI）宣布完成数亿元 B 轮融资，由阿联酋磊石资本领投，洪山资本、粤科金融、东软集团、豪鹏科技等产业方跟投。公司披露截至 2026 年 6 月累计量产行业级具身智能机器人突破 1.5 万台、单月产能较去年月均提升超 10 倍，自研 CHAMP 系列高功率密度关节模组年产能突破 100 万件；采用"一体双脑"架构（GSD 数据驱动大模型作大脑、感控一体模型作小脑），已切入电力、石化、消防、安防等高危场景，参与电力巡检四足机器人行业标准制定，并借中东资本连接全球市场，启动"万有引力"计划开放千台真机。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>在行业普遍还在"看 demo"的阶段，智身用 1.5 万台量产 + 百万件关节模组产能，把融资叙事锚定在"交付与数据闭环"——这正是资本当下筛选产业化落地路线的硬指标。它走的是"高危场景（人不愿去/不能去）先跑通、再谈通用"的务实路线，与启元"直接卖进家庭"形成 To B / To C 两极对照。对求职视角，量产型本体厂对供应链、可靠性工程、OTA、产线数字化的需求，与 SRE/云运维的能力高度同构，是具身赛道里最稳的工程岗位入口。
+    </div>
+    <div class="source">来源：央广网 · 具身智能之家 · IPO 早知道 · 今日头条</div>
+  </div>
+
+  <footer>
+    <p>数据来源：新京报贝壳财经 · 网易 · 经济日报 · TechGig · AI Agent Store · The Register · Reuters · 海豚投研 · MightyBot · GetAIBrief · 新浪财经 · 凤凰网科技 · IT之家 · 爱范儿 · 央广网 · IPO 早知道</p>
+  </footer>
+
+</div>
+</body>
+</html>

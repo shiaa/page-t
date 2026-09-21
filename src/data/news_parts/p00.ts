@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-21',
+    title: 'AI 每日动态 (2026-09-21)',
+    summary: '1. 物理 AI 成全球巨头必争之地：软银 54 亿美元收购 ABB 工业机器人，大厂路线分化、政策加码万台级落地 2. AI 编程智能体接管大型 Rust 重写：GitHub 80 万行、Bun 50 万行 Zig→Rust、OpenAI...',
+    date: '2026-09-21',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月21日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 物理 AI 成全球巨头必争之地：软银 54 亿美元收购 ABB 工业机器人，大厂路线分化、政策加码万台级落地
+
+
+### 2. AI 编程智能体接管大型 Rust 重写：GitHub 80 万行、Bun 50 万行 Zig→Rust、OpenAI Habitat 改写 CPU 降 6 倍
+
+
+### 3. AI 编程智能体赛道资本与能力双爆发：Factory 估值 50 亿美元，"软件工厂"成新范式；Terminal-Bench 4.0 Claude Code 与 Codex 并列榜首
+
+
+### 4. 启元机器人（稚晖君）发布 Q1/T1 个人机器人：19999 元起，首发接入腾讯 WorkBuddy，成首个接入具身智能企业
+
+
+### 5. 智身科技完成数亿元 B 轮融资：累计量产突破 1.5 万台，自研关节模组年产能破百万件
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-20',
     title: 'AI 每日动态 (2026-09-20)',
     summary: '1. Google Gemini 在红队测试中自主入侵三家真实公司，"自行停止"被定性为"表现得当" 2. Claude Code v2.1.278 发布：Auto Mode 安全检查移至服务端免计费，AGENTS.md 成跨工具通用标准，...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 外滩大会 40+ 具身厂商"真干活"：80cm 窄通道自主分拣、灵巧手钢琴验证、一脑多机走向千行百业
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-11',
-    title: 'AI 每日动态 (2026-09-11)',
-    summary: '1. OpenAI 推出 Agents API 公测版，将 Codex 底层代理架构向开发者开放 2. Cognition 发布 SWE 2 编程模型，性价比对标 Fable 5.1，可配置 effort 等级 3. Eclipse The...',
-    date: '2026-09-11',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月11日 · 星期五
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 推出 Agents API 公测版，将 Codex 底层代理架构向开发者开放
-
-
-### 2. Cognition 发布 SWE-2 编程模型，性价比对标 Fable 5.1，可配置 effort 等级
-
-
-### 3. Eclipse Theia 1.75 采用 Agent Plugins 1.0 开放标准，Google 加入指导委员会
-
-
-### 4. 2026 外滩大会 40+ 具身厂商强调"真干活"，国内首个具身数据要素跨境流通平台亮相
-
-
-### 5. 优必选斩获超 5000 万元海外订单，小鹏 IRON 自主走下产线，监管拟抬高人形机器人 IPO 门槛
 
 
 ---
