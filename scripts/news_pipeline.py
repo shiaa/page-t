@@ -29,8 +29,29 @@ from pathlib import Path
 # ---------------- 路径配置 ----------------
 BLOG_DIR = Path(r"C:\code\page-yw\blog")
 PYTHON = r"C:\Users\AI\.workbuddy\binaries\python\versions\3.13.12\python.exe"
-NODE = r"C:\Users\AI\.workbuddy\binaries\node\versions\22.22.2\node.exe"
 VITE = BLOG_DIR / "node_modules" / "vite" / "bin" / "vite.js"
+
+
+def find_managed_node():
+    """定位 managed Node.js 可执行文件。
+
+    managed Node 安装目录为
+    C:\\Users\\AI\\.workbuddy\\binaries\\node\\versions\\<version>\\node.exe，
+    版本号后缀会随更新变化（如 22.22.2 -> 22.22.2-3），故不再写死路径，
+    而是扫描该目录并按优先级（22.x 优先）解析，避免版本升级后构建步骤找不到 node。
+    """
+    base = Path(r"C:\Users\AI\.workbuddy\binaries\node\versions")
+    cands = sorted(str(p) for p in base.glob("*/node.exe")) if base.exists() else []
+    for c in cands:  # 优先 managed 22.x
+        if "\\22." in c.replace("/", "\\"):
+            return c
+    if cands:
+        return cands[0]
+    # 兜底：写死最新已知路径
+    return r"C:\Users\AI\.workbuddy\binaries\node\versions\22.22.2-3\node.exe"
+
+
+NODE = find_managed_node()
 EXTRACT = BLOG_DIR / "scripts" / "extract_news.py"
 WEBHOOK_URL = (
     "https://pages-api.cloud.tencent.com/v1/webhook/"
