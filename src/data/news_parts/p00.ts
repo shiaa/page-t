@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-24',
+    title: 'AI 每日动态 (2026-09-24)',
+    summary: '1. OpenAI Sora 2 API 今日正式关停，战略重心转向编程工具与企业客户 2. Anthropic 发布 Claude Opus 5.5：Fable 5.1 级性能，运行成本直降 40% 3. OpenAI Academy 扩...',
+    date: '2026-09-24',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月24日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI Sora 2 API 今日正式关停，战略重心转向编程工具与企业客户
+
+
+### 2. Anthropic 发布 Claude Opus 5.5：Fable 5.1 级性能，运行成本直降 40%
+
+
+### 3. OpenAI Academy 扩展「用AI构建」开发者路径，新增 8 门 AI Coding 课程
+
+
+### 4. 微亿智造赴港上市备案，冲刺"工业具身智能第一股"
+
+
+### 5. 海光信息首发嵌入式工控芯片 1000 系列，国产算力下沉工业机器人边端
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-23',
     title: 'AI 每日动态 (2026-09-23)',
     summary: '1. 模型底座双线突破：GPT 6 Astra 全量推送 + Anthropic 披露 Claude 主导 26% 研发 2. GitHub Copilot 平台化升级并接入 Grok 4.7，编码 Agent 进入"可观测 + 成本可控"...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 全国首张具身智能机器人专属 SIM 卡"具身翼联"发布，运营商入局新基建
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-14',
-    title: 'AI 每日动态 (2026-09-14)',
-    summary: '1. 头部 AI 实验室罕见同框"踩刹车"：OpenAI 推迟 IPO、Amodei 呼吁放缓、三大实验室筹建标准机构 2. 五大 AI 编程工具被披露"沙箱逃逸"，agentic coding 进入安全治理拐点 3. OpenAI Age...',
-    date: '2026-09-14',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月14日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 头部 AI 实验室罕见同框"踩刹车"：OpenAI 推迟 IPO、Amodei 呼吁放缓、三大实验室筹建标准机构
-
-
-### 2. 五大 AI 编程工具被披露"沙箱逃逸"，agentic coding 进入安全治理拐点
-
-
-### 3. OpenAI Agents API 公测开放 Codex 底层框架，信通院同步发布"方升-Code 2.0"评测新标尺
-
-
-### 4. 优必选柳州万台级工业人形机器人超级智慧工厂投产，连获超 5000 万元海外订单
-
-
-### 5. 北京首钢园"机器人幼儿园"开园：萨顿强化学习范式 + 触觉皮肤，让机器人从试错中自主进化
 
 
 ---
