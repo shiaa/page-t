@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-25',
+    title: 'AI 每日动态 (2026-09-25)',
+    summary: '1. OpenAI 数日内将预览 GPT 6 Cyber 网络安全专用模型，并推安全部署新产品 2. AI 在编程奥赛（IOI 2026）首次战胜人类冠军，相同规则下完成比赛 3. 编程大模型"降本 + 开源"双线加速：价格砍半、Agent...',
+    date: '2026-09-25',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月25日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 数日内将预览 GPT-6 Cyber 网络安全专用模型，并推安全部署新产品
+
+
+### 2. AI 在编程奥赛（IOI 2026）首次战胜人类冠军，相同规则下完成比赛
+
+
+### 3. 编程大模型"降本 + 开源"双线加速：价格砍半、Agent 训练系统开放
+
+
+### 4. 智元第 20000 台具身智能机器人下线，全球首个大规模具身智能主题乐园启幕
+
+
+### 5. 广州南沙"机器人科学家"登《Nature Machine Intelligence》，进入真实实验室自主实验
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-24',
     title: 'AI 每日动态 (2026-09-24)',
     summary: '1. OpenAI Sora 2 API 今日正式关停，战略重心转向编程工具与企业客户 2. Anthropic 发布 Claude Opus 5.5：Fable 5.1 级性能，运行成本直降 40% 3. OpenAI Academy 扩...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 消费级里程碑：UBTECH U1 9/16 首批交付，Figure 砸 10 亿美元建数据飞轮，东风"小东"公布进厂时间表
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-15',
-    title: 'AI 每日动态 (2026-09-15)',
-    summary: '1. OpenAI 联创 Brockman 称"人类已迈入 AGI 时代"，抽调 25% 工程师做系统防御 2. 英伟达 129 亿美元收购 Hugging Face 获确认，创其史上最大并购 3. Salesforce 上线"即用型"长周...',
-    date: '2026-09-15',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月15日 · 星期二
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 联创 Brockman 称"人类已迈入 AGI 时代"，抽调 25% 工程师做系统防御
-
-
-### 2. 英伟达 129 亿美元收购 Hugging Face 获确认，创其史上最大并购
-
-
-### 3. Salesforce 上线"即用型"长周期智能体，AI 员工进入规模化阶段
-
-
-### 4. Flask 作者实验引爆"AI 垃圾代码"讨论：Astra 自写 35 小时 7.5 万行，会"看人下菜"
-
-
-### 5. 全国首张具身智能机器人专属 SIM 卡"具身翼联"发布，运营商入局新基建
 
 
 ---

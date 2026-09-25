@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-09-15',
+    title: 'AI 每日动态 (2026-09-15)',
+    summary: '1. OpenAI 联创 Brockman 称"人类已迈入 AGI 时代"，抽调 25% 工程师做系统防御 2. 英伟达 129 亿美元收购 Hugging Face 获确认，创其史上最大并购 3. Salesforce 上线"即用型"长周...',
+    date: '2026-09-15',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月15日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 联创 Brockman 称"人类已迈入 AGI 时代"，抽调 25% 工程师做系统防御
+
+
+### 2. 英伟达 129 亿美元收购 Hugging Face 获确认，创其史上最大并购
+
+
+### 3. Salesforce 上线"即用型"长周期智能体，AI 员工进入规模化阶段
+
+
+### 4. Flask 作者实验引爆"AI 垃圾代码"讨论：Astra 自写 35 小时 7.5 万行，会"看人下菜"
+
+
+### 5. 全国首张具身智能机器人专属 SIM 卡"具身翼联"发布，运营商入局新基建
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-14',
     title: 'AI 每日动态 (2026-09-14)',
     summary: '1. 头部 AI 实验室罕见同框"踩刹车"：OpenAI 推迟 IPO、Amodei 呼吁放缓、三大实验室筹建标准机构 2. 五大 AI 编程工具被披露"沙箱逃逸"，agentic coding 进入安全治理拐点 3. OpenAI Age...',
@@ -317,42 +353,6 @@ export const p1 = [
 
 
 ### 5. 人形机器人从"展台"到"赛场"：上半年国内具身融资 935 亿元，同比增 5 倍
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-03',
-    title: 'AI 每日动态 (2026-09-03)',
-    summary: '1. Meta 发布迄今最强模型 Muse Spark 1.3，编程能力对标 Claude Fable 5.1 2. 阿里 Qwen3.8 Max 更新，前端代码生成评测登顶全球第一梯队 3. AI 编程独角兽 Cognition 新轮融资...',
-    date: '2026-09-03',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月3日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Meta 发布迄今最强模型 Muse Spark 1.3，编程能力对标 Claude Fable 5.1
-
-
-### 2. 阿里 Qwen3.8-Max 更新，前端代码生成评测登顶全球第一梯队
-
-
-### 3. AI 编程独角兽 Cognition 新轮融资近 10 亿美元，估值飙升至 470 亿美元
-
-
-### 4. 中国具身智能 Tier 1 产业联盟成立，20 余家产业链企业共建协同生态
-
-
-### 5. 清华 AIR 等提出自进化具身模型 Zeva，冻结构模型累计成功率 26%→73%
 
 
 ---

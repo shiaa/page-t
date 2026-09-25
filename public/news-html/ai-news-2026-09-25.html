@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-09-25</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 09 / 25 · 周五</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>OpenAI 数日内将预览 GPT-6 Cyber 网络安全专用模型，并推安全部署新产品</h3>
+    <div class="meta">
+      <span class="tag">行业动态</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">AI 安全</span>
+    </div>
+    <p>9 月 25 日财联社消息，OpenAI 正准备在未来几天预览其最新网络安全专用模型 GPT-6 Cyber，并将发布一款新产品，帮助客户以更安全、自动化的方式部署该模型。背景值得注意的是：9 月 24 日 InfoQ 中文报道，OpenAI 已按自有 Preparedness Framework（预备框架）把 GPT-6 Astra 的网络安全能力评为"严重级"——这是首个触及该最高风险阈值的模型，测试显示它能在加固浏览器中自动生成沙箱逃逸利用链，并在 12 小时内于加固内核完成本地提权，且该模型已通过 ChatGPT 各档套餐、API 与 AWS 分发。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>方向信号很强——前沿模型的攻防能力正在从"研究警示"走向"产品化分发"。一边是通用旗舰被自家框架评为最高风险级、且已进云产品，一边是专门的网络安全模型即将预览，说明 AI Coding/安全正从辅助写代码转向"能自主发现并利用漏洞"的能力层。对做运维/安全的工程师，这意味着漏洞利用与防护的节奏都会被模型压缩，红蓝对抗与补丁响应流程需要重新评估时延。
+    </div>
+    <div class="source">来源：<a href="https://k.sina.com.cn/article_2868676035_aafc85c302001xwe2.html" target="_blank">财联社 / 新浪财经</a> · <a href="https://www.infoq.cn/" target="_blank">InfoQ 中文</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>AI 在编程奥赛（IOI 2026）首次战胜人类冠军，相同规则下完成比赛</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">里程碑</span>
+      <span class="tag pink">算法竞赛</span>
+    </div>
+    <p>9 月 24 日至顶科技报道，在国际信息学奥林匹克竞赛（IOI）2026 赛场，一套 AI 系统在与人类选手完全相同的条件下完成比赛——相同的时间限制、相同的提交次数、相同的断网环境。这是 AI 首次在编程奥赛中与人类冠军同台并取胜，表明大模型在结构化、规则明确的算法竞赛任务上已具备超越顶尖人类选手的实力。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是继 AlphaCode/AlphaGeometry 之后更具象征意义的节点：比赛环境刻意"去buff"——断网、限次、限时，排除一切外部工具与外挂，纯拼模型自身的算法推理。对正在转型 SRE/DevOps、靠刷题与系统设计吃饭的工程师，这类结果直接压低"算法题护城河"的含金量，也预示代码生成与复杂问题求解会从"辅助补全"进一步走向"自主解题"，倒逼工程价值向架构、权衡与落地能力迁移。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260924A000MV00" target="_blank">至顶科技</a> · <a href="https://www.qbitai.com/" target="_blank">量子位</a></div>
+  </div>
+
+  <div class="card">
+    <h3>编程大模型"降本 + 开源"双线加速：价格砍半、Agent 训练系统开放</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">价格战</span>
+      <span class="tag pink">开源生态</span>
+    </div>
+    <p>9 月 22—24 日多条动态叠加：OpenAI 推出 GPT-6 Sol 与 GPT-6 Luna，API 价格较 GPT-5.6 促销定价再降约 50%，其中 Luna 输入低至每百万 Token 0.10 美元、输出 0.50 美元，直接对标 DeepSeek 低价护城河；DeepSeek 开源 DSec——一套面向 Agent 的训练系统（梁文锋作为作者之一署名），可自动构建大规模训练样本以提升智能体在复杂任务中的决策与执行能力；小米发布并开源 MiMo-V2.6，主打"价格不变、智能翻倍"，延续推理与代码场景投入；AWS 同步介绍以 OpenCode 搭配开放权重模型在 Amazon Bedrock 上运行 AI 编程智能体，支持本地化部署、数据不出域。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>三条线汇成一个结论：AI Coding 的门槛正被系统性拉低。价格端，旗舰能力向下压价让长任务 Agent 编程成本快速下降；能力端，DSec 这类开源 Agent 训练基础设施把"如何造编程智能体"的方法论交到社区手中；合规端，开放权重 + 托管平台的组合让企业能在自有环境内做代码补全/改写/调试而不把源码送出域。对想把 AI 编程落地的团队，选型逻辑正在从"用哪家闭源 API"转向"开源自部署 + 低价 API"的混合架构。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260923A0A2OU00" target="_blank">全天候科技</a> · <a href="https://www.qbitai.com/2026/09/496393.html" target="_blank">量子位（DeepSeek DSec）</a> · <a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/" target="_blank">AWS Blog</a> · <a href="https://view.inews.qq.com/a/20260922A0AIRX00" target="_blank">北京日报（小米 MiMo-V2.6）</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>智元第 20000 台具身智能机器人下线，全球首个大规模具身智能主题乐园启幕</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">规模商用</span>
+      <span class="tag pink">人形机器人</span>
+    </div>
+    <p>9 月 24 日，智元第 20000 台通用具身智能机器人远征 A3 Ultra 在珠海横琴长隆飞船乐园下线并交付长隆集团；同日双方联手打造的全球首个大规模具身智能主题乐园正式启幕，超过 300 台智元全系机器人在园区常态化"上岗"，承担导览、科普、餐饮、零售与互动娱乐等任务。从 2023 年 6 台原型样机，到 2025 年底 5000 台、如今突破 2 万台，产能快速跃升；智元称每台下线机器人都是连接数字 AI 与物理世界的通用接口，可在真实场景持续采集数据、形成"数据飞轮"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是具身智能从"研发验证 / 单点展示"走向"批量生产、规模交付、常态化运营"的硬证据，且场景选在开放、大客流、强互动的文旅公共空间——比工厂更考验交互与安全保障。它同时验证了两条产业化路径：一是量产爬坡速度（半年翻数倍），二是"数据飞轮"能否让新机器人"出厂即进化"。对判断人形机器人是否越过商用拐点，长隆 300 台的实际运营数据比任何 Demo 都更有说服力。
+    </div>
+    <div class="source">来源：<a href="https://view.inews.qq.com/a/20260924A081J800" target="_blank">腾讯新闻（智元 20000 台）</a> · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_6806ab5a57819152" target="_blank">腾讯新闻（长隆乐园）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>广州南沙"机器人科学家"登《Nature Machine Intelligence》，进入真实实验室自主实验</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">科研突破</span>
+      <span class="tag pink">具身科研</span>
+    </div>
+    <p>9 月 25 日南方+报道，广州南沙具身智能企业明德智能研发团队在《Nature Machine Intelligence》发表成果：具身智能机器人科学家 Mind-Scientist 已在真实实验环境中开展自主实验。其核心是"知识-工具"双模型融合的轻量化协同智能体 MatBrain——Mat-R1 作为"材料专家"负责科学推理与结果判断，Mat-T1 作为"科研执行者"调用数据库、计算软件与科研工具，通过"生成—验证—反馈—再执行"闭环自主完成复杂科研任务；机器人还能通过机械臂、视觉与力控把数字决策转化为现实操作，覆盖移液、离心、粉体加样、材料与生化实验等，并正向细胞培养、蛋白纯化拓展。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>多数具身智能新闻集中在"走跑跳 / 导览互动"，这条线把机器人推进到"自主做科研"的高价值场景——把 AI 从"给科学家答案"推向"与科学家共同完成实验"。它代表具身智能另一条商业化路径：不先卷消费级人形，而是切入生物医药、先进材料、教育培训等垂直实验室，用"决策大脑 + 执行小脑"的闭环换取高门槛、高付费意愿的 B 端落地。对关注具身智能产业化的人来说，这是"非人形也能先赚钱"的差异化样本。
+    </div>
+    <div class="source">来源：<a href="https://www.nfnews.com/content/R6gNeDm73p.html" target="_blank">南方+（南方日报 / 南方客户端）</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：财联社 · InfoQ 中文 · 至顶科技 · 量子位 · 全天候科技 · AWS Blog · 北京日报 · 腾讯新闻 · 南方+（南方日报 / 南方客户端）· AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>
