@@ -11,6 +11,7 @@ import { p7 } from './news_parts/p07';
 import { p8 } from './news_parts/p08';
 import { p9 } from './news_parts/p09';
 import { p10 } from './news_parts/p10';
+import { p11 } from './news_parts/p11';
 
 export const aiNewsPosts = [
   ...p0,
@@ -24,4 +25,5 @@ export const aiNewsPosts = [
   ...p8,
   ...p9,
   ...p10,
+  ...p11,
 ];
