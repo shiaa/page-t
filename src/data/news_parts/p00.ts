@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-27',
+    title: 'AI 每日动态 (2026-09-27)',
+    summary: '1. OpenAI 智能体事件链曝光，AI Agent 部署安全警钟敲响 2. 阿里巴巴开源 AI 代码评审工具 OpenCodeReview，确定性流水线 + LLM 智能体架构 3. DoorDash 用多 Agent LLM 系统清理...',
+    date: '2026-09-27',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月27日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 智能体事件链曝光，AI Agent 部署安全警钟敲响
+
+
+### 2. 阿里巴巴开源 AI 代码评审工具 OpenCodeReview，确定性流水线 + LLM 智能体架构
+
+
+### 3. DoorDash 用多 Agent LLM 系统清理 6 万+ 过期 Feature Flag，单条成本仅 4.79 美元
+
+
+### 4. 全球首个大规模具身智能主题乐园开园，智元第 2 万台机器人交付长隆
+
+
+### 5. 中国具身智能进入「实干时代」：从表演到干活，全球出货占比升至 97%
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-26',
     title: 'AI 每日动态 (2026-09-26)',
     summary: '1. 阿里云栖大会收官：万亿参数 Qwen3 Max 免费开放，真武 V900 国产最强 AI 芯片亮相 2. 微软把 Copilot 一分为三，新增云端常驻 Autopilot 智能体并改按用量计费 3. 智能体安全警报：AI 编程智能体...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 优必选柳州万台级工厂投产，「机器人造机器人」每 10 分钟下线一台
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-17',
-    title: 'AI 每日动态 (2026-09-17)',
-    summary: '1. 智谱完成 50 亿美元再融资后首次系统汇报，上调年末 ARR 目标 2. 豆包大模型 2.1 Pro 更新至 0915 版：Agent 交付更可靠，多模态 Coding 进化 3. 上海 AI 实验室开源 Atria Dawn：744...',
-    date: '2026-09-17',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月17日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 智谱完成 50 亿美元再融资后首次系统汇报，上调年末 ARR 目标
-
-
-### 2. 豆包大模型 2.1 Pro 更新至 0915 版：Agent 交付更可靠，多模态 Coding 进化
-
-
-### 3. 上海 AI 实验室开源 Atria Dawn：744B agentic MoE 模型，MIT 许可
-
-
-### 4. 清华、上交大联合开源 APXInf 具身端侧推理引擎，Pi 0.5 延迟降至 26ms
-
-
-### 5. 本体厂商集体"补脑"：8 天 3 家连发 5 个模型（智元 / 宇树 / 松延动力）
 
 
 ---
