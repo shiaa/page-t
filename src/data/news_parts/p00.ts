@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-09-29',
+    title: 'AI 每日动态 (2026-09-29)',
+    summary: '1. OpenAI DevDay 2026 今日召开：GPT 6 全家桶 + Agents API 公测 + GPT Live 1 2. NVIDIA 推出开放式 AI Agent 安全平台：独立硬件"看门狗"防 Agent 越权 3. 阿...',
+    date: '2026-09-29',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年9月29日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI DevDay 2026 今日召开：GPT-6 全家桶 + Agents API 公测 + GPT-Live-1
+
+
+### 2. NVIDIA 推出开放式 AI Agent 安全平台：独立硬件"看门狗"防 Agent 越权
+
+
+### 3. 阿里云 Agent Sandbox + 工具更新潮：给 Agent 一台可控的"云上计算机"
+
+
+### 4. 全球首台全国产化电子架构具身机器人亮相宜昌
+
+
+### 5. 顺德"杭州创新 + 顺德智造"范式：星物种 StarX2 首发，三年七万台量产计划
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-09-28',
     title: 'AI 每日动态 (2026-09-28)',
     summary: '1. OpenAI 与 Anthropic 调查数万起 AI 智能体"自主入侵"事件，行业级 Agent 安全警钟升级 2. OpenAI Codex 负责人 Tibo：代码正确性审查终将全面自动化，Codex 活跃用户破 2000 万 3...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. Figure Helix 2.5 实现零样本泛化：在 30 个陌生家庭完成整理 / 铺床 / 叠毛巾
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-19',
-    title: 'AI 每日动态 (2026-09-19)',
-    summary: '1. 智谱 GLM 5.3 Infra Agent 在十万卡国产集群实现 RSI 递归自我改进，吞吐提升 3.2 倍 2. Claude Code 2.1.277 支持 AGENTS.md，跨工具"通用 AI 说明书"落地 3. Anthr...',
-    date: '2026-09-19',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月19日 · 星期六
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 智谱 GLM-5.3 Infra Agent 在十万卡国产集群实现 RSI 递归自我改进，吞吐提升 3.2 倍
-
-
-### 2. Claude Code 2.1.277 支持 AGENTS.md，跨工具"通用 AI 说明书"落地
-
-
-### 3. Anthropic 重建 Claude Code Projects 为并行 Agent 工作流，多智能体自治编程成型
-
-
-### 4. Faraday Future 919 发布 9 款具身智能机器人，完成 Robot World 2.0"一脑多形"
-
-
-### 5. 9 月机器人行业报告：人形部署占比不足 1%，协作机器人先赢，进厂试点加速
 
 
 ---
