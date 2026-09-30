@@ -20,6 +20,8 @@ AI 日报自动化流水线（容错 / 幂等版）
 """
 
 import json
+import os
+import shutil
 import subprocess
 import sys
 import urllib.request
@@ -53,6 +55,32 @@ def find_managed_node():
 
 NODE = find_managed_node()
 EXTRACT = BLOG_DIR / "scripts" / "extract_news.py"
+
+
+def find_system_node():
+    """定位系统 Node.js（非 managed，通常用于绕过 managed 沙箱内存配额）。
+
+    沙箱对 managed Node 进程设有内存配额，Vite 构建（esbuild 解析/转换阶段）
+    偶发触发 'Fatal process out of memory: Zone'（退出码 134/3）导致构建失败；
+    系统 Node 不受该配额限制，可作构建兜底。优先 C:\\Program Files\\nodejs，
+    其次 PATH 中的 node，且排除 managed 路径以免回退到自身。
+    """
+    cands = []
+    pf = Path(r"C:\Program Files\nodejs\node.exe")
+    if pf.exists():
+        cands.append(str(pf))
+    which = shutil.which("node")
+    if which:
+        cands.append(which)
+    for c in cands:
+        cl = c.replace("/", "\\").lower()
+        if "workbuddy\\binaries\\node" not in cl:
+            return c
+    return ""
+
+
+SYSTEM_NODE = find_system_node()
+
 WEBHOOK_URL = (
     "https://pages-api.cloud.tencent.com/v1/webhook/"
     "8c1574a344d1143ca1104c3c7548b44c66c4b1cb6d44f1cdd2203fcbfb60b224"
@@ -87,14 +115,37 @@ def do_extract():
 
 def do_build():
     print("\n--- 步骤 2/4：Vite 构建 ---")
-    try:
-        r = subprocess.run([NODE, str(VITE), "build"], cwd=str(BLOG_DIR))
-        ok = r.returncode == 0
-        step_report("构建", ok, "构建成功" if ok else f"退出码 {r.returncode}")
-        return ok
-    except Exception as e:
-        step_report("构建", False, f"异常: {e}")
-        return False
+    # 降低 esbuild 并行度与堆上限，缓解 sandbox 下 'Fatal process out of memory: Zone'
+    build_env = dict(os.environ)
+    build_env["ESBUILD_MAX_WORKERS"] = "1"
+    build_env["NODE_OPTIONS"] = "--max-old-space-size=4096"
+
+    # 优先 managed Node；若其因沙箱内存配额 OOM 失败，则回退系统 Node 兜底
+    candidates = [NODE]
+    if SYSTEM_NODE and SYSTEM_NODE.lower() != NODE.lower():
+        candidates.append(SYSTEM_NODE)
+
+    last_rc = None
+    for idx, node in enumerate(candidates):
+        tag = "managed" if idx == 0 else "system(兜底)"
+        try:
+            r = subprocess.run(
+                [node, str(VITE), "build"],
+                cwd=str(BLOG_DIR), env=build_env,
+            )
+            last_rc = r.returncode
+            ok = r.returncode == 0
+            if ok:
+                step_report("构建", True, f"构建成功（{tag}）")
+                return True
+            step_report("构建", False, f"{tag} 退出码 {r.returncode}")
+        except Exception as e:
+            step_report("构建", False, f"{tag} 异常: {e}")
+            last_rc = -1
+        # 还有兜底候选则继续，否则结束
+        if idx < len(candidates) - 1:
+            print(f"    ↳ 改用 {tag} 失败，尝试下一候选 Node ...")
+    return False
 
 
 def do_git():
