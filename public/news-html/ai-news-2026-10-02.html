@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-02</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 02 · 周五</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>OpenAI 正式推送常驻式 Agent「Dots」，个人 Agent 走向大众消费但陷定价争议</h3>
+    <div class="meta">
+      <span class="tag">Agent 平台</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">订阅争议</span>
+    </div>
+    <p>OpenAI 在 9 月 29 日 DevDay 后正式推送 Dots——常驻于 ChatGPT 的"常在线"个人 Agent。每个 Dot 拥有独立云电脑与浏览器沙箱，可接入 4000+ 应用、24/7 在后台持续执行多步骤任务，面向 $500/月的 Pro 500 档与企业版。但同步引发定价争议：旧 $200 Pro 档的用量被砍半，新 $500 档才保留原有额度，大量老用户表达不满。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Dots 是 Agent 从"工具"走向"智能服务/委托执行"的临界点信号——用户定义目标后由 Agent 跨应用持续干活，而非反复下指令。但定价分层把"常驻智能体"变成高端订阅特权，也折射出常驻 Agent 的推理成本仍是核心约束：一个 24/7 在线的 Agent 会进行成百上千次模型交互，成本与权限治理直接决定它能否真正普及。
+    </div>
+    <div class="source">来源：<a href="https://aibriefs.news/ai-news-today" target="_blank">AIBriefs</a> · <a href="https://aiimpacthub.com/ai-news" target="_blank">AI Impact Hub</a> · <a href="https://www.colaberry.ai/resources/podcasts/openai-devday-agent-upgrades-and-model-releases-1st-oct-2026" target="_blank">Colaberry</a> · <a href="https://www.163.com/dy/article/L87EI31G05312HQV.html" target="_blank">网易（王煜全）</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>JetBrains Air 开放早期访问：把多家编码 Agent 直接拉进 IDE 并行运行</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">JetBrains</span>
+      <span class="tag pink">多 Agent 编排</span>
+    </div>
+    <p>JetBrains 开放 Air 早期访问——一个把开发者已安装的编码 Agent（Codex、GitHub Copilot、Cursor、Junie、Claude 等 ACP 兼容 Agent）直接拉进 IDE、以"并行会话"形式运行的插件 / 2026.3 EAP 特性。所有项目的 Agent 会话汇总到一个视图，显示活动、改动文件、提交与花费；双击 Ctrl 即可在当前上下文启动新会话；无需 JetBrains AI 订阅即可试用。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>编码 Agent 的工作模式正从"聊天面板单线对话"转向"多 Agent 并行 + IDE 原生编排/验收"——JetBrains 的判断很直接：同时协调多个任务与"和 AI 聊天"根本不是一回事，IDE 必须成为 Agent 工作的主屏。对团队而言，Air 也提供了一个在同一仓库内横向对比多家 Agent、再决定选型的中立层，无需被单一供应商绑定。
+    </div>
+    <div class="source">来源：<a href="https://theclarity.today/story/jetbrains-air-runs-parallel-coding-agents-inside-the-ide-06ea290a" target="_blank">The Clarity</a> · <a href="https://www.jetbrains.com/" target="_blank">JetBrains 官方</a></div>
+  </div>
+
+  <div class="card">
+    <h3>开源 AG-UI 协议发布 1.0 稳定版，获 Google / 微软 / AWS / Oracle 采纳；Anthropic 上线 claude.dev</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Agent 协议</span>
+      <span class="tag pink">开发者生态</span>
+    </div>
+    <p>开源 AG-UI 协议发布 1.0 稳定版：冻结规范、以 JSON Schema 自动生成 TypeScript / Python / .NET SDK，GitHub 星标达 16K，并获 Google、Microsoft、AWS、Oracle 采纳。同期 Anthropic 上线 claude.dev 开发者中心，打包工程深潜、Claude Code 与 API 指南，以及一线构建团队的实战技巧。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Agent 与前端的通信标准开始固化，意味着"Agent 驱动的应用"迈入可互操作阶段——同一套协议下，不同模型/框架的 Agent 都能无缝接入 UI。大厂集体背书大幅降低生态碎片化风险，对做 Agent 产品或内部工具的开发者是直接利好：少造轮子、多关注业务本身。
+    </div>
+    <div class="source">来源：<a href="https://agihunt.info/en/daily/2026-10-01?f=dr" target="_blank">AGI HUNT Daily</a> · <a href="https://github.com/ag-ui-protocol/ag-ui" target="_blank">AG-UI GitHub</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>Boston Dynamics 重新设计 Atlas 机械手：13 自由度、直驱四指，目标年产 10 万台并落地现代工厂</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">Boston Dynamics</span>
+      <span class="tag pink">量产化</span>
+    </div>
+    <p>Boston Dynamics 公布重新设计的 Atlas 机械手：13 自由度、放弃仿人小指改四指、关节内置直驱执行器（去掉易损肌腱），强调可量产、耐用、低成本，目标年产最高 10 万台，今年进入实地试用。与此同时，Atlas 已在现代汽车 RMAC 工厂执行装配与物料搬运任务，从病毒式演示视频真正走向产线。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>人形机器人竞争焦点正从"炫技式灵巧"转向"可制造性 / 可靠性 / 成本"——这才是商业化落地的真正门槛。直驱 + 四指的设计哲学（实用优先于仿生）可能成为行业量产路线的参考模板；而 Atlas 在现代工厂的部署，标志着物理 AI 从 proof-of-concept 跨入生产线自动化。
+    </div>
+    <div class="source">来源：<a href="https://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a> · <a href="https://techcapsules.com/atlas-robots-new-hand-may-outperform-humanlike-designs" target="_blank">TechCapsules</a> · <a href="https://machinedawn.ai/today" target="_blank">Machine Dawn</a></div>
+  </div>
+
+  <div class="card">
+    <h3>中科院 Maxwell 具身大模型登顶 Meta-World（91.9 纪录）；IDC 半年报佐证中国领跑</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">中科院</span>
+      <span class="tag pink">产业数据</span>
+    </div>
+    <p>中科院工业人工智能研究所 Maxwell 具身大模型以 91.9（四档难度平均成功率）登顶 Meta-World 榜单（50 项日常操作任务），Hard 档达 95.67%；模型仅 1B 参数、支持单卡 / 边缘部署、免微调可执行 200+ 任务。IDC 半年报同步显示：2026 H1 全球人形机器人出货近 2.5 万台（同比 +432%），中国占 77.9%，智元以超 8600 台登顶全球出货与营收双第一。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"模型能力 + 边缘部署 + 中国量产领跑"三条线在此交汇，说明具身智能竞争正从硬件本体转向"大脑 + 数据闭环 + 规模化落地"的综合能力。1B 边缘模型把推理放到机器人就近执行，显著降低真实部署门槛、减少云依赖，加速从仿真走向工厂与家庭场景。
+    </div>
+    <div class="source">来源：<a href="https://iaii.cas.cn/kxyj/kydt/202609/t20260914_8282782.html" target="_blank">中科院工业人工智能研究所</a> · <a href="https://www.scmp.com/news/china/science/article/3369420/maxwell-smart-new-chinese-embodied-model-tops-global-ai-ranking-physical-tasks" target="_blank">SCMP</a> · <a href="https://www.cnstock.com/commonDetail/797547" target="_blank">中国证券网（IDC）</a> · <a href="https://www.thepaper.cn/newsDetail_forward_34185305" target="_blank">澎湃新闻</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：AIBriefs · AI Impact Hub · Colaberry · 网易 · The Clarity · JetBrains · AGI HUNT · AG-UI GitHub · IEEE Spectrum · TechCapsules · Machine Dawn · 中科院工业人工智能研究所 · SCMP · 中国证券网 · 澎湃新闻</p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-03</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 03 · 周六</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Agent 技术栈本周密集“落地”：Cloudflare 重构容器、AG-UI 1.0 冻结规范、Google 推 Agent 安全季</h3>
+    <div class="meta">
+      <span class="tag">智能体基础设施</span>
+      <span class="tag green">Cloudflare</span>
+      <span class="tag pink">协议标准</span>
+    </div>
+    <p>本周多条基础设施级更新齐发：Cloudflare 重构 Containers 以适配 Agent 负载——沙箱按需拉起且需瞬时可用、支持暂停/恢复，中值容器启动从 4 秒以上降至 648 毫秒（约 6 倍提速）；开放的 AG-UI 协议发布 1.0 稳定版，坐拥 16K GitHub stars，获 Google、微软、AWS、Oracle 采用，并以 JSON Schema 生成 TS / Python / .NET SDK，锁定向后兼容；Google Cloud 同期启动 “Advent of Agents” 第三季，10 月提供 31 期免费、免注册的 Agent 安全实战（每集 5-20 分钟，覆盖 Agent 身份隔离、防提示注入、沙箱化生成代码、失控 Agent 熔断等）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Agent 技术栈正从“能跑起来”跨入“可治理、可互操作”阶段。容器启动 6 倍提速直击“常驻式 Agent”的成本命门——毫秒级启停意味着按用量计费的云端 Agent 终于具备经济性；AG-UI 1.0 冻结规范则把“前端如何渲染 Agent”标准化，避免各家重复造轮子。对 SRE / DevOps 而言，这等于 Agent 运行时的“操作系统层”正在成形：未来排障、熔断、身份治理会逐步下沉到平台，而非依赖手工脚本。
+    </div>
+    <div class="source">来源：<a href="https://agihunt.info/en/daily/2026-10-01?f=dr" target="_blank">AGI HUNT（10-01）</a> · <a href="https://agihunt.info/en/daily/2026-10-02?f=dr" target="_blank">AGI HUNT（10-02）</a> · <a href="https://www.infoq.com/ai-ml-data-eng/news/151" target="_blank">InfoQ</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>GitHub Copilot 公测 Dynamic Workflows 并加速模型轮换，正式从“编码助手”转向开发工作流平台</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">GitHub Copilot</span>
+      <span class="tag pink">工作流编排</span>
+    </div>
+    <p>GitHub 10 月 1 日变更日志公测 Dynamic Workflows（Copilot CLI、Copilot App 与 SDK 可用）：以代码定义可复用编排——顺序 / 并行步骤、暂停检查点、子代理交叉校验，区别于 Autopilot 或 /fleet 每次运行临时生成计划。同期 GitHub 宣布 10 月 19 日退役 6 个旧模型（GPT-5.5 / 5.4 / 5.4 mini / GPT-5 mini / Gemini 3.7 Flash / Grok 4.5），换上 GPT-5.6 Sol / Luna 与 Gemini 3.8 Flash；竞争版图也在拓宽——Cognition 以 480 亿美元估值完成 20 亿美元融资，ARR 四个月从 4.92 亿增至 9 亿美元。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>开发者工具之争已不再是谁代码写得好，而是“谁能管理整个软件开发生命周期”。Dynamic Workflows 把 Agent 的“计划-执行-交接”固化成可版本化、可复用的代码，是治理层（而非模型层）的卡位；而模型 28 天一换的节奏等于明说：别把工作流绑死在某个模型上，要绑在平台上。对运维出身的开发者，这意味着“用平台而非单个助手”成为团队选型的第一原则。
+    </div>
+    <div class="source">来源：<a href="https://aicoder.com/news/news-20261002-github-copilot-dynamic-workflows-public-preview" target="_blank">AICoder（10-02）</a> · <a href="https://www.thecodew.com/2026/10/developer-tools-watch-github-copilot-ai-developer-platform.html" target="_blank">The Codew（10-01）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 为 Claude Code 引入 “mods” 并上线 claude.dev，开源 skill 实测代码量降 54%</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Anthropic</span>
+      <span class="tag pink">Claude Code</span>
+    </div>
+    <p>Anthropic 为 Claude Code 引入 “mods”——可用小型 TypeScript 函数改变 Agent 行为，无需改底层即可定制编码风格；同期上线 claude.dev 开发者中心，聚合工程深潜、Claude Code 与 API 指南及一线团队技巧。社区侧，开源 Ponytail skill 引导 Claude Code 走“最小 diff”路线，在真实 FastAPI + React 任务上代码量降约 54%（最高 94%）、成本降 20%、速度提 27%。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>“mods + skill” 组合揭示了一个趋势：编码 Agent 的能力差异越来越不来自底座模型，而来自“执行外壳（harness）”——工具、提示、行为约束的编排。把风格调优做成可插拔函数 / 技能，意味着团队能低成本统一代码规范、卡住质量红线。对准备 SRE / DevOps 面试的人，这类“如何约束 Agent 行为”的实践，比模型评测更贴近真实工程落地。
+    </div>
+    <div class="source">来源：<a href="https://agihunt.info/en/daily/2026-10-01?f=dr" target="_blank">AGI HUNT（10-01）</a> · <a href="https://agihunt.info/en/daily/2026-10-02?f=dr" target="_blank">AGI HUNT（10-02）</a> · <a href="https://jasonzhu.ai/en/news/2026-10-02" target="_blank">JasonZhu.AI（10-02）</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>具身智能“整合潮”图谱：中国占全球出货近 90%、车企成最大买家、Figure 以算力换 GPU</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业整合</span>
+      <span class="tag pink">车企跨界</span>
+    </div>
+    <p>humanoid.guide 9 月 30 日更新的产业整合图谱显示：中国具身公司 2025 年融资 20 亿+ 美元、约占全球出货 90%；车企正把自动驾驶技术栈复用于人形智能——丰田据报规划 2028 年 40 万台计划（自有轮式 ELEY、用产线工人数据训练），车企成为人形最大买家；Figure 以 35 亿美元 Nscale 算力协议“以股换 GPU”；NVIDIA 收购 LeRobot、高通收购 MoveIt，底层生态快速收口。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>人形机器人正从“单品炫技”进入“供应链与资本整合”阶段，买家的性质变了——车企既是需求方也是竞争者，自建者最不可能去买创业公司。对关注供应链或求职的人，信号很明确：未来三年核心竞争力在“大脑（VLA / 世界模型）+ 灵巧手 + 国产算力栈”，而非整机噱头；同时西方“防御性整合”（FCC 进口限制等）也在重塑出海格局。
+    </div>
+    <div class="source">来源：<a href="https://humanoid.guide/?p=11082/" target="_blank">Humanoid.guide（09-30）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>智元 AGIBOT 累计下线 20000 台机器人，长隆 300+ 常态化上岗；IDC H1 全球近 2.5 万台</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">智元 AGIBOT</span>
+      <span class="tag pink">量产数据</span>
+    </div>
+    <p>Humanoids Daily 汇总：智元 AGIBOT 累计产量达 20000 台（约为 3 月的两倍），最新里程碑机交付长隆；长隆已有 300+ 台机器人常态化承担表演、导览与酒店服务，并与 100 家 ASD 厨具店部署 100 台用于迎宾与推荐；IDC 上半年报估计全球人形出货近 2.5 万台，中国占 77.9%，智元以约 35% 份额断层第一（不同口径略有差异）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>“2 万台 + 单场景 300 台常态化”是具身智能从 POC 走向规模部署的关键证据——真正的瓶颈不在 demo，而在稳定出勤率、运维成本与场景闭环。IDC 的数据进一步确认中国在全球出货中的主导地位。对运维工程师而言，这批机器人的“远程运维、故障率、OTA”恰恰是 DevOps 能力可直接迁移的场景，是切入具身赛道的高杠杆入口。
+    </div>
+    <div class="source">来源：<a href="https://www.humanoidsdaily.com/news/china" target="_blank">Humanoids Daily（09-25～30）</a> · IDC 半年报</div>
+  </div>
+
+  <footer>
+    <p>数据来源：AGI HUNT · The Codew · AICoder · InfoQ · JasonZhu.AI · Humanoid.guide · Humanoids Daily · IDC · AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>
