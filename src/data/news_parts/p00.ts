@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-04',
+    title: 'AI 每日动态 (2026-10-04)',
+    summary: '1. AI Coding 成资本最密集赛道：Cognition 估值冲至 480 亿美元，GitHub Copilot 转向模型无关平台 2. DeepSeek 开源 Harness 智能体运行时：全插件架构，Harness 成能力释放关键...',
+    date: '2026-10-04',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月4日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. AI Coding 成资本最密集赛道：Cognition 估值冲至 480 亿美元，GitHub Copilot 转向模型无关平台
+
+
+### 2. DeepSeek 开源 Harness 智能体运行时：全插件架构，Harness 成能力释放关键变量
+
+
+### 3. Anthropic 为 Claude Code 引入 Mods，开发者可"改写"Agent 行为；决策模型接口之争升温
+
+
+### 4. IROS 2026 落幕：中国具身智能从"中国量产"走向"全球落地"
+
+
+### 5. "能干活"优先于"参数秀"：昆山 12 款可落地产品发布，辽宁工业机器人走向量产产线
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-03',
     title: 'AI 每日动态 (2026-10-03)',
     summary: '1. Agent 技术栈本周密集“落地”：Cloudflare 重构容器、AG UI 1.0 冻结规范、Google 推 Agent 安全季 2. GitHub Copilot 公测 Dynamic Workflows 并加速模型轮换，正式...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 具身智能"量产元年"：小鹏 / 特斯拉产线落地，高盛大幅上调出货量，宇树等集中上市
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-22',
-    title: 'AI 每日动态 (2026-09-22)',
-    summary: '1. OpenAI 被曝加紧备战 Grok Bot 与 Muse，智能体之争从"会聊天"转向"能办事" 2. 月之暗面推出 Kimi Code Desktop，编程 Agent 正式上桌面 3. 华为云码道上线鸿蒙编码大模型，一句话生成应用...',
-    date: '2026-09-22',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月22日 · 星期二
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 被曝加紧备战 Grok Bot 与 Muse，智能体之争从"会聊天"转向"能办事"
-
-
-### 2. 月之暗面推出 Kimi Code Desktop，编程 Agent 正式上桌面
-
-
-### 3. 华为云码道上线鸿蒙编码大模型，一句话生成应用
-
-
-### 4. 智元 × 长隆联手打造全球首个大型具身智能主题乐园，超 300 台机器人上岗
-
-
-### 5. 海光信息发布 1000 系列 CPU，"让算力抵达物理世界"直指端侧机器人算力
 
 
 ---

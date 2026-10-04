@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-04</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 04 · 周日</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>AI Coding 成资本最密集赛道：Cognition 估值冲至 480 亿美元，GitHub Copilot 转向模型无关平台</h3>
+    <div class="meta">
+      <span class="tag">行业格局</span>
+      <span class="tag green">Cognition</span>
+      <span class="tag pink">GitHub Copilot</span>
+    </div>
+    <p>AI 编程赛道进入资本与平台双线升级。Cognition（Devin 背后公司）完成 20 亿美元融资，估值达 480 亿美元；TechCrunch 披露其年化收入在 5 月至 9 月四个月间从 4.92 亿美元翻倍至 9 亿美元。同期 GitHub 宣布将于 10 月 19 日退役 6 款 Copilot 旧模型（GPT-5.5 / 5.4 / 5.4 mini / 5 mini / Gemini 3.7 Flash / Grok 4.5），换用 GPT-5.6 Sol/Luna 与 Gemini 3.8 Flash，明确将 Copilot 定位为"模型无关开发平台"而非微软的编码助手。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>两条线索指向同一结论——AI Coding 的竞争主战场已从"谁的模型写代码更好"切换到"谁能掌控整个软件开发生命周期的平台"。Cognition 估值四个月翻倍，说明资本市场把"全栈 AI 工程"当作最确定的变现路径之一；GitHub 把模型轮换速度提到比企业内网工具还快，等于告诉开发者"别绑定具体模型，绑定平台"。对 SRE/DevOps 从业者而言，Agent 权限、会话状态、企业级 Skill 正在成为新的"控制平面"，平台层价值远大于单一模型。
+    </div>
+    <div class="source">来源：<a href="https://www.thecodew.com/2026/10/developer-tools-watch-github-copilot-ai-developer-platform.html" target="_blank">The Codew</a> · <a href="https://www.aicoder.com/rss.xml" target="_blank">AICoder</a> · <a href="https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/" target="_blank">GitHub Changelog</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>DeepSeek 开源 Harness 智能体运行时：全插件架构，Harness 成能力释放关键变量</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">DeepSeek</span>
+      <span class="tag pink">开源框架</span>
+    </div>
+    <p>DeepSeek 推出开源（MIT）智能体运行时 Harness（v0.2 预览），基于 Cordis 插件内核，模型适配器、工具、沙箱、存储、会话乃至 UI 全部是可替换插件，提供 Standard / Code / Minimal / Creator 四种模式，已发布 macOS 与 Windows 桌面版及 npm 包。其 V4 Flash 在 Minimal 模式下 Terminal-Bench 2.1 得分 82.7，可复现。与此同时 HuggingFace 发现：同一模型、同一权重，在不同 harness 下得分可从 62% 跌到 33%，并开源了"年度最实用多 harness RL 指南"。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"模型 + harness = Agent"的范式被 DeepSeek 用开源方式坐实——弱运行时正在浪费大量模型能力，运行时/编排层成为新的价值高地。Harness 的"免费编排、付费推理"策略（开源当天 DeepSeek API 刚涨价）对开发者极具诱惑：可本地跑低成本模型做常规活，难任务切到商业模型而不必重造工具链。对运维/DevOps 场景，模型无关 + 可审计的自托管 Agent 基础设施，是构建内部自动化 Agent 的现成底座。
+    </div>
+    <div class="source">来源：<a href="https://pandaily.com/deepseek-harness-v0-2-preview-desktop-installers-plugin-manager-automations" target="_blank">Pandaily</a> · <a href="https://agihunt.info/en/daily/2026-10-03" target="_blank">AGI HUNT</a> · <a href="https://primo.ai/wiki/DeepSeek_Harness" target="_blank">PRIMO.ai</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 为 Claude Code 引入 Mods，开发者可"改写"Agent 行为；决策模型接口之争升温</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">Claude Code</span>
+      <span class="tag pink">插件化</span>
+    </div>
+    <p>10 月 1 日 Anthropic 发布 Claude Code Mods（2.1.287+ 默认开启）：用少量 TypeScript 函数即可重写提示词、拦截/重试工具调用、批准或拒绝权限请求、从工具输出中脱敏密钥，甚至为界面加按钮和面板；内置 /diff、AGENTS.md 已转为可替换 mod，用户能"削"出更小内核。发布帖在 X 上浏览量破千万。与此同时，决策模型接口之争升温：OpenAI 推出 Decisions API、Perplexity 发布自有决策模型、llama.cpp server 新增 /v1/systemone 单次前向决策端点，用于路由、审核与 Agent 步骤成败判定。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Mods 把 Claude Code 从"功能固定的产品"变成"可被开发者改造的运行时"——这比 hooks 更进一步（能重写事件、画 UI、替换内置功能），意味着每个团队可以把 Agent 调教成贴合自身工作流的样子（如 CI 状态面板、生产操作二次确认、审计日志）。但代价是 mod 继承 Claude Code 的机器权限、不沙箱化，企业需靠 sec-default 等防护层兜底。决策模型接口的爆发，则预示"让模型做判断而非只生成文本"正成为 Agent 工程的新标准件。
+    </div>
+    <div class="source">来源：<a href="https://machineherald.io/article/2026-10/03-anthropic-adds-mods-to-claude-code-typescript-functions-that-rewrite-prompts-gate-tool-calls-and-run-unsandboxed" target="_blank">Machine Herald</a> · <a href="https://explainx.ai/blog/claude-code-mods-typescript-plugins-guide-2026" target="_blank">ExplainX</a> · <a href="https://releasebot.io/updates/anthropic" target="_blank">Anthropic Release Notes</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>IROS 2026 落幕：中国具身智能从"中国量产"走向"全球落地"</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">IROS 2026</span>
+      <span class="tag pink">全球落地</span>
+    </div>
+    <p>9 月 27 日至 10 月 1 日，2026 IEEE/RSJ 智能机器人与系统国际会议（IROS 2026）在美国匹兹堡举行，一系列中国研发成果集中亮相。足式机器人挑战赛上，新加坡南洋理工大学战队携中国智身铜锤 M1 夺冠，该机型首次实现比赛全程全自主作业（自主感知、动态规划、机械臂操作）。新一代钢镚 L2 关节模组峰值扭矩较上代提升约一倍，支持 -20℃ 至 55℃ 宽温域与厘米级建图避障。数据显示，上半年全球人形机器人出货约 1.91 万台，中国占比 97% 以上。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>连续两届顶级赛事冠军队选择中国机器狗，是对可靠性、运动控制与自主导航的"信任票"，标志中国具身智能从"能造"迈向"能在真实复杂场景稳定干活"。更关键的是"产品应用—数据积累—模型迭代—产品升级"的自我增强循环正在形成，四足阶段积累的可靠性工程与量产经验正延伸到人形研发。对关注产业落地与供应链的人来说，核心零部件（关节模组、力矩传感器、端侧芯片）与全栈体系是下一阶段真正护城河。
+    </div>
+    <div class="source">来源：<a href="https://news.xiancity.cn/system/2026/10/02/031270970.shtml" target="_blank">中国新闻网 · 西安网</a> · <a href="https://m.chinanews.com/wap/detail/cht/zw/10707009.shtml" target="_blank">中国新闻网（繁体）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>"能干活"优先于"参数秀"：昆山 12 款可落地产品发布，辽宁工业机器人走向量产产线</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业落地</span>
+      <span class="tag pink">产线应用</span>
+    </div>
+    <p>10 月 4 日报道，江苏昆山张浦镇举办具身智能新品发布会，一口气推出 12 款瞄准真实作业难题的可落地产品：轻量化轮足巡检机器狗从充电桩自主出发、乘梯换层、巡检产线、违停上报后自动回充；重载轮足机器狗在巡检同时用机械臂抓取搬运，形成"发现—处置"闭环。同期辽宁加速布局：新松发布面向工业现场的产品体系，豪森智能联合壕翎机器人发布 SF10 轮式人形机器人与柔性可重构产线；亿达科创"边缘 AI & 具身智能"方案把算力与决策下沉到本体，端到端延迟 <10ms、较云端降约 90%，可在弱网/无网环境连续作业 8 小时以上。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能正集体撕掉"展台演示"标签，转向"能上岗、能闭环"的硬指标——自主乘梯、机械臂处置、弱网下长时作业，都是工厂/园区最看重的真实能力。昆山依托 378 家智能制造企业、年产值近 500 亿的产业底盘做"场景招商"，辽宁用边缘 AI 把延迟压到 10ms 级解决"断网+延迟"痛点，说明落地路径已从单品秀进入"供应链+场景+数据"的系统整合期。对求职/投资而言，工业场景的可靠性工程与边缘部署能力是比炫技参数更值得跟踪的方向。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7692577666087567913/" target="_blank">今日头条 · 中国青年报</a> · <a href="https://www.ln.gov.cn/web/ywdt/jrln/wzxx2018/2026100308133915756/index.shtml" target="_blank">辽宁省人民政府</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：The Codew · AICoder · GitHub Changelog · Pandaily · AGI HUNT · PRIMO.ai · Machine Herald · ExplainX · 中国新闻网 · 今日头条 · 辽宁省人民政府 · AITNT</p>
+  </footer>
+
+</div>
+</body>
+</html>
