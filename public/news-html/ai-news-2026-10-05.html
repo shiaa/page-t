@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-05</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 05 · 周一</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>OpenAI 与 Synopsys 推出 GPT-Synopsys，AI 正式杀入芯片设计</h3>
+    <div class="meta">
+      <span class="tag">AI 基础设施</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">EDA</span>
+    </div>
+    <p>9 月 30 日，OpenAI 与电子设计自动化（EDA）龙头 Synopsys 签署多年期协议，联合打造 GPT-Synopsys——一款将 OpenAI 前沿模型与 Synopsys 的 EDA 工具链、芯片设计经验深度融合的专用模型。OpenAI 将获得 Synopsys EDA 工具授权用于训练，双方在研发与商业化上互为优先伙伴，并共享收益框架。这是大模型公司首次把"模型能力"直接嵌入半导体设计这一最核心的硬科技底座。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>芯片设计是公认最依赖资深专家、周期最长、壁垒最高的工程领域之一。当 OpenAI 把前沿模型封装进 EDA 工作流，意味着 AI 不再只是"写代码辅助"，而是开始啃下"设计芯片"这种系统级硬骨头。对运维/SRE 从业者而言，这条线背后是算力需求的进一步自我强化——模型造芯片、芯片跑模型，AI 基础设施的正反馈循环正在从软件层一路打通到硅片层。同时也给 Synopsys、Cadence 等老牌 EDA 厂商敲响了范式替代警钟。
+    </div>
+    <div class="source">来源：<a href="https://www.business-standard.com/technology/artificial-intelligence" target="_blank">Business Standard</a> · <a href="https://ericbrown.com/weekly-intel-2026-10-04" target="_blank">Eric Brown Weekly Intel</a> · <a href="https://aistartupedge.com/?p=6353" target="_blank">AI Startup Edge</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>OpenAI 发布 GPT-6.1 Sol：近旗舰智能、五分之一价格，专为编程智能体优化</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">降本</span>
+    </div>
+    <p>9 月 29 日，OpenAI 推出 GPT-6.1 Sol（API 模型 ID：gpt-6.1-sol），定价为每百万输入 token 2 美元、输出 10 美元，缓存输入仅 0.10 美元——约为旗舰 GPT-6 Astra（10/50）的五分之一。官方称其在 DeepSWE v1.1 软件工程基准上取得 75.2% 的通过率，与 Astra 持平，而单任务成本下降约 85%。模型具备 105 万 token 上下文、12.8 万 token 输出上限，支持多档推理强度，明确通过 API、ChatGPT Work 与 Codex 提供，却不进普通 Chat 对话——OpenAI 把 Sol 直接导向"编程与智能体"工作负载。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是前沿实验室从"拼能力"转向"拼成本"的又一标志性动作。对 AI Coding 开发者和 SRE 而言，编程智能体最大的落地障碍从来不是"能不能写"，而是"跑一整天要花多少钱"。Sol 把近旗舰水平的智能体编码压到与 Claude Sonnet 5.5（2/10）同价区间，意味着大规模、长周期、可复跑的 Agent 工程化首次在成本上变得可持续。选型策略要从"谁的 benchmark 高"转向"同一任务在自家工具链、权限与评审流程下的真实单任务成本"。
+    </div>
+    <div class="source">来源：<a href="https://aitoolbriefing.com/industry/openai-devday-2026-dots-sol-pro-500" target="_blank">AI Tool Briefing</a> · <a href="https://thenextgentechinsider.com/pulse/openai-launches-gpt-61-sol-with-near-flagship-intelligence-at-reduced-costs" target="_blank">TheNextGenTechInsider</a> · <a href="https://aicoderscope.com/blog/gpt-6-1-sol-cursor-cline-byok-review-2026" target="_blank">AICoderScope</a></div>
+  </div>
+
+  <div class="card">
+    <h3>JetBrains 开放 Air：IDE 从"编辑器"进化为"多智能体调度台"</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">JetBrains</span>
+      <span class="tag pink">多智能体</span>
+    </div>
+    <p>10 月 1 日起，JetBrains 在 2026.3 EAP 版本中向 IntelliJ IDEA、PyCharm、WebStorm、GoLand 等主流 IDE 全面开放 Air 插件层——一个用于同时托管多个编码智能体的运行时。官方将其称为"26 年历史上最重要的几步之一"。Air 支持并行运行多个 Agent、借助 Git worktree 隔离工作区、采用 ACP（Agent Client Protocol）对接不同宿主，并配套提供免费的 Junie Lite，让开发者在一个统一视图里监督、分配和验收多个编码智能体的产出。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>AI Coding 的竞争重心正从"单个 Agent 会不会写代码"转移到"能不能编排、验收一群 Agent"。JetBrains Air 把 IDE 从编写工具重构为智能体调度台，开发者角色进一步从"写代码的人"变成"派活、验收、合并的指挥"。这与 GitHub Copilot 的 Dynamic Workflows（工作流即代码、可进 CI/CD）形成呼应：IDE 与 Git 两条主线都在把多智能体协作固化成可版本化、可复跑的工程资产，对需要并行排查、批量改造的 SRE/DevOps 场景尤为关键。
+    </div>
+    <div class="source">来源：<a href="https://damodev.csdn.net/6ac18b2605257b08571493a8.html" target="_blank">CSDN · DAMO 开发者矩阵</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>IROS 2026 落幕：人形机器人从"表演"走向"可度量任务"，中美的强弱分野清晰化</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">学术会议</span>
+      <span class="tag pink">量产部署</span>
+    </div>
+    <p>IROS 2026 于 9 月 27 日至 10 月 1 日在匹兹堡落幕，汇集 1900+ 篇论文、86 场研讨、186 家展商，其中中国企业以约 62 家成为最大展商群体（美国约 45 家）。大会主线从"跳舞演示"转向"可度量任务"：Agility 发布 Digit 5 并在展台完成约 12 小时、零样本、80–90% 成功率的全身移动操作；Figure 与 Nscale 签下 35 亿美元算力承诺（未来或扩至 60 亿、部署至多 10 万张 GPU）；Unitree 推出面向学术的 H2 Plus（英伟达 Isaac GR00T 参考平台）。媒体总结为"中国硬件在展台、美国在模型/算力/研究上更深"的分裂格局。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>IROS 是观察具身智能"从 demo 到 deploy"拐点的风向标。今年最值得记的，不是又一台会跳舞的机器人，而是 Digit 在拥挤、强光、未训练过的真实场景里连续 12 小时稳定搬运——这标志着灵巧操作开始脱离实验室、进入"可度量可靠性"阶段。算力（Figure 35 亿美元）、数据（机器人训练数据成为独立赛道）、安全（R15.08 第三部分落地、欧盟 AI 法案透明度义务生效）三股力量同时收紧，具身智能正从单品秀走向"供应链 + 标准 + 部署纪律"的工业化阶段。
+    </div>
+    <div class="source">来源：<a href="https://asoasis.tech/news/2026-10-03-0838-robot" target="_blank">ASOasis</a> · <a href="https://robottoday.com/article/iros-2026-closing-briefing-pittsburgh" target="_blank">RobotToday</a> · <a href="https://huggingnews.com/tech/agility-robotics-digit-hits-90percent-success-in-zero-shot-manipulation-22afd0d8" target="_blank">HuggingNews</a></div>
+  </div>
+
+  <div class="card">
+    <h3>FieldAI 冲刺 100 亿美元估值：资本把"机器人大脑"定价得比"身体"更高</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">融资</span>
+      <span class="tag pink">通用大脑</span>
+    </div>
+    <p>据行业整合地图披露，具身智能"通用大脑"公司 FieldAI 正谋求约 7 亿美元新融资，目标估值剑指 100 亿美元，已手握 30 多家客户与 1.35 亿美元合同。同期，General Intuition（62 亿美元）、SiMa.ai（14.5 亿美元，主攻低功耗机器人芯片）等"大脑/算力"侧公司估值同样高企。对比之下，纯本体厂商的估值逻辑被重新审视——资本正在用真金白银投票：能跨本体、跨场景复用的"智能层"，比单一硬件形态更稀缺、更值钱。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>具身智能的融资分化，本质上是一场"软件定义机器人"的价值重估。当 FieldAI 这类"把同一个大脑装进不同身体"的平台冲上百亿估值，意味着行业共识从"谁家的机器人能动"转向"谁的智能可迁移、可规模化"。对关注该赛道的从业者，后续应重点跟踪两类标的：一是跨本体的通用 VLA/控制基础模型，二是端侧低功耗推理芯片——前者决定"聪明程度"，后者决定"能否便宜地落地到每一台机器上"。
+    </div>
+    <div class="source">来源：<a href="https://humanoid.guide/humanoid-robotics-consolidation-map" target="_blank">Humanoid.guide</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：Business Standard · Eric Brown Weekly Intel · AI Startup Edge · AI Tool Briefing · TheNextGenTechInsider · AICoderScope · CSDN · ASOasis · RobotToday · HuggingNews · Humanoid.guide</p>
+  </footer>
+
+</div>
+</body>
+</html>

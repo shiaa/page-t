@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-05',
+    title: 'AI 每日动态 (2026-10-05)',
+    summary: '1. OpenAI 与 Synopsys 推出 GPT Synopsys，AI 正式杀入芯片设计 2. OpenAI 发布 GPT 6.1 Sol：近旗舰智能、五分之一价格，专为编程智能体优化 3. JetBrains 开放 Air：IDE...',
+    date: '2026-10-05',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月5日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 与 Synopsys 推出 GPT-Synopsys，AI 正式杀入芯片设计
+
+
+### 2. OpenAI 发布 GPT-6.1 Sol：近旗舰智能、五分之一价格，专为编程智能体优化
+
+
+### 3. JetBrains 开放 Air：IDE 从"编辑器"进化为"多智能体调度台"
+
+
+### 4. IROS 2026 落幕：人形机器人从"表演"走向"可度量任务"，中美的强弱分野清晰化
+
+
+### 5. FieldAI 冲刺 100 亿美元估值：资本把"机器人大脑"定价得比"身体"更高
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-04',
     title: 'AI 每日动态 (2026-10-04)',
     summary: '1. AI Coding 成资本最密集赛道：Cognition 估值冲至 480 亿美元，GitHub Copilot 转向模型无关平台 2. DeepSeek 开源 Harness 智能体运行时：全插件架构，Harness 成能力释放关键...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 海光信息首发嵌入式工控芯片 1000 系列，国产算力下沉工业机器人边端
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-23',
-    title: 'AI 每日动态 (2026-09-23)',
-    summary: '1. 模型底座双线突破：GPT 6 Astra 全量推送 + Anthropic 披露 Claude 主导 26% 研发 2. GitHub Copilot 平台化升级并接入 Grok 4.7，编码 Agent 进入"可观测 + 成本可控"...',
-    date: '2026-09-23',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月23日 · 星期三
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 模型底座双线突破：GPT-6 Astra 全量推送 + Anthropic 披露 Claude 主导 26% 研发
-
-
-### 2. GitHub Copilot 平台化升级并接入 Grok 4.7，编码 Agent 进入"可观测 + 成本可控"阶段
-
-
-### 3. Google 开源 Mantis 漏洞审查技能包，编码智能体从"写功能"走向"守安全"
-
-
-### 4. 智元机器人 GO-1 通用具身基座大模型全面开源（ViLLA 架构，9/23 免费开放）
-
-
-### 5. 具身智能"量产元年"：小鹏 / 特斯拉产线落地，高盛大幅上调出货量，宇树等集中上市
 
 
 ---
