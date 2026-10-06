@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-06',
+    title: 'AI 每日动态 (2026-10-06)',
+    summary: '1. 「AI 教父」Hinton 首发 RSI 论文，22 位顶级学者联署；白宫六巨头签「前沿责任联合承诺」 2. Claude Code 2.1.289 支持共享智能体派生，Codex 负责人称模型选择器将被自动路由取代 3. 编码 Ag...',
+    date: '2026-10-06',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月6日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 「AI 教父」Hinton 首发 RSI 论文，22 位顶级学者联署；白宫六巨头签「前沿责任联合承诺」
+
+
+### 2. Claude Code 2.1.289 支持共享智能体派生，Codex 负责人称模型选择器将被自动路由取代
+
+
+### 3. 编码 Agent 重心转向「验得准、受控交付」：Airbnb 称 AI 写 60% 代码，CodeScene 三周重构 30 万行
+
+
+### 4. UBTech 柳州「机器人造机器人」超级工厂投产，月产能冲刺 1500 台并开源 Thinker 模型
+
+
+### 5. 全球人形上半年出货近 2.5 万台（+432%），中国占 77.9%；美国 FCC 禁令重塑供应链
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-05',
     title: 'AI 每日动态 (2026-10-05)',
     summary: '1. OpenAI 与 Synopsys 推出 GPT Synopsys，AI 正式杀入芯片设计 2. OpenAI 发布 GPT 6.1 Sol：近旗舰智能、五分之一价格，专为编程智能体优化 3. JetBrains 开放 Air：IDE...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 广州南沙"机器人科学家"登《Nature Machine Intelligence》，进入真实实验室自主实验
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-24',
-    title: 'AI 每日动态 (2026-09-24)',
-    summary: '1. OpenAI Sora 2 API 今日正式关停，战略重心转向编程工具与企业客户 2. Anthropic 发布 Claude Opus 5.5：Fable 5.1 级性能，运行成本直降 40% 3. OpenAI Academy 扩...',
-    date: '2026-09-24',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月24日 · 星期四
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI Sora 2 API 今日正式关停，战略重心转向编程工具与企业客户
-
-
-### 2. Anthropic 发布 Claude Opus 5.5：Fable 5.1 级性能，运行成本直降 40%
-
-
-### 3. OpenAI Academy 扩展「用AI构建」开发者路径，新增 8 门 AI Coding 课程
-
-
-### 4. 微亿智造赴港上市备案，冲刺"工业具身智能第一股"
-
-
-### 5. 海光信息首发嵌入式工控芯片 1000 系列，国产算力下沉工业机器人边端
 
 
 ---
