@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-08</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 08 · 周四</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>微软把 Agent 沙箱做成 Windows 系统级特性：Execution Containers (MXC) 正式 GA，同步放出本地编程模型 MAI Code 1.1 Flash</h3>
+    <div class="meta">
+      <span class="tag">Agent 安全</span>
+      <span class="tag green">微软</span>
+      <span class="tag pink">本地模型</span>
+    </div>
+    <p>10 月 7 日旧金山 Windows &amp; Surface 活动上，微软宣布 Microsoft Execution Containers (MXC) 在 Windows 11 上正式 GA——把 AI Agent 的沙箱从开发者预览变为操作系统级特性。MXC 是策略驱动的执行层：组织定义 Agent 可访问的文件与网络，由 Windows 在运行时强制执行，每个动作都"归因到 Agent 而非用户"，Defender 可在 Agent 被劫持时单独切断它而不影响人类访问。合作伙伴已包含 OpenAI Codex、GitHub Copilot、Claude Code、Replit、LM Studio、NVIDIA OpenShell 等。</p>
+    <p>同一场发布中，微软放出 MAI Code 1.1 Flash——137B 参数编程模型经 3-bit 量化后体积缩约 80%、256K 上下文可本地运行；配合 HydraFusion 把本地与云端模型路由接入 Copilot，以及 llama.cpp 接入 Windows ML，主打"混合智能"（本地模型做高频低成本任务，云端只接最难任务）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>OS 级 Agent 治理（身份隔离 + 审计 + 权限沙箱）首次成为平台标准，直接回应近期编程 Agent"自主入侵 / 越权"的安全危机；本地编程模型让 AI Coding 告别云端 token 账单，把"系统里长出的 AI 程序员"从概念推向桌面。Nadella 与黄仁勋同台站台，Agent 执行安全被抬到系统层——这会是接下来所有桌面 Agent 的合规基准。
+    </div>
+    <div class="source">来源：<a href="https://www.gadgetpilipinas.net/2026/10/microsoft-execution-containers-mxc" target="_blank">Gadget Pilipinas</a> · <a href="https://agihunt.info/en/p/1a1179b52c837900970dd98a5db" target="_blank">AGI Hunt</a> · <a href="https://m.sohu.com/a/1084865257_122066679" target="_blank">搜狐科技</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>谷歌发布 Gemini 4 Argon：输出上限提到 100 万 Token，主攻软件工程，单任务成本砍四成</h3>
+    <div class="meta">
+      <span class="tag">编程模型</span>
+      <span class="tag green">Google</span>
+      <span class="tag pink">降本</span>
+    </div>
+    <p>谷歌放出旗舰 Gemini 4 Argon，输出上限由 6.4 万提升至 100 万 Token，主攻软件工程、法律金融与网安防御等长周期任务；DeepSWE v1.1 以 77.9% 刷新 SWE-bench 纪录，AutomationBench 51.3%、CWE-bench 68% 并列第一。尝鲜价输入 2、输出 10 美元/百万 Token，折后单任务约 1.99 美元，比 Astra 省四成；目前仅向网安防御团队开放，真实编程场景仍吃力。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>长上下文 + 编程专精 + 价格腰斩，编程智能体单次任务成本继续下探，利好长期自主编码工作流；但"真实编程仍吃力"暴露长任务可靠性仍是短板——模型聪明不等于能稳定交付整库级改动，工程化落地仍需人工把关。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1084843403_455313" target="_blank">腾讯研究院 AI 速递（搜狐）</a> · <a href="https://www.producthunt.com/categories/ai-coding-agents" target="_blank">Product Hunt</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI Codex "28 天日更"第二天连发四项：Auto-review 免费、API 档位简化、Meetings 与 Decisions API 公测</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">工作流</span>
+    </div>
+    <p>Codex 负责人 Tibo 立下 28 天每日一更，第二天连发四项：Auto-review 免费（派第二个 Agent 复核高风险动作，ChatGPT 账号登录即免费用）、付费 API 五档并作 Build / Launch / Grow（顶档门槛由 1000 美元降至 500 美元）、Meetings 插件向 macOS Pro / Business 开放 Beta（纪要直接落入 Space）、Decisions API 公测（由 GPT-6 Luna 驱动、只出判断，延迟约 Responses 调用的十分之一）。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Coding Agent 从"写代码"走向"带验收的协作工作流"——Auto-review 把"第二双眼睛"做成默认能力，直击近期 Agent 安全危机（毒化 README、伪造 Sentry bug 等越权攻击）；定价门槛下调则降低团队接入成本，加速从个人玩具到工程化交付。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1084843403_455313" target="_blank">腾讯研究院 AI 速递（搜狐）</a> · <a href="https://www.163.com/dy/article/L8M9FPHG051188EA.html" target="_blank">网易科技（虎嗅）</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>上海电气发布《AI 原生工厂白皮书》，7 款具身机器人样机投入真实工业场景实测</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">工业落地</span>
+      <span class="tag pink">上海电气</span>
+    </div>
+    <p>10 月 8 日，上海电气披露其具身智能布局：已完成 7 款具身智能机器人样机研制下线并投入真实工业场景实测——双足人形"溯元"拥有 53 个运动自由度、可适配巡检 / 抓取 / 搬运 / 装配；工业轮式泛人形"拓元"能自主识别多规格连接器完成插拔与线缆规整；仿生轮式"美人鱼"可辨识按钮、旋钮、空气开关开展电箱内部作业；防爆、六轮、管内倒角、爬壁等特种机器人也在绿色甲醇园区、核电设备现场"上岗"。企业同步搭建工业具身技能训练场，累计采集机器人本体、图像等数据超 10 万组。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>装备巨头把具身智能从演示推向真实产线（巡检、抓取、装配、核电 / 风电运维），"数据-模型自增强飞轮"开始转起来；以"链主"身份牵头上海"AI+制造"产业联盟，在场景、标准与生态上提前卡位，是国内具身从样机走向规模化落地的关键信号。
+    </div>
+    <div class="source">来源：<a href="https://news.qq.com/rain/a/20261008A02FHP00" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Apptronik 近 9 万平方英尺 Robot Park 跑通"数据飞轮"：Apollo 2 真实作业反哺 Google DeepMind Gemini Robotics</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">数据飞轮</span>
+      <span class="tag pink">Google DeepMind</span>
+    </div>
+    <p>Apptronik（源自德州大学奥斯汀分校机器人实验室）启用位于奥斯汀、面积近 9 万平方英尺的 Robot Park 训练与数据采集基地，并推出 Apollo 2 人形平台（双足 + 轮式两种配置）。Apollo 2 在制造、物流、零售等客户场景反复作业，采集真实世界数据，反哺 Google DeepMind 的 Gemini Robotics 基础模型，并用于训练下一代 Apollo 3。该基地与 DeepMind、梅赛德斯-奔驰、GXO 等据点构成数据采集网络，公司已累计融资约 13.8 亿美元、估值约 53 亿美元。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"真实场景数据飞轮"成为头部人形公司的核心壁垒——比的不是谁的演示更炫，而是谁能从真实作业里规模化采数。DeepMind 模型 + Apptronik 硬件的"美式分工"范式清晰，也印证整个行业正从"秀动作"转向"每天在岗产出数据"。
+    </div>
+    <div class="source">来源：<a href="https://www.cet.com.cn/itpd/sm/10579695.shtml" target="_blank">中国经济新闻网</a> · <a href="https://www.ventureatlas.org/company/apptronik" target="_blank">Venture Atlas</a> · <a href="https://techresearchonline.com/news/apollo-2-humanoid-robot-apptronik-robot-park-training-hub/" target="_blank">Tech Research Online</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：Gadget Pilipinas · AGI Hunt · 搜狐科技 · 腾讯研究院 AI 速递 · 网易科技 · 腾讯新闻 · 中国经济新闻网 · Venture Atlas · Tech Research Online · Product Hunt</p>
+  </footer>
+
+</div>
+</body>
+</html>

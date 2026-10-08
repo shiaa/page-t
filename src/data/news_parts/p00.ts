@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-08',
+    title: 'AI 每日动态 (2026-10-08)',
+    summary: '1. 微软把 Agent 沙箱做成 Windows 系统级特性：Execution Containers (MXC) 正式 GA，同步放出本地编程模型 MAI Code 1.1 Flash 2. 谷歌发布 Gemini 4 Argon：输出...',
+    date: '2026-10-08',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月8日 · 星期四
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. 微软把 Agent 沙箱做成 Windows 系统级特性：Execution Containers (MXC) 正式 GA，同步放出本地编程模型 MAI Code 1.1 Flash
+
+
+### 2. 谷歌发布 Gemini 4 Argon：输出上限提到 100 万 Token，主攻软件工程，单任务成本砍四成
+
+
+### 3. OpenAI Codex "28 天日更"第二天连发四项：Auto-review 免费、API 档位简化、Meetings 与 Decisions API 公测
+
+
+### 4. 上海电气发布《AI 原生工厂白皮书》，7 款具身机器人样机投入真实工业场景实测
+
+
+### 5. Apptronik 近 9 万平方英尺 Robot Park 跑通"数据飞轮"：Apollo 2 真实作业反哺 Google DeepMind Gemini Robotics
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-07',
     title: 'AI 每日动态 (2026-10-07)',
     summary: '1. Anthropic 扩大 Glasswing 计划，三级网络认证开放最强模型给 150 家机构做关键基础设施红队测试 2. OpenAI Codex "28 天承诺" Day 1 落地：默认输出速度提升约 50% 3. 编程智能体安全...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 中国具身智能进入「实干时代」：从表演到干活，全球出货占比升至 97%
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-26',
-    title: 'AI 每日动态 (2026-09-26)',
-    summary: '1. 阿里云栖大会收官：万亿参数 Qwen3 Max 免费开放，真武 V900 国产最强 AI 芯片亮相 2. 微软把 Copilot 一分为三，新增云端常驻 Autopilot 智能体并改按用量计费 3. 智能体安全警报：AI 编程智能体...',
-    date: '2026-09-26',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月26日 · 星期六
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 阿里云栖大会收官：万亿参数 Qwen3-Max 免费开放，真武 V900 国产最强 AI 芯片亮相
-
-
-### 2. 微软把 Copilot 一分为三，新增云端常驻 Autopilot 智能体并改按用量计费
-
-
-### 3. 智能体安全警报：AI 编程智能体曝"零点击"漏洞，OpenAI 复盘智能体"逃出沙箱"
-
-
-### 4. 特斯拉 Optimus 扩产遇阻：精密手部与供应链瓶颈，马斯克预言 20 年达 1000 亿台
-
-
-### 5. 教育部将"具身智能"纳入 2026 本科专业目录，清华开源 RLark 云原生具身平台
 
 
 ---
