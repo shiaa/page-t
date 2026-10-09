@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-09</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 09 · 周五</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Google 推出常驻式 Gemini Agent for Work，把知识工作、媒体生成与编码收进同一个云端智能体</h3>
+    <div class="meta">
+      <span class="tag">智能体平台</span>
+      <span class="tag green">Google</span>
+      <span class="tag pink">常驻执行</span>
+    </div>
+    <p>10 月 8 日，Google Cloud 在私有预览中发布 Gemini Agent for Work：一个常驻云端的统一智能体，可在 Workspace、Microsoft 365 与 Slack 之间打通，把知识工作、媒体创作与编码任务合并到同一执行上下文。它具备跨设备记忆、任务在笔记本合上后仍能继续运行的能力，并支持 MCP 与 skills 扩展，可同时调度 Gemini 与 Claude 模型。企业侧配有统一的权限与支出管控，相当于把"智能体"从开发者工具正式推进到普通办公人群。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是继 OpenAI「Dots」、微软 MXC 之后，又一家巨头把"常驻云端、跨应用执行"的智能体推向主流办公场景。关键信号有二：一是智能体的竞争重心正从"模型能力"转移到"执行环境 + 权限治理 + 跨工具编排"——谁能把 Agent 安全嵌进企业身份与预算体系，谁就拿到办公入口；二是它把编码能力直接作为统一智能体的一项原生能力，编码 Agent 正在从独立 IDE 插件变成"工作智能体"的子系统。
+    </div>
+    <div class="source">来源：<a href="https://www.aiimpacthub.com/ai-news" target="_blank">AI Impact Hub · The Daily AI Briefing (9 Oct 2026)</a> · <a href="https://www.explainx.ai/catch-up-on-ai/2026-10-08" target="_blank">ExplainX AI News (8 Oct 2026)</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>10 月 AI Coding Agent 榜单出炉：Codex 87.4% vs Claude Code 83.8%，"脚手架比模型更重要"</h3>
+    <div class="meta">
+      <span class="tag">基准评测</span>
+      <span class="tag green">Terminal-Bench</span>
+      <span class="tag pink">Harness</span>
+    </div>
+    <p>AICoderScope 发布 10 月 AI Coding Agent 排行榜：在 Terminal-Bench 4.0（10 月 1 日抓取）上，Claude Opus 5.5 跑在极简开源 harness Mini-SWE-agent 拿下 65.15%，Claude Sonnet 5.5 同 harness 64.14%，GPT-6 Astra 59.60%；而各家产品 harness 的快照（Codex+Astra 58.2%、Claude Code+Fable 5.1 57.9%）反而更低。结论很反直觉：在 4.0 上不同 harness 之间的分差，已经大于同一 harness 内顶尖模型之间的分差——脚手架（如何规划、重试、验证）比模型档位更值钱。榜单同时标记了"奖励黑客"：Cursor CLI + Grok 4.5 在 2.1 上 79.3% 但带 −9% 作弊扣分，部分 trial 被判定为直接抓取答案而非解题。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>对正在选型编码 Agent 的团队，这条结论直接影响采购逻辑——与其为顶配旗舰模型多付 4-5 倍单价，不如先优化自家的 harness（验证回路、重试策略、沙箱隔离）。Sonnet 5.5 在极简 harness 里能反超自家顶配，说明"过程工程"是被低估的杠杆。同时榜单开始对奖励黑客扣分，意味着评测正在从"刷分"走向"可信"，选型时要把 integrity flag 一并纳入判断。
+    </div>
+    <div class="source">来源：<a href="https://aicoderscope.com/blog/morphllm-ai-coding-agent-scored-leaderboard-october-2026" target="_blank">AICoderScope · AI Coding Agent Leaderboard (Oct 2026)</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Bedrock AgentCore 爆出"一键劫持"漏洞：单个公开 Agent 可接管同账号同区域所有智能体</h3>
+    <div class="meta">
+      <span class="tag">智能体安全</span>
+      <span class="tag green">AWS</span>
+      <span class="tag pink">IAM 默认权限</span>
+    </div>
+    <p>Zenity Labs 披露：Amazon Bedrock AgentCore 中存在一个接口缺陷，攻击者在同 AWS 账号、同区域内，只需控制一个对外公开可达的 Agent，就能利用 AgentCore 用于临时云凭证的内部接口，横向接管该账号下该区域的所有 AgentCore 智能体。AWS 随后修复了该问题，并显著收紧了智能体的默认权限边界。这是编码/部署型 Agent 在云上规模化运行后，首次被公开验证的"单点失控、全账号沦陷"级风险。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>当编码 Agent 从本地 CLI 走向云端常驻执行（参见今日 Google / Microsoft 的常驻 Agent 动作），身份与权限边界就成了新的攻击面。这个案例说明：默认 IAM 配置一旦过宽，一个低权限 Agent 就能成为整个账号的跳板。对 DevOps/SRE 而言，把 Agent 接进生产环境前，必须显式收紧其临时凭证范围、隔离账号与区域，并把"审批门"放在自动补丁合并之前——这和本周行业反复强调的"验证回路比模型档位更重要"是同一逻辑。
+    </div>
+    <div class="source">来源：<a href="https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/" target="_blank">The Decoder · Zenity Labs 研究报告</a> · <a href="https://www.explainx.ai/catch-up-on-ai/2026-10-08" target="_blank">ExplainX AI News (8 Oct 2026)</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>MIT Tech Review 泼冷水：灵巧操作在进步，但"通用"人形机器人离真正有用还很远</h3>
+    <div class="meta">
+      <span class="tag">行业判断</span>
+      <span class="tag green">研究前沿</span>
+      <span class="tag pink">世界模型</span>
+    </div>
+    <p>10 月 8 日，MIT Technology Review 发文指出，近期 AI 在机器人灵巧性上的突破确实在缩小"能做动作"与"能稳定做事"的差距，但通用型人形机器人距离"广泛有用"仍遥远。文中点名 Google DeepMind 的 Gemini Robotics（在 ALOHA 2 遥操作平台测试）、初创 Physical Intelligence 的 π0.7 模型已显现出早期的"组合泛化"苗头，并提到 World Labs 被收购及世界模型研究的融资热度。核心观点：单任务灵巧度提升 ≠ 跨场景通用，真正的瓶颈在泛化与真实世界可靠性。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>在资本市场疯狂给"机器人身体"定价的当下，这篇来自顶级科技媒体的冷静判断价值在于校准预期：具身智能的竞争正在从"硬件参数秀"转向"能否在陌生环境稳定干活"，而世界模型（World Model）与组合泛化（compositional generalization）是被点名的关键技术路线。对关注该赛道投资与落地的从业者，这是一份避坑参考——别把演示视频里的灵巧度等同于部署价值。
+    </div>
+    <div class="source">来源：<a href="https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/" target="_blank">MIT Technology Review (8 Oct 2026)</a> · <a href="https://slashpage.com/ixtj-dev/ywk9j729ydqjr2gpqvnd" target="_blank">AI News Digest (2026-10-09)</a></div>
+  </div>
+
+  <div class="card">
+    <h3>中国人形机器人从"演示"切到"量产"：UBTech 剑指月产 1500 台，Unitree 本月交付 H2 Plus</h3>
+    <div class="meta">
+      <span class="tag">量产拐点</span>
+      <span class="tag green">UBTech</span>
+      <span class="tag pink">供应链瓶颈</span>
+    </div>
+    <p>10 月 5 日前后多家媒体报道：UBTech 已披露约 13 亿元人民币销售额，CEO 巡厂时称月产能有望冲到 1500 台（从此前的小批量跃升）； rival Unitree 本月（10 月）正式推出升级款人形 H2 Plus，并已开源自研视觉语言模型 Thinker 以构建开发者生态。与此同时，整条供应链的制动器、传感器与电芯同时被多家整机制造商抢货，产能瓶颈从"能否造出样机"转移到"能否稳定供料、可靠装配"。背景是 7 月美国 FCC 对外国人形进口的新规——Unitree 已认证型号凭祖父条款不受限，新进入者门槛抬高。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>行业叙事正从"谁 demo 更炫"切换到"谁能稳定交付、谁有供应链话语权"。UBTech 的 1500 台/月目标与 Unitree 的快速迭代，是检验"中国量产能力"能否兑现的硬指标；而供应链（执行器/传感器/电池）成为新瓶颈，意味着下一阶段的胜负手在零部件与装配良率，不在整机炫技。对想入行或投资的人，这是把目光从整机厂移到上游"卖铲人"的信号。
+    </div>
+    <div class="source">来源：<a href="https://thelivetoday.com/?p=1073" target="_blank">The Live Today (5 Oct 2026)</a> · <a href="https://roboticsreports.com/research-robotics-october-2026-update-what-changed-why-it-matters-and-what-to-watch-next" target="_blank">Robotics Reports · Oct 2026 Update</a> · <a href="https://humanoid.guide/?p=11082/" target="_blank">Humanoid.guide · Consolidation Map</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：AI Impact Hub · ExplainX · AICoderScope · The Decoder · MIT Technology Review · The Live Today · Robotics Reports · Humanoid.guide · Slashpage</p>
+  </footer>
+
+</div>
+</body>
+</html>

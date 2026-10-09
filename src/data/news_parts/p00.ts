@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-09',
+    title: 'AI 每日动态 (2026-10-09)',
+    summary: '1. Google 推出常驻式 Gemini Agent for Work，把知识工作、媒体生成与编码收进同一个云端智能体 2. 10 月 AI Coding Agent 榜单出炉：Codex 87.4% vs Claude Code 83...',
+    date: '2026-10-09',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月9日 · 星期五
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Google 推出常驻式 Gemini Agent for Work，把知识工作、媒体生成与编码收进同一个云端智能体
+
+
+### 2. 10 月 AI Coding Agent 榜单出炉：Codex 87.4% vs Claude Code 83.8%，"脚手架比模型更重要"
+
+
+### 3. Bedrock AgentCore 爆出"一键劫持"漏洞：单个公开 Agent 可接管同账号同区域所有智能体
+
+
+### 4. MIT Tech Review 泼冷水：灵巧操作在进步，但"通用"人形机器人离真正有用还很远
+
+
+### 5. 中国人形机器人从"演示"切到"量产"：UBTech 剑指月产 1500 台，Unitree 本月交付 H2 Plus
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-08',
     title: 'AI 每日动态 (2026-10-08)',
     summary: '1. 微软把 Agent 沙箱做成 Windows 系统级特性：Execution Containers (MXC) 正式 GA，同步放出本地编程模型 MAI Code 1.1 Flash 2. 谷歌发布 Gemini 4 Argon：输出...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. Stanford & Caltech 推出 HomeBody：GPT-6 Astra 直接驱动 Unitree G1 收拾陌生厨房
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-27',
-    title: 'AI 每日动态 (2026-09-27)',
-    summary: '1. OpenAI 智能体事件链曝光，AI Agent 部署安全警钟敲响 2. 阿里巴巴开源 AI 代码评审工具 OpenCodeReview，确定性流水线 + LLM 智能体架构 3. DoorDash 用多 Agent LLM 系统清理...',
-    date: '2026-09-27',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月27日 · 星期日
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 智能体事件链曝光，AI Agent 部署安全警钟敲响
-
-
-### 2. 阿里巴巴开源 AI 代码评审工具 OpenCodeReview，确定性流水线 + LLM 智能体架构
-
-
-### 3. DoorDash 用多 Agent LLM 系统清理 6 万+ 过期 Feature Flag，单条成本仅 4.79 美元
-
-
-### 4. 全球首个大规模具身智能主题乐园开园，智元第 2 万台机器人交付长隆
-
-
-### 5. 中国具身智能进入「实干时代」：从表演到干活，全球出货占比升至 97%
 
 
 ---
