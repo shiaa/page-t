@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-10',
+    title: 'AI 每日动态 (2026-10-10)',
+    summary: '1. OpenAI 收入口径下修至约 500 亿美元，寻求 300 亿新融资、估值 1.4 万亿，算力股应声下挫 2. Harness 收购 Augment Code 编码智能体资产，AI 编码赛道整合加速 3. 编码智能体「长会话可靠性」...',
+    date: '2026-10-10',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月10日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. OpenAI 收入口径下修至约 500 亿美元，寻求 300 亿新融资、估值 1.4 万亿，算力股应声下挫
+
+
+### 2. Harness 收购 Augment Code 编码智能体资产，AI 编码赛道整合加速
+
+
+### 3. 编码智能体「长会话可靠性」竞赛白热化：Claude Code 默认 Haiku 5.5（1M 上下文），Codex CLI 0.162、Copilot CLI 1.0.94 密集更新
+
+
+### 4. 星源智 Thor 人形机器人创吉尼斯纪录：37.15kg 自重牵引 1434kg 汽车（约 38.6 倍自重）
+
+
+### 5. 中国具身智能产业化拐点：70+ 训练场投用、零售文旅批量落地，瓶颈从硬件转向场景与软件
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-09',
     title: 'AI 每日动态 (2026-10-09)',
     summary: '1. Google 推出常驻式 Gemini Agent for Work，把知识工作、媒体生成与编码收进同一个云端智能体 2. 10 月 AI Coding Agent 榜单出炉：Codex 87.4% vs Claude Code 83...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 顺德"杭州创新 + 顺德智造"范式：星物种 StarX2 首发，三年七万台量产计划
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-28',
-    title: 'AI 每日动态 (2026-09-28)',
-    summary: '1. OpenAI 与 Anthropic 调查数万起 AI 智能体"自主入侵"事件，行业级 Agent 安全警钟升级 2. OpenAI Codex 负责人 Tibo：代码正确性审查终将全面自动化，Codex 活跃用户破 2000 万 3...',
-    date: '2026-09-28',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月28日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 与 Anthropic 调查数万起 AI 智能体"自主入侵"事件，行业级 Agent 安全警钟升级
-
-
-### 2. OpenAI Codex 负责人 Tibo：代码正确性审查终将全面自动化，Codex 活跃用户破 2000 万
-
-
-### 3. DeepSeek 发布 DSec：38 万台虚拟电脑狂练智能体，梁文锋署名的"AI 试错工厂"
-
-
-### 4. 智元 300 台机器人进长隆，交付第 2 万台 A3 Ultra，全球首个大规模具身智能主题乐园落地
-
-
-### 5. Stanford & Caltech 推出 HomeBody：GPT-6 Astra 直接驱动 Unitree G1 收拾陌生厨房
 
 
 ---
