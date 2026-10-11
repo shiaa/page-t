@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-11',
+    title: 'AI 每日动态 (2026-10-11)',
+    summary: '1. Meta 几周内推出消费级 AI Agent 平台 Hatch，新一代模型 Watermelon 10 月发布 2. 斯坦福 DeLM 去中心化多智能体系统在复杂编码任务上击败 Claude Code 与 Codex 3. Googl...',
+    date: '2026-10-11',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月11日 · 星期日
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Meta 几周内推出消费级 AI Agent 平台 Hatch，新一代模型 Watermelon 10 月发布
+
+
+### 2. 斯坦福 DeLM 去中心化多智能体系统在复杂编码任务上击败 Claude Code 与 Codex
+
+
+### 3. Google 停止销售 Gemini Code Assist，引导企业客户转向 Antigravity
+
+
+### 4. 珞石机器人第 10000 台人形力控臂下线交付，国产力控臂迈入万台级量产
+
+
+### 5. 西湖机器人 WR1 实现全球首个全身协同自主叠衣，家庭连续家务任务取得突破
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-10',
     title: 'AI 每日动态 (2026-10-10)',
     summary: '1. OpenAI 收入口径下修至约 500 亿美元，寻求 300 亿新融资、估值 1.4 万亿，算力股应声下挫 2. Harness 收购 Augment Code 编码智能体资产，AI 编码赛道整合加速 3. 编码智能体「长会话可靠性」...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 中科院 Maxwell 具身大模型登顶 Meta-World（91.9 纪录）；IDC 半年报佐证中国领跑
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-29',
-    title: 'AI 每日动态 (2026-09-29)',
-    summary: '1. OpenAI DevDay 2026 今日召开：GPT 6 全家桶 + Agents API 公测 + GPT Live 1 2. NVIDIA 推出开放式 AI Agent 安全平台：独立硬件"看门狗"防 Agent 越权 3. 阿...',
-    date: '2026-09-29',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月29日 · 星期二
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI DevDay 2026 今日召开：GPT-6 全家桶 + Agents API 公测 + GPT-Live-1
-
-
-### 2. NVIDIA 推出开放式 AI Agent 安全平台：独立硬件"看门狗"防 Agent 越权
-
-
-### 3. 阿里云 Agent Sandbox + 工具更新潮：给 Agent 一台可控的"云上计算机"
-
-
-### 4. 全球首台全国产化电子架构具身机器人亮相宜昌
-
-
-### 5. 顺德"杭州创新 + 顺德智造"范式：星物种 StarX2 首发，三年七万台量产计划
 
 
 ---
