@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-12',
+    title: 'AI 每日动态 (2026-10-12)',
+    summary: '1. Google Gemini 4 新检查点 Carbon 曝光：内部编程体验"感觉像 Opus 5.5" 2. Meta 与微软大幅缩减内部对 Claude Code 的使用，转向自研编码工具 3. 开源项目 REA 登顶 GitHub...',
+    date: '2026-10-12',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月12日 · 星期一
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Google Gemini 4 新检查点 Carbon 曝光：内部编程体验"感觉像 Opus 5.5"
+
+
+### 2. Meta 与微软大幅缩减内部对 Claude Code 的使用，转向自研编码工具
+
+
+### 3. 开源项目 REA 登顶 GitHub Trending，三天近 8 万星：MCP 打通逆向工程
+
+
+### 4. LeCun 创业公司 AMI 开源 H-JEPA：分层世界模型做视觉规划，三层成功率 73%
+
+
+### 5. Odyssey-3 生成式世界模型发布：实时生成可交互环境并控制机器人 / 无人机
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-11',
     title: 'AI 每日动态 (2026-10-11)',
     summary: '1. Meta 几周内推出消费级 AI Agent 平台 Hatch，新一代模型 Watermelon 10 月发布 2. 斯坦福 DeLM 去中心化多智能体系统在复杂编码任务上击败 Claude Code 与 Codex 3. Googl...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. 智元 AGIBOT 累计下线 20000 台机器人，长隆 300+ 常态化上岗；IDC H1 全球近 2.5 万台
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-10-02',
-    title: 'AI 每日动态 (2026-10-02)',
-    summary: '1. OpenAI 正式推送常驻式 Agent「Dots」，个人 Agent 走向大众消费但陷定价争议 2. JetBrains Air 开放早期访问：把多家编码 Agent 直接拉进 IDE 并行运行 3. 开源 AG UI 协议发布 1...',
-    date: '2026-10-02',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年10月2日 · 星期五
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. OpenAI 正式推送常驻式 Agent「Dots」，个人 Agent 走向大众消费但陷定价争议
-
-
-### 2. JetBrains Air 开放早期访问：把多家编码 Agent 直接拉进 IDE 并行运行
-
-
-### 3. 开源 AG-UI 协议发布 1.0 稳定版，获 Google / 微软 / AWS / Oracle 采纳；Anthropic 上线 claude.dev
-
-
-### 4. Boston Dynamics 重新设计 Atlas 机械手：13 自由度、直驱四指，目标年产 10 万台并落地现代工厂
-
-
-### 5. 中科院 Maxwell 具身大模型登顶 Meta-World（91.9 纪录）；IDC 半年报佐证中国领跑
 
 
 ---

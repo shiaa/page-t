@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-12</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 12 · 周一</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Google Gemini 4 新检查点 Carbon 曝光：内部编程体验"感觉像 Opus 5.5"</h3>
+    <div class="meta">
+      <span class="tag">模型军备竞赛</span>
+      <span class="tag green">Google</span>
+      <span class="tag pink">Gemini 4</span>
+    </div>
+    <p>据 Business Insider 报道，谷歌员工正在内部编程环境 Jetski 试用 Gemini 4 的新检查点 Carbon，多份内部文件与截图显示，有员工称其编程体验"感觉像 Opus 5.5"。内部代号 Argon、Barium、Carbon 浮出水面——公开版 Argon 实为内部版本 Barium-B，Carbon 可能是 Argon 的后续更新或独立发布。与此同时，Antigravity 测试版出现 Argon 入口，并提供 256K、512K、900K 三种上下文配置，后两档额度消耗约为普通配置的 1.3 倍和 1.8 倍。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Gemini 4 Carbon 若真能在"编程"这一兵家必争之地逼近 Claude Opus 5.5，意味着顶配编码模型的性能差距正被快速抹平。更关键的是 900K 上下文窗口的逐步开放——长上下文直接决定编码 Agent 能否"记住"整个代码库、减少长会话丢失，与行业反复强调的"过程工程 > 模型档位"形成互补：模型更强 + 上下文更长，编码 Agent 实用性上限被同时抬高。对选型者，Google 正用"模型能力 + 常驻 Agent 平台（Antigravity）"双线夹击 OpenAI 与 Anthropic。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1086432362_455313" target="_blank">腾讯研究院 AI 速递 (2026-10-12)</a> · <a href="https://n.yam.com/Article/20261012421047" target="_blank">商传媒 AI 产业周报 (12 Oct 2026)</a> · Business Insider</div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>Meta 与微软大幅缩减内部对 Claude Code 的使用，转向自研编码工具</h3>
+    <div class="meta">
+      <span class="tag">编码工具格局</span>
+      <span class="tag green">Meta / 微软</span>
+      <span class="tag pink">自研替代</span>
+    </div>
+    <p>据商传媒 10 月 12 日报道，Meta Platforms 与微软两大巨头正大幅缩减内部员工对 Anthropic 公司 AI 模型 Claude Code 的使用，转而加码投资自家开发的 AI 工具——Meta 的 Muse Code 与微软的 Copilot for Business。报道指出，这一动作对 Anthropic 构成直接挑战，并预示着 AI 产业将进入巨头自研、竞争更趋白热化的新阶段。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是个被低估的"需求侧"信号。Claude Code 过去两年靠开发者口碑和巨头内部的广泛使用建立护城河，但当 Meta、微软这样的大客户把内部流量切回自家产品，Anthropic 的"隐性分发渠道"被削弱——编码 Agent 的胜负不再只看模型好坏，更看谁能把工具嵌进大公司的内部工作流与采购体系。对中小团队选型也是提示：依赖单一闭源编码 Agent 存在"客户集中度"风险，自托管 / 多模型可切换的 harness 更稳妥。
+    </div>
+    <div class="source">来源：<a href="https://n.yam.com/Article/20261012421047" target="_blank">商传媒 AI 产业周报 (12 Oct 2026)</a></div>
+  </div>
+
+  <div class="card">
+    <h3>开源项目 REA 登顶 GitHub Trending，三天近 8 万星：MCP 打通逆向工程</h3>
+    <div class="meta">
+      <span class="tag">开源爆发</span>
+      <span class="tag green">MCP</span>
+      <span class="tag pink">逆向工程</span>
+    </div>
+    <p>据腾讯研究院 AI 速递，开源项目 REA（Reverse Engineer Anything）登上 GitHub Trending 当日榜首，报道称其第三天已接近 8 万颗星，npm 累计下载约 4.4 万次。REA 基于 MCP 协议，把大模型与 Ghidra、Hopper 等逆向工具连通，Claude Code、Codex 等编码 Agent 可按自然语言指令完成反编译、读汇编、找接口，并给出重构代码与依据。对象涵盖 App 运行行为、原生二进制、安卓 APK 与硬件固件。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>REA 把"逆向工程"这类高门槛、强工具链的工作第一次交给自然语言 Agent，是 MCP 生态从"接 API"走向"接专业桌面工具"的标志性案例。它的爆发说明编码 Agent 的价值正溢出传统软件工程，向安全分析、固件审计、遗留系统维护等场景扩张。对开发者，这既是效率红利（快速理解闭源二进制），也带来合规与安全的双刃剑——企业需提前明确这类 Agent 的使用边界。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1086432362_455313" target="_blank">腾讯研究院 AI 速递 (2026-10-12)</a> · GitHub Trending</div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>LeCun 创业公司 AMI 开源 H-JEPA：分层世界模型做视觉规划，三层成功率 73%</h3>
+    <div class="meta">
+      <span class="tag">世界模型</span>
+      <span class="tag green">AMI</span>
+      <span class="tag pink">LeCun</span>
+    </div>
+    <p>据腾讯研究院 AI 速递，由 LeCun 任董事长的 AMI 联合纽约大学、巴黎 INRIA 与布朗大学发表 H-JEPA 论文，推出面向视觉规划的分层世界模型，代码与预训练权重同步公开。多个 JEPA 逐层堆叠，各层在自身表征空间预测不同时间跨度后的状态；高层先定粗略计划，把预测的中间状态作为子目标交给低层细化为动作，并沿用 SIGReg 避免表征坍塌。在 Visual AntMaze 仿真迷宫任务中，三层模型成功率 73%，单层仅 18%。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>H-JEPA 验证了"分层世界模型"在具身规划上的结构性优势——高层定目标、低层细化动作，这正是机器人从"单任务灵巧"走向"长程自主作业"需要的架构。LeCun 坚持的 JEPA / 世界模型路线，与"直接端到端模仿"形成鲜明对照，而 73% vs 18% 的差距说明"规划分层"不是噱头。这正冲着近期 MIT 泼冷水所指的瓶颈——泛化与长程规划——而去。
+    </div>
+    <div class="source">来源：<a href="https://www.sohu.com/a/1086432362_455313" target="_blank">腾讯研究院 AI 速递 (2026-10-12)</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Odyssey-3 生成式世界模型发布：实时生成可交互环境并控制机器人 / 无人机</h3>
+    <div class="meta">
+      <span class="tag">世界模型</span>
+      <span class="tag green">Odyssey</span>
+      <span class="tag pink">具身控制</span>
+    </div>
+    <p>据 The Decoder 报道，Odyssey 发布 Odyssey-3 公开研究预览：一个 140 亿参数的生成式世界模型，可从文本提示实时生成可交互环境，并被报道能够控制机器人、无人机以及 GTA V 等仿真，在部分物理基准上取得最高分。模型以公共研究预览形式开放试用。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>Odyssey-3 把"生成式世界模型"从视频生成推进到"可交互、可控制"——既能实时造出物理可信的虚拟世界，又能反过来驱动真实机器人 / 无人机在其中行动。这对具身智能有两层意义：一是为机器人提供低成本的"仿真训练场"与"数字孪生"，二是世界模型本身可能成为机器人的"内部认知引擎"。与同一天 AMI 的 H-JEPA 相互印证：世界模型正成为 2026 下半年具身赛道最热的技术主轴。
+    </div>
+    <div class="source">来源：<a href="https://slashpage.com/ixtj-dev/5r398nmn1yvyp2vwje7y" target="_blank">AI News Digest (2026-10-12)</a> · <a href="https://the-decoder.com/odyssey-3-is-a-new-generative-world-model-that-you-can-try-for-free/" target="_blank">The Decoder</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：腾讯研究院 · The Decoder · 商传媒 · Slashpage · Business Insider · GitHub Trending</p>
+  </footer>
+
+</div>
+</body>
+</html>
