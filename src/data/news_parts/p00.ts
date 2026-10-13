@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-13',
+    title: 'AI 每日动态 (2026-10-13)',
+    summary: '1. Meta 发布首个前沿模型 Muse Wonder / Wonder Full，1M 上下文直指 Agent 编程战场 2. 哈佛研究：AI 编码智能体让代码量 +30%，但成品软件零增长，审查成瓶颈 3. OpenAI Codex「...',
+    date: '2026-10-13',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月13日 · 星期二
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Meta 发布首个前沿模型 Muse Wonder / Wonder Full，1M 上下文直指 Agent 编程战场
+
+
+### 2. 哈佛研究：AI 编码智能体让代码量 +30%，但成品软件零增长，审查成瓶颈
+
+
+### 3. OpenAI Codex「28 天承诺」Day 2：四项更新，Auto-review 免费向全体登录用户开放
+
+
+### 4. 小鹏 IRON 人形机器人明确时间表：2026 年底量产、2027 H1 交付、H2 进欧洲
+
+
+### 5. 武汉人工智能与机器人博览会开幕，人形机器人进入「量产验证期」
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-12',
     title: 'AI 每日动态 (2026-10-12)',
     summary: '1. Google Gemini 4 新检查点 Carbon 曝光：内部编程体验"感觉像 Opus 5.5" 2. Meta 与微软大幅缩减内部对 Claude Code 的使用，转向自研编码工具 3. 开源项目 REA 登顶 GitHub...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. "能干活"优先于"参数秀"：昆山 12 款可落地产品发布，辽宁工业机器人走向量产产线
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-10-03',
-    title: 'AI 每日动态 (2026-10-03)',
-    summary: '1. Agent 技术栈本周密集“落地”：Cloudflare 重构容器、AG UI 1.0 冻结规范、Google 推 Agent 安全季 2. GitHub Copilot 公测 Dynamic Workflows 并加速模型轮换，正式...',
-    date: '2026-10-03',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年10月3日 · 星期六
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. Agent 技术栈本周密集“落地”：Cloudflare 重构容器、AG-UI 1.0 冻结规范、Google 推 Agent 安全季
-
-
-### 2. GitHub Copilot 公测 Dynamic Workflows 并加速模型轮换，正式从“编码助手”转向开发工作流平台
-
-
-### 3. Anthropic 为 Claude Code 引入 “mods” 并上线 claude.dev，开源 skill 实测代码量降 54%
-
-
-### 4. 具身智能“整合潮”图谱：中国占全球出货近 90%、车企成最大买家、Figure 以算力换 GPU
-
-
-### 5. 智元 AGIBOT 累计下线 20000 台机器人，长隆 300+ 常态化上岗；IDC H1 全球近 2.5 万台
 
 
 ---

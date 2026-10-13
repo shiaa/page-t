@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日新闻 · 2026-10-13</title>
+<style>
+  :root {
+    --bg: #0a0a1a;
+    --card: #13132a;
+    --card-border: #1f1f3d;
+    --accent: #6c8cff;
+    --accent-2: #ff8acb;
+    --accent-3: #4ee0a3;
+    --text: #e6e8f0;
+    --text-dim: #9aa0b4;
+    --tag-bg: rgba(108, 140, 255, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 32px 16px 64px;
+  }
+  .container { max-width: 960px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 14px; }
+  header .date { color: var(--accent); font-size: 13px; margin-top: 6px; letter-spacing: 1px; }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-left: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .section-title.coding { border-color: var(--accent-3); }
+  .section-title.embodied { border-color: var(--accent-2); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .tag.green { background: rgba(78, 224, 163, 0.15); color: var(--accent-3); }
+  .tag.pink { background: rgba(255, 138, 203, 0.15); color: var(--accent-2); }
+  .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+  .card .why {
+    background: rgba(108, 140, 255, 0.06);
+    border-left: 2px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .card .why strong { color: var(--accent); }
+  .source { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>AI 每日新闻 · 每日精选</h1>
+    <div class="subtitle">聚焦 AI Coding 与具身智能方向</div>
+    <div class="date">2026 / 10 / 13 · 周二</div>
+  </header>
+
+  <!-- 行业头条 -->
+  <div class="section-title">📌 行业头条</div>
+
+  <div class="card">
+    <h3>Meta 发布首个前沿模型 Muse Wonder / Wonder Full，1M 上下文直指 Agent 编程战场</h3>
+    <div class="meta">
+      <span class="tag">前沿模型</span>
+      <span class="tag green">Meta</span>
+      <span class="tag pink">Agent 编程</span>
+    </div>
+    <p>10 月 13 日，Meta 超级智能实验室发布两款号称"迄今最强"的模型 Muse Wonder 与 Muse Wonder Full，是其自 Alexandr Wang 去年 8 月重组 AI 业务以来的首个前沿级模型。两款模型主打"主动记忆（Active Memory）"与"主动聚焦（Active Focus）"：前者可在 64K–100K token 多轮对话中跨会话保留关键上下文（内部 MemoryBench 得分 85.6，高于 GPT-6 Astra 的 81.4 与 Opus 5.5 的 81.5）；后者负责长程目标推进、失败换路与重要动作前确认。推理上下文窗口达 100 万 token，支持文本/图像/视频/音频多模态输入，在 Prometheus 千兆瓦级数据中心训练完成。</p>
+    <p>编程是本次核心卖点：官方公布的 SWE-Marathon（超长流程软件工程）成绩中，Wonder Full 通过率 57.5%、Wonder 53.1%，均高于对比表中的竞争模型。分发策略上，Wonder 通过 Meta Model API 按量计费（输入/缓存/输出分别为 $4 / $0.20 / $20 每百万 token），更强的 Wonder Full 则仅通过编程工具 Muse Code 的 $50/$200 订阅套餐提供——模型能力被直接绑进了编码产品入口。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是 Meta 第一次拿出能与 OpenAI、Anthropic 正面抗衡的前沿模型，Agent 化叙事（记忆+聚焦+1M 上下文）与编码分发渠道（Muse Code）同时落子。对 AI Coding 方向而言，头部实验室的竞争已从"谁的模型分高"转向"谁的模型能真正把长程任务跑完、并嵌进开发者工作流"——Wonder Full 仅经 Muse Code 提供、不走通用 API 的设定，说明编码工具正成为前沿模型最务实的商业化入口。
+    </div>
+    <div class="source">来源：<a href="https://finance.eastmoney.com/a/202610133893073149.html" target="_blank">东方财富</a> · <a href="https://www.cna.com.tw/news/ait/202610130006.aspx" target="_blank">中央社</a> · <a href="https://agentictribune.com/article/20261012-meta-unveils-muse-wonder-and-muse-wonder-full-agentic-ai-models-with-1m-token-context" target="_blank">Agentic Tribune</a> · <a href="https://news.qq.com/rain/a/20261013A01RE900" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <!-- AI Coding 方向 -->
+  <div class="section-title coding">💻 AI Coding 方向</div>
+
+  <div class="card">
+    <h3>哈佛研究：AI 编码智能体让代码量 +30%，但成品软件零增长，审查成瓶颈</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">哈佛研究</span>
+      <span class="tag pink">代码审查</span>
+    </div>
+    <p>哈佛大学研究员 Fiona Chen 与 James Stratton 的工作论文《Artificial Intelligence in the Firm: Bottlenecks in Software Production》基于工程分析平台 Jellyfish 的数据——约 3 亿条工作事件、70 万+ 员工、718 家企业，时间跨度 2021 年至 2026 年 3 月——发现：企业引入编码智能体后，代码行数 +30%、提交 +20%、PR +23%，但 Jira 中"已解决 issue / epic"（代表真正交付的软件功能）在统计上毫无显著变化。问题卡在审查环节：PR 从提交到合并的平均时长 +49%，被要求改动的 PR 占比几乎翻倍，单个 PR 的评论数 +35%，从事代码审查的员工比例 +14%。</p>
+    <p>论文用"差异中的差异"方法比较不同企业的采用时点，并指出即便到 2026 年 3 月已有 80% 的受测企业用上 AI 代码审查，瓶颈依旧存在——人类 reviewer 仍握有最终签字权。同一周，开源项目 QGIS 通过 QEP428 提案，正式禁止 AI 辅助贡献以保护维护者审查能力与代码质量，侧面印证了"审查产能"正成为行业级约束。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这项研究直接挑战"AI 编码智能体 = 成比例更多交付"的叙事：增益被生产链路下游的审查瓶颈吸收掉了。对 SRE/DevOps 与工程管理者而言，买更多 Agent 席位而不扩充审查产能（或训练 Agent 产出"可直接合并的 diff"），只会复现论文里的局面——提交更多、上线功能不变。它把"验证成本"推到了与前段生成同等重要的位置，也解释了为何 AI 代码审查与 review 自动化近期成为工具争夺焦点。
+    </div>
+    <div class="source">来源：<a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/" target="_blank">Ars Technica</a> · <a href="https://fourweekmba.com/ai-coding-agents-add-30-more-code-not-more-finished-work/" target="_blank">FourWeekMBA</a> · <a href="https://pondero.ai/news/2026-10-12-harvard-jellyfish-code-review-bottleneck" target="_blank">Pondero</a> · <a href="https://www.explainx.ai/blog/ai-coding-agents-more-code-not-more-software-harvard-jellyfish-review-bottleneck-2026" target="_blank">ExplainX</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI Codex「28 天承诺」Day 2：四项更新，Auto-review 免费向全体登录用户开放</h3>
+    <div class="meta">
+      <span class="tag">AI Coding</span>
+      <span class="tag green">OpenAI</span>
+      <span class="tag pink">Codex</span>
+    </div>
+    <p>10 月 13 日，OpenAI「Codex 28 天承诺」进入 Day 2，一次性推送四项面向"Agent 摩擦"的更新，均不 chasing benchmark 数字。最受关注的是 Auto-review（此前的 "Approve for me" 模式）现在对所有用 ChatGPT 账号登录的用户免费，且不再计入用量上限——等于把"AI 代审 PR 改动"从付费档下放为默认能力。其余更新围绕长会话 Agent 的执行体验与流程摩擦做修正，延续 Day 1（默认速度 +50%）后"把基础设施打磨顺"的节奏。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这与上面哈佛研究形成有趣的呼应——当"人类审查"被证明是编码 Agent 的最大瓶颈，OpenAI 把 Auto-review 做成免费默认能力，正是要直接补上审查产能这块短板。对开发者而言，Agent 工作流正从"生成代码"走向"生成 + 自动审查 + 收敛"的闭环；对工具选型来说，review 自动化正成为编码 Agent 平台差异化的主战场，而非单纯比拼模型分。
+    </div>
+    <div class="source">来源：<a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-october-13-2026-meta-unveils-muse-wonder-nvidia-and-cisco-redraw-optics-codex-4m2" target="_blank">DEV Community</a> · <a href="https://aiagentstore.ai/ai-agent-news/topic/coding/2026-09-29/detailed" target="_blank">AI Agent Store（Coding 周报 10/13）</a></div>
+  </div>
+
+  <!-- 具身智能方向 -->
+  <div class="section-title embodied">🤖 具身智能方向</div>
+
+  <div class="card">
+    <h3>小鹏 IRON 人形机器人明确时间表：2026 年底量产、2027 H1 交付、H2 进欧洲</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">小鹏</span>
+      <span class="tag pink">量产时间表</span>
+    </div>
+    <p>10 月 11 日巴黎车展前夜的 XPENG Paris Night 上，何小鹏给出了 IRON 人形机器人的三阶段时间表：2026 年底量产、2027 年上半年开始交付、2027 年下半年进军欧洲——这是小鹏首次给出针对欧洲的具体节点。IRON 全身 76 自由度、单手 21 自由度，搭载三颗小鹏图灵芯片、算力最高 2,250 TOPS；9 月广州产线已投产，核心工序自动化率超 80%，首台下线机器人可自行走下产线。小鹏机器人业务（Dogotix）8 月完成超 9 亿美元融资，投后估值超 63 亿美元，腾讯、阿里作为战略投资方入局。</p>
+    <p>落地路径上，小鹏坚持"商用优先"：首批应用在自家销售中心与园区，做导览、购物协助与巡检巡逻，工业与家用被列为更后的阶段。何小鹏此前曾直言在中国用工成本下进工厂不划算，短期不看好家用。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>这是继特斯拉、宇树、智元之后又一家把"量产—交付—出海"写进明确日历的中国车企系机器人玩家。IRON 把人形机器人放在与智能汽车、飞行汽车并列的"Physical AI"版图里，共享制造、供应链与自研芯片来压成本；"商用优先于工业/家用"的节奏，也反映出行业对"先跑通可付费场景"的务实共识，而非继续堆demo。
+    </div>
+    <div class="source">来源：<a href="https://www.humanoidsdaily.com/news/xpeng-iron-europe-rollout-h2-2027" target="_blank">Humanoids Daily</a> · <a href="https://robottoday.com/industry-briefing/xpeng-plans-european-launch-of-iron-humanoid-robot-for-late-2027/15520" target="_blank">RobotToday</a> · <a href="https://eletric-vehicles.com/xpeng/xpeng-sets-second-half-2027-european-rollout-for-iron-humanoid-robot/" target="_blank">Electric Vehicles</a></div>
+  </div>
+
+  <div class="card">
+    <h3>武汉人工智能与机器人博览会开幕，人形机器人进入「量产验证期」</h3>
+    <div class="meta">
+      <span class="tag">具身智能</span>
+      <span class="tag green">产业展会</span>
+      <span class="tag pink">量产验证</span>
+    </div>
+    <p>10 月 10 日，2026 武汉人工智能与机器人博览会在光谷启幕，展区近 2 万平方米、200+ 企业参展、首日专业观众超 5 万，15 款新品全国首发。券商观点指向同一趋势：商业化落地加速，人形机器人进入"量产验证期"而非概念预热。湖北已形成较完整产业链——9 家整机企业、116 家核心零部件企业、零部件本地化率 85%；湖北人形机器人创新中心内 23 个场景跑着 100 多台机器人，日均采数 2.4 万条、年采量可达 600 万条。"荆楚"机器人已在东风猛士总装车间物流线"上岗"近一个月，单次全流程工序用时从 50 多秒压缩到 35 秒以内，接近熟练工人水平。</p>
+    <div class="why">
+      <strong>值得关注的原因：</strong>"量产验证期"的题眼不在本体运动能力，而在供应链（关节驱动、能源管理、结构材料、控制单元）能否稳定、低成本、可复制地交付。从展会规模与零部件企业放量信号看，行业正从"单品秀"转入"产业链协同 + 场景验证 + 数据闭环"的商业化大考；对关注供应链与投资机会的人，灵巧手、力矩传感器、谐波减速器、端侧 AI 芯片四大子赛道值得持续跟踪。
+    </div>
+    <div class="source">来源：<a href="https://www.toutiao.com/article/7515341257159357526/" target="_blank">今日头条（通信世界）</a> · <a href="https://www.toutiao.com/article/7695746290891194943" target="_blank">今日头条（极目新闻）</a></div>
+  </div>
+
+  <footer>
+    <p>数据来源：东方财富 · 中央社 · Agentic Tribune · 腾讯新闻 · Ars Technica · FourWeekMBA · Pondero · ExplainX · DEV Community · AI Agent Store · Humanoids Daily · RobotToday · Electric Vehicles · 今日头条</p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,6 +1,42 @@
 // 自动生成的分片（1），请勿手动修改
 export const p1 = [
   {
+    id: 'ai-news-daily-2026-10-03',
+    title: 'AI 每日动态 (2026-10-03)',
+    summary: '1. Agent 技术栈本周密集“落地”：Cloudflare 重构容器、AG UI 1.0 冻结规范、Google 推 Agent 安全季 2. GitHub Copilot 公测 Dynamic Workflows 并加速模型轮换，正式...',
+    date: '2026-10-03',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月3日 · 星期六
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. Agent 技术栈本周密集“落地”：Cloudflare 重构容器、AG-UI 1.0 冻结规范、Google 推 Agent 安全季
+
+
+### 2. GitHub Copilot 公测 Dynamic Workflows 并加速模型轮换，正式从“编码助手”转向开发工作流平台
+
+
+### 3. Anthropic 为 Claude Code 引入 “mods” 并上线 claude.dev，开源 skill 实测代码量降 54%
+
+
+### 4. 具身智能“整合潮”图谱：中国占全球出货近 90%、车企成最大买家、Figure 以算力换 GPU
+
+
+### 5. 智元 AGIBOT 累计下线 20000 台机器人，长隆 300+ 常态化上岗；IDC H1 全球近 2.5 万台
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-02',
     title: 'AI 每日动态 (2026-10-02)',
     summary: '1. OpenAI 正式推送常驻式 Agent「Dots」，个人 Agent 走向大众消费但陷定价争议 2. JetBrains Air 开放早期访问：把多家编码 Agent 直接拉进 IDE 并行运行 3. 开源 AG UI 协议发布 1...',
@@ -317,42 +353,6 @@ export const p1 = [
 
 
 ### 5. 海光信息发布 1000 系列 CPU，"让算力抵达物理世界"直指端侧机器人算力
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-09-21',
-    title: 'AI 每日动态 (2026-09-21)',
-    summary: '1. 物理 AI 成全球巨头必争之地：软银 54 亿美元收购 ABB 工业机器人，大厂路线分化、政策加码万台级落地 2. AI 编程智能体接管大型 Rust 重写：GitHub 80 万行、Bun 50 万行 Zig→Rust、OpenAI...',
-    date: '2026-09-21',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年9月21日 · 星期一
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. 物理 AI 成全球巨头必争之地：软银 54 亿美元收购 ABB 工业机器人，大厂路线分化、政策加码万台级落地
-
-
-### 2. AI 编程智能体接管大型 Rust 重写：GitHub 80 万行、Bun 50 万行 Zig→Rust、OpenAI Habitat 改写 CPU 降 6 倍
-
-
-### 3. AI 编程智能体赛道资本与能力双爆发：Factory 估值 50 亿美元，"软件工厂"成新范式；Terminal-Bench 4.0 Claude Code 与 Codex 并列榜首
-
-
-### 4. 启元机器人（稚晖君）发布 Q1/T1 个人机器人：19999 元起，首发接入腾讯 WorkBuddy，成首个接入具身智能企业
-
-
-### 5. 智身科技完成数亿元 B 轮融资：累计量产突破 1.5 万台，自研关节模组年产能破百万件
 
 
 ---
