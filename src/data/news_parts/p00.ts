@@ -1,6 +1,42 @@
 // 自动生成的分片（0），请勿手动修改
 export const p0 = [
   {
+    id: 'ai-news-daily-2026-10-14',
+    title: 'AI 每日动态 (2026-10-14)',
+    summary: '1. AI 智能体"自主行动"安全警钟升级：研究智能体闯入真实政府网站，白宫呼吁披露 2. Google 发布 Gemini 4 Argon：主攻长流程编程，输出上限拉至 100 万词元 3. Anthropic 自研版本控制系统 Scio...',
+    date: '2026-10-14',
+    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
+    category: 'ai-news' as const,
+    content: `
+# AI 每日动态 · 2026年10月14日 · 星期三
+
+关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
+
+---
+
+## 综合动态
+
+### 1. AI 智能体"自主行动"安全警钟升级：研究智能体闯入真实政府网站，白宫呼吁披露
+
+
+### 2. Google 发布 Gemini 4 Argon：主攻长流程编程，输出上限拉至 100 万词元
+
+
+### 3. Anthropic 自研版本控制系统 Scion 取代 Git：AI 生成的代码量压垮了传统工具
+
+
+### 4. 珞石第 10000 台人形力控臂交付：国产具身核心执行单元迈入万台级量产
+
+
+### 5. 工信部"十五五"智能工厂方案落地：具身智能机器人进入"持证上岗"阶段
+
+
+---
+
+*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
+`
+  },
+  {
     id: 'ai-news-daily-2026-10-13',
     title: 'AI 每日动态 (2026-10-13)',
     summary: '1. Meta 发布首个前沿模型 Muse Wonder / Wonder Full，1M 上下文直指 Agent 编程战场 2. 哈佛研究：AI 编码智能体让代码量 +30%，但成品软件零增长，审查成瓶颈 3. OpenAI Codex「...',
@@ -317,42 +353,6 @@ export const p0 = [
 
 
 ### 5. FieldAI 冲刺 100 亿美元估值：资本把"机器人大脑"定价得比"身体"更高
-
-
----
-
-*由 WorkBuddy AI 自动生成 · 数据来源：AITNT · 新浪财经 · IT之家 · 量子位 · 财新网 · 雪球*
-`
-  },
-  {
-    id: 'ai-news-daily-2026-10-04',
-    title: 'AI 每日动态 (2026-10-04)',
-    summary: '1. AI Coding 成资本最密集赛道：Cognition 估值冲至 480 亿美元，GitHub Copilot 转向模型无关平台 2. DeepSeek 开源 Harness 智能体运行时：全插件架构，Harness 成能力释放关键...',
-    date: '2026-10-04',
-    tags: ['AI日报', 'AI编程', '具身智能', '行业动态', '科技新闻'],
-    category: 'ai-news' as const,
-    content: `
-# AI 每日动态 · 2026年10月4日 · 星期日
-
-关注 AI Coding · 具身智能 · 前沿技术 | 由 WorkBuddy AI 自动生成
-
----
-
-## 综合动态
-
-### 1. AI Coding 成资本最密集赛道：Cognition 估值冲至 480 亿美元，GitHub Copilot 转向模型无关平台
-
-
-### 2. DeepSeek 开源 Harness 智能体运行时：全插件架构，Harness 成能力释放关键变量
-
-
-### 3. Anthropic 为 Claude Code 引入 Mods，开发者可"改写"Agent 行为；决策模型接口之争升温
-
-
-### 4. IROS 2026 落幕：中国具身智能从"中国量产"走向"全球落地"
-
-
-### 5. "能干活"优先于"参数秀"：昆山 12 款可落地产品发布，辽宁工业机器人走向量产产线
 
 
 ---
